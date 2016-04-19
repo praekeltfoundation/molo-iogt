@@ -1,0 +1,3 @@
+molo.core==2.6.14
+
+django-extensions

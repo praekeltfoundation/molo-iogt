@@ -1,0 +1,50 @@
+
+{% extends "base.html" %}
+
+{% load static core_tags %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+    <div class="articles nav {{self.get_effective_extra_style_hints}}">
+      <h2 class="list-header">
+        {% if self.image %}
+          <a href="{% pageurl self %}">{% image self.image width-60 %}</a>
+        {% endif %}
+        {{self.title}}
+      </h2>
+      {% for section in self.sections %}
+        <h2 class="list-header">
+          {% if section.image %}
+            <a href="{% pageurl section %}">{% image section.image width-60 %}</a>
+          {% endif %}
+          <a href="{% pageurl section %}">{{section.title}}</a>
+          <ul class="list-block">
+            <li>
+              {% if section.description %}<p>{{section.description}}</p>{% endif %}
+              {% if section.featured_articles %}
+              {% for article in section.featured_articles %}
+                <h3><a href="{% pageurl article %}">{{article.title}}</a></h3>
+                <p>{{article.subtitle}}</p>
+              {% endfor %}
+              {% endif %}
+            </li>
+          </ul>
+        </h2>
+      {% endfor %}
+
+      {% for article in self.articles %}
+      <ul class="list-block">
+        <li>
+          {% if article.image %}
+          <a href="{% pageurl article %}">{% image article.image width-60 %}</a>
+          {% endif %}
+          <h3><a href="{% pageurl article %}">{{article.title}}</a></h3>
+          <p>{{article.subtitle}}</p>
+        </li>
+      </ul>
+      {% endfor %}
+    </div>
+{% endblock %}
+
