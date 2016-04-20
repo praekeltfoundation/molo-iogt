@@ -76,6 +76,7 @@
         {% if languages %}
           {% for language in languages %}
             <a href="{% url 'locale_set' language.code %}">{{language.title}} </a>
+            {% if not forloop.last %} | {% endif %}
           {% endfor %}
 
           {% if settings.core.SiteSettings.logo %}
