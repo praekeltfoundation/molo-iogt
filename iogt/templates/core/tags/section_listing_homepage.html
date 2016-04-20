@@ -1,7 +1,8 @@
 
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags i18n %}
 
 {% if sections %}
+<h2 class="list-header">{% trans 'Explore IoGT' %}</h2>
 {% for section in sections %}
 <div class="articles nav {{section.get_effective_extra_style_hints}}">
   <h2 class="list-header">
