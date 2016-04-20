@@ -25,6 +25,9 @@
               {% if section.description %}<p>{{section.description}}</p>{% endif %}
               {% if section.featured_articles %}
               {% for article in section.featured_articles %}
+                {% if article.image %}
+                <a href="{% pageurl article %}">{% image article.image width-60 %}</a>
+                {% endif %}
                 <h3><a href="{% pageurl article %}">{{article.title}}</a></h3>
                 <p>{{article.subtitle}}</p>
               {% endfor %}
