@@ -74,14 +74,13 @@
 
         <div class="logo">
         {% if languages %}
-          {% if settings.core.SiteSettings.logo %}
-            {% image settings.core.SiteSettings.logo height-30 %}
-          {% endif %}
-
-          {% trans "Site Language:" %}
           {% for language in languages %}
             <a href="{% url 'locale_set' language.code %}">{{language.title}} </a>
           {% endfor %}
+
+          {% if settings.core.SiteSettings.logo %}
+            {% image settings.core.SiteSettings.logo height-30 %}
+          {% endif %}
         {% endif %}
         </div>
 
