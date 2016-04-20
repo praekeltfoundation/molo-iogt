@@ -5,7 +5,8 @@
 <div class="articles nav">
   <h2 class="list-header">{% trans "Recommended" %}</h2>
   {% for article in articles %}
-  <ul class="list-block">
+  {# The 3rd ancestor is the section: [root, main, language, section, ...] #}
+  <ul class="list-block {{article.get_ancestors.3.slug}}">
     <li>
       {% if article.image %}
       <a href="{% pageurl article %}">{% image article.image width-60 %}</a>
