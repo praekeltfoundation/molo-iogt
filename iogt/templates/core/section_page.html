@@ -1,7 +1,7 @@
 
 {% extends "base.html" %}
 
-{% load static core_tags %}
+{% load static core_tags i18n %}
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
@@ -25,9 +25,17 @@
               {% if section.description %}<p>{{section.description}}</p>{% endif %}
               {% if section.featured_articles %}
               {% for article in section.featured_articles %}
+                {% if article.image %}
+                <a href="{% pageurl article %}">{% image article.image width-60 %}</a>
+                {% endif %}
                 <h3><a href="{% pageurl article %}">{{article.title}}</a></h3>
                 <p>{{article.subtitle}}</p>
               {% endfor %}
+              {% if section.featured_articles|length < section.articles|length %}
+              <div class="more listing {{section.slug }}">
+                <a href="{% pageurl section %}">{% trans 'More' %} {{section.title}}</a>
+              </div>
+              {% endif %}
               {% endif %}
             </li>
           </ul>

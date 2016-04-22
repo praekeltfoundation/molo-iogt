@@ -74,20 +74,21 @@
 
         <div class="logo">
         {% if languages %}
+          {% for language in languages %}
+            <a href="{% url 'locale_set' language.code %}">{{language.title}} </a>
+            {% if not forloop.last %} | {% endif %}
+          {% endfor %}
+
           {% if settings.core.SiteSettings.logo %}
             {% image settings.core.SiteSettings.logo height-30 %}
           {% endif %}
-
-          {% trans "Site Language:" %}
-          {% for language in languages %}
-            <a href="{% url 'locale_set' language.code %}">{{language.title}} </a>
-          {% endfor %}
         {% endif %}
         </div>
 
         {% breadcrumbs %}
 
         {% block content %}{% endblock %}
+        {% section_listing_homepage %}
 
         {% block extra_js %}
         {% endblock %}
@@ -99,6 +100,7 @@
         {% endblock %}
 
         {% block footer %}
+        <div>&copy; {% trans 'The Internet of Good Things' %}</div>
         {% if language_page.footers %}
           <ul>
           {% for page in language_page.footers %}
