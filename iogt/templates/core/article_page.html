@@ -1,12 +1,34 @@
-
 {% extends "base.html" %}
 
 {% load static core_tags %}
 {% load wagtailcore_tags wagtailimages_tags %}
 
-{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
-
 {% block content %}
+
+
+{% if self.get_parent_section.get_parent_section %}
+  {% with section=self.get_parent_section.get_parent_section %}
+  <h1 class="l-indent heading heading--large heading{{section.get_effective_extra_style_hints}}">
+    {{section.title}}
+  </h1>
+  {% endwith %}
+  {% with sub_section=self.get_parent_section %}
+  <h2 class="l-indent heading">
+    {{sub_section.title}}
+  </h2>
+  {% endwith %}
+{% else %}
+  {% with section=self.get_parent_section %}
+  <h1 class="l-indent heading heading--large heading{{section.get_effective_extra_style_hints}}">
+    {{section.title}}
+  </h1>
+  {% endwith %}
+{% endif %}
+
+
+
+
+
 <div class="articles nav {{self.get_parent_section.get_effective_extra_style_hints}}">
   <h3 class="article-title">{{self.title}}</h3>
   <p>{{self.subtitle}}</p>
@@ -37,4 +59,3 @@
 </article>
 </div>
 {% endblock %}
-
