@@ -1,9 +1,22 @@
-
 {% load wagtailcore_tags wagtailimages_tags i18n %}
 
 {% if articles %}
+
+<h2 class="heading l-indent--deep">{% trans "Recommended" %}</h2>
+
+<ul class="article-list">
+{% for article in articles %}
+  <li class="">
+    <h3>{{article.title}}</h3>
+    {% if article.image %}
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+
 <div class="articles nav">
-  <h2 class="list-header">{% trans "Recommended" %}</h2>
+  <h2 class="list-header"></h2>
   {% for article in articles %}
   {# The 3rd ancestor is the section: [root, main, language, section, ...] #}
   <ul class="list-block {{article.get_ancestors.3.slug}}">
@@ -18,4 +31,3 @@
   {% endfor %}
 </div>
 {% endif %}
-

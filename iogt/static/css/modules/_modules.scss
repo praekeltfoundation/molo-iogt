@@ -20,18 +20,12 @@
   background: #4d4391;
 }
 .logo img {
-  width: 50%;
+  vertical-align: middle;
+  width: 65%;
 }
 
 
-.heading {
-  background: #eee;
-}
-.heading--purple {
-  color: #fff;
-  background: #4d4391;
-}
-
+@import "heading";
 @import "section-links";
 @import "search";
 @import "footer";

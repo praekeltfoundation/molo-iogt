@@ -1,18 +1,26 @@
-
 {% extends "base.html" %}
 
 {% load static core_tags i18n %}
 {% load wagtailcore_tags wagtailimages_tags %}
 
-{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
 
 {% block content %}
-    <div class="articles nav {{self.get_effective_extra_style_hints}}">
+
+<h1 class="l-indent heading heading--large heading{{self.get_effective_extra_style_hints}}">
+  {{self.title}}
+</h1>
+{% if self.image %}
+  <a href="{% pageurl self %}">{% image self.image width-320 %}</a>
+{% endif %}
+
+
+
+    <div class="articles nav ">
       <h2 class="list-header">
         {% if self.image %}
-          <a href="{% pageurl self %}">{% image self.image width-60 %}</a>
+
         {% endif %}
-        {{self.title}}
+
       </h2>
       {% for section in self.sections %}
         <h2 class="list-header">
@@ -55,4 +63,3 @@
       {% endfor %}
     </div>
 {% endblock %}
-
