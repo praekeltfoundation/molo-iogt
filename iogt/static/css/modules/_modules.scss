@@ -1,0 +1,37 @@
+.languages {
+  background: #2d2d2d;
+}
+
+.languages a {
+  color: #fff;
+  text-transform: capitalize;
+
+  &:after {
+    content: " | ";
+  }
+
+  &:last-child:after {
+    content: "";
+  }
+}
+
+.logo {
+  display:block;
+  background: #4d4391;
+}
+.logo img {
+  width: 50%;
+}
+
+
+.heading {
+  background: #eee;
+}
+.heading--purple {
+  color: #fff;
+  background: #4d4391;
+}
+
+@import "section-links";
+@import "search";
+@import "footer";
