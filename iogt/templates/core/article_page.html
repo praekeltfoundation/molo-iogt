@@ -1,61 +1,58 @@
 {% extends "base.html" %}
 
-{% load static core_tags %}
+{% load static core_tags i18n %}
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
 
 
 {% if self.get_parent_section.get_parent_section %}
+
+
   {% with section=self.get_parent_section.get_parent_section %}
-  <h1 class="l-indent heading heading--large heading{{section.get_effective_extra_style_hints}}">
+  <h2 class="l-indent heading heading--large heading{{section.get_effective_extra_style_hints}}">
     {{section.title}}
-  </h1>
+  </h2>
   {% endwith %}
   {% with sub_section=self.get_parent_section %}
-  <h2 class="l-indent heading">
+  <h3 class="l-indent heading heading{{sub_section.get_effective_extra_style_hints}}">
     {{sub_section.title}}
-  </h2>
+  </h3>
   {% endwith %}
 {% else %}
   {% with section=self.get_parent_section %}
-  <h1 class="l-indent heading heading--large heading{{section.get_effective_extra_style_hints}}">
+  <h2 class="l-indent heading heading--large heading{{section.get_effective_extra_style_hints}}">
     {{section.title}}
-  </h1>
+  </h2>
   {% endwith %}
 {% endif %}
 
 
 
+<div class="article article{{self.get_parent_section.get_effective_extra_style_hints}}">
+  <h1 class="article__title">{{self.title}}</h1>
 
-
-<div class="articles nav {{self.get_parent_section.get_effective_extra_style_hints}}">
-  <h3 class="article-title">{{self.title}}</h3>
-  <p>{{self.subtitle}}</p>
   {% if self.image %}
-  <div class="banner">{% image self.image width-240 %}</div>
+    {% image self.image width-320 class="article__image" %}
   {% endif %}
+  <p class="article__subtitle">{{self.subtitle}}</p>
 
-<article>
-  {% for block in self.body %}
+  <article>
+    {% for block in self.body %}
       {% if block.block_type == 'heading' %}
-          <h1>{{ block.value }}</h1>
-      {% else %}
-      {% if block.block_type == 'image' %}
-        {% image block.value width-240 %}
-      {% else %}
-      {% if block.block_type == 'numbered_list' %}
+          <h4>{{ block.value }}</h4>
+      {% elif block.block_type == 'image' %}
+        {% image block.value width-320 class="article__image" %}
+      {% elif block.block_type == 'numbered_list' %}
         <ol>
-        {% for item in block.value %}
+          {% for item in block.value %}
           <li>{{item}}</li>
-        {% endfor %}
+          {% endfor %}
         </ol>
       {% else %}
           {{ block }}
       {% endif %}
-      {% endif %}
-      {% endif %}
-  {% endfor %}
-</article>
+    {% endfor %}
+  </article>
 </div>
 {% endblock %}

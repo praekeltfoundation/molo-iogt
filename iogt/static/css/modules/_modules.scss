@@ -8,6 +8,7 @@
 
   &:after {
     content: " | ";
+    color: #4d4391;
   }
 
   &:last-child:after {
@@ -29,7 +30,7 @@
   height: auto;
 }
 
-@import "heading";
+@import "_heading";
 
 .article-list {
   list-style: none;
@@ -54,11 +55,7 @@
 }
 
 
-
-
-
-
-
-@import "section-links";
-@import "search";
-@import "footer";
+@import "_article";
+@import "_section-links";
+@import "_search";
+@import "_footer";
