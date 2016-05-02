@@ -54,11 +54,10 @@
           <li><a href="{% pageurl page %}">{{page.title}}</a></li>
           {% endfor %}
         </ul>
+        {% endif %}
       </div>
-      {% endif %}
+
       {% endblock %}
-
-
       {% block extra_js %}{% endblock %}
     </body>
 </html>
