@@ -2,18 +2,18 @@
 
 {% if sections %}
 <h2 class="heading heading--purple l-indent--deep">{% trans 'Explore IoGT' %}</h2>
-<ul class="section-links">
+<ul class="navigation">
   {% for section in sections %}
   <li class="l-indent--deep {{section.get_effective_extra_style_hints}}">
     <a href="{% pageurl section %}">
-      <div class="section-links__title">{{section.title}}</div>
-      <div class="section-links__desc">{{section.description}}</div>
+      <div class="navigation__title">{{section.title}}</div>
+      <div class="navigation__desc">{{section.description}}</div>
     </a>
   </li>
   {% endfor %}
   <li class="l-indent--deep {{section.get_effective_extra_style_hints}}">
     <a href="/">
-      <div class="section-links__title">{% trans "Home" %}</div>
+      <div class="navigation__title">{% trans "Home" %}</div>
     </a>
   </li>
 </ul>
