@@ -14,7 +14,7 @@
   {% endif %}
 
   {% for section in self.sections %}
-    <h2 class="l-indent heading">{{section.title}}</h2>
+    <h2 class="l-indent--deep heading">{{section.title}}</h2>
     <ul class="article-list">
     {% for article in section.articles %}
       <li class="article-list__item">
@@ -24,7 +24,7 @@
         <a href="{% pageurl article %}">
           <h3 class="article-list__title article-list__title{{self.get_effective_extra_style_hints}}">{{article.title}}</h3>
         </a>
-        <p>{{article.subtitle}}</p>
+        <p class="article-list__subtitle">{{article.subtitle}}</p>
       </li>
     {% endfor %}
     </ul>

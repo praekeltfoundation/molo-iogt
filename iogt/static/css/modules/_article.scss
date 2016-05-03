@@ -13,11 +13,16 @@
   overflow: auto;
 }
 .article-list__image {
-  width: 30%;
+  width: 40%;
   height: auto;
   margin: 0 24px 9px 0;
   float: left;
 }
+
+.article-list__subtitle {
+  margin-bottom: 0;
+}
+
 .article-list__title--green {
   color: #6ec17f;
 }

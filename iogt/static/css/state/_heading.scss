@@ -1,0 +1,22 @@
+.heading {
+  background-image: url(/static/arrow_gray--down.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 24px 22px;
+}
+
+
+.heading--back {
+  -moz-transform: scaleX(-1) scaleY(-1);
+  -o-transform: scaleX(-1) scaleY(-1);
+  -webkit-transform: scaleX(-1) scaleY(-1);
+  transform: scaleX(-1) scaleY(-1);
+}
+
+.heading--green {
+  background-image: url(/static/arrow_dark_green.png);
+}
+
+.heading--purple {
+  background-image: url(/static/arrow_purple--down.png);
+}

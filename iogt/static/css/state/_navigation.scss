@@ -1,0 +1,18 @@
+
+.navigation__item {
+  background: url(/static/arrow_gray.png) no-repeat;
+  background-size: 15px;
+  background-position: 24px 24px;
+}
+.navigation__item--green {
+  background-image: url(/static/arrow_dark_green.png);
+}
+
+
+
+.navigation a {
+  color: #666;
+}
+.navigation__desc {
+  display: inline;
+}

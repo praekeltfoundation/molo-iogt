@@ -4,14 +4,14 @@
 <h2 class="heading heading--purple l-indent--deep">{% trans 'Explore IoGT' %}</h2>
 <ul class="navigation">
   {% for section in sections %}
-  <li class="l-indent--deep {{section.get_effective_extra_style_hints}}">
+  <li class="l-indent--deep navigation__item navigation__item{{section.get_effective_extra_style_hints}}">
     <a href="{% pageurl section %}">
       <div class="navigation__title">{{section.title}}</div>
       <div class="navigation__desc">{{section.description}}</div>
     </a>
   </li>
   {% endfor %}
-  <li class="l-indent--deep {{section.get_effective_extra_style_hints}}">
+  <li class="l-indent--deep navigation__item navigation__item{{section.get_effective_extra_style_hints}}">
     <a href="/">
       <div class="navigation__title">{% trans "Home" %}</div>
     </a>

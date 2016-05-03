@@ -5,25 +5,26 @@
 
 {% block content %}
 
-
 {% if self.get_parent_section.get_parent_section %}
-
-
   {% with section=self.get_parent_section.get_parent_section %}
   <h2 class="l-indent heading heading--large heading{{section.get_effective_extra_style_hints}}">
     {{section.title}}
   </h2>
-  {% endwith %}
-  {% with sub_section=self.get_parent_section %}
-  <h3 class="l-indent heading heading{{sub_section.get_effective_extra_style_hints}}">
-    {{sub_section.title}}
-  </h3>
+    {% with sub_section=self.get_parent_section %}
+    <a href="{% pageurl section %}">
+      <h3 class="l-indent--deep heading heading--back heading{{sub_section.get_effective_extra_style_hints}}">
+        {{sub_section.title}}
+      </h3>
+    </a>
+    {% endwith %}
   {% endwith %}
 {% else %}
   {% with section=self.get_parent_section %}
-  <h2 class="l-indent heading heading--large heading{{section.get_effective_extra_style_hints}}">
-    {{section.title}}
-  </h2>
+  <a href="{% pageurl section %}">
+    <h2 class="l-indent--deep heading heading--back heading--large heading{{section.get_effective_extra_style_hints}}">
+      {{section.title}}
+    </h2>
+  </a>
   {% endwith %}
 {% endif %}
 
