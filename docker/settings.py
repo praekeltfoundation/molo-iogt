@@ -17,7 +17,6 @@ PROJECT_ROOT = (
 RAVEN_DSN = environ.get('RAVEN_DSN')
 RAVEN_CONFIG = {'dsn': RAVEN_DSN} if RAVEN_DSN else {}
 
-CAS_SERVER_URL = environ.get('CAS_SERVER_URL') or ''
 UNICORE_DISTRIBUTE_API = environ.get('UNICORE_DISTRIBUTE_API') or ''
 
 COMPRESS_OFFLINE = True
