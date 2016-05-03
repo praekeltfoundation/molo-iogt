@@ -1,22 +1,39 @@
-.heading {
-  background-image: url(/static/arrow_gray--down.png);
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position: 24px 22px;
+
+
+.heading:before {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  content: "›";
+  line-height: 13px; // hate this magic number.
+  text-align: center;
+  border-radius: 16px;
+  background-color: #737373;
+  color: #eee;
+  width: 16px;
+  height: 16px;
+  margin-right: 18px;
+}
+
+.heading--large:before {
+  content: none;
 }
 
 
-.heading--back {
-  -moz-transform: scaleX(-1) scaleY(-1);
-  -o-transform: scaleX(-1) scaleY(-1);
-  -webkit-transform: scaleX(-1) scaleY(-1);
-  transform: scaleX(-1) scaleY(-1);
+.heading--green:before {
+  background: #6dc27f;
+}
+
+.heading--purple:before {
+  background: #a3a0c3;
+  color: #4d4391;
+  transform: rotate(90deg);
+}
+
+.heading--back:before {
+  transform: rotate(180deg);
 }
 
 .heading--green {
   background-image: url(/static/arrow_dark_green.png);
-}
-
-.heading--purple {
-  background-image: url(/static/arrow_purple--down.png);
 }

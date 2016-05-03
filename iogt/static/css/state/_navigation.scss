@@ -1,18 +1,32 @@
 
 .navigation__item {
-  background: url(/static/arrow_gray.png) no-repeat;
-  background-size: 15px;
-  background-position: 24px 24px;
-}
-.navigation__item--green {
-  background-image: url(/static/arrow_dark_green.png);
+  position: relative;
 }
 
+.navigation__item:before {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  content: "›";
+  line-height: 13px; // hate this magic number.
+  text-align: center;
+  border-radius: 16px;
+  background-color: #737373;
+  color: #eee;
+  width: 16px;
+  height: 16px;
+  margin-right: 18px;
+}
 
 
 .navigation a {
   color: #666;
 }
+.navigation__title {
+  padding-left: 34px;
+}
 .navigation__desc {
   display: inline;
+  padding-left: 34px;
 }
