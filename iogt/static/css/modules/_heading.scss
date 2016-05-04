@@ -9,12 +9,13 @@
   background: #4d4391;
 }
 
-.heading.heading--green {
-  color: #6ec17f;
-}
+@each $name, $color in $color_list {
+  .heading.heading--#{$name} {
+    color: $color;
+  }
 
-
-.heading--large.heading--green {
-  color: #fff;
-  background: #6ec17f;
+  .heading--large.heading--#{$name} {
+    color: #fff;
+    background: $color;
+  }
 }
