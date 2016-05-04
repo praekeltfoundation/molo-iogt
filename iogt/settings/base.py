@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
 from os.path import abspath, dirname, join
+from os import environ
 from django.conf import global_settings
 from django.utils.translation import ugettext_lazy as _
 import dj_database_url
@@ -62,6 +63,7 @@ INSTALLED_APPS = (
     'wagtail.wagtailsearch',
     'wagtail.wagtailredirects',
     'wagtail.wagtailforms',
+    'wagtailmodeladmin',
     'wagtail.contrib.settings',
 
     'molo.core',
@@ -86,7 +88,8 @@ MIDDLEWARE_CLASSES = (
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
-
+    'wagtailmodeladmin.middleware.ModelAdminMiddleware',
+    'molo.core.middleware.AdminLocaleMiddleware',
 )
 
 ROOT_URLCONF = 'iogt.urls'
@@ -202,3 +205,7 @@ WAGTAIL_SITE_NAME = "base"
 WAGTAILIMAGES_FEATURE_DETECTION_ENABLED = False
 
 ENABLE_SSO = False
+
+UNICORE_DISTRIBUTE_API = ''
+
+ADMIN_LANGUAGE_CODE = environ.get('ADMIN_LANGUAGE_CODE', "en")
