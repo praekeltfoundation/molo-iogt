@@ -1,0 +1,21 @@
+.heading {
+  background: #eee;
+}
+.heading--large {
+  font-size: 32px;
+}
+.heading--purple {
+  color: #fff;
+  background: #4d4391;
+}
+
+@each $name, $color in $color_list {
+  .heading.heading--#{$name} {
+    color: $color;
+  }
+
+  .heading--large.heading--#{$name} {
+    color: #fff;
+    background: $color;
+  }
+}

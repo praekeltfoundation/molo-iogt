@@ -1,25 +1,20 @@
-
-{% load wagtailcore_tags wagtailimages_tags i18n %}
+{% load wagtailcore_tags i18n %}
 
 {% if sections %}
-<h2 class="list-header">{% trans 'Explore IoGT' %}</h2>
-{% for section in sections %}
-<div class="articles nav {{section.get_effective_extra_style_hints}}">
-  <h2 class="list-header">
-    <a href="{% pageurl section %}">{{section.title}}</a>
-  </h2>
-  <p>{{section.description}}</p>
-  {% for article in section.featured_articles_in_homepage %}
-  <ul class="list-block">
-    <li>
-      {% if article.image %}
-      <a href="{% pageurl article %}">{% image article.image width-60 %}</a>
-      {% endif %}
-      <h3><a href="{% pageurl article %}">{{article.title}}</a></h3>
-      <p>{{article.subtitle}}</p>
-    </li>
-  </ul>
+<h2 class="heading heading--purple l-indent--deep">{% trans 'Explore IoGT' %}</h2>
+<ul class="navigation">
+  {% for section in sections %}
+  <li class="l-indent--deep navigation__item navigation__item{{section.get_effective_extra_style_hints}}">
+    <a href="{% pageurl section %}">
+      <div class="navigation__title">{{section.title}}</div>
+      <div class="navigation__desc">{{section.description}}</div>
+    </a>
+  </li>
   {% endfor %}
-</div>
-{% endfor%}
+  <li class="l-indent--deep navigation__item navigation__item{{section.get_effective_extra_style_hints}}">
+    <a href="/">
+      <div class="navigation__title">{% trans "Home" %}</div>
+    </a>
+  </li>
+</ul>
 {% endif %}
