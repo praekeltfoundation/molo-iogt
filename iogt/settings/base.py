@@ -52,6 +52,9 @@ INSTALLED_APPS = (
     'taggit',
     'modelcluster',
 
+    'molo.core',
+    'iogt',
+    
     'wagtail.wagtailcore',
     'wagtail.wagtailadmin',
     'wagtail.wagtaildocs',
@@ -66,8 +69,6 @@ INSTALLED_APPS = (
     'wagtailmodeladmin',
     'wagtail.contrib.settings',
 
-    'molo.core',
-    'iogt',
     'mptt',
 
     'raven.contrib.django.raven_compat',
