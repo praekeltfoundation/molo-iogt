@@ -66,6 +66,7 @@ INSTALLED_APPS = (
 
     'molo.core',
     'iogt',
+    'molo.usermetadata',
     'mptt',
 
     'raven.contrib.django.raven_compat',
@@ -86,6 +87,7 @@ MIDDLEWARE_CLASSES = (
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
+    'molo.usermetadata.middleware.PeronsaMiddleware'
 
 )
 
