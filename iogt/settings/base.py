@@ -54,7 +54,7 @@ INSTALLED_APPS = (
 
     'molo.core',
     'iogt',
-    
+
     'wagtail.wagtailcore',
     'wagtail.wagtailadmin',
     'wagtail.wagtaildocs',
@@ -69,6 +69,7 @@ INSTALLED_APPS = (
     'wagtailmodeladmin',
     'wagtail.contrib.settings',
 
+    'molo.usermetadata',
     'mptt',
 
     'raven.contrib.django.raven_compat',
@@ -89,8 +90,12 @@ MIDDLEWARE_CLASSES = (
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
+
     'wagtailmodeladmin.middleware.ModelAdminMiddleware',
     'molo.core.middleware.AdminLocaleMiddleware',
+    'molo.usermetadata.middleware.PersonaMiddleware'
+
+
 )
 
 ROOT_URLCONF = 'iogt.urls'

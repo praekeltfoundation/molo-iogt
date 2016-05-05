@@ -7,7 +7,6 @@ from molo.core.models import ArticlePage
 from wagtail.wagtailsearch.models import Query
 
 
-
 def search(request, results_per_page=10):
     search_query = request.GET.get('q', None)
     page = request.GET.get('p', 1)
