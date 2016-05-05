@@ -93,7 +93,7 @@ MIDDLEWARE_CLASSES = (
 
     'wagtailmodeladmin.middleware.ModelAdminMiddleware',
     'molo.core.middleware.AdminLocaleMiddleware',
-    'molo.usermetadata.middleware.PeronsaMiddleware'
+    'molo.usermetadata.middleware.PersonaMiddleware'
 
 
 )
