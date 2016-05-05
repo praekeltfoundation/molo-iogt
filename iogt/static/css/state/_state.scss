@@ -1,0 +1,10 @@
+
+@media only screen and (min-device-width: 320px) {
+
+  .l-indent--deep {
+    padding: 18px 24px;
+  }
+
+  @import "_s_navigation";
+  @import "_s_heading";
+}
