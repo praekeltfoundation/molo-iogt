@@ -23,6 +23,11 @@
 .article {
   padding: 24px;
 }
+
+.article li, .article ol {
+  list-style: inherit;
+}
+
 .article__title {
   font-size: 22px;
 }
