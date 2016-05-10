@@ -20,12 +20,19 @@
 }
 
 
+/**
+Might be a conflict between SASS Nesting and BEM naming convention within this block of code & syntax
+- Bundled unminified CSS will be following the principle though
+- Is there a reference of unminified and minified compressed CSS outputs overview?
+Lets find a better working solution here for larger builds
+*/
+
 .article {
   padding: 24px;
-}
 
-.article li, .article ol {
-  list-style: inherit;
+  li, ol {
+    list-style: inherit;
+  }
 }
 
 .article__title {

@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   background: #ededed;
+  a {
+    color: #9630c8;
+  }
 }
-.navigation a {
-  color: #9630c8;
-}
+
+.navigation
 .navigation__item {
   border-bottom: 1px #fff solid;
 }

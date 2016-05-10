@@ -1,28 +1,28 @@
 .languages {
   background: #2d2d2d;
-}
+  a {
+    color: #fff;
+    text-transform: capitalize;
 
-.languages a {
-  color: #fff;
-  text-transform: capitalize;
+    &:after {
+      content: " | ";
+      color: #4d4391;
+    }
 
-  &:after {
-    content: " | ";
-    color: #4d4391;
-  }
-
-  &:last-child:after {
-    content: "";
+    &:last-child:after {
+      content: "";
+    }
   }
 }
 
 .logo {
   display:block;
   background: #4d4391;
-}
-.logo img {
-  vertical-align: middle;
-  width: 65%;
+
+  img {
+    vertical-align: middle;
+    width: 65%;
+  }
 }
 
 .section-image {
@@ -30,8 +30,8 @@
   height: auto;
 }
 
-@import "_heading";
-@import "_article";
-@import "_navigation";
-@import "_search";
-@import "_footer";
+@import "_m-heading";
+@import "_m-article";
+@import "_m-navigation";
+@import "_m-search";
+
