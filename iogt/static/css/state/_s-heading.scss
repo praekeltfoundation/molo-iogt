@@ -1,5 +1,4 @@
 
-
 .heading:before {
   content: " ";
   display: inline-block;
@@ -11,7 +10,7 @@
   transform: rotate(90deg);
 }
 
-.heading--purple:before {
+.heading--navigation:before {
   background-position: -30px 0;
 }
 
