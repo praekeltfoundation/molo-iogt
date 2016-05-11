@@ -5,8 +5,8 @@
     padding: 18px 24px;
   }
 
-  @import "s-navigation";
-  @import "s-heading";
+  @import "_s-navigation";
+  @import "_s-heading";
 }
 
 @media only screen and (min-width: 600px) {
