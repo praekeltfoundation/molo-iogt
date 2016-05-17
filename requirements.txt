@@ -1,4 +1,4 @@
-molo.core==3.0rc10
+molo.core==3.0.3
 gunicorn
 psycopg2
 django-extensions
