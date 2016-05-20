@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 MAINTAINER Milton Madanda <milton@praekelt.com>
-RUN apt-get update && apt-get -y --force-yes install libjpeg-dev zlib1g-dev libxslt1-dev libpq-dev nginx supervisor python-dev python-pip
+RUN apt-get update && apt-get -y --force-yes install libjpeg-dev zlib1g-dev libxslt1-dev libpq-dev nginx redis-server supervisor python-dev python-pip
 RUN apt-get install libffi-dev
 
 RUN pip install --upgrade pip
