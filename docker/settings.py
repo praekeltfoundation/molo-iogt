@@ -32,3 +32,9 @@ STATIC_ROOT = join(PROJECT_ROOT, 'static')
 LOCALE_PATHS = (
     join(PROJECT_ROOT, "locale"),
 )
+
+# SMTP Settings
+EMAIL_HOST = environ.get('EMAIL_HOST', 'localhost')
+EMAIL_PORT = environ.get('EMAIL_PORT', 25)
+EMAIL_HOST_USER = environ.get('EMAIL_HOST_USER', '')
+EMAIL_HOST_PASSWORD = environ.get('EMAIL_HOST_PASSWORD', '')
