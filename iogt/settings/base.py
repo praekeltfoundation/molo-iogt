@@ -13,8 +13,9 @@ from os import environ
 from django.conf import global_settings
 from django.utils.translation import ugettext_lazy as _
 import dj_database_url
+import djcelery
 from celery.schedules import crontab
-
+djcelery.setup_loader()
 # Absolute filesystem path to the Django project directory:
 PROJECT_ROOT = dirname(dirname(dirname(abspath(__file__))))
 
@@ -125,7 +126,9 @@ DATABASES = {'default': dj_database_url.config(
 #         'CONN_MAX_AGE': 600,
 #     }
 # }
-
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_ACCEPT_CONTENT = ['json']
 CELERY_IMPORTS = ('molo.core.tasks')
 BROKER_URL = environ.get('BROKER_URL', 'redis://localhost:6379/0')
 CELERY_RESULT_BACKEND = environ.get(
@@ -227,3 +230,7 @@ ENABLE_SSO = False
 UNICORE_DISTRIBUTE_API = ''
 
 ADMIN_LANGUAGE_CODE = environ.get('ADMIN_LANGUAGE_CODE', "en")
+
+FROM_EMAIL = environ.get('FROM_EMAIL', "support@moloproject.org")
+CONTENT_IMPORT_SUBJECT = environ.get(
+    'CONTENT_IMPORT_SUBJECT', 'Molo Content Import')
