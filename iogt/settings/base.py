@@ -213,7 +213,8 @@ COMPRESS_PRECOMPILERS = [
 LOGIN_URL = 'wagtailadmin_login'
 LOGIN_REDIRECT_URL = 'wagtailadmin_home'
 
-WAGTAIL_SITE_NAME = "base"
+SITE_NAME = environ.get('SITE_NAME', "IoGT")
+WAGTAIL_SITE_NAME = SITE_NAME
 
 # Use Elasticsearch as the search backend for extra performance and better
 # search results:
