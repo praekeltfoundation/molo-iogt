@@ -1,4 +1,4 @@
-from iogt.settings import *
+from iogt.settings import *  # noqa
 
 DATABASES = {
     'default': {
