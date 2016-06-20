@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'wagtail.wagtailredirects',
     'wagtail.wagtailforms',
     'wagtailmodeladmin',
+    'wagtailmedia',
     'wagtail.contrib.settings',
     'wagtailsurveys',
 
