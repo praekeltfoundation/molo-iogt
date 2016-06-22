@@ -1,0 +1,28 @@
+
+.languages {
+  background: #4d4391;
+  border-bottom: 1px solid #ddd;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.language__title {
+  color: #ddd;
+  text-transform: uppercase;
+}
+
+.language__item {
+  color: #fff;
+  padding-left: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  &.active {
+    color: #fff;
+  }
+
+  &:focus,
+  &:hover{
+    text-decoration: underline;
+  }
+}

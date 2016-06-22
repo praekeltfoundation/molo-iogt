@@ -21,7 +21,6 @@
         <meta property="og:image" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta property="og:image:url" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         {% compress css %}
         <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
         {% endcompress %}
@@ -42,13 +41,20 @@
       <!-- End Google Tag Manager -->
       {% endif %}
 
+      
+      <div class="languages">
       {% if languages %}
-      <div class="languages l-indent">
+        {% if settings.core.SiteSettings.logo %}
+          {% image settings.core.SiteSettings.logo height-30 %}
+        {% endif %}
+        <span class="language__title">{% trans "Site Language:" %}</span>
+        {% get_current_language as LANGUAGE_CODE %}
         {% for language in languages %}
-          <a href="{% url 'locale_set' language.locale %}?next={{request.path}}">{{language}}</a>
+          <a href="{% url 'locale_set' language.locale %}?next={{request.path}}?{{ request.GET.urlencode }}" class="language__item {% if LANGUAGE_CODE == language.locale %}active{% endif %}">{{language.locale|language_name_local}}</a>
         {% endfor %}
-      </div>
       {% endif %}
+      </div>
+
       <a href="/" class="logo l-indent">
         {% block logo %}
         <img src="{% static 'logo_1line.png' %}" alt="The Internet of Good Things" />
