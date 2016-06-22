@@ -3,29 +3,11 @@
   position: relative;
 }
 
-.navigation__item:before {
-  content: " ";
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  display:block;
-  background: #666 url(/static/arrows.png) no-repeat;
-  margin-top: 3px; // magic number warning!
+.navigation__link {
+  color: #ccc;
 }
 
-.navigation a {
-  color: #666;
-}
-.navigation__title {
-  padding-left: 34px;
-}
 .navigation__desc {
   display: inline;
   padding-left: 34px;
-}
-
-@each $name, $color in $color_list {
-  .navigation__item--#{$name}:before {
-    background-color: $color;
-  }
 }

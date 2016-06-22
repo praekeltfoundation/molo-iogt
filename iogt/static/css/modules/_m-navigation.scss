@@ -1,22 +1,46 @@
 
 .navigation {
+  background: #ededed;
   margin: 0;
   padding: 0;
-  background: #ededed;
-  a {
-    color: #9630c8;
-  }
 }
 
 .navigation__item {
   border-bottom: 1px #fff solid;
+  padding: 10px;
 }
 
-.navigation__title {
+.navigation__link {
+  display: block;
+}
+
+.navigation__link--title {
+  font-size: 14px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-.navigation__desc {
+.navigation__link--desc {
   font-size: 14px;
   display: none;
+}
+
+.navigation__link--icon {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+
+
+@each $name, $color in $color_list {
+  .navigation__item--#{$name}  {
+    .navigation__link--icon,
+    .navigation__link--title {
+      color: $color;
+    }
+  }
 }

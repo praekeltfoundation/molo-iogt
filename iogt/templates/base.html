@@ -26,6 +26,7 @@
         <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
         {% endcompress %}
         {% block extra_css %}{% endblock %}
+        <script src="https://use.fontawesome.com/57021264f5.js"></script>
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
@@ -70,7 +71,6 @@
         <div>&copy; The Internet of Good Things</div>
           {% footer_page %}
       </div>
-
       {% endblock %}
       {% block extra_js %}{% endblock %}
     </body>
