@@ -47,10 +47,10 @@
       <div class="languages">
       {% if languages %}
         {% get_current_language as LANGUAGE_CODE %}
-    
-        <span class="language__title language__title--current">{% trans "Site Language:" %}  </span>
-        <span class="language__title">{{LANGUAGE_CODE|language_name_local}}</span>
-        
+        <div class="language__current">
+          <span class="language__title language__title--current">{% trans "Site Language:" %}  </span>
+          <span class="language__title">{{LANGUAGE_CODE|language_name_local}}</span>
+        </div>
         <label for="language_dropdown" class="language__dropdown-button">
           <span class="language__title">Change Language</span>
           <span class="language__title--icon">

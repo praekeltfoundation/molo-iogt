@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 
     'molo.core',
     'molo.polls',
+    'molo.profiles',
     'iogt',
 
     'wagtail.wagtailcore',

@@ -6,6 +6,11 @@
   padding: 10px;
 }
 
+.language__current {
+  display: inline-block;
+  max-width: 140px;
+}
+
 .language__title {
   color: #fff;
   text-transform: uppercase;
