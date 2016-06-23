@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load static core_tags molo_survey_tags %}
+{% load static core_tags molo_survey_tags poll_votings %}
 
 {% block logo %}
 <img src="{% static 'logo_2line.png' %}" alt="The Internet of Good Things" />
@@ -8,5 +8,6 @@
 
 {% block content %}
     {% latest_listing_homepage %}
-    {# {% surveys_list %} #}
+    {% poll_page %}
+    {% surveys_list %} 
 {% endblock %}

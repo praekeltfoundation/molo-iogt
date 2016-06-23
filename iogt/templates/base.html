@@ -25,7 +25,9 @@
         <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
         {% endcompress %}
         {% block extra_css %}{% endblock %}
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/57021264f5.js"></script>
+        <script src="{% static 'js/main.js' %}"></script>
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
@@ -44,20 +46,27 @@
       
       <div class="languages">
       {% if languages %}
-        <span class="language__title">{% trans "Site Language:" %}</span>
-        <label class="language__dropdown-button">
+        {% get_current_language as LANGUAGE_CODE %}
+    
+        <span class="language__title language__title--current">{% trans "Site Language:" %}  </span>
+        <span class="language__title">{{LANGUAGE_CODE|language_name_local}}</span>
+        
+        <label for="language_dropdown" class="language__dropdown-button">
           <span class="language__title">Change Language</span>
           <span class="language__title--icon">
             <i class="fa fa-angle-down" aria-hidden="true"></i>
           </span>
         </label>
+
         <ul class="language-list">
-          <li class="language-list__item">
-            {% get_current_language as LANGUAGE_CODE %}
+          <input id="language_dropdown" type="checkbox" name="language-dropdown">
+          <div class="language-list__toggle">
               {% for language in languages %}
+              <li class="language-list__item">
                 <a href="{% url 'locale_set' language.locale %}?next={{request.path}}?{{ request.GET.urlencode }}" class="language-anchor {% if LANGUAGE_CODE == language.locale %}active{% endif %}">{{language.locale|language_name_local}}</a>
+              </li>
               {% endfor %}
-          </li>
+          </div>
         </ul>
       {% endif %}
       </div>

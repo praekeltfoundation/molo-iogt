@@ -7,14 +7,12 @@
 }
 
 .language__title {
-  color: #ddd;
+  color: #fff;
   text-transform: uppercase;
 }
 
-.language__dropdown-button {
-  float: right;
-  cursor: pointer;
-  
+.language__title--current {
+  color: #ddd;
 }
 
 .language__title--icon {
@@ -22,22 +20,37 @@
   padding: 0 5px;
 }
 
+.language__dropdown-button {
+  float: right;
+  cursor: pointer;
+
+  span {
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
+}
+
 .language-list {
   padding: 0;
   margin: 0;
 }
 
-.language-list__item {}
-
+.language-list__item {
+  padding: 10px 18px 0;
+  text-align: right;
+}
 
 .language-anchor {
-  color: #fff;
+  color: #ddd;
   padding-left: 2px;
   text-decoration: none;
   text-transform: uppercase;
   
   &.active {
     color: #fff;
+    text-decoration: underline;
   }
 
   &:focus,
@@ -45,3 +58,18 @@
     text-decoration: underline;
   }
 }
+
+/*TOGGLE*/
+
+#language_dropdown {
+  display: none;
+}
+
+.language-list input + * {
+  display: none;
+}
+
+.language-list input:checked + * {
+  display: block;
+}
+

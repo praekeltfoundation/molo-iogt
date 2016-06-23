@@ -33,6 +33,9 @@ urlpatterns += patterns(
                            app_name='molo.usermetadata')),
 
     url(r'', include('molo.core.urls')),
+    url(r'^polls/', include('molo.polls.urls', 
+                            namespace='molo.polls', 
+                            app_name='molo.polls')),
     url(r'', include(wagtail_urls)),
 )
 
