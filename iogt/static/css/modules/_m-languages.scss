@@ -11,7 +11,26 @@
   text-transform: uppercase;
 }
 
-.language__item {
+.language__dropdown-button {
+  float: right;
+  cursor: pointer;
+  
+}
+
+.language__title--icon {
+  color: #fff;
+  padding: 0 5px;
+}
+
+.language-list {
+  padding: 0;
+  margin: 0;
+}
+
+.language-list__item {}
+
+
+.language-anchor {
   color: #fff;
   padding-left: 2px;
   text-decoration: none;

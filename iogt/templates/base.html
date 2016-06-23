@@ -25,6 +25,7 @@
         <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
         {% endcompress %}
         {% block extra_css %}{% endblock %}
+        <script src="https://use.fontawesome.com/57021264f5.js"></script>
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
@@ -43,14 +44,21 @@
       
       <div class="languages">
       {% if languages %}
-        {% if settings.core.SiteSettings.logo %}
-          {% image settings.core.SiteSettings.logo height-30 %}
-        {% endif %}
         <span class="language__title">{% trans "Site Language:" %}</span>
-        {% get_current_language as LANGUAGE_CODE %}
-        {% for language in languages %}
-          <a href="{% url 'locale_set' language.locale %}?next={{request.path}}?{{ request.GET.urlencode }}" class="language__item {% if LANGUAGE_CODE == language.locale %}active{% endif %}">{{language.locale|language_name_local}}</a>
-        {% endfor %}
+        <label class="language__dropdown-button">
+          <span class="language__title">Change Language</span>
+          <span class="language__title--icon">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </label>
+        <ul class="language-list">
+          <li class="language-list__item">
+            {% get_current_language as LANGUAGE_CODE %}
+              {% for language in languages %}
+                <a href="{% url 'locale_set' language.locale %}?next={{request.path}}?{{ request.GET.urlencode }}" class="language-anchor {% if LANGUAGE_CODE == language.locale %}active{% endif %}">{{language.locale|language_name_local}}</a>
+              {% endfor %}
+          </li>
+        </ul>
       {% endif %}
       </div>
 
