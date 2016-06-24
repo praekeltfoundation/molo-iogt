@@ -64,17 +64,4 @@
   }
 }
 
-/*TOGGLE*/
-
-#language_dropdown {
-  display: none;
-}
-
-.language-list input + * {
-  display: none;
-}
-
-.language-list input:checked + * {
-  display: block;
-}
 
