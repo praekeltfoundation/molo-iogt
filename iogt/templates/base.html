@@ -25,9 +25,6 @@
         <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
         {% endcompress %}
         {% block extra_css %}{% endblock %}
-
-        
-        <script src="https://use.fontawesome.com/57021264f5.js"></script>
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
@@ -44,18 +41,16 @@
       <!-- End Google Tag Manager -->
       {% endif %}
       
-      <div class="languages">
+     
       {% if languages %}
+       <div class="languages">
         {% get_current_language as LANGUAGE_CODE %}
         <div class="language__current">
-          <span class="language__title language__title--current">{% trans "Site Language:" %}  </span>
+          <span class="language__title language__title--label">{% trans "Site Language:" %}</span>
           <span class="language__title">{{LANGUAGE_CODE|language_name_local}}</span>
         </div>
-        <label for="language_dropdown" class="language__dropdown-button">
-          <span class="language__title">Change Language</span>
-          <span class="language__title--icon">
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-          </span>
+        <label for="language_dropdown" class="language__title language__dropdown-button">
+          {% trans "Change Language:" %}
         </label>
 
         <ul class="language-list">
@@ -68,8 +63,9 @@
               {% endfor %}
           </div>
         </ul>
-      {% endif %}
       </div>
+      {% endif %}
+     
 
       <a href="/" class="logo l-indent">
         {% block logo %}

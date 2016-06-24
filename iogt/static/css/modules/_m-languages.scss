@@ -16,24 +16,21 @@
   text-transform: uppercase;
 }
 
-.language__title--current {
+.language__title--label {
   color: #ddd;
-}
-
-.language__title--icon {
-  color: #fff;
-  padding: 0 5px;
 }
 
 .language__dropdown-button {
   float: right;
   cursor: pointer;
-
-  span {
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
+  &:after {
+    content: "";
+    display: inline-block;
+    color: #fff;
+    padding: 0 5px;
+  }
+  &:hover {
+    text-decoration: underline;
   }
 }
 
