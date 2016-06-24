@@ -1,15 +1,21 @@
-{% load wagtailcore_tags i18n %}
+{% load wagtailcore_tags static i18n %}
 
 {% if sections %}
-<ul class="navigation">
-  {% for section in sections %}
-  <li class="navigation__item navigation__item{{section.get_effective_extra_style_hints}}">
-    <a class="navigation__link" href="{% pageurl section %}">
-      <span class="navigation__link--title">{{section.title}}</span>
-      <span class="navigation__link--desc">{{section.description}}</span>
-      <span class="navigation__link--icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+<div class="navigation">
+  <div class="navigation-heading">
+    <a href="#">
+      <img src="{% static 'img/menu-logo.png' %}" alt="The Internet of Good Things" />
     </a>
-  </li>
-  {% endfor %}
-</ul>
+  </div>
+  <ul class="navigation-list">
+    {% for section in sections %}
+    <li class="navigation-list__item navigation__item{{section.get_effective_extra_style_hints}}">
+      <a href="{% pageurl section %}">
+        <span class="navigation-list__item--title">{{section.title}}</span>
+        {{section.description}}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endif %}

@@ -1,45 +1,48 @@
 
 .navigation {
-  background: #ededed;
+  background: #f0f0f0;
+  font-size: 13px;
+}
+
+.navigation-heading {
+  border-top: 2px solid #4d4391;
+  border-bottom: 1px solid #B0B9BB;
+}
+
+.navigation-list {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
-.navigation__item {
-  border-bottom: 1px #fff solid;
+.navigation-list__item  {
+  border-bottom: 1px solid #B0B9BB;
   padding: 10px;
+
+  a {
+     color: #6B6B6B;
+     display: block; 
+
+     &:after {
+      content: " > ";
+      display: inline-block;
+      float: right;
+      vertical-align: middle;
+    }
+  }
 }
 
-.navigation__link {
-  display: block;
-}
-
-.navigation__link--title {
+.navigation-list__item--title {
+  display: block; 
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.navigation__link--desc {
-  font-size: 14px;
-  display: none;
-}
-
-.navigation__link--icon {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  position: absolute;
-  right: 10px;
-  top: 5px;
-}
-
-
 
 @each $name, $color in $color_list {
   .navigation__item--#{$name}  {
-    .navigation__link--icon,
-    .navigation__link--title {
+   .navigation-list__item--title {
       color: $color;
     }
   }
