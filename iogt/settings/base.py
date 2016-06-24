@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'modelcluster',
 
     'molo.core',
-    'molo.polls',
     'molo.profiles',
     'iogt',
 
