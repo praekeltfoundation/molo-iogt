@@ -1,6 +1,6 @@
 .languages {
-  background: #4d4391;
-  color: #fff;
+  background: $victoria;
+  color: $white;
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -26,14 +26,14 @@
 
 
 .language-selection {
-  background: #000;
+  background: $east_bay;
   border-bottom: 1px solid #685fa1;
 }
 .language-list__item {
   text-align: right;
   padding: 20px;
   a {
-    color: #fff;
+    color: $white;
 
     &:after {
       content: " ▶ ";
