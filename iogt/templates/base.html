@@ -47,7 +47,7 @@
       <div class="languages">
       {% if languages %}
         {% get_current_language as LANGUAGE_CODE %}
-        <div class="language_current">
+        <div class="language__current">
           <span class="language__title language__title--current">{% trans "Site Language:" %}  </span>
           <span class="language__title">{{LANGUAGE_CODE|language_name_local}}</span>
         </div>
