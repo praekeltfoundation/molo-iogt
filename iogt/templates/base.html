@@ -40,31 +40,34 @@
       })(window,document,'script','dataLayer','{{settings.core.SiteSettings.ga_tag_manager}}');</script>
       <!-- End Google Tag Manager -->
       {% endif %}
-      
-     
+
+
       {% if languages %}
-       <div class="languages">
-        {% get_current_language as LANGUAGE_CODE %}
-        <div class="language__current">
-          <span class="language__title language__title--label">{% trans "Site Language:" %}</span>
-          <span class="language__title">{{LANGUAGE_CODE|language_name_local}}</span>
+      <div class="languages">
+        <div class="language-bar">
+          <span class="current-language">
+            {% trans "Language" %}:
+            {% get_current_language as LANGUAGE_CODE %}
+            {{ LANGUAGE_CODE|language_name_local }}
+          </span>
+          <label class="select-language" for="language-selection__toggle">
+            {% trans "Change Language" %}
+          </label>
         </div>
-        <label for="language_dropdown" class="language__title language__dropdown-button">
-          {% trans "Change Language:" %}
-        </label>
-        <div class="language__toggle">
-          <input id="language_dropdown" type="checkbox" name="language-dropdown">
+
+        <div class="language-selection">
+          <input id="language-selection__toggle" type="checkbox">
           <ul class="language-list">
-              {% for language in languages %}
-              <li class="language-list__item">
-                <a href="{% url 'locale_set' language.locale %}?next={{request.path}}?{{ request.GET.urlencode }}" class="language-anchor {% if LANGUAGE_CODE == language.locale %}active{% endif %}">{{language.locale|language_name_local}}</a>
-              </li>
-              {% endfor %}
+            {% for language in languages %}
+            <li class="language-list__item {% if LANGUAGE_CODE == language.locale %}language-list__item--active{% endif %}">
+              <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
+            </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
       {% endif %}
-     
+
 
       <a href="/" class="logo l-indent">
         {% block logo %}
