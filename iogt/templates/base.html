@@ -52,17 +52,16 @@
         <label for="language_dropdown" class="language__title language__dropdown-button">
           {% trans "Change Language:" %}
         </label>
-
-        <ul class="language-list">
+        <div class="language__toggle">
           <input id="language_dropdown" type="checkbox" name="language-dropdown">
-          <div class="language-list__toggle">
+          <ul class="language-list">
               {% for language in languages %}
               <li class="language-list__item">
                 <a href="{% url 'locale_set' language.locale %}?next={{request.path}}?{{ request.GET.urlencode }}" class="language-anchor {% if LANGUAGE_CODE == language.locale %}active{% endif %}">{{language.locale|language_name_local}}</a>
               </li>
               {% endfor %}
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
       {% endif %}
      

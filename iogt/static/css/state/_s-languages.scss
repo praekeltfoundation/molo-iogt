@@ -4,10 +4,10 @@
   display: none;
 }
 
-.language-list input + * {
+.language__toggle input + * {
   display: none;
 }
 
-.language-list input:checked + * {
+.language__toggle input:checked + * {
   display: block;
 }
