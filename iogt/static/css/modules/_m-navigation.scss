@@ -20,15 +20,15 @@
   padding: 10px;
 
   a {
-     color: #6B6B6B;
-     display: block; 
+    color: #6B6B6B;
+    display: inline-block; 
+  }
 
-     &:after {
-      content: " > ";
-      display: inline-block;
-      float: right;
-      vertical-align: middle;
-    }
+  &:after {
+    content: " > ";
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
   }
 }
 
