@@ -25,10 +25,11 @@
   }
 
   &:after {
-    content: " > ";
+    content: " ▶ ";
     display: inline-block;
+    padding: 10px 0 0;
     float: right;
-    vertical-align: middle;
+    
   }
 }
 
@@ -45,5 +46,10 @@
    .navigation-list__item--title {
       color: $color;
     }
+
+    &:after {
+      color: $color;
+    }
+
   }
 }
