@@ -1,0 +1,29 @@
+
+.poll-choices__item {
+  padding: 10px 0;
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+}
+.poll-choice__submit {
+  padding: 10px;
+  background: #eeeeee;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+  margin: 5px 0;
+
+  &:hover,
+  &:focus {
+    color: #67666b;
+    border-radius: 2px;
+    text-decoration: none;
+    background: #D7D5D5;
+  }
+}
