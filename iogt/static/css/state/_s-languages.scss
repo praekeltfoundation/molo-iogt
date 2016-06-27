@@ -1,0 +1,17 @@
+/*TOGGLE*/
+
+#language-selection__toggle {
+  display: none;
+}
+
+.language-selection input + * {
+  display: none;
+}
+
+.language-selection input:checked + * {
+  display: block;
+}
+
+.language-list__item--active a {
+  text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+.languages {
+  background: $victoria;
+  color: #ffffff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+
+.language-bar {
+  padding: 10px 20px;
+  overflow: auto;
+
+}
+.current-language, .select-language {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+.select-language {
+  text-align: right;
+
+  &:after {
+    content: " ▼ ";
+  }
+}
+
+
+.language-selection {
+  background: $east_bay;
+  border-bottom: 1px solid #685fa1;
+}
+.language-list__item {
+  text-align: right;
+  padding: 20px;
+  a {
+    color: #ffffff;
+
+    &:after {
+      content: " ▶ ";
+    }
+  }
+}

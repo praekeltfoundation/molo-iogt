@@ -1,20 +1,4 @@
 
-.languages {
-  background: #2d2d2d;
-  a {
-    color: #fff;
-    text-transform: capitalize;
-
-    &:after {
-      content: " | ";
-      color: #4d4391;
-    }
-
-    &:last-child:after {
-      content: "";
-    }
-  }
-}
 
 .logo {
   display:block;
@@ -30,7 +14,7 @@
   width: 100%;
   height: auto;
 }
-
+@import "_m-languages";
 @import "_m-heading";
 @import "_m-article";
 @import "_m-menu";
