@@ -21,7 +21,6 @@
         <meta property="og:image" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta property="og:image:url" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         {% compress css %}
         <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
         {% endcompress %}
@@ -42,13 +41,34 @@
       <!-- End Google Tag Manager -->
       {% endif %}
 
+
       {% if languages %}
-      <div class="languages l-indent">
-        {% for language in languages %}
-          <a href="{% url 'locale_set' language.locale %}?next={{request.path}}">{{language}}</a>
-        {% endfor %}
+      <div class="languages">
+        <div class="language-bar">
+          <span class="current-language">
+            {% trans "Language" %}:
+            {% get_current_language as LANGUAGE_CODE %}
+            {{ LANGUAGE_CODE|language_name_local }}
+          </span>
+          <label class="select-language" for="language-selection__toggle">
+            {% trans "Change Language" %}
+          </label>
+        </div>
+
+        <div class="language-selection">
+          <input id="language-selection__toggle" type="checkbox">
+          <ul class="language-list">
+            {% for language in languages %}
+            <li class="language-list__item {% if LANGUAGE_CODE == language.locale %}language-list__item--active{% endif %}">
+              <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
       {% endif %}
+
+
       <a href="/" class="logo l-indent">
         {% block logo %}
         <img src="{% static 'logo_1line.png' %}" alt="The Internet of Good Things" />
