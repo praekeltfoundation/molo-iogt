@@ -1,7 +1,7 @@
 
 {% load i18n %}
 
-<div class="search l-indent">
+<div class="search">
   <form action="{% url 'search' %}" id="search-form">
     <input placeholder="{% trans "Search the site..." %}" name="q" type="text" value="{{search_query}}">
     <input type="submit" value="{% trans "SEARCH"%}">

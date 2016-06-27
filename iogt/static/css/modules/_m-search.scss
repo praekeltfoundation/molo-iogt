@@ -2,10 +2,11 @@
 .search {
   background: #f0f0f0;
   position: relative;
+  padding: 15px;
 
   input[type="text"] {
     width: 90%;
-    padding: 10px 12px;
+    padding: 8px 12px;
     border-radius: 4px;
   }
 
@@ -14,7 +15,7 @@
     text-align: left;
     position: absolute;
     right: 23px;
-    top: 6px;
+    top: 10px;
     background-size: 70%;
     height: 53px;
     width: 53px;
