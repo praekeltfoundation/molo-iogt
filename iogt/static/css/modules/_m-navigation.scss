@@ -2,6 +2,9 @@
 .navigation {
   background: #f0f0f0;
   font-size: 13px;
+  .navigation-list__item:after {
+      padding: 10px 0 0;
+  }
 }
 
 .navigation-heading {
@@ -9,36 +12,34 @@
   border-bottom: 1px solid #B0B9BB;
   a {
     display: block;
-    padding: 0 24px;
+    padding:10px 12px;
   }
 
   //Best solution for this?
   img {
-    width: 50%;
+    width: 45%;
   }
 }
 
 .navigation-list {
-  margin: 0;
-  padding: 0;
   position: relative;
 }
 
 .navigation-list__item  {
   border-bottom: 1px solid #B0B9BB;
-  padding: 10px 24px;
+  padding: 4px 19px;
+  color: #07292F;
 
   a {
-    color: #6B6B6B;
+    color: #07292F;
     display: inline-block; 
   }
 
   &:after {
     content: " ▶ ";
     display: inline-block;
-    padding: 10px 0 0;
     float: right;
-    
+    padding: 3px 0 0;
   }
 }
 

@@ -67,9 +67,11 @@
       {% endblock %}
 
       {% block footer %}
-      <div class="footer l-indent">
-        <div>&copy; The Internet of Good Things</div>
+      <div class="footer">
           {% footer_page %}
+          <div class="copyright">
+            <p>&copy; The Internet of Good Things</p>
+          </div>
       </div>
       {% endblock %}
       {% block extra_js %}{% endblock %}
