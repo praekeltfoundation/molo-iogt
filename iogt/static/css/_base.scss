@@ -34,3 +34,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   font-weight: bold;
 }
+
+input[type="text"] {
+  border: 1px solid #b0b9bb;
+  border-radius: 4px;
+}
+ 
+input[type="submit"] {
+  border: none;
+  color: #000;
+  cursor: pointer;
+  padding: 0 8px;
+  text-transform: uppercase;
+}
