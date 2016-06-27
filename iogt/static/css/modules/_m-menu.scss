@@ -7,6 +7,9 @@
   a {
     color: #07292F;
     display: inline-block; 
+    font-size: $font-small;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   &:after {
@@ -17,9 +20,10 @@
   }
 }
  
-.menu-list__title {
-  display: block; 
-  font-size: $font-small;
-  font-weight: bold;
-  text-transform: uppercase;
+.menu-list__desc {    
+  color: #727172;
+  display: block;
+  text-transform: initial;
+  font-weight: normal;
+  font-size: $font-x-small;
 }

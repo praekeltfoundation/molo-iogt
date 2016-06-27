@@ -5,9 +5,7 @@
   <ul class="menu-list">
     {% for page in footers %}
       <li class="menu-list__item">
-        <a href="{% pageurl page %}">
-          <span class="menu-list__title">{{page.title}}</span>
-        </a>
+        <a href="{% pageurl page %}">{{page.title}}</a>
       </li>
     {% endfor %}
   </ul>
