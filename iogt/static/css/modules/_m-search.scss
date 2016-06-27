@@ -4,19 +4,12 @@
   position: relative;
   padding: 15px;
 
-  input[type="text"] {
-    width: 90%;
-    padding: 8px 12px;
-    border-radius: 4px;
-  }
-
   input[type="submit"] {
     background: url('/static/img/search-submit.png') no-repeat center center;
-    text-align: left;
+    background-size: 70%;
     position: absolute;
     right: 23px;
     top: 10px;
-    background-size: 70%;
     height: 53px;
     width: 53px;
     font-size: 0;

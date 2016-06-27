@@ -35,9 +35,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"],
+input[type="email"], 
+input[type="search"] {
   border: 1px solid #b0b9bb;
   border-radius: 4px;
+  padding: 8px 12px;
+  width: 90%;
 }
  
 input[type="submit"] {
