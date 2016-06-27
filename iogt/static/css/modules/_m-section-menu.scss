@@ -1,0 +1,22 @@
+
+.section-menu {
+  background: #f0f0f0;
+  border-top: 2px solid #4d4391;
+  font-size: $font-small;
+
+  .menu-list__item:after {
+      padding: 10px 0 0;
+  }
+}
+
+.section-heading {
+  border-bottom: 1px solid #B0B9BB;
+  a {
+    display: block;
+    padding: 10px 12px;
+  }
+
+  img {
+    width: 45%;
+  }
+}

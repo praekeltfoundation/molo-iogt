@@ -1,0 +1,29 @@
+.menu-list__item  {
+  border-bottom: 1px solid #B0B9BB;
+  color: #07292F;
+  font-size: 12px;
+  padding: 5px 20px;
+
+  a {
+    color: #07292F;
+    display: inline-block; 
+    font-size: $font-small;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &:after {
+    content: " ▶ ";
+    display: inline-block;
+    float: right;
+    padding: 3px 0 0;
+  }
+}
+ 
+.menu-list__desc {    
+  color: #727172;
+  display: block;
+  text-transform: initial;
+  font-weight: normal;
+  font-size: $font-x-small;
+}

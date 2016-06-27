@@ -1,20 +1,19 @@
-{% load wagtailcore_tags i18n %}
+{% load wagtailcore_tags static i18n %}
 
 {% if sections %}
-<h2 class="heading heading--navigation l-indent--deep">{% trans 'Explore IoGT' %}</h2>
-<ul class="navigation">
-  {% for section in sections %}
-  <li class="l-indent--deep navigation__item navigation__item{{section.get_effective_extra_style_hints}}">
-    <a href="{% pageurl section %}">
-      <div class="navigation__title">{{section.title}}</div>
-      <div class="navigation__desc">{{section.description}}</div>
-    </a>
-  </li>
-  {% endfor %}
-  <li class="l-indent--deep navigation__item navigation__item{{section.get_effective_extra_style_hints}}">
-    <a href="/">
-      <div class="navigation__title">{% trans "Home" %}</div>
-    </a>
-  </li>
-</ul>
+<div class="section-menu">
+  <div class="section-heading">
+    <a href="#"><img src="{% static 'img/menu_logo.png' %}" alt="The Internet of Good Things" /></a>
+  </div>
+  <ul class="menu-list">
+    {% for section in sections %}
+    <li class="menu-list__item menu-list__item{{section.get_effective_extra_style_hints}}">
+      <a href="{% pageurl section %}">
+        {{section.title}}
+        <span class="menu-list__desc">{{section.description}}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endif %}

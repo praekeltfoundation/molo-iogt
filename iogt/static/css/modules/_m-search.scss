@@ -1,4 +1,23 @@
 
-.search {
-  text-align: center;
+#search-form {
+  position: relative;
 }
+
+.search {
+  background: #f0f0f0;
+  position: relative;
+  padding: 15px;
+
+  input[type="submit"] {
+    background: url('/static/img/search-submit.png') no-repeat 45% 3px;
+    background-size: 70%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 53px;
+    width: 53px;
+    font-size: 0;
+  }
+}
+
+

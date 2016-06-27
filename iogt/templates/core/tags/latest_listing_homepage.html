@@ -6,10 +6,11 @@
 
 <ul class="article-list">
 {% for article in articles %}
-  <li class="article-list__item">
+    <li class="article-list__item">
     {% if article.image %}
     <a href="{% pageurl article %}">{% image article.image width-80 class="article-list__image"%}</a>
     {% endif %}
+
     <a href="{% pageurl article %}">
       <h3 class="article-list__title article-list__title{{article.get_parent_section.get_effective_extra_style_hints}}">{{article.title}}</h3>
     </a>
