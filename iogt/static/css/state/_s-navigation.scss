@@ -1,13 +1,13 @@
 
-.navigation__item {
-  position: relative;
-}
+@each $name, $color in $color_list {
+  .navigation__item--#{$name}  {
+   .navigation-list__item--title {
+      color: $color;
+    }
+    
+    &:after {
+      color: $color;
+    }
 
-.navigation__link {
-  color: #ccc;
-}
-
-.navigation__desc {
-  display: inline;
-  padding-left: 34px;
+  }
 }

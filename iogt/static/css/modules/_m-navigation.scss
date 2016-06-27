@@ -7,6 +7,15 @@
 .navigation-heading {
   border-top: 2px solid #4d4391;
   border-bottom: 1px solid #B0B9BB;
+  a {
+    display: block;
+    padding: 0 24px;
+  }
+
+  //Best solution for this?
+  img {
+    width: 50%;
+  }
 }
 
 .navigation-list {
@@ -17,7 +26,7 @@
 
 .navigation-list__item  {
   border-bottom: 1px solid #B0B9BB;
-  padding: 10px;
+  padding: 10px 24px;
 
   a {
     color: #6B6B6B;
@@ -33,23 +42,10 @@
   }
 }
 
+//There might be a better solution this?
 .navigation-list__item--title {
   display: block; 
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-
-@each $name, $color in $color_list {
-  .navigation__item--#{$name}  {
-   .navigation-list__item--title {
-      color: $color;
-    }
-
-    &:after {
-      color: $color;
-    }
-
-  }
 }
