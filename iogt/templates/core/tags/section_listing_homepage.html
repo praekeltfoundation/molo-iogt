@@ -1,15 +1,15 @@
 {% load wagtailcore_tags static i18n %}
 
 {% if sections %}
-<div class="navigation">
-  <div class="navigation-heading">
+<div class="section-menu">
+  <div class="section-heading">
     <a href="#"><img src="{% static 'img/menu_logo.png' %}" alt="The Internet of Good Things" /></a>
   </div>
-  <ul class="navigation-list">
+  <ul class="menu-list">
     {% for section in sections %}
-    <li class="navigation-list__item navigation__item{{section.get_effective_extra_style_hints}}">
+    <li class="menu-list__item menu-list__item{{section.get_effective_extra_style_hints}}">
       <a href="{% pageurl section %}">
-        <span class="navigation-list__item--title">{{section.title}}</span>
+        <span class="menu-list__item--title">{{section.title}}</span>
         {{section.description}}
       </a>
     </li>

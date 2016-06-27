@@ -1,34 +1,8 @@
-
-.navigation {
-  background: #f0f0f0;
-  font-size: 13px;
-  .navigation-list__item:after {
-      padding: 10px 0 0;
-  }
-}
-
-.navigation-heading {
-  border-top: 2px solid #4d4391;
+.menu-list__item  {
   border-bottom: 1px solid #B0B9BB;
-  a {
-    display: block;
-    padding:10px 12px;
-  }
-
-  //Best solution for this?
-  img {
-    width: 45%;
-  }
-}
-
-.navigation-list {
-  position: relative;
-}
-
-.navigation-list__item  {
-  border-bottom: 1px solid #B0B9BB;
-  padding: 4px 19px;
   color: #07292F;
+  font-size: 12px;
+  padding: 5px 20px;
 
   a {
     color: #07292F;
@@ -42,9 +16,10 @@
     padding: 3px 0 0;
   }
 }
+ 
 
 //There might be a better solution this?
-.navigation-list__item--title {
+.menu-list__item--title {
   display: block; 
   font-size: 14px;
   font-weight: bold;
