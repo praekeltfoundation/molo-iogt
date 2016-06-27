@@ -6,9 +6,9 @@
 
 <ul class="article-list">
 {% for article in articles %}
-  <li class="article-list__item">
+    <li class="article-list__item">
     {% if article.image %}
-      <a href="{% pageurl article %}">{% image article.image width-80 class="article-list__image"%}</a>
+    <a href="{% pageurl article %}">{% image article.image width-80 class="article-list__image"%}</a>
     {% endif %}
 
     <a href="{% pageurl article %}">
