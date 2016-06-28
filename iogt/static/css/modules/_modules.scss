@@ -1,3 +1,8 @@
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 41%;
+}
 
 
 .section-image {
@@ -5,7 +10,6 @@
   height: auto;
 }
 
-@import "_m-logo";
 @import "_m-languages";
 @import "_m-heading";
 @import "_m-article";
