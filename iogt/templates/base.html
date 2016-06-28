@@ -77,7 +77,14 @@
       </a>
 
       <a href="#search-form" class="header-nav__item">{% trans "Search" %}</a>
-      <a href="#menu" class="header-nav__item">{% trans "Menu" %}</a>
+
+      {% if not user.is_authenticated %}
+      <a href="{% url 'molo.profiles:user_register' %}" class="header-nav__item">{% trans "Join" %}</a>
+      {% else %}
+      <a href="{% url 'molo.profiles:view_my_profile' %}" class="header-nav__item">{% trans "Profile" %}</a>
+      {% endif %}
+
+      <a href="#section_menu" class="header-nav__item">{% trans "Menu" %}</a>
     </div>
   </div>
 
