@@ -3,8 +3,17 @@
   background: #ffffff;
 }
 
-.profile_label {
+.profile__fieldset {
+  margin: 15px 0;
+}
+
+.profile__label {
+  color: $victoria;
   display: block;
+  font-size: $font-x-small;
+  padding: 0 0 5px 0;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .button__pill {
