@@ -1,19 +1,11 @@
 
 
-.logo {
-  display:block;
-  background: #4d4391;
-
-  img {
-    vertical-align: middle;
-    width: 65%;
-  }
-}
-
 .section-image {
   width: 100%;
   height: auto;
 }
+
+@import "_m-logo";
 @import "_m-languages";
 @import "_m-heading";
 @import "_m-article";

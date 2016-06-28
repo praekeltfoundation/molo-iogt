@@ -68,12 +68,18 @@
       </div>
       {% endif %}
 
-
-      <a href="/" class="logo l-indent">
-        {% block logo %}
-        <img src="{% static 'logo_1line.png' %}" alt="The Internet of Good Things" />
-        {% endblock %}
+  <div class="header">
+    <div class="header-nav">
+      <a href="/">
+       {% block logo %}
+       <img class="logo" src="{% static 'img/iogt_logo.png' %}" alt="The Internet of Good Things" />
+       {% endblock %}
       </a>
+
+      <a href="#search-form" class="header-nav__item">{% trans "Search" %}</a>
+      <a href="#menu" class="header-nav__item">{% trans "Menu" %}</a>
+    </div>
+  </div>
 
       {% block content %}{% endblock %}
 
