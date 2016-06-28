@@ -1,4 +1,14 @@
 
+.super-heading {
+  background: $victoria;
+}
+
+.super-heading__title {
+  color: #ffffff;
+  font-size: $font-large;
+  text-transform: capitalize;
+}
+
 .heading {
   background: #eee;
 }
