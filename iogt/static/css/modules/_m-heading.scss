@@ -1,10 +1,7 @@
 
-.super-heading {
-  background: $victoria;
-}
-
 .heading {
   background: #eee;
+  padding: 0 0 15px;
 }
 
 .heading--large {
@@ -12,6 +9,7 @@
 }
 
 .heading--profiles {
+  background: $victoria;
   color: #ffffff;
   font-size: $font-large;
   text-transform: capitalize;
