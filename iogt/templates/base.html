@@ -1,4 +1,4 @@
-{% load wagtailcore_tags compress static wagtailuserbar core_tags i18n %}
+{% load wagtailcore_tags compress static wagtailuserbar core_tags i18n persona_tags %}
 {% load wagtailsettings_tags wagtailimages_tags %}
 {% get_settings %}
 
@@ -31,7 +31,8 @@
 
       {% if settings.core.SiteSettings.ga_tag_manager %}
       <!-- Google Tag Manager -->
-      <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{settings.core.SiteSettings.ga_tag_manager}}"
+      {% persona_selected as persona_selected_value %}
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{settings.core.SiteSettings.ga_tag_manager}}{% if persona_selected_value%}&persona={{ persona_selected_value }}&event=persona{% endif %}"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -39,6 +40,12 @@
       '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','{{settings.core.SiteSettings.ga_tag_manager}}');</script>
       <!-- End Google Tag Manager -->
+
+      {% if persona_selected_value %}
+        <script type="text/javascript">
+          dataLayer.push({'persona': '{{ persona_selected_value }}', 'event': 'persona'});
+        </script>
+      {% endif %}
       {% endif %}
 
 
