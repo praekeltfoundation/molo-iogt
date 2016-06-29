@@ -7,20 +7,7 @@
   font-size: $font-x-medium;
 }
 
-.profile__fieldset {
-  margin: 15px 0;
-}
-
-.profile__label {
-  color: $victoria;
-  display: block;
-  font-size: $font-x-small;
-  padding: 0 0 5px 0;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.profile__label--terms {
+.label__terms {
   display: inline-block;
 }
 

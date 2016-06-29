@@ -35,6 +35,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+label {
+  color: $victoria;
+  display: block;
+  font-size: $font-x-small;
+  padding: 0 0 5px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+fieldset {
+  margin: 15px 0;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"], 

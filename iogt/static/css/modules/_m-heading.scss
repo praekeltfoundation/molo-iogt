@@ -3,18 +3,18 @@
   background: $victoria;
 }
 
-.super-heading__title {
-  color: #ffffff;
-  font-size: $font-large;
-  text-transform: capitalize;
-}
-
 .heading {
   background: #eee;
 }
 
 .heading--large {
   font-size: 32px;
+}
+
+.heading--profiles {
+  color: #ffffff;
+  font-size: $font-large;
+  text-transform: capitalize;
 }
 
 .heading--navigation {
