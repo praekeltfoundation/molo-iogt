@@ -1,4 +1,4 @@
-from .base import *
+from .base import *  # noqa
 
 
 # Disable debug mode
@@ -45,6 +45,6 @@ COMPRESS_OFFLINE = True
 ENABLE_SSO = False
 
 try:
-    from .local import *
+    from .local import *  # noqa
 except ImportError:
     pass
