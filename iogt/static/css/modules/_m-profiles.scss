@@ -11,24 +11,3 @@
   display: inline-block;
 }
 
-.button__pill {
-  border-radius: 4px;
-  display: block;
-  font-size: $font-small;
-  margin: 10px 0;
-  padding: 10px 0;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.button__pill--navy {
-  background: $victoria;
-  color: #ffffff;
-}
-
-
-.button__pill--white {
-  background: #ffffff;
-  color: $victoria;
-}

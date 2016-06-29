@@ -59,9 +59,17 @@ input[type="search"] {
   padding: 8px 12px;
   width: 90%;
 }
- 
+
+.button__pill,
 input[type="submit"] {
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  font-size: $font-small;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
