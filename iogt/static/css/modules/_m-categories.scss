@@ -1,0 +1,58 @@
+
+
+.subcategory-list__item {
+
+}
+
+.subcategory-list__title {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 0 0;
+}
+
+.category__title {
+    text-transform: uppercase;
+}
+
+@each $name, $color in $color_list {
+  
+
+  .subcategory-list--#{$name} {
+    border-top: 2px solid $color;
+    .category__title {
+        color: $color;
+    }
+  }
+
+  .subcategory-list--#{$name} {
+    .articles {
+      border-bottom: 1px solid #B8C2C3;
+      padding: 0 20px;
+    }
+    .subcategory__heading {
+      background: $color;
+      color: #fff;
+      padding: 0 20px;
+      border-bottom: 1px solid $color;
+      margin-bottom: 5px;
+    }
+
+    .category--title {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: $font-small;
+    }
+
+    .category--title__article {
+        font-size: 25px;
+        padding: 10px 0;
+        color: #000;
+    }
+
+    .category--subcategory__title {
+       text-transform: uppercase;
+       font-size: $font-x-small;
+    }
+
+  }
+}
