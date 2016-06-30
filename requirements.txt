@@ -3,5 +3,5 @@ molo.surveys==1.0.0
 gunicorn
 psycopg2
 django-extensions
-molo.usermetadata==1.0.2
+molo.usermetadata==1.0.3
 six>=1.9
