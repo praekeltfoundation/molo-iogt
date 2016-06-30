@@ -1,6 +1,6 @@
 .languages {
   background: $victoria;
-  color: #ffffff;
+  color: #fff;
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -12,6 +12,7 @@
 
 }
 .current-language, .select-language {
+  color: #fff;
   display: inline-block;
   float: left;
   width: 50%;
@@ -33,7 +34,7 @@
   text-align: right;
   padding: 20px;
   a {
-    color: #ffffff;
+    color: #fff;
 
     &:after {
       content: " ▶ ";

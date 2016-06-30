@@ -35,6 +35,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+label {
+  color: $victoria;
+  display: block;
+  font-size: $font-x-small;
+  padding: 0 0 5px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border: none;
+  margin: 15px 0;
+  padding: 0;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"], 
@@ -44,11 +59,17 @@ input[type="search"] {
   padding: 8px 12px;
   width: 90%;
 }
- 
+
+.button__pill,
 input[type="submit"] {
   border: none;
-  color: #000;
   cursor: pointer;
-  padding: 0 8px;
+  border-radius: 4px;
+  display: block;
+  font-size: $font-small;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }

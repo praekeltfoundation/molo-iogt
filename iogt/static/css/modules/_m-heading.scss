@@ -1,10 +1,18 @@
 
 .heading {
   background: #eee;
+  padding: 0 0 15px;
 }
 
 .heading--large {
   font-size: 32px;
+}
+
+.heading--profiles {
+  background: $victoria;
+  color: #fff;
+  font-size: $font-large;
+  text-transform: capitalize;
 }
 
 .heading--navigation {
@@ -20,5 +28,14 @@
   .heading--large.heading--#{$name} {
     color: #fff;
     background: $color;
+  }
+}
+
+
+.section-heading {
+  border-bottom: 1px solid #B0B9BB;
+  padding: 10px 20px;
+  a {
+    display: block;
   }
 }
