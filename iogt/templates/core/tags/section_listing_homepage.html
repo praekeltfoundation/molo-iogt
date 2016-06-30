@@ -1,20 +1,40 @@
 {% load wagtailcore_tags static core_tags i18n %}
 
 {% if sections %}
-<div class="section-menu">
-  <ul class="menu-list">
+  <h3 class="heading heading--homepage">{% trans "Recommended" %}</h3>
+  <div class="articles">
+ 
+    <ul class="category-list">
     {% for section in sections %}
-      *******<br>
-      1.{{section.title}}<br>
-      {% load_child_sections_for_section section as sub_sections %}
-      {% for sub_section in sub_sections %}
-          2.{{sub_section.title}}<br>
-          {% load_descendant_articles_for_section sub_section featured_in_homepage=True count=3 as featured_articles %}
-          {% for featured_article in featured_articles %}
-          3.{{featured_article.title}}<br>
-          {% endfor %}    
-      {% endfor %}    
+      {% load_descendant_articles_for_section section featured_in_homepage=True count=3 as featured_articles %}
+      {% if featured_articles %}
+        <li class="category-list__item category-list__item{{section.get_effective_extra_style_hints}}">
+            <!-- 1. Must have category hero story -->
+            <!-- 2. Or must have subcategory hero story? -->
+            <!-- 3. Must have category or subcategory article lists -->
+            <!-- 4. Only show these when it has [featured on homepage] article -->
+            1.---{{section.title}}
+              {% load_child_sections_for_section section as sub_sections %}
+              {% for sub_section in sub_sections %}
+                <div class="subcategory__heading">
+                    {# <h3 class="category--title">{{section.title}}</h3> #}
+                    <h4 class="category--subcategory__title">{{sub_section.title}}</h4>
+                </div>
+
+                  {% for featured_article in featured_articles %}
+                    <div class="articles">
+                      <!--<h3 class="category--title">{#{{section.title}}#}</h3>-->
+                      <h2 class="category--title__article">{{featured_article.title}}</h2>
+                      {{featured_article.subtitle}}
+                      <!-- 5. Must have article comments -->
+                    </div>
+                  {% endfor %}  
+
+              {% endfor %}
+        </li>
+      {% endif %}
     {% endfor %}
-  </ul>
-</div>
+       
+      </ul>   
+  </div>
 {% endif %}
