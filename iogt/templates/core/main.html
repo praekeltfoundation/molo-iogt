@@ -2,10 +2,6 @@
 
 {% load static core_tags molo_survey_tags%}
 
-{% block logo %}
-<img src="{% static 'logo_2line.png' %}" alt="The Internet of Good Things" />
-{% endblock %}
-
 {% block content %}
     {% latest_listing_homepage %}
     {% surveys_list %} 

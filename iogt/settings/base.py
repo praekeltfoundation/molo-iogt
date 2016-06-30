@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'modelcluster',
 
     'molo.core',
+    'molo.profiles',
     'iogt',
 
     'wagtail.wagtailcore',

@@ -1,18 +1,14 @@
 
 .logo {
-  display:block;
-  background: #4d4391;
-
-  img {
-    vertical-align: middle;
-    width: 65%;
-  }
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .section-image {
   width: 100%;
   height: auto;
 }
+
 @import "_m-languages";
 @import "_m-heading";
 @import "_m-article";
@@ -20,4 +16,3 @@
 @import "_m-section-menu";
 @import "_m-search";
 @import "_m-copyright";
-
