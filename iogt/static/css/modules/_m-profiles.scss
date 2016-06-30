@@ -1,13 +1,44 @@
 
 .profiles {
-  background: #fff;
+  background: #ffffff;
+  padding: 10px 20px;
+
+  p {
+     display: block;
+    font-size: $font-small;
+    padding: 5px 0;
+    }
+}
+
+.profiles__title  {
+  text-transform: uppercase;
 }
 
 .profiles__subtitle {
+  display: block;
   font-size: $font-x-medium;
 }
 
-.profile__terms {
+.profiles__terms {
   display: inline-block;
 }
 
+.profiles-login {
+  background: $victoria;
+  padding: 15px 20px;
+  margin-top: 15px;
+}
+
+.profiles-login__title {
+   color: #ffffff;
+   font-size: $font-x-medium;
+}
+
+.arror {
+  font-size: $font-x-medium;
+}
+
+.errorlist li {
+  color: red;
+  font-size: $font-small;
+}
