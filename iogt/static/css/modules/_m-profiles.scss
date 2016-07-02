@@ -10,32 +10,30 @@
     }
 }
 
-.profiles__title  {
-  text-transform: uppercase;
-}
-
-.profiles__subtitle {
-  display: block;
-  font-size: $font-x-medium;
-}
-
 .profiles__terms {
   display: inline-block;
 }
 
-.profiles-login {
-  background: $victoria;
+.call-to-action {
   padding: 15px 20px;
-  margin-top: 15px;
 }
 
-.profiles-login__title {
+
+.call-to-action--profile {
+  background: $victoria;
+}
+
+.call-to-action__nav-item--challenge {
+  text-align: left;
    color: #ffffff;
    font-size: $font-x-medium;
 }
 
-.arror {
-  font-size: $font-x-medium;
+.error {
+  display: block;
+  font-size: $font-small;
+  color: red;
+  padding: 5px 25px 0 0;
 }
 
 .errorlist li {
