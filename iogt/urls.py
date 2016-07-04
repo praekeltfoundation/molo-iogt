@@ -44,6 +44,7 @@ urlpatterns += patterns(
         name='registration_done'),
     url(r'^profiles/', include('molo.profiles.urls',
                                namespace='molo.profiles')),
+    url(r'^comments/', include('molo.commenting.urls')),
     url(r'', include(wagtail_urls)),
 )
 

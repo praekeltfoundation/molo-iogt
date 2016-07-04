@@ -52,10 +52,12 @@ INSTALLED_APPS = [
     'taggit',
     'modelcluster',
 
+    'django_comments',
+    'molo.commenting',
+
     'molo.core',
     'molo.profiles',
     'iogt',
-
     'wagtail.wagtailcore',
     'wagtail.wagtailadmin',
     'wagtail.wagtaildocs',
@@ -81,7 +83,9 @@ INSTALLED_APPS = [
     'django_cas_ng',
     'compressor',
 ]
-
+COMMENTS_APP = 'molo.commenting'
+COMMENTS_FLAG_THRESHHOLD = 3
+COMMENTS_HIDE_REMOVED = False
 SITE_ID = 1
 
 MIDDLEWARE_CLASSES = [
