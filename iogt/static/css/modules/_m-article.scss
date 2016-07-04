@@ -7,27 +7,52 @@
   position: relative;
   border-bottom: solid 1px #e4e4e4;
   overflow: auto;
+
+  a {
+    display: block;
+  }
 }
 
-.article-list__title {
-  color: #000;
-  font-size: 25px;
-}
-
-.article-list__image {
-  width: 40%;
-  height: auto;
-  margin: 0 24px 9px 0;
-  float: left;
-}
 .article__title {
-  font-size: 22px;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 10px 0;
 }
-.article__subtitle {
-  font-weight: bold;
+
+.article__category--title {
+  text-transform: uppercase;
 }
-.article__image {
-  margin: 24px 0;
-  width: 100%;
-  height: auto;
+
+.article__subcategory--title {
+  font-size: $font-x-small;
+  text-transform: uppercase;
 }
+
+@each $name, $color in $color_list {
+  .article-list--#{$name} {
+      .article__category--title,
+      .article__subcategory--title {
+         color: $color;
+      }
+  }
+}
+
+.article_content--hero {
+  padding: 10px 15px;
+  color: #000;
+}
+
+.article_content {
+  float: left;
+  padding: 10px 0 10px 15px;
+  color: #000;
+  width: 55%;
+}
+
+.article_thumbnail {
+  float: right;
+  padding: 22% 15px 0;
+}
+
+

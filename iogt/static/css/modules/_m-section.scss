@@ -1,0 +1,31 @@
+
+.section-list__more {
+  display: block;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 10px 15px;
+  font-weight: bold;
+   &:after {
+    content: " ▶ ";
+    padding: 0 0 0 5px;
+   }
+}
+
+
+.subcategory-list__title {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 0 0;
+    font-size: 10px;
+}
+
+
+@each $name, $color in $color_list {
+  .section-list__item--#{$name} {
+    border-top: 2px solid $color;
+
+    .section-list__more {
+      color: $color;
+    }
+  }
+}

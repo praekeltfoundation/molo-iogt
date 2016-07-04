@@ -24,6 +24,7 @@
 .heading--homepage {
   background: transparent;
   padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 @each $name, $color in $color_list {
@@ -40,7 +41,7 @@
 
 .section-heading {
   border-bottom: 1px solid #B0B9BB;
-  padding: 10px 20px;
+  padding: 10px 15px;
   a {
     display: block;
   }

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
-{% load static core_tags i18n molo_survey_tags %}
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags static core_tags i18n molo_survey_tags comments mptt_tags molo_commenting_tags i18n %}
+{% load  %}
 
 {% block content %}
 
@@ -57,4 +57,8 @@
     {% endfor %}
   </article>
 </div>
+
+
+{% include "comments/comment_block.html" %}
+
 {% endblock %}
