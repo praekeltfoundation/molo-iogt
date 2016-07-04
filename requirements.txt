@@ -4,5 +4,5 @@ molo.profiles==1.0.1
 gunicorn
 psycopg2
 django-extensions
-molo.usermetadata==1.0.3
+molo.usermetadata==1.0.4
 six>=1.9
