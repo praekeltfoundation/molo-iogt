@@ -40,7 +40,7 @@ BASE_URL = 'http://example.com'
 
 # Application definition
 
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -51,10 +51,8 @@ INSTALLED_APPS = (
     'django_extensions',
     'taggit',
     'modelcluster',
-
     'django_comments',
     'molo.commenting',
-
     'molo.core',
     'molo.profiles',
     'iogt',
@@ -73,16 +71,15 @@ INSTALLED_APPS = (
     'wagtailmedia',
     'wagtail.contrib.settings',
     'wagtailsurveys',
-
     'molo.usermetadata',
     'molo.surveys',
     'mptt',
-
     'raven.contrib.django.raven_compat',
     'djcelery',
     'django_cas_ng',
     'compressor',
-)
+]
+
 COMMENTS_APP = 'molo.commenting'
 COMMENTS_FLAG_THRESHHOLD = 3
 COMMENTS_HIDE_REMOVED = False
