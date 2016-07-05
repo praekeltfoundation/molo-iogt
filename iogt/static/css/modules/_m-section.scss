@@ -11,7 +11,6 @@
    }
 }
 
-
 .subcategory-list__title {
     text-align: center;
     text-decoration: underline;
@@ -20,12 +19,3 @@
 }
 
 
-@each $name, $color in $color_list {
-  .section-list__item--#{$name} {
-    border-top: 2px solid $color;
-
-    .section-list__more {
-      color: $color;
-    }
-  }
-}

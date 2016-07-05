@@ -1,0 +1,9 @@
+@each $name, $color in $color_list {
+  .section-list__item--#{$name} {
+    border-top: 2px solid $color;
+
+    .article__category--title {
+      color: $color;
+    }
+  }
+}
