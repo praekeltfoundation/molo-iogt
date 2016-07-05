@@ -2,8 +2,10 @@
   .section-list__item--#{$name} {
     border-top: 2px solid $color;
 
-    .article__category--title {
+    .article__category--title,
+    .section-list__more {
       color: $color;
     }
+
   }
 }
