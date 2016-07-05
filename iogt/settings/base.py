@@ -75,7 +75,7 @@ INSTALLED_APPS = [
     'mptt',
     'molo.usermetadata',
     'molo.surveys',
-    'molo.profile',
+    'molo.profiles',
     'django_comments',
     'molo.commenting',
 
