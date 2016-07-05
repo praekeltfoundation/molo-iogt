@@ -49,13 +49,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django_extensions',
+
     'taggit',
     'modelcluster',
-    'django_comments',
-    'molo.commenting',
+
     'molo.core',
-    'molo.profiles',
     'iogt',
+
     'wagtail.wagtailcore',
     'wagtail.wagtailadmin',
     'wagtail.wagtaildocs',
@@ -71,9 +71,14 @@ INSTALLED_APPS = [
     'wagtailmedia',
     'wagtail.contrib.settings',
     'wagtailsurveys',
+
+    'mptt',
     'molo.usermetadata',
     'molo.surveys',
-    'mptt',
+    'molo.profile',
+    'django_comments',
+    'molo.commenting',
+
     'raven.contrib.django.raven_compat',
     'djcelery',
     'django_cas_ng',
