@@ -10,13 +10,19 @@
     font-size: $font-small;
     font-weight: bold;
     text-transform: uppercase;
+    text-decoration: underline;
+    @media screen and (min-width: 700px) {
+      text-decoration: none;
+    }
   }
 
-  &:after {
-    content: " ▶ ";
-    display: inline-block;
-    float: right;
-    padding: 3px 0 0;
+  @media screen and (min-width: 700px) {
+    &:after {
+      content: " ▶ ";
+      display: inline-block;
+      float: right;
+      padding: 3px 0 0;
+    }
   }
 }
  
