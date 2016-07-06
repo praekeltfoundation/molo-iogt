@@ -20,16 +20,15 @@
 	font-weight: normal;
 }
 
-.profile__note {
-	font-size: $font-small;
-  font-style: italic;
-}
-
 .profiles__nav-item {
 	color: $victoria;
 	display: inline;
 	text-transform: capitalize;
 	text-decoration: underline;
+}
+
+.profile__alias {
+  display: inline;
 }
 
 
