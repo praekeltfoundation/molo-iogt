@@ -1,7 +1,7 @@
 
 .heading {
-  background: #eee;
-  padding: 0 0 15px;
+  padding: 10px 15px 0;
+  font-weight: normal;
 }
 
 .heading--large {
@@ -9,11 +9,11 @@
 }
 
 .heading--profiles {
-  background: $victoria;
-  color: #fff;
-  font-size: $font-large;
+  color: $victoria;
+  font-size: $font-x-large;
   text-transform: capitalize;
 }
+
 
 .heading--navigation {
   color: #fff;

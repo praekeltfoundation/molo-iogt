@@ -1,13 +1,54 @@
 
 .profiles {
   background: #fff;
+  padding: 0 15px 10px;
+
+  a {
+  	text-decoration: underline;
+  }
 }
 
 .profiles__subtitle {
   font-size: $font-x-medium;
 }
 
-.profile__terms {
-  display: inline-block;
+.profiles__terms {
+	display: inline-block;
+	color: #666;
+	font-size: $font-small;
+	text-transform: inherit;
+	font-weight: normal;
 }
 
+.profile__note {
+	font-size: $font-small;
+  font-style: italic;
+}
+
+.profiles__nav-item {
+	color: $victoria;
+	display: inline;
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+
+
+
+
+.call-to-action {
+  padding: 10px 15px;
+  a {
+  	color: $victoria;
+  	text-decoration: underline;
+  }
+}
+
+.call-to-action__nav-item {
+	font-weight: normal;
+}
+
+.call-to-action__nav-item--log-in {
+	font-size: $font-small;
+	text-transform: uppercase;
+	font-weight: bold;
+}

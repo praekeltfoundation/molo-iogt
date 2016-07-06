@@ -53,9 +53,9 @@ fieldset {
 input[type="text"],
 input[type="password"],
 input[type="email"], 
+input[type="tel"],
 input[type="search"] {
   border: 1px solid #b0b9bb;
-  border-radius: 4px;
   padding: 8px 12px;
   width: 90%;
 }
