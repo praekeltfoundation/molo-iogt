@@ -44,7 +44,7 @@
       <p>{% get_comment_count for article as comment_count %}</p>
       {% if comment_count > 0 %}
           <div class="comments-count">
-          <a href="{% pageurl featured %}#comments-list">
+          <a href="{% pageurl article %}#comments-list">
             {{comment_count}} 
             <span>{% trans "comment" %}{{comment_count|pluralize}}</span>
           </a></div>
