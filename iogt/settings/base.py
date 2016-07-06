@@ -76,8 +76,8 @@ INSTALLED_APPS = [
     'molo.usermetadata',
     'molo.surveys',
     'molo.profiles',
-    'django_comments',
     'molo.commenting',
+    'django_comments',
 
     'raven.contrib.django.raven_compat',
     'djcelery',
