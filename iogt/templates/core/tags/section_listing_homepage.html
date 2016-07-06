@@ -41,14 +41,17 @@
           </a>
         </div>
       {% endif %}
-      <p>{% get_comment_count for article as comment_count %}</p>
-      {% if comment_count > 0 %}
-          <div class="comments-count">
-          <a href="{% pageurl article %}#comments-list">
-            {{comment_count}} 
-            <span>{% trans "comment" %}{{comment_count|pluralize}}</span>
-          </a></div>
-      {% endif %}
+      <div class="comment-counter">
+        {% get_comment_count for article as comment_count %}
+        {% if comment_count > 0 %}
+            <a href="{% pageurl article %}#comments-list">
+              <span class="comment-counter__item">
+                {{comment_count}}
+                {% trans "comment" %}{{comment_count|pluralize}}
+              </span>
+            </a>
+        {% endif %}
+      </div>
       </li>
     {% endfor%}
     </ul>
