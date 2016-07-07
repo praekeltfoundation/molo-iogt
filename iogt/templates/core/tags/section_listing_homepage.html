@@ -2,54 +2,41 @@
 
 {% if sections %}
 <h3 class="heading heading--homepage">{% trans "Recommended" %}</h3>
-  {% for section in sections %}
-    {% load_descendant_articles_for_section section featured_in_homepage=True as featured_articles %}
-    {% if featured_articles %}
+
+{% for section in sections %}
+  {% load_descendant_articles_for_section section featured_in_homepage=True as featured_articles %}
+  {% if featured_articles %}
     <div class="section-list section-list{{section.get_effective_extra_style_hints}}">
       <ul class="article-list">
       {% for article in featured_articles %}
-      <li class="article-list__item">
-      {% if forloop.first %}
-        <div class="article-list__content article-list__content--hero">
-          <a href="{% pageurl article %}" class="article-list__image">
-              {% if article.image %}
+        <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
+          <div class="article-list__container">
+            {% if article.image %}
+              <a href="{% pageurl article %}" class="article-list__image">
                 {% image article.image width-290 %}
-              {% endif %}
-          </a>
-          <h3 class="article-list__category">{{section.title}}</h3>
-          <a href="{% pageurl article %}" class="article-list__description">
-            <h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
-          </a>
-          <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
-        </div>
-      {% else %}
-        <div class="article-list__content">
-         <a href="{% pageurl article %}" class="article-list__image" >
-              {% if article.image %}
-                {% image article.image width-90 height-90 %}
-              {% endif %}
-          </a>
-          <h3 class="article-list__category">{{section.title}}</h3>
-          <a href="{% pageurl article %}" class="article-list__description">
-            <h2 class="article-list__title">{{article.title}}</h2> 
-          </a>
-          <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
-        </div>
-      {% endif %}
-   
-      {% get_comment_count for article as comment_count %}
-      {% if comment_count > 0 %}
-          <a href="{% pageurl article %}#comments-list" class="article-list__comments-counter">
+              </a>
+            {% endif %}
+            <h3 class="article-list__section">{{section.title}}</h3>
+            
+            <a href="{% pageurl article %}" class="article-list__description">
+              <h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
+            </a>
+            <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
+          </div>
+
+          {% get_comment_count for article as comment_count %}
+          {% if comment_count > 0 %}
+            <a href="{% pageurl article %}#comments-list" class="article-list__comments-counter">
               {{comment_count}}
               {% trans "comment" %}{{comment_count|pluralize}}
-          </a>
-      {% endif %}
-      </li>
-    {% endfor%}
-    </ul>
-    <a href="{% pageurl section %}" class="section-list__more">{% trans "More" %}</a>
+            </a>
+          {% endif %}
+        </li>
+      {% endfor%}
+      </ul>
+      <a href="{% pageurl section %}" class="section-list__more">{% trans "More" %}</a>
     </div>
   {% endif %}
-  {% endfor %} 
+{% endfor %} 
 {% endif %}
 
