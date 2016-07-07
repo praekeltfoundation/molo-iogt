@@ -9,8 +9,8 @@
   }
 }
 
-.article-list__content {
-  padding: 15px 15px 0;
+.article-list__container {
+  padding: 15px 15px 5px;
   overflow: auto;
 
   a {
@@ -19,7 +19,14 @@
   }
 }
 
-.article-list__category {
+.article-list__image {
+  img {
+    max-width: 190px;
+    height: auto;
+  }
+}
+
+.article-list__section {
   font-size: $font-small;
   text-transform: uppercase;
 }
@@ -29,10 +36,6 @@
   font-size: $font-x-medium;
   line-height: 1.1;
   padding: 7px 0;
-}
-
-.article-list__title--hero {
- font-size: $font-xx-large;
 }
 
 .article-list__subtitle {
@@ -45,4 +48,15 @@
   padding: 0 15px 10px;
 } 
 
+.article-list__item--hero {
+  .article-list__title {
+   font-size: $font-xx-large;
+  }
 
+  .article-list__image {
+    img {
+      max-width: 100%;
+    }
+    
+  }
+}
