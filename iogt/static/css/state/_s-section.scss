@@ -7,22 +7,17 @@
     .section-list__more {
       color: $color;
     }
-
-    &:nth-child {
-      border-top: none;
-    }
-
   }
 
   .section-list-nav--#{$name} {
-  		.section-list-nav__item a {
- 					color: $color;
-  		}
+    .section-list-nav__item a {
+        color: $color;
+    }
 
-      .section-list-nav__item--home {
-          &:after {
-            color: $color;
-          }
-      }
+    .section-list-nav__item--home {
+        &:after {
+          color: $color;
+        }
+    }
   }
 }
