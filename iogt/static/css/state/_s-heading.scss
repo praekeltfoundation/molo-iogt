@@ -1,7 +1,7 @@
 
 .heading:before {
   content: " ";
-  display: inline-block;
+  display: none;
   width: 15px;
   height: 15px;
   background: transparent url(/static/arrows.png) no-repeat;

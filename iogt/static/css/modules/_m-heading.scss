@@ -11,13 +11,20 @@
 .heading--profiles {
   background: $victoria;
   color: #fff;
-  font-size: $font-large;
+  font-size: $font-x-large;
   text-transform: capitalize;
+  padding: 0 20px 15px;
 }
 
 .heading--navigation {
   color: #fff;
   background: #4d4391;
+}
+
+.heading--homepage {
+  background: transparent;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 @each $name, $color in $color_list {
@@ -34,7 +41,7 @@
 
 .section-heading {
   border-bottom: 1px solid #B0B9BB;
-  padding: 10px 20px;
+  padding: 10px 15px;
   a {
     display: block;
   }

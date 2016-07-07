@@ -1,0 +1,13 @@
+
+.section-list__more {
+  display: block;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 10px 15px;
+  font-weight: bold;
+   &:after {
+    content: " ▶ ";
+    padding: 0 0 0 5px;
+   }
+}
+
