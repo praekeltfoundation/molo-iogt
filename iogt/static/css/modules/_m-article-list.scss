@@ -28,34 +28,14 @@
 
 
 
-
 .article-list__content {
-  padding: 10px 0 10px 15px;
-  width: 55%;
-}
+  padding: 15px 15px 0;
+  overflow: auto;
 
-.article-list__content--hero {
-  padding: 10px 15px;
-  width: auto;
-  .article__title {
-    font-size: $font-x-large;
+  a {
+    display: block;
+    margin-bottom: 8px;
   }
 }
-
-
-.article-list__thumbnail {
-  float: right;
-  padding: 22% 15px 0;
-}
-
-.article-list__thumbnail--hero {
-  float: none;
-  padding: 0;
-  img {
-    width: 100%;
-  }
-}
-
-
 
 

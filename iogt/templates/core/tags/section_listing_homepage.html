@@ -2,7 +2,7 @@
 
 {% if sections %}
 <h3 class="heading heading--homepage">{% trans "Recommended" %}</h3>
-<div class="section-list section-list__homepage">
+<div class="section-list section-list--homepage">
   {% for section in sections %}
     {% load_descendant_articles_for_section section featured_in_homepage=True as featured_articles %}
     {% if featured_articles %}
@@ -11,33 +11,29 @@
       {% for article in featured_articles %}
       <li class="article-list__item">
       {% if forloop.first %}
-        <div class="article-list__thumbnail article-list__thumbnail--hero">
-          <a href="{% pageurl article %}">
-            {% if article.image %}
-              {% image article.image width-320 %}
-            {% endif %}
-          </a>
-        </div>
         <div class="article-list__content article-list__content--hero">
-          <a href="{% pageurl article %}">
-              <h3 class="article-list__category">{{section.title}}</h3>
-              <h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
-              <p>{{article.subtitle}}</p>
+          <a href="{% pageurl article %}" class="article-list__thumbnail">
+              {% if article.image %}
+                {% image article.image width-290 %}
+              {% endif %}
+          </a>
+          <a href="{% pageurl article %}" class="article-list__description">
+                <h3 class="article-list__category">{{section.title}}</h3>
+                <h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
+                <p>{{article.subtitle}}</p>
           </a>
         </div>
       {% else %}
-        <div class="article-list__thumbnail">
-          <a href="{% pageurl article %}">
-            {% if article.image %}
-              {% image article.image width-90 height-90 class="" %}
-            {% endif %}
-          </a>
-        </div>
         <div class="article-list__content">
-          <a href="{% pageurl article %}">
-              <h3 class="article-list__category">{{section.title}}</h3>
-              <h2 class="article-list__title">{{article.title}}</h2>
-              <p>{{article.subtitle}}</p>
+         <a href="{% pageurl article %}" class="article-list__thumbnail" >
+              {% if article.image %}
+                {% image article.image width-90 height-90 %}
+              {% endif %}
+          </a>
+          <a href="{% pageurl article %}" class="article-list__description">
+                <h3 class="article-list__category">{{section.title}}</h3>
+                <h2 class="article-list__title">{{article.title}}</h2>
+                <p>{{article.subtitle}}</p>
           </a>
         </div>
       {% endif %}
