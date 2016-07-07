@@ -11,14 +11,14 @@
       {% for article in featured_articles %}
       <li class="article-list__item">
       {% if forloop.first %}
-        <div class="article_thumbnail--hero">
+        <div class="article-list_thumbnail--hero">
           <a href="{% pageurl article %}">
             {% if article.image %}
               {% image article.image width-320 %}
             {% endif %}
           </a>
         </div>
-        <div class="article_content--hero">
+        <div class="article-list_content--hero">
           <a href="{% pageurl article %}">
               <h3 class="article__category--title">{{section.title}}</h3>
               <h2 class="article__title">{{article.title}}</h2>
@@ -26,14 +26,14 @@
           </a>
         </div>
       {% else %}
-        <div class="article_thumbnail">
+        <div class="article-list_thumbnail">
           <a href="{% pageurl article %}">
             {% if article.image %}
               {% image article.image width-90 height-90 class="" %}
             {% endif %}
           </a>
         </div>
-        <div class="article_content">
+        <div class="article-list_content">
           <a href="{% pageurl article %}">
               <h3 class="article__category--title">{{section.title}}</h3>
               <h2 class="article__title">{{article.title}}</h2>
