@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 from os.path import abspath, dirname, join
 from os import environ
+import django.conf.locale
 from django.conf import global_settings
 from django.utils.translation import ugettext_lazy as _
 import dj_database_url
@@ -189,7 +190,179 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('ts', _('Tsonga')),
     ('ss', _('Swati')),
     ('nr', _('Ndebele')),
+    ('wo', _('Wolof')),
+    ('yo', _('Yoruba')),
+    ('ib', _('Ibo')),
+    ('ha', _('Hausa')),
+    ('am', _('Amharic')),
+    ('ms', _('Malay')),
+    ('gr', _('Guarani')),
+    ('gu', _('Gujarati')),
+    ('fi', _('Filipino')),
+    ('nq', _('N\'ko')),
+    ('sy', _('Syriac')),
+    ('th', _('Thaana')),
+    ('ti', _('Tifinar')),
+    ('ku', _('Kurdish')),
+    ('ar', _('Aramaic')),
 ]
+
+EXTRA_LANG_INFO = {
+    'zu': {
+        'bidi': False,
+        'code': 'zu',
+        'name': 'Zulu',
+        'name_local': 'Zulu'
+    },
+    'xh': {
+        'bidi': False,
+        'code': 'xh',
+        'name': 'Xhosa',
+        'name_local': 'Xhosa'
+    },
+    'st': {
+        'bidi': False,
+        'code': 'st',
+        'name': 'Sotho',
+        'name_local': 'Sotho'
+    },
+    've': {
+        'bidi': False,
+        'code': 've',
+        'name': 'Venda',
+        'name_local': 'Venda'
+    },
+    'tn': {
+        'bidi': False,
+        'code': 'tn',
+        'name': 'Tswana',
+        'name_local': 'Tswana'
+    },
+    'ts': {
+        'bidi': False,
+        'code': 'ts',
+        'name': 'Tsonga',
+        'name_local': 'Tsonga'
+    },
+    'ss': {
+        'bidi': False,
+        'code': 'ss',
+        'name': 'Swati',
+        'name_local': 'Swati'
+    },
+    'nr': {
+        'bidi': False,
+        'code': 'nr',
+        'name': 'Ndebele',
+        'name_local': 'Ndebele'
+    },
+    'wo': {
+        'bidi': False,
+        'code': 'wo',
+        'name': 'Wolof',
+        'name_local': 'Wolof'
+    },
+    'yo': {
+        'bidi': False,
+        'code': 'yo',
+        'name': 'Yoruba',
+        'name_local': 'Yoruba'
+    },
+    'nr': {
+        'bidi': False,
+        'code': 'nr',
+        'name': 'Ndebele',
+        'name_local': 'Ndebele'
+    },
+    'wo': {
+        'bidi': False,
+        'code': 'wo',
+        'name': 'Wolof',
+        'name_local': 'Wolof'
+    },
+    'ib': {
+        'bidi': False,
+        'code': 'ib',
+        'name': 'Ibo',
+        'name_local': 'Ibo'
+    },
+    'ha': {
+        'bidi': False,
+        'code': 'ha',
+        'name': 'Hausa',
+        'name_local': 'Hausa'
+    },
+    'am': {
+        'bidi': False,
+        'code': 'am',
+        'name': 'Amharic',
+        'name_local': 'Amharic'
+    },
+    'ma': {
+        'bidi': False,
+        'code': 'ma',
+        'name': 'Malay',
+        'name_local': 'Malay'
+    },
+    'gu': {
+        'bidi': False,
+        'code': 'gu',
+        'name': 'Guarani',
+        'name_local': 'Guarani'
+    },
+    'gu': {
+        'bidi': False,
+        'code': 'gu',
+        'name': 'Gujarati',
+        'name_local': 'Gujarati'
+    },
+    'fi': {
+        'bidi': False,
+        'code': 'fi',
+        'name': 'Filipino',
+        'name_local': 'Filipino'
+    },
+    'nk': {
+        'bidi': False,
+        'code': 'nk',
+        'name': 'N\'ko',
+        'name_local': 'N\'ko'
+    },
+    'sy': {
+        'bidi': False,
+        'code': 'sy',
+        'name': 'Syriac',
+        'name_local': 'Syriac'
+    },
+    'th': {
+        'bidi': False,
+        'code': 'th',
+        'name': 'Thaana',
+        'name_local': 'Thaana'
+    },
+    'ti': {
+        'bidi': False,
+        'code': 'ti',
+        'name': 'Tifinar',
+        'name_local': 'Tifinar'
+    },
+    'ku': {
+        'bidi': False,
+        'code': 'ku',
+        'name': 'Kurdish',
+        'name_local': 'Kurdish'
+    },
+    'ar': {
+        'bidi': False,
+        'code': 'ar',
+        'name': 'Aramaic',
+        'name_local': 'Aramaic'
+    },
+}
+
+LANG_INFO = (
+    dict(django.conf.locale.LANG_INFO.items() + EXTRA_LANG_INFO.items()))
+django.conf.locale.LANG_INFO = LANG_INFO
 
 LOCALE_PATHS = [
     join(PROJECT_ROOT, "locale"),
