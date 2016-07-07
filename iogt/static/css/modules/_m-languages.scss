@@ -7,7 +7,7 @@
 
 
 .language-bar {
-  padding: 10px 20px;
+  padding: 10px 15px;
   overflow: auto;
 
 }
@@ -19,7 +19,6 @@
 }
 .select-language {
   text-align: right;
-
   &:after {
     content: " ▼ ";
   }
@@ -35,7 +34,6 @@
   padding: 20px;
   a {
     color: #fff;
-
     &:after {
       content: " ▶ ";
     }
