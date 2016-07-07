@@ -1,5 +1,5 @@
 @each $name, $color in $color_list {
-  .section-list__item--#{$name} {
+  .section-list--#{$name} {
     border-top: 2px solid $color;
 
     .article-list__category,

@@ -9,6 +9,21 @@
   }
 }
 
+.article-list__content {
+  padding: 15px 15px 0;
+  overflow: auto;
+
+  a {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+.article-list__category {
+  font-size: $font-small;
+  text-transform: uppercase;
+}
+
 .article-list__title {
   color: #000;
   font-size: $font-x-medium;
@@ -20,22 +35,14 @@
  font-size: $font-xx-large;
 }
 
-.article-list__category {
+.article-list__subtitle {
+  font-weight: normal;
+}
+
+.article-list__comments-counter {
+  text-transform: capitalize;
   font-size: $font-small;
-  text-transform: uppercase;
-}
-
-
-
-
-.article-list__content {
-  padding: 15px 15px 0;
-  overflow: auto;
-
-  a {
-    display: block;
-    margin-bottom: 8px;
-  }
-}
+  padding: 0 15px 10px;
+} 
 
 
