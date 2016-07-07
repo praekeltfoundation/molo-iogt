@@ -1,13 +1,32 @@
 
+.section-list-nav {
+	padding: 10px 15px;
+  border-top: solid 1px #e4e4e4;
+  border-bottom: solid 1px #e4e4e4;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section-list-nav__item {
+	display: inline;
+	a {
+		padding-right: 10px;
+		text-decoration: underline;
+	}
+}
+
+.section-list-nav__item--home {
+	&:after {
+		content: " ▶ ";
+    margin: 0 3px 0 -8px;
+	}
+}
+
 .section-list__more {
   display: block;
   text-transform: uppercase;
-  text-align: right;
   padding: 10px 15px;
   font-weight: bold;
-   &:after {
-    content: " ▶ ";
-    padding: 0 0 0 5px;
-   }
+  text-decoration: underline;
 }
 
