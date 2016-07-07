@@ -11,9 +11,13 @@
 
 .article-list__title {
   color: #000;
-  font-size: $font-xx-medium;
+  font-size: $font-x-medium;
   line-height: 1.1;
   padding: 7px 0;
+}
+
+.article-list__title--hero {
+ font-size: $font-xx-large;
 }
 
 .article-list__category {
@@ -34,7 +38,7 @@
   padding: 10px 15px;
   width: auto;
   .article__title {
-    font-size: $font-large;
+    font-size: $font-x-large;
   }
 }
 
