@@ -5,5 +5,5 @@ molo.commenting==0.4.1
 gunicorn
 psycopg2
 django-extensions
-molo.usermetadata==1.0.2
+molo.usermetadata==1.0.4
 six>=1.9

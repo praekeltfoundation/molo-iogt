@@ -6,13 +6,9 @@
 }
 
 .header__nav-item {
-  float: right;
   text-decoration: underline;
-  padding-left: 10px;
+  padding-right: 10px;
   font-weight: bold;
   color: #fff;
   font-size: $font-small;
-
-  height: 100%;
-  line-height: 55px;
 }
