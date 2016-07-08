@@ -205,6 +205,7 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('ti', _('Tifinar')),
     ('ku', _('Kurdish')),
     ('ar', _('Aramaic')),
+    ('kr', _('kreyol')),
 ]
 
 EXTRA_LANG_INFO = {
@@ -357,6 +358,12 @@ EXTRA_LANG_INFO = {
         'code': 'ar',
         'name': 'Aramaic',
         'name_local': 'Aramaic'
+    },
+    'kr': {
+        'bidi': False,
+        'code': 'kr',
+        'name': 'kreyol',
+        'name_local': 'kreyol'
     },
 }
 
