@@ -6,11 +6,11 @@
 {% block content %}
 
 <div class="section section{{self.get_effective_extra_style_hints}}">
+  {% if self.image %}
   <div class="section__image">
-    {% if self.image %}
         {% image self.image width-290 %}
-    {% endif %}
   </div>
+      {% endif %}
   <h1 class="section__title">{{self.title}}</h1>
   <h4 class="section__subtitle">{{self.description}}</h4>
 
@@ -24,7 +24,7 @@
     {% load_descendant_articles_for_section section featured_in_section=True as section_featured_articles %}
     {% if section_featured_articles %}
     <div class="section-list">
-      <h3 class="section-list__title">{{self.title}}: {{section.title}}</h3>
+      <h3 class="section-list__title">{{section.title}}</h3>
       <ul class="article-list">
         {% for article in section_featured_articles %}
            <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
@@ -35,7 +35,7 @@
                   </a>
                 {% endif %}
                 
-                <a href="{% pageurl article %}" class="article-list__description">
+                <a href="{% pageurl article %}">
                   <h2 class="article-list__title">{{article.title}}</h2>
                 </a>
                 <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
