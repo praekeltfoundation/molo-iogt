@@ -6,13 +6,20 @@
     .section-list-nav__item a,
     .section-list__title,
     .article-list__title,
-    .section-list__more,
-     {
+    .section-list__more {
       color: $color;
     }
 
     .section-list {
       border-top: 2px solid $color;
+    }
+  }
+
+  .section-list--#{$name} {
+    border-top: 2px solid $color;
+    .section-list__title--homepage,
+    .section-list__more {
+      color: $color;
     }
   }
 }
