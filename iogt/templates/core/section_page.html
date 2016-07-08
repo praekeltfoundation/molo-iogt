@@ -1,36 +1,59 @@
 {% extends "base.html" %}
 
-{% load static core_tags i18n molo_survey_tags %}
+{% load static core_tags i18n molo_survey_tags comments %}
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
-  <h1 class="l-indent heading heading--large heading{{self.get_effective_extra_style_hints}}">
-    {{self.title}}
-  </h1>
-  {% if self.image %}
-    <a href="{% pageurl self %}">
-      {% image self.image width-320 class="section-image" %}
-    </a>
-  {% endif %}
-  {% load_child_sections_for_section self as sections %}
-  {% for section in sections %}
-    <h2 class="l-indent--deep heading">{{section.title}}</h2>
-    <ul class="article-list">
-    {% load_descendant_articles_for_section section featured_in_section=True as featured_articles %}
-    {% for article in featured_articles %}
-      <li class="article-list__item">
-        {% if article.image %}
-        <a href="{% pageurl article %}">{% image article.image width-80 class="article-list__image"%}</a>
-        {% endif %}
-        <a href="{% pageurl article %}">
-          <h3 class="article-list__title article-list__title{{self.get_effective_extra_style_hints}}">{{article.title}}</h3>
-        </a>
-        <p class="article-list__subtitle">{{article.subtitle}}</p>
-      </li>
-    {% endfor %}
-    </ul>
-  {% endfor %}
 
-  {% surveys_list_for_pages page=self %}
-  
+<div class="section section{{self.get_effective_extra_style_hints}}">
+  {% if self.image %}
+  <div class="section__image">
+        {% image self.image width-290 %}
+  </div>
+      {% endif %}
+  <h1 class="section__title">{{self.title}}</h1>
+  <h4 class="section__subtitle">{{self.description}}</h4>
+
+  <ul class="section-list-nav">
+    <li class="section-list-nav__item section-list-nav__item--home"><a href="/">{% trans "Home" %}</a></li>
+    <li class="section-list-nav__item"><a href="{% pageurl self %}">{{self.title}}</a></li>
+  </ul>
+
+{% load_child_sections_for_section self as sections %}
+{% for section in sections %}
+    {% load_descendant_articles_for_section section featured_in_section=True as section_featured_articles %}
+    {% if section_featured_articles %}
+    <div class="section-list">
+      <h3 class="section-list__title">{{section.title}}</h3>
+      <ul class="article-list">
+        {% for article in section_featured_articles %}
+           <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
+              <div class="article-list__container">
+                {% if article.image %}
+                  <a href="{% pageurl article %}">
+                    {% image article.image width-290 %}
+                  </a>
+                {% endif %}
+                
+                <a href="{% pageurl article %}">
+                  <h2 class="article-list__title">{{article.title}}</h2>
+                </a>
+                <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
+              </div>
+
+              {% get_comment_count for article as comment_count %}
+              {% if comment_count > 0 %}
+                <a href="{% pageurl article %}#comments-list" class="article-list__comments-counter">
+                  {{comment_count}}
+                  {% trans "comment" %}{{comment_count|pluralize}}
+                </a>
+              {% endif %}
+            </li>
+        {% endfor %}
+      </ul>
+      <a href="{% pageurl section %}" class="section-list__more">{% trans "View More" %}</a>
+      </div>
+    {% endif %}
+{% endfor %}
+</div>
 {% endblock %}

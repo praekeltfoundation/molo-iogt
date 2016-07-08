@@ -1,11 +1,12 @@
 
 .heading {
-  background: #eee;
   padding: 0 0 15px;
 }
 
 .heading--large {
-  font-size: 32px;
+  font-size: $font-x-large;
+  padding: 15px 15px 0;
+  text-transform: capitalize;
 }
 
 .heading--profiles {
@@ -25,17 +26,6 @@
   background: transparent;
   padding: 10px 20px;
   text-transform: uppercase;
-}
-
-@each $name, $color in $color_list {
-  .heading.heading--#{$name} {
-    color: $color;
-  }
-
-  .heading--large.heading--#{$name} {
-    color: #fff;
-    background: $color;
-  }
 }
 
 
