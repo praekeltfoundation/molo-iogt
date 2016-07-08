@@ -343,7 +343,7 @@ EXTRA_LANG_INFO = {
         'name_local': 'Kurdî'
     },
     'arc': {
-        'bidi': False,
+        'bidi': True,
         'code': 'arc',
         'name': 'Aramaic',
         'name_local': 'ܐܪܡܝܐ‎'
