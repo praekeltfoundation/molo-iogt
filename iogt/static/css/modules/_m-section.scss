@@ -1,10 +1,24 @@
 
+.section {
+  padding-top: 10px;
+}
+
+.section__image,.section__subtitle {
+ padding: 0 15px;
+}
+
+.section__title {
+  font-size: $font-x-large;
+  padding: 15px 15px 0;
+}
+
 .section-list-nav {
   padding: 10px 15px;
   border-top: solid 1px #e4e4e4;
   border-bottom: solid 1px #e4e4e4;
   text-transform: uppercase;
   font-weight: bold;
+  margin: 10px 0;
 }
 
 .section-list-nav__item {
@@ -19,7 +33,15 @@
   &:after {
     content: " ▶ ";
     margin: 0 3px 0 -8px;
+    font-size: $font-x-small;
   }
+}
+
+.section-list__title {
+  font-size: $font-small;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-bottom: solid 1px #e4e4e4;
 }
 
 .section-list__more {

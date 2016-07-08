@@ -5,30 +5,38 @@
 
 {% block content %}
 
-<h1 class="heading heading--large heading{{self.get_effective_extra_style_hints}}">{{self.title}}</h1>
-<h4 class="section__subtitle">{{self.subtitle}}</h4>
-<ul class="section-list-nav section-list-nav{{self.get_effective_extra_style_hints}}">
-  <li class="section-list-nav__item section-list-nav__item--home"><a href="/">{% trans "Home" %}</a></li>
-  <li class="section-list-nav__item"><a href="{% pageurl self %}">{{self.title}}</a></li>
-</ul>
+<div class="section section{{self.get_effective_extra_style_hints}}">
+  <div class="section__image">
+    {% if self.image %}
+        {% image self.image width-290 %}
+    {% endif %}
+  </div>
+  <h1 class="section__title">{{self.title}}</h1>
+  <h4 class="section__subtitle">{{self.description}}</h4>
+
+  <ul class="section-list-nav section-list-nav{{self.get_effective_extra_style_hints}}">
+    <li class="section-list-nav__item section-list-nav__item--home"><a href="/">{% trans "Home" %}</a></li>
+    <li class="section-list-nav__item"><a href="{% pageurl self %}">{{self.title}}</a></li>
+  </ul>
+
 {% load_child_sections_for_section self as sections %}
 {% for section in sections %}
-    {% load_descendant_articles_for_section section featured_in_section=True as sectionFeatured_articles %}
-    {% if sectionFeatured_articles %}
-    <div class="section-list section-list{{section.get_effective_extra_style_hints}}">
-      <h3 class="article-list__subsection">{{self.title}}:{{section.title}}</h3>
+    {% load_descendant_articles_for_section section featured_in_section=True as section_featured_articles %}
+    {% if section_featured_articles %}
+    <div class="section-list">
+      <h3 class="section-list__title">{{self.title}}: {{section.title}}</h3>
       <ul class="article-list">
-        {% for article in sectionFeatured_articles %}
+        {% for article in section_featured_articles %}
            <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
               <div class="article-list__container">
                 {% if article.image %}
-                  <a href="{% pageurl article %}" class="article-list__image">
-                    {% image article.image width-290 %}
+                  <a href="{% pageurl article %}">
+                    {% image article.image width-290 class="article-list__image" %}
                   </a>
                 {% endif %}
                 
                 <a href="{% pageurl article %}" class="article-list__description">
-                  <h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
+                  <h2 class="article-list__title">{{article.title}}</h2>
                 </a>
                 <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
               </div>
@@ -47,4 +55,5 @@
       </div>
     {% endif %}
 {% endfor %}
+</div>
 {% endblock %}
