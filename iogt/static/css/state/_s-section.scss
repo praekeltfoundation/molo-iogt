@@ -12,16 +12,4 @@
       border-top: 2px solid $color;
     }
   }
-
-  .section-list-nav--#{$name} {
-    .section-list-nav__item a {
-        color: $color;
-    }
-
-    .section-list-nav__item--home {
-        &:after {
-          color: $color;
-        }
-    }
-  }
 }
