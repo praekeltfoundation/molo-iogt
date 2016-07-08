@@ -14,7 +14,7 @@
   <h1 class="section__title">{{self.title}}</h1>
   <h4 class="section__subtitle">{{self.description}}</h4>
 
-  <ul class="section-list-nav section-list-nav{{self.get_effective_extra_style_hints}}">
+  <ul class="section-list-nav">
     <li class="section-list-nav__item section-list-nav__item--home"><a href="/">{% trans "Home" %}</a></li>
     <li class="section-list-nav__item"><a href="{% pageurl self %}">{{self.title}}</a></li>
   </ul>
