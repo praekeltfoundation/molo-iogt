@@ -78,7 +78,6 @@ INSTALLED_APPS = [
     'molo.profiles',
     'molo.commenting',
     'django_comments',
-
     'raven.contrib.django.raven_compat',
     'djcelery',
     'django_cas_ng',
@@ -105,8 +104,6 @@ MIDDLEWARE_CLASSES = [
     'wagtailmodeladmin.middleware.ModelAdminMiddleware',
     'molo.core.middleware.AdminLocaleMiddleware',
     'molo.usermetadata.middleware.PersonaMiddleware'
-
-
 ]
 
 # Template configuration
