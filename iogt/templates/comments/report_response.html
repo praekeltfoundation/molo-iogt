@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags comments mptt_tags molo_commenting_tags i18n %}
+
+{% block content %}
+<h1 class="heading heading--comments">{% trans "Thanks!" %}</h1>
+<div class="comment-list__item comments{{article.get_parent_section.get_effective_extra_style_hints}}">
+	<p><strong>{% trans "This comment has been reported." %}</strong></p>
+	<p>{% trans "It will be reviewed by the team and may be removed if it breaks our Platform rules" %}</p>
+	<a href="{% pageurl article %}" class="pagination__link">{% trans "Back to article" %}</a>
+</div>
+{% endblock %}

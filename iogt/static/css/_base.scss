@@ -64,6 +64,10 @@ select {
   width: 32%;
   font-size: $font-medium;
 }
+
+textarea {
+  width: 100%;
+}
  
 .call-to-action__nav-item,
 input[type="submit"] {

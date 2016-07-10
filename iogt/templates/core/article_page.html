@@ -34,7 +34,7 @@
   <p class="article__subtitle">{{self.subtitle}}</p>
   {% get_comment_count for self as comment_count %}
   {% if comment_count > 0 %}
-    <a href="{% pageurl article %}#comments-list" class="article-list__comments-counter">
+    <a href="{% pageurl self %}#comments-list" class="article-list__comments-counter">
       {{comment_count}}
       {% trans "comment" %}{{comment_count|pluralize}}
     </a>

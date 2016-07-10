@@ -1,0 +1,14 @@
+
+@each $name, $color in $color_list {
+	.comments--#{$name} {
+		.call-to-action__nav-item--comment {
+			color: #fff;
+			background: $color;
+		}
+
+		.comment__username,
+		.pagination__link {
+			color: $color;
+		}
+	}
+}
