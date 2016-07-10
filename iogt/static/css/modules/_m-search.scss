@@ -4,9 +4,7 @@
 }
 
 .search {
-  background: #f0f0f0;
   position: relative;
-  padding: 15px;
 
   input[type="submit"] {
     background: url('/static/img/search_icon.png') no-repeat 0 12px;
@@ -20,4 +18,10 @@
   }
 }
 
+.search__no-results {
+  padding-bottom: 10px;
+}
 
+.search-list__container {
+  padding: 15px;
+}

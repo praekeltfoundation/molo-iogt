@@ -2,63 +2,70 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags wagtailimages_tags i18n%}
 
-{% block content %}
-{% if search_results %}
-  <div class="search">
-    <h3>{{search_query}}</h3>
-  </div>
-  {% for page in search_results %}
-    {% with parent_section=page.get_parent_section ancestor=page.get_parent_section.get_ancestors.last %}
-    {% if ancestor.sectionpage.image %}
-      <a href="{% pageurl page %}">
-        <div class="nav">
-          <h6>{{ancestor.title}}</h6>
-          <h3>{{page.title}}</h3>
-          <p>{{page.subtitle}}</p>
-        </div>
-      </a>
-    {% else %}
-      <a href="{% pageurl page %}">
-        <div class="nav">
-          <h6>{{parent_section.title}}</h6>
-          <h3>{{page.title}}</h3>
-          <p>{{page.subtitle}}</p>
-        </div>
-      </a>
-    {% endif %}
-    {% endwith %}
-  {% endfor %}
-
-  <div class="step-links">
-    {% if search_results.has_previous %}
-        <a href="?p={{ search_results.previous_page_number }}&amp;q={{search_query}}">&larr;</a>
-    {% endif %}
-    <span class="current">
-        Page {{ search_results.number }} of {{ search_results.paginator.num_pages }}
-    </span>
-    {% if search_results.has_next %}
-        <a href="?p={{ search_results.next_page_number }}&amp;q={{search_query}}">&rarr;</a>
-    {% endif %}
-  </div>
-
-  {% else %}
-    <div>
-        <h3>{% trans "Search" %}</h3>
-        <p>{% trans "No search results for " %}{{search_query}}.</p>
-        <div class="nav">
-            <form action="{% url 'search' %}">
-              <input placeholder="{% trans "I am looking for" %}" name="q" type="search">
-              <input type="submit" value="{% trans "Search"%}">
-            </form>
-        </div>
-    </div>
-  {% endif %}
-{% endblock %}
-
 {% block search %}
   {% if search_results %}
       {% include "search/search_block.html" %}
   {% endif %}
 {% endblock %}
+
+{% block content %}
+{% if search_results %}
+<h1 class="heading heading--search">{{search_query}}</h1>
+<div class="search">
+  <ul class="article-list">
+  {% for page in search_results %}
+    {% with parent_section=page.get_parent_section ancestor=page.get_parent_section.get_ancestors.last %}
+    {% if ancestor.sectionpage.image %}
+      <li class="article-list__item">
+        <div class="search-list__container">
+          <a href="{% pageurl page %}">
+            {% image page.image width-290 %}
+            <h3 class="article-list__section">{{ancestor.title}}</h3>
+            <h2 class="article-list__title">{{page.title}}</h3>
+            <h4 class="article-list__subtitle">{{page.subtitle}}</h4>
+          </a>
+        </div>
+      </li>
+    {% else %}
+      <li class="article-list__item">
+        <div class="search-list__container">
+          <a href="{% pageurl page %}">
+            <h3 class="article-list__section">{{parent_section.title}}</h3>
+            <h2 class="article-list__title">{{page.title}}</h3>
+            <h4 class="article-list__subtitle">{{page.subtitle}}</h4>
+          </a>
+        </div>
+      </li>
+    {% endif %}
+    {% endwith %}
+  {% endfor %}
+  </ul>
+
+  <div class="pagination">
+    {% if search_results.has_previous %}
+        <a href="?p={{ search_results.previous_page_number }}&amp;q={{search_query}}" class="pagination__prev">&larr;</a>
+    {% endif %}
+    <span class="pagination__current">
+        Page {{ search_results.number }} of {{ search_results.paginator.num_pages }}
+    </span>
+    {% if search_results.has_next %}
+        <a href="?p={{ search_results.next_page_number }}&amp;q={{search_query}}" class="pagination__next">&rarr;</a>
+    {% endif %}
+  </div>
+
+  {% else %}
+    <h1 class="heading heading--search">{% trans "Search" %}</h1>
+    <h3 class="search__no-results">{% trans "No search results for " %}{{search_query}}.</h3>
+    <div class="nav">
+        <form action="{% url 'search' %}">
+          <input placeholder="{% trans "I am looking for" %}" name="q" type="search">
+          <input type="submit" value="{% trans "Search"%}">
+        </form>
+    </div>
+  {% endif %}
+</div>
+{% endblock %}
+
+
 
 
