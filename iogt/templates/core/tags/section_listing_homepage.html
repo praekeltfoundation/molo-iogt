@@ -1,7 +1,7 @@
 {% load wagtailcore_tags wagtailimages_tags comments static core_tags i18n %}
 
 {% if sections %}
-<h3 class="heading heading--homepage">{% trans "Recommended" %}</h3>
+<h1 class="heading heading--homepage">{% trans "Recommended" %}</h1>
 {% for section in sections %}
   {% load_descendant_articles_for_section section featured_in_homepage=True as featured_articles %}
   {% if featured_articles %}
