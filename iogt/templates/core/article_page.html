@@ -39,7 +39,7 @@
       {% trans "comment" %}{{comment_count|pluralize}}
     </a>
   {% endif %}
-  <article>
+  <div class="article__content">
     {% for block in self.body %}
       {% if block.block_type == 'heading' %}
           <h4 class="article__heading">{{ block.value }}</h4>
@@ -55,7 +55,7 @@
           {{ block }}
       {% endif %}
     {% endfor %}
-  </article>
+  </div>
 </div>
 
 {% include "comments/comment_block.html" %}
