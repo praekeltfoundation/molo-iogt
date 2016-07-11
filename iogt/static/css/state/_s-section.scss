@@ -1,11 +1,15 @@
 @each $name, $color in $color_list {
   .section--#{$name} {
     border-top: 2px solid $color;
+
+    .section__title {
+       color: $color;
+    }
   }
 
   .section-list--#{$name} {
     border-top: 2px solid $color;
-    .section-list__title--homepage,
+    .section-list__title,
     .section-list__more {
       color: $color;
     }
