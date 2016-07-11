@@ -26,17 +26,8 @@
   .section-list-nav--#{$name} {
     color: $color;
     .section-list-nav__item a,
-    .section-list-nav__item--asteric:after {
+    .section-list-nav__item--right-arrow:after {
       color: $color;
-    }
-
-    @media screen and (min-width: 320px) {
-      color: #fff;
-      background: $color;
-      .section-list-nav__item a,
-      .section-list-nav__item--asteric:after {
-         color: #fff;
-      }
     }
   }
 
