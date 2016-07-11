@@ -29,7 +29,6 @@
 }
 
 .call-to-action {
-  padding: 10px 15px;
   a {
   	color: $victoria;
   	text-decoration: underline;
@@ -40,18 +39,10 @@
 	font-weight: normal;
 }
 
-.call-to-action__nav-item--log-in {
+.call-to-action__nav-item--login {
 	font-size: $font-small;
 	text-transform: uppercase;
 	font-weight: bold;
-}
-
-.call-to-action {
-  padding: 15px 15px;
-}
-
-.call-to-action--profile {
-  background: $victoria;
 }
 
 .call-to-action__nav-item--challenge {
