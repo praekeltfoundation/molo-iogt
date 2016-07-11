@@ -2,7 +2,6 @@
 .profiles {
   background: #ffffff;
   padding: 10px 15px;
-
   p {
      display: block;
     font-size: $font-small;
@@ -11,16 +10,39 @@
 }
 
 .profiles__terms {
-  display: inline-block;
+	display: inline-block;
+	color: #666;
+	font-size: $font-small;
+	text-transform: inherit;
+	font-weight: normal;
+}
+
+.profiles__nav-item {
+	color: $victoria;
+	display: inline;
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+
+.profile__alias {
+  display: inline;
 }
 
 .call-to-action {
-  padding: 15px 15px;
+  a {
+  	color: $victoria;
+  	text-decoration: underline;
+  }
 }
 
+.call-to-action__nav-item {
+	font-weight: normal;
+}
 
-.call-to-action--profile {
-  background: $victoria;
+.call-to-action__nav-item--login {
+	font-size: $font-small;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .call-to-action__nav-item--challenge {
@@ -40,3 +62,4 @@
   color: red;
   font-size: $font-small;
 }
+

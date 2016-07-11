@@ -1,14 +1,15 @@
 
 article {
+	a {
+		color: #000;
+		display: inline-block;
+		padding: 5px 15px;
+		font-weight: bold;
+	}
 
-		//This must be next article page style
-		a {
-			color: #000;
-			display: block;
-			margin: 10px 15px;
-			font-weight: bold;
-			border-bottom: solid 1px #e4e4e4;
-		}
+	p, ul li {
+		padding: 0 15px;
+	}
 }
 
 .article__title {
