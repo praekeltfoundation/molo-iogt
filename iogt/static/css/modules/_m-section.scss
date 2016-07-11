@@ -28,7 +28,7 @@
   }
 }
 
-.section-list-nav__item--home {
+.section-list-nav__item--arrow-right {
   &:after {
     content: " ▶ ";
     margin: 0 3px 0 -8px;
@@ -41,6 +41,10 @@
   text-transform: uppercase;
   padding: 10px 15px;
   border-bottom: solid 1px #e4e4e4;
+}
+
+.section-list__title--homepage {
+  padding: 10px 0;
 }
 
 .section-list__more {
