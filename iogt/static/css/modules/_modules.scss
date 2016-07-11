@@ -10,6 +10,12 @@
   height: auto;
 }
 
+.error {
+	font-size: $font-x-small;
+	display: block;
+	color: #ff0000;
+}
+
 @import "_m-languages";
 @import "_m-heading";
 @import "_m-article-list";
@@ -22,4 +28,3 @@
 @import "_m-section";
 @import "_m-comments";
 @import "_m-personae";
-
