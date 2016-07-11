@@ -49,11 +49,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django_extensions',
+
     'taggit',
     'modelcluster',
 
     'molo.core',
-    'molo.profiles',
     'iogt',
 
     'wagtail.wagtailcore',
@@ -72,16 +72,21 @@ INSTALLED_APPS = [
     'wagtail.contrib.settings',
     'wagtailsurveys',
 
+    'mptt',
     'molo.usermetadata',
     'molo.surveys',
-    'mptt',
-
+    'molo.profiles',
+    'molo.commenting',
+    'django_comments',
     'raven.contrib.django.raven_compat',
     'djcelery',
     'django_cas_ng',
     'compressor',
 ]
 
+COMMENTS_APP = 'molo.commenting'
+COMMENTS_FLAG_THRESHHOLD = 3
+COMMENTS_HIDE_REMOVED = False
 SITE_ID = 1
 
 MIDDLEWARE_CLASSES = [
@@ -99,8 +104,6 @@ MIDDLEWARE_CLASSES = [
     'wagtailmodeladmin.middleware.ModelAdminMiddleware',
     'molo.core.middleware.AdminLocaleMiddleware',
     'molo.usermetadata.middleware.PersonaMiddleware'
-
-
 ]
 
 # Template configuration
@@ -108,7 +111,7 @@ MIDDLEWARE_CLASSES = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['iogt/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -3,38 +3,36 @@ $font-xx-small      : 9px;
 $font-x-small       : 12px;
 $font-small         : 14px;
 $font-medium        : 16px;
-$font-x-medium      : 20px;
-$font-x-large      	: 20px;
-$font-large         : 30px;
+$font-x-medium      : 18px;
+$font-large       	: 20px;
+$font-xx-large			: 25px;
+$font-x-large       : 30px;
 
 $victoria           : #4D4391;
-$dark_navy_blue     : #221e40;
 $east_bay           : #4E4682;
 $scampi             : #685FA1;
 
-$de-york            :   #6dc27f;
-$celery             :   #a4ce55;
-$mandy              :   #e24256;
-$wewak              :   #ee97ac;
-$robin_egg_blue     :   #00bfc6;
-$roman              :   #df6859;
-$danube             :   #6093cd;
-$dove_gray          :   #737373;
 
-$pelorous           :   #37BFBE;
-$eucalyptus         :   #2A9B58;
+$de_york            :   #2A9B58;
+$mandy              :   #EC3B3A;
+$robin_egg_blue     :   #37BFBE;
+$danube             :   #5F7AC9;
+$roman              :   #EF9955;
+$celery             :   #a4ce55;
+$wewak              :   #ee97ac;
+$dove_gray          :   #737373;
 $saffron            :   #F2B438;
-$sandy_brown        :   #EF9955;
-$cinnabar           :   #EC3B3A;
 $medium_violet      :   #B62A99;
-$indigo_blue        :   #5F7AC9;
+
 
 $color_list: (
-  pelorous          : $pelorous,
-  eucalyptus        : $eucalyptus,
+  de_york           : $de_york,
+  robin_egg_blue    : $robin_egg_blue,
+  mandy             : $mandy,
+  danube            : $danube,
+  roman             : $roman,
   saffron           : $saffron,
-  sandy_brown       : $sandy-brown,
-  cinnabar          : $cinnabar,
   medium_violet     : $medium-violet,
-  indigo_blue       : $indigo_blue  
 );
+
+

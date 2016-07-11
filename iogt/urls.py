@@ -35,7 +35,6 @@ urlpatterns += patterns(
                            namespace='molo.usermetadata',
                            app_name='molo.usermetadata')),
 
-    url(r'', include('molo.core.urls')),
     url(r'^profiles/register/done/',
         login_required(RegistrationDone.as_view(
             template_name="profiles/done.html",
@@ -44,6 +43,9 @@ urlpatterns += patterns(
         name='registration_done'),
     url(r'^profiles/', include('molo.profiles.urls',
                                namespace='molo.profiles')),
+    url(r'^comments/', include('molo.commenting.urls')),
+    url('^', include('django.contrib.auth.urls')),
+    url(r'', include('molo.core.urls')),
     url(r'', include(wagtail_urls)),
 )
 

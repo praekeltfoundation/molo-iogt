@@ -1,15 +1,12 @@
 
 .profiles {
-  background: #fff;
-  padding: 0 15px 10px;
-
-  a {
-  	text-decoration: underline;
-  }
-}
-
-.profiles__subtitle {
-  font-size: $font-x-medium;
+  background: #ffffff;
+  padding: 10px 15px;
+  p {
+     display: block;
+    font-size: $font-small;
+    padding: 5px 0;
+    }
 }
 
 .profiles__terms {
@@ -31,9 +28,6 @@
   display: inline;
 }
 
-
-
-
 .call-to-action {
   padding: 10px 15px;
   a {
@@ -51,3 +45,30 @@
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
+.call-to-action {
+  padding: 15px 15px;
+}
+
+.call-to-action--profile {
+  background: $victoria;
+}
+
+.call-to-action__nav-item--challenge {
+  text-align: left;
+   color: #ffffff;
+   font-size: $font-x-large;
+}
+
+.error {
+  display: block;
+  font-size: $font-small;
+  color: red;
+  padding: 5px 25px 0 0;
+}
+
+.errorlist li {
+  color: red;
+  font-size: $font-small;
+}
+

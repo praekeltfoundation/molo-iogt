@@ -1,40 +1,44 @@
 
 .heading {
-  padding: 10px 15px 0;
-  font-weight: normal;
+  padding: 0 0 15px;
 }
 
 .heading--large {
-  font-size: 32px;
-}
-
-.heading--profiles {
-  color: $victoria;
   font-size: $font-x-large;
+  padding: 15px 15px 0;
   text-transform: capitalize;
 }
 
+.heading--profiles {
+  background: $victoria;
+  color: #fff;
+  font-size: $font-x-large;
+  text-transform: capitalize;
+  padding: 0 20px 15px;
+}
+
+.heading--personae {
+  background: $victoria;
+  padding: 15px;
+  color: #fff;
+  font-size: $font-medium;
+  text-transform: uppercase;
+}
 
 .heading--navigation {
   color: #fff;
   background: #4d4391;
 }
 
-@each $name, $color in $color_list {
-  .heading.heading--#{$name} {
-    color: $color;
-  }
-
-  .heading--large.heading--#{$name} {
-    color: #fff;
-    background: $color;
-  }
+.heading--homepage {
+  background: transparent;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
-
 
 .section-heading {
   border-bottom: 1px solid #B0B9BB;
-  padding: 10px 20px;
+  padding: 10px 15px;
   a {
     display: block;
   }
