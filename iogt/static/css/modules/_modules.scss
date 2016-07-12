@@ -1,8 +1,12 @@
 
 .logo {
-  display: block;
+	display: block;
   margin-bottom: 10px;
   vertical-align: middle;
+  @media screen and (min-width: 600px) {
+  	padding-right: 30px;
+  	display: inline-block;
+  }
 }
 
 .section-image {

@@ -11,4 +11,31 @@
   font-weight: bold;
   color: #fff;
   font-size: $font-small;
+  @media screen and (min-width: 600px) { 
+    padding-right: 23px;
+  	text-decoration: none;
+    display: inline-block;
+    text-indent: -999em;
+    width: 21px;
+    height: 23px;
+  }
+}
+
+#profile_icon,
+#join_icon {
+  @media screen and (min-width: 600px) {
+    background: url('../img/tiny_search_icon.png') no-repeat center center;
+  }
+}
+
+#menu_icon {
+  @media screen and (min-width: 600px) {
+    background: url('../img/profile_icon.png') no-repeat center center;
+  }
+}
+
+#search_icon {
+  @media screen and (min-width: 600px) {
+    background: url('../img/burger_icon.png') no-repeat center center;
+  }
 }
