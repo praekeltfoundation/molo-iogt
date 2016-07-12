@@ -19,7 +19,7 @@
         {% endif %}
       </fieldset>
       {% endfor %}
-    <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}">{% trans "Log in to vote" %}</a>
+    <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}" class="call">{% trans "Log in to vote" %}</a>
     {% else %}
       {% can_vote question as user_can_vote %}
       {% if user_can_vote %}
@@ -37,7 +37,7 @@
     <input type="submit" value="{% trans "Vote" %}" />
 
     {% elif question.get_main_language_page.show_results %}
-      <a href="{% url 'molo.polls:results' question.id %}">{% trans "Show Results" %}</a>
+      <a href="{% url 'molo.polls:results' question.id %}" class="call-to-action__nav-item  call-to-action__nav-item-show-results">{% trans "Show Results" %}</a>
     {% elif not question.get_main_language_page.show_results %}
       {% user_choice question as user_choice %}
       <h5 class="polls__subtitle">{% trans "You voted: " %}{{user_choice}}</h5>
