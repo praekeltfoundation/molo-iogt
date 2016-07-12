@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% load static core_tags i18n molo_survey_tags comments %}
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags poll_votings %}
 
 {% block content %}
 
@@ -56,4 +56,10 @@
     {% endif %}
 {% endfor %}
 </div>
+
+{% has_questions self as questions %}
+{% if questions %}
+  {% poll_page_in_section page=self %}
+{% endif %}
+
 {% endblock %}

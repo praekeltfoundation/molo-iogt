@@ -3,6 +3,7 @@
 {% block content %}
 <div class="polls">
 {% if questions %}
+<h1 class="heading heading--polls">{% trans "Polls" %}</h1>
 	{% for question in questions %}
 	<div class="poll__question">
 		<h2 class="poll__question--title">{{ question.title }}</h2>
