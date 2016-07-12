@@ -1,8 +1,9 @@
   
 @each $name, $color in $color_list {
 	.article--#{$name} {
-		.article-numbered-list__item:before {
-			color: $color;
+		.article-numbered-list__item:before,
+		.article-list__comments-counter {
+				color: $color;
 		}
 	}
 }

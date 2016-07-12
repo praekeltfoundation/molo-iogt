@@ -64,6 +64,10 @@ select {
   width: 32%;
   font-size: $font-medium;
 }
+
+textarea {
+  width: 100%;
+}
  
 .call-to-action__nav-item,
 input[type="submit"] {
@@ -77,4 +81,6 @@ input[type="submit"] {
   margin: 10px 0;
   text-transform: uppercase;
   text-decoration: underline;
+  width: 100%;
+  padding: 10px 0;
 }
