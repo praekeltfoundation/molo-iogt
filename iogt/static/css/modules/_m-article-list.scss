@@ -41,7 +41,25 @@
   text-transform: capitalize;
   font-size: $font-small;
   padding: 0 15px 10px;
+  &:before {
+    @media screen and (min-width: 600px) {
+      content: "";
+      background: url('/static/img/comment_icon.png') no-repeat 0 1px;
+      height: 21px;
+      width: 21px;
+      display: inline-block;
+      background-size: 78%;
+      vertical-align: middle;
+    }
+  }
 } 
+
+.comment-counter__text {
+  display: inline-block;
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+}
 
 .article-list__item--hero {
   .article-list__title {

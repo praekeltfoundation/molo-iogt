@@ -5,7 +5,11 @@
 
   .section-list--#{$name} {
     border-top: 2px solid $color;
-    .section-list__title--homepage,
+
+    .section-list__title--homepage {
+      color: $color;
+    }
+
     .section-list__more {
       color: $color;
     }

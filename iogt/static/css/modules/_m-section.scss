@@ -3,7 +3,8 @@
   padding-top: 10px;
 }
 
-.section__image,.section__subtitle {
+.section__image,
+.section__subtitle {
  padding: 0 15px;
 }
 
@@ -44,7 +45,8 @@
 }
 
 .section-list__title--homepage {
-  padding: 10px 0;
+  padding: 10px 0 0;
+  border-bottom: none;
 }
 
 .section-list__more {
@@ -53,5 +55,14 @@
   padding: 10px 15px;
   font-weight: bold;
   text-decoration: underline;
+  &:after {
+   @media screen and (min-width: 600px) {
+    content: " ▶ ";
+   }
+  }
+  @media screen and (min-width: 600px)  {
+    text-decoration: none;
+    text-align: right;
+  }
 }
 
