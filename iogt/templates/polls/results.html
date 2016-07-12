@@ -12,11 +12,11 @@
 		<li class="polls-result-list__item">
 			<h5 class="choice-result__title">{{ choice.title }}</h5>
 			{% if question.result_as_percentage %}
-				<p class="choice-result__percent">{{ choice.percentage }}%</p>
+			<p class="choice-result__percent">{{ choice.percentage }}%</p>
 			{% else %}
-				<p class="choice-result__votes">
-					{{ choice.votes }} vote{{ choice.votes|pluralize }}
-				</p>
+			<p class="choice-result__votes">
+			{{ choice.votes }} vote{{ choice.votes|pluralize }}
+			</p>
 			{% endif %}
 		</li>
 		{% endfor %}
