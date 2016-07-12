@@ -54,9 +54,9 @@ input[type="text"],
 input[type="number"],
 input[type="password"],
 input[type="email"], 
+input[type="tel"],
 input[type="search"] {
   border: 1px solid #b0b9bb;
-  border-radius: 4px;
   padding: 8px 12px;
   width: 90%;
 }
@@ -65,17 +65,23 @@ select {
   width: 32%;
   font-size: $font-medium;
 }
+
+textarea {
+  width: 100%;
+}
  
 .call-to-action__nav-item,
 input[type="submit"] {
   display: block;
   border-radius: 4px;
   border: none;
+  color: #fff;
+  font-weight: bold;
   cursor: pointer;
   font-size: $font-small;
   margin: 10px 0;
-  padding: 10px 0;
-  text-align: center;
   text-transform: uppercase;
+  text-decoration: underline;
   width: 100%;
+  padding: 10px 0;
 }

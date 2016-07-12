@@ -1,18 +1,17 @@
 
+@each $name, $color in $color_list {
+  .heading--large.heading--#{$name} {
+    color: $color;
+  }
 
-  @each $name, $color in $color_list {
-    .heading--large.heading--#{$name} {
+  @media screen and (min-width: 1900) {
+    .heading.heading--#{$name} {
       color: $color;
     }
 
-    @media screen and (min-width: 1900) {
-      .heading.heading--#{$name} {
-        color: $color;
-      }
-
-      .heading--large.heading--#{$name} {
-        color: #fff;
-        background: $color;
-      }
+    .heading--large.heading--#{$name} {
+      color: #fff;
+      background: $color;
     }
+  }
 }

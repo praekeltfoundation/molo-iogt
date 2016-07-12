@@ -4,61 +4,58 @@
 {% load  %}
 
 {% block content %}
-
-{% if self.get_parent_section.get_parent_section %}
-  {% with section=self.get_parent_section.get_parent_section %}
-  <h2 class="l-indent heading heading--large heading{{section.get_effective_extra_style_hints}}">
-    {{section.title}}
-  </h2>
-    {% with sub_section=self.get_parent_section %}
-    <a href="{% pageurl section %}">
-      <h3 class="l-indent--deep heading heading--back heading{{sub_section.get_effective_extra_style_hints}}">
-        {{sub_section.title}}
-      </h3>
-    </a>
-    {% endwith %}
-  {% endwith %}
-{% else %}
-  {% with section=self.get_parent_section %}
-  <a href="{% pageurl section %}">
-    <h2 class="l-indent--deep heading heading--back heading--large heading{{section.get_effective_extra_style_hints}}">
-      {{section.title}}
-    </h2>
-  </a>
-  {% endwith %}
-
-  {% surveys_list_for_pages page=self %}
+{% if self.image %}
+  {% image self.image width-320 class="article__image" %}
 {% endif %}
-
-
+<ul class="section-list-nav section-list-nav{{self.get_parent_section.get_effective_extra_style_hints}}">
+  <li class="section-list-nav__item section-list-nav__item--arrow-right"><a href="/">{% trans "Home" %}</a></li>
+    {% if self.get_parent_section.get_parent_section %}
+    {% with section=self.get_parent_section.get_parent_section %}
+    <li class="section-list-nav__item  section-list-nav__item--arrow-right">
+      <a href="{% pageurl self %}">{{section.title}}</a>
+      {% with sub_section=self.get_parent_section %}
+        <li class="section-list-nav__item">
+          <a href="{% pageurl section %}">{{sub_section.title}}</a>
+        </li>
+      {% endwith %}
+      </li>
+    {% endwith %}
+    {% else %}
+    {% with section=self.get_parent_section %}
+    <li class="section-list-nav__item">
+      <a href="{% pageurl section %}">{{section.title}}</a>
+    </li>
+    {% endwith %}
+    {% surveys_list_for_pages page=self %}
+    {% endif %}
+</ul>
 <div class="article article{{self.get_parent_section.get_effective_extra_style_hints}}">
   <h1 class="article__title">{{self.title}}</h1>
-
-  {% if self.image %}
-    {% image self.image width-320 class="article__image" %}
-  {% endif %}
   <p class="article__subtitle">{{self.subtitle}}</p>
-
-  <article>
+  {% get_comment_count for self as comment_count %}
+  {% if comment_count > 0 %}
+    <a href="{% pageurl self %}#comments-list" class="article-list__comments-counter">
+      {{comment_count}}
+      {% trans "comment" %}{{comment_count|pluralize}}
+    </a>
+  {% endif %}
+  <div class="article__content">
     {% for block in self.body %}
       {% if block.block_type == 'heading' %}
-          <h4>{{ block.value }}</h4>
+          <h4 class="article__heading">{{ block.value }}</h4>
       {% elif block.block_type == 'image' %}
         {% image block.value width-320 class="article__image" %}
       {% elif block.block_type == 'numbered_list' %}
-        <ol>
+        <ol class="article-numbered-list">
           {% for item in block.value %}
-          <li>{{item}}</li>
+          <li class="article-numbered-list__item">{{item}}</li>
           {% endfor %}
         </ol>
       {% else %}
           {{ block }}
       {% endif %}
     {% endfor %}
-  </article>
+  </div>
 </div>
-
-
 {% include "comments/comment_block.html" %}
-
 {% endblock %}

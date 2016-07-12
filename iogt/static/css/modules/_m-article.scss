@@ -1,0 +1,54 @@
+
+.article__content {
+	a {
+		color: #000;
+		display: inline-block;
+		padding: 5px 15px;
+		font-weight: bold;
+	}
+
+	p, ul li {
+		padding: 0 15px;
+	}
+}
+
+.article__title {
+	padding: 0 15px 10px;
+	font-size: 27px;
+	color: #000;
+}
+
+.article__subtitle {
+	padding: 0 15px;
+}
+
+.article__heading {
+	padding: 10px 15px;
+}
+
+.article-numbered-list {
+	padding: 0 15px;
+	counter-reset:li;
+}
+
+.article-numbered-list__item {
+	content:counter(li);
+	padding: 10px 0;
+
+	&:before {
+		content: counter(li)'.';
+		counter-increment:li;
+		display: block;
+		font-size: $font-xx-large;
+	}
+}
+
+@each $name, $color in $color_list {
+	.article--#{$name} {
+		.article-numbered-list__item:before,
+		.article-list__comments-counter {
+				color: $color;
+		}
+	}
+}
+
