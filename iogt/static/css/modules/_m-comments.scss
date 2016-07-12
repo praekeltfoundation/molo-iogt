@@ -1,13 +1,36 @@
 
-.comments {
+.comment-form {
 	background: #f0f0f0;
+	padding: 10px 15px;
 	a {
 		color: #000;
+		text-decoration: underline;
+	}
+
+	.call-to-action__nav-item,
+	input[type="submit"] {
+		background: transparent;
+		text-align: left;
+		margin: 0;
+		padding: 5px 0;
 	}
 }
 
-.comment-form {
-	padding: 0 15px;
+.comments-list {
+	background: #f0f0f0;
+}
+
+.comment__title {
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	color: #000;
+}
+
+.comment__counter {
+	text-transform: uppercase;
+	color: #000;
+	font-size: $font-small;
+	padding: 15px 0;
 }
 
 .comment-list__item {
@@ -28,7 +51,6 @@
     right: 0;
     left: 0;
 	}
-
 }
 
 .comments__title {
@@ -39,9 +61,24 @@
 	text-transform: uppercase;
 }
 
-.report-link {
+.comments__call-to-action {
 	color: #000;
 	font-weight: bold;
-	display: block;
-	text-align: right;
+}
+
+
+@each $name, $color in $color_list {
+	.comment-form--#{$name} {
+		.call-to-action__nav-item,
+		input[type="submit"] {
+			color: $color;
+		}
+	}
+
+	.comments-list--#{$name} {
+		.comments__call-to-action,
+		.pagination__link {
+			color: $color;
+		}
+	}
 }

@@ -1,8 +1,8 @@
 {% load comments mptt_tags molo_commenting_tags i18n %}
 
 {% if self.is_commenting_enabled %}
-<div class="comments comment-form comments{{self.get_parent_section.get_effective_extra_style_hints}}">
-<h4 class="comments__title">{% trans "Share a Comment" %}</h4>
+<div class="comment-form comment-form{{self.get_parent_section.get_effective_extra_style_hints}}">
+<h4 class="comment__title">{% trans "Share a Comment" %}</h4>
 {% if self.allow_commenting %}
   <div class="post-comment">
     {% if request.user.is_authenticated %}
@@ -19,15 +19,13 @@
 
   {% get_comment_count for self as comment_count %}
   {% if comment_count > 0 %}
-    <h5 class="comments__title">{% trans "Comment" %}
-      <a href="#">{{comment_count}} 
-        <span>{% trans "comment" %}{{comment_count|pluralize}}</span>
-      </a>
+    <h5 class="comment__counter">{% trans "Comment" %}
+      <a href="#">{{comment_count}}{% trans "comment" %}{{comment_count|pluralize}}</a>
     </h5>
   {% endif %}
 </div>
 
-<div id="comments-list" class="comments comments{{self.get_parent_section.get_effective_extra_style_hints}}">
+<div class="comments-list comments-list{{self.get_parent_section.get_effective_extra_style_hints}}">
   {% get_comment_count for self as comment_count %}
     {% get_molo_comments for self as comment_list %}
       {% for node in comment_list %}
