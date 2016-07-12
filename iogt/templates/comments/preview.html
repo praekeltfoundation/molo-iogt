@@ -20,7 +20,7 @@
   {% endwith %}
 </div>
 
-<div class="block {{self.get_parent_section.get_effective_extra_style_hints}}">
+<div class="comment-form comment-form{{self.get_parent_section.get_effective_extra_style_hints}}">
   {% if messages %}
   <ul class="messages">
       {% for message in messages %}
