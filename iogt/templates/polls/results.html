@@ -2,25 +2,31 @@
 {% load i18n static core_tags %}
 
 {% block content %}
-	<div class="list-inline">
+<div class="polls">
 		{% if question.show_results and not question.freetextquestion%}
-			<h4>{{ question.title }}</h4>
-			<p>{% trans "Your answers:" %}</p>
+			<h2 class="poll__question--title">{{ question.title }}</h2>
+			<h4 class="polls__results--title">{% trans "Your answers:" %}</h4>
+			<div class="polls__results">
+				<ul class="polls-result-list">
 				{% for choice in choices %}
-					<span>{{ choice.title }}</span>
+					<li class="polls-result-list__item">
+						<h5 class="choice-result__title">{{ choice.title }}</h5>
 						{% if question.result_as_percentage %}
-							{{ choice.percentage }}%
-							<br>
+							<p class="choice-result__percent">{{ choice.percentage }}%</p>
 						{% else %}
-							{{ choice.votes }} vote{{ choice.votes|pluralize }}
-							<br>
+							<p class="choice-result__votes">
+								{{ choice.votes }} vote{{ choice.votes|pluralize }}
+							</p>
 						{% endif %}
-		      </span>
+		      </li>
 				{% endfor %}
+				</ul>
+			</div>
 		{% else %}
-			<h4>{% trans "Thank you for voting!" %}</h4>
+		<h2 class="polls__title">{% trans "Thank you for voting!" %}</h2>
 		{% endif %}
-		<br>
-	  <a href="{{request.site.root_page.url}}">{% trans "Home" %}</a>
+	  <div class="call-to-action call-to-action--polls">
+			<a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--home">{% trans "Home" %}</a>
+		</div>
 	</div>
 {% endblock %}

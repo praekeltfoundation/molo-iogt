@@ -2,16 +2,17 @@
 {% load static core_tags i18n %}
 
 {% block content %}
-	<div class="list-inline">
-		<h3>{{ question.title }}</h3>
-		{% if form.answer.errors %}<p><strong>{{form.answer.errors|join:", " }}</strong></p>{% endif %}
-		<form action="{% url 'molo.polls:free_text_vote' question.id %}" method="post">
-			{% csrf_token %}
+<div class="polls">
+	<h2 class="poll__question--title">{{ question.title }}</h2>
+		{% if form.answer.errors %}
+		<h4 class="polls__choice-error">{{form.answer.errors|join:", " }}</h4>
+		{% endif %}
+		<form action="{% url 'molo.polls:free_text_vote' question.id %}" method="post" class="polls__form">
+		{% csrf_token %}
 			{{form.answer}}
-			<div>
-				<input type="submit" value="{% trans "Vote" %}"/>
-				<br>
-				<a href="{{request.site.root_page.url}}">{% trans "Home" %}</a>
+			<input type="submit" value="{% trans "Vote" %}"/>
+			<div class="call-to-action call-to-action--polls">
+				<a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--home">{% trans "Home" %}</a>
 			</div>
 		</form>
 	</div>
