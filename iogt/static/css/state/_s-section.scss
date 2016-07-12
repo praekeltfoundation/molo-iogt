@@ -2,4 +2,21 @@
   .section--#{$name} {
     border-top: 2px solid $color;
   }
+
+  .section-list--#{$name} {
+    border-top: 2px solid $color;
+    .section-list__title--homepage,
+    .section-list__more {
+      color: $color;
+    }
+  }
+  
+  .section-list-nav--#{$name} {
+    color: $color;
+    .section-list-nav__item a,
+    .section-list-nav__item--right-arrow:after {
+      color: $color;
+    }
+  }
+
 }
