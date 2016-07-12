@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-08 15:18+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: iogt/settings/base.py:186
+msgid "Zulu"
+msgstr ""
+
+#: iogt/settings/base.py:187
+msgid "Xhosa"
+msgstr ""
+
+#: iogt/settings/base.py:188
+msgid "Sotho"
+msgstr ""
+
+#: iogt/settings/base.py:189
+msgid "Venda"
+msgstr ""
+
+#: iogt/settings/base.py:190
+msgid "Tswana"
+msgstr ""
+
+#: iogt/settings/base.py:191
+msgid "Tsonga"
+msgstr ""
+
+#: iogt/settings/base.py:192
+msgid "Swati"
+msgstr ""
+
+#: iogt/settings/base.py:193
+msgid "Ndebele"
+msgstr ""
+
+#: iogt/settings/base.py:194
+msgid "Wolof"
+msgstr ""
+
+#: iogt/settings/base.py:195
+msgid "Yoruba"
+msgstr ""
+
+#: iogt/settings/base.py:196
+msgid "Igbo"
+msgstr ""
+
+#: iogt/settings/base.py:197
+msgid "Hausa"
+msgstr ""
+
+#: iogt/settings/base.py:198
+msgid "Amharic"
+msgstr ""
+
+#: iogt/settings/base.py:199
+msgid "Malay"
+msgstr ""
+
+#: iogt/settings/base.py:200
+msgid "Guarani"
+msgstr ""
+
+#: iogt/settings/base.py:201
+msgid "Gujarati"
+msgstr ""
+
+#: iogt/settings/base.py:202
+msgid "Filipino"
+msgstr ""
+
+#: iogt/settings/base.py:203
+msgid "N'ko"
+msgstr ""
+
+#: iogt/settings/base.py:204
+msgid "Syriac"
+msgstr ""
+
+#: iogt/settings/base.py:205
+msgid "Dhivehi"
+msgstr ""
+
+#: iogt/settings/base.py:206
+msgid "Berber"
+msgstr ""
+
+#: iogt/settings/base.py:207
+msgid "Kurdish"
+msgstr ""
+
+#: iogt/settings/base.py:208
+msgid "Aramaic"
+msgstr ""
+
+#: iogt/settings/base.py:209
+msgid "Creole Haitian"
+msgstr ""
+
+#: iogt/templates/403.html:8
+msgid "Access Denied"
+msgstr ""
+
+#: iogt/templates/403.html:9
+msgid "You do not have permssion to access this site."
+msgstr ""
+
+#: iogt/templates/404.html:8
+msgid "Page not found"
+msgstr ""
+
+#: iogt/templates/404.html:10
+msgid "Sorry, this page could not be found."
+msgstr ""
+
+#: iogt/templates/500.html:12 iogt/templates/500.html:16
+msgid "Internal server error"
+msgstr ""
+
+#: iogt/templates/500.html:18
+msgid "Sorry, there seems to be an error. Please try again soon."
+msgstr ""
+
+#: iogt/templates/admin/import_from_git.html:9
+msgid "Import content"
+msgstr ""
+
+#: iogt/templates/admin/import_from_git.html:12
+msgid "Import content from a Universal Core site"
+msgstr ""
+
+#: iogt/templates/admin/versions.html:14
+msgid "Plugin"
+msgstr ""
+
+#: iogt/templates/admin/versions.html:15
+msgid "PyPI Version"
+msgstr ""
+
+#: iogt/templates/admin/versions.html:16
+msgid "Runing Version"
+msgstr ""
+
+#: iogt/templates/admin/versions.html:17
+msgid "Status"
+msgstr ""
+
+#: iogt/templates/admin/versions.html:25
+msgid "UpToDate"
+msgstr ""
+
+#: iogt/templates/admin/versions.html:28
+msgid "Not installed"
+msgstr ""
+
+#: iogt/templates/admin/versions.html:30
+msgid "Compare"
+msgstr ""
+
+#: iogt/templates/base.html:49
+msgid "Language"
+msgstr ""
+
+#: iogt/templates/base.html:54
+msgid "Change Language"
+msgstr ""
+
+#: iogt/templates/base.html:78
+msgid "Join"
+msgstr ""
+
+#: iogt/templates/base.html:80
+msgid "Profile"
+msgstr ""
+
+#: iogt/templates/base.html:82
+msgid "Menu"
+msgstr ""
+
+#: iogt/templates/base.html:83 iogt/templates/search/search_results.html:46
+#: iogt/templates/search/search_results.html:51
+msgid "Search"
+msgstr ""
+
+#: iogt/templates/core/tags/latest_listing_homepage.html:5
+#: iogt/templates/core/tags/section-and-subsection_listing_homepage.html:4
+#: iogt/templates/core/tags/section_listing_homepage.html:4
+msgid "Recommended"
+msgstr ""
+
+#: iogt/templates/core/tags/section-and-subsection_listing_homepage.html:46
+#: iogt/templates/core/tags/section-and-subsection_listing_homepage.html:69
+#: iogt/templates/core/tags/section_listing_homepage.html:31
+msgid "comment"
+msgstr ""
+
+#: iogt/templates/core/tags/section-and-subsection_listing_homepage.html:81
+#: iogt/templates/core/tags/section_listing_homepage.html:37
+msgid "More"
+msgstr ""
+
+#: iogt/templates/search/search_block.html:6
+msgid "Search the site..."
+msgstr ""
+
+#: iogt/templates/search/search_block.html:7
+msgid "SEARCH"
+msgstr ""
+
+#: iogt/templates/search/search_results.html:47
+msgid "No search results for "
+msgstr ""
+
+#: iogt/templates/search/search_results.html:50
+msgid "I am looking for"
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:8
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:20
+msgid "Edit this page"
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:20
+msgid "Edit"
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:23
+msgid "Draft"
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:26
+msgid ""
+"This page is published but does not exist within a configured Site, so "
+"cannot be viewed."
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:26
+msgid "Live"
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:29
+msgid "Move"
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:32
+msgid "Copy"
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:35
+msgid "Delete"
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:38
+msgid "Unpublish"
+msgstr ""
+
+#: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:41
+msgid "Add child page"
+msgstr ""
