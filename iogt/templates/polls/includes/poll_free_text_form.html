@@ -1,7 +1,7 @@
 {% load i18n static poll_votings %}
 
 {% if error_message %}
-  <h4 class="polls__choice-error">{{ error_message }}</h4>
+<h4 class="polls__choice-error">{{ error_message }}</h4>
 {% endif %}
 <form action="{% url 'molo.polls:free_text_vote' question.id %}" method="post" class="polls__form">
 {% csrf_token %}
