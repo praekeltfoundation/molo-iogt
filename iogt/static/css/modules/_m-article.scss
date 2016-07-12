@@ -42,3 +42,13 @@ article {
 		font-size: $font-xx-large;
 	}
 }
+
+@each $name, $color in $color_list {
+	.article--#{$name} {
+		.article-numbered-list__item:before,
+		.article-list__comments-counter {
+				color: $color;
+		}
+	}
+}
+
