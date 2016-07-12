@@ -1,5 +1,5 @@
 
-article {
+.article__content {
 	a {
 		color: #000;
 		display: inline-block;
@@ -40,5 +40,14 @@ article {
 		counter-increment:li;
 		display: block;
 		font-size: $font-xx-large;
+	}
+}
+
+  
+@each $name, $color in $color_list {
+	.article--#{$name} {
+		.article-numbered-list__item:before {
+			color: $color;
+		}
 	}
 }
