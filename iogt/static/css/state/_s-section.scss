@@ -1,26 +1,5 @@
 @each $name, $color in $color_list {
   .section--#{$name} {
     border-top: 2px solid $color;
-
-    .section__title {
-       color: $color;
-    }
   }
-
-  .section-list--#{$name} {
-    border-top: 2px solid $color;
-    .section-list__title,
-    .section-list__more {
-      color: $color;
-    }
-  }
-  
-  .section-list-nav--#{$name} {
-    color: $color;
-    .section-list-nav__item a,
-    .section-list-nav__item--right-arrow:after {
-      color: $color;
-    }
-  }
-
 }
