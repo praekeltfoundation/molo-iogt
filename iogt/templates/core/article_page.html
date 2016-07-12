@@ -37,9 +37,9 @@
   {% if self.image %}
     {% image self.image width-320 class="article__image" %}
   {% endif %}
-  <p class="article__subtitle">{{self.subtitle}}</p>
 
-  <article>
+  <div class="article__content">
+    <p class="article__subtitle">{{self.subtitle}}</p>
     {% for block in self.body %}
       {% if block.block_type == 'heading' %}
           <h4>{{ block.value }}</h4>
@@ -55,7 +55,7 @@
           {{ block }}
       {% endif %}
     {% endfor %}
-  </article>
+  </div>
 </div>
 
 {% include "comments/comment_block.html" %}
