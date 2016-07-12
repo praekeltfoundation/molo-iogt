@@ -1,26 +1,39 @@
 .languages {
   background: $victoria;
   color: #fff;
-  font-size: 11px;
+  font-size: $font-x-small;
   text-transform: uppercase;
 }
-
 
 .language-bar {
   padding: 10px 15px;
   overflow: auto;
-
 }
-.current-language, .select-language {
+
+.current-language, 
+.select-language {
   color: #fff;
   display: inline-block;
-  float: left;
-  width: 50%;
+  padding-right: 10px;
+  @media screen and (min-width: 600px) {
+    float: left;
+    width: 50%;
+    padding: 0;
+  }
 }
+
 .select-language {
   text-align: right;
+  font-weight: normal;
+  text-decoration: underline;
   &:after {
-    content: " ▼ ";
+    @media screen and (min-width: 600px) {
+       content: " ▼ ";
+    }
+  }
+  @media screen and (min-width: 600px) {
+    text-decoration: none;
+    font-weight: bold;
   }
 }
 
