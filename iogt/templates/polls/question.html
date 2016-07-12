@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static core_tags i18n %}
+
+{% block content %}
+  <div class="list-inline">
+    <h3>{{ self.title }}</h3>
+    {% if self.freetextquestion %}
+      {% include 'polls/includes/poll_free_text_form.html' with question=self %}
+      <hr>
+    {% else %}
+      {% include 'polls/includes/poll_question_form.html' with question=self %}
+      <hr>
+    {% endif %}
+  </div>
+{% endblock %}
