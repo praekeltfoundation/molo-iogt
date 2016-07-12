@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Django settings for base iogt.
 
@@ -11,7 +10,6 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 from os.path import abspath, dirname, join
 from os import environ
-import django.conf.locale
 from django.conf import global_settings
 from django.utils.translation import ugettext_lazy as _
 import dj_database_url
@@ -170,7 +168,7 @@ CELERYBEAT_SCHEDULE = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'en-gb'
 TIME_ZONE = 'Africa/Johannesburg'
 USE_I18N = True
 USE_L10N = True
@@ -188,174 +186,7 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('ts', _('Tsonga')),
     ('ss', _('Swati')),
     ('nr', _('Ndebele')),
-    ('wo', _('Wolof')),
-    ('yo', _('Yoruba')),
-    ('ig', _('Igbo')),
-    ('ha', _('Hausa')),
-    ('am', _('Amharic')),
-    ('ms', _('Malay')),
-    ('gn', _('Guarani')),
-    ('gu', _('Gujarati')),
-    ('fil', _('Filipino')),
-    ('nqo', _('N\'ko')),
-    ('sys', _('Syriac')),
-    ('dv', _('Dhivehi')),
-    ('ber', _('Berber')),
-    ('ku', _('Kurdish')),
-    ('arc', _('Aramaic')),
-    ('ht', _('Creole Haitian')),
 ]
-
-EXTRA_LANG_INFO = {
-    'zu': {
-        'bidi': False,
-        'code': 'zu',
-        'name': 'Zulu',
-        'name_local': 'Zulu'
-    },
-    'xh': {
-        'bidi': False,
-        'code': 'xh',
-        'name': 'Xhosa',
-        'name_local': 'Xhosa'
-    },
-    'st': {
-        'bidi': False,
-        'code': 'st',
-        'name': 'Sotho',
-        'name_local': 'Sotho'
-    },
-    've': {
-        'bidi': False,
-        'code': 've',
-        'name': 'Venda',
-        'name_local': 'Venda'
-    },
-    'tn': {
-        'bidi': False,
-        'code': 'tn',
-        'name': 'Tswana',
-        'name_local': 'Tswana'
-    },
-    'ts': {
-        'bidi': False,
-        'code': 'ts',
-        'name': 'Tsonga',
-        'name_local': 'Tsonga'
-    },
-    'ss': {
-        'bidi': False,
-        'code': 'ss',
-        'name': 'Swati',
-        'name_local': 'Swati'
-    },
-    'nr': {
-        'bidi': False,
-        'code': 'nr',
-        'name': 'Ndebele',
-        'name_local': 'Ndebele'
-    },
-    'wo': {
-        'bidi': False,
-        'code': 'wo',
-        'name': 'Wolof',
-        'name_local': 'Wolof'
-    },
-    'yo': {
-        'bidi': False,
-        'code': 'yo',
-        'name': 'Yoruba',
-        'name_local': 'Yorùbá'
-    },
-    'ig': {
-        'bidi': False,
-        'code': 'ig',
-        'name': 'Igbo',
-        'name_local': 'Igbo'
-    },
-    'ha': {
-        'bidi': False,
-        'code': 'ha',
-        'name': 'Hausa',
-        'name_local': 'Hausa'
-    },
-    'am': {
-        'bidi': False,
-        'code': 'am',
-        'name': 'Amharic',
-        'name_local': 'አማርኛ'
-    },
-    'ms': {
-        'bidi': False,
-        'code': 'ms',
-        'name': 'Malay',
-        'name_local': 'Malaysia'
-    },
-    'gn': {
-        'bidi': False,
-        'code': 'gn',
-        'name': 'Guarani',
-        'name_local': 'Karaiñe’ême'
-    },
-    'gu': {
-        'bidi': False,
-        'code': 'gu',
-        'name': 'Gujarati',
-        'name_local': 'ગુજરાતી'
-    },
-    'fil': {
-        'bidi': False,
-        'code': 'fil',
-        'name': 'Filipino',
-        'name_local': 'Filipino'
-    },
-    'nqo': {
-        'bidi': False,
-        'code': 'nqo',
-        'name': 'N\'ko',
-        'name_local': 'N\'ko'
-    },
-    'sys': {
-        'bidi': True,
-        'code': 'sys',
-        'name': 'Syriac',
-        'name_local': 'ગુજરાતી'
-    },
-    'dv': {
-        'bidi': False,
-        'code': 'dv',
-        'name': 'Dhivehi',
-        'name_local': 'Dhivehi'
-    },
-    'ber': {
-        'bidi': False,
-        'code': 'ber',
-        'name': 'Berber',
-        'name_local': 'Tamaziɣt'
-    },
-    'ku': {
-        'bidi': False,
-        'code': 'ku',
-        'name': 'Kurdish',
-        'name_local': 'Kurdî'
-    },
-    'arc': {
-        'bidi': True,
-        'code': 'arc',
-        'name': 'Aramaic',
-        'name_local': 'ܐܪܡܝܐ‎'
-    },
-    'ht': {
-        'bidi': False,
-        'code': 'kr',
-        'name': 'Creole Haitian',
-        'name_local': 'Kreyòl ayisyen'
-    },
-}
-
-LANG_INFO = (
-    dict(django.conf.locale.LANG_INFO.items() + EXTRA_LANG_INFO.items()))
-django.conf.locale.LANG_INFO = LANG_INFO
 
 LOCALE_PATHS = [
     join(PROJECT_ROOT, "locale"),
