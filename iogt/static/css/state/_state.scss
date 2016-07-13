@@ -1,16 +1,31 @@
 
+// this should be here because you're able to toggle the
+// sites menu as visible or not; changing the state after the state
+// after the site has rendered.
+@import "_s-languages";
+
+// These should not be here; the should belong to the module, as they don't
+// change anything after the site is rendered.
 @import "_s-menu";
 @import "_s-heading";
 @import "_s-profiles";
-@import "_s-languages";
 @import "_s-comments";
 @import "_s-section";
 
 @media only screen and (min-width: 320px) {
+
 	@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+	html, body,
+  h1, h2, h3, h4, h5, h6,
+  input, select, textarea {
+    font-family: 'Lato', sans-serif;
+  }
+
+
 	input[type="text"],
 	input[type="password"],
-	input[type="email"], 
+	input[type="email"],
 	input[type="tel"],
 	input[type="search"] {
 		border-radius: 4px;
@@ -69,7 +84,11 @@
 		}
 	}
 
-
+	/* These, and all other module state changes be split into their own files;
+	with the same names as the original module, my guess is that we should also
+	hint at the viewport size.
+	e.g.: _s-personae--320
+	*/
 	.personae {
 		position: relative;
 		 a {
@@ -102,7 +121,7 @@
 
 	.menu-list__item {
 		a {
-			display: block; 
+			display: block;
 			text-decoration: none;
 			&:after {
 				content: " ▶ ";
@@ -241,16 +260,12 @@
 	}
 }
 
-@media only screen and (min-width: 600px) { 
-	html { background:#333; }
+@media only screen and (min-width: 600px) {
+
+	html { background: #333; }
 
 	body {
 		max-width: 320px;
 		margin: 0 auto;
-		font-family: 'Lato', Arial, Helvetica, sans-serif;
-	}
-
-	.logo {
-		padding-right: 30px;
 	}
 }
