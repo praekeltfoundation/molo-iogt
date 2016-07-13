@@ -25,3 +25,14 @@ Where does it appear? E.g.: On all the pages - base.html
 What is the purpose of it? 
 Website language navigation
 UX issues: How obvious is the language drop-down  and does it visually indicate the active language to someone that doesn’t understand a current language translation
+
+
+COLOR THEME VARIABLES
+
+$de_york - #2A9B58;
+$robin_egg_blue - #37BFBE;
+$mandy - #EC3B3A;
+$danube - #5F7AC9;
+$roman - #EF9955;
+$saffron - #F2B438;
+$medium_violet - #B62A99;

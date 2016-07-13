@@ -4,13 +4,12 @@
 {% load wagtailcore_tags wagtailimages_tags poll_votings %}
 
 {% block content %}
-
 <div class="section section{{self.get_effective_extra_style_hints}}">
   {% if self.image %}
-  <div class="section__image">
-        {% image self.image width-290 %}
-  </div>
-      {% endif %}
+    <div class="section__image">
+      {% image self.image width-320 %}
+    </div>
+  {% endif %}
   <h1 class="section__title">{{self.title}}</h1>
   <h4 class="section__subtitle">{{self.description}}</h4>
 
@@ -45,7 +44,7 @@
               {% if comment_count > 0 %}
                 <a href="{% pageurl article %}#comments-list" class="article-list__comments-counter">
                   {{comment_count}}
-                  {% trans "comment" %}{{comment_count|pluralize}}
+                  <span class="comment-counter__text">{% trans "comment" %}{{comment_count|pluralize}}</span>
                 </a>
               {% endif %}
             </li>

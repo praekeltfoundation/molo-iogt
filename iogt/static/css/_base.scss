@@ -1,53 +1,53 @@
 html, body {
-  margin: 0;
-  background: #fff;
+	margin: 0;
+	background: #fff;
 }
 
 html, body, input, textarea {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #757575;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 ul, ol, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 p {
-  margin: 0;
+	margin: 0;
 }
 
 img {
-  vertical-align: top;
-  margin: 0;
+	vertical-align: top;
+	margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: bold;
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 label {
-  color: $victoria;
-  display: block;
-  font-size: $font-x-small;
-  padding: 0 0 5px 0;
-  font-weight: bold;
-  text-transform: uppercase;
+	color: $victoria;
+	display: block;
+	font-size: $font-x-small;
+	padding: 0 0 5px 0;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 fieldset {
-  border: none;
-  margin: 15px 0;
-  padding: 0;
+	border: none;
+	margin: 15px 0;
+	padding: 0;
 }
 
 input[type="text"],
@@ -56,32 +56,32 @@ input[type="password"],
 input[type="email"], 
 input[type="tel"],
 input[type="search"] {
-  border: 1px solid #b0b9bb;
-  padding: 8px 12px;
-  width: 90%;
+	border: 1px solid #b0b9bb;
+	padding: 8px 10px;
+	width: 100%;
 }
 
 select {
-  width: 32%;
-  font-size: $font-medium;
+	width: 32%;
+	font-size: $font-medium;
 }
 
 textarea {
-  width: 100%;
+	width: 100%;
 }
  
 .call-to-action__nav-item,
 input[type="submit"] {
-  display: block;
-  border-radius: 4px;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: $font-small;
-  margin: 10px 0;
-  text-transform: uppercase;
-  text-decoration: underline;
-  width: 100%;
-  padding: 10px 0;
+	display: block;
+	border-radius: 4px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: $font-small;
+	margin: 10px 0;
+	text-transform: uppercase;
+	text-decoration: underline;
+	width: 100%;
+	padding: 10px 0;
 }

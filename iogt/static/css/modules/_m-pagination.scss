@@ -3,12 +3,11 @@
 	font-size: $font-small;
 	font-weight: bold;
 	display: block;
-	text-align: right;
 	text-transform: uppercase;
 	padding: 15px;
 }
 
 .pagination__link--current {
 	font-size: $font-x-small;
-	padding: 15px 15px 0;
+	padding: 15px 15px 0 0;
 }

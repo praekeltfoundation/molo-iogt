@@ -1,19 +1,23 @@
 
 .logo {
-  display: block;
-  margin-bottom: 10px;
-  vertical-align: middle;
+	display: block;
+	margin-bottom: 10px;
+	vertical-align: middle;
 }
 
 .section-image {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .error {
 	font-size: $font-x-small;
 	display: block;
 	color: #ff0000;
+}
+
+.call-to-action__nav-item {
+	font-weight: normal;
 }
 
 @import "_m-languages";
