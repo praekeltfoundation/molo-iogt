@@ -21,6 +21,11 @@
     font-family: 'Lato', Arial, Helvetica, sans-serif;
   }
 
+  .logo {
+    padding-right: 30px;
+    display: inline-block;
+  }
+
   //Languages
   .current-language, .select-language {
     float: left;
@@ -54,8 +59,18 @@
 
 
   //Section Article Listing 
+  .section__image  {
+    padding: 0;
+  }
   .section__title {
     color: #666;
+  }
+  .section-list__more {
+    text-decoration: none;
+    text-align: right;
+    &:after {
+      content: " ▶ ";
+    }
   }
 
   //Pesornae
@@ -117,6 +132,25 @@
   }
 
 
+
+  //Article List
+  .article-list__comments-counter {
+     &:before  {
+      content: "";
+      background: url('/static/img/comment_icon.png') no-repeat 0 1px;
+      height: 21px;
+      width: 21px;
+      display: inline-block;
+      background-size: 78%;
+      vertical-align: middle;
+     }
+  }
+  .comment-counter__text {
+    display: none;
+  }
+
+
+
   //Comments
   .comment-form {
     input[type="submit"] {
@@ -128,9 +162,6 @@
     }
   }
 
-  #anonymous-submit {
-      text-align: right;
-  }
   .call-to-action__comment-item--feedback {
     position: absolute;
     right: 10px;
@@ -144,11 +175,14 @@
       font-size: $font-x-small;
     }
   }
-
   .pagination__link--current {
     &:after {
       content: "";
     }
+  }
+
+  #anonymous-submit {
+      text-align: right;
   }
 }
 

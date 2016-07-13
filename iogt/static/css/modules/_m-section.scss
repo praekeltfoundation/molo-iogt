@@ -1,20 +1,14 @@
 
 .section__image {
   padding: 0 15px;
-  @media screen and (min-width: 600px) {
-    padding: 0;
-  }
 }
-
 .section__subtitle  {
   padding: 0 15px 10px;
 }
-
 .section__title {
   font-size: $font-x-large;
   padding: 15px 15px 0;
 }
-
 
 
 
@@ -24,7 +18,6 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .section-list-nav__item {
   display: inline;
   a { 
@@ -32,7 +25,6 @@
     text-decoration: underline;
   }
 }
-
 .section-list-nav__item--home,
 .section-list-nav__item--arrow-right {
   &:after {
@@ -44,33 +36,20 @@
 
 
 
-
-
 .section-list__title {
   text-transform: uppercase;
   padding: 10px 15px;
   border-bottom: solid 1px #e4e4e4;
 }
-
 .section-list__title--homepage {
   padding: 10px 0 0;
   border-bottom: none;
 }
-
 .section-list__more {
   display: block;
   text-transform: uppercase;
   padding: 10px 15px;
   font-weight: bold;
   text-decoration: underline;
-  &:after {
-   @media screen and (min-width: 600px) {
-    content: " ▶ ";
-   }
-  }
-  @media screen and (min-width: 600px)  {
-    text-decoration: none;
-    text-align: right;
-  }
 }
 
