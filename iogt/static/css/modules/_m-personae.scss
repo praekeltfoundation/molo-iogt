@@ -1,6 +1,7 @@
 .personae {
 	background: $victoria;
 	color: #fff;
+	overflow: auto;
 	a {
     color: #fff;
 		text-decoration: underline;
@@ -20,10 +21,10 @@
 	&:last-child {
 		border-bottom: 1px solid #60579C;
 	}
-
 	img {
 		max-height: 65px;
 	}
+
 }
 
 .personae-nav {

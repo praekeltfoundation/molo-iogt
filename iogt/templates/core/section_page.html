@@ -44,7 +44,7 @@
               {% if comment_count > 0 %}
                 <a href="{% pageurl article %}#comments-list" class="article-list__comments-counter">
                   {{comment_count}}
-                  {% trans "comment" %}{{comment_count|pluralize}}
+                  <span class="comment-counter__text">{% trans "comment" %}{{comment_count|pluralize}}</span>
                 </a>
               {% endif %}
             </li>
