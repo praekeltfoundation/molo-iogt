@@ -14,16 +14,6 @@
     width: auto;
     background: transparent;
     margin: 0;
-    @media screen and (min-width: 600px) {
-      background: url('/static/img/search_icon_black.png') no-repeat 0 0;
-      position: absolute;
-      right: 15px;
-      top: 0;
-      height: 21px;
-      width: 21px;
-      text-indent: -99em;
-      margin: 10px 0;
-    }
   }
 }
 
