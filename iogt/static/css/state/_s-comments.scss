@@ -3,16 +3,9 @@
 	.comment-form--#{$name} {
 		input[type="submit"] {
 			color: $color;
-			@media only screen and (min-width: 600px) {
-				background: $color;
-				color: #fff;
-			}
 		}
 		#anonymous-submit {
 			color: $color;
-			@media only screen and (min-width: 600px) {
-				background: none;
-			}
 		}
 		.call-to-action__comment-item--feedback {
 			color: $color;

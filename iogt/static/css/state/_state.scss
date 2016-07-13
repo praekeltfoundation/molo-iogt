@@ -183,6 +183,50 @@
   #anonymous-submit {
       text-align: right;
   }
+
+  //VARIABLE
+  @each $name, $color in $color_list {
+    .comment-form--#{$name} {
+      input[type="submit"] {
+        background: $color;
+        color: #fff;
+      }
+      #anonymous-submit {
+        background: none;
+      }
+    }
+    .heading--large.heading--#{$name} {
+      color: #fff;
+      background: $color;
+    }
+
+    .heading.heading--#{$name} {
+      color: $color;
+    }
+
+    .section--#{$name} {
+      .section__title {
+        background: $color;
+        color: #fff;
+      }
+
+      .section__subtitle {
+        background: $color;
+        color: #fff;
+      }
+    }
+
+    .section-list-nav--#{$name} {
+      background: $color;
+      color: #fff;
+      .section-list-nav__item a,
+      .section-list-nav__item--homeafter,
+      .section-list-nav__item--arrow-right:after {
+        color: #fff;
+      }
+    }
+
+  }
 }
 
 

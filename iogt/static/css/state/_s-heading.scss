@@ -3,15 +3,4 @@
   .heading--large.heading--#{$name} {
     color: $color;
   }
-
-  @media screen and (min-width: 1900) {
-    .heading.heading--#{$name} {
-      color: $color;
-    }
-
-    .heading--large.heading--#{$name} {
-      color: #fff;
-      background: $color;
-    }
-  }
 }
