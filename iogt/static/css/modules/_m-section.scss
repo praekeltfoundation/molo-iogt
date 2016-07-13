@@ -1,11 +1,6 @@
 
-.section {
-  padding-top: 10px;
-}
-
-.section__image,
-.section__subtitle {
- padding: 0 15px;
+.section__subtitle  {
+  padding: 0 15px 10px;
 }
 
 .section__title {
@@ -13,12 +8,14 @@
   padding: 15px 15px 0;
 }
 
+
+
+
 .section-list-nav {
   padding: 10px 15px;
   border-top: solid 1px #e4e4e4;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .section-list-nav__item {
@@ -29,6 +26,7 @@
   }
 }
 
+.section-list-nav__item--home,
 .section-list-nav__item--arrow-right {
   &:after {
     content: " ▶ ";
@@ -37,8 +35,11 @@
   }
 }
 
+
+
+
+
 .section-list__title {
-  font-size: $font-small;
   text-transform: uppercase;
   padding: 10px 15px;
   border-bottom: solid 1px #e4e4e4;

@@ -1,25 +1,49 @@
 @each $name, $color in $color_list {
   .section--#{$name} {
     border-top: 2px solid $color;
+
+    .section__title {
+      color: $color;
+      @media screen and (min-width: 600px) {
+          background: $color;
+          color: #fff;
+      }
+    }
+
+    .section__subtitle {
+      color: #666;
+      @media screen and (min-width: 600px) {
+          background: $color;
+          color: #fff;
+      }
+    }
   }
 
   .section-list--#{$name} {
     border-top: 2px solid $color;
 
-    .section-list__title--homepage {
-      color: $color;
-    }
-
+    .section-list__title--homepage,
+    .section-list__title,
     .section-list__more {
       color: $color;
     }
+
   }
   
   .section-list-nav--#{$name} {
     color: $color;
+    @media screen and (min-width: 600px) {
+      background: $color;
+      color: #fff;
+    }
+
     .section-list-nav__item a,
-    .section-list-nav__item--right-arrow:after {
+    .section-list-nav__item--homeafter,
+    .section-list-nav__item--arrow-right:after {
       color: $color;
+      @media screen and (min-width: 600px) {
+        color: #fff;
+      }
     }
   }
 
