@@ -127,7 +127,8 @@
 	}
 
 	.heading--search  {
-	font-size: $font-small;
+		font-size: $font-small;
+		border-bottom: 1px solid #B0B9BB;
 	}
 	.search-form--main {
 		background: $victoria;
@@ -236,6 +237,12 @@
 			.section-list-nav__item--homeafter,
 			.section-list-nav__item--arrow-right:after {
 				color: #fff;
+			}
+		}
+
+		.search--results-list--#{$name} {
+			.search--result__section-title {
+				color: $color;
 			}
 		}
 	}

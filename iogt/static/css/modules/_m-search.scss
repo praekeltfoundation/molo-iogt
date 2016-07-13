@@ -1,6 +1,5 @@
 
 .search {
-	background: #f0f0f0;
 	position: relative;
 	padding: 10px 15px;
 }
@@ -33,6 +32,22 @@
 
 .search__result-item {
 	display: block;
-	color: #666;
 	margin-bottom: 10px;
+	color: #757575;
+}
+
+
+.search--result__section-title {
+	text-transform: uppercase;
+}
+
+.search--result__title {
+		font-size: 30px;
+		line-height: 1.0;
+		padding: 10px 0;
+		font-size: $font-xx-large;
+}
+
+.search--result__subtitle {
+
 }
