@@ -1,5 +1,5 @@
 
-//MOBILE
+//FEATURE MOBILE
 @media only screen and (min-width: 320px) {
   @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
   
@@ -11,7 +11,7 @@
   @import "_s-section";
 }
 
-//DESKTOP
+//MOBILE
 @media only screen and (min-width: 600px) {
   html { background:#333; }
   body {
@@ -184,7 +184,6 @@
       text-align: right;
   }
 
-  //VARIABLE
   @each $name, $color in $color_list {
     .comment-form--#{$name} {
       input[type="submit"] {
