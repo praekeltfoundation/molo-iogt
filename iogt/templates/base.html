@@ -90,6 +90,7 @@
          <img class="logo" src="{% static 'img/iogt_logo.png' %}" alt="The Internet of Good Things" width="40%" />
          {% endblock %}
         </a>
+        <div class="menu-links">
         {% if not user.is_authenticated %}
         <a id="join_icon"href="{% url 'molo.profiles:user_register' %}" class="header__nav-item">{% trans "Join" %}</a>
         {% else %}
@@ -97,6 +98,7 @@
         {% endif %}
         <a id="search_icon" href="#search-form" class="header__nav-item">{% trans "Search" %}</a>
         <a id="menu_icon" href="#section_menu" class="header__nav-item">{% trans "Menu" %}</a>
+        </div>
       </div>
 
       {% block content %}{% endblock %}
