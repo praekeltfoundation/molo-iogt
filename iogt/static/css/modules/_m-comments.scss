@@ -7,7 +7,6 @@
 		text-decoration: underline;
 	}
 
-	.call-to-action__nav-item,
 	input[type="submit"] {
 		background: transparent;
 		text-align: left;
@@ -61,22 +60,38 @@
 	text-transform: uppercase;
 }
 
-.comments__call-to-action {
+.call-to-action__comment-item {
 	color: #000;
-	font-weight: bold;
+	text-transform: uppercase;
 }
 
+.call-to-action__comment-item--feedback {
+	text-transform: capitalize;
+}
 
 @each $name, $color in $color_list {
 	.comment-form--#{$name} {
-		.call-to-action__nav-item,
 		input[type="submit"] {
+			color: $color;
+			@media only screen and (min-width: 600px) {
+				background: $color;
+				color: #fff;
+			}
+		}
+		#anonymous-submit {
+			color: $color;
+			@media only screen and (min-width: 600px) {
+				background: none;
+			}
+		}
+
+		.call-to-action__comment-item--feedback {
 			color: $color;
 		}
 	}
 
 	.comments-list--#{$name} {
-		.comments__call-to-action,
+		.call-to-action__comment-item--feedback,
 		.pagination__link {
 			color: $color;
 		}

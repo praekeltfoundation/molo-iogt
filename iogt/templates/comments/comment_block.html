@@ -8,19 +8,19 @@
     {% if request.user.is_authenticated %}
       {% render_comment_form for self %}
     {% else %}
-      <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}" class="call-to-action__nav-item call-to-action__nav-item--comment">
+      <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}" class="call-to-action__comment-item">
         {% trans "Log in to comment" %}
       </a>
     {% endif %}
   {% else %}
-    <p>{% trans "Commenting on this article is currently disabled" %}</p>
+    <p class="call-to-action__comment-item call-to-action__comment-item--feedback">{% trans "Commenting on this article is currently disabled" %}</p>
   {% endif %}
 	</div>
 
   {% get_comment_count for self as comment_count %}
   {% if comment_count > 0 %}
-    <h5 class="comment__counter">{% trans "Comment" %}
-      <a href="#">{{comment_count}}{% trans "comment" %}{{comment_count|pluralize}}</a>
+    <h5 class="comment__counter">
+      {{comment_count}} {% trans "comment" %}{{comment_count|pluralize}}
     </h5>
   {% endif %}
 </div>
