@@ -48,12 +48,18 @@
      }
   }
   .personae-list__item {
+    padding: 10px 15px;
+    display: flex;
     &:after {
       content: " ▶ ";
       display: inline-block;
       position: absolute;
       right: 0;
       margin: 5%;
+    }
+    img {
+      display: block;
+      max-height: 65px;
     }
   }
   .personae__skip {
