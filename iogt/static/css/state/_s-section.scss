@@ -1,33 +1,32 @@
 @each $name, $color in $color_list {
-  .section--#{$name} {
-    border-top: 2px solid $color;
-    .section__title {
-      color: $color;
-    }
-    .section__subtitle {
-      color: #666;
-    }
-  }
+	.section--#{$name},
+	.section-list--#{$name} {
+		border-top: 2px solid $color;
+	}
 
+	.section--#{$name} {
+		.section__title {
+			color: $color;
+		}
+		.section__subtitle {
+			color: #666;
+		}
+	}
 
-  .section-list--#{$name} {
-    border-top: 2px solid $color;
-    .section-list__title--homepage,
-    .section-list__title,
-    .section-list__more {
-      color: $color;
-    }
-  }
+	.section-list--#{$name} {
+		.section-list__title--homepage,
+		.section-list__title,
+		.section-list__more {
+			color: $color;
+		}
+	}
 
-
-  .section-list-nav--#{$name} {
-    color: $color;
-    .section-list-nav__item a,
-    .section-list-nav__item--homeafter,
-    .section-list-nav__item--arrow-right:after {
-      color: $color;
-    }
-  }
-  
-
+	.section-list-nav--#{$name} {
+		color: $color;
+		.section-list-nav__item a,
+		.section-list-nav__item--homeafter,
+		.section-list-nav__item--arrow-right:after {
+			color: $color;
+		}
+	}
 }

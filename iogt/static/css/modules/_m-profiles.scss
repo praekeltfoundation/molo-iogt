@@ -1,12 +1,12 @@
 
 .profiles {
-  background: #ffffff;
-  padding: 10px 15px;
-  p {
-     display: block;
-    font-size: $font-small;
-    padding: 5px 0;
-    }
+	background: #ffffff;
+	padding: 10px 15px;
+	p {
+		display: block;
+		font-size: $font-small;
+		padding: 5px 0;
+	}
 }
 
 .profiles__terms {
@@ -25,14 +25,14 @@
 }
 
 .profile__alias {
-  display: inline;
+	display: inline;
 }
 
 .call-to-action {
-  a {
-  	color: $victoria;
-  	text-decoration: underline;
-  }
+	a {
+		color: $victoria;
+		text-decoration: underline;
+	}
 }
 
 .call-to-action__nav-item {
@@ -46,20 +46,20 @@
 }
 
 .call-to-action__nav-item--challenge {
-  text-align: left;
-   color: #ffffff;
-   font-size: $font-x-large;
+	text-align: left;
+	color: #ffffff;
+	font-size: $font-x-large;
 }
 
 .error {
-  display: block;
-  font-size: $font-small;
-  color: red;
-  padding: 5px 25px 0 0;
+	display: block;
+	font-size: $font-small;
+	color: red;
+	padding: 5px 25px 0 0;
 }
 
 .errorlist li {
-  color: red;
-  font-size: $font-small;
+	color: red;
+	font-size: $font-small;
 }
 

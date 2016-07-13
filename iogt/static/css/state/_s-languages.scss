@@ -1,17 +1,16 @@
-/*TOGGLE*/
 
 #language-selection__toggle {
-  display: none;
+	display: none;
 }
 
 .language-selection input + * {
-  display: none;
+	display: none;
 }
 
 .language-selection input:checked + * {
-  display: block;
+	display: block;
 }
 
 .language-list__item--active a {
-  text-decoration: underline;
+	text-decoration: underline;
 }

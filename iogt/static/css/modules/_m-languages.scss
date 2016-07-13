@@ -1,42 +1,42 @@
 .languages {
-  background: $victoria;
-  color: #fff;
-  font-size: $font-x-small;
-  text-transform: uppercase;
+	background: $victoria;
+	color: #fff;
+	font-size: $font-x-small;
+	text-transform: uppercase;
 }
 
 .language-bar {
-  padding: 10px 15px;
-  overflow: auto;
+	padding: 10px 15px;
+	overflow: auto;
 }
 
 .current-language, 
 .select-language {
-  color: #fff;
-  display: inline-block;
-  padding-right: 10px;
+	color: #fff;
+	display: inline-block;
+	padding-right: 10px;
 }
 
 .select-language {
-  text-align: right;
-  font-weight: normal;
-  text-decoration: underline;
-  &:after {
-    content: " ▼ ";
-  }
+	text-align: right;
+	font-weight: normal;
+	text-decoration: underline;
+	&:after {
+		content: " ▼ ";
+	}
 }
 
 
 .language-selection {
-  background: $east_bay;
-  border-bottom: 1px solid #685fa1;
+	background: $east_bay;
+	border-bottom: 1px solid #685fa1;
 }
 .language-list__item {
-  padding: 20px;
-  a {
-    color: #fff;
-    &:after {
-      content: " ▶ ";
-    }
-  }
+	padding: 20px;
+	a {
+		color: #fff;
+		&:after {
+			content: " ▶ ";
+		}
+	}
 }

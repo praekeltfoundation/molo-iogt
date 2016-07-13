@@ -3,29 +3,27 @@
 	color: #fff;
 	overflow: auto;
 	a {
-    color: #fff;
+		color: #fff;
 		text-decoration: underline;
 		text-transform: uppercase;
 	}
 }
 
 .personae__title {
-  text-transform: uppercase;
-  padding: 10px 15px 15px;
+	text-transform: uppercase;
+	padding: 10px 15px 15px;
 }
 
 .personae-list__item {
 	border-top: 1px solid #60579C;
 	padding: 10px 0;
 	word-wrap: break-word;
-	
 	&:last-child {
 		border-bottom: 1px solid #60579C;
 	}
 	img {
 		display: none;
 	}
-
 }
 
 .personae-nav {

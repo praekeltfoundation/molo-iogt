@@ -1,13 +1,7 @@
 
 @each $name, $color in $color_list {
-  .menu-list__item--#{$name}  {
-   a {
-      color: $color;
-    }
-    
-    &:after {
-      color: $color;
-    }
-
-  }
+	.menu-list__item--#{$name} {
+		&:after { color: $color; }
+		a { color: $color; }
+	}
 }

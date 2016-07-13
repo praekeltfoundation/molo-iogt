@@ -1,20 +1,19 @@
 
 #search-form {
-  position: relative;
+	position: relative;
 }
 
 .search {
-  background: #f0f0f0;
-  position: relative;
-  padding: 15px;
-
-  input[type="submit"] {
-    color: #000;
-    text-align: left;
-    width: auto;
-    background: transparent;
-    margin: 0;
-  }
+	background: #f0f0f0;
+	position: relative;
+	padding: 15px;
+	input[type="submit"] {
+		color: #000;
+		text-align: left;
+		width: auto;
+		background: transparent;
+		margin: 0;
+	}
 }
 
 
