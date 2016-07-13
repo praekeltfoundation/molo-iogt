@@ -4,24 +4,24 @@
 
 {% block content %}
 {% if search_results %}
-	<div class="search">
-	<h2 class="heading heading--search">{% trans "Search Results for:" %} &quot;{{search_query}}&quot;</h2>
+<h2 class="heading heading--search">{% trans "Search Results for:" %} &quot;{{search_query}}&quot;</h2>
+	<div class="search search--result">
 	{% for page in search_results %}
 		{% with parent_section=page.get_parent_section ancestor=page.get_parent_section.get_ancestors.last %}
 		{% if ancestor.sectionpage.image %}
 			<a href="{% pageurl page %}" class="search__result-item">
-				<div class="nav">
-					<h6>{{ancestor.title}}</h6>
-					<h3>{{page.title}}</h3>
-					<p>{{page.subtitle}}</p>
+				<div class="search--results-list search--results-list{{page.get_parent_section.get_effective_extra_style_hints}}">
+					<h3 class="search--result__section-title">{{ancestor.title}}</h3>
+					<h1 class="search--result__title">{{page.title}}</h3>
+					<p class="search--result__subtitle">{{page.subtitle}}</p>
 				</div>
 			</a>
 		{% else %}
 			<a href="{% pageurl page %}">
-				<div class="nav">
-					<h6>{{parent_section.title}}</h6>
-					<h3>{{page.title}}</h3>
-					<p>{{page.subtitle}}</p>
+				<div class="search--results-list search--results-list{{page.get_parent_section.get_effective_extra_style_hints}}">
+					<h3 class="search--result__section-title">{{parent_section.title}}</h3>
+					<h1 class="search--result__title">{{page.title}}</h1>
+					<p class="search--result__subtitle">{{page.subtitle}}</p>
 				</div>
 			</a>
 		{% endif %}
