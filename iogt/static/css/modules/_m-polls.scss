@@ -1,0 +1,55 @@
+.polls {
+	border-top: 2px solid $robin_egg_blue;
+
+	label {
+		display: inline-block;
+    color: #000;
+    text-transform: none;
+    font-weight: normal;
+    padding-left: 10px;
+    font-size: $font-medium;
+	}
+}
+
+.poll__question--title,
+.polls__title {
+	padding: 0 15px;
+	font-size: $font-x-medium;
+	color: #000;
+}
+
+.polls__results {
+	padding: 0 15px;
+}
+
+.polls__results--title {
+	padding: 10px 15px;
+	font-size: $font-medium;
+}
+
+
+.call-to-action__nav-item-show-results {
+	color: #000;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.polls__form {
+	padding: 0 15px;
+}
+
+.polls__choice-error {
+	padding: 10px 15px;
+}
+
+.call-to-action--polls {
+	padding: 0 15px;
+}
+
+.call-to-action__nav-item {
+	text-align: left;
+}
+
+.polls-result-list__item {
+	padding: 10px 0;
+}

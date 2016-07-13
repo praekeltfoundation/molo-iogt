@@ -1,0 +1,17 @@
+{% load i18n static poll_votings %}
+
+{% block content %}
+{% if questions %}
+<h1 class="heading heading--polls">{% trans "Polls" %}</h1>
+<div class="polls">
+	{% for question in questions %}
+	<h2 class="polls__question">{{ question.title }}</h2>
+		{% if question.freetextquestion %}
+			{% include 'polls/includes/poll_free_text_form.html'%}
+		{% else %}
+			{% include 'polls/includes/poll_question_form.html'%}
+		{% endif %}
+	{% endfor %}
+</div>
+{% endif %}
+{% endblock %}

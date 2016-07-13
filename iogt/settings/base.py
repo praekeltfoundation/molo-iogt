@@ -81,6 +81,7 @@ INSTALLED_APPS = [
     'molo.commenting',
     'django_comments',
     'raven.contrib.django.raven_compat',
+    'molo.polls',
     'djcelery',
     'django_cas_ng',
     'compressor',
