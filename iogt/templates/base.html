@@ -95,12 +95,12 @@
         {% else %}
         <a id="profile_icon" href="{% url 'molo.profiles:view_my_profile' %}" class="header__nav-item">{% trans "Profile" %}</a>
         {% endif %}
-        <a id="menu_icon" href="#section_menu" class="header__nav-item">{% trans "Menu" %}</a>
         <a id="search_icon" href="#search-form" class="header__nav-item">{% trans "Search" %}</a>
+        <a id="menu_icon" href="#section_menu" class="header__nav-item">{% trans "Menu" %}</a>
       </div>
 
       {% block content %}{% endblock %}
-      <div class="section-menu">
+      <div id="section_menu" class="section-menu">
         <div class="section-heading">
           <a href="/"><img src="{% static 'img/iogt_logo_2.png' %}" alt="The Internet of Good Things" width="40%"/></a>
         </div>
