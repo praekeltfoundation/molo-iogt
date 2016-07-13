@@ -1,7 +1,4 @@
 
-//GENERAL 
-  @import "_s-section";
-
 //MOBILE
 @media only screen and (min-width: 320px) {
   @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
@@ -10,6 +7,8 @@
   @import "_s-heading";
   @import "_s-profiles";
   @import "_s-languages";
+  @import "_s-comments";
+  @import "_s-section";
 }
 
 //DESKTOP

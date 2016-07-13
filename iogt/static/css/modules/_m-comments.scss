@@ -68,31 +68,3 @@
 .call-to-action__comment-item--feedback {
 	text-transform: capitalize;
 }
-
-@each $name, $color in $color_list {
-	.comment-form--#{$name} {
-		input[type="submit"] {
-			color: $color;
-			@media only screen and (min-width: 600px) {
-				background: $color;
-				color: #fff;
-			}
-		}
-		#anonymous-submit {
-			color: $color;
-			@media only screen and (min-width: 600px) {
-				background: none;
-			}
-		}
-		.call-to-action__comment-item--feedback {
-			color: $color;
-		}
-	}
-
-	.comments-list--#{$name} {
-		.call-to-action__comment-item--feedback,
-		.pagination__link {
-			color: $color;
-		}
-	}
-}
