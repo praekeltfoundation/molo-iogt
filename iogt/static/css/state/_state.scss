@@ -21,6 +21,22 @@
     font-family: 'Lato', Arial, Helvetica, sans-serif;
   }
 
+  //Languages
+  .current-language, .select-language {
+    float: left;
+    width: 50%;
+    padding: 0;
+  }
+  .select-language {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .language-list__item {
+    text-align: right;
+  }
+
+
   //Header Nav
   .header__nav-item {
     padding-right: 23px;
@@ -35,10 +51,12 @@
   #menu_icon { background: url('../img/search_icon_white.png') no-repeat center center; }
   #search_icon { background: url('../img/burger_icon.png') no-repeat center center; }
 
+
+
   //Section Article Listing 
-   .section__title {
+  .section__title {
     color: #666;
-   }
+  }
 
   //Pesornae
   .personae {
@@ -68,6 +86,22 @@
     text-align: center;
     padding: 10px;
     margin: 20px 15px;
+  }
+
+
+
+  //Menu List
+  .menu-list__item {
+    a {
+      display: block; 
+      text-decoration: none;
+      &:after {
+        content: " ▶ ";
+        display: inline-block;
+        float: right;
+        padding: 3px 0 0;
+      }
+    }
   }
 }
 

@@ -11,19 +11,6 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
-    &:after {
-      @media screen and (min-width: 600px) {
-        content: " ▶ ";
-        display: inline-block;
-        float: right;
-        padding: 3px 0 0;
-      }
-    }
-
-    @media screen and (min-width: 600px) {
-      display: block; 
-      text-decoration: none;
-    }
   }
 }
  
