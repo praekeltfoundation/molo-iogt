@@ -53,7 +53,7 @@
 		<h3 class="search__feedback-title">
 			{% trans "No search results for " %} {{search_query}}
 		</h3>
-		<a href="/" class="call-to-action__nav-item call-to-action__nav-item--back-home">
+		<a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--back-home">
 			{% trans "Back to homepage" %}
 		</a>
 	</div>
