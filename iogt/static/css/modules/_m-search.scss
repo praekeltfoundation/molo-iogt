@@ -30,6 +30,12 @@
 	font-weight: bold;
 }
 
+.search--results-list {
+	.article-list__comments-counter {
+		padding: 0 15px 10px 0;
+	}
+}
+
 .search__result-item {
 	display: block;
 	margin-bottom: 10px;
@@ -48,6 +54,4 @@
 		font-size: $font-xx-large;
 }
 
-.search--result__subtitle {
-
-}
+.search--result__subtitle {}

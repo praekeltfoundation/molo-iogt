@@ -57,6 +57,7 @@ input[type="email"],
 input[type="tel"],
 input[type="search"] {
 	border: 1px solid #b0b9bb;
+	box-sizing: border-box;
 	padding: 8px 10px;
 	width: 100%;
 }
@@ -72,10 +73,11 @@ textarea {
  
 .call-to-action__nav-item,
 input[type="submit"] {
+	background: transparent;
 	display: block;
 	border-radius: 4px;
 	border: none;
-	color: #fff;
+	color: $victoria;
 	font-weight: bold;
 	cursor: pointer;
 	font-size: $font-small;
@@ -84,4 +86,5 @@ input[type="submit"] {
 	text-decoration: underline;
 	width: 100%;
 	padding: 10px 0;
+	text-align: left;
 }

@@ -31,6 +31,14 @@
 		border-radius: 4px;
 	}
 
+	.call-to-action__nav-item {} //Where does this look like a submit button
+	input[type="submit"] {
+		background: $victoria;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+	}
+
 	.logo {
 		padding-right: 20px;
 		display: inline-block;
@@ -69,12 +77,49 @@
 	#menu_icon { background: url('../img/burger_icon.png ') no-repeat center center; }
 	#search_icon { background: url('../img/search_icon_white.png') no-repeat center center; }
 
+	.heading--profiles {
+		background: $victoria;
+		color: #fff;
+	}
+	.call-to-action--profile {
+		background: $victoria;
+		color: #fff;
+	}
+	.call-to-action--view-profile {
+		background: transparent;
+	}
+	.call-to-action__nav-item--challenge {
+		color: #fff;
+		font-size: $font-large;
+	}
+	.call-to-action__nav-item--login {
+		background: #fff;
+		color: $victoria;
+		margin: 10px 0;
+		padding: 10px 0;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.call-to-action__nav-item--logout,
+	.call-to-action__nav-item--editprofile,
+	.call-to-action__nav-item--change-password {
+		background: $victoria;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.profiles__forgotten-password {
+		text-decoration: none;
+		font-size: $font-x-small;
+	}
 
 	.section__image  {
 		padding: 0;
 	}
 	.section__title {
-		color: #666;
+		color: #757575;
 	}
 	.section-list__more {
 		text-decoration: none;
