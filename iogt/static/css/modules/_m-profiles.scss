@@ -1,7 +1,6 @@
 
 .profiles {
-	background: #ffffff;
-	padding: 10px 15px;
+	padding: 0 15px 10px;
 	p {
 		display: block;
 		font-size: $font-small;
@@ -28,23 +27,44 @@
 	display: inline;
 }
 
-.call-to-action {
-	a {
-		color: $victoria;
-		text-decoration: underline;
-	}
+.call-to-action__nav-item {
+	color: $victoria;
+	text-decoration: underline;
 }
 
-.call-to-action__nav-item--login {
-	font-size: $font-small;
-	text-transform: uppercase;
-	font-weight: bold;
+.call-to-action--profile {
+	background: transparent;
+	padding: 0 15px 15px;
+}
+
+.call-to-action--view-profile {
+	padding: 0;
 }
 
 .call-to-action__nav-item--challenge {
 	text-align: left;
-	color: #ffffff;
-	font-size: $font-x-large;
+	color: #757575;
+	margin: 0;
+	text-decoration: none;
+	text-transform: inherit;
+	font-size: $font-x-medium;
+}
+
+.call-to-action__nav-item--login {
+	color: $victoria;
+	font-size: $font-small;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.profiles__forgotten-password {
+	color: #757575;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: $font-small;
+	text-decoration: underline;
 }
 
 .error {
