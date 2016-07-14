@@ -1,25 +1,27 @@
 {% load i18n static poll_votings %}
-
 {% if error_message %}
 <h4 class="polls__choice-error">{{ error_message }}</h4>
 {% endif %}
 <form action="{% url 'molo.polls:free_text_vote' question.id %}" method="post" class="polls__form">
 {% csrf_token %}
-  {% if request.user.is_authenticated %}
-  <fieldset>
-    {% can_vote question as user_can_vote %}
-    {% if user_can_vote %}
-      {% if question.freetextquestion.get_main_language_page.numerical %}
-        <input type="number" name="answer" id="id_answer" value="" />
-      {% else %}
-        <input type="text" name="answer" id="id_answer" value="" />
-      {% endif%}
-    <input type="submit" value="{% trans "Submit" %}" />
-    {% else %}
-    <p class="polls__subtitle">{% trans "Thank you! Your response has already been submitted." %}<p>
-    {% endif %}
-  </fieldset>
-  {% else %}
-    <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}">{% trans "Log in to vote" %}</a>
-  {% endif %}
+	{% if request.user.is_authenticated %}
+	<fieldset>
+		{% can_vote question as user_can_vote %}
+		{% if user_can_vote %}
+			{% if question.freetextquestion.get_main_language_page.numerical %}
+				<input type="number" name="answer" id="id_answer" value="" />
+			{% else %}
+				<input type="text" name="answer" id="id_answer" value="" />
+			{% endif%}
+		<input type="submit" value="{% trans "Submit" %}" />
+		{% else %}
+		<p class="polls__subtitle">{% trans "Thank you! Your response has already been submitted." %}<p>
+		{% endif %}
+	</fieldset>
+	{% else %}
+	<div class="call-to-action call-to-action--polls">
+		<a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}" class="call-to-action__nav-item call-to-action__nav-item--poll-login">
+		{% trans "Log in to vote" %}</a>
+	</div>
+	{% endif %}
 </form>

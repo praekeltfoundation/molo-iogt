@@ -12,6 +12,16 @@
 @import "_s-comments";
 @import "_s-section";
 
+
+@each $name, $color in $color_list {
+	.polls--#{$name} {
+		.heading--polls {
+			color: $color;
+			border-top: 2px solid $color;
+		}
+	}
+}
+
 @media only screen and (min-width: 320px) {
 
 	@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
@@ -110,6 +120,15 @@
 		text-decoration: none;
 	}
 
+	.call-to-action__nav-item--poll-login,
+	.polls__form input[type="submit"] {
+		background: $robin_egg_blue;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		font-weight: normal;
+	}
+
 	.profiles__forgotten-password {
 		text-decoration: none;
 		font-size: $font-x-small;
@@ -201,7 +220,7 @@
 		}
 	}
 
-	.call-to-action__nav-item--search-home {
+	.call-to-action__nav-item--back-home {
 		position: relative;
 		padding: 10px 15px;
 		&:before {
@@ -267,6 +286,13 @@
 	}
 
 	@each $name, $color in $color_list {
+		.polls--#{$name} {
+			.call-to-action__nav-item--poll-login,
+			.polls__form input[type="submit"] {
+				background: $color;
+			}
+		}
+
 		.comment-form--#{$name} {
 			input[type="submit"] {
 				background: $color;
