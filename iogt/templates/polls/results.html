@@ -2,7 +2,7 @@
 {% load i18n static core_tags %}
 
 {% block content %}
-<div class="polls">
+<div class="polls polls--results">
 {% if question.show_results and not question.freetextquestion%}
 	<h2 class="poll__question--title">{{ question.title }}</h2>
 	<h4 class="polls__results--title">{% trans "Your answers:" %}</h4>
@@ -10,9 +10,9 @@
 		<ul class="polls-result-list">
 		{% for choice in choices %}
 		<li class="polls-result-list__item">
-			<h5 class="choice-result__title">{{ choice.title }}</h5>
+			<p class="choice-result__title">{{ choice.title }}</p>
 			{% if question.result_as_percentage %}
-			<p class="choice-result__percent">{{ choice.percentage }}%</p>
+			<h5 class="choice-result__percent">{{ choice.percentage }}%</h5>
 			{% else %}
 			<p class="choice-result__votes">
 			{{ choice.votes }} vote{{ choice.votes|pluralize }}
@@ -26,7 +26,7 @@
 <h2 class="polls__title">{% trans "Thank you for voting!" %}</h2>
 {% endif %}
 <div class="call-to-action call-to-action--polls">
-	<a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--home">{% trans "Home" %}</a>
+	<a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--back-home">{% trans "Home" %}</a>
 </div>
 </div>
 {% endblock %}

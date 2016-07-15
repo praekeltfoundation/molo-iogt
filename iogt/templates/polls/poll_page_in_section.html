@@ -2,15 +2,19 @@
 
 {% block content %}
 {% if questions %}
-<h1 class="heading heading--polls">{% trans "Polls" %}</h1>
-<div class="polls">
+
+<div class="polls polls{{page.get_effective_extra_style_hints|default:"robin_egg_blue"}}">
+<h1 class="heading heading--polls">
+{% trans "Polls" %}</h1>
 	{% for question in questions %}
-	<h2 class="polls__question">{{ question.title }}</h2>
+	<div class="poll__question">
+		<h2 class="poll__question--title">{{ question.title }}</h2>
 		{% if question.freetextquestion %}
 			{% include 'polls/includes/poll_free_text_form.html'%}
 		{% else %}
 			{% include 'polls/includes/poll_question_form.html'%}
 		{% endif %}
+		</div>
 	{% endfor %}
 </div>
 {% endif %}
