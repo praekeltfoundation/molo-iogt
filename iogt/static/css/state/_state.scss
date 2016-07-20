@@ -11,6 +11,7 @@
 @import "_s-profiles";
 @import "_s-comments";
 @import "_s-section";
+@import "_s-survey";
 
 
 @each $name, $color in $color_list {
@@ -118,6 +119,16 @@
 		color: #fff;
 		text-align: center;
 		text-decoration: none;
+	}
+
+	.call-to-action__nav-item--surveys {
+		background: $roman;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		text-transform: uppercase;
+		font-size: $font-small;
 	}
 
 	.call-to-action__nav-item--poll-login,

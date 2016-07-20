@@ -1,0 +1,3 @@
+@each $name, $color in $color_list { 
+	.surveys--#{$name} {}
+}

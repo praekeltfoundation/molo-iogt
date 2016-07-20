@@ -1,0 +1,32 @@
+
+.surveys {
+	padding-top: 20px;
+}
+
+.surveys--orange {
+	.surveys__title {
+		color: $roman;
+		border-top: 2px solid $roman;
+	}
+}
+
+.surveys__title  {
+	padding: 5px 15px;
+	font-size: $font-x-large;
+}
+
+.surveys__intro {
+	padding: 0 15px;
+	font-weight: normal;
+}
+
+
+.call-to-action--surveys {
+	padding: 5px 15px;
+}
+
+.call-to-action__nav-item--surveys {
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
