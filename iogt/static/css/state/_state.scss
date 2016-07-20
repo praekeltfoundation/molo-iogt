@@ -121,16 +121,17 @@
 		text-decoration: none;
 	}
 
-	
-	input[type="submit"],
-	.call-to-action__nav-item--surveys {
-		background: $roman;
-		color: #fff;
-		text-decoration: none;
-		text-align: center;
-		display: block;
-		text-transform: uppercase;
-		font-size: $font-small;
+	.surveys {
+		input[type="submit"],
+		.call-to-action__nav-item--surveys {
+			background: $roman;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+			display: block;
+			text-transform: uppercase;
+			font-size: $font-small;
+		}
 	}
 
 	.call-to-action__nav-item--poll-login,
