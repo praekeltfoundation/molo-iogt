@@ -121,6 +121,8 @@
 		text-decoration: none;
 	}
 
+	
+	input[type="submit"],
 	.call-to-action__nav-item--surveys {
 		background: $roman;
 		color: #fff;
@@ -234,6 +236,7 @@
 	.call-to-action__nav-item--back-home {
 		position: relative;
 		padding: 10px 15px;
+		width: auto;
 		&:before {
 			content: "‹";
 			display: inline-block;
@@ -297,6 +300,17 @@
 	}
 
 	@each $name, $color in $color_list {
+		.surveys--#{$name} {
+			.surveys__thank-you,
+			.call-to-action__nav-item--back-home {
+				color: $color;
+			}
+			input[type="submit"],
+			.call-to-action__nav-item--surveys {
+					background: $color;
+			}
+		}
+
 		.polls--#{$name} {
 			.call-to-action__nav-item--poll-login,
 			.polls__form input[type="submit"] {
