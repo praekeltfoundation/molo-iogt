@@ -15,7 +15,7 @@
 
 	.section-list--#{$name} {
 		.section-list__title--homepage,
-		.section-list__title,
+		.section-list__title a,
 		.section-list__more {
 			color: $color;
 		}

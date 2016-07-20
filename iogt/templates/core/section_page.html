@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load static core_tags i18n molo_survey_tags comments %}
+{% load static core_tags i18n molo_survey_tags comments static %}
 {% load wagtailcore_tags wagtailimages_tags poll_votings %}
 
 {% block content %}
@@ -18,28 +18,49 @@
     <li class="section-list-nav__item"><a href="{% pageurl self %}">{{self.title}}</a></li>
   </ul>
 
+{% load_child_articles_for_section self count=13 as articles %}
+<ul class="article-list">
+{% for sub_article in articles %}
+  <li class="article-list__item">
+    <div class="article-list__container">
+    <a href="{% pageurl sub_article %}">
+      {% if sub_article.image %}
+        {% image sub_article.image width-290 class="article-list__image" %}
+      {% endif %}
+      <h2 class="article-list__title">{{sub_article.title}}</h2>
+      <h4 class="article-list__subtitle">{{sub_article.subtitle}}</h4>
+      <p class="article__date f-small">{{self.first_published_at | date:"j F Y"}}</p>
+    </a>
+    </div>
+    {% get_comment_count for sub_article as comment_count %}
+    {% if comment_count > 0 %}
+      <a href="{% pageurl sub_article %}#comments-list" class="article-list__comments-counter">
+        {{comment_count}}
+        <span class="comment-counter__text">{% trans "comment" %}{{comment_count|pluralize}}</span>
+      </a>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
 {% load_child_sections_for_section self as sections %}
 {% for section in sections %}
     {% load_descendant_articles_for_section section featured_in_section=True as section_featured_articles %}
     {% if section_featured_articles %}
     <div class="section-list section-list{{self.get_effective_extra_style_hints}}">
-      <h3 class="section-list__title">{{section.title}}</h3>
+      <h3 class="section-list__title"><a href="{% pageurl section %}">{{section.title}}</a></h3>
       <ul class="article-list">
         {% for article in section_featured_articles %}
            <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
               <div class="article-list__container">
+              <a href="{% pageurl article %}">
                 {% if article.image %}
-                  <a href="{% pageurl article %}">
-                    {% image article.image width-290 %}
-                  </a>
+                    {% image article.image width-290 class="article-list__image" %}
                 {% endif %}
-                
-                <a href="{% pageurl article %}">
-                  <h2 class="article-list__title">{{article.title}}</h2>
-                </a>
+                <h2 class="article-list__title">{{article.title}}</h2>
                 <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
+              </a>
               </div>
-
               {% get_comment_count for article as comment_count %}
               {% if comment_count > 0 %}
                 <a href="{% pageurl article %}#comments-list" class="article-list__comments-counter">

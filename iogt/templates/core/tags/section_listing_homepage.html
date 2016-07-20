@@ -2,39 +2,35 @@
 
 {% if sections %}
 {% for section in sections %}
-  {% load_descendant_articles_for_section section featured_in_homepage=True as featured_articles %}
-  {% if featured_articles %}
-    <div class="section-list section-list{{section.get_effective_extra_style_hints}}">
-      <ul class="article-list">
-      {% for article in featured_articles %}
-        <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
-          <div class="article-list__container">
-            {% if article.image %}
-              <a href="{% pageurl article %}">
-                {% image article.image width-290 %}
-              </a>
-            {% endif %}
-            <h3 class="section-list__title section-list__title--homepage">{{section.title}}</h3>
-            
-            <a href="{% pageurl article %}">
-              <h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
-            </a>
-            <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
-          </div>
-
-          {% get_comment_count for article as comment_count %}
-          {% if comment_count > 0 %}
-            <a href="{% pageurl article %}#comments-list" class="article-list__comments-counter">
-              {{comment_count}}
-              <span class="comment-counter__text">{% trans "comment" %}{{comment_count|pluralize}}</span>
-            </a>
-          {% endif %}
-        </li>
-      {% endfor%}
-      </ul>
-      <a href="{% pageurl section %}" class="section-list__more">{% trans "More" %}</a>
-    </div>
-  {% endif %}
+	{% load_descendant_articles_for_section section featured_in_homepage=True as featured_articles %}
+	{% if featured_articles %}
+		<div class="section-list section-list{{section.get_effective_extra_style_hints}}">
+			<ul class="article-list">
+			{% for article in featured_articles %}
+				<li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
+					<div class="article-list__container">
+					<a href="{% pageurl article %}">
+						{% if article.image %}
+							{% image article.image width-290 class="article-list__image" %}
+						{% endif %}
+						<h3 class="section-list__title section-list__title--homepage">{{section.title}}</h3>
+						<h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
+						<h4 class="article-list__subtitle">{{article.subtitle}}</h4>
+					</a>
+					</div>
+					{% get_comment_count for article as comment_count %}
+					{% if comment_count > 0 %}
+						<a href="{% pageurl article %}#comments-list" class="article-list__comments-counter">
+							{{comment_count}}
+							<span class="comment-counter__text">{% trans "comment" %}{{comment_count|pluralize}}</span>
+						</a>
+					{% endif %}
+				</li>
+			{% endfor%}
+			</ul>
+			<a href="{% pageurl section %}" class="section-list__more">{% trans "More" %}</a>
+		</div>
+	{% endif %}
 {% endfor %} 
 {% endif %}
 
