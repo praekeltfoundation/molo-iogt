@@ -11,7 +11,11 @@
 					<div class="article-list__container">
 					<a href="{% pageurl article %}">
 						{% if article.image %}
-							{% image article.image width-290 class="article-list__image" %}
+							{% if forloop.first %}
+									{% image article.image width-290 class="article-list__image" %}
+							{% else %}
+									{% image article.image width-100 class="article-list__image" %}
+							{% endif %}
 						{% endif %}
 						<h3 class="section-list__title section-list__title--homepage">{{section.title}}</h3>
 						<h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
