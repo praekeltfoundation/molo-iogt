@@ -21,6 +21,14 @@
 			border-top: 2px solid $color;
 		}
 	}
+
+	.polls-results--#{$name} {
+		.choice-result__percent,
+		.polls__results--title,
+		.call-to-action__nav-item--back-home {
+			color: $color;
+		}
+	}
 }
 
 @media only screen and (min-width: 320px) {
@@ -332,11 +340,6 @@
 		.polls-results--#{$name} {
 			.choice-result__percent-bar {
 				background: $color;
-			}
-			.choice-result__percent,
-			.polls__results--title,
-			.call-to-action__nav-item--back-home {
-				color: $color;
 			}
 		}
 
