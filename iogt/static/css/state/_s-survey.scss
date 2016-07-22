@@ -1,0 +1,8 @@
+@each $name, $color in $color_list { 
+	.surveys--#{$name} {
+		.surveys__title {
+			color: $color;
+			border-top: 2px solid $color;
+		}
+	}
+}

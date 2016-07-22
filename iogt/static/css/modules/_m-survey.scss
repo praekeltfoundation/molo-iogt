@@ -1,0 +1,56 @@
+
+	.surveys__title {
+		color: $roman;
+		word-break: break-word;
+		border-top: 2px solid $roman;
+	}
+
+	.call-to-action__nav-item--back-home {
+		color: $roman;
+	}
+
+
+	.surveys__thank-you {
+		color: $roman;
+	}
+
+
+.surveys__title  {
+	padding: 5px 15px;
+	font-size: $font-x-large;
+}
+
+.surveys__thank-you {
+	padding: 10px 16px;
+	font-size: $font-x-large;
+}
+
+.surveys__intro {
+	padding: 0 16px;
+	font-weight: normal;
+}
+
+
+.call-to-action--surveys {
+	padding: 5px 16px;
+}
+
+
+input[type="submit"],
+.call-to-action__nav-item--surveys {
+	color: #000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.surveys__form {
+	padding: 0 16px;
+
+	label {
+		color: #000;
+	}
+}
+
+.error--surveys {
+	padding: 0 10px;
+}

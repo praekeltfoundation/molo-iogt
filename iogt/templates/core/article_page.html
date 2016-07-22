@@ -12,10 +12,10 @@
     {% if self.get_parent_section.get_parent_section %}
     {% with section=self.get_parent_section.get_parent_section %}
     <li class="section-list-nav__item  section-list-nav__item--arrow-right">
-      <a href="{% pageurl self %}">{{section.title}}</a>
+      <a href="{% pageurl section %}">{{section.title}}</a>
       {% with sub_section=self.get_parent_section %}
         <li class="section-list-nav__item">
-          <a href="{% pageurl section %}">{{sub_section.title}}</a>
+          <a href="{% pageurl sub_section %}">{{sub_section.title}}</a>
         </li>
       {% endwith %}
       </li>
