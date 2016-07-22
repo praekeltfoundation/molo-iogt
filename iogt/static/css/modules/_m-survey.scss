@@ -1,19 +1,18 @@
-
-	.surveys__title {
-		color: $roman;
-		word-break: break-word;
-		border-top: 2px solid $roman;
-	}
-
+.surveys {
 	.call-to-action__nav-item--back-home {
 		color: $roman;
 	}
+}
 
+.surveys__title {
+	color: $roman;
+	word-break: break-word;
+	border-top: 2px solid $roman;
+}
 
-	.surveys__thank-you {
-		color: $roman;
-	}
-
+.surveys__thank-you {
+	color: $roman;
+}
 
 .surveys__title  {
 	padding: 5px 15px;

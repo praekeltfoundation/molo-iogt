@@ -1,8 +1,9 @@
 {% load i18n static poll_votings %}
 
 {% block content %}
-<div class="polls">
 {% if questions %}
+<div class="polls">
+
 <h1 class="heading heading--polls">{% trans "Polls" %}</h1>
 	{% for question in questions %}
 	<div class="poll__question">

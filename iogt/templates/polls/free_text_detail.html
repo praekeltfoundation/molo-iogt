@@ -2,7 +2,7 @@
 {% load static core_tags i18n %}
 
 {% block content %}
-<div class="polls">
+<div class="polls polls{{question.get_effective_extra_style_hints}}">
 <h2 class="poll__question--title">{{ question.title }}</h2>
 	{% if form.answer.errors %}
 	<h4 class="polls__choice-error">{{form.answer.errors|join:", " }}</h4>
