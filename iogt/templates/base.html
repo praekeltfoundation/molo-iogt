@@ -87,10 +87,10 @@
       {% endif %}
 
       <div class="header">
-        <a href="/">
-         {% block logo %}
-         <img class="logo" src="{% static 'img/iogt_logo.png' %}" alt="The Internet of Good Things" width="40%" />
-         {% endblock %}
+        <a href="/" >
+          {% if settings.core.SiteSettings.logo %}
+            {% image settings.core.SiteSettings.logo height-65 class="logo" %}
+          {% endif %}
         </a>
         <div class="menu-links">
         {% if not user.is_authenticated %}
