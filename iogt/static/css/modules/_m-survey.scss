@@ -32,6 +32,13 @@
 	border-bottom: 1px solid #DEDEDE;
 }
 
+.surveys__helptext {
+	color: #999;
+	font-size: $font-x-small;
+	padding-bottom: 10px;
+	display: block;
+}
+
 .surveys__answer {
 	background: #DEDEDE;
 	padding: 10px 5px;
