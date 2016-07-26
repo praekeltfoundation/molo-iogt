@@ -10,20 +10,21 @@
 	padding: 15px 15px 0;
 }
 
-
-
 .section-list-nav {
 	padding: 10px 15px;
 	border-top: solid 1px #e4e4e4;
 	text-transform: uppercase;
 	font-weight: bold;
-	text-align: $default-float;
+	overflow: auto;
 }
 .section-list-nav__item {
-	display: inline;
+	display: block;
+	float: $default-float;
+	text-align: $default-float;
 	a { 
 		padding-right: 10px;
 		text-decoration: underline;
+		
 	}
 }
 .section-list-nav__item--home,
@@ -34,8 +35,6 @@
 		font-size: $font-x-small;
 	}
 }
-
-
 
 .section-list__title {
 	text-transform: uppercase;

@@ -1,10 +1,15 @@
 
+.logo-link {
+	overflow: auto;
+	display: block;
+}
 .logo {
 	display: block;
 	margin-bottom: 10px;
 	vertical-align: middle;
 	height: auto;
 	max-width: 40%;
+	float: $default-float;
 }
 
 .section-image {

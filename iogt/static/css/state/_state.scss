@@ -23,6 +23,14 @@
 	}
 }
 
+//Apply this on feature phone only
+@media only screen and (max-width: 320px)  {
+		.current-language,
+		.select-language {
+			text-align: $default-float;
+		}
+}
+
 @media only screen and (min-width: 320px) {
 
 	@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
@@ -33,6 +41,14 @@
     font-family: 'Lato', sans-serif;
   }
 
+  .logo-link {
+		float: none;
+		display: initial;
+	}
+
+	.logo {
+		float: none;
+	}
 
 	input[type="text"],
 	input[type="password"],
@@ -74,14 +90,14 @@
 		text-align: right;
 	}
 
-
 	.header__nav-item {
-		padding-right: 23px;
+		padding-#{$opposite-float}: 23px;
 		text-decoration: none;
 		display: inline-block;
 		text-indent: -999em;
 		width: 21px;
 		height: 23px;
+		float: none;
 	}
 	#profile_icon,
 	#join_icon { background: url('../img/profile_icon.png') no-repeat center center; }
