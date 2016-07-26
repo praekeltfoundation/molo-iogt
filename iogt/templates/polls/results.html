@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% load i18n static core_tags %}
+{% load i18n static core_tags molo_survey_tags mptt_tags %}
 
 {% block content %}
-<div class="polls polls--results">
+<div class="polls polls-results polls-results{{question.get_effective_extra_style_hints}}">
 {% if question.show_results and not question.freetextquestion%}
 	<h2 class="poll__question--title">{{ question.title }}</h2>
 	<h4 class="polls__results--title">{% trans "Your answers:" %}</h4>
@@ -12,7 +12,9 @@
 		<li class="polls-result-list__item">
 			<p class="choice-result__title">{{ choice.title }}</p>
 			{% if question.result_as_percentage %}
-			<h5 class="choice-result__percent">{{ choice.percentage }}%</h5>
+			<h5 class="choice-result__percent">
+			<span class="choice-result__percent-bar" style="width:{{ choice.percentage }}%"></span>
+			{{ choice.percentage }}%</h5>
 			{% else %}
 			<p class="choice-result__votes">
 			{{ choice.votes }} vote{{ choice.votes|pluralize }}

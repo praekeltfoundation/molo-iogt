@@ -3,7 +3,7 @@
 {% block content %}
 {% if questions %}
 
-<div class="polls polls{{page.get_effective_extra_style_hints|default:"robin_egg_blue"}}">
+<div class="polls polls{{self.get_effective_extra_style_hints}}">
 <h1 class="heading heading--polls">
 {% trans "Polls" %}</h1>
 	{% for question in questions %}

@@ -1,17 +1,14 @@
-
-	.surveys__title {
-		color: $roman;
-		word-break: break-word;
-		border-top: 2px solid $roman;
-	}
-
+.surveys {
 	.call-to-action__nav-item--back-home {
 		color: $roman;
 	}
+}
 
-	.surveys__thank-you {
-		color: $roman;
-	}
+.surveys__title {
+	color: $roman;
+	word-break: break-word;
+	border-top: 2px solid $roman;
+}
 
 .surveys__title  {
 	padding: 5px 15px;
@@ -26,6 +23,26 @@
 .surveys__intro {
 	padding: 0 16px;
 	font-weight: normal;
+}
+
+.surveys__results {
+	padding: 5px 16px;
+	margin: 15px 0;
+	border-top: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+.surveys__helptext {
+	color: #999;
+	font-size: $font-x-small;
+	padding-bottom: 10px;
+	display: block;
+}
+
+.surveys__answer {
+	background: #DEDEDE;
+	padding: 10px 5px;
+	margin: 10px 5px;
 }
 
 .call-to-action--surveys {
@@ -49,5 +66,5 @@ input[type="submit"],
 }
 
 .error--surveys {
-	padding: 0 10px;
+	padding: 0 16px;
 }
