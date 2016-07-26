@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 
     'molo.core',
     'iogt',
+    'google_analytics',
 
     'wagtail.wagtailcore',
     'wagtail.wagtailadmin',
