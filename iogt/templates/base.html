@@ -3,7 +3,9 @@
 {% get_settings %}
 
 <!DOCTYPE html>
-<html>
+{% if languages %}
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
     <head>
         <meta charset="utf-8" />
         <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
@@ -22,7 +24,7 @@
         <meta property="og:image:url" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {% compress css %}
-        <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
+          <link rel="stylesheet" type="text/x-scss" href="{% static 'css/'%}{{ LANGUAGE_CODE }}-app.scss">
         {% endcompress %}
         {% block extra_css %}{% endblock %}
     </head>
@@ -60,12 +62,11 @@
         <!-- End Global Google Tag Manager -->
         {% endif %}
 
-      {% if languages %}
+     
       <div class="languages">
         <div class="language-bar">
           <span class="current-language">
             {% trans "Language" %}:
-            {% get_current_language as LANGUAGE_CODE %}
             {{ LANGUAGE_CODE|language_name_local }}
           </span>
           <label class="select-language" for="language-selection__toggle">
@@ -77,14 +78,14 @@
           <input id="language-selection__toggle" type="checkbox">
           <ul class="language-list">
             {% for language in languages %}
-            <li class="language-list__item {% if LANGUAGE_CODE == language.locale %}language-list__item--active{% endif %}">
+            <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} {{ language.locale }} language-list__item--active{% endif %}">
               <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
             </li>
             {% endfor %}
           </ul>
         </div>
       </div>
-      {% endif %}
+
 
       <div class="header">
         <a href="/" >
@@ -142,4 +143,5 @@
       {% endblock %}
       {% block extra_js %}{% endblock %}
     </body>
+{% endif %}
 </html>
