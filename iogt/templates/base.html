@@ -1,5 +1,6 @@
 {% load wagtailcore_tags compress static wagtailuserbar core_tags i18n persona_tags  %}
 {% load wagtailsettings_tags wagtailimages_tags %}
+{% load google_analytics_tags %}
 {% get_settings %}
 
 <!DOCTYPE html>
@@ -58,6 +59,18 @@
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','{{settings.core.SiteSettings.global_ga_tag_manager}}');</script>
         <!-- End Global Google Tag Manager -->
+        {% endif %}
+        {% if settings.core.SiteSettings.global_ga_tracking_code %}
+        <div style="display:none">
+            <img src="{% google_analytics settings.core.SiteSettings.global_ga_tracking_code %}" width="0" height="0" />
+        </div>
+        <!-- Global End Google Tracking Code -->
+        {% endif %}
+        {% if settings.core.SiteSettings.local_ga_tracking_code %}
+        <div style="display:none">
+            <img src="{% google_analytics settings.core.SiteSettings.local_ga_tracking_code %}" width="0" height="0" />
+        </div>
+        <!-- Local End Google Tracking Code -->
         {% endif %}
 
       {% if languages %}
