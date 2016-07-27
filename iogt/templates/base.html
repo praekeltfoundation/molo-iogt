@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 {% if languages %}
 {% get_current_language as LANGUAGE_CODE %}
-<html lang="{{ LANGUAGE_CODE }}">
+<html>
     <head>
         <meta charset="utf-8" />
         <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
@@ -24,7 +24,11 @@
         <meta property="og:image:url" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {% compress css %}
-          <link rel="stylesheet" type="text/x-scss" href="{% static 'css/'%}{{ LANGUAGE_CODE }}-app.scss">
+          {% if LANGUAGE_CODE|language_bidi == True %}
+            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/rtl-app.scss'%}">
+          {% else %}
+            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/ltr-app.scss'%}">
+          {% endif %}
         {% endcompress %}
         {% block extra_css %}{% endblock %}
     </head>
@@ -62,7 +66,6 @@
         <!-- End Global Google Tag Manager -->
         {% endif %}
 
-     
       <div class="languages">
         <div class="language-bar">
           <span class="current-language">
@@ -85,7 +88,6 @@
           </ul>
         </div>
       </div>
-
 
       <div class="header">
         <a href="/" class="logo-link">
