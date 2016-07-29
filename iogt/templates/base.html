@@ -81,7 +81,7 @@
           <input id="language-selection__toggle" type="checkbox">
           <ul class="language-list">
             {% for language in languages %}
-            <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} {{ language.locale }} language-list__item--active{% endif %}">
+            <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} language-list__item--active{% endif %}">
               <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
             </li>
             {% endfor %}
