@@ -24,17 +24,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {% get_current_language as LANGUAGE_CODE %}
         {% compress css %}
-<<<<<<< HEAD
-+           <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss'%}">
-           {% if LANGUAGE_CODE|language_bidi == True %}
-             <link rel="stylesheet" type="text/x-scss" href="{% static 'css/rtl-app.scss'%}">
-           {% endif %}
-=======
-            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss'%}">
+          <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss'%}">
           {% if LANGUAGE_CODE|language_bidi == True %}
-            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/rtl-app.scss'%}">
+          <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style-rtl.scss'%}">
           {% endif %}
->>>>>>> 96e27958c86a93027c3b0080324d6b29ee3c60cb
         {% endcompress %}
         {% block extra_css %}{% endblock %}
     </head>
@@ -112,9 +105,9 @@
       {% endif %}
 
       <div class="header">
-        <a href="/" class="logo-link">
+        <a href="/" class="logo">
           {% if settings.core.SiteSettings.logo %}
-            {% image settings.core.SiteSettings.logo height-65 class="logo" %}
+            {% image settings.core.SiteSettings.logo height-65 %}
           {% endif %}
         </a>
         <div class="menu-links">
