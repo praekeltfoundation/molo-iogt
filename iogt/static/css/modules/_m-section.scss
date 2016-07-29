@@ -1,6 +1,4 @@
-.section-list {
-	direction: $default-direction;
-}
+
 .section__image {
 	padding: 0 15px;
 }
@@ -20,9 +18,8 @@
 	overflow: auto;
 }
 .section-list-nav__item {
-	display: block;
-	float: $default-float;
-	text-align: $default-float;
+	display: inline-block;
+	text-align: left;
 	a { 
 		padding-right: 10px;
 		text-decoration: underline;

@@ -2,7 +2,6 @@
 .comment-form {
 	background: #f0f0f0;
 	padding: 10px 15px;
-	direction: $default-direction;
 	a {
 		color: #000;
 		text-decoration: underline;
@@ -10,7 +9,7 @@
 
 	input[type="submit"] {
 		background: transparent;
-		text-align: $default-float;
+		text-align: left;
 		margin: 0;
 		padding: 5px 0;
 	}
@@ -18,7 +17,6 @@
 
 .comments-list {
 	background: #f0f0f0;
-	direction: $default-direction;
 }
 
 .comment__title {

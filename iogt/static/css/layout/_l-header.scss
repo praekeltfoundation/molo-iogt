@@ -7,9 +7,8 @@
 
 .header__nav-item {
 	text-decoration: underline;
-	padding-#{$opposite-float}: 10px;
+	padding-right: 10px;
 	font-weight: bold;
 	color: #fff;
 	font-size: $font-small;
-	float: $default-float;
 }

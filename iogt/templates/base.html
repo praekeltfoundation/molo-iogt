@@ -3,8 +3,7 @@
 {% get_settings %}
 
 <!DOCTYPE html>
-{% if languages %}
-{% get_current_language as LANGUAGE_CODE %}
+
 <html>
     <head>
         <meta charset="utf-8" />
@@ -23,17 +22,17 @@
         <meta property="og:image" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta property="og:image:url" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {% get_current_language as LANGUAGE_CODE %}
         {% compress css %}
-          {% if LANGUAGE_CODE|language_bidi == True %}
-            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/rtl-app.scss'%}">
-          {% else %}
-            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/ltr-app.scss'%}">
-          {% endif %}
++           <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss'%}">
+           {% if LANGUAGE_CODE|language_bidi == True %}
+             <link rel="stylesheet" type="text/x-scss" href="{% static 'css/rtl-app.scss'%}">
+           {% endif %}
         {% endcompress %}
         {% block extra_css %}{% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %}">
+    <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
         {% if settings.core.SiteSettings.ga_tag_manager %}
         <!--Google Tag Manager -->
         {% persona_selected as persona_selected_value %}
@@ -65,7 +64,7 @@
         })(window,document,'script','dataLayer','{{settings.core.SiteSettings.global_ga_tag_manager}}');</script>
         <!-- End Global Google Tag Manager -->
         {% endif %}
-
+      {% if languages %}
       <div class="languages">
         <div class="language-bar">
           <span class="current-language">
@@ -87,7 +86,8 @@
             {% endfor %}
           </ul>
         </div>
-      </div>
+      </div>  
+      {% endif %}
 
       <div class="header">
         <a href="/" class="logo-link">
@@ -145,5 +145,4 @@
       {% endblock %}
       {% block extra_js %}{% endblock %}
     </body>
-{% endif %}
 </html>

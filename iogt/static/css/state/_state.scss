@@ -23,16 +23,7 @@
 	}
 }
 
-//Apply this on feature phone only
-@media only screen and (max-width: 320px)  {
-		.current-language,
-		.select-language {
-			text-align: $default-float;
-		}
-}
-
 @media only screen and (min-width: 320px) {
-
 	@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
 	html, body,
@@ -42,7 +33,6 @@
   }
 
   .logo-link {
-		float: none;
 		display: initial;
 	}
 
@@ -91,14 +81,14 @@
 	}
 
 	.header__nav-item {
-		padding-#{$opposite-float}: 23px;
+		padding-right: 23px;
 		text-decoration: none;
 		display: inline-block;
 		text-indent: -999em;
 		width: 21px;
 		height: 23px;
-		float: none;
 	}
+
 	#profile_icon,
 	#join_icon { background: url('../img/profile_icon.png') no-repeat center center; }
 	#menu_icon { background: url('../img/burger_icon.png ') no-repeat center center; }
@@ -295,7 +285,7 @@
 
 	.call-to-action__comment-item--feedback {
 		position: absolute;
-		#{$opposite-float}: 10px;
+		right: 15px;
 		top: 15px;
 	}
 

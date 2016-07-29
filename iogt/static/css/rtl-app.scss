@@ -1,7 +1,8 @@
-$default-float			:			right;
-$opposite-float			:			left;
 
-$default-direction	:			rtl;
-$opposite-direction	:			ltr;
 
-@import "style.scss";
+@media only screen and (min-width: 320px) { 
+	.call-to-action__comment-item--feedback {
+		left: 15px;
+		right: inherit;
+	}
+}
