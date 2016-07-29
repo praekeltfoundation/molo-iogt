@@ -5,3 +5,15 @@
 		right: inherit;
 	}
 }
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"], 
+input[type="tel"],
+input[type="search"] {
+	padding: 8px 30px;
+}
+
+.search-form input[type="submit"] {
+	text-indent: 5em;
+}
