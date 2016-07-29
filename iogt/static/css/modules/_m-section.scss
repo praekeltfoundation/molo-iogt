@@ -15,15 +15,12 @@
 	border-top: solid 1px #e4e4e4;
 	text-transform: uppercase;
 	font-weight: bold;
-	overflow: auto;
 }
 .section-list-nav__item {
 	display: inline;
-	text-align: left;
 	a { 
 		padding-right: 10px;
 		text-decoration: underline;
-		
 	}
 }
 .section-list-nav__item--home,
