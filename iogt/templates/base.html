@@ -24,10 +24,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {% get_current_language as LANGUAGE_CODE %}
         {% compress css %}
+<<<<<<< HEAD
 +           <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss'%}">
            {% if LANGUAGE_CODE|language_bidi == True %}
              <link rel="stylesheet" type="text/x-scss" href="{% static 'css/rtl-app.scss'%}">
            {% endif %}
+=======
+            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss'%}">
+          {% if LANGUAGE_CODE|language_bidi == True %}
+            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/rtl-app.scss'%}">
+          {% endif %}
+>>>>>>> 96e27958c86a93027c3b0080324d6b29ee3c60cb
         {% endcompress %}
         {% block extra_css %}{% endblock %}
     </head>
