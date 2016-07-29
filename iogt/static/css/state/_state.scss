@@ -21,6 +21,14 @@
 			border-top: 2px solid $color;
 		}
 	}
+
+	.polls-results--#{$name} {
+		.choice-result__percent,
+		.polls__results--title,
+		.call-to-action__nav-item--back-home {
+			color: $color;
+		}
+	}
 }
 
 @media only screen and (min-width: 320px) {
@@ -306,6 +314,13 @@
 		text-align: right;
 	}
 
+	.choice-result__percent-bar {
+		background: $robin_egg_blue;
+		display: block;
+		padding: 10px 0;
+		border-radius: 10px;
+	}
+
 	@each $name, $color in $color_list {
 		.surveys--#{$name} {
 			.surveys__thank-you,
@@ -319,8 +334,17 @@
 		}
 
 		.polls--#{$name} {
+			.polls__results--title {
+				color: $color;
+			} 
 			.call-to-action__nav-item--poll-login,
 			.polls__form input[type="submit"] {
+				background: $color;
+			}
+		}
+
+		.polls-results--#{$name} {
+			.choice-result__percent-bar {
 				background: $color;
 			}
 		}

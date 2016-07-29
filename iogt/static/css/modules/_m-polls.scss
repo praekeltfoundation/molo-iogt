@@ -62,7 +62,11 @@
 	padding: 10px 0;
 }
 
+.choice-result__title {
+	margin-top: 0;
+}
+
 .choice-result__percent {
-	font-size: $font-x-medium;
+	font-size: $font-xx-large;
 	color: $robin_egg_blue;
 }
