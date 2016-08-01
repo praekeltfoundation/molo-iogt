@@ -22,13 +22,17 @@
         <meta property="og:image" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta property="og:image:url" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {% get_current_language as LANGUAGE_CODE %}
         {% compress css %}
-        <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
+          <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss'%}">
+          {% if LANGUAGE_CODE|language_bidi == True %}
+          <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style-rtl.scss'%}">
+          {% endif %}
         {% endcompress %}
         {% block extra_css %}{% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %}">
+    <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
         {% if settings.core.SiteSettings.ga_tag_manager %}
         <!--Google Tag Manager -->
         {% persona_selected as persona_selected_value %}
@@ -60,12 +64,14 @@
         })(window,document,'script','dataLayer','{{settings.core.SiteSettings.global_ga_tag_manager}}');</script>
         <!-- End Global Google Tag Manager -->
         {% endif %}
+
         {% if settings.core.SiteSettings.global_ga_tracking_code %}
         <div style="display:none">
             <img src="{% google_analytics settings.core.SiteSettings.global_ga_tracking_code %}" width="0" height="0" />
         </div>
         <!-- Global End Google Tracking Code -->
         {% endif %}
+
         {% if settings.core.SiteSettings.local_ga_tracking_code %}
         <div style="display:none">
             <img src="{% google_analytics settings.core.SiteSettings.local_ga_tracking_code %}" width="0" height="0" />
@@ -78,7 +84,6 @@
         <div class="language-bar">
           <span class="current-language">
             {% trans "Language" %}:
-            {% get_current_language as LANGUAGE_CODE %}
             {{ LANGUAGE_CODE|language_name_local }}
           </span>
           <label class="select-language" for="language-selection__toggle">
@@ -90,19 +95,19 @@
           <input id="language-selection__toggle" type="checkbox">
           <ul class="language-list">
             {% for language in languages %}
-            <li class="language-list__item {% if LANGUAGE_CODE == language.locale %}language-list__item--active{% endif %}">
+            <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} language-list__item--active{% endif %}">
               <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
             </li>
             {% endfor %}
           </ul>
         </div>
-      </div>
+      </div>  
       {% endif %}
 
       <div class="header">
-        <a href="/" >
+        <a href="/" class="logo">
           {% if settings.core.SiteSettings.logo %}
-            {% image settings.core.SiteSettings.logo height-65 class="logo" %}
+            {% image settings.core.SiteSettings.logo height-65 %}
           {% endif %}
         </a>
         <div class="menu-links">
@@ -136,7 +141,6 @@
         {% endfor %}
         </ul>
       </div>
-
 
 
       {% block search %}

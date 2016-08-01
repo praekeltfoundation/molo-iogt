@@ -8,7 +8,6 @@
 // change anything after the site is rendered.
 @import "_s-menu";
 @import "_s-heading";
-@import "_s-profiles";
 @import "_s-comments";
 @import "_s-section";
 @import "_s-survey";
@@ -32,7 +31,6 @@
 }
 
 @media only screen and (min-width: 320px) {
-
 	@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
 	html, body,
@@ -41,6 +39,9 @@
     font-family: 'Lato', sans-serif;
   }
 
+  .logo {
+		display: inline;
+	}
 
 	input[type="text"],
 	input[type="password"],
@@ -56,11 +57,6 @@
 		color: #fff;
 		text-align: center;
 		text-decoration: none;
-	}
-
-	.logo {
-		padding-right: 20px;
-		display: inline-block;
 	}
 
 	.menu-links {
@@ -82,7 +78,6 @@
 		text-align: right;
 	}
 
-
 	.header__nav-item {
 		padding-right: 23px;
 		text-decoration: none;
@@ -91,6 +86,7 @@
 		width: 21px;
 		height: 23px;
 	}
+
 	#profile_icon,
 	#join_icon { background: url('../img/profile_icon.png') no-repeat center center; }
 	#menu_icon { background: url('../img/burger_icon.png ') no-repeat center center; }
@@ -287,7 +283,7 @@
 
 	.call-to-action__comment-item--feedback {
 		position: absolute;
-		right: 10px;
+		right: 15px;
 		top: 15px;
 	}
 
