@@ -180,6 +180,7 @@
 	.personae-list__item {
 		padding: 10px 15px;
 		display: flex;
+		flex-direction: row;
 		&:after {
 			content: " ▶ ";
 			display: inline-block;
@@ -191,6 +192,10 @@
 			display: block;
 			max-height: 65px;
 		}
+	}
+	.personae__title {
+		position: absolute;
+		padding: 10px 15px 15px;
 	}
 	.personae__skip {
 		border: 1px solid #fff;
