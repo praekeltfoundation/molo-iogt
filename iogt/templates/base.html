@@ -25,10 +25,13 @@
         {% get_current_language as LANGUAGE_CODE %}
         {% compress css %}
           <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss'%}">
-          {% if LANGUAGE_CODE|language_bidi == True %}
-          <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style-rtl.scss'%}">
-          {% endif %}
         {% endcompress %}
+        {% if LANGUAGE_CODE|language_bidi == True %}
+          {% compress css %}
+            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style-rtl.scss'%}">
+          {% endcompress %}
+        {% endif %}
+        
         {% block extra_css %}{% endblock %}
     </head>
 
