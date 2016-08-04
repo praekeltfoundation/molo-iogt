@@ -9,14 +9,9 @@
 	}
 }
 
-.personae__title {
-	text-transform: uppercase;
-	padding: 10px 15px 15px;
-}
-
 .personae-list__item {
 	border-top: 1px solid #60579C;
-	padding: 10px 0;
+	padding: 10px 15px;
 	word-wrap: break-word;
 	&:last-child {
 		border-bottom: 1px solid #60579C;
@@ -24,6 +19,9 @@
 	img {
 		display: none;
 	}
+}
+.personae__title {
+	text-transform: uppercase;
 }
 
 .personae-nav {
