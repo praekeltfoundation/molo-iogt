@@ -1,45 +1,23 @@
 
-// this should be here because you're able to toggle the
-// sites menu as visible or not; changing the state after the state
-// after the site has rendered.
 @import "_s-languages";
 
-@each $name, $color in $color_list {
-  .polls--#{$name} {
-    .heading--polls {
-      color: $color;
-      border-top: 2px solid $color;
-    }
-  }
-
-  .polls-results--#{$name} {
-    .choice-result__percent,
-    .polls__results--title,
-    .call-to-action__nav-item--back-home {
-      color: $color;
-    }
-  }
-}
-
 @media only screen and (min-width: 320px) {
-@import "_s-menu";
-@import "_s-heading";
-@import "_s-comments";
-@import "_s-section";
-@import "_s-survey";
-@import "_s-personae";
-@import "_s-search";
-@import "_s-profiles";
-  @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+  @import "_s-comments";
+  @import "_s-heading";
+  @import "_s-menu";
+  @import "_s-pagination";
+  @import "_s-personae";
+  @import "_s-polls";
+  @import "_s-profiles";
+  @import "_s-search";
+  @import "_s-section";
+  @import "_s-survey";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
   html, body,
   h1, h2, h3, h4, h5, h6,
   input, select, textarea {
     font-family: 'Lato', sans-serif;
-  }
-
-  .logo {
-    display: inline;
   }
 
   input[type="text"],
@@ -56,135 +34,9 @@
     text-align: center;
     text-decoration: none;
   }
-
-  .menu-links {
-    display: inline-block;
-    float: right;
-    margin: 5% auto 0;
-  }
-  .current-language, .select-language {
-    float: left;
-    width: 50%;
-    padding: 0;
-  }
-  .select-language {
-    text-align: right;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .language-list__item {
-    text-align: right;
-  }
-
-  .header__nav-item {
-    padding-right: 23px;
-    text-decoration: none;
-    display: inline-block;
-    text-indent: -999em;
-    width: 21px;
-    height: 23px;
-  }
-
-  #profile_icon,
-  #join_icon { background: url('../img/profile_icon.png') no-repeat center center; }
-  #menu_icon { background: url('../img/burger_icon.png ') no-repeat center center; }
-  #search_icon { background: url('../img/search_icon_white.png') no-repeat center center; }
-
-  
-  .call-to-action__nav-item--poll-login,
-  .polls__form input[type="submit"] {
-    background: $robin_egg_blue;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-weight: normal;
-  }
-
-  .profiles__forgotten-password {
-    text-decoration: none;
-    font-size: $font-x-small;
-  }
-
-  .section__image  {
-    padding: 0;
-  }
-  .section__title {
-    color: #757575;
-  }
-  .section-list__more {
-    text-decoration: none;
-    text-align: right;
-    &:after {
-      content: " ▶ ";
-    }
-  }
-  
-  .menu-list__item {
-    a {
-      display: block;
-      text-decoration: none;
-      &:after {
-        content: " ▶ ";
-        display: inline-block;
-        float: right;
-        padding: 3px 0 0;
-      }
-    }
-  }
-
-  .call-to-action__nav-item--back-home {
-    position: relative;
-    padding: 10px 15px;
-    width: auto;
-    &:before {
-      content: "‹";
-      display: inline-block;
-      padding: 0 2px 0 0;
-      font-size: $font-x-large;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-
-  #anonymous-submit {
-    text-align: right;
-  }
-
-  .choice-result__percent-bar {
-    background: $robin_egg_blue;
-    display: block;
-    padding: 10px 0;
-    border-radius: 10px;
-  }
-
-  @each $name, $color in $color_list {
-    .surveys--#{$name} {
-      .surveys__thank-you,
-      .call-to-action__nav-item--back-home {
-        color: $color;
-      }
-      input[type="submit"],
-      .call-to-action__nav-item--surveys {
-          background: $color;
-      }
-    }
-
-    .heading--large.heading--#{$name} {
-      color: #fff;
-      background: $color;
-    }
-
-    .heading.heading--#{$name} {
-      color: $color;
-    }
-
-    
-  }
 }
 
 @media only screen and (min-width: 600px) {
-
   html { background: #333; }
 
   body {

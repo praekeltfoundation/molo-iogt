@@ -10,4 +10,17 @@
   .heading--large.heading--#{$name} {
     color: $color;
   }
+  
+  .heading--large.heading--#{$name} {
+    color: #fff;
+    background: $color;
+  }
+
+  .heading.heading--#{$name} {
+    color: $color;
+  }
+  .heading--polls {
+    color: $color;
+    border-top: 2px solid $color;
+  }
 }
