@@ -28,6 +28,11 @@
     border-radius: 4px;
   }
 
+  .call-to-action__nav-item,
+  input[type="submit"] {
+    white-space: nowrap;
+  }
+
   input[type="submit"] {
     background: $victoria;
     color: #fff;
