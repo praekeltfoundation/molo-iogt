@@ -1,0 +1,49 @@
+
+.call-to-action--profile {
+  background: $victoria;
+  color: #fff;
+}
+.call-to-action--view-profile {
+  background: transparent;
+}
+.call-to-action__nav-item--challenge {
+  color: #fff;
+  font-size: $font-large;
+}
+.call-to-action__nav-item--login {
+  background: #fff;
+  color: $victoria;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.call-to-action__nav-item--logout,
+.call-to-action__nav-item--editprofile,
+.call-to-action__nav-item--change-password {
+  background: $victoria;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.call-to-action__comment-item--feedback {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.call-to-action__nav-item--poll-login,
+.polls__form input[type="submit"] {
+  background: $robin_egg_blue;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.profiles__forgotten-password {
+  text-decoration: none;
+  font-size: $font-x-small;
+}
