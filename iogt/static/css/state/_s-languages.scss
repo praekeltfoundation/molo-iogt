@@ -1,16 +1,30 @@
 
 #language-selection__toggle {
-	display: none;
+  display: none;
 }
 
 .language-selection input + * {
-	display: none;
+  display: none;
 }
 
 .language-selection input:checked + * {
-	display: block;
+  display: block;
 }
 
 .language-list__item--active a {
-	text-decoration: underline;
+  text-decoration: underline;
+}
+
+.current-language, .select-language {
+  float: left;
+  width: 50%;
+  padding: 0;
+}
+.select-language {
+  text-align: right;
+  text-decoration: none;
+  font-weight: bold;
+}
+.language-list__item {
+  text-align: right;
 }
