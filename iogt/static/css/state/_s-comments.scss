@@ -1,17 +1,51 @@
 
-@each $name, $color in $color_list {
-	.comment-form--#{$name} {
-		input[type="submit"],
-		#anonymous-submit,
-		.call-to-action__comment-item--feedback {
-			color: $color;
-		}
-	}
+  .article-list__comments-counter {
+    &:before  {
+      content: "";
+      background: url('/static/img/comment_icon.png') no-repeat 0 1px;
+      height: 21px;
+      width: 21px;
+      display: inline-block;
+      background-size: 78%;
+      vertical-align: middle;
+    }
+  }
+  .comment-counter__text {
+    display: none;
+  }
 
-	.comments-list--#{$name} {
-		.call-to-action__comment-item--feedback,
-		.pagination__link {
-			color: $color;
-		}
-	}
+
+  .comment-form {
+    input[type="submit"] {
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 0;
+      margin: 5px 0;
+      font-weight: normal;
+    }
+  }
+
+
+@each $name, $color in $color_list {
+  .comment-form--#{$name} {
+    input[type="submit"],
+    #anonymous-submit,
+    .call-to-action__comment-item--feedback {
+      color: $color;
+    }
+    input[type="submit"] {
+      background: $color;
+      color: #fff;
+    }
+    #anonymous-submit {
+      background: none;
+    }
+}
+
+  .comments-list--#{$name} {
+    .call-to-action__comment-item--feedback,
+    .pagination__link {
+      color: $color;
+    }
+  }
 }
