@@ -28,16 +28,6 @@
   .section-list--#{$name} {
     border-top: 2px solid $color;
   }
-
-  /*.section--#{$name} {
-    .section__title {
-      color: $color;
-    }
-    .section__subtitle {
-      color: #666;
-    }
-  }*/
-
   .section--#{$name} {
     .section__title,
     .section__subtitle {
@@ -54,15 +44,6 @@
       color: $color;
     }
   }
-
-  /*.section-list-nav--#{$name} {
-    color: $color;
-    .section-list-nav__item a,
-    .section-list-nav__item--homeafter,
-    .section-list-nav__item--arrow-right:after {
-      color: $color;
-    }
-  }*/
 
   .section-list-nav--#{$name} {
     background: $color;
