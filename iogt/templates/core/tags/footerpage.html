@@ -5,7 +5,12 @@
   <ul class="menu-list">
     {% for page in footers %}
       <li class="menu-list__item">
-        <a href="{% pageurl page %}">{{page.title}}</a>
+        <a href="{% pageurl page %}">
+          {% if page.image %}
+            {% image page.image width-30 height-30 class="menu-list__item--icon" %}
+          {% endif %}
+          {{page.title}}
+        </a>
       </li>
     {% endfor %}
   </ul>

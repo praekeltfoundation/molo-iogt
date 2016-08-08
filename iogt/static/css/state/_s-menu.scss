@@ -1,7 +1,10 @@
-
+.menu-list__item--icon {
+  display: inline-block;
+  padding: 5px 5px 0 0;
+}
 @each $name, $color in $color_list {
-	.menu-list__item--#{$name} {
-		&:after { color: $color; }
-		a { color: $color; }
-	}
+  .menu-list__item--#{$name} {
+    &:after { color: $color; }
+    a { color: $color; }
+  }
 }
