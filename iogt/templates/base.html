@@ -80,9 +80,8 @@
         </div>
         <!-- Local End Google Tracking Code -->
         {% endif %}
-
       {% if languages %}
-      <div class="languages">
+      <div id="languages"  class="languages">
         <div class="language-bar">
           <span class="current-language">
             {% trans "Language" %}:
@@ -114,7 +113,7 @@
         </a>
         <div class="menu-links">
         {% if not user.is_authenticated %}
-        <a id="join_icon"href="{% url 'molo.profiles:user_register' %}" class="header__nav-item">{% trans "Join" %}</a>
+        <a id="join_icon" href="{% url 'molo.profiles:user_register' %}" class="header__nav-item">{% trans "Join" %}</a>
         {% else %}
         <a id="profile_icon" href="{% url 'molo.profiles:view_my_profile' %}" class="header__nav-item">{% trans "Profile" %}</a>
         {% endif %}

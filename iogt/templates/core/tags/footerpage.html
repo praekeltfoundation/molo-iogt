@@ -1,11 +1,10 @@
-
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags static i18n %}
 
 {% if footers %}
   <ul class="menu-list">
     {% for page in footers %}
       <li class="menu-list__item">
-        <a href="{% pageurl page %}">
+        <a href="{% pageurl page %}" class="footer-link">
           {% if page.image %}
             {% image page.image width-30 height-30 class="menu-list__item--icon" %}
           {% endif %}
@@ -13,5 +12,20 @@
         </a>
       </li>
     {% endfor %}
+    <li class="menu-list__item">
+      {% if not user.is_authenticated %}
+        <a href="{% url 'molo.profiles:user_register' %}" class="footer-link">
+        <img src="{% static 'img/iogt_logo_2.png' %}" width="30" class="menu-list__item--icon" />{% trans "Login" %}</a>
+        {% else %}
+        <a href="{% url 'molo.profiles:view_my_profile' %}" class="footer-link">
+        <img src="{% static 'img/iogt_logo_2.png' %}" width="30" class="menu-list__item--icon" />{% trans "Profile" %}</a>
+      {% endif %}
+    </li>
+    <li class="menu-list__item">
+      <a href="#languages" target="_top" for="language-selection__toggle"  class="footer-link">
+        <img src="{% static 'img/iogt_logo_2.png' %}" width="30" class="menu-list__item--icon" />
+        {% trans "Change your language"%}
+      </a>
+    </li>
   </ul>
 {% endif %}

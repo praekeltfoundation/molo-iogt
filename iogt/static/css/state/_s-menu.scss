@@ -9,14 +9,15 @@
 #search_icon { background: url('../img/search_icon_white.png') no-repeat center center; }
 
 .menu-list__item {
-  a {
+  position: relative;
+  .footer-link {
     display: block;
     text-decoration: none;
     &:after {
       content: " ▶ ";
       display: inline-block;
-      float: right;
-      padding: 3px 0 0;
+      position: absolute;
+      right: 10px;
     }
   }
 }

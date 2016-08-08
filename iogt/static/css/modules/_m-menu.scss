@@ -3,13 +3,14 @@
   color: #07292F;
   font-size: $font-x-small;
   padding: 5px 15px;
-  a {
+  a, .footer-link {
     color: #07292F;
     display: inline-block; 
     font-size: $font-small;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
+    cursor: pointer;
   }
 }
  
@@ -20,3 +21,8 @@
   font-weight: normal;
   font-size: $font-x-small;
 }
+
+.menu-list__item--icon {
+  display: none;
+}
+
