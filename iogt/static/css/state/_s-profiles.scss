@@ -28,10 +28,15 @@
   text-decoration: none;
 }
 
-
-.profiles {
-  .call-to-action--profile,
-  .call-to-action--view-profile {
-    background: transparent;
-  }
+.call-to-action__comment-item--feedback {
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
+
+.profiles__forgotten-password {
+  text-decoration: none;
+  font-size: $font-x-small;
+}
+
+

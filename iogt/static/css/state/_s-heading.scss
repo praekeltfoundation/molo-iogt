@@ -3,9 +3,23 @@
   background: $victoria;
   color: #fff;
 }
-
+.heading--search  {
+  font-size: $font-small;
+}
 @each $name, $color in $color_list {
-  .heading--large.heading--#{$name} {
+  .heading.heading--#{$name} {
     color: $color;
+  }
+
+  .heading--large.heading--#{$name} {
+    color: #fff;
+    background: $color;
+  }
+
+  .polls--#{$name} {
+    .heading--polls {
+      color: $color;
+      border-top: 2px solid $color;
+    }
   }
 }
