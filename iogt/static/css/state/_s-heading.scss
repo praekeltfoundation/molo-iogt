@@ -3,15 +3,10 @@
   background: $victoria;
   color: #fff;
 }
-
 .heading--search  {
   font-size: $font-small;
 }
 @each $name, $color in $color_list {
-  /*.heading--large.heading--#{$name} {
-    color: $color;
-  }*/
-
   .heading.heading--#{$name} {
     color: $color;
   }
@@ -27,5 +22,4 @@
       border-top: 2px solid $color;
     }
   }
-
 }
