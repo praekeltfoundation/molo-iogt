@@ -1,0 +1,13 @@
+
+.pagination__link {
+  text-align: right;
+  &:after {
+    content: " ▶ ";
+    font-size: $font-x-small;
+  }
+}
+.pagination__link--current {
+  &:after {
+    content: "";
+  }
+}
