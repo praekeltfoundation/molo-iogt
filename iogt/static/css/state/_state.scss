@@ -13,6 +13,7 @@
 @import "_s-survey";
 
 
+
 @each $name, $color in $color_list {
 	.polls--#{$name} {
 		.heading--polls {
@@ -31,6 +32,7 @@
 }
 
 @media only screen and (min-width: 320px) {
+	@import "_s-article";
 	@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
 	html, body,
