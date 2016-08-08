@@ -1,3 +1,16 @@
+ .section__image  {
+  padding: 0;
+}
+.section__title {
+  color: #757575;
+}
+.section-list__more {
+  text-decoration: none;
+  text-align: right;
+  &:after {
+    content: " ▶ ";
+  }
+}
 
 .call-to-action__nav-item--back-home {
   position: relative;
@@ -15,15 +28,14 @@
   .section-list--#{$name} {
     border-top: 2px solid $color;
   }
-
   .section--#{$name} {
-    .section__title {
-      color: $color;
-    }
+    .section__title,
     .section__subtitle {
-      color: #666;
+      background: $color;
+      color: #fff;
     }
   }
+
 
   .section-list--#{$name} {
     .section-list__title--homepage,
@@ -34,11 +46,13 @@
   }
 
   .section-list-nav--#{$name} {
-    color: $color;
+    background: $color;
+    color: #fff;
     .section-list-nav__item a,
     .section-list-nav__item--homeafter,
     .section-list-nav__item--arrow-right:after {
-      color: $color;
+      color: #fff;
     }
   }
+
 }

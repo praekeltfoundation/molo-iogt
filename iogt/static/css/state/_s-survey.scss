@@ -1,8 +1,30 @@
+
+.surveys {
+  input[type="submit"],
+  .call-to-action__nav-item--surveys {
+    background: $roman;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-size: $font-small;
+  }
+}
+
 @each $name, $color in $color_list { 
-	.surveys--#{$name} {
-		.surveys__title {
-			color: $color;
-			border-top: 2px solid $color;
-		}
-	}
+  .surveys--#{$name} {
+    .surveys__title {
+      color: $color;
+      border-top: 2px solid $color;
+    }
+    .surveys__thank-you,
+    .call-to-action__nav-item--back-home {
+      color: $color;
+    }
+    input[type="submit"],
+    .call-to-action__nav-item--surveys {
+        background: $color;
+    }
+  }
 }
