@@ -1,3 +1,31 @@
+
+.section__image  {
+  padding: 0;
+}
+.section__title {
+  color: #757575;
+}
+.section-list__more {
+  text-decoration: none;
+  text-align: right;
+  &:after {
+    content: " ▶ ";
+  }
+}
+ 
+
+.call-to-action__nav-item--back-home {
+  position: relative;
+  padding: 10px 15px;
+  width: auto;
+  &:before {
+    content: "‹";
+    display: inline-block;
+    font-size: $font-large;
+  }
+}
+
+
 @each $name, $color in $color_list {
 	.section--#{$name},
 	.section-list--#{$name} {
@@ -29,4 +57,23 @@
 			color: $color;
 		}
 	}
+
+
+	.section--#{$name} {
+      .section__title,
+      .section__subtitle {
+        background: $color;
+        color: #fff;
+      }
+    }
+
+    .section-list-nav--#{$name} {
+      background: $color;
+      color: #fff;
+      .section-list-nav__item a,
+      .section-list-nav__item--homeafter,
+      .section-list-nav__item--arrow-right:after {
+        color: #fff;
+      }
+    }
 }
