@@ -1,32 +1,44 @@
+
+.call-to-action__nav-item--back-home {
+  position: relative;
+  width: auto;
+  &:before {
+    content: "‹";
+    display: inline-block;
+    padding: 0 5px 10px;
+    font-size: $font-large;
+  }
+}
+
 @each $name, $color in $color_list {
-	.section--#{$name},
-	.section-list--#{$name} {
-		border-top: 2px solid $color;
-	}
+  .section--#{$name},
+  .section-list--#{$name} {
+    border-top: 2px solid $color;
+  }
 
-	.section--#{$name} {
-		.section__title {
-			color: $color;
-		}
-		.section__subtitle {
-			color: #666;
-		}
-	}
+  .section--#{$name} {
+    .section__title {
+      color: $color;
+    }
+    .section__subtitle {
+      color: #666;
+    }
+  }
 
-	.section-list--#{$name} {
-		.section-list__title--homepage,
-		.section-list__title a,
-		.section-list__more {
-			color: $color;
-		}
-	}
+  .section-list--#{$name} {
+    .section-list__title--homepage,
+    .section-list__title a,
+    .section-list__more {
+      color: $color;
+    }
+  }
 
-	.section-list-nav--#{$name} {
-		color: $color;
-		.section-list-nav__item a,
-		.section-list-nav__item--homeafter,
-		.section-list-nav__item--arrow-right:after {
-			color: $color;
-		}
-	}
+  .section-list-nav--#{$name} {
+    color: $color;
+    .section-list-nav__item a,
+    .section-list-nav__item--homeafter,
+    .section-list-nav__item--arrow-right:after {
+      color: $color;
+    }
+  }
 }

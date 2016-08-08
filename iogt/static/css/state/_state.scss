@@ -9,393 +9,381 @@
 @import "_s-menu";
 @import "_s-heading";
 @import "_s-comments";
-@import "_s-section";
 @import "_s-survey";
 
 
 
 @each $name, $color in $color_list {
-	.polls--#{$name} {
-		.heading--polls {
-			color: $color;
-			border-top: 2px solid $color;
-		}
-	}
+  .polls--#{$name} {
+    .heading--polls {
+      color: $color;
+      border-top: 2px solid $color;
+    }
+  }
 
-	.polls-results--#{$name} {
-		.choice-result__percent,
-		.polls__results--title,
-		.call-to-action__nav-item--back-home {
-			color: $color;
-		}
-	}
+  .polls-results--#{$name} {
+    .choice-result__percent,
+    .polls__results--title,
+    .call-to-action__nav-item--back-home {
+      color: $color;
+    }
+  }
 }
 
 @media only screen and (min-width: 320px) {
-	@import "_s-article";
+
+  @import "_s-article";
+  @import "_s-section";
 	@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
-	html, body,
+  html, body,
   h1, h2, h3, h4, h5, h6,
   input, select, textarea {
     font-family: 'Lato', sans-serif;
   }
 
   .logo {
-		display: inline;
-	}
+    display: inline;
+  }
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="search"] {
-		border-radius: 4px;
-	}
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="search"] {
+    border-radius: 4px;
+  }
 
-	.call-to-action__nav-item {} //Where does this look like a submit button
-	input[type="submit"] {
-		background: $victoria;
-		color: #fff;
-		text-align: center;
-		text-decoration: none;
-	}
+  .call-to-action__nav-item,
+  input[type="submit"] {
+    white-space: nowrap;
+  }
 
-	.menu-links {
-		display: inline-block;
-		float: right;
-		margin: 5% auto 0;
-	}
-	.current-language, .select-language {
-		float: left;
-		width: 50%;
-		padding: 0;
-	}
-	.select-language {
-		text-align: right;
-		text-decoration: none;
-		font-weight: bold;
-	}
-	.language-list__item {
-		text-align: right;
-	}
+  input[type="submit"] {
+    background: $victoria;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
 
-	.header__nav-item {
-		padding-right: 23px;
-		text-decoration: none;
-		display: inline-block;
-		text-indent: -999em;
-		width: 21px;
-		height: 23px;
-	}
+  .menu-links {
+    display: inline-block;
+    float: right;
+    margin: 5% auto 0;
+  }
+  .current-language, .select-language {
+    float: left;
+    width: 50%;
+    padding: 0;
+  }
+  .select-language {
+    text-align: right;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .language-list__item {
+    text-align: right;
+  }
 
-	#profile_icon,
-	#join_icon { background: url('../img/profile_icon.png') no-repeat center center; }
-	#menu_icon { background: url('../img/burger_icon.png ') no-repeat center center; }
-	#search_icon { background: url('../img/search_icon_white.png') no-repeat center center; }
+  .header__nav-item {
+    padding-right: 23px;
+    text-decoration: none;
+    display: inline-block;
+    text-indent: -999em;
+    width: 21px;
+    height: 23px;
+  }
 
-	.heading--profiles {
-		background: $victoria;
-		color: #fff;
-	}
-	.call-to-action--profile {
-		background: $victoria;
-		color: #fff;
-	}
-	.call-to-action--view-profile {
-		background: transparent;
-	}
-	.call-to-action__nav-item--challenge {
-		color: #fff;
-		font-size: $font-large;
-	}
-	.call-to-action__nav-item--login {
-		background: #fff;
-		color: $victoria;
-		margin: 10px 0;
-		padding: 10px 0;
-		text-align: center;
-		text-decoration: none;
-	}
+  #profile_icon,
+  #join_icon { background: url('../img/profile_icon.png') no-repeat center center; }
+  #menu_icon { background: url('../img/burger_icon.png ') no-repeat center center; }
+  #search_icon { background: url('../img/search_icon_white.png') no-repeat center center; }
 
-	.call-to-action__nav-item--logout,
-	.call-to-action__nav-item--editprofile,
-	.call-to-action__nav-item--change-password {
-		background: $victoria;
-		color: #fff;
-		text-align: center;
-		text-decoration: none;
-	}
+  .heading--profiles {
+    background: $victoria;
+    color: #fff;
+  }
+  .call-to-action--profile {
+    background: $victoria;
+    color: #fff;
+  }
+  .call-to-action--view-profile {
+    background: transparent;
+  }
+  .call-to-action__nav-item--challenge {
+    color: #fff;
+    font-size: $font-large;
+  }
+  .call-to-action__nav-item--login {
+    background: #fff;
+    color: $victoria;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+  }
 
-	.surveys {
-		input[type="submit"],
-		.call-to-action__nav-item--surveys {
-			background: $roman;
-			color: #fff;
-			text-decoration: none;
-			text-align: center;
-			display: block;
-			text-transform: uppercase;
-			font-size: $font-small;
-		}
-	}
+  .call-to-action__nav-item--logout,
+  .call-to-action__nav-item--editprofile,
+  .call-to-action__nav-item--change-password {
+    background: $victoria;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
 
-	.call-to-action__nav-item--poll-login,
-	.polls__form input[type="submit"] {
-		background: $robin_egg_blue;
-		color: #fff;
-		text-align: center;
-		text-decoration: none;
-		font-weight: normal;
-	}
+  .surveys {
+    input[type="submit"],
+    .call-to-action__nav-item--surveys {
+      background: $roman;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      font-size: $font-small;
+    }
+  }
 
-	.profiles__forgotten-password {
-		text-decoration: none;
-		font-size: $font-x-small;
-	}
+  .call-to-action__nav-item--poll-login,
+  .polls__form input[type="submit"] {
+    background: $robin_egg_blue;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+  }
 
-	.section__image  {
-		padding: 0;
-	}
-	.section__title {
-		color: #757575;
-	}
-	.section-list__more {
-		text-decoration: none;
-		text-align: right;
-		&:after {
-			content: " ▶ ";
-		}
-	}
+  .profiles__forgotten-password {
+    text-decoration: none;
+    font-size: $font-x-small;
+  }
 
-	/* These, and all other module state changes be split into their own files;
-	with the same names as the original module, my guess is that we should also
-	hint at the viewport size.
-	e.g.: _s-personae--320
-	*/
-	.personae {
-		position: relative;
-		 a {
-				text-decoration: none;
-		 }
-	}
-	.personae-list__item {
-		padding: 10px 15px;
-		display: flex;
-		flex-direction: row;
-		&:after {
-			content: " ▶ ";
-			display: inline-block;
-			position: absolute;
-			right: 0;
-			margin: 5%;
-		}
-		img {
-			display: block;
-			max-height: 65px;
-		}
-	}
-	.personae__title {
-		position: absolute;
-		padding: 10px 15px 15px;
-	}
-	.personae__skip {
-		border: 1px solid #fff;
-		border-radius: 5px;
-		text-align: center;
-		padding: 10px;
-		margin: 20px 15px;
-	}
+  .section__image  {
+    padding: 0;
+  }
+  .section__title {
+    color: #757575;
+  }
+  .section-list__more {
+    text-decoration: none;
+    text-align: right;
+    &:after {
+      content: " ▶ ";
+    }
+  }
 
-
-	.menu-list__item {
-		a {
-			display: block;
-			text-decoration: none;
-			&:after {
-				content: " ▶ ";
-				display: inline-block;
-				float: right;
-				padding: 3px 0 0;
-			}
-		}
-	}
-
-	.search-form {
-		input[type="submit"] {
-			background: url('/static/img/search_icon_black.png') no-repeat 0 0;
-			position: absolute;
-			right: 15px;
-			top: 15px;
-			height: 21px;
-			width: 21px;
-			text-indent: -99em;
-			margin: 10px 0;
-		}
-	}
-
-	.heading--search  {
-		font-size: $font-small;
-	}
-	.search-form--main {
-		background: $victoria;
-		padding: 15px 15px 30px;
-		input[type="submit"] {
-			right: 30px;
-		}
-	}
-
-	.call-to-action__nav-item--back-home {
-		position: relative;
-		padding: 10px 15px;
-		width: auto;
-		&:before {
-			content: "‹";
-			display: inline-block;
-			padding: 0 2px 0 0;
-			font-size: $font-x-large;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-	}
+  /* These, and all other module state changes be split into their own files;
+  with the same names as the original module, my guess is that we should also
+  hint at the viewport size.
+  e.g.: _s-personae--320
+  */
+  .personae {
+    position: relative;
+     a {
+        text-decoration: none;
+     }
+  }
+  .personae-list__item {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    &:after {
+      content: " ▶ ";
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      margin: 5%;
+    }
+    img {
+      display: block;
+      max-height: 65px;
+    }
+  }
+  .personae__title {
+    position: absolute;
+    padding: 10px 15px 15px;
+  }
+  .personae__skip {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 15px;
+  }
 
 
+  .menu-list__item {
+    a {
+      display: block;
+      text-decoration: none;
+      &:after {
+        content: " ▶ ";
+        display: inline-block;
+        float: right;
+        padding: 3px 0 0;
+      }
+    }
+  }
 
-	.article-list__comments-counter {
-		&:before  {
-			content: "";
-			background: url('/static/img/comment_icon.png') no-repeat 0 1px;
-			height: 21px;
-			width: 21px;
-			display: inline-block;
-			background-size: 78%;
-			vertical-align: middle;
-		}
-	}
-	.comment-counter__text {
-		display: none;
-	}
+  .search-form {
+    input[type="submit"] {
+      background: url('/static/img/search_icon_black.png') no-repeat 0 0;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      height: 21px;
+      width: 21px;
+      text-indent: -99em;
+      margin: 10px 0;
+    }
+  }
+
+  .heading--search  {
+    font-size: $font-small;
+  }
+  .search-form--main {
+    background: $victoria;
+    padding: 15px 15px 30px;
+    input[type="submit"] {
+      right: 30px;
+    }
+  }
+
+  .article-list__comments-counter {
+    &:before  {
+      content: "";
+      background: url('/static/img/comment_icon.png') no-repeat 0 1px;
+      height: 21px;
+      width: 21px;
+      display: inline-block;
+      background-size: 78%;
+      vertical-align: middle;
+    }
+  }
+  .comment-counter__text {
+    display: none;
+  }
 
 
-	.comment-form {
-		input[type="submit"] {
-			text-align: center;
-			text-decoration: none;
-			padding: 10px 0;
-			margin: 5px 0;
-			font-weight: normal;
-		}
-	}
+  .comment-form {
+    input[type="submit"] {
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 0;
+      margin: 5px 0;
+      font-weight: normal;
+    }
+  }
 
-	.call-to-action__comment-item--feedback {
-		position: absolute;
-		right: 15px;
-		top: 15px;
-	}
+  .call-to-action__comment-item--feedback {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
 
-	.pagination__link {
-		text-align: right;
-		&:after {
-			content: " ▶ ";
-			font-size: $font-x-small;
-		}
-	}
-	.pagination__link--current {
-		&:after {
-			content: "";
-		}
-	}
+  .pagination__link {
+    text-align: right;
+    &:after {
+      content: " ▶ ";
+      font-size: $font-x-small;
+    }
+  }
+  .pagination__link--current {
+    &:after {
+      content: "";
+    }
+  }
 
-	#anonymous-submit {
-		text-align: right;
-	}
+  #anonymous-submit {
+    text-align: right;
+  }
 
-	.choice-result__percent-bar {
-		background: $robin_egg_blue;
-		display: block;
-		padding: 10px 0;
-		border-radius: 10px;
-	}
+  .choice-result__percent-bar {
+    background: $robin_egg_blue;
+    display: block;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
 
-	@each $name, $color in $color_list {
-		.surveys--#{$name} {
-			.surveys__thank-you,
-			.call-to-action__nav-item--back-home {
-				color: $color;
-			}
-			input[type="submit"],
-			.call-to-action__nav-item--surveys {
-					background: $color;
-			}
-		}
+  @each $name, $color in $color_list {
+    .surveys--#{$name} {
+      .surveys__thank-you,
+      .call-to-action__nav-item--back-home {
+        color: $color;
+      }
+      input[type="submit"],
+      .call-to-action__nav-item--surveys {
+          background: $color;
+      }
+    }
 
-		.polls--#{$name} {
-			.polls__results--title {
-				color: $color;
-			} 
-			.call-to-action__nav-item--poll-login,
-			.polls__form input[type="submit"] {
-				background: $color;
-			}
-		}
+    .polls--#{$name} {
+      .polls__results--title {
+        color: $color;
+      } 
+      .call-to-action__nav-item--poll-login,
+      .polls__form input[type="submit"] {
+        background: $color;
+      }
+    }
 
-		.polls-results--#{$name} {
-			.choice-result__percent-bar {
-				background: $color;
-			}
-		}
+    .polls-results--#{$name} {
+      .choice-result__percent-bar {
+        background: $color;
+      }
+    }
 
-		.comment-form--#{$name} {
-			input[type="submit"] {
-				background: $color;
-				color: #fff;
-			}
-			#anonymous-submit {
-				background: none;
-			}
-		}
-		.heading--large.heading--#{$name} {
-			color: #fff;
-			background: $color;
-		}
+    .comment-form--#{$name} {
+      input[type="submit"] {
+        background: $color;
+        color: #fff;
+      }
+      #anonymous-submit {
+        background: none;
+      }
+    }
+    .heading--large.heading--#{$name} {
+      color: #fff;
+      background: $color;
+    }
 
-		.heading.heading--#{$name} {
-			color: $color;
-		}
+    .heading.heading--#{$name} {
+      color: $color;
+    }
 
-		.section--#{$name} {
-			.section__title,
-			.section__subtitle {
-				background: $color;
-				color: #fff;
-			}
-		}
+    .section--#{$name} {
+      .section__title,
+      .section__subtitle {
+        background: $color;
+        color: #fff;
+      }
+    }
 
-		.section-list-nav--#{$name} {
-			background: $color;
-			color: #fff;
-			.section-list-nav__item a,
-			.section-list-nav__item--homeafter,
-			.section-list-nav__item--arrow-right:after {
-				color: #fff;
-			}
-		}
+    .section-list-nav--#{$name} {
+      background: $color;
+      color: #fff;
+      .section-list-nav__item a,
+      .section-list-nav__item--homeafter,
+      .section-list-nav__item--arrow-right:after {
+        color: #fff;
+      }
+    }
 
-		.search--results-list--#{$name} {
-			.search--result__section-title {
-				color: $color;
-			}
-		}
-	}
+    .search--results-list--#{$name} {
+      .search--result__section-title {
+        color: $color;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) {
 
-	html { background: #333; }
+  html { background: #333; }
 
-	body {
-		max-width: 320px;
-		margin: 0 auto;
-	}
+  body {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
