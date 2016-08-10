@@ -2,6 +2,7 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% if footers %}
+	{% for page in footers %}
    <li class="menu-list__item">
       <a href="{% pageurl page %}" class="footer-link">
         {% if page.image %}
@@ -10,4 +11,6 @@
         {{page.title}}
       </a>
     </li>
+  {% endfor %}
 {% endif %}
+
