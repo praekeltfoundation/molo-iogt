@@ -9,7 +9,7 @@
 #search_icon { background: url('../img/search_icon_white.png') no-repeat center center; }
 
 .menu-list__item {
-  a {
+  a, .footer-links {
     display: block;
     text-decoration: none;
     &:after {
