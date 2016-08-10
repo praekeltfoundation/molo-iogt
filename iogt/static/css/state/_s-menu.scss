@@ -16,8 +16,8 @@
     &:after {
       content: " ▶ ";
       display: inline-block;
-      float: right;
-      padding: 3px 0 0;
+      position: absolute;
+      right: 10px;
     }
   }
 }
