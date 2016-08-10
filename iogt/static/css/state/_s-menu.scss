@@ -9,14 +9,15 @@
 #search_icon { background: url('../img/search_icon_white.png') no-repeat center center; }
 
 .menu-list__item {
-  a {
+  position: relative;
+  a, .footer-links {
     display: block;
     text-decoration: none;
     &:after {
       content: " ▶ ";
       display: inline-block;
-      float: right;
-      padding: 3px 0 0;
+      position: absolute;
+      right: 10px;
     }
   }
 }
@@ -33,6 +34,11 @@
   float: right;
   margin: 5% auto 0;
 }
+
+.menu-list__item--icon {
+  display: inline-block;
+  padding-right: 5px;
+}     
 
 @each $name, $color in $color_list {
   .menu-list__item--#{$name} {
