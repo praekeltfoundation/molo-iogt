@@ -34,6 +34,11 @@
   margin: 5% auto 0;
 }
 
+.menu-list__item--icon {
+  display: inline-block;
+  padding-right: 5px;
+}     
+
 @each $name, $color in $color_list {
   .menu-list__item--#{$name} {
     &:after { color: $color; }
