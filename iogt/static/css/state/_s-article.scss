@@ -3,3 +3,11 @@
   float: right;
   padding: 35px 0 35px 15px;
 }
+
+@each $name, $color in $color_list {
+  .article-list__container--#{$name} {
+    .article-list__section {
+      color: $color;
+    }
+  }
+}
