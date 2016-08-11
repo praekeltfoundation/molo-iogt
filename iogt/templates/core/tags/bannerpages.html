@@ -1,0 +1,19 @@
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% if bannerpages %}
+{% for bannerpage in bannerpages %}
+<div class="banner">
+  {% if bannerpage.banner %}
+    {% image bannerpage.banner width-320 as tmp_photo %}
+    {% if bannerpage.banner_link_page %}
+    <a href="{% pageurl bannerpage.banner_link_page %}">
+        <img src="{{ tmp_photo.url }}" alt="{{ bannerpage.banner.title }}"/>
+    </a>
+    {% else %}
+    <img src="{{ tmp_photo.url }}" alt="{{ bannerpage.banner.title }}"/>
+    {% endif %}
+  {% endif %}
+</div>
+{% endfor%}
+{% endif %}
