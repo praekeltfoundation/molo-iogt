@@ -35,7 +35,8 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
-        {% if settings.core.SiteSettings.ga_tag_manager %}
+    <a name="languages"></a>
+      {% if settings.core.SiteSettings.ga_tag_manager %}
         <!--Google Tag Manager -->
         {% persona_selected as persona_selected_value %}
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{settings.core.SiteSettings.ga_tag_manager}}&client_session_id={{request.session.MOLO_GA_SESSION_FOR_NOSCRIPT}}{% if persona_selected_value%}&persona={{ persona_selected_value }}&event=persona{% endif %}"
@@ -165,7 +166,7 @@
             {% endif %}
           </li>
           <li class="menu-list__item">
-            <a href="#languages" target="_top" for="language-selection__toggle"  class="footer-link">
+            <a href="#languages" class="footer-link">
               <img src="{% static 'img/footer_change_language.png' %}" width="30" class="menu-list__item--icon" />
               {% trans "Change your language"%}
             </a>
