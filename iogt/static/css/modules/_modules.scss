@@ -1,31 +1,32 @@
 
 .logo  {
-	display: block;
-	img {
-		margin-bottom: 10px;
-		vertical-align: middle;
-		height: auto;
-		max-width: 40%;
-	}
+  display: block;
+  img {
+    margin-bottom: 10px;
+    vertical-align: middle;
+    height: auto;
+    max-width: 40%;
+  }
 }
 
 .section-image {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .error {
-	font-size: $font-x-small;
-	display: block;
-	color: #ff0000;
+  font-size: $font-x-small;
+  display: block;
+  color: #ff0000;
 }
 
 .call-to-action__nav-item {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 @import "_m-languages";
 @import "_m-heading";
+@import "_m-banner";
 @import "_m-article-list";
 @import "_m-article";
 @import "_m-menu";
@@ -39,4 +40,5 @@
 @import "_m-polls";
 @import "_m-pagination";
 @import "_m-survey";
+
 
