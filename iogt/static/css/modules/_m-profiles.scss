@@ -2,9 +2,13 @@
 .profiles {
   padding: 0 15px 10px;
   p {
-    display: block;
+    display: inline;
     font-size: $font-small;
     padding: 5px 0;
+  }
+
+  label {
+    display: inline-block;
   }
 
   .call-to-action--profile,
