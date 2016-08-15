@@ -30,6 +30,11 @@
     border-radius: 4px;
   }
 
+  select {
+    width: 32%;
+    display: inline-block;
+  }
+
   .call-to-action__nav-item,
   input[type="submit"] {
     white-space: nowrap;
