@@ -59,8 +59,10 @@ input[type="search"] {
 }
 
 select {
-  width: 32%;
   font-size: $font-medium;
+  display: block;
+  margin: 10px 0;
+  width: 100%;
 }
 
 textarea {
