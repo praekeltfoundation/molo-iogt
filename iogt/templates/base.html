@@ -30,7 +30,7 @@
           {% compress css %}
             <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style-rtl.scss'%}">
           {% endcompress %}
-            {% endif %}
+        {% endif %}
         {% block extra_css %}{% endblock %}
     </head>
 
@@ -104,7 +104,7 @@
             {% endfor %}
           </ul>
         </div>
-      </div>  
+      </div>
       {% endif %}
 
       <div class="header">
