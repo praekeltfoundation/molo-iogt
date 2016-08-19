@@ -13,6 +13,9 @@
 
 .language-list__item--active a {
   text-decoration: underline;
+  &:after {
+    text-decoration: none;
+  }
 }
 
 .current-language, .select-language {

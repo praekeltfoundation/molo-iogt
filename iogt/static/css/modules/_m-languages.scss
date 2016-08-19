@@ -19,7 +19,7 @@
   font-weight: normal;
   text-decoration: underline;
   &:after {
-    content: " ▼ ";
+    content: " ∨ ";
   }
 }
 
@@ -33,7 +33,8 @@
   a {
     color: #fff;
     &:after {
-      content: " ▶ ";
+      content: "❯";
+      padding: 0 0 0 5px;
     }
   }
 }
