@@ -30,6 +30,13 @@
 
 @each $name, $color in $color_list {
   .comment-form--#{$name} {
+    input[type="submit"],
+    #anonymous-submit,
+    .call-to-action__comment-item--feedback {
+      color: $color;
+    }
+  }
+  .comment-form--#{$name} {
     input[type="submit"] {
       background: $color;
       color: #fff;
@@ -39,12 +46,6 @@
     }
   }
  
-  .comment-form--#{$name} {
-    input[type="submit"],
-    #anonymous-submit,
-    .call-to-action__comment-item--feedback {
-      color: $color;
-    }
-  }
+  
   
 }
