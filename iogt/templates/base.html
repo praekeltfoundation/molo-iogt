@@ -85,7 +85,15 @@
 
       {% if languages %}
       <div class="languages">
+       {% if languages|length <= 1 %}
         <div class="language-bar">
+          <span class="current-language">
+            {% trans "Language" %}:
+            {{ LANGUAGE_CODE|language_name_local }}
+          </span>
+        </div>
+         {% else %}
+         <div class="language-bar">
           <span class="current-language">
             {% trans "Language" %}:
             {{ LANGUAGE_CODE|language_name_local }}
@@ -94,17 +102,17 @@
             {% trans "Change Language" %}
           </label>
         </div>
-
         <div class="language-selection">
           <input id="language-selection__toggle" type="checkbox">
           <ul class="language-list">
-            {% for language in languages %}
+          {% for language in languages %}
             <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} language-list__item--active{% endif %}">
               <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
             </li>
-            {% endfor %}
+          {% endfor %}
           </ul>
         </div>
+        {% endif %}
       </div>
       {% endif %}
 
