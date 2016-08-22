@@ -7,10 +7,13 @@
     display: block;
     color: #666666;
   }
+  &:last-child {
+    border: none;
+  }
 }
 
 .article-list__container {
-  padding: 15px 15px 5px;
+  padding: 10px 15px 10px;
   a {
     display: block;
     margin-bottom: 8px;

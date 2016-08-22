@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% load static core_tags i18n molo_survey_tags comments static %}
-{% load wagtailcore_tags wagtailimages_tags poll_votings %}
+{% load wagtailcore_tags wagtailimages_tags poll_votings pagination %}
 
 {% block content %}
 <div class="section section{{self.get_effective_extra_style_hints}}">
@@ -28,7 +28,7 @@
     </li>
   </ul>
 
-{% load_child_articles_for_section self count=13 as articles %}
+{% load_child_articles_for_section self count=10 as articles %}
 <ul class="article-list">
 {% for sub_article in articles %}
   <li class="article-list__item">
@@ -57,9 +57,50 @@
 {% endfor %}
 </ul>
 
+  {% if articles %}
+  <div class="pagination">
+    {% if articles_paginated.has_previous %}
+      <a href="?p={{ articles_paginated.previous_page_number }}">&lt; {% trans "Prev" %}</a>
+    {% endif %}
+
+    {% get_pages articles_paginated as pages %}
+
+    {% for page in pages.start %}
+      <a href="?p={{ page }}">{{ page }}</a>
+    {% endfor %}
+
+
+    {% if pages.ellipses_before %}
+      ...
+    {% endif %}
+    {% for page in pages.before_current %}
+      <a href="?p={{ page }}">{{ page}}</a>
+    {% endfor %}
+    <span class="current">
+        {% if articles_paginated.has_next %}
+          {{ articles_paginated.number }}
+        {% endif %}
+    </span>
+    {% for page in pages.after_current %}
+      <a href="?p={{ page }}">{{ page }}</a>
+    {% endfor %}
+    {% if pages.ellipses_after %}
+      ...
+    {% endif %}
+
+    {% for page in pages.end %}
+      <a href="?p={{ page }}">{{ page }}</a>
+    {% endfor %}
+
+    {% if articles_paginated.has_next %}
+        <a href="?p={{ articles_paginated.next_page_number }}">{% trans "Next" %} &gt;</a>
+    {% endif %}
+  </div>
+  {% endif %}
+
 {% load_child_sections_for_section self as sections %}
 {% for section in sections %}
-    {% load_descendant_articles_for_section section as section_featured_articles %}
+    {% load_descendant_articles_for_section section count=5 as section_featured_articles %}
     {% if section_featured_articles %}
     <div class="section-list section-list{{self.get_effective_extra_style_hints}}">
       <h3 class="section-list__title"><a href="{% pageurl section %}">{{section.title}}</a></h3>
@@ -89,7 +130,9 @@
             </li>
         {% endfor %}
       </ul>
-      <a href="{% pageurl section %}" class="section-list__more">{% trans "View More" %}</a>
+      {% if section_featured_articles|length > 1 %}
+        <a href="{% pageurl section %}" class="section-list__more">{% trans "View More" %}</a>
+      {% endif %}
       </div>
     {% endif %}
 {% endfor %}
