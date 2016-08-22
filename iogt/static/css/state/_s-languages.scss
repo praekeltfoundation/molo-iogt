@@ -18,13 +18,12 @@
   }
 }
 
-.current-language, .select-language {
-  float: left;
-  width: 50%;
+.current-language, 
+.select-language {
   padding: 0;
 }
+
 .select-language {
-  text-align: right;
   text-decoration: none;
   font-weight: bold;
 }
