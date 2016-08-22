@@ -14,10 +14,10 @@
     display: block;
     text-decoration: none;
     &:after {
-      content: " ▶ ";
+      content: "❯";
       display: inline-block;
-      position: absolute;
-      right: 10px;
+      float: right;
+
     }
   }
 }

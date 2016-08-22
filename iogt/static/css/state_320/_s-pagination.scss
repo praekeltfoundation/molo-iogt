@@ -2,7 +2,7 @@
 .pagination__link {
   text-align: right;
   &:after {
-    content: " ▶ ";
+    content: "❯";
     font-size: $font-x-small;
   }
 }
