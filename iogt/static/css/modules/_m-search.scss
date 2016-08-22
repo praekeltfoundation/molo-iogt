@@ -5,6 +5,15 @@
   padding: 10px 15px;
 }
 
+.search--result {
+  padding: 0;
+  color: #757575;
+  a {
+    display: block;
+    color: #757575;
+    padding: 10px 15px;
+  }
+}
 
 .search-form {
   position: relative;
@@ -51,6 +60,6 @@
 .search--result__title {
     font-size: 30px;
     line-height: 1.0;
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: $font-x-large;
 }
