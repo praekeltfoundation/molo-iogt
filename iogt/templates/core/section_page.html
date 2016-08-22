@@ -10,9 +10,7 @@
       {% image self.image width-320 %}
     </div>
   {% endif %}
-  <h1 class="section__title">{{self.title}}</h1>
-  <h4 class="section__subtitle">{{self.description}}</h4>
-
+  
   <ul class="section-list-nav section-list-nav{{self.get_effective_extra_style_hints}}">
     <li class="section-list-nav__item section-list-nav__item--arrow-right">
       <a href="/">{% trans "Home" %}</a>
