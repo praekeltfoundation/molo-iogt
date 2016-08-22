@@ -13,6 +13,11 @@
   display: none;
 }
 
+.call-to-action__comment-item--report {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
 
 .comment-form {
   input[type="submit"] {
@@ -45,7 +50,4 @@
       background: none;
     }
   }
- 
-  
-  
 }
