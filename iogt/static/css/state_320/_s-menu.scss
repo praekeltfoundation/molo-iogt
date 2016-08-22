@@ -16,9 +16,8 @@
     &:after {
       content: "❯";
       display: inline-block;
-      position: absolute;
-      right: 16px;
-      top: 25%;
+      float: right;
+
     }
   }
 }
