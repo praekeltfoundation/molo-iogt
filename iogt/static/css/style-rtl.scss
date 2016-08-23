@@ -50,12 +50,15 @@ input[type="search"] {
   }
 
   .footer { 
-     a {
+    .menu-list__item .footer-link {
       padding: 0 50px 0 0;
+      &:after { 
+        float: left;
+      }
     }
-     .menu-list__item--icon {
-      right: 15px;
-      left: inherit;
-     }
+  }
+  .menu-list__item--icon {
+    right: 15px;
+    left: inherit;
   }
 }

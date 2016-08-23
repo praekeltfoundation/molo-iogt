@@ -1,6 +1,15 @@
 .footer  {
-  a {
-    padding: 0 0 0 50px;
+  .menu-list__item {
+  position: relative;
+    .footer-link {
+       padding: 0 0 0 50px;
+      text-decoration: none;
+      &:after {
+        content: "❯";
+        display: inline-block;
+        float: right;
+      }
+    }
   }
 }
 .menu-list__item--icon {
