@@ -164,7 +164,7 @@
       {% block footer %}
       <div class="footer">
         <ul class="menu-list">
-          {% footer_page %}
+         
           <li class="menu-list__item">
             {% if not user.is_authenticated %}
               <a href="{% url 'molo.profiles:user_register' %}" class="footer-link">
@@ -183,6 +183,7 @@
               </a>
             </li>
           {% endif %}
+          {% footer_page %}
         </ul>
       </div>
       <div class="copyright">

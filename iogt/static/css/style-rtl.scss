@@ -48,4 +48,14 @@ input[type="search"] {
   .search-form input[type="submit"] {
     text-indent: 5em;
   }
+
+  .footer { 
+     a {
+      padding: 0 50px 0 0;
+    }
+     .menu-list__item--icon {
+      right: 15px;
+      left: inherit;
+     }
+  }
 }
