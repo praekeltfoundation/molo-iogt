@@ -174,7 +174,7 @@
             {% endif %}
           </li>
           
-          {% if languages %}
+          {% if languages|length > 1 %}
             <li class="menu-list__item">
               <label for="language-selection__toggle--footer" class="footer-link">
                 <img src="{% static 'img/footer_change_language.png' %}" width="30" class="menu-list__item--icon" />
