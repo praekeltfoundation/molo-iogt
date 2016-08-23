@@ -10,6 +10,10 @@
   .select-language:after {
     padding-left: 5px;
   }
+
+  .header__nav-item:last-child { 
+    margin: 0 0 0 12px;
+  }
   textarea {
     padding: 5px;
     width: 95%;
