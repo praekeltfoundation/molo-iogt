@@ -3,7 +3,9 @@
 }
 .article-list__image--small {
   float: right;
-  padding: 35px 0 35px 15px;
+  padding: 45px 0 20px 15px;
+  width: 50%;
+  height: auto;
 }
 
 @each $name, $color in $color_list {

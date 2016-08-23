@@ -36,7 +36,7 @@
         {% if forloop.first %}
             {% image sub_article.image width-290 class="article-list__image" %}
         {% else %}
-            {% image sub_article.image width-100 class="article-list__image article-list__image--small" %}
+            {% image sub_article.image original class="article-list__image article-list__image--small" %}
         {% endif %}
       {% endif %}
       <h2 class="article-list__title">{{sub_article.title}}</h2>
@@ -110,7 +110,7 @@
                   {% if forloop.first %}
                       {% image article.image width-290 class="article-list__image" %}
                   {% else %}
-                      {% image article.image width-100 class="article-list__image article-list__image--small" %}
+                      {% image article.image original class="article-list__image article-list__image--small" %}
                   {% endif %}
                 {% endif %}
                 <h2 class="article-list__title">{{article.title}}</h2>
