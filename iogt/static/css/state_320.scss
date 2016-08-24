@@ -15,7 +15,6 @@
   @import "state_320/_s-search";
   @import "state_320/_s-section";
   @import "state_320/_s-survey";
-  @import "state_320/_s-footer";
 
   html, body,
   h1, h2, h3, h4, h5, h6,
@@ -47,16 +46,6 @@
     color: #fff;
     text-align: center;
     text-decoration: none;
-  }
-  .current-language {
-    padding: 0 48px 0 0;
-  }
- .select-language {
-    text-align: right;
-  }
-  textarea {
-    padding: 5px;
-    width: 95%;
   }
 }
 

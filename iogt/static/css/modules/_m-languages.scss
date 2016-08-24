@@ -5,14 +5,15 @@
   text-transform: uppercase;
 }
 .language-bar {
-  padding: 10px 15px;
+  padding: 10px 10px;
   overflow: auto;
-  vertical-align: middle;
 }
 
 .current-language, 
 .select-language {
   color: #fff;
+  display: inline-block;
+  padding-right: 10px;
 }
 .select-language {
   font-weight: normal;
@@ -20,12 +21,9 @@
   &:after {
     content: " ∨ ";
     font-size: $font-medium;
-    display: inline-block;
-    font-size: 16px;
-    vertical-align: top;
-    margin: -5px 0 0 0;
   }
 }
+
 
 .language-selection {
   background: $east_bay;
@@ -37,7 +35,7 @@
     color: #fff;
     &:after {
       content: "❯";
-      padding-left: 5px;
+      padding: 0 0 0 5px;
     }
   }
 }
