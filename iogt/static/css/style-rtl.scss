@@ -7,26 +7,31 @@ input[type="tel"],
 input[type="search"] {
   padding: 8px 0;
 }
+.language-list__item a:after {
+  padding-right: 5px;
+}
 
 @media only screen and (min-width: 320px) {
-  .current-language {
-    padding: 0 0 0 66px;
-  }
-  .language-list__item a:after {
-    padding: 0 5px 0 0;
+  .select-language:after {
+    padding-right: 5px;
   }
   .section-list__more:after {
-    padding: 0 10px 0 0;
+    padding-right: 10px;
   }
-  .menu-list__item a:after,
-  .menu-list__item .footer-links:after {
-    float: left;
-  }
-
   .menu-links { 
     float: left;
   }
 
+  .header__nav-item:last-child { 
+    margin: 0 12px 0 0;
+  }
+
+  .menu-list__item a:after,
+  .menu-list__item .footer-links:after {
+    content: "";
+    float: left;
+  }
+  
   .article-list__image--small {
     float: left;
     padding: 35px 15px 35px 0;
@@ -48,6 +53,10 @@ input[type="search"] {
   .search-form input[type="submit"] {
     text-indent: 5em;
   }
+  .call-to-action__comment-item--report {
+    right: inherit;
+    top: 5px;
+    left: 15px;
 
   .footer { 
     .menu-list__item .footer-link {

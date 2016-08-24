@@ -117,9 +117,13 @@
       {% endif %}
 
       <div class="header">
-        <a href="/" class="logo">
+         <a href="/" class="logo">
           {% if settings.core.SiteSettings.logo %}
-            {% image settings.core.SiteSettings.logo height-65 %}
+            {% image settings.core.SiteSettings.logo original %}
+          {% else %}
+            {% block logo %}
+              <img src="{% static 'img/logo000000.png' %}" alt="{% trans "IoGT" %}" />
+            {% endblock %}
           {% endif %}
         </a>
         <div class="menu-links">
