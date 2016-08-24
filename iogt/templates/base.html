@@ -36,7 +36,6 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
-    <a name="languages"></a>
       {% if settings.core.SiteSettings.ga_tag_manager %}
         <!--Google Tag Manager -->
         {% persona_selected as persona_selected_value %}
@@ -78,7 +77,8 @@
         </div>
         <!-- Local End Google Tracking Code -->
         {% endif %}
-
+        
+        
       {% if languages %}
       <div class="languages">
        {% if languages|length_is:"1" %}
@@ -131,7 +131,18 @@
 
       {% block content %}{% endblock %}
 
-
+     
+     {% if settings.usermetadata.PersonaeSettings.persona_required == True %}
+        <div class="copyright">
+          <p>&copy; The Internet of Good Things</p>
+        </div>
+        <!--
+        Note:
+         If Personae is checked active - only show persona list
+         If personae have is one of the persona list - show all website
+         Else if personae is skipped show / personae value is skipped show all website
+        -->
+     {% else %}
       <div id="section_menu" class="section-menu">
         <div class="section-heading">
           <a href="/"><img src="{% static 'img/iogt_logo_2.png' %}" alt="The Internet of Good Things" width="40%"/></a>
@@ -149,7 +160,6 @@
         {% endfor %}
         </ul>
       </div>
-
 
       {% block search %}
         {% if languages %}
@@ -181,10 +191,19 @@
           {% endif %}
         </ul>
       </div>
+
       <div class="copyright">
         <p>&copy; The Internet of Good Things</p>
       </div>
       {% endblock %}
+
+    {% endif %}
+
+      
+
+     
+      
+
       {% block extra_js %}{% endblock %}
     </body>
 </html>
