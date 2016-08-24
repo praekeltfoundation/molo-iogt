@@ -2,13 +2,14 @@
   position: relative;
    a {
       text-decoration: none;
+      clear: both;
    }
 }
 .personae-list__item {
   padding: 10px 15px;
+  overflow: auto;
   img {
     display: block;
-    max-height: 65px;
   }
 }
 .personae__title:after {
@@ -16,9 +17,12 @@
   display: inline-block;
   float: right;
 }
-.personae__image {
+.personae-list__item--image-container {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 65px;
+  height: 65px;
   float: left;
-  padding-right: 20px;
 }
 .personae__skip {
   border: 1px solid #fff;
@@ -27,3 +31,4 @@
   padding: 10px;
   margin: 20px 15px;
 }
+
