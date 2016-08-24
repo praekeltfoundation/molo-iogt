@@ -48,11 +48,7 @@
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','{{settings.core.SiteSettings.ga_tag_manager}}');</script>
 
-      {% if persona_selected_value %}
-        <script type="text/javascript">
-          dataLayer.push({'persona': '{{ persona_selected_value }}', 'event': 'persona'});
-        </script>
-      {% endif %}
+     
 
       <!-- End Google Tag Manager -->
       {% endif %}

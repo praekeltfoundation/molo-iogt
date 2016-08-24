@@ -6,23 +6,15 @@
 }
 .personae-list__item {
   padding: 10px 15px;
-  display: flex;
-  flex-direction: row;
-  &:after {
-    content: "❯";
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    margin: 5%;
-  }
   img {
     display: block;
     max-height: 65px;
   }
 }
-.personae__title {
-  position: absolute;
-  padding: 10px 15px 15px;
+.personae__title:after {
+  content: "❯";
+  display: inline-block;
+  float: right;
 }
 .personae__skip {
   border: 1px solid #fff;
