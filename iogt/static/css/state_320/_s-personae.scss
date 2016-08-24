@@ -2,27 +2,34 @@
   position: relative;
    a {
       text-decoration: none;
-      clear: both;
    }
 }
 .personae-list__item {
-  padding: 10px 15px;
-  overflow: auto;
+  padding: 20px 15px;
+  position: relative;
   img {
     display: block;
   }
 }
-.personae__title:after {
-  content: "❯";
-  display: inline-block;
-  float: right;
+.personae__title {
+  padding: 0 0 0 100px;
+  &:after {
+    content: "❯";
+    display: inline-block;
+    float: right;
+  }
 }
 .personae-list__item--image-container {
   border-radius: 100%;
   overflow: hidden;
   width: 65px;
   height: 65px;
-  float: left;
+
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 9px;
+
 }
 .personae__skip {
   border: 1px solid #fff;
