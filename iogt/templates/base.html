@@ -158,7 +158,6 @@
         </ul>
       </div>
 
-
       {% block search %}
         {% if languages %}
           {% include "search/search_block.html" %}
@@ -168,7 +167,7 @@
       {% block footer %}
       <div class="footer">
         <ul class="menu-list">
-          {% footer_page %}
+         
           <li class="menu-list__item">
             {% if not user.is_authenticated %}
               <a href="{% url 'molo.profiles:user_register' %}" class="footer-link">
@@ -179,14 +178,25 @@
             {% endif %}
           </li>
           
-          {% if languages %}
+          {% if languages|length > 1 %}
             <li class="menu-list__item">
-              <a href="#languages" class="footer-link">
+              <label for="language-selection__toggle--footer" class="footer-link">
                 <img src="{% static 'img/footer_change_language.png' %}" width="30" class="menu-list__item--icon" />
                 {% trans "Change your language"%}
-              </a>
+              </label>
             </li>
+            <div class="language-selection-footer">
+              <input id="language-selection__toggle--footer" type="checkbox">
+              <ul class="language-list">
+              {% for language in languages %}
+                <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} language-list__item--active{% endif %}">
+                  <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
           {% endif %}
+          {% footer_page %}
         </ul>
       </div>
       <div class="copyright">

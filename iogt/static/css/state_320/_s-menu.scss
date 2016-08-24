@@ -10,14 +10,12 @@
 
 .menu-list__item {
   position: relative;
-  a, .footer-links {
-    display: block;
+  a {
     text-decoration: none;
     &:after {
       content: "❯";
       display: inline-block;
       float: right;
-
     }
   }
 }
@@ -33,11 +31,6 @@
   display: inline-block;
   float: right;
   margin: 5% auto 0;
-}
-
-.menu-list__item--icon {
-  display: inline-block;
-  padding-right: 5px;
 }
 
 @each $name, $color in $color_list {
