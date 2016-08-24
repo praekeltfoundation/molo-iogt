@@ -1,8 +1,13 @@
+
+.article-list__image {
+  margin: 0 auto;
+}
+.article-list__item--hero .article-list__image {
+  width: auto;
+}
 .article-list__image--small {
   float: right;
   padding: 45px 0 20px 15px;
-  width: 50%;
-  height: auto;
 }
 
 @each $name, $color in $color_list {

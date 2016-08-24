@@ -28,7 +28,7 @@
                     {% if forloop.first %}
                     <a href="{% pageurl featured_article %}">
                        {% if featured_article.image %}
-                        {% image featured_article.image width-320 class="article_thumbnail--hero" %}
+                        {% image featured_article.image original class="article_thumbnail--hero" %}
                       {% endif %}
                     </a>
                     <a href="{% pageurl featured_article %}">

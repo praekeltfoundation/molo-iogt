@@ -10,9 +10,9 @@
         <a href="{% pageurl article %}">
           {% if article.image %}
             {% if forloop.first %}
-            {% image article.image width-290 class="article-list__image" %}
+            {% image article.image original class="article-list__image" %}
             {% else %}
-            {% image article.image width-100 class="article-list__image article-list__image--small" %}
+            {% image article.image original class="article-list__image article-list__image--small" %}
               {% endif %}
           {% endif %}
           <h3 class="article-list__section">{{ article.get_parent_section.title }}</h3>
