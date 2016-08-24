@@ -1,16 +1,13 @@
 
-#language-selection__toggle,
-#language-selection__toggle--footer {
+#language-selection__toggle {
   display: none;
 }
 
-.language-selection input + * ,
-.language-selection-footer input + * {
+.language-selection input + * {
   display: none;
 }
 
-.language-selection input:checked + * ,
-.language-selection-footer  input:checked + *  {
+.language-selection input:checked + * {
   display: block;
 }
 
