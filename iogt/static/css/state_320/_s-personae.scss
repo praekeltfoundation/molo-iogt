@@ -17,10 +17,8 @@
   float: right;
 }
 .personae__image {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 9px;
+  float: left;
+  padding-right: 20px;
 }
 .personae__skip {
   border: 1px solid #fff;
