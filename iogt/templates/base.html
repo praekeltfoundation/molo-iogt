@@ -36,9 +36,9 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
+      {% persona_selected as persona_selected_value %}
       {% if settings.core.SiteSettings.ga_tag_manager %}
         <!--Google Tag Manager -->
-        {% persona_selected as persona_selected_value %}
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{settings.core.SiteSettings.ga_tag_manager}}&client_session_id={{request.session.MOLO_GA_SESSION_FOR_NOSCRIPT}}{% if persona_selected_value%}&persona={{ persona_selected_value }}&event=persona{% endif %}"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -132,20 +132,80 @@
       {% block content %}{% endblock %}
 
      
-     {% if settings.usermetadata.PersonaeSettings.persona_required == True %}
-        <div class="copyright">
-          <p>&copy; The Internet of Good Things</p>
-        </div>
-        <!--
-        Note:
-         If Personae is checked active - only show persona list
-         If personae have is one of the persona list - show all website
-         Else if personae is skipped show / personae value is skipped show all website
-        -->
-     {% else %}
+{% if settings.usermetadata.PersonaeSettings.persona_required == True %}  
+
+ {% if persona_selected_value != None %}
+ --{{persona_selected_value}}
+  <div id="section_menu" class="section-menu">
+    <div class="section-heading">
+      <a href="/">
+        <img src="{% static 'img/iogt_logo_2.png' %}" alt="The Internet of Good Things" width="40%"/>
+      </a>
+    </div>
+    <ul class="menu-list">
+
+    {% load_sections as sections %}
+    {% for section in sections %}
+      <li class="menu-list__item menu-list__item{{section.get_effective_extra_style_hints}}">
+        <a href="{% pageurl section %}">
+          {{section.title}}
+        </a>
+        <span class="menu-list__description">{{section.description}}</span>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+
+  {% block search %}
+    {% if languages %}
+      {% include "search/search_block.html" %}
+    {% endif %}
+  {% endblock %}
+
+  {% block footer1 %}
+  <div class="footer">
+    <ul class="menu-list">
+      {% footer_page %}
+      <li class="menu-list__item">
+        {% if not user.is_authenticated %}
+          <a href="{% url 'molo.profiles:user_register' %}" class="footer-link">
+          <img src="{% static 'img/footer_login_icon.png' %}" width="30" class="menu-list__item--icon" />{% trans "Login" %}</a>
+          {% else %}
+          <a href="{% url 'molo.profiles:view_my_profile' %}" class="footer-link">
+          <img src="{% static 'img/footer_login_icon.png' %}" width="30" class="menu-list__item--icon" />{% trans "Profile" %}</a>
+        {% endif %}
+      </li>
+      
+      {% if languages %}
+        <li class="menu-list__item">
+          <a href="#languages" class="footer-link">
+            <img src="{% static 'img/footer_change_language.png' %}" width="30" class="menu-list__item--icon" />
+            {% trans "Change your language"%}
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+
+  <div class="copyright">
+    <p>&copy; The Internet of Good Things</p>
+  </div>
+  {% endblock %}
+  {% else %}
+  >>{{persona_selected_value}}
+    {% block footer %} 
+    <div class="copyright">
+      <p>&copy; The Internet of Good Things</p>
+    </div> 
+    {% endblock %}
+ {% endif %}
+
+{% else %}
       <div id="section_menu" class="section-menu">
         <div class="section-heading">
-          <a href="/"><img src="{% static 'img/iogt_logo_2.png' %}" alt="The Internet of Good Things" width="40%"/></a>
+          <a href="/">
+            <img src="{% static 'img/iogt_logo_2.png' %}" alt="The Internet of Good Things" width="40%"/>
+          </a>
         </div>
         <ul class="menu-list">
 
@@ -161,13 +221,14 @@
         </ul>
       </div>
 
-      {% block search %}
+
+      {% block search1 %}
         {% if languages %}
           {% include "search/search_block.html" %}
         {% endif %}
       {% endblock %}
 
-      {% block footer %}
+      {% block footer2 %}
       <div class="footer">
         <ul class="menu-list">
           {% footer_page %}
@@ -196,14 +257,7 @@
         <p>&copy; The Internet of Good Things</p>
       </div>
       {% endblock %}
-
-    {% endif %}
-
-      
-
-     
-      
-
+{% endif %}
       {% block extra_js %}{% endblock %}
     </body>
 </html>
