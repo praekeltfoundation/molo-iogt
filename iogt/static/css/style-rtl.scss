@@ -12,6 +12,9 @@ input[type="search"] {
 }
 
 @media only screen and (min-width: 320px) {
+  .current-language {
+    padding: 0 0 0 48px;
+  }
   .select-language:after {
     padding-right: 5px;
   }

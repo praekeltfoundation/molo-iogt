@@ -3,7 +3,7 @@
   border-top: 2px solid #07292F;
   position: relative;
   .menu-list__item {
-    padding: 14px 15px;
+    padding: 14px 0;
     .footer-link {
       color: #07292F;
       display: block; 
@@ -20,6 +20,7 @@
 
 .language-selection-footer {
   background: #07292F;
+  margin: 10px 0 0;
   .language-list__item:last-child {
     border-bottom: 1px solid #B0B9BB;
   }
