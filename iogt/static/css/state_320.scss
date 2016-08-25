@@ -50,8 +50,10 @@
   }
   .current-language {
     padding: 0 48px 0 0;
+    display: inline-block;
   }
  .select-language {
+    display: inline-block;
     text-align: right;
   }
   textarea {

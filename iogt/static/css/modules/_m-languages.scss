@@ -12,7 +12,7 @@
 .current-language, 
 .select-language {
   color: #fff;
-  display: inline-block;
+  display: block;
   padding-right: 10px;
 }
 .select-language {
@@ -27,6 +27,7 @@
 .language-selection {
   background: $east_bay;
   border-bottom: 1px solid #685fa1;
+  position: relative;
 }
 .language-list {
   .language-list__item {
