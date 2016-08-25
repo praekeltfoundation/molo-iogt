@@ -36,10 +36,11 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
-    <a name="languages"></a>
+      
       {% if settings.core.SiteSettings.ga_tag_manager %}
+      {% persona_selected as persona_selected_value %}
+      
         <!--Google Tag Manager -->
-        {% persona_selected as persona_selected_value %}
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{settings.core.SiteSettings.ga_tag_manager}}&client_session_id={{request.session.MOLO_GA_SESSION_FOR_NOSCRIPT}}{% if persona_selected_value%}&persona={{ persona_selected_value }}&event=persona{% endif %}"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -78,7 +79,8 @@
         </div>
         <!-- Local End Google Tracking Code -->
         {% endif %}
-
+        
+        
       {% if languages %}
       <div class="languages">
        {% if languages|length_is:"1" %}
@@ -135,10 +137,12 @@
 
       {% block content %}{% endblock %}
 
-
+      {% block section_menu %}
       <div id="section_menu" class="section-menu">
         <div class="section-heading">
-          <a href="/"><img src="{% static 'img/iogt_logo_2.png' %}" alt="The Internet of Good Things" width="40%"/></a>
+          <a href="/">
+            <img src="{% static 'img/iogt_logo_2.png' %}" alt="The Internet of Good Things" width="40%"/>
+          </a>
         </div>
         <ul class="menu-list">
 
@@ -153,6 +157,7 @@
         {% endfor %}
         </ul>
       </div>
+      {% endblock %}
 
       {% block search %}
         {% if languages %}
@@ -195,10 +200,12 @@
           {% footer_page %}
         </ul>
       </div>
+
       <div class="copyright">
         <p>&copy; The Internet of Good Things</p>
       </div>
       {% endblock %}
+
       {% block extra_js %}{% endblock %}
     </body>
 </html>
