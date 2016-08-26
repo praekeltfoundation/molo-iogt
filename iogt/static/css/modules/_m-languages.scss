@@ -24,10 +24,16 @@
   }
 }
 
-
 .language-selection {
-  background: $east_bay;
   border-bottom: 1px solid #685fa1;
+  .language-list {
+    background: $east_bay;
+  }
+}
+.language-selection-footer {
+  .language-list {
+    background: #07292F; 
+   }
 }
 .language-list__item {
   padding: 20px;
