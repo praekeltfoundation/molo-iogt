@@ -17,9 +17,7 @@
   display: none;
 }
 
-.language-selection-footer {
-  .language-list__item:last-child {
-    border-bottom: 1px solid #B0B9BB;
-  }
+.language-selection-footer .language-list__item:last-child {
+  border-bottom: 1px solid #B0B9BB;
 }
 

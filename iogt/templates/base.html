@@ -96,20 +96,20 @@
             {% trans "Language" %}:
             {{ LANGUAGE_CODE|language_name_local }}
           </span>
+          <input id="language-selection__toggle" class="language-selection__toggle-input" type="checkbox">
           <label class="select-language" for="language-selection__toggle">
             {% trans "Change Language" %}
           </label>
-        </div>
-        <div class="language-selection">
-          <input id="language-selection__toggle" type="checkbox">
-          <ul class="language-list">
-          {% for language in languages %}
-            <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} language-list__item--active{% endif %}">
-              <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
-            </li>
-          {% endfor %}
-          </ul>
-        </div>
+          <div role="language-bar" class="language-selection">
+            <ul class="language-list">
+            {% for language in languages %}
+              <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} language-list__item--active{% endif %}">
+                <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+         </div>
         {% endif %}
       </div>
       {% endif %}
@@ -181,21 +181,21 @@
           
           {% if languages|length > 1 %}
             <li class="menu-list__item">
+              <input id="language-selection__toggle--footer" class="language-selection__toggle-input"  type="checkbox">
               <label for="language-selection__toggle--footer" class="footer-link">
                 <img src="{% static 'img/footer_change_language.png' %}" width="30" class="menu-list__item--icon" />
                 {% trans "Change your language"%}
               </label>
+              <div class="language-selection language-selection-footer">
+                <ul class="language-list">
+                {% for language in languages %}
+                  <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} language-list__item--active{% endif %}">
+                    <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
+                  </li>
+                {% endfor %}
+                </ul>
+              </div>
             </li>
-            <div class="language-selection-footer">
-              <input id="language-selection__toggle--footer" type="checkbox">
-              <ul class="language-list">
-              {% for language in languages %}
-                <li class="language-list__item {% if LANGUAGE_CODE == language.locale %} language-list__item--active{% endif %}">
-                  <a href="{% url 'locale_set' language.locale %}?next={{ request.path }}?{{ request.GET.urlencode }}">{{ language.locale|language_name_local }}</a>
-                </li>
-              {% endfor %}
-              </ul>
-            </div>
           {% endif %}
           {% footer_page %}
         </ul>
