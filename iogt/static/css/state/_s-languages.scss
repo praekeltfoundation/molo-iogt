@@ -2,6 +2,7 @@
 #language-selection__toggle,
 #language-selection__toggle--footer {
   visibility: hidden;
+  position: absolute;
 }
 
 .language-selection input + * ,
