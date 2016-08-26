@@ -2,7 +2,7 @@
   .menu-list__item {
   position: relative;
     .footer-link {
-       padding: 0 0 0 50px;
+       padding: 0 15px 0 65px;
       text-decoration: none;
       &:after {
         content: "❯";
@@ -15,6 +15,13 @@
 .menu-list__item--icon {
   display: block;
   position: absolute;
-  left: 15px;
+  left: 25px;
   top: 9px;
+}
+
+@media only screen and (min-width: 360px) { 
+  .menu-list__item--icon {
+    left: 15px;
+  }
+  
 }

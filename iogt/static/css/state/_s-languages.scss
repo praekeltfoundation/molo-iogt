@@ -1,7 +1,25 @@
 
 #language-selection__toggle,
 #language-selection__toggle--footer {
-  display: none;
+  display: block;
+  position: absolute;
+  top: -30px;
+}
+
+#language-selection__toggle {
+  right: 15px;
+
+}
+
+#language-selection__toggle--footer  {
+  left: 0;
+}
+
+@media only screen and (min-width: 360px) { 
+  #language-selection__toggle,
+  #language-selection__toggle--footer {
+    display: none;
+  }
 }
 
 .language-selection input + * ,

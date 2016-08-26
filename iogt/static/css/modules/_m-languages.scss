@@ -12,7 +12,7 @@
 .current-language, 
 .select-language {
   color: #fff;
-  display: inline-block;
+  display: block;
   padding-right: 10px;
 }
 .select-language {
@@ -24,18 +24,23 @@
   }
 }
 
-
 .language-selection {
   background: $east_bay;
   border-bottom: 1px solid #685fa1;
+  position: relative;
 }
-.language-list__item {
-  padding: 20px;
-  a {
-    color: #fff;
-    &:after {
-      content: "❯";
-      padding: 0 0 0 5px;
+.language-list {
+  .language-list__item {
+    padding: 20px;
+    a {
+     color: #fff;
+     font-size: $font-x-small;
+     font-weight: normal;
+      &:after {
+        content: "❯";
+        padding: 0 0 0 5px;
+      }
     }
   }
 }
+
