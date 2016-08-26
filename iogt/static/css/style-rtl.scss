@@ -8,12 +8,15 @@ input[type="search"] {
   padding: 8px 0;
 }
 .language-list__item a:after {
-  padding-right: 5px;
+  padding: 0 5px 0 0;
 }
 
 @media only screen and (min-width: 320px) {
+  .current-language {
+    padding: 0 0 0 48px;
+  }
   .select-language:after {
-    padding-right: 5px;
+    padding: 0 5px 0 0;
   }
   .section-list__more:after {
     padding-right: 10px;
@@ -57,10 +60,10 @@ input[type="search"] {
     right: inherit;
     top: 5px;
     left: 15px;
-
+  }
   .footer { 
     .menu-list__item .footer-link {
-      padding: 0 50px 0 0;
+      padding: 0 50px 0 15px;
       &:after { 
         float: left;
       }

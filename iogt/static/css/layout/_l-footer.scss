@@ -2,7 +2,7 @@
   background: #f0f0f0;
   border-top: 2px solid #07292F;
   .menu-list__item {
-    padding: 14px 15px;
+    padding: 15px 0;
     .footer-link {
       color: #07292F;
       display: block; 
@@ -17,7 +17,10 @@
   display: none;
 }
 
-.language-selection-footer .language-list__item:last-child {
-  border-bottom: 1px solid #B0B9BB;
+.language-selection-footer {
+
+  .language-list__item:last-child {
+    border-bottom: 1px solid #B0B9BB;
+  }
 }
 
