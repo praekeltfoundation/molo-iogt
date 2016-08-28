@@ -12,28 +12,36 @@
 .current-language, 
 .select-language {
   color: #fff;
-  display: inline-block;
+  display: block;
   padding-right: 10px;
 }
 .select-language {
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: underline;
   &:after {
-    content: " ▼ ";
+    content: " ∨ ";
+    font-size: $font-medium;
   }
 }
 
-
 .language-selection {
-  background: $east_bay;
   border-bottom: 1px solid #685fa1;
+  .language-list {
+    background: $east_bay;
+  }
+}
+.language-selection-footer {
+  .language-list {
+    background: #07292F; 
+   }
 }
 .language-list__item {
   padding: 20px;
   a {
     color: #fff;
     &:after {
-      content: " ▶ ";
+      content: "❯";
+      padding: 0 0 0 5px;
     }
   }
 }

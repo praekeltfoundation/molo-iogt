@@ -1,7 +1,25 @@
 .footer {
   background: #f0f0f0;
   border-top: 2px solid #07292F;
-  .menu-list__item  {
+  .menu-list__item {
     padding: 14px 15px;
+    .footer-link {
+      color: #07292F;
+      display: block; 
+      font-size: $font-small;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
   }
 }
+.menu-list__item--icon {
+  display: none;
+}
+
+.language-selection-footer {
+  .language-list__item:last-child {
+    border-bottom: 1px solid #B0B9BB;
+  }
+}
+

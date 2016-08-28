@@ -7,24 +7,36 @@ input[type="tel"],
 input[type="search"] {
   padding: 8px 0;
 }
+.language-list__item a:after {
+  padding-right: 5px;
+}
 
 @media only screen and (min-width: 320px) {
+  .select-language:after {
+    padding-right: 5px;
+  }
+  .section-list__more:after {
+    padding-right: 10px;
+  }
+  .menu-links { 
+    float: left;
+  }
+
+  .header__nav-item:last-child { 
+    margin: 0 12px 0 0;
+  }
 
   .menu-list__item a:after,
   .menu-list__item .footer-links:after {
     content: "";
+    float: left;
   }
-
+  
   .article-list__image--small {
     float: left;
     padding: 35px 15px 35px 0;
   }
-
-  .call-to-action__comment-item--feedback {
-    left: 15px;
-    right: inherit;
-  }
-
+  
   .personae-list__item {
     padding: 10px 45px 10px 15px;
   }
@@ -37,12 +49,25 @@ input[type="search"] {
   input[type="search"] {
     padding: 8px 45px;
   }
-
+ 
   .search-form input[type="submit"] {
     text-indent: 5em;
   }
-  .menu-list__item .footer-link::after {
-    left: 10px;
+  .call-to-action__comment-item--report {
     right: inherit;
+    top: 5px;
+    left: 15px;
+
+  .footer { 
+    .menu-list__item .footer-link {
+      padding: 0 50px 0 0;
+      &:after { 
+        float: left;
+      }
+    }
+  }
+  .menu-list__item--icon {
+    right: 15px;
+    left: inherit;
   }
 }

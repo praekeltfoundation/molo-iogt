@@ -2,27 +2,34 @@
   position: relative;
    a {
       text-decoration: none;
+      display: block;
    }
 }
 .personae-list__item {
-  padding: 10px 15px;
-  display: flex;
-  flex-direction: row;
-  &:after {
-    content: " ▶ ";
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    margin: 5%;
-  }
+  padding: 20px 15px;
+  position: relative;
   img {
     display: block;
-    max-height: 65px;
   }
 }
 .personae__title {
+  padding: 0 0 0 100px;
+  &:after {
+    content: "❯";
+    display: inline-block;
+    float: right;
+  }
+}
+.personae-list__item--image-container {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 65px;
+  height: 65px;
+
+  display: block;
   position: absolute;
-  padding: 10px 15px 15px;
+  left: 15px;
+  top: 9px;
 }
 .personae__skip {
   border: 1px solid #fff;
@@ -31,3 +38,4 @@
   padding: 10px;
   margin: 20px 15px;
 }
+
