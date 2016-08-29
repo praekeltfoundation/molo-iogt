@@ -32,16 +32,26 @@
 
 .section-list-nav__item--arrow-right {
   &:after {
-    content: " ▶ ";
     margin: 0 3px 0 -8px;
     font-size: $font-x-small;
+     @media only screen and (min-width: 320px) { 
+      content: ">";
+    }
+    @media only screen and (min-width: 490px) {
+      content: "❯";
+    }
   }
 }
 .section-list-nav__item--subsection {
   &:before {
-    content: " ▶ ";
     margin: 0 3px 0 -8px;
     font-size: $font-x-small;
+     @media only screen and (min-width: 320px) { 
+        content: ">";
+      }
+      @media only screen and (min-width: 490px) {
+        content: "❯";
+      }
   }
 }
 

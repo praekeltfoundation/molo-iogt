@@ -5,14 +5,14 @@
   position: absolute;
 }
 
-.language-selection input + * ,
-.language-selection-footer input + * {
+.language-selection__toggle-input {
   display: none;
 }
-
-.language-selection input:checked + * ,
-.language-selection-footer  input:checked + *  {
-  display: block;
+.language-selection__toggle-input:not(checked) ~ .language-selection {
+    display: none;
+}
+.language-selection__toggle-input:checked ~ .language-selection {       
+    display: block;
 }
 
 .language-list__item--active a {
@@ -24,7 +24,7 @@
 
 .current-language, 
 .select-language {
-  padding: 0;
+  padding: 5px 10px;
 }
 
 .language-list__item {
