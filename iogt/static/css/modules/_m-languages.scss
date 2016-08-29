@@ -36,8 +36,13 @@
   a {
     color: #fff;
     &:after {
-      content: "❯";
       padding: 0 0 0 5px;
+       @media only screen and (min-width: 320px) { 
+        content: ">";
+      }
+      @media only screen and (min-width: 490px) {
+        content: "❯";
+      }
     }
   }
 }
