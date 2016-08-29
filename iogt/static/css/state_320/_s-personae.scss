@@ -6,14 +6,14 @@
    }
 }
 .personae-list__item {
-  padding: 20px 15px;
+  padding: 30px 15px 30px 45px; 
   position: relative;
   img {
     display: block;
   }
 }
 .personae__title {
-  padding: 0 0 0 100px;
+  padding: 0 0 0 60px;
   &:after {
     display: inline-block;
     float: right;
@@ -26,6 +26,7 @@
   }
 }
 .personae-list__item--image-container {
+  background: $east_bay;
   border-radius: 100%;
   overflow: hidden;
   width: 65px;
