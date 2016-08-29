@@ -10,6 +10,7 @@
       font-weight: bold;
       text-transform: uppercase;
       text-decoration: underline;
+      padding: 0 15px;
     }
   }
 }
@@ -18,7 +19,6 @@
 }
 
 .language-selection-footer {
-
   .language-list__item:last-child {
     border-bottom: 1px solid #B0B9BB;
   }

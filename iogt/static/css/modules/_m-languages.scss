@@ -18,12 +18,16 @@
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
-  padding: 5px;
   display: inline-block;
   &:after {
-    content: " ∨ ";
-    font-size: $font-medium;
+    content: "v";
+    font-size: $font-x-small;
   }
+}
+.select-language--footer {
+   &:after {
+      font-size: $font-small;
+   }
 }
 
 .language-selection {
@@ -39,7 +43,7 @@
     color: #fff;
     &:after {
       padding: 0 0 0 5px;
-       @media only screen and (min-width: 320px) { 
+      @media only screen and (min-width: 320px) { 
         content: ">";
       }
       @media only screen and (min-width: 490px) {
