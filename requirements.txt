@@ -3,7 +3,7 @@ molo.surveys==1.1.0
 molo.profiles==1.2.6
 molo.commenting==0.5.4
 molo.polls==2.0.3
-
+molo.usermetadata==1.1.1
 gunicorn
 psycopg2
 django-extensions
