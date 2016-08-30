@@ -32,7 +32,7 @@
 
 .section-list-nav__item--arrow-right {
   &:after {
-    margin: 0 3px 0 -8px;
+    margin: 0 3px 0 -3px;
     font-size: $font-x-small;
      @media only screen and (min-width: 320px) { 
       content: ">";
