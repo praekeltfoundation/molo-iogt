@@ -1,5 +1,12 @@
 
 .article__content {
+  ol {
+    list-style-type: decimal;
+    padding: 0 15px 0 30px;
+    li {
+      list-style-type: decimal;
+    }
+  }
   a {
     color: #000;
     display: inline-block;
