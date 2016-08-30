@@ -15,7 +15,11 @@
             {% image article.image width-100 height-100 class="article-list__image article-list__image--small" %}
               {% endif %}
           {% endif %}
+        </a>
+        <a href="{% pageurl article.get_parent_section %}">
           <h3 class="article-list__section">{{ article.get_parent_section.title }}</h3>
+        </a>
+        <a href="{% pageurl article %}">
           <h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
           <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
         </a>
