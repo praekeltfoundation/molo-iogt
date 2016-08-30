@@ -13,7 +13,7 @@ input[type="search"] {
 
 @media only screen and (min-width: 320px) {
   .current-language {
-    padding: 0 0 0 48px;
+    padding: 0 15px 0 48px;
   }
   .select-language:after {
     padding: 0 5px 0 0;
@@ -63,7 +63,7 @@ input[type="search"] {
   }
   .footer { 
     .menu-list__item .footer-link {
-      padding: 0 50px 0 15px;
+      padding: 0 60px 0 20px;
       &:after { 
         float: left;
       }
