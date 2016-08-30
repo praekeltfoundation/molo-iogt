@@ -3,12 +3,28 @@
 .article__image {
   margin: 0 auto;
 }
-.article-list__item--hero .article-list__image {
-  width: auto;
-}
 .article-list__image--small {
   float: right;
   padding: 45px 0 15px 15px;
+}
+
+.article-list__section ,
+.section-list__title--homepage {
+  padding: 5px 0;
+  height: 45px;
+  overflow: hidden;
+}
+
+.article-list__item--hero  {
+  .article-list__image {
+    width: auto;
+  }
+  .article-list__section,
+  .section-list__title--homepage {
+    padding: 10px 0;
+    height: auto;
+    overflow: auto;
+  }
 }
 
 @each $name, $color in $color_list {
