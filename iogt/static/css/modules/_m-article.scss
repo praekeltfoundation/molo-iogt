@@ -7,6 +7,12 @@
       list-style-type: decimal;
     }
   }
+  .article-numbered-list {
+    list-style-type: none;
+    .article-numbered-list__item {
+      list-style-type: none;
+    }
+  }
   a {
     color: #000;
     display: inline-block;
