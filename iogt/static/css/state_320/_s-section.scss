@@ -54,6 +54,10 @@
     .section-list__more {
       color: $color;
     }
+
+    .article-list__comments-counter .icon  {
+      fill: $color;
+    }
   }
 
   .section-list-nav--#{$name} {

@@ -1,13 +1,8 @@
-.article-list__comments-counter {
-  &:before  {
-    content: "";
-    background: url('/static/img/comment_icon.png') no-repeat 0 1px;
-    height: 21px;
-    width: 21px;
-    display: inline-block;
-    background-size: 78%;
-    vertical-align: middle;
-  }
+ .article-list__comments-counter .icon {
+  display: inline-block;
+  background-size: 78%;
+  vertical-align: middle;
+  fill: $victoria;
 }
 .comment-counter__text {
   display: none;
@@ -48,6 +43,12 @@
     }
     #anonymous-submit {
       background: none;
+    }
+  }
+
+  .article-list__comments-counter--#{$name} {
+    .icon  {
+      fill: $color;
     }
   }
 }
