@@ -32,7 +32,15 @@
 
 .call-to-action--polls {
   padding: 0 15px;
+  .call-to-action__nav-item,
+  .call-to-action__nav-item--back-home {
+      color: $robin_egg_blue;
+      &:before {
+        font-size: $font-medium;
+      }
+  }
 }
+
 
 
 .call-to-action__nav-item--poll-login,
