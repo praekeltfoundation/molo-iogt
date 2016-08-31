@@ -4,31 +4,31 @@
 {% block content %}
 <div class="polls polls-results polls-results{{question.get_effective_extra_style_hints}}">
 {% if question.show_results and not question.freetextquestion%}
-	<h2 class="poll__question--title">{{ question.title }}</h2>
-	<h4 class="polls__results--title">{% trans "Your answers:" %}</h4>
-	<div class="polls__results">
-		<ul class="polls-result-list">
-		{% for choice in choices %}
-		<li class="polls-result-list__item">
-			<p class="choice-result__title">{{ choice.title }}</p>
-			{% if question.result_as_percentage %}
-			<h5 class="choice-result__percent">
-			<span class="choice-result__percent-bar" style="width:{{ choice.percentage }}%"></span>
-			{{ choice.percentage }}%</h5>
-			{% else %}
-			<p class="choice-result__votes">
-			{{ choice.votes }} vote{{ choice.votes|pluralize }}
-			</p>
-			{% endif %}
-		</li>
-		{% endfor %}
-		</ul>
-	</div>
+  <h2 class="poll__question--title">{{ question.title }}</h2>
+  <h4 class="polls__results--title">{% trans "Your answers:" %}</h4>
+  <div class="polls__results">
+    <ul class="polls-result-list">
+    {% for choice in choices %}
+    <li class="polls-result-list__item">
+      <p class="choice-result__title">{{ choice.title }}</p>
+      {% if question.result_as_percentage %}
+      <h5 class="choice-result__percent">
+      <span class="choice-result__percent-bar" style="width:{{ choice.percentage }}%"></span>
+      {{ choice.percentage }}%</h5>
+      {% else %}
+      <p class="choice-result__votes">
+      {{ choice.votes }} vote{{ choice.votes|pluralize }}
+      </p>
+      {% endif %}
+    </li>
+    {% endfor %}
+    </ul>
+  </div>
 {% else %}
 <h2 class="polls__title">{% trans "Thank you for voting!" %}</h2>
 {% endif %}
 <div class="call-to-action call-to-action--polls">
-	<a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--back-home">{% trans "Home" %}</a>
+  <a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--back-home">{% trans "Home" %}</a>
 </div>
 </div>
 {% endblock %}
