@@ -19,7 +19,8 @@
   }
 }
 
-.article-list__image {
+.article-list__image,
+.article__image {
   display: block;
   width: 100%;
   height: auto;
@@ -32,7 +33,7 @@
   color: #000;
   font-size: $font-x-medium;
   line-height: 1.1;
-  word-wrap: break-word;
+  word-wrap: break-all;
 }
 .article-list__subtitle {
   font-weight: normal;

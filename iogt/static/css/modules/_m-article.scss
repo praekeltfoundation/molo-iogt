@@ -7,6 +7,12 @@
       list-style-type: decimal;
     }
   }
+  .article-numbered-list {
+    list-style-type: none;
+    .article-numbered-list__item {
+      list-style-type: none;
+    }
+  }
   a {
     color: #000;
     display: inline-block;
@@ -59,12 +65,8 @@
   }
 }
 
-@each $name, $color in $color_list {
-  .article--#{$name} {
-    .article-numbered-list__item:before,
-    .article-list__comments-counter {
-        color: $color;
-    }
-  }
+.article-list__comments-counter .icon {
+  display: none;
 }
+
 
