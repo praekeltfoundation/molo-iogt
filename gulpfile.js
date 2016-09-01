@@ -4,6 +4,7 @@ var gulp        =   require('gulp'),
     minifycss   =   require('gulp-minify-css'),
     rename      =   require('gulp-rename'),
     gzip        =   require('gulp-gzip'),
+    notify      =   require('gulp-notify'),
     livereload  =   require('gulp-livereload');
 
 var gzip_options = {
@@ -16,13 +17,12 @@ var gzip_options = {
 gulp.task('styles', function() {
     return gulp.src('iogt/static/css/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('iogt/static/css/dest'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
         .pipe(gulp.dest('iogt/static/css/dest'))
         .pipe(gzip(gzip_options))
         .pipe(gulp.dest('iogt/static/css/dest'))
-        .pipe(notify({ message: 'Styles task complete' }));
+        .pipe(notify({ message: 'Styles task complete' }))
         .pipe(livereload());
 });
 gulp.task('watch', function() {
