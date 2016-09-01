@@ -8,7 +8,7 @@
 
 .surveys__title {
   color: $roman;
-  word-break: break-word;
+  word-break: break-all;
   border-top: 2px solid $roman;
 }
 
@@ -45,7 +45,7 @@
   background: #DEDEDE;
   padding: 10px 5px;
   margin: 10px 5px;
-  word-wrap: break-word;
+  word-wrap: break-all;
   span {
     display: block;
   }

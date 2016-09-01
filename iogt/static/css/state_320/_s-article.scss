@@ -32,9 +32,23 @@
 }
 
 @each $name, $color in $color_list {
+
+  .article--#{$name} {
+     .article-list__comments-counter .icon  {
+       fill: $color;
+    }
+  }
+  
   .article-list__container--#{$name} {
     .article-list__section {
       color: $color;
+    }
+  }
+
+  .article--#{$name} {
+    .article-numbered-list__item:before,
+    .article-list__comments-counter {
+        color: $color;
     }
   }
 }
