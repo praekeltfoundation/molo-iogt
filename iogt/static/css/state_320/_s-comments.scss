@@ -6,13 +6,6 @@
 .comment-counter__text {
   display: none;
 }
- .article-list__comments-counter  {
-  &:before {
-    background: url("assets/img/bubble.svg");
-    height: 21px;
-    width: 21px;
-  }
-}
 .call-to-action__comment-item--report {
   position: absolute;
   right: 15px;
