@@ -22,16 +22,14 @@
         <meta property="og:image" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta property="og:image:url" content="{% if self.social_media_image %}{{request.site.root_url}}{{ tmp_photo.url }}{% endif %}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {% compress css %}
-          <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
-          <link rel="stylesheet" media="only screen and (min-width: 320px)" type="text/x-scss" href="{% static 'css/state_320.scss' %}">
-        {% endcompress %}
-         <link rel="stylesheet" type="text/css" media="handheld" href="{% static 'css/opera-mini-single-view.css' %}">
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'css/dest/style.min.css' %}">
+        <link rel="stylesheet" media="only screen and (min-width: 320px)" type="text/css" href="{% static 'css/dest/state_320.min.css' %}">
+
+        <link rel="stylesheet" type="text/css" media="handheld" href="{% static 'css/dest/opera-mini_single-view.min.css' %}">
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE|language_bidi == True %}
-          {% compress css %}
-            <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style-rtl.scss' %}">
-          {% endcompress %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/dest/style-rtl.min.css' %}">
         {% endif %}
         {% block extra_css %}{% endblock %}
     </head>
