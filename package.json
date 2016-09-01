@@ -1,0 +1,26 @@
+{
+  "name": "molo-iogt",
+  "version": "1.0.0",
+  "description": "iogt =========================",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praekelt/molo-iogt.git"
+  },
+  "author": "Mitso Qalaba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/praekelt/molo-iogt/issues"
+  },
+  "homepage": "https://github.com/praekelt/molo-iogt#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gzip": "^1.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.9"
+  }
+}
