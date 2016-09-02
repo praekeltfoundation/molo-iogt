@@ -7,7 +7,9 @@
   <h1 class="heading heading--comments">{% trans "Thanks!" %}</h1>
   <div class="comment-list__item">
     <h5>{% trans "Your comment has been successfully posted" %}</h5>
-    <a href="{% pageurl article %}" class="pagination__link">{% trans "Back to article" %}</a>
+   <a href="{% if request.GET.next %}{{ request.GET.next }}#comments-list{% else %}{{request.site.root_page.url}}{% endif %}" class="pagination__link">
+   	{% trans "Back to article" %}
+   </a>
   </div>
 </div>
 
