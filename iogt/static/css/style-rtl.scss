@@ -36,8 +36,8 @@ input[type="search"] {
   }
 
   .article-list__image--small {
-    float: left;
-    padding: 35px 15px 35px 0;
+    right: inherit;
+    left: 15px;
   }
 
   .personae-list__item {
