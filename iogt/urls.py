@@ -49,6 +49,7 @@ urlpatterns += patterns(
         TemplateView.as_view(
             template_name="comments/comment_done.html"
         ),
+        name='comment_done'),
     url(r'^polls/', include('molo.polls.urls',
                             namespace='molo.polls',
                             app_name='molo.polls')),
