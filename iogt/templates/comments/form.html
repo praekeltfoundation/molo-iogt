@@ -20,6 +20,7 @@
     {{ form.security_hash }}
 
     <input type="hidden" name="next" value="{% pageurl self %}" />
+    <input type="hidden" name="next" value="{% url "comment_done" %}"/>
 
     {% if node.id %}
         <input type="hidden" name="parent" id="parent_id" value="{{ node.id }}" />
