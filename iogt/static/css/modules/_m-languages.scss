@@ -31,7 +31,7 @@
 }
 
 .language-selection {
-  border-bottom: 1px solid #685fa1;
+  border-bottom: 1px solid $light_scampi;
   .language-list {
     background: $east_bay;
   }
@@ -56,9 +56,9 @@
   padding: 10px 0 0;
   border-bottom: none; 
   .language-list {
-  background: #07292F; 
+    background: $mecury; 
   }
   .language-list__item a {
-    color: #fff;
+    color: $tiber;
   }
 }
