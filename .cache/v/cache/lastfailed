@@ -1,1 +1,9 @@
-{}
+{
+  "iogt/tests/test_pagination.py::RegistrationViewTest::test_fifteenth_page_pagination": true, 
+  "iogt/tests/test_pagination.py::RegistrationViewTest::test_fifth_page_pagination": true, 
+  "iogt/tests/test_pagination.py::RegistrationViewTest::test_first_page_pagination": true, 
+  "iogt/tests/test_pagination.py::RegistrationViewTest::test_fourteenth_page_pagination": true, 
+  "iogt/tests/test_pagination.py::RegistrationViewTest::test_second_page_pagination": true, 
+  "iogt/tests/test_pagination.py::RegistrationViewTest::test_sixteenth_page_pagination": true, 
+  "iogt/tests/test_pagination.py::RegistrationViewTest::test_third_page_pagination": true
+}
