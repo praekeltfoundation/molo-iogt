@@ -50,10 +50,18 @@
           <h4 class="article__heading">{{ block.value }}</h4>
       {% elif block.block_type == 'image' %}
         {% image block.value width-320 class="article__image" %}
+      {% elif block.block_type == 'paragraph'%}
+         <p>{{ block.value|handle_markdown }}</p>
+      {% elif block.block_type == 'list' %}
+        <ul>
+          {% for item in block.value %}
+          <li>{{ item|handle_markdown }}</li>
+          {% endfor %}
+        </ul>
       {% elif block.block_type == 'numbered_list' %}
         <ol class="article-numbered-list">
           {% for item in block.value %}
-          <li class="article-numbered-list__item">{{item}}</li>
+          <li class="article-numbered-list__item">{{item|handle_markdown}}</li>
           {% endfor %}
         </ol>
       {% elif block.block_type == 'page' %}
