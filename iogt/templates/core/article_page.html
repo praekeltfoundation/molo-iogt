@@ -50,8 +50,6 @@
           <h4 class="article__heading">{{ block.value }}</h4>
       {% elif block.block_type == 'image' %}
         {% image block.value width-320 class="article__image" %}
-      {% elif block.block_type == 'paragraph'%}
-         <p>{{ block.value|handle_markdown }}</p>
       {% elif block.block_type == 'list' %}
         <ul>
           {% for item in block.value %}
