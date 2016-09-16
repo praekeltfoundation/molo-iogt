@@ -1,17 +1,16 @@
 .article__content {
+  ul {
+     list-style-type: disc;
+     li {
+      list-style-type: disc;
+     }
+  }
   ol {
     list-style-type: decimal;
     padding: 0 15px 0 30px;
     li {
       list-style-type: decimal;
     }
-  ul {
-    list-style-type: disc;
-    padding: 0 15px 0 30px;
-    li {
-      list-style-type: disc;
-    }
-  }
   .article-numbered-list {
     list-style-type: none;
     .article-numbered-list__item {
@@ -32,10 +31,6 @@
 
   p, ul li {
     padding: 0 15px;
-  }
-  ul li {
-    list-style-position: inside;
-    list-style-type: disc;
   }
 }
 
