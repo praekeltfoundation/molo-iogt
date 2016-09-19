@@ -15,7 +15,6 @@
   <p class="call-to-action__comment-item call-to-action__comment-item--feedback">{% trans "This comment has been removed by the community. Please read our platform rules." %}</p>
   {% else %}
     <p>{{node.comment}}</p>
-    {% if request.user.is_authenticated %}
       {% if node.parent == None %}
           <a href="{% url 'molo-comments-report' node.pk %}?next={% url 'report_response' node.pk %}" class="call-to-action__comment-item call-to-action__comment-item--report">
           {% trans "Report" %}</a>
@@ -23,11 +22,6 @@
             <a href="{% url 'molo-comments-reply' node.pk %}" class="call-to-action__comment-item">{% trans "Reply"%}</a>
           {% endif %}
       {% endif %}
-      {% else %}
-      <a href="{% url 'molo.profiles:auth_login' %}?next={% url 'report_response' node.pk %}" class="call-to-action__comment-item call-to-action__comment-item--report">
-        {% trans "Report" %}</a>
-      </a>
-    {% endif %}
   {% endif %}
 </div>
 

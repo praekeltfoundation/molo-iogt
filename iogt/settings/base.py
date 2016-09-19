@@ -398,7 +398,7 @@ COMPRESS_PRECOMPILERS = [
 
 
 # Wagtail settings
-LOGIN_URL = 'wagtailadmin_login'
+LOGIN_URL = 'molo.profiles:auth_login'
 LOGIN_REDIRECT_URL = 'wagtailadmin_home'
 
 SITE_NAME = environ.get('SITE_NAME', "IoGT")
