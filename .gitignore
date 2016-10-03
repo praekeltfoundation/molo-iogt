@@ -47,8 +47,7 @@ docs/_build
 .cache/
 
 media/
-<<<<<<< HEAD
+
 node_modules/
-=======
-node_modules
->>>>>>> develop
+
+
