@@ -30,7 +30,7 @@
 <ul class="article-list">
 {% for sub_article in articles %}
   <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
-    <div class="article-list__container">
+    <div class="article-list__container {% if forloop.first %} article-list__container--hero{% endif %}">
     <a href="{% pageurl sub_article %}">
       {% if sub_article.image %}
         {% if forloop.first %}
@@ -109,7 +109,7 @@
       <ul class="article-list">
         {% for article in section_featured_articles %}
            <li class="article-list__item">
-              <div class="article-list__container">
+              <div class="article-list__container {% if forloop.first %} article-list__container--hero{% endif %}">
               <a href="{% pageurl article %}">
                 {% if article.image %}
                   {% if forloop.first %}

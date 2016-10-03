@@ -19,6 +19,16 @@
   }
 }
 
+.article-list__container--hero {
+    padding: 0;
+    .section-list__title,
+    .article-list__section,
+    .article-list__title,
+    .article-list__subtitle {
+      padding: 0 15px;
+    }
+}
+
 .article-list__image,
 .article__image {
   display: block;

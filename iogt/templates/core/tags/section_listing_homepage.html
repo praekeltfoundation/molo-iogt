@@ -8,7 +8,7 @@
       <ul class="article-list">
       {% for article in featured_articles %}
         <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
-          <div class="article-list__container">
+          <div class="article-list__container {% if forloop.first %} article-list__container--hero{% endif %}">
           <a href="{% pageurl article %}">
             {% if article.image %}
               {% if forloop.first %}

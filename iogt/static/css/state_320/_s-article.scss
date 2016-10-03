@@ -27,10 +27,12 @@
   }
   .article-list__section,
   .section-list__title--homepage {
-    padding: 10px 0;
+    padding: 10px 15px;
     height: auto;
     overflow: auto;
   }
+}
+
 @each $name, $color in $color_list {
 
   .article--#{$name} {
