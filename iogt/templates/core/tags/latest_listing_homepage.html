@@ -6,7 +6,7 @@
    <ul class="article-list">
     {% for article in articles %}
       <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
-       <div class="article-list__container article-list__container{{article.get_parent_section.get_effective_extra_style_hints}}">
+       <div class="article-list__container article-list__container{{article.get_parent_section.get_effective_extra_style_hints}} {% if forloop.first %} article-list__container--hero{% endif %}">
         <a href="{% pageurl article %}">
           {% if article.image %}
             {% if forloop.first %}
