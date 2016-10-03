@@ -37,7 +37,7 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
-      
+    <div style="display: none;">{% include "bubble.html" %}</div>
       {% if settings.core.SiteSettings.ga_tag_manager %}
       {% persona_selected as persona_selected_value %}
       

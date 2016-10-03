@@ -5,7 +5,8 @@ var gulp        =   require('gulp'),
     rename      =   require('gulp-rename'),
     gzip        =   require('gulp-gzip'),
     notify      =   require('gulp-notify'),
-    livereload  =   require('gulp-livereload');
+    livereload  =   require('gulp-livereload'),
+    hash = require('gulp-hash');
 
 var gzip_options = {
     threshold: '1kb',
@@ -27,6 +28,6 @@ gulp.task('styles', function() {
 });
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('iogt/static/css/*.scss/**.scss', ['styles']);
+    gulp.watch('iogt/static/css/**.scss/*.scss', ['styles']);
 });
 gulp.task('default', ['styles', 'watch']);

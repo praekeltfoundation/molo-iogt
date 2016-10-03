@@ -1,4 +1,11 @@
 
+.article-list__container {
+  padding: 10px 15px 10px;
+  a {
+    display: block;
+  }
+}
+
 .article-list__item {
   position: relative;
   border-bottom: solid 1px #e4e4e4;
@@ -12,11 +19,8 @@
   }
 }
 
-.article-list__container {
-  padding: 10px 15px 10px;
-  a {
-    display: block;
-  }
+.section-list__content {
+  width: 50%;
 }
 
 .article-list__image,
@@ -26,7 +30,7 @@
   height: auto;
 }
 .article-list__image--small {
-  width: 50%;
+  width: 45%;
   height: auto;
 }
 .article-list__title {
@@ -42,7 +46,7 @@
 .article-list__comments-counter {
   text-transform: capitalize;
   font-size: $font-small;
-  padding: 0 15px 10px;
+  padding: 10px 15px;
   color: #757575;
 } 
 .comment-counter__text {
@@ -57,7 +61,6 @@
     img {
       max-width: 100%;
     }
-    
   }
 }
 
