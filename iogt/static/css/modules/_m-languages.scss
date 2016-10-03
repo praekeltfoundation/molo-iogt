@@ -6,6 +6,7 @@
 }
 .language-bar {
   overflow: auto;
+  border-bottom: 1px solid $light_scampi;
 }
 
 .current-language, 
@@ -14,14 +15,27 @@
   display: block;
   padding-right: 10px;
 }
+.current-language {
+  span:nth-child(odd) {
+    opacity: 0.8;
+  }
+  span:nth-child(even) {
+    font-weight: bold;
+  }
+}
 .select-language {
+  float: none;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
   display: inline-block;
   &:after {
-    content: "v";
-    font-size: $font-x-small;
+    content: "";
+    background: url('/static/img/lang_chevron.svg') no-repeat 0 0;
+    margin: 0 5px;
+    display: inline-block;
+    width: 11px;
+    height: 8px
   }
 }
 .select-language--footer {
@@ -31,7 +45,6 @@
 }
 
 .language-selection {
-  border-bottom: 1px solid $light_scampi;
   .language-list {
     background: $east_bay;
   }
