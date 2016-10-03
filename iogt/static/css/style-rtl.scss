@@ -12,11 +12,8 @@ input[type="search"] {
 }
 
 @media only screen and (min-width: 320px) {
-  .current-language {
-    padding: 0 15px 0 48px;
-  }
-  .select-language:after {
-    padding: 0 5px 0 0;
+  .select-language{
+    float: left;
   }
   .section-list__more:after {
     padding-right: 10px;
