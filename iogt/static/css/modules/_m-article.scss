@@ -1,4 +1,3 @@
-
 .article__content {
   ol {
     list-style-type: decimal;
@@ -27,6 +26,10 @@
 
   p, ul li {
     padding: 0 15px;
+  }
+  ul li {
+    list-style-position: inside;
+    list-style-type: disc;
   }
 }
 
@@ -68,5 +71,3 @@
 .article-list__comments-counter .icon {
   display: none;
 }
-
-
