@@ -44,6 +44,11 @@ local.py
 db.sqlite3
 docs/_build
 .DS_Store
+.cache/
 
 media/
+<<<<<<< HEAD
 node_modules/
+=======
+node_modules
+>>>>>>> develop

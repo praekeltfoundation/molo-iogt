@@ -1,19 +1,54 @@
-
-.article-list__image {
-  margin: 0 auto;
-}
-.article-list__item--hero .article-list__image {
+.article-list__item--hero {
   width: auto;
+}
+.article-list__image, 
+.article__image {
+  margin: 0 auto;
 }
 .article-list__image--small {
   float: right;
-  padding: 45px 0 20px 15px;
+  padding: 55px 0 15px 15px;
 }
 
+.section-article-list__title {
+  padding: 7px 0;
+}
+
+.article-list__section ,
+.section-list__title--homepage {
+  padding: 5px 0;
+  height: 45px;
+  overflow: hidden;
+}
+
+.article-list__item--hero  {
+  .article-list__image {
+    width: 100%;
+  }
+  .article-list__section,
+  .section-list__title--homepage {
+    padding: 10px 0;
+    height: auto;
+    overflow: auto;
+  }
 @each $name, $color in $color_list {
+
+  .article--#{$name} {
+     .article-list__comments-counter .icon  {
+       fill: $color;
+    }
+  }
+  
   .article-list__container--#{$name} {
     .article-list__section {
       color: $color;
+    }
+  }
+
+  .article--#{$name} {
+    .article-numbered-list__item:before,
+    .article-list__comments-counter {
+        color: $color;
     }
   }
 }

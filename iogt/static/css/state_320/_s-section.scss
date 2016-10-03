@@ -8,8 +8,13 @@
   text-decoration: none;
   text-align: right;
   &:after {
-    content: "❯";
     padding: 0 0 0 10px;
+    @media only screen and (min-width: 320px) { 
+      content: ">";
+    }
+    @media only screen and (min-width: 490px) {
+      content: "❯";
+    }
   }
 }
 
@@ -17,10 +22,15 @@
   position: relative;
   width: auto;
   &:before {
-    content: "❮";
     display: inline-block;
     padding: 0 5px 10px;
     font-size: $font-large;
+    @media only screen and (min-width: 320px) { 
+      content: "<";
+    }
+    @media only screen and (min-width: 490px) {
+       content: "❮";
+    }
   }
 }
 
@@ -43,6 +53,10 @@
     .section-list__title a,
     .section-list__more {
       color: $color;
+    }
+
+    .article-list__comments-counter .icon  {
+      fill: $color;
     }
   }
 

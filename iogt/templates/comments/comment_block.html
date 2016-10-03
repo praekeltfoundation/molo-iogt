@@ -25,7 +25,7 @@
   {% endif %}
 </div>
 
-<div class="comments-list comments-list{{self.get_parent_section.get_effective_extra_style_hints}}">
+<div id="comments-list" class="comments-list comments-list{{self.get_parent_section.get_effective_extra_style_hints}}">
   {% get_comment_count for self as comment_count %}
     {% get_molo_comments for self as comment_list %}
       {% for node in comment_list %}

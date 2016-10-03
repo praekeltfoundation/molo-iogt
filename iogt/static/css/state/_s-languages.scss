@@ -1,14 +1,18 @@
 
-#language-selection__toggle {
-  display: none;
+#language-selection__toggle,
+#language-selection__toggle--footer {
+  visibility: hidden;
+  position: absolute;
 }
 
-.language-selection input + * {
+.language-selection__toggle-input {
   display: none;
 }
-
-.language-selection input:checked + * {
-  display: block;
+.language-selection__toggle-input:not(checked) ~ .language-selection {
+    display: none;
+}
+.language-selection__toggle-input:checked ~ .language-selection {       
+    display: block;
 }
 
 .language-list__item--active a {
@@ -20,13 +24,9 @@
 
 .current-language, 
 .select-language {
-  padding: 0;
+  padding: 5px 10px;
 }
 
-.select-language {
-  text-decoration: none;
-  font-weight: bold;
-}
 .language-list__item {
   text-align: right;
 }

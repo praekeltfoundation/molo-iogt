@@ -6,16 +6,16 @@
 <div class="polls polls{{self.get_effective_extra_style_hints}}">
 <h1 class="heading heading--polls">
 {% trans "Polls" %}</h1>
-	{% for question in questions %}
-	<div class="poll__question">
-		<h2 class="poll__question--title">{{ question.title }}</h2>
-		{% if question.freetextquestion %}
-			{% include 'polls/includes/poll_free_text_form.html'%}
-		{% else %}
-			{% include 'polls/includes/poll_question_form.html'%}
-		{% endif %}
-		</div>
-	{% endfor %}
+  {% for question in questions %}
+  <div class="poll__question">
+    <h2 class="poll__question--title">{{ question.title }}</h2>
+    {% if question.freetextquestion %}
+      {% include 'polls/includes/poll_free_text_form.html'%}
+    {% else %}
+      {% include 'polls/includes/poll_question_form.html'%}
+    {% endif %}
+    </div>
+  {% endfor %}
 </div>
 {% endif %}
 {% endblock %}

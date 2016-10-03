@@ -1,5 +1,17 @@
-
 .article__content {
+  ol {
+    list-style-type: decimal;
+    padding: 0 15px 0 30px;
+    li {
+      list-style-type: decimal;
+    }
+  }
+  .article-numbered-list {
+    list-style-type: none;
+    .article-numbered-list__item {
+      list-style-type: none;
+    }
+  }
   a {
     color: #000;
     display: inline-block;
@@ -15,8 +27,15 @@
   p, ul li {
     padding: 0 15px;
   }
+  ul li {
+    list-style-position: inside;
+    list-style-type: disc;
+  }
 }
 
+.article__image  {
+  display: block;
+}
 .article__title {
   padding: 0 15px 10px;
   font-size: 27px;
@@ -25,6 +44,7 @@
 
 .article__subtitle {
   padding: 0 15px;
+  margin: 0;
 }
 
 .article__heading {
@@ -48,12 +68,6 @@
   }
 }
 
-@each $name, $color in $color_list {
-  .article--#{$name} {
-    .article-numbered-list__item:before,
-    .article-list__comments-counter {
-        color: $color;
-    }
-  }
+.article-list__comments-counter .icon {
+  display: none;
 }
-

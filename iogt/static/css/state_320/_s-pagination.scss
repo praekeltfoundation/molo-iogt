@@ -2,8 +2,14 @@
 .pagination__link {
   text-align: right;
   &:after {
-    content: "❯";
     font-size: $font-x-small;
+    padding-left: 5px;
+    @media only screen and (min-width: 320px) { 
+      content: ">";
+    }
+    @media only screen and (min-width: 490px) {
+      content: "❯";
+    }
   }
 }
 .pagination__link--current {

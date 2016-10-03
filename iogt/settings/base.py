@@ -104,9 +104,11 @@ MIDDLEWARE_CLASSES = [
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
-
     'wagtailmodeladmin.middleware.ModelAdminMiddleware',
+
+    'molo.core.middleware.ForceDefaultLanguageMiddleware',
     'molo.core.middleware.AdminLocaleMiddleware',
+
     'molo.usermetadata.middleware.PersonaMiddleware'
 ]
 
@@ -172,7 +174,7 @@ CELERYBEAT_SCHEDULE = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = environ.get('LANGUAGE_CODE', 'en')
 TIME_ZONE = 'Africa/Johannesburg'
 USE_I18N = True
 USE_L10N = True
@@ -206,6 +208,7 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('ku', _('Kurdish')),
     ('arc', _('Aramaic')),
     ('ht', _('Creole Haitian')),
+    ('ky', _('Kyrgyz')),
 ]
 
 EXTRA_LANG_INFO = {
@@ -353,6 +356,12 @@ EXTRA_LANG_INFO = {
         'name': 'Creole Haitian',
         'name_local': 'Kreyòl ayisyen'
     },
+    'ky': {
+        'bidi': False,
+        'code': 'ky',
+        'name': 'Kyrgyz',
+        'name_local': 'Kreyòl ayisyen'
+    },
 }
 
 LANG_INFO = (
@@ -368,6 +377,7 @@ LOCALE_PATHS = [
 
 STATIC_ROOT = join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
+COMPRESS_ENABLED = True
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -388,7 +398,7 @@ COMPRESS_PRECOMPILERS = [
 
 
 # Wagtail settings
-LOGIN_URL = 'wagtailadmin_login'
+LOGIN_URL = 'molo.profiles:auth_login'
 LOGIN_REDIRECT_URL = 'wagtailadmin_home'
 
 SITE_NAME = environ.get('SITE_NAME', "IoGT")

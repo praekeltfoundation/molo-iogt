@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib import admin
 from django.contrib.auth.decorators import login_required
+from django.views.generic import TemplateView
 
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
@@ -44,6 +45,11 @@ urlpatterns += patterns(
     url(r'^profiles/', include('molo.profiles.urls',
                                namespace='molo.profiles')),
     url(r'^comments/', include('molo.commenting.urls')),
+    url(r'^comments/comment_done/',
+        TemplateView.as_view(
+            template_name="comments/comment_done.html"
+        ),
+        name='comment_done'),
     url(r'^polls/', include('molo.polls.urls',
                             namespace='molo.polls',
                             app_name='molo.polls')),

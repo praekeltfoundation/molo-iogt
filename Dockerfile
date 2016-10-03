@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Milton Madanda <milton@praekelt.com>
 RUN apt-get update && apt-get -y --force-yes install libjpeg-dev zlib1g-dev libxslt1-dev libpq-dev nginx redis-server supervisor python-dev python-pip
-RUN apt-get install libffi-dev
+RUN apt-get -y install libffi-dev gettext
 
 RUN pip install --upgrade pip
 
@@ -11,6 +11,7 @@ ENV DJANGO_SETTINGS_MODULE iogt.settings.docker
 WORKDIR /deploy/
 
 COPY iogt /deploy/iogt
+COPY locale /deploy/locale
 ADD manage.py /deploy/
 ADD requirements.txt /deploy/
 ADD setup.py /deploy/

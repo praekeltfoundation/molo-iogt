@@ -11,11 +11,15 @@
       {% for choice in choices %}
       <fieldset>
         {% if question.get_main_language_page.allow_multiple_choice %}
-          <input type="checkbox" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
-          <label for="choice{{ forloop.counter }}">{{ choice.title }}</label>
+          <label for="choice{{ forloop.counter }}">
+            <input type="checkbox" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
+            {{ choice.title }}
+          </label>
         {% else %}
-          <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
-          <label for="choice{{ forloop.counter }}">{{ choice.title }}</label>
+          <label for="choice{{ forloop.counter }}">
+            <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
+            {{ choice.title }}
+          </label>
         {% endif %}
       </fieldset>
       {% endfor %}
@@ -26,11 +30,15 @@
         {% for choice in choices %}
         <fieldset>
           {% if question.get_main_language_page.allow_multiple_choice %}
-            <input type="checkbox" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
-            <label for="choice{{ forloop.counter }}">{{ choice.title }}</label>
+            <label for="choice{{ forloop.counter }}">
+              <input type="checkbox" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
+              {{ choice.title }}
+            </label>
           {% else %}
-            <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{choice.get_main_language_page.id}}" />
-            <label for="choice{{ forloop.counter }}">{{ choice.title }}</label>
+            <label for="choice{{ forloop.counter }}">
+              <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{choice.get_main_language_page.id}}" />
+              {{ choice.title }}
+            </label>
           {% endif %}
         </fieldset>
         {% endfor %}

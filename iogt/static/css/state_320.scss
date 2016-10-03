@@ -15,6 +15,7 @@
   @import "state_320/_s-search";
   @import "state_320/_s-section";
   @import "state_320/_s-survey";
+  @import "state_320/_s-footer";
 
   html, body,
   h1, h2, h3, h4, h5, h6,
@@ -35,6 +36,11 @@
     display: inline-block;
   }
 
+  textarea {
+    padding: 5px;
+    width: 95%;
+  }
+
   .call-to-action__nav-item,
   input[type="submit"] {
     white-space: nowrap;
@@ -47,6 +53,18 @@
     text-align: center;
     text-decoration: none;
   }
+  .current-language {
+    padding: 0 30px 0 10px;
+  }
+ .select-language {
+    text-decoration: none;
+  }
+
+  .current-language,
+  .select-language {
+    display: inline-block;
+  }
+  
 }
 
 @media only screen and (min-width: 600px) {

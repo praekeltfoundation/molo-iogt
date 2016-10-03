@@ -3,30 +3,30 @@
 
 {% block content %}
 <div class="polls polls{{question.get_effective_extra_style_hints}}">
-	{% if form.choice.errors %}
-	<h4 class="polls__choice-error">{{form.choice.errors|join:", " }}</h4>
-	{% endif %}
-	<h3 class="poll__question--title">{{ question.title }}</h3>
-	<form action="{% url 'molo.polls:vote' question.id %}" method="post" class="polls__form">
-	{% csrf_token %}
-		{% load_choices_for_poll_page question as choices %}
-		{% for choice in choices %}
-		{% if question.allow_multiple_choice%}
-		<fieldset>
-			<input type="checkbox" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
-			<label for="choice{{ forloop.counter }}">{{ choice.title }}</label>
-		</fieldset>
-		{% else %}
-		<fieldset>
-				<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
-				<label for="choice{{ forloop.counter }}">{{ choice.title }}</label>
-		</fieldset>
-		{% endif %}
-		{% endfor %}
-		<input type="submit" value="{% trans "Vote" %}"/>
-		<div class="call-to-action call-to-action--polls">
-		<a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--home">{% trans "Home" %}</a>
-		</div>
-	</form>
+  {% if form.choice.errors %}
+  <h4 class="polls__choice-error">{{form.choice.errors|join:", " }}</h4>
+  {% endif %}
+  <h3 class="poll__question--title">{{ question.title }}</h3>
+  <form action="{% url 'molo.polls:vote' question.id %}" method="post" class="polls__form">
+  {% csrf_token %}
+    {% load_choices_for_poll_page question as choices %}
+    {% for choice in choices %}
+    {% if question.allow_multiple_choice%}
+    <fieldset>
+      <input type="checkbox" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
+      <label for="choice{{ forloop.counter }}">{{ choice.title }}</label>
+    </fieldset>
+    {% else %}
+    <fieldset>
+        <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.get_main_language_page.id }}" />
+        <label for="choice{{ forloop.counter }}">{{ choice.title }}</label>
+    </fieldset>
+    {% endif %}
+    {% endfor %}
+    <input type="submit" value="{% trans "Vote" %}"/>
+    <div class="call-to-action call-to-action--polls">
+    <a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--home">{% trans "Home" %}</a>
+    </div>
+  </form>
 </div>
 {% endblock %}
