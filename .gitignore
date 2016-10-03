@@ -47,4 +47,7 @@ docs/_build
 .cache/
 
 media/
-node_modules
+
+node_modules/
+
+

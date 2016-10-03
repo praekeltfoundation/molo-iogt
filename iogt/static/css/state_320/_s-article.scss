@@ -1,4 +1,6 @@
-
+.article-list__item--hero {
+  width: auto;
+}
 .article-list__image, 
 .article__image {
   margin: 0 auto;
@@ -29,8 +31,6 @@
     height: auto;
     overflow: auto;
   }
-}
-
 @each $name, $color in $color_list {
 
   .article--#{$name} {

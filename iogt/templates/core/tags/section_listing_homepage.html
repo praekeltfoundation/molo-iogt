@@ -12,9 +12,9 @@
           <a href="{% pageurl article %}">
             {% if article.image %}
               {% if forloop.first %}
-                  {% image article.image width-290 class="article-list__image" %}
+                  {% image article.image original class="article-list__image" %}
               {% else %}
-                  {% image article.image width-100 height-100 class="article-list__image article-list__image--small" %}
+                {% image article.image width-100 height-100 class="article-list__image article-list__image--small" %}
               {% endif %}
             {% endif %}
           </a>
