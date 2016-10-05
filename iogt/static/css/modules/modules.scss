@@ -1,0 +1,44 @@
+
+.logo  {
+  display: block;
+  img {
+    margin-bottom: 10px;
+    vertical-align: middle;
+    height: auto;
+    max-width: 40%;
+  }
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+}
+
+.error {
+  font-size: $font-x-small;
+  display: block;
+  color: #ff0000;
+}
+
+.call-to-action__nav-item {
+  font-weight: normal;
+}
+
+@import "m-languages";
+@import "m-heading";
+@import "m-banner";
+@import "m-article-list";
+@import "m-article";
+@import "m-menu";
+@import "m-section-menu";
+@import "m-search";
+@import "m-copyright";
+@import "m-profiles";
+@import "m-section";
+@import "m-comments";
+@import "m-personae";
+@import "m-polls";
+@import "m-pagination";
+@import "m-survey";
+
+

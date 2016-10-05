@@ -1,21 +1,21 @@
 
-@import "variables/_variables";
+@import "variables/variables";
 
 @media only screen and (min-width: 320px) {
   @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
-  @import "_s-article";
-  @import "_s-comments";
-  @import "_s-heading";
-  @import "_s-menu";
-  @import "_s-pagination";
-  @import "_s-personae";
-  @import "_s-polls";
-  @import "_s-profiles";
-  @import "_s-search";
-  @import "_s-section";
-  @import "_s-survey";
-  @import "_s-footer";
+  @import "s-article";
+  @import "s-comments";
+  @import "s-heading";
+  @import "s-menu";
+  @import "s-pagination";
+  @import "s-personae";
+  @import "s-polls";
+  @import "s-profiles";
+  @import "s-search";
+  @import "s-section";
+  @import "s-survey";
+  @import "s-footer";
 
   html, body,
   h1, h2, h3, h4, h5, h6,
