@@ -4,18 +4,18 @@
 @media only screen and (min-width: 320px) {
   @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
-  @import "state_320/_s-article";
-  @import "state_320/_s-comments";
-  @import "state_320/_s-heading";
-  @import "state_320/_s-menu";
-  @import "state_320/_s-pagination";
-  @import "state_320/_s-personae";
-  @import "state_320/_s-polls";
-  @import "state_320/_s-profiles";
-  @import "state_320/_s-search";
-  @import "state_320/_s-section";
-  @import "state_320/_s-survey";
-  @import "state_320/_s-footer";
+  @import "_s-article";
+  @import "_s-comments";
+  @import "_s-heading";
+  @import "_s-menu";
+  @import "_s-pagination";
+  @import "_s-personae";
+  @import "_s-polls";
+  @import "_s-profiles";
+  @import "_s-search";
+  @import "_s-section";
+  @import "_s-survey";
+  @import "_s-footer";
 
   html, body,
   h1, h2, h3, h4, h5, h6,

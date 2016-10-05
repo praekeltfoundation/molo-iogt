@@ -1,6 +1,5 @@
 'use strict';
 
-
 var gulp        =   require('gulp'), 
     sass        =   require('gulp-sass'), 
     watch       =   require('gulp-watch'), 
@@ -17,16 +16,13 @@ var gulp        =   require('gulp'),
 
 gulp.task('styles', function() {
     return gulp.src(scss_inputs)
-        .pipe(sass())
         .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(sourcemaps.write('/maps'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
         .pipe(gulp.dest(scss_destination))
-        .pipe(sourcemaps.write('iogt/static/maps'))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(scss_destination))
         .pipe(notify({ message: 'Styles task complete' }))
-        .pipe(livereload());
 });
 
 gulp.task('sassdoc', function() {
@@ -40,4 +36,4 @@ gulp.task('watch', function() {
     gulp.watch('iogt/static/css/*.scss', ['styles']);
 });
 
-gulp.task('default', ['styles', 'watch','sassdoc']);
+gulp.task('default', ['styles']);
