@@ -30,16 +30,17 @@
         <link rel="shortcut icon" href="/static/favicon/favicon.ico">
         <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        {% compress css %}
-          <link rel="stylesheet" type="text/css" href="{% static 'css/dest/style.min.css' %}">
-          <link rel="stylesheet" media="only screen and (min-width: 320px)" type="text/css" href="{% static 'css/dest/state_320.min.css' %}">
-          <link rel="stylesheet" type="text/css" media="handheld" href="{% static 'css/dest/opera-mini_single-view.min.css' %}">
-        {% endcompress %}
+       
+        <link rel="stylesheet" type="text/css" href="{% static 'css/dest/style.min.css' %}">
+        <link rel="stylesheet" media="only screen and (min-width: 320px)" type="text/css" href="{% static 'css/dest/state_320.min.css' %}">
+        <link rel="stylesheet" type="text/css" media="handheld" href="{% static 'css/dest/opera-mini_single-view.min.css' %}">
+ 
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE|language_bidi == True %}
-        {% compress css %}
+      
           <link rel="stylesheet" type="text/css" href="{% static 'css/dest/style-rtl.min.css' %}">
-        {% endcompress %}
+        <!--{% compress css %}
+        {% endcompress %}-->
         {% endif %}
         {% block extra_css %}{% endblock %}
     </head>

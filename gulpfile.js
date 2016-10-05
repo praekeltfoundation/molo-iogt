@@ -1,3 +1,6 @@
+'use strict';
+
+
 var gulp        =   require('gulp'), 
     sass        =   require('gulp-sass'), 
     watch       =   require('gulp-watch'), 
@@ -20,6 +23,7 @@ gulp.task('styles', function() {
         .pipe(minifycss())
         .pipe(gulp.dest(scss_destination))
         .pipe(sourcemaps.write('iogt/static/maps'))
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(scss_destination))
         .pipe(notify({ message: 'Styles task complete' }))
         .pipe(livereload());
