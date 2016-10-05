@@ -10,19 +10,25 @@ var gulp        =   require('gulp'),
     sourcemaps  =   require('gulp-sourcemaps'),
     sassdoc     =   require('sassdoc'),
     livereload  =   require('gulp-livereload'),
-
-    scss_inputs = 'iogt/static/css/*.scss',
     scss_destination = 'iogt/static/css/dest';
 
+var sass_paths = [
+        'iogt/static/css/opera-mini_single-view.scss',
+        'iogt/static/css/style-rtl.scss',
+        'iogt/static/css/style.scss',
+        'iogt/static/css/state_320/state_320.scss',
+        'iogt/static/css/versions.scss'
+    ];
+
 gulp.task('styles', function() {
-    return gulp.src(scss_inputs)
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sourcemaps.write('/maps'))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(minifycss())
-        .pipe(gulp.dest(scss_destination))
-        .pipe(notify({ message: 'Styles task complete' }))
+    return gulp.src(sass_paths)
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(minifycss())
+    .pipe(sourcemaps.write('/maps'))
+    .pipe(gulp.dest(scss_destination))
+    .pipe(notify({ message: 'Styles task complete' }));
 });
 
 gulp.task('sassdoc', function() {
