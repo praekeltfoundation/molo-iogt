@@ -6,19 +6,16 @@ var gulp        =   require('gulp'),
     gzip        =   require('gulp-gzip'),
     notify      =   require('gulp-notify'),
     sourcemaps  =   require('gulp-sourcemaps'),
-    livereload  =   require('gulp-livereload');
-/*var gzip_options = {
-    threshold: '1kb',
-    gzipOptions: {
-        level: 9
-    }
-};*/
+    sassdoc     =   require('sassdoc'),
+    livereload  =   require('gulp-livereload'),
 
-var scss_inputs = 'iogt/static/css/*.scss',
+    scss_inputs = 'iogt/static/css/*.scss',
     scss_destination = 'iogt/static/css/dest';
+
 gulp.task('styles', function() {
     return gulp.src(scss_inputs)
         .pipe(sass())
+        .pipe(sourcemaps.init())
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
         .pipe(gulp.dest(scss_destination))
@@ -27,8 +24,16 @@ gulp.task('styles', function() {
         .pipe(notify({ message: 'Styles task complete' }))
         .pipe(livereload());
 });
+
+gulp.task('sassdoc', function() {
+    return  gulp.src('iogt/static/css/styles.scss')
+        .pipe(sassdoc('iogt/static/documentation'))
+        .resume();
+});
+
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('iogt/static/css/*.scss/**.scss', ['styles']);
+    gulp.watch('iogt/static/css/*.scss', ['styles']);
 });
-gulp.task('default', ['styles', 'watch']);
+
+gulp.task('default', ['styles', 'watch','sassdoc']);
