@@ -1,0 +1,50 @@
+ 
+.comment__form {
+  input[type="submit"] {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 5px 0;
+    font-weight: normal;
+  }
+
+  input[name~="submit_anonymously"] {
+    text-align: right;
+  }
+}
+
+ .article-list__comments-counter .icon {
+  display: inline-block;
+  background-size: 78%;
+  vertical-align: text-bottom;
+}
+.comment-counter__text {
+  display: none;
+}
+.call-to-action__nav-item--response {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  text-decoration: none;
+  margin: 0;
+}
+
+@each $name, $color in $color_list {
+  .comment__form--#{$name} {
+    input[type="submit"] {
+      background: $color;
+      color: #fff;
+    }
+
+    input[name~="submit_anonymously"] {
+      background: none;
+      color: $color;
+    }
+  }
+
+  .article-list__comments-counter--#{$name} {
+    .icon  {
+      fill: $color;
+    }
+  }
+}

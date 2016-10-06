@@ -1,0 +1,47 @@
+ .personae {
+  position: relative;
+   a {
+      text-decoration: none;
+      display: block;
+   }
+}
+.personae-list__item {
+  padding: 30px 15px 30px 45px; 
+  position: relative;
+  img {
+    display: block;
+  }
+}
+.personae__title {
+  padding: 0 0 0 60px;
+  &:after {
+    display: inline-block;
+    float: right;
+    @media only screen and (min-width: 320px) { 
+      content: ">";
+    }
+    @media only screen and (min-width: 490px) {
+      content: "❯";
+    }
+  }
+}
+.personae-list__item--image-container {
+  background: $east_bay;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 65px;
+  height: 65px;
+
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 9px;
+}
+.personae__skip {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 15px;
+}
+

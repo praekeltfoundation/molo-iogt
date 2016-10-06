@@ -1,0 +1,25 @@
+.footer  {
+  .menu-list__item {
+  position: relative;
+    .footer-link {
+       padding: 0 15px 0 50px;
+      text-decoration: none;
+      &:after {
+        display: inline-block;
+        float: right;
+        @media only screen and (min-width: 320px) { 
+          content: ">";
+        }
+        @media only screen and (min-width: 490px) {
+          content: "❯";
+        }
+      }
+    }
+  }
+}
+.menu-list__item--icon {
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 9px;
+}

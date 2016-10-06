@@ -1,0 +1,72 @@
+ .section__image  {
+  padding: 0;
+}
+.section__title {
+  color: #757575;
+}
+.section-list__more {
+  text-decoration: none;
+  text-align: right;
+  &:after {
+    padding: 0 0 0 10px;
+    @media only screen and (min-width: 320px) { 
+      content: ">";
+    }
+    @media only screen and (min-width: 490px) {
+      content: "❯";
+    }
+  }
+}
+
+.call-to-action__nav-item--back-home {
+  position: relative;
+  width: auto;
+  &:before {
+    display: inline-block;
+    padding: 0 5px 10px;
+    font-size: $font-large;
+    @media only screen and (min-width: 320px) { 
+      content: "<";
+    }
+    @media only screen and (min-width: 490px) {
+       content: "❮";
+    }
+  }
+}
+
+@each $name, $color in $color_list {
+  
+  .section--#{$name},
+  .section-list--#{$name} {
+    border-top: 2px solid $color;
+  }
+  .section--#{$name} {
+    .section__title,
+    .section__subtitle {
+      background: $color;
+      color: #fff;
+    }
+  }
+
+  .section-list--#{$name} {
+    .section-list__title--homepage,
+    .section-list__title a,
+    .section-list__more {
+      color: $color;
+    }
+
+    .article-list__comments-counter .icon  {
+      fill: $color;
+    }
+  }
+
+  .section-list-nav--#{$name} {
+    background: $color;
+    color: #fff;
+    .section-list-nav__item a,
+    .section-list-nav__item--arrow-right:after {
+      color: #fff;
+    }
+  }
+
+}

@@ -1,0 +1,32 @@
+
+#language-selection__toggle,
+#language-selection__toggle--footer {
+  visibility: hidden;
+  position: absolute;
+}
+
+.language-selection__toggle-input {
+  display: none;
+}
+.language-selection__toggle-input:not(checked) ~ .language-selection {
+    display: none;
+}
+.language-selection__toggle-input:checked ~ .language-selection {       
+    display: block;
+}
+
+.language-list__item--active a {
+  text-decoration: underline;
+  &:after {
+    text-decoration: none;
+  }
+}
+
+.current-language, 
+.select-language {
+  padding: 5px 10px;
+}
+
+.language-list__item {
+  text-align: right;
+}

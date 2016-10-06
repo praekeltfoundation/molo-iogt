@@ -1,0 +1,1 @@
+{"version":3,"sources":["opera-mini_single-view.scss"],"names":[],"mappings":"AAAA,KACE,WAAY,KACZ,MAAO,KAGT,kBAEI,MAAO","file":"opera-mini_single-view.min.css","sourcesContent":["body {\n  background: #fff;\n  color: #000;\n}\n\n.header {\n  .logo img {\n    width: 100%;\n  }\n}"],"sourceRoot":"/source/"}
