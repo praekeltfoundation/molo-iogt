@@ -18,7 +18,11 @@
   background-size: 78%;
   vertical-align: text-bottom;
 }
-.comment-counter__text {
+
+.comment__counter {
+  font-weight: bold;
+}
+.comment__text {
   display: none;
 }
 .call-to-action__nav-item--response {

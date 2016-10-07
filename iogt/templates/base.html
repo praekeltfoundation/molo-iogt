@@ -39,8 +39,8 @@
         <script type="text/javascript">
           var CutsTheMustard = 'querySelector' in document && 'localStorage' in window && 'addEventListener' in window,
               LargeScreen = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) >= 200),
-              smartStyles = '<link rel="stylesheet" type="text/css" href="static/css/dest/state_320.min.css">',
-              operaMiniSingleView = '<link rel="stylesheet" type="text/css" media="handheld" href="css/dest/opera-mini_single-view.min.css">'
+              smartStyles = '<link rel="stylesheet" type="text/css" href="{% static "css/dest/state_320.min.css" %}">',
+              operaMiniSingleView = '<link rel="stylesheet" type="text/css" media="handheld" href="{% static "css/dest/opera-mini_single-view.min.css" %}">'
             if(CutsTheMustard === true) {
               if(LargeScreen) {
                 document.write(smartStyles);
