@@ -49,5 +49,7 @@ docs/_build
 media/
 
 node_modules/
+iogt/static/css/dest/iogt/
+sassdoc/
 
 

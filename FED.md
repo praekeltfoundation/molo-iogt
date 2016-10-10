@@ -36,3 +36,18 @@ $danube - #5F7AC9;
 $roman - #EF9955;
 $saffron - #F2B438;
 $medium_violet - #B62A99;
+
+COMPRESSION 
+- Find a way to run COLLECTSTATIC on static - production 
+- Find a way to include compress tag - on production 
+
+Requirements Development 
+- gulpfile.js
+- package.json 
+
+Run npm install - to install packages 
+Gulp - default task styles 
+       Sourcemaps 
+
+
+

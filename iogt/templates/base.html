@@ -30,18 +30,26 @@
         <link rel="shortcut icon" href="/static/favicon/favicon.ico">
         <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        {% compress css %}
-          <link rel="stylesheet" type="text/css" href="{% static 'css/dest/style.min.css' %}">
-          <link rel="stylesheet" media="only screen and (min-width: 320px)" type="text/css" href="{% static 'css/dest/state_320.min.css' %}">
-          <link rel="stylesheet" type="text/css" media="handheld" href="{% static 'css/dest/opera-mini_single-view.min.css' %}">
-        {% endcompress %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        {% block extra_css %}{% endblock %}
+        <script type="text/javascript">
+          var CutsTheMustard = 'querySelector' in document && 'localStorage' in window && 'addEventListener' in window,
+              LargeScreen = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) >= 200),
+              smartStyles = '<link rel="stylesheet" type="text/css" href="{% static "css/state_320.css" %}">',
+              operaMiniSingleView = '<link rel="stylesheet" type="text/css" media="handheld" href="{% static "css/opera-mini_single-view.css" %}">'
+            if(CutsTheMustard === true) {
+              if(LargeScreen) {
+                document.write(smartStyles);
+              }
+            } 
+            if(LargeScreen === false) {
+              document.write(operaMiniSingleView);
+            }
+        </script>
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE|language_bidi == True %}
-        {% compress css %}
-          <link rel="stylesheet" type="text/css" href="{% static 'css/dest/style-rtl.min.css' %}">
-        {% endcompress %}
+          <link rel="stylesheet" type="text/css" href="{% static 'css/style-rtl.css' %}">
         {% endif %}
-        {% block extra_css %}{% endblock %}
     </head>
 
     <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
