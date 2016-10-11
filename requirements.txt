@@ -1,7 +1,7 @@
 molo.core==3.9.0
 molo.surveys==1.2.1
 molo.profiles==1.2.6
-molo.commenting==0.5.4
+molo.commenting==1.0.0
 molo.polls==2.2.1
 molo.usermetadata==1.1.2
 gunicorn

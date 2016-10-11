@@ -43,13 +43,20 @@ urlpatterns += patterns(
         )),
         name='registration_done'),
     url(r'^profiles/', include('molo.profiles.urls',
-                               namespace='molo.profiles')),
-    url(r'^comments/', include('molo.commenting.urls')),
-    url(r'^comments/comment_done/',
+        namespace='molo.profiles')),
+
+    url(r'^commenting/', include('molo.commenting.urls',
+        namespace='molo.commenting',
+        app_name='molo.commenting')),
+
+    url(r'', include('django_comments.urls')),
+
+    url(r'^commenting/comment_done/',
         TemplateView.as_view(
             template_name="comments/comment_done.html"
         ),
         name='comment_done'),
+
     url(r'^polls/', include('molo.polls.urls',
                             namespace='molo.polls',
                             app_name='molo.polls')),
