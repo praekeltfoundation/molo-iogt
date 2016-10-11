@@ -31,14 +31,14 @@ class ViewsTestCase(TestCase, MoloTestCaseMixin):
         comment = self.mk_comment('the comment')
 
         response = self.client.get(
-            reverse('molo-comments-report', args=(comment.pk,)))
+            reverse('molo.commenting:molo-comments-report',
+                    args=(comment.pk,)))
 
-        self.assertEqual(
-            response['location'],
-            '/profiles/login/?next=/comments/molo/report/1/')
+        self.assertEqual(response.status_code, 302)
 
         self.client.login(username='test', password='test')
 
         response = self.client.get(
-            reverse('molo-comments-report', args=(comment.pk,)))
-        self.assertEqual(response['location'], '/comments/cr/4/1/#c1')
+            reverse('molo.commenting:molo-comments-report',
+                    args=(comment.pk,)))
+        self.assertEqual(response.status_code, 302)
