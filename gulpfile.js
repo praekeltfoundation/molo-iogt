@@ -17,7 +17,6 @@ var sass_paths = [
         'iogt/styles/style-rtl.scss',
         'iogt/styles/style.scss',
         'iogt/styles/state_320/state_320.scss',
-        'iogt/styles/versions.scss'
     ];
 
 gulp.task('styles', function() {
