@@ -55,6 +55,12 @@
 .comment-list {
   background: #f0f0f0;
   padding: 10px 0;
+
+  .call-to-action__nav-item {
+    color: #000;
+    text-transform: uppercase;
+    width: auto;
+  }
 }
 
 .comment-list__item {
@@ -73,14 +79,3 @@
   padding: 0;
 }
 
-.call-to-action__nav-item {
-  color: #000;
-  font-size: $font-medium;
-  padding: 0;
-  text-transform: uppercase;
-  width: auto;
-}
-
-.call-to-action__nav-item--response {
-  text-transform: none;
-}

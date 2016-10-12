@@ -13,7 +13,7 @@
   }
 }
 
- .article-list__comments-counter .icon {
+.article-list__comments-counter .icon {
   display: inline-block;
   background-size: 78%;
   vertical-align: text-bottom;
@@ -24,13 +24,6 @@
 }
 .comment__text {
   display: none;
-}
-.call-to-action__nav-item--response {
-  position: absolute;
-  right: 15px;
-  top: 5px;
-  text-decoration: none;
-  margin: 0;
 }
 
 @each $name, $color in $color_list {
