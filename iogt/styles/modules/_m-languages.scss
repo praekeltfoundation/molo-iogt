@@ -9,13 +9,10 @@
   border-bottom: 1px solid $light_scampi;
 }
 
-.current-language, 
-.select-language {
+.current-language {
   color: #fff;
   display: block;
   padding-right: 10px;
-}
-.current-language {
   span:nth-child(odd) {
     opacity: 0.8;
   }
@@ -23,7 +20,11 @@
     font-weight: bold;
   }
 }
+
 .select-language {
+  color: #fff;
+  display: block;
+  padding-right: 10px;
   float: none;
   font-weight: bold;
   text-decoration: underline;
@@ -65,6 +66,7 @@
     }
   }
 }
+
 .language-selection-footer {
   padding: 10px 0 0;
   border-bottom: none; 
