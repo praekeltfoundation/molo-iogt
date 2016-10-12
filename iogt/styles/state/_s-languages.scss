@@ -15,6 +15,16 @@
     display: block;
 }
 
+.current-language, 
+.select-language {
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.language-list__item {
+  text-align: right;
+}
+
 .language-list__item--active a {
   text-decoration: underline;
   &:after {
@@ -22,11 +32,3 @@
   }
 }
 
-.current-language, 
-.select-language {
-  padding: 5px 10px;
-}
-
-.language-list__item {
-  text-align: right;
-}
