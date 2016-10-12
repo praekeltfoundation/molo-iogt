@@ -1,0 +1,58 @@
+/**
+  Add independent call-to-action__nav-item classes and class modifiers  
+*/
+
+// Comments
+.call-to-action__nav-item--response {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  text-decoration: none;
+  margin: 0;
+}
+//Profiles
+.call-to-action--profile {
+  background: $victoria;
+  color: #fff;
+}
+.call-to-action--view-profile {
+  background: transparent;
+}
+.call-to-action__nav-item--challenge {
+  color: #fff;
+  font-size: $font-large;
+}
+.call-to-action__nav-item--login {
+  background: #fff;
+  color: $victoria;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.call-to-action__nav-item--logout,
+.call-to-action__nav-item--editprofile,
+.call-to-action__nav-item--change-password {
+  background: $victoria;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+//Section 
+.call-to-action__nav-item--back-home {
+  position: relative;
+  width: auto;
+  &:before {
+    display: inline-block;
+    padding: 0 5px 10px;
+    font-size: $font-large;
+    @media only screen and (min-width: 320px) { 
+      content: "<";
+    }
+    @media only screen and (min-width: 490px) {
+       content: "❮";
+    }
+  }
+}
