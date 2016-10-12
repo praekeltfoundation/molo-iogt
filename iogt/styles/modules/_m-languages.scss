@@ -49,19 +49,19 @@
   .language-list {
     background: $east_bay;
   }
-}
 
-.language-list__item {
-  padding: 20px;
-  a {
-    color: #fff;
-    &:after {
-      padding: 0 0 0 5px;
-      @media only screen and (min-width: 320px) { 
-        content: ">";
-      }
-      @media only screen and (min-width: 490px) {
-        content: "❯";
+  .language-list__item {
+    padding: 20px;
+    a {
+      color: #fff;
+      &:after {
+        padding: 0 0 0 5px;
+        @media only screen and (min-width: 320px) { 
+          content: ">";
+        }
+        @media only screen and (min-width: 490px) {
+          content: "❯";
+        }
       }
     }
   }
