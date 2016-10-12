@@ -1,17 +1,4 @@
 .article__content {
-  ol {
-    list-style-type: decimal;
-    padding: 0 15px 0 30px;
-    li {
-      list-style-type: decimal;
-    }
-  }
-  .article-numbered-list {
-    list-style-type: none;
-    .article-numbered-list__item {
-      list-style-type: none;
-    }
-  }
   a {
     color: #000;
     display: inline-block;
@@ -26,6 +13,19 @@
 
   p, ul li {
     padding: 0 15px;
+  }
+
+  .article-numbered-list {
+    list-style-type: none;
+    .article-numbered-list__item {
+      list-style-type: none;
+    }
+  }
+
+  //General article ol, ul, li
+  ol li  {
+    list-style-type: decimal;
+    padding: 0 15px 0 30px;
   }
   ul li {
     list-style-position: inside;
