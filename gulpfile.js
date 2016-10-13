@@ -9,7 +9,6 @@ var gulp              =   require('gulp'),
     gzip              =   require('gulp-gzip'),
     notify            =   require('gulp-notify'),
     sourcemaps        =   require('gulp-sourcemaps'),
-    sassdoc           =   require('sassdoc'),
     livereload        =   require('gulp-livereload');
 
 var sassPaths = [
