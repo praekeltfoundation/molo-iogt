@@ -23,8 +23,6 @@ gulp.task('styles', function() {
     return gulp.src(sass_paths)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(minifycss())
-    .pipe(sourcemaps.write('/maps'))
     .pipe(gulp.dest(scss_destination))
     .pipe(notify({ message: 'Styles task complete' }));
 });

@@ -1,30 +1,41 @@
+"use strict"
+
 var path = require("path"),
     webpack = require('webpack'),
-    BundleTracker = require('webpack-bundle-tracker');
+    ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+require('babel-core/register')({
+  presets: ['es2015', 'react']
+});
+require.extensions['.css'] = () => {
+  return;
+};
+require('./iogt/static/css/home.css');
 
 module.exports = {
-  contect: __dirname,
-  entry: './assets/js/index', //Entry point on IoGT app - should require other js modules and dependencies
+  entry: './iogt/static/css/index.js', //Entry point on IoGT app - should require other js modules and dependencies
   output: {
-    path: path.resolve('assets/bundles/'),
-    filename: "[name]-[hash].js" //Might need to include comma but last property
+    filename: "[name]-[hash].js",
+    path: path.resolve('./iogt/static/css/build/'),
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          fallbackLoader: "style-loader",
+          loader: "css-loader",
+        }),
+      }
+    ]
   },
   plugins:[
-    new BundleTracker({
-      filename: './webpack-stats.json'
-    })
+    new ExtractTextPlugin({
+      filename: './iogt/static/css/styles.css'}),
   ],
-  module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader'
-    }]
-  },
-  resolve: {
-    moduleDirectories: ['node_modules'],
-    extensions: ['','.js','.jsx']
-  }
-
 }
+
+
+
+
+
