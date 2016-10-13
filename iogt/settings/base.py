@@ -389,13 +389,6 @@ STATICFILES_FINDERS = [
 MEDIA_ROOT = join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
 
-WEBPACK_LOADER = {
-    'DEFAULT': {
-        'BUNDLE_DIR_NAME': 'bundles/',
-        'STATS_FILE': join(PROJECT_ROOT, 'webpack-stats.json'),
-    }
-}
-
 # Django compressor settings
 # http://django-compressor.readthedocs.org/en/latest/settings/
 
