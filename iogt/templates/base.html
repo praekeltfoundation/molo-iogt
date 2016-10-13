@@ -1,8 +1,6 @@
 {% load wagtailcore_tags compress static wagtailuserbar core_tags i18n persona_tags  %}
   {% load wagtailsettings_tags wagtailimages_tags %}
   {% load google_analytics_tags %}
-  {% load compress %}
-
   {% get_settings %}
  {% get_static_prefix as STATIC_PREFIX %}
 
@@ -50,7 +48,7 @@
 
           var smartStyles = '{% spaceless %}
              {% compress css %}
-               <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/state_320.css" %}">
+               <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/state_320.css">
              {% endcompress %}
            {% endspaceless %}';
 
@@ -68,12 +66,10 @@
           </script>
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE|language_bidi == True %}
-          <link rel="stylesheet" type="text/css" href="{% static 'css/prd/style-rtl.css' %}">
+          {% compress css %}
+            <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/style-rtl.css' %}">
+          {% endcompress %}
         {% endif %}
-        {% compress css %}
-          <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/style-rtl.css' %}">
-        {% endcompress %}
-
         <noscript>Your browser does not support JavaScript!</noscript>
         {% block extra_css %}{% endblock %}
     </head>
