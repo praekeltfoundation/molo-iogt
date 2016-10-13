@@ -34,9 +34,6 @@ function styles(env) {
     s = s
     .pipe(sass().on('error', sass.logError))
     .pipe(minifycss())
-    .pipe(sourcemaps.write('/maps'))
-    .pipe(gulp.dest(scss_destination))
-    .pipe(notify({ message: 'Styles task complete' }));
     if (isDev) s = s
         .pipe(sourcemaps.write('/maps'));
         return s
