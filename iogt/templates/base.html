@@ -2,7 +2,7 @@
 {% load wagtailsettings_tags wagtailimages_tags %}
 {% load google_analytics_tags %}
 {% get_settings %}
-
+{% get_static_prefix as STATIC_PREFIX %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,27 +30,44 @@
         <link rel="shortcut icon" href="/static/favicon/favicon.ico">
         <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        {% compress css %}
+         <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/style.css">
+        {% endcompress %}
         {% block extra_css %}{% endblock %}
         <script type="text/javascript">
-          var CutsTheMustard = 'querySelector' in document && 'localStorage' in window && 'addEventListener' in window,
-              LargeScreen = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) >= 200),
-              smartStyles = '<link rel="stylesheet" type="text/css" href="{% static "css/state_320.css" %}">',
-              operaMiniSingleView = '<link rel="stylesheet" type="text/css" media="handheld" href="{% static "css/opera-mini_single-view.css" %}">',
-              latoGoogleFont = '<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">';
-            if(CutsTheMustard === true) {
-              if(LargeScreen) {
-                document.write(smartStyles, latoGoogleFont);
+           var CutsTheMustard = 'querySelector' in document && 'localStorage' in window && 'addEventListener' in window;
+           var LargeScreen = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) >= 200);
+ 
+          var operaMiniSingleView = '{% spaceless %} 
+            {% compress css %}
+               <link rel="stylesheet" type="text/css" media="handheld" href="{{ STATIC_PREFIX }}css/{{ ENV }}/opera-mini_single-view.css">
+            {% endcompress %}
+          {% endspaceless %}';
+
+          var smartStyles = '{% spaceless %}
+             {% compress css %}
+               <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/state_320.css">
+             {% endcompress %}
+           {% endspaceless %}';
+
+         var latoGoogleFont = '<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">';
+
+          if(CutsTheMustard === true) {
+            if(LargeScreen) {
+              document.write(smartStyles, latoGoogleFont);
               }
-            } 
-            if(LargeScreen === false) {
-              document.write(operaMiniSingleView);
-            }
-        </script>
+          }
+          if(LargeScreen === false) {
+            document.write(operaMiniSingleView);
+         }
+          </script>
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE|language_bidi == True %}
-          <link rel="stylesheet" type="text/css" href="{% static 'css/style-rtl.css' %}">
+          {% compress css %}
+            <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/style-rtl.css' %}">
+          {% endcompress %}
         {% endif %}
+        <noscript>Your browser does not support JavaScript!</noscript>
     </head>
 
     <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
