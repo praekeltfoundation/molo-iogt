@@ -86,7 +86,6 @@ INSTALLED_APPS = [
     'djcelery',
     'django_cas_ng',
     'compressor',
-    'webpack_loader',
 ]
 
 COMMENTS_APP = 'molo.commenting'

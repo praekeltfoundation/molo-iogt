@@ -1,15 +1,16 @@
 'use strict';
 
-var gulp        =   require('gulp'), 
-    sass        =   require('gulp-sass'), 
-    watch       =   require('gulp-watch'), 
-    minifycss   =   require('gulp-minify-css'),
-    rename      =   require('gulp-rename'),
-    gzip        =   require('gulp-gzip'),
-    notify      =   require('gulp-notify'),
-    sourcemaps  =   require('gulp-sourcemaps'),
-    sassdoc     =   require('sassdoc'),
-    livereload  =   require('gulp-livereload');
+var gulp              =   require('gulp'), 
+    sass              =   require('gulp-sass'), 
+    watch             =   require('gulp-watch'), 
+    minifycss         =   require('gulp-minify-css'),
+    cleanCSSMinify    =   require('gulp-clean-css'),
+    rename            =   require('gulp-rename'),
+    gzip              =   require('gulp-gzip'),
+    notify            =   require('gulp-notify'),
+    sourcemaps        =   require('gulp-sourcemaps'),
+    sassdoc           =   require('sassdoc'),
+    livereload        =   require('gulp-livereload');
 
 var sassPaths = [
     'iogt/styles/opera-mini_single-view.scss',
@@ -33,7 +34,7 @@ function styles(env) {
 
     s = s
     .pipe(sass().on('error', sass.logError))
-    .pipe(minifycss())
+    .pipe(cleanCSSMinify())
     if (isDev) s = s
         .pipe(sourcemaps.write('/maps'));
         return s
