@@ -127,6 +127,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'molo.core.context_processors.locale',
                 'wagtail.contrib.settings.context_processors.settings',
+                'iogt.processors.env',
             ],
         },
     },
@@ -387,7 +388,6 @@ STATICFILES_FINDERS = [
 
 MEDIA_ROOT = join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
-
 
 # Django compressor settings
 # http://django-compressor.readthedocs.org/en/latest/settings/
