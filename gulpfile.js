@@ -3,7 +3,6 @@
 var gulp              =   require('gulp'), 
     sass              =   require('gulp-sass'), 
     watch             =   require('gulp-watch'), 
-    minifycss         =   require('gulp-minify-css'),
     cleanCSSMinify    =   require('gulp-clean-css'),
     rename            =   require('gulp-rename'),
     gzip              =   require('gulp-gzip'),
