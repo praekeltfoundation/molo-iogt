@@ -1,5 +1,8 @@
 from django.conf import settings
 
 
-def env(request):
-    return {'ENV': 'dev' if settings.DEBUG else 'prd'}
+def compress_settings(request):
+    return {
+        'STATIC_URL': settings.STATIC_URL,
+        'ENV': settings.ENV
+    }

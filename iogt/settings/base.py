@@ -30,6 +30,8 @@ SECRET_KEY = "llk8#8zc+@9d6m8ln7%azsg)do5^v24rb!0s^^!-t3tn*#r93y"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ENV = 'dev'
+
 
 ALLOWED_HOSTS = ['*']
 
@@ -127,7 +129,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'molo.core.context_processors.locale',
                 'wagtail.contrib.settings.context_processors.settings',
-                'iogt.processors.env',
+                'iogt.processors.compress_settings',
             ],
         },
     },
