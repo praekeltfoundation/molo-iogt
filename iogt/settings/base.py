@@ -30,6 +30,8 @@ SECRET_KEY = "llk8#8zc+@9d6m8ln7%azsg)do5^v24rb!0s^^!-t3tn*#r93y"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ENV = 'dev'
+
 
 ALLOWED_HOSTS = ['*']
 

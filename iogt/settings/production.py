@@ -64,3 +64,10 @@ try:
     from .local import *  # noqa
 except ImportError:
     pass
+
+ENV = 'prd'
+
+COMPRESS_OFFLINE_CONTEXT = {
+    'STATIC_URL': STATIC_URL,
+    'ENV': ENV,
+}

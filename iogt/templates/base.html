@@ -2,7 +2,6 @@
 {% load wagtailsettings_tags wagtailimages_tags %}
 {% load google_analytics_tags %}
 {% get_settings %}
-{% get_static_prefix as STATIC_PREFIX %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -31,7 +30,7 @@
         <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
         {% compress css %}
-         <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/style.css">
+         <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/{{ ENV }}/style.css">
         {% endcompress %}
         {% block extra_css %}{% endblock %}
         <script type="text/javascript">
@@ -40,13 +39,13 @@
  
           var operaMiniSingleView = '{% spaceless %} 
             {% compress css %}
-               <link rel="stylesheet" type="text/css" media="handheld" href="{{ STATIC_PREFIX }}css/{{ ENV }}/opera-mini_single-view.css">
+               <link rel="stylesheet" type="text/css" media="handheld" href="{{ STATIC_URL }}css/{{ ENV }}/opera-mini_single-view.css">
             {% endcompress %}
           {% endspaceless %}';
 
           var smartStyles = '{% spaceless %}
              {% compress css %}
-               <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/state_320.css">
+               <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/{{ ENV }}/state_320.css">
              {% endcompress %}
            {% endspaceless %}';
 
@@ -64,7 +63,7 @@
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE|language_bidi == True %}
           {% compress css %}
-            <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/{{ ENV }}/style-rtl.css' %}">
+            <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/{{ ENV }}/style-rtl.css">
           {% endcompress %}
         {% endif %}
         <noscript>Your browser does not support JavaScript!</noscript>
