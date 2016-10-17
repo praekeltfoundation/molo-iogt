@@ -5,6 +5,7 @@ from .base import *  # noqa
 
 DEBUG = False
 TEMPLATE_DEBUG = False
+ENV = 'prd'
 
 
 # Compress static files offline
@@ -60,14 +61,14 @@ CAS_ADMIN_PREFIX = '/admin/'
 LOGIN_URL = 'molo.profiles:auth_login'
 CAS_VERSION = '3'
 
-try:
-    from .local import *  # noqa
-except ImportError:
-    pass
-
-ENV = 'prd'
 
 COMPRESS_OFFLINE_CONTEXT = {
     'STATIC_URL': STATIC_URL,
     'ENV': ENV,
 }
+
+
+try:
+    from .local import *  # noqa
+except ImportError:
+    pass
