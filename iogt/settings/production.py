@@ -67,7 +67,6 @@ COMPRESS_OFFLINE_CONTEXT = {
     'ENV': ENV,
 }
 
-
 try:
     from .local import *  # noqa
 except ImportError:
