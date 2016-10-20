@@ -49,5 +49,3 @@ docs/_build
 media/
 
 node_modules/
-iogt/static/css/dev/
-iogt/static/css/prd/
