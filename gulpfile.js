@@ -1,8 +1,8 @@
 'use strict';
 
-var gulp              =   require('gulp'), 
-    sass              =   require('gulp-sass'), 
-    watch             =   require('gulp-watch'), 
+var gulp              =   require('gulp'),
+    sass              =   require('gulp-sass'),
+    watch             =   require('gulp-watch'),
     cleanCSSMinify    =   require('gulp-clean-css'),
     rename            =   require('gulp-rename'),
     gzip              =   require('gulp-gzip'),
@@ -11,10 +11,10 @@ var gulp              =   require('gulp'),
     livereload        =   require('gulp-livereload');
 
 var sassPaths = [
-    'iogt/styles/opera-mini_single-view.scss',
-    'iogt/styles/style-rtl.scss',
-    'iogt/styles/style.scss',
-    'iogt/styles/state_320/state_320.scss',
+    'iogt/client/css/opera-mini_single-view.scss',
+    'iogt/client/css/style-rtl.scss',
+    'iogt/client/css/style.scss',
+    'iogt/client/css/state_320/state_320.scss',
 ];
 
 var sassDest = {
@@ -50,8 +50,8 @@ gulp.task('styles:dev', function() {
 
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('iogt/styles/*.scss', ['styles']);
+    gulp.watch('iogt/client/css/*.scss', ['styles']);
 });
 
 gulp.task('styles', ['styles:dev', 'styles:prd']);
-gulp.task('default', ['styles']);
+gulp.task('default', ['styles','watch']);

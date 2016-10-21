@@ -391,15 +391,6 @@ STATICFILES_FINDERS = [
 MEDIA_ROOT = join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
 
-
-# Django compressor settings
-# http://django-compressor.readthedocs.org/en/latest/settings/
-
-COMPRESS_PRECOMPILERS = [
-    ('text/x-scss', 'django_libsass.SassCompiler'),
-]
-
-
 # Wagtail settings
 LOGIN_URL = 'molo.profiles:auth_login'
 LOGIN_REDIRECT_URL = 'wagtailadmin_home'

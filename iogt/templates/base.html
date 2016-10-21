@@ -36,18 +36,16 @@
         <script type="text/javascript">
            var CutsTheMustard = 'querySelector' in document && 'localStorage' in window && 'addEventListener' in window;
            var LargeScreen = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) >= 200);
- 
-          var operaMiniSingleView = '{% spaceless %} 
-            {% compress css %}
+
+          var operaMiniSingleView = '{% spaceless %}
+          {% compress css %}
                <link rel="stylesheet" type="text/css" media="handheld" href="{{ STATIC_URL }}css/{{ ENV }}/opera-mini_single-view.css">
-            {% endcompress %}
-          {% endspaceless %}';
+          {% endcompress %}{% endspaceless %}';
 
           var smartStyles = '{% spaceless %}
-             {% compress css %}
+              {% compress css %}
                <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/{{ ENV }}/state_320.css">
-             {% endcompress %}
-           {% endspaceless %}';
+              {% endcompress %}{% endspaceless %}';
 
          var latoGoogleFont = '<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">';
 
@@ -70,10 +68,10 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
-      
+
       {% if settings.core.SiteSettings.ga_tag_manager %}
       {% persona_selected as persona_selected_value %}
-      
+
         <!--Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{settings.core.SiteSettings.ga_tag_manager}}&client_session_id={{request.session.MOLO_GA_SESSION_FOR_NOSCRIPT}}{% if persona_selected_value%}&persona={{ persona_selected_value }}&event=persona{% endif %}"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -111,8 +109,8 @@
         </div>
         <!-- Local End Google Tracking Code -->
         {% endif %}
-        
-        
+
+
       {% if languages|length > 1 %}
       <div class="languages">
         <div class="language-bar">
@@ -191,7 +189,7 @@
       {% block footer %}
       <div class="footer">
         <ul class="menu-list">
-         
+
           <li class="menu-list__item">
             {% if not user.is_authenticated %}
               <a href="{% url 'molo.profiles:user_register' %}" class="footer-link">
@@ -201,7 +199,7 @@
               <img src="{% static 'img/footer_login_icon.png' %}" width="30" class="menu-list__item--icon" />{% trans "Profile" %}</a>
             {% endif %}
           </li>
-          
+
           {% if languages|length > 1 %}
             <li class="menu-list__item">
               <input id="language-selection__toggle--footer" class="language-selection__toggle-input"  type="checkbox">
