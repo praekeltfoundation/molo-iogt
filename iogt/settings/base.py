@@ -435,3 +435,8 @@ ADMIN_LANGUAGE_CODE = environ.get('ADMIN_LANGUAGE_CODE', "en")
 FROM_EMAIL = environ.get('FROM_EMAIL', "support@moloproject.org")
 CONTENT_IMPORT_SUBJECT = environ.get(
     'CONTENT_IMPORT_SUBJECT', 'Molo Content Import')
+
+CSRF_FAILURE_VIEW = 'molo.core.views.csrf_failure'
+
+FREE_BASICS_URL_FOR_CSRF_MESSAGE = environ.get(
+    'FREE_BASICS_URL_FOR_CSRF_MESSAGE', '')
