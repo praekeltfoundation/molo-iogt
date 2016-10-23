@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-28 22:35+0200\n"
+"POT-Creation-Date: 2016-10-23 12:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,100 +16,104 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: iogt/settings/base.py:185
+#: iogt/settings/base.py:190
 msgid "Zulu"
 msgstr ""
 
-#: iogt/settings/base.py:186
+#: iogt/settings/base.py:191
 msgid "Xhosa"
 msgstr ""
 
-#: iogt/settings/base.py:187
+#: iogt/settings/base.py:192
 msgid "Sotho"
 msgstr ""
 
-#: iogt/settings/base.py:188
+#: iogt/settings/base.py:193
 msgid "Venda"
 msgstr ""
 
-#: iogt/settings/base.py:189
+#: iogt/settings/base.py:194
 msgid "Tswana"
 msgstr ""
 
-#: iogt/settings/base.py:190
+#: iogt/settings/base.py:195
 msgid "Tsonga"
 msgstr ""
 
-#: iogt/settings/base.py:191
+#: iogt/settings/base.py:196
 msgid "Swati"
 msgstr ""
 
-#: iogt/settings/base.py:192
+#: iogt/settings/base.py:197
 msgid "Ndebele"
 msgstr ""
 
-#: iogt/settings/base.py:193
+#: iogt/settings/base.py:198
 msgid "Wolof"
 msgstr ""
 
-#: iogt/settings/base.py:194
+#: iogt/settings/base.py:199
 msgid "Yoruba"
 msgstr ""
 
-#: iogt/settings/base.py:195
+#: iogt/settings/base.py:200
 msgid "Igbo"
 msgstr ""
 
-#: iogt/settings/base.py:196
+#: iogt/settings/base.py:201
 msgid "Hausa"
 msgstr ""
 
-#: iogt/settings/base.py:197
+#: iogt/settings/base.py:202
 msgid "Amharic"
 msgstr ""
 
-#: iogt/settings/base.py:198
+#: iogt/settings/base.py:203
 msgid "Malay"
 msgstr ""
 
-#: iogt/settings/base.py:199
+#: iogt/settings/base.py:204
 msgid "Guarani"
 msgstr ""
 
-#: iogt/settings/base.py:200
+#: iogt/settings/base.py:205
 msgid "Gujarati"
 msgstr ""
 
-#: iogt/settings/base.py:201
+#: iogt/settings/base.py:206
 msgid "Filipino"
 msgstr ""
 
-#: iogt/settings/base.py:202
+#: iogt/settings/base.py:207
 msgid "N'ko"
 msgstr ""
 
-#: iogt/settings/base.py:203
+#: iogt/settings/base.py:208
 msgid "Syriac"
 msgstr ""
 
-#: iogt/settings/base.py:204
+#: iogt/settings/base.py:209
 msgid "Dhivehi"
 msgstr ""
 
-#: iogt/settings/base.py:205
+#: iogt/settings/base.py:210
 msgid "Berber"
 msgstr ""
 
-#: iogt/settings/base.py:206
+#: iogt/settings/base.py:211
 msgid "Kurdish"
 msgstr ""
 
-#: iogt/settings/base.py:207
+#: iogt/settings/base.py:212
 msgid "Aramaic"
 msgstr ""
 
-#: iogt/settings/base.py:208
+#: iogt/settings/base.py:213
 msgid "Creole Haitian"
+msgstr ""
+
+#: iogt/settings/base.py:214
+msgid "Kyrgyz"
 msgstr ""
 
 #: iogt/templates/403.html:8
@@ -118,6 +122,26 @@ msgstr ""
 
 #: iogt/templates/403.html:9
 msgid "You do not have permssion to access this site."
+msgstr ""
+
+#: iogt/templates/403_csrf.html:9
+msgid "Unable to Login"
+msgstr ""
+
+#: iogt/templates/403_csrf.html:12
+msgid "Hi"
+msgstr ""
+
+#: iogt/templates/403_csrf.html:13
+msgid ""
+"Sorry, you are having trouble accessing this feature! Due to a temporary "
+"technical issue, login and registrations are not available on the Free "
+"Basics app for now. To login or register for a profile, visit our free "
+"mobisite through your mobile browser at"
+msgstr ""
+
+#: iogt/templates/403_csrf.html:13
+msgid " We're working hard to get this problem resolved. Thank you."
 msgstr ""
 
 #: iogt/templates/404.html:8
@@ -172,157 +196,92 @@ msgstr ""
 msgid "Compare"
 msgstr ""
 
-#: iogt/templates/base.html:90
+#: iogt/templates/base.html:120
 msgid "Language"
 msgstr ""
 
-#: iogt/templates/base.html:94
+#: iogt/templates/base.html:125
 msgid "Change Language"
 msgstr ""
 
-#: iogt/templates/base.html:119
+#: iogt/templates/base.html:146
+msgid "IoGT"
+msgstr ""
+
+#: iogt/templates/base.html:152
 msgid "Join"
 msgstr ""
 
-#: iogt/templates/base.html:121 iogt/templates/base.html:166
+#: iogt/templates/base.html:154 iogt/templates/base.html:201
 msgid "Profile"
 msgstr ""
 
-#: iogt/templates/base.html:123 iogt/templates/search/search_results.html:49
-#: iogt/templates/search/search_results.html:51
+#: iogt/templates/base.html:156 iogt/templates/search/search_results.html:47
+#: iogt/templates/search/search_results.html:49
 msgid "Search"
 msgstr ""
 
-#: iogt/templates/base.html:124
+#: iogt/templates/base.html:157
 msgid "Menu"
 msgstr ""
 
-#: iogt/templates/base.html:163
+#: iogt/templates/base.html:198
 msgid "Login"
 msgstr ""
 
-#: iogt/templates/base.html:172
+#: iogt/templates/base.html:210
 msgid "Change your language"
 msgstr ""
 
-#: iogt/templates/comments/comment.html:8
-msgid "Anonymous"
-msgstr ""
-
-#: iogt/templates/comments/comment.html:15
+#: iogt/templates/comments/form.html:7
 msgid ""
-"This comment has been removed by the community. Please read our platform "
-"rules."
-msgstr ""
-
-#: iogt/templates/comments/comment.html:20
-msgid "Report"
-msgstr ""
-
-#: iogt/templates/comments/comment.html:22
-msgid "Reply"
-msgstr ""
-
-#: iogt/templates/comments/comment_block.html:5
-msgid "Share a Comment"
-msgstr ""
-
-#: iogt/templates/comments/comment_block.html:12
-msgid "Log in to comment"
-msgstr ""
-
-#: iogt/templates/comments/comment_block.html:16
-msgid "Commenting on this article is currently disabled"
-msgstr ""
-
-#: iogt/templates/comments/comment_block.html:23
-#: iogt/templates/core/article_page.html:39
-#: iogt/templates/core/section_page.html:53
-#: iogt/templates/core/section_page.html:86
-#: iogt/templates/core/tags/latest_listing_homepage.html:27
-#: iogt/templates/core/tags/section-and-subsection_listing_homepage.html:46
-#: iogt/templates/core/tags/section-and-subsection_listing_homepage.html:69
-#: iogt/templates/core/tags/section_listing_homepage.html:29
-#: iogt/templates/search/search_results.html:29
-msgid "comment"
-msgstr ""
-
-#: iogt/templates/comments/comment_block.html:39
-msgid "view more"
-msgstr ""
-
-#: iogt/templates/comments/comments.html:5
-msgid "Comments"
-msgstr ""
-
-#: iogt/templates/comments/comments.html:24
-#: iogt/templates/comments/report_response.html:10
-msgid "Back to article"
-msgstr ""
-
-#: iogt/templates/comments/form.html:5
-msgid "Please correct the error below"
-msgid_plural ""
-"Please correct the\n"
-"        errors below"
+"\n"
+"        Please correct the error below\n"
+"        "
+msgid_plural "Please correct the errors below"
 msgstr[0] ""
 msgstr[1] ""
 
-#: iogt/templates/comments/preview.html:10
 #: iogt/templates/core/article_page.html:11
-#: iogt/templates/core/section_page.html:18
+#: iogt/templates/core/section_page.html:16
 #: iogt/templates/polls/detail.html:28
 #: iogt/templates/polls/free_text_detail.html:15
 #: iogt/templates/polls/results.html:31
 msgid "Home"
 msgstr ""
 
-#: iogt/templates/comments/preview.html:44
-#: iogt/templates/comments/reply.html:22
-msgid "Please "
+#: iogt/templates/core/article_page.html:44
+#: iogt/templates/core/section_page.html:55
+#: iogt/templates/core/section_page.html:134
+#: iogt/templates/core/tags/latest_listing_homepage.html:37
+#: iogt/templates/core/tags/section_listing_homepage.html:38
+#: iogt/templates/search/search_results.html:28
+msgid "comment"
 msgstr ""
 
-#: iogt/templates/comments/preview.html:44
-#: iogt/templates/comments/reply.html:22
-msgid "log in"
+#: iogt/templates/core/section_page.html:65
+msgid "Prev"
 msgstr ""
 
-#: iogt/templates/comments/preview.html:44
-#: iogt/templates/comments/reply.html:22
-msgid " to leave a comment."
+#: iogt/templates/core/section_page.html:98
+msgid "Next"
 msgstr ""
 
-#: iogt/templates/comments/report_response.html:6
-msgid "Thanks!"
-msgstr ""
-
-#: iogt/templates/comments/report_response.html:8
-msgid "This comment has been reported."
-msgstr ""
-
-#: iogt/templates/comments/report_response.html:9
-msgid ""
-"It will be reviewed by the team and may be removed if it breaks our Platform "
-"rules"
-msgstr ""
-
-#: iogt/templates/core/section_page.html:92
+#: iogt/templates/core/section_page.html:141
 msgid "View More"
 msgstr ""
 
 #: iogt/templates/core/tags/latest_listing_homepage.html:4
-#: iogt/templates/core/tags/section-and-subsection_listing_homepage.html:4
 msgid "Recommended"
 msgstr ""
 
-#: iogt/templates/core/tags/section-and-subsection_listing_homepage.html:81
-#: iogt/templates/core/tags/section_listing_homepage.html:35
+#: iogt/templates/core/tags/section_listing_homepage.html:45
 msgid "More"
 msgstr ""
 
 #: iogt/templates/polls/detail.html:26
 #: iogt/templates/polls/free_text_detail.html:13
-#: iogt/templates/polls/includes/poll_question_form.html:37
+#: iogt/templates/polls/includes/poll_question_form.html:45
 msgid "Vote"
 msgstr ""
 
@@ -335,15 +294,15 @@ msgid "Thank you! Your response has already been submitted."
 msgstr ""
 
 #: iogt/templates/polls/includes/poll_free_text_form.html:24
-#: iogt/templates/polls/includes/poll_question_form.html:22
+#: iogt/templates/polls/includes/poll_question_form.html:26
 msgid "Log in to vote"
 msgstr ""
 
-#: iogt/templates/polls/includes/poll_question_form.html:39
+#: iogt/templates/polls/includes/poll_question_form.html:47
 msgid "Show Results"
 msgstr ""
 
-#: iogt/templates/polls/includes/poll_question_form.html:42
+#: iogt/templates/polls/includes/poll_question_form.html:50
 msgid "You voted: "
 msgstr ""
 
@@ -438,15 +397,15 @@ msgstr ""
 msgid "Search Results for:"
 msgstr ""
 
-#: iogt/templates/search/search_results.html:48
+#: iogt/templates/search/search_results.html:46
 msgid "I am looking for"
 msgstr ""
 
-#: iogt/templates/search/search_results.html:54
+#: iogt/templates/search/search_results.html:52
 msgid "No search results for "
 msgstr ""
 
-#: iogt/templates/search/search_results.html:57
+#: iogt/templates/search/search_results.html:55
 msgid "Back to homepage"
 msgstr ""
 
