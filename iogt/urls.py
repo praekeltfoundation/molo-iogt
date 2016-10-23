@@ -13,7 +13,6 @@ from wagtail.wagtailcore import urls as wagtail_urls
 from molo.profiles.views import RegistrationDone
 from molo.profiles.forms import DateOfBirthForm
 
-from .views import search
 
 # implement CAS URLs in a production setting
 if settings.ENABLE_SSO:
@@ -31,7 +30,6 @@ urlpatterns += patterns(
     url(r'^django-admin/', include(admin.site.urls)),
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
-    url(r'search/$', search, name='search'),
     url(r'^meta/', include('molo.usermetadata.urls',
                            namespace='molo.usermetadata',
                            app_name='molo.usermetadata')),
