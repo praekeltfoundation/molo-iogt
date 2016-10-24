@@ -2,7 +2,7 @@
   "name": "molo-iogt",
   "version": "1.0.0",
   "description": "iogt =========================",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -13,7 +13,9 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-watch": "^4.3.9"
+    "gulp-stylelint": "^3.4.0",
+    "gulp-watch": "^4.3.9",
+    "stylelint-selector-bem-pattern": "^1.0.0"
   },
   "repository": {
     "type": "git",

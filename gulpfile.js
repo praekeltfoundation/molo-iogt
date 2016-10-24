@@ -8,7 +8,8 @@ var gulp              =   require('gulp'),
     gzip              =   require('gulp-gzip'),
     notify            =   require('gulp-notify'),
     sourcemaps        =   require('gulp-sourcemaps'),
-    livereload        =   require('gulp-livereload');
+    livereload        =   require('gulp-livereload'),
+    gulpStyleLint   =   require('gulp-stylelint');
 
 var sassPaths = [
     'iogt/client/css/opera-mini_single-view.scss',
@@ -48,10 +49,23 @@ gulp.task('styles:dev', function() {
   return styles('dev');
 });
 
+gulp.task('lint-css', function lintCssTask() {
+  return gulp
+   .src('iogt/client/css/**/*.scss')
+   .pipe(gulpStyleLint({
+     reporters: [
+       {formatter: 'string', console: true},
+       {formatter: 'json', save: 'stylelint.config.json'}
+     ],
+     debug: true
+   }));
+});
+
+
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch('iogt/client/css/*.scss', ['styles']);
 });
 
 gulp.task('styles', ['styles:dev', 'styles:prd']);
-gulp.task('default', ['styles','watch']);
+gulp.task('default', ['styles','watch','lint-css']);
