@@ -4,13 +4,12 @@
 {% if footers %}
 	{% for page in footers %}
    <li class="menu-list__item">
-      <a href="{% pageurl page %}" class="footer-link">
+      <a href="{% pageurl page %}" class="footer-link footer-link--cms-upload">
         {% if page.image %}
-          {% image page.image width-30 height-30 class="menu-list__item--icon" %}
+          {% image page.image width-60 class="menu-list__item--icon" %}
         {% endif %}
         {{page.title}}
       </a>
     </li>
   {% endfor %}
 {% endif %}
-

@@ -7,7 +7,7 @@
       &:after {
         display: inline-block;
         float: right;
-        @media only screen and (min-width: 320px) { 
+        @media only screen and (min-width: 320px) {
           content: ">";
         }
         @media only screen and (min-width: 490px) {
@@ -20,8 +20,10 @@
   .menu-list__item--icon {
     display: block;
     position: absolute;
-    left: 15px;
+    left: 10px;
     top: 9px;
+    width: 12%;
+    height: auto;
   }
 
 }

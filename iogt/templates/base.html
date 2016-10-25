@@ -193,10 +193,10 @@
           <li class="menu-list__item">
             {% if not user.is_authenticated %}
               <a href="{% url 'molo.profiles:user_register' %}" class="footer-link">
-              <img src="{% static 'img/footer_login_icon.png' %}" width="30" class="menu-list__item--icon" />{% trans "Login" %}</a>
+              <img src="{% static 'img/footer_login_icon.png' %}" width="auto" class="menu-list__item--icon" />{% trans "Login" %}</a>
               {% else %}
               <a href="{% url 'molo.profiles:view_my_profile' %}" class="footer-link">
-              <img src="{% static 'img/footer_login_icon.png' %}" width="30" class="menu-list__item--icon" />{% trans "Profile" %}</a>
+              <img src="{% static 'img/footer_login_icon.png' %}" width="auto" class="menu-list__item--icon" />{% trans "Profile" %}</a>
             {% endif %}
           </li>
 
@@ -204,7 +204,7 @@
             <li class="menu-list__item">
               <input id="language-selection__toggle--footer" class="language-selection__toggle-input"  type="checkbox">
               <label for="language-selection__toggle--footer" class="select-language--footer footer-link">
-                <img src="{% static 'img/footer_change_language.png' %}" width="30" class="menu-list__item--icon" />
+                <img src="{% static 'img/footer_change_language.png' %}" width="auto" class="menu-list__item--icon" />
                 {% trans "Change your language"%}
               </label>
               <div class="language-selection language-selection-footer">

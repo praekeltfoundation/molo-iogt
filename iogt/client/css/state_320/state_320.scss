@@ -43,6 +43,7 @@
   .call-to-action__nav-item,
   input[type="submit"] {
     white-space: nowrap;
+    padding: 10px 0;
   }
 
   input[type="submit"] {
@@ -52,12 +53,12 @@
     text-decoration: none;
     padding: 10px 0;
   }
-  
+
  .select-language {
     text-decoration: none;
     float: right;
   }
-  
+
 }
 
 @media only screen and (min-width: 600px) {
