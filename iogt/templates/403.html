@@ -5,8 +5,7 @@
 {% block body_class %}template-404{% endblock %}
 
 {% block content %}
-    <h2>{% trans "Access Denied" %}</h2>
-    <p>{% trans "You do not have permssion to access this site." %}</p>
-    <p><a href="{% url 'wagtailadmin_logout' %}?next={% url 'wagtailadmin_login' %}">Retry</a></p>
+    <h1 class="heading heading--subtitle">{% trans "Access Denied" %}</h1>
+    <h2 class="heading heading--feedback-title">% trans "You do not have permssion to access this site." %}</h2>
+    <a href="{% url 'wagtailadmin_logout' %}?next={% url 'wagtailadmin_login' %}" class="call-to-action__nav-item call-to-action__nav-item--back-home">Retry</a>
 {% endblock %}
-
