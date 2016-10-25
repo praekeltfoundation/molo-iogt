@@ -7,7 +7,7 @@ input[type="tel"],
 input[type="search"] {
   padding: 8px 0;
 }
-.language-list__item a:after {
+.language-selection .language-list__item a:after {
   padding: 0 5px 0 0;
 }
 
@@ -58,10 +58,10 @@ input[type="search"] {
     top: 5px;
     left: 15px;
   }
-  .footer { 
+  .footer {
     .menu-list__item .footer-link {
       padding: 0 60px 0 20px;
-      &:after { 
+      &:after {
         float: left;
       }
     }
