@@ -7,7 +7,7 @@
       &:after {
         display: inline-block;
         float: right;
-        @media only screen and (min-width: 320px) { 
+        @media only screen and (min-width: 320px) {
           content: ">";
         }
         @media only screen and (min-width: 490px) {
@@ -17,11 +17,20 @@
     }
   }
 
+  .menu-list__item--language-selection {
+    .footer-link {
+      padding: 0 15px 15px 50px;
+    }
+  }
+
   .menu-list__item--icon {
     display: block;
     position: absolute;
-    left: 15px;
+    left: 10px;
     top: 9px;
+    width: 10%;
+    max-width: 35px;
+    height: auto;
   }
 
 }

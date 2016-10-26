@@ -14,10 +14,17 @@
 
   label[for="id_date_of_birth_year"] {
     display: block;
-  } 
+  }
 
   .call-to-action--profile,
   .call-to-action--view-profile {
+    padding: 0;
+  }
+}
+
+.profiles--csrf {
+  p {
+    display: block;
     padding: 0;
   }
 }
@@ -65,4 +72,3 @@
   color: red;
   font-size: $font-small;
 }
-

@@ -5,7 +5,7 @@
     padding: 15px 0;
     .footer-link {
       color: $tiber;
-      display: block; 
+      display: block;
       font-size: $font-small;
       font-weight: bold;
       text-transform: uppercase;
@@ -13,13 +13,11 @@
       padding: 0 15px;
     }
   }
+
+  .menu-list__item--language-selection {
+      padding: 15px 0 0;
+  }
 }
 .menu-list__item--icon {
   display: none;
-}
-
-.language-selection-footer {
-  .language-list__item:last-child {
-    border-bottom: 1px solid #B0B9BB;
-  }
 }
