@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "iogt =========================",
   "main": "gulpfile.js",
+  "scripts": {
+   "build": "gulp"
+  },
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
+    "gulp-cli": "^1.2.2",
     "gulp-gzip": "^1.4.0",
     "gulp-livereload": "^3.8.1",
     "gulp-notify": "^2.2.0",
