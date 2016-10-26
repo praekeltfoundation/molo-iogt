@@ -1,53 +1,67 @@
-Molo Core - Language
+FED Ways of Working
+GOAL: Maintenance, Performance, and Readability.
 
-HTML structure
-Placed this on the Base.html as it appears on all the pages.
-Studio will supply icons and image assets
-Languages
-Language__current
-Language__title
-Language__title--icon
+HTML
+-  We use SMACSS, BEM methodologies to make HTML modular
 
-Language__dropdown-button
+SMACSS Structure
+https://smacss.com/book/
 
-Language__list 
-Language-list__toggle
-Language-list__item
-Active
-CSS structure
-BEM & SMACSS methodology
-File name:
- _m-languages.scss
-_s-languages.scss
+PATH: iogt/clients/css/
+  /layout
+    _l-header.scss
+    _l-footer.scss
+    _l-layout.scss | @import all layout compoments
+  /modules
+    _m-article-list.scss
+    _m-article.scss
+    _m-modules.scss | @import all modules compoments
+  /state
+    _s-article-list.scss
+    _s-article.scss
+    _s-state.scss | @import all state compoments
+  /variables
+    variables.scss
+    color.scss
+  _base.scss
+  _versions.scss
+  styles.scss | @import all compoments
+  styles-rtl.scss
 
-Let’s answer 4 questions about this block:
-Where does it appear? E.g.: On all the pages - base.html
-What is the purpose of it? 
-Website language navigation
-UX issues: How obvious is the language drop-down  and does it visually indicate the active language to someone that doesn’t understand a current language translation
+BEM Naming Convention
+  Languages
+  Language__current
+  Language__title
+  Language__title--icon
+  Language__dropdown-button
 
+  Language__list
+  Language-list__toggle
+  Language-list__item
 
-COLOR THEME VARIABLES
+E.G. VARIABLES
+  $de_york - #2A9B58;
+  $robin_egg_blue - #37BFBE;
+  $mandy - #EC3B3A;
+  $danube - #5F7AC9;
+  $roman - #EF9955;
+  $saffron - #F2B438;
+  $medium_violet - #B62A99;
 
-$de_york - #2A9B58;
-$robin_egg_blue - #37BFBE;
-$mandy - #EC3B3A;
-$danube - #5F7AC9;
-$roman - #EF9955;
-$saffron - #F2B438;
-$medium_violet - #B62A99;
+CSS - BEM Linting
+https://github.com/postcss/postcss-bem-linter
+- Enforce coding standard rules
 
-COMPRESSION 
-- Find a way to run COLLECTSTATIC on static - production 
-- Find a way to include compress tag - on production 
-
-Requirements Development 
+Gulp: Asset Bundling & Processing, Concatenating and Minifying
+Requirements Development:
 - gulpfile.js
-- package.json 
+- package.json
 
-Run npm install - to install packages 
-Gulp - default task styles 
-       Sourcemaps 
+Commands:
+- npm install
+- npm run build
 
-
-
+IMAGES
+  Image formats:
+  SVG, PNG, Sprites icons
+  Image compression
