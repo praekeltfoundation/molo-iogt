@@ -75,6 +75,7 @@ INSTALLED_APPS = [
     'wagtailmodeladmin',
     'wagtailmedia',
     'wagtail.contrib.settings',
+    'wagtail.contrib.wagtailsitemaps',
     'wagtailsurveys',
 
     'mptt',

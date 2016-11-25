@@ -59,6 +59,9 @@ urlpatterns += patterns(
                             namespace='molo.polls',
                             app_name='molo.polls')),
     url('^', include('django.contrib.auth.urls')),
+    url(r'^robots\.txt$', TemplateView.as_view(
+        template_name='robots.txt', content_type='text/plain')),
+    url(r'^sitemap\.xml$', 'wagtail.contrib.wagtailsitemaps.views.sitemap'),
     url(r'', include('molo.core.urls')),
     url(r'', include(wagtail_urls)),
 )
