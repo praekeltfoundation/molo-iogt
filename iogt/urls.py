@@ -42,6 +42,7 @@ urlpatterns += patterns(
         name='registration_done'),
     url(r'^profiles/', include('molo.profiles.urls',
         namespace='molo.profiles')),
+    url(r'^mote/', include('mote.urls', namespace='mote')),
 
     url(r'^commenting/', include('molo.commenting.urls',
         namespace='molo.commenting',
@@ -64,6 +65,7 @@ urlpatterns += patterns(
     url(r'^sitemap\.xml$', 'wagtail.contrib.wagtailsitemaps.views.sitemap'),
     url(r'', include('molo.core.urls')),
     url(r'', include(wagtail_urls)),
+
 )
 
 if settings.DEBUG:

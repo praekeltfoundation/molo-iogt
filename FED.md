@@ -10,7 +10,7 @@ Language__title--icon
 
 Language__dropdown-button
 
-Language__list 
+Language__list
 Language-list__toggle
 Language-list__item
 Active
@@ -22,7 +22,7 @@ _s-languages.scss
 
 Let’s answer 4 questions about this block:
 Where does it appear? E.g.: On all the pages - base.html
-What is the purpose of it? 
+What is the purpose of it?
 Website language navigation
 UX issues: How obvious is the language drop-down  and does it visually indicate the active language to someone that doesn’t understand a current language translation
 
@@ -37,17 +37,23 @@ $roman - #EF9955;
 $saffron - #F2B438;
 $medium_violet - #B62A99;
 
-COMPRESSION 
-- Find a way to run COLLECTSTATIC on static - production 
-- Find a way to include compress tag - on production 
+COMPRESSION
+- Find a way to run COLLECTSTATIC on static - production
+- Find a way to include compress tag - on production
 
-Requirements Development 
+Requirements Development
 - gulpfile.js
-- package.json 
+- package.json
 
-Run npm install - to install packages 
-Gulp - default task styles 
-       Sourcemaps 
+Run npm install - to install packages
+Gulp - default task styles
+       Sourcemaps
 
 
 
+
+
+MOTE INSTALL
+-   Clone https://github.com/praekelt/mote 
+-  pip install -e /Users/Admin/Sites/www/mote
+-  pip install -r /Users/Admin/Sites/www/mote/mote/tests/requirements/19.txt
