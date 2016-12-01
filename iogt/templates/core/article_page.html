@@ -44,6 +44,7 @@
       <span class="comment-counter__text">{% trans "comment" %}{{comment_count|pluralize}}</span>
     </a>
   {% endif %}
+    {% social_media_article %}
   <div class="article__content">
     {% for block in self.body %}
       {% if block.block_type == 'heading' %}
