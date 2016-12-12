@@ -13,5 +13,5 @@ class Command(BaseCommand):
         copy_tree(fromDirectory, toDirectory)
         call_command(
             'makemessages',
-            ignore=['ve/*', 'admin/*', 'wagtail*', 'models.py'])
+            ignore=['ve/*', 'admin/*', 'settings/*', 'wagtail*', 'models.py'])
         remove_tree(toDirectory)

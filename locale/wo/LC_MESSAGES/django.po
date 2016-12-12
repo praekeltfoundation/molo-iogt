@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-12 17:33+0200\n"
+"POT-Creation-Date: 2016-12-12 18:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,114 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: iogt/settings/base.py:194
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:197
-msgid "Zulu"
-msgstr ""
-
-#: iogt/settings/base.py:195
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:198
-msgid "Xhosa"
-msgstr ""
-
-#: iogt/settings/base.py:196
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:199
-msgid "Sotho"
-msgstr ""
-
-#: iogt/settings/base.py:197
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:200
-msgid "Venda"
-msgstr ""
-
-#: iogt/settings/base.py:198
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:201
-msgid "Tswana"
-msgstr ""
-
-#: iogt/settings/base.py:199
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:202
-msgid "Tsonga"
-msgstr ""
-
-#: iogt/settings/base.py:200
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
-msgid "Swati"
-msgstr ""
-
-#: iogt/settings/base.py:201
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:204
-msgid "Ndebele"
-msgstr ""
-
-#: iogt/settings/base.py:202
-msgid "Wolof"
-msgstr ""
-
-#: iogt/settings/base.py:203
-msgid "Yoruba"
-msgstr ""
-
-#: iogt/settings/base.py:204
-msgid "Igbo"
-msgstr ""
-
-#: iogt/settings/base.py:205
-msgid "Hausa"
-msgstr ""
-
-#: iogt/settings/base.py:206
-msgid "Amharic"
-msgstr ""
-
-#: iogt/settings/base.py:207
-msgid "Malay"
-msgstr ""
-
-#: iogt/settings/base.py:208
-msgid "Guarani"
-msgstr ""
-
-#: iogt/settings/base.py:209
-msgid "Gujarati"
-msgstr ""
-
-#: iogt/settings/base.py:210
-msgid "Filipino"
-msgstr ""
-
-#: iogt/settings/base.py:211
-msgid "N'ko"
-msgstr ""
-
-#: iogt/settings/base.py:212
-msgid "Syriac"
-msgstr ""
-
-#: iogt/settings/base.py:213
-msgid "Dhivehi"
-msgstr ""
-
-#: iogt/settings/base.py:214
-msgid "Berber"
-msgstr ""
-
-#: iogt/settings/base.py:215
-msgid "Kurdish"
-msgstr ""
-
-#: iogt/settings/base.py:216
-msgid "Aramaic"
-msgstr ""
-
-#: iogt/settings/base.py:217
-msgid "Creole Haitian"
-msgstr ""
-
-#: iogt/settings/base.py:218
-msgid "Kyrgyz"
-msgstr ""
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
