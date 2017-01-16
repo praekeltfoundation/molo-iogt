@@ -254,7 +254,6 @@ msgid "Live"
 msgstr ""
 
 #: iogt/templates/wagtailadmin/pages/listing/_page_title_explore.html:29
-#, fuzzy
 msgid "Move"
 msgstr "Zaidi"
 
@@ -319,7 +318,6 @@ msgid "view more"
 msgstr "Tazama zaidi"
 
 #: iogt/templates/comments/comments.html:5
-#, fuzzy
 msgid "Comments"
 msgstr "Maoni"
 
@@ -520,14 +518,6 @@ msgstr ""
 msgid "IoGT"
 msgstr ""
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-
 #: iogt/templates/core/section_page.html:65
 msgid "Prev"
 msgstr ""
@@ -711,7 +701,6 @@ msgid "New Password"
 msgstr ""
 
 #: iogt/temp_ve/profiles/forms.py:245
-#, fuzzy
 msgid "Confirm Password"
 msgstr "Nywila (neno la siri) mpya"
 
@@ -888,7 +877,6 @@ msgid "Edit My Profile"
 msgstr "Badili taarifa zangu"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:41
-#, fuzzy
 msgid "Change My Password"
 msgstr "Badili Nywila (neno ya siri)"
 
