@@ -19,6 +19,9 @@
   //General article ol, ul, li entered inside the Body P tags - no way of adding classes
   ol li, ul li {
     padding: 0 0 10px;
+    p {
+      margin: 0;
+    }
   }
   ol {
     padding: 0 30px;
@@ -49,6 +52,7 @@
     }
   }
 }
+
 
 
 .article__image  {
