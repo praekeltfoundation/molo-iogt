@@ -12,27 +12,44 @@
     padding: 5px 15px;
   }
 
-  p, ul li {
+  p {
     padding: 0 15px;
   }
 
-  .article-numbered-list {
-    list-style-type: none;
-    .article-numbered-list__item {
-      list-style-type: none;
+  //General article ol, ul, li entered inside the Body P tags - no way of adding classes
+  ol li, ul li {
+    padding: 0 0 10px;
+  }
+  ol {
+    padding: 0 30px;
+    li  {
+      list-style-type: decimal;
+    }
+  }
+  ul {
+    padding: 0 30px;
+    li {
+      list-style-type: disc;
     }
   }
 
-  //General article ol, ul, li
-  ol li  {
-    list-style-type: decimal;
-    padding: 0 15px 0 30px;
+
+  //Article ol, ul, li entered inside the  List and Numbered List Wagtail streamfields
+  .article-unordered-list {
+    .article-unordered-list__item {
+      list-style-type: disc;
+    }
   }
-  ul li {
-    list-style-position: inside;
-    list-style-type: disc;
+
+  .article-numbered-list {
+    padding: 0 15px;
+    .article-numbered-list__item {
+      list-style-type: none;
+      padding: 0 0 10px;
+    }
   }
 }
+
 
 .article__image  {
   display: block;
@@ -64,8 +81,9 @@
   &:before {
     content: counter(li)'.';
     counter-increment:li;
-    display: block;
+    display: inline-block;
     font-size: $font-x-large;
+    padding: 0 10px 0 0;
   }
 }
 
