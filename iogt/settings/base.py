@@ -431,6 +431,8 @@ FROM_EMAIL = environ.get('FROM_EMAIL', "support@moloproject.org")
 CONTENT_IMPORT_SUBJECT = environ.get(
     'CONTENT_IMPORT_SUBJECT', 'Molo Content Import')
 
+CUSTOM_UIP_HEADER = 'HTTP_X_IORG_FBS_UIP'
+
 GOOGLE_ANALYTICS = {}
 GOOGLE_ANALYTICS_IGNORE_PATH = [
     # health check used by marathon
