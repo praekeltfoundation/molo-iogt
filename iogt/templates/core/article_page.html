@@ -7,7 +7,8 @@
   {% image self.image width-320 class="article__image" %}
 {% endif %}
 <ul class="section-list-nav section-list-nav{{self.get_parent_section.get_effective_extra_style_hints}}">
-  <li class="section-list-nav__item section-list-nav__item--arrow-right"><a href="/">{% trans "Home" %}</a></li>
+  <li class="section-list-nav__item section-list-nav__item--arrow-right">
+    <a href="/">{% trans "Home" %}</a></li>
     {% if self.get_parent_section.get_parent_section %}
     {% with section=self.get_parent_section.get_parent_section %}
     <li class="section-list-nav__item  section-list-nav__item--arrow-right">
@@ -51,9 +52,9 @@
       {% elif block.block_type == 'image' %}
         {% image block.value width-320 class="article__image" %}
       {% elif block.block_type == 'list' %}
-        <ul>
+        <ul class="article-unordered-list">
           {% for item in block.value %}
-          <li>{{ item|handle_markdown }}</li>
+          <li class="article-unordered-list__item">{{ item|handle_markdown }}</li>
           {% endfor %}
         </ul>
       {% elif block.block_type == 'numbered_list' %}
