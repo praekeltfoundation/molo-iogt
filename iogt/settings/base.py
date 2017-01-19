@@ -197,6 +197,7 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('ve', _('Venda')),
     ('tn', _('Tswana')),
     ('ts', _('Tsonga')),
+    ('rw', _('Kinyarwanda')),
     ('ss', _('Swati')),
     ('nr', _('Ndebele')),
     ('wo', _('Wolof')),
@@ -254,6 +255,12 @@ EXTRA_LANG_INFO = {
         'code': 'ts',
         'name': 'Tsonga',
         'name_local': 'Tsonga'
+    },
+    'rw': {
+        'bidi': False,
+        'code': 'rw',
+        'name': 'Kinyarwanda',
+        'name_local': 'Kinyarwanda'
     },
     'ss': {
         'bidi': False,
