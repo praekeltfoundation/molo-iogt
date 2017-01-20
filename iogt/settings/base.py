@@ -72,10 +72,10 @@ INSTALLED_APPS = [
     'wagtail.wagtailsearch',
     'wagtail.wagtailredirects',
     'wagtail.wagtailforms',
-    'wagtailmodeladmin',
     'wagtailmedia',
     'wagtail.contrib.settings',
     'wagtail.contrib.wagtailsitemaps',
+    'wagtail.contrib.modeladmin',
     'wagtailsurveys',
 
     'mptt',
@@ -108,7 +108,6 @@ MIDDLEWARE_CLASSES = [
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
-    'wagtailmodeladmin.middleware.ModelAdminMiddleware',
 
     'molo.core.middleware.AdminLocaleMiddleware',
 
@@ -175,6 +174,18 @@ CELERYBEAT_SCHEDULE = {
     'rotate_content': {
         'task': 'molo.core.tasks.rotate_content',
         'schedule': crontab(minute=0),
+    },
+    'demote_articles': {
+        'task': 'molo.core.tasks.demote_articles',
+        'schedule': crontab(minute="*"),
+    },
+    'promote_articles': {
+        'task': 'molo.core.tasks.promote_articles',
+        'schedule': crontab(minute="*"),
+    },
+    'publish_pages': {
+        'task': 'molo.core.tasks.publish_scheduled_pages',
+        'schedule': crontab(minute='*'),
     },
 }
 
