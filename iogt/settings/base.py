@@ -208,6 +208,7 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('ve', _('Venda')),
     ('tn', _('Tswana')),
     ('ts', _('Tsonga')),
+    ('rw', _('Kinyarwanda')),
     ('ss', _('Swati')),
     ('nr', _('Ndebele')),
     ('wo', _('Wolof')),
@@ -265,6 +266,12 @@ EXTRA_LANG_INFO = {
         'code': 'ts',
         'name': 'Tsonga',
         'name_local': 'Tsonga'
+    },
+    'rw': {
+        'bidi': False,
+        'code': 'rw',
+        'name': 'Kinyarwanda',
+        'name_local': 'Kinyarwanda'
     },
     'ss': {
         'bidi': False,
@@ -441,6 +448,8 @@ ADMIN_LANGUAGE_CODE = environ.get('ADMIN_LANGUAGE_CODE', "en")
 FROM_EMAIL = environ.get('FROM_EMAIL', "support@moloproject.org")
 CONTENT_IMPORT_SUBJECT = environ.get(
     'CONTENT_IMPORT_SUBJECT', 'Molo Content Import')
+
+CUSTOM_UIP_HEADER = 'HTTP_X_IORG_FBS_UIP'
 
 GOOGLE_ANALYTICS = {}
 GOOGLE_ANALYTICS_IGNORE_PATH = [

@@ -8,6 +8,7 @@ html, body, input, textarea {
   font-size: 16px;
   line-height: 1.5;
   color: #757575;
+  overflow: auto;
 }
 
 a {
@@ -31,6 +32,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+  word-wrap: break-word
+}
+
 label {
   color: $victoria;
   display: block;
@@ -49,7 +54,7 @@ fieldset {
 input[type="text"],
 input[type="number"],
 input[type="password"],
-input[type="email"], 
+input[type="email"],
 input[type="tel"],
 input[type="search"] {
   border: 1px solid #b0b9bb;
@@ -68,7 +73,7 @@ select {
 textarea {
   width: 100%;
 }
- 
+
 .call-to-action__nav-item,
 input[type="submit"] {
   background: transparent;
