@@ -1,11 +1,15 @@
 ///Use Molo.commenting plugin
 .comments {
   background: #f0f0f0;
+  //Back CSS to update tags - to update comments plugin with BEM naming convention 
   a {
     color: #000;
   }
   p {
     padding: 0 10px;
+  }
+  .comment-list__item p {
+      padding: 0;
   }
   .call-to-action__nav-item--login {
     background: none;
@@ -17,6 +21,7 @@
   .call-to-action__nav-item--back {
     padding: 0 10px;
   }
+
 }
 
 .comment__form {
@@ -77,6 +82,7 @@
   padding: 5px 15px;
   position: relative;
   border-bottom: 1px solid #cfd4d5;
+
   &:first-child {
     border-top: 1px solid #cfd4d5;
   }
