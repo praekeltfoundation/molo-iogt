@@ -13,7 +13,7 @@
     {% if form.comment.errors %}{{ form.comment.errors }}{% endif %}
     {{ form.comment }}
     <input type="submit" name="submit" value="Comment">
-    <input type="submit" name="submit_anonymously" value="Add anonymously">
+    <input type="submit" name="submit_anonymously" value="Add anonymously" class="call-to-action__nav-item call-to-action__nav-item--text">
     {{ form.object_pk }}
 
     {{ form.content_type }}

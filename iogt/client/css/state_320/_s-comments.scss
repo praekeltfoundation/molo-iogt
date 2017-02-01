@@ -1,15 +1,25 @@
- 
+.comments {
+  p {
+    padding: 0 15px;
+  }
+}
+
 .comment__form {
   input[type="submit"] {
-    text-align: center;
     text-decoration: none;
     padding: 10px 0;
     margin: 5px 0;
     font-weight: normal;
+    text-align: center;
+    background: $victoria;
+    color: #fff;
   }
-
   input[name~="submit_anonymously"] {
+    background: transparent;
+    color: #757575;
+    display: inline-block;
     text-align: right;
+    padding: 0;
   }
 }
 
@@ -25,6 +35,15 @@
 .comment__text {
   display: none;
 }
+
+#comments-list {
+  .call-to-action__nav-item--response {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+  }
+}
+
 
 @each $name, $color in $color_list {
   .comment__form--#{$name} {

@@ -3,6 +3,11 @@
   text-decoration: none;
   font-size: $font-x-small;
 }
+.call-to-action--profile {
+  background: $victoria;
+  color: #fff;
+}
 
-
-
+.call-to-action--view-profile {
+  background: transparent;
+}

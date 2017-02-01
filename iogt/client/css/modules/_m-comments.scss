@@ -1,13 +1,12 @@
-///Use Molo.commenting plugin 
-///Style components - website specific 
+///Use Molo.commenting plugin
 .comments {
   background: #f0f0f0;
-  padding: 10px 15px;
   a {
     color: #000;
-    text-decoration: underline;
   }
-
+  p {
+    padding: 0 10px;
+  }
   .call-to-action__nav-item--login {
     background: none;
     font-weight: normal;
@@ -15,21 +14,27 @@
     padding: 0 0 10px;
     margin: 0;
   }
+  .call-to-action__nav-item--back {
+    padding: 0 10px;
+  }
 }
 
 .comment__form {
   input[type="submit"] {
-    background: transparent;
     text-align: left;
     margin: 0 0 10px;
     padding: 5px 0;
   }
 }
 
+.comment__post-message {
+  padding: 0 15px;
+}
+
 .comment__title,
 .comment__text {
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding:10px 15px 10px;
   color: #000;
 }
 
@@ -61,6 +66,11 @@
     text-transform: uppercase;
     width: auto;
   }
+
+  .pagination a {
+    color: #000;
+    text-decoration: underline;
+  }
 }
 
 .comment-list__item {
@@ -74,8 +84,3 @@
     border-bottom: none;
   }
 }
-
-.comment__description {
-  padding: 0;
-}
-

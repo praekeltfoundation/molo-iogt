@@ -1,27 +1,12 @@
 /**
-  Add independent call-to-action__nav-item classes and class modifiers  
+  Add independent call-to-action__nav-item classes and class modifiers
 */
 
-// Comments
-.call-to-action__nav-item--response {
-  position: absolute;
-  right: 15px;
-  top: 5px;
-  text-decoration: none;
-  margin: 0;
-}
-//Profiles
-.call-to-action--profile {
-  background: $victoria;
-  color: #fff;
-}
-.call-to-action--view-profile {
-  background: transparent;
-}
 .call-to-action__nav-item--challenge {
   color: #fff;
   font-size: $font-large;
 }
+
 .call-to-action__nav-item--login {
   background: #fff;
   color: $victoria;
@@ -40,15 +25,24 @@
   text-decoration: none;
 }
 
-//Section 
+//Comments Report Buttons
+.call-to-action__nav-item--response {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: $font-small;
+  margin: 0;
+}
+
+//Section
+.call-to-action__nav-item--back,
 .call-to-action__nav-item--back-home {
   position: relative;
   width: auto;
   &:before {
     display: inline-block;
     padding: 0 5px 10px;
-    font-size: $font-large;
-    @media only screen and (min-width: 320px) { 
+    font-size: $font-x-small;
+    @media only screen and (min-width: 320px) {
       content: "<";
     }
     @media only screen and (min-width: 490px) {
