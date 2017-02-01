@@ -67,7 +67,6 @@ msgstr "Maoni yamesitishwa kwa makala hii"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:23
 #: iogt/temp_ve/commenting/templates/comments/comments.html:7
-#, fuzzy
 msgid "Comments"
 msgstr "Maoni"
 
@@ -478,7 +477,6 @@ msgid "New Password"
 msgstr ""
 
 #: iogt/temp_ve/profiles/forms.py:277
-#, fuzzy
 msgid "Confirm Password"
 msgstr "Nywila (neno la siri) mpya"
 
@@ -664,7 +662,6 @@ msgid "Edit My Profile"
 msgstr "Badili taarifa zangu"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:44
-#, fuzzy
 msgid "Change My Password"
 msgstr "Badili Nywila (neno ya siri)"
 
@@ -823,7 +820,6 @@ msgstr ""
 msgid "Back to homepage"
 msgstr ""
 
-#, fuzzy
 #~ msgid "Move"
 #~ msgstr "Zaidi"
 
