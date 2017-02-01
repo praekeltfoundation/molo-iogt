@@ -1,16 +1,12 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 12:37+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-10-20 13:02+0000\n"
+"Last-Translator: Lebohang <lebo@praekeltfoundation.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: ts\n"
+"Language: fre_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -194,12 +190,12 @@ msgstr ""
 #: iogt/templates/500.html:12
 #: iogt/templates/500.html:16
 msgid "Internal server error"
-msgstr ""
+msgstr "Erreur interne du serveur"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr ""
+msgstr "Désolé, une erreur est survenue. Veuillez réessayer plus tard."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
@@ -333,7 +329,7 @@ msgstr ""
 #: iogt/templates/search/search_results.html:47
 #: iogt/templates/search/search_results.html:49
 msgid "Search"
-msgstr ""
+msgstr "Rechercher"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
 #: iogt/templates/search/search_results.html:52
@@ -343,7 +339,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
 #: iogt/templates/search/search_results.html:46
 msgid "I am looking for"
-msgstr ""
+msgstr "Je cherche"
 
 #: iogt/temp_ve/core/views.py:92
 msgid "That page is not translatable."
@@ -777,11 +773,11 @@ msgstr ""
 
 #: iogt/templates/core/tags/latest_listing_homepage.html:4
 msgid "Recommended"
-msgstr ""
+msgstr "Plus de détails à propos de"
 
 #: iogt/templates/core/tags/section_listing_homepage.html:45
 msgid "More"
-msgstr ""
+msgstr "En savoir plus"
 
 #: iogt/templates/polls/poll_page.html:7
 #: iogt/templates/polls/poll_page_in_section.html:8
@@ -819,3 +815,57 @@ msgstr ""
 #: iogt/templates/search/search_results.html:55
 msgid "Back to homepage"
 msgstr ""
+
+#~ msgid "Zulu"
+#~ msgstr "Zulu"
+
+#~ msgid "Xhosa"
+#~ msgstr "Xhosa"
+
+#~ msgid "Sotho"
+#~ msgstr "Sotho"
+
+#~ msgid "Venda"
+#~ msgstr "Venda"
+
+#~ msgid "Tswana"
+#~ msgstr "Tswana"
+
+#~ msgid "Tsonga"
+#~ msgstr "Tsonga"
+
+#~ msgid "Swati"
+#~ msgstr "Swati"
+
+#~ msgid "Ndebele"
+#~ msgstr "Ndebele"
+
+#~ msgid "Wolof"
+#~ msgstr "Wolof"
+
+#~ msgid "Yoruba"
+#~ msgstr "Yoruba"
+
+#~ msgid "Igbo"
+#~ msgstr "Igbo"
+
+#~ msgid "Hausa"
+#~ msgstr "Hausa"
+
+#~ msgid "Amharic"
+#~ msgstr "Amharic"
+
+#~ msgid "Malay"
+#~ msgstr "Malay"
+
+#~ msgid "Guarani"
+#~ msgstr "Guarani"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gujarati"
+
+#~ msgid "Filipino"
+#~ msgstr "Filipino"
+
+#~ msgid "N'ko"
+#~ msgstr "N'ko"

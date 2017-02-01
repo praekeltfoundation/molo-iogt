@@ -1,16 +1,12 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 12:37+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-08-25 11:37+0000\n"
+"Last-Translator: tsepo <tsepo@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: ts\n"
+"Language: bur_MM\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -200,6 +196,7 @@ msgstr ""
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
 msgstr ""
+"ဝမ်းနည်းပါသည်၊ တစ်ခုခု မှားသွားပံုရသည်။ ေကျးဇူးြပု􀆱ပီး မ􀆭ကာမီတွင် ထပ်စမ်းပါ။"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
@@ -325,7 +322,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
 #: iogt/templates/search/search_block.html:6
 msgid "SEARCH"
-msgstr ""
+msgstr "􀇹ှာပါ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
@@ -333,17 +330,17 @@ msgstr ""
 #: iogt/templates/search/search_results.html:47
 #: iogt/templates/search/search_results.html:49
 msgid "Search"
-msgstr ""
+msgstr "􀇹ှာပါ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
 #: iogt/templates/search/search_results.html:52
 msgid "No search results for "
-msgstr ""
+msgstr "􀇹ှာေနသည့်အတွက် ရလဒ် မ􀇹ှိပါ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
 #: iogt/templates/search/search_results.html:46
 msgid "I am looking for"
-msgstr ""
+msgstr "က􀈁􀇳်ုပ် 􀇹ှာေနသည်မှာ"
 
 #: iogt/temp_ve/core/views.py:92
 msgid "That page is not translatable."
