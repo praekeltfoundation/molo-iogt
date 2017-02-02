@@ -228,6 +228,9 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('arc', _('Aramaic')),
     ('ht', _('Creole Haitian')),
     ('ky', _('Kyrgyz')),
+    ('id', _('Bahasa')),
+    ('my', _('Burmese')),
+    ('tg', _('Tajik')),
 ]
 
 EXTRA_LANG_INFO = {
@@ -386,6 +389,24 @@ EXTRA_LANG_INFO = {
         'code': 'ky',
         'name': 'Kyrgyz',
         'name_local': 'Kreyòl ayisyen'
+    },
+    'id': {
+        'bidi': False,
+        'code': 'id',
+        'name': 'Bahasa',
+        'name_local': 'Bahasa'
+    },
+    'my': {
+        'bidi': False,
+        'code': 'bur_MM',
+        'name': 'Burmese',
+        'name_local': 'Burmese'
+    },
+    'tg': {
+        'bidi': False,
+        'code': 'tg',
+        'name': 'Tajik',
+        'name_local': 'Tajik'
     },
 }
 
