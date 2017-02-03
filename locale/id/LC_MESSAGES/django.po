@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 12:37+0000\n"
-"PO-Revision-Date: 2017-02-02 20:20+0000\n"
+"PO-Revision-Date: 2017-02-02 18:57+0000\n"
 "Last-Translator: Botswang <botswang@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: spa_ES\n"
+"Language: ind_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1486066855.594515\n"
+"X-POOTLE-MTIME: 1486061866.113909\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -35,15 +35,13 @@ msgstr ""
 #: iogt/temp_ve/commenting/templates/comments/comment.html:8
 #: iogt/temp_ve/commenting/views.py:48
 msgid "Anonymous"
-msgstr "Anónimo"
+msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:16
 msgid ""
 "This comment has been removed by the community. Please read our platform "
 "rules."
 msgstr ""
-"Este comentario ha sido eliminado por la comunidad. por favor, lea las "
-"normas de participación en este sitio."
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:21
 msgid "Report"
@@ -55,20 +53,20 @@ msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:6
 msgid "Share a Comment"
-msgstr "Comentar"
+msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
 msgid "Log in to comment"
-msgstr "Inicie sesión para comentar"
+msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:18
 msgid "Commenting on this article is currently disabled"
-msgstr "La opción de comentar este artículo no está disponible actualmente."
+msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:23
 #: iogt/temp_ve/commenting/templates/comments/comments.html:7
 msgid "Comments"
-msgstr "Comentar"
+msgstr "Komentar"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:26
 #: iogt/templates/core/article_page.html:44
@@ -78,11 +76,11 @@ msgstr "Comentar"
 #: iogt/templates/core/tags/section_listing_homepage.html:38
 #: iogt/templates/search/search_results.html:28
 msgid "comment"
-msgstr "Comentar"
+msgstr "Komentar"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:41
 msgid "view more comments"
-msgstr "Ver más"
+msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:7
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:6
@@ -111,7 +109,7 @@ msgstr ""
 #: iogt/templates/polls/free_text_detail.html:15
 #: iogt/templates/polls/results.html:31
 msgid "Home"
-msgstr "Inicio"
+msgstr "Rumah"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:38
 #: iogt/temp_ve/commenting/templates/comments/reply.html:18
@@ -121,7 +119,7 @@ msgstr ""
 #: iogt/temp_ve/commenting/templates/comments/preview.html:40
 #: iogt/temp_ve/commenting/templates/comments/reply.html:20
 msgid "log in"
-msgstr "Iniciar sesión"
+msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:41
 #: iogt/temp_ve/commenting/templates/comments/reply.html:21
@@ -149,11 +147,11 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 #: iogt/templates/403.html:8
 msgid "Access Denied"
-msgstr "Acceso no autorizado"
+msgstr "Akses Ditolak"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 msgid "You do not have permssion to access this site."
-msgstr "No tiene permiso de acceso a esta página"
+msgstr "Anda tidak memiliki izin untuk mengakses situs ini."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
 #: iogt/templates/403_csrf.html:7
@@ -180,29 +178,29 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
 #: iogt/templates/404.html:8
 msgid "Page not found"
-msgstr "Página no encontrada"
+msgstr "Halaman tidak ditemukan"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
 #: iogt/templates/404.html:9
 msgid "Sorry, this page could not be found."
-msgstr "Lo siento. No encontramos esa página."
+msgstr "Kami tidak dapat menemukan halaman yang kamu cari, maaf."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
 #: iogt/templates/500.html:12
 #: iogt/templates/500.html:16
 msgid "Internal server error"
-msgstr "Error interno del servidor"
+msgstr "Terjadi Kesalahan Server"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr "Lo sentimos, parece que hay un error. Vuelve a intentarlo más tarde."
+msgstr "Maaf, tampaknya ada kesalahan. Silahkan coba lagi nanti."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
 msgid "Site Language:"
-msgstr "Idioma"
+msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
 msgid "Latest"
@@ -228,8 +226,6 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
 msgid "Your username and password does not match. Please try again."
 msgstr ""
-"Su nombre de usuario y contraseña no coinciden. Por favor, inténtelo de "
-"nuevo."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
 #: iogt/temp_ve/profiles/forms.py:76
@@ -241,13 +237,13 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
 #: iogt/temp_ve/profiles/templates/registration/login.html:30
 msgid "4-digit pin"
-msgstr "Contraseña de 4 números"
+msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:25
 #: iogt/temp_ve/profiles/templates/registration/login.html:37
 #: iogt/templates/registration/password_reset_form.html:4
 msgid "Forgotten your password?"
-msgstr "¿Olvidó su contraseña?"
+msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
 msgid "Your password has been set.  You may go ahead and log in now."
@@ -257,9 +253,8 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/registration/login.html:5
 #: iogt/temp_ve/profiles/templates/registration/login.html:34
 #: iogt/templates/registration/password_reset_complete.html:8
-
 msgid "Log in"
-msgstr "Iniciar sesión"
+msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
 #: iogt/templates/registration/password_reset_confirm.html:6
@@ -281,7 +276,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
 #: iogt/templates/registration/password_reset_confirm.html:19
 msgid "Change my password"
-msgstr "Cambiar mi contraseña"
+msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
 msgid ""
@@ -317,7 +312,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
 #: iogt/templates/registration/password_reset_form.html:14
 msgid "Reset my password"
-msgstr "Reiniciar mi contraseña"
+msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
 msgid "Looking for something?"
@@ -326,7 +321,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
 #: iogt/templates/search/search_block.html:6
 msgid "SEARCH"
-msgstr "Buscar"
+msgstr "Cari"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
@@ -334,17 +329,17 @@ msgstr "Buscar"
 #: iogt/templates/search/search_results.html:47
 #: iogt/templates/search/search_results.html:49
 msgid "Search"
-msgstr "Buscar"
+msgstr "Cari"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
 #: iogt/templates/search/search_results.html:52
 msgid "No search results for "
-msgstr "Sin resultados de búsqueda para"
+msgstr "Tidak ada hasil pencarian"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
 #: iogt/templates/search/search_results.html:46
 msgid "I am looking for"
-msgstr "Estoy buscando"
+msgstr "Saya Mencari"
 
 #: iogt/temp_ve/core/views.py:92
 msgid "That page is not translatable."
@@ -366,7 +361,7 @@ msgstr ""
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
 #: iogt/templates/polls/includes/poll_free_text_form.html:16
 msgid "Submit"
-msgstr "Enviar"
+msgstr ""
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:17
 #: iogt/templates/polls/includes/poll_free_text_form.html:18
@@ -471,7 +466,7 @@ msgstr ""
 #: iogt/temp_ve/profiles/forms.py:246
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:25
 msgid "Old Password"
-msgstr "Contraseña antigua"
+msgstr ""
 
 #: iogt/temp_ve/profiles/forms.py:261
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:32
@@ -494,11 +489,11 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:27
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
 msgid "(e.g. 2086)"
-msgstr "(Ej: 2086)"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:38
 msgid "Confirm New Password"
-msgstr "Confirme la nueva contraseña"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:42
 #: iogt/temp_ve/profiles/templates/profiles/done.html:16
@@ -517,15 +512,15 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/profiles/done.html:18
 #: iogt/temp_ve/usermetadata/templates/persona.html:21
 msgid "Skip"
-msgstr "Pasar"
+msgstr "Lewatkan"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:10
 msgid "Type new display name:"
-msgstr "Escriba un nuevo nombre de usuario"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:15
 msgid "Update your date of birth:"
-msgstr "Actualice su fecha de nacimiento"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:21
 msgid "Update your mobile number:"
@@ -562,37 +557,37 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/profiles/register.html:73
 #: iogt/temp_ve/profiles/templates/registration/login.html:9
 msgid "Register"
-msgstr "Registrarse"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:9
 msgid "Already a member?"
-msgstr "¿Ya tiene una cuenta?"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:10
 #: iogt/templates/base.html:182
 msgid "Login"
-msgstr "Iniciar sesión"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:14
 #: iogt/temp_ve/profiles/templates/registration/login.html:8
 msgid "Not a member yet?"
-msgstr "¿Aún no está registrado?"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:15
 msgid "Join us by signing up below."
-msgstr "Cree una cuenta registrándose aquí."
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:21
 msgid "Choose a username"
-msgstr "Elija un nombre de usuario"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:27
 msgid "Choose a 4-digit pin"
-msgstr "Elija una contraseña de 4 números"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:30
 msgid "e.g. 2086"
-msgstr "(Ej: 2086)"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:35
 msgid "Enter your mobile number"
@@ -612,7 +607,7 @@ msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:70
 msgid "I accept the Terms and Conditions"
-msgstr "Acepto los Términos y Condiciones"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:5
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:32
@@ -641,7 +636,7 @@ msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:15
 msgid "Date of Birth: "
-msgstr "Fecha de nacimiento"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:20
 msgid " Not set."
@@ -657,11 +652,11 @@ msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:42
 msgid "log out"
-msgstr "Cerrar sesión"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:43
 msgid "Edit My Profile"
-msgstr "Editar mi perfil"
+msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:44
 msgid "Change My Password"
@@ -670,8 +665,6 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/registration/login.html:20
 msgid "Your username and password do not match. Please try again."
 msgstr ""
-"Su nombre de usuario y contraseña no coinciden. Por favor, inténtelo de "
-"nuevo."
 
 #: iogt/temp_ve/profiles/templates/registration/login.html:32
 msgid "Eg.: 2086"
@@ -691,7 +684,7 @@ msgstr ""
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Next Question"
-msgstr "Siguiente"
+msgstr "Berikutnya"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Submit Survey"
@@ -699,12 +692,12 @@ msgstr ""
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:31
 msgid "You have already completed this survey."
-msgstr "Usted ya ha completado esta encuesta"
+msgstr ""
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:34
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
 msgid "Back to Home page"
-msgstr "Inicio"
+msgstr "Rumah"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:39
 msgid "Please log in to take this survey"
@@ -739,11 +732,11 @@ msgstr ""
 
 #: iogt/templates/base.html:104
 msgid "Language"
-msgstr "Idioma"
+msgstr ""
 
 #: iogt/templates/base.html:109
 msgid "Change Language"
-msgstr "Cambiar idioma"
+msgstr "Ganti"
 
 #: iogt/templates/base.html:130
 msgid "IoGT"
@@ -751,40 +744,40 @@ msgstr ""
 
 #: iogt/templates/base.html:136
 msgid "Join"
-msgstr "Regístrate"
+msgstr "Gabung"
 
 #: iogt/templates/base.html:138
 #: iogt/templates/base.html:185
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 #: iogt/templates/base.html:141
 msgid "Menu"
-msgstr "Menú"
+msgstr "Menu"
 
 #: iogt/templates/base.html:194
 msgid "Change your language"
-msgstr "Cambiar idioma"
+msgstr "Ganti"
 
 #: iogt/templates/core/section_page.html:65
 msgid "Prev"
-msgstr "Anterior"
+msgstr "Sebelumnya"
 
 #: iogt/templates/core/section_page.html:98
 msgid "Next"
-msgstr "Siguiente"
+msgstr "Berikutnya"
 
 #: iogt/templates/core/section_page.html:141
 msgid "View More"
-msgstr "Ver más"
+msgstr "Lainnya"
 
 #: iogt/templates/core/tags/latest_listing_homepage.html:4
 msgid "Recommended"
-msgstr "Recomendado"
+msgstr "Rekomendasi"
 
 #: iogt/templates/core/tags/section_listing_homepage.html:45
 msgid "More"
-msgstr "Más"
+msgstr "Lainnya"
 
 #: iogt/templates/polls/poll_page.html:7
 #: iogt/templates/polls/poll_page_in_section.html:8
@@ -803,7 +796,7 @@ msgstr ""
 
 #: iogt/templates/registration/password_reset_done.html:8
 msgid "Back to home page"
-msgstr "Inicio"
+msgstr "Rumah"
 
 #: iogt/templates/registration/password_reset_form.html:6
 msgid ""
@@ -813,7 +806,7 @@ msgstr ""
 
 #: iogt/templates/search/search_block.html:5
 msgid "Search the site..."
-msgstr "Buscar en el sitio..."
+msgstr "Cari di situs..."
 
 #: iogt/templates/search/search_results.html:7
 msgid "Search Results for:"
@@ -821,4 +814,4 @@ msgstr ""
 
 #: iogt/templates/search/search_results.html:55
 msgid "Back to homepage"
-msgstr "Inicio"
+msgstr "Rumah"

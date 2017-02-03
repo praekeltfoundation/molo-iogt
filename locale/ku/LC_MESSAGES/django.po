@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 12:37+0000\n"
-"PO-Revision-Date: 2016-08-25 11:50+0000\n"
-"Last-Translator: tsepo <tsepo@praekelt.com>\n"
+"PO-Revision-Date: 2017-02-02 19:20+0000\n"
+"Last-Translator: Botswang <botswang@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kur_TR\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1485935090.268670\n"
+"X-POOTLE-MTIME: 1486063236.486169\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -35,13 +35,14 @@ msgstr ""
 #: iogt/temp_ve/commenting/templates/comments/comment.html:8
 #: iogt/temp_ve/commenting/views.py:48
 msgid "Anonymous"
-msgstr ""
+msgstr "نەناسراو"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:16
 msgid ""
 "This comment has been removed by the community. Please read our platform "
 "rules."
 msgstr ""
+"ئەم سەرنجە لە لایەن کۆمەڵەوە سڕاوەتەوە، تکایە یاساکانی سەکۆکەمان بخوێنەوە"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:21
 msgid "Report"
@@ -53,20 +54,20 @@ msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:6
 msgid "Share a Comment"
-msgstr ""
+msgstr "سەرنجێک بخەڕوو"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
 msgid "Log in to comment"
-msgstr ""
+msgstr "بۆ سەرنج نووسین، بچۆ ژوورەوە"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:18
 msgid "Commenting on this article is currently disabled"
-msgstr ""
+msgstr "سەرنج نووسین لەسەر ئەم بابەتە لە ئێستادا لە کارخراوە"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:23
 #: iogt/temp_ve/commenting/templates/comments/comments.html:7
 msgid "Comments"
-msgstr ""
+msgstr "سەرنج"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:26
 #: iogt/templates/core/article_page.html:44
@@ -76,11 +77,11 @@ msgstr ""
 #: iogt/templates/core/tags/section_listing_homepage.html:38
 #: iogt/templates/search/search_results.html:28
 msgid "comment"
-msgstr ""
+msgstr "سەرنج"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:41
 msgid "view more comments"
-msgstr ""
+msgstr "زیاتر ببینە"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:7
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:6
@@ -109,7 +110,7 @@ msgstr ""
 #: iogt/templates/polls/free_text_detail.html:15
 #: iogt/templates/polls/results.html:31
 msgid "Home"
-msgstr ""
+msgstr "لاپەڕەی سەرەکی"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:38
 #: iogt/temp_ve/commenting/templates/comments/reply.html:18
@@ -119,7 +120,7 @@ msgstr ""
 #: iogt/temp_ve/commenting/templates/comments/preview.html:40
 #: iogt/temp_ve/commenting/templates/comments/reply.html:20
 msgid "log in"
-msgstr ""
+msgstr "چوونە ژوورەوە"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:41
 #: iogt/temp_ve/commenting/templates/comments/reply.html:21
@@ -147,11 +148,11 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 #: iogt/templates/403.html:8
 msgid "Access Denied"
-msgstr ""
+msgstr "رێگات پێنەدرا"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 msgid "You do not have permssion to access this site."
-msgstr ""
+msgstr "ڕێگەپێدراو نیت بۆ چوونە ناو ئەم سایتە."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
 #: iogt/templates/403_csrf.html:7
@@ -178,29 +179,33 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
 #: iogt/templates/404.html:8
 msgid "Page not found"
-msgstr ""
+msgstr "پەڕەکە نەدۆزرایەوە"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
 #: iogt/templates/404.html:9
 msgid "Sorry, this page could not be found."
 msgstr ""
+"بە بەشداریکردن لە ئینتەرنێت بۆ شتی باش، منداڵ و نەوجەوانان و دایکان و باوکان "
+"و ئەندامانی تری خێزان و مەشقپێکەرانی تەندروستی وبەخێوکەران و کۆمەڵگە دەتوانن "
+"بەرهەمی باش و خۆماڵی و هاوچەرخیان دەستبکەوێت لە ناو مۆبایلەکانیاندا "
+"لەهەرکاتێکدا بەخۆڕایی."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
 #: iogt/templates/500.html:12
 #: iogt/templates/500.html:16
 msgid "Internal server error"
-msgstr ""
+msgstr "کێشەی سێرڤەری ناوخۆیی"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr ""
+msgstr "بە داخەوە، پێدەچێت کێشەیەک هەبێت، تکایە دووبارە هەوڵ بدەوە"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
 msgid "Site Language:"
-msgstr ""
+msgstr "زمان"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
 msgid "Latest"
@@ -225,7 +230,7 @@ msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
 msgid "Your username and password does not match. Please try again."
-msgstr ""
+msgstr "ناوی بەکاربەر و وشەی نهێنی یەک ناگرنەوە، تکایە دووبارە هەوڵ بدەوە"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
 #: iogt/temp_ve/profiles/forms.py:76
@@ -237,7 +242,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
 #: iogt/temp_ve/profiles/templates/registration/login.html:30
 msgid "4-digit pin"
-msgstr ""
+msgstr "کۆدی ٤ ژمارەیی"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:25
 #: iogt/temp_ve/profiles/templates/registration/login.html:37
@@ -254,7 +259,7 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/registration/login.html:34
 #: iogt/templates/registration/password_reset_complete.html:8
 msgid "Log in"
-msgstr ""
+msgstr "چوونە ژوورەوە"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
 #: iogt/templates/registration/password_reset_confirm.html:6
@@ -271,12 +276,12 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
 #: iogt/templates/registration/password_reset_confirm.html:15
 msgid "Confirm password:"
-msgstr ""
+msgstr "پشتڕاستکردنەوەی وشەی نهێنیی نوێ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
 #: iogt/templates/registration/password_reset_confirm.html:19
 msgid "Change my password"
-msgstr ""
+msgstr "گۆڕینی وشەی نهێنیی"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
 msgid ""
@@ -312,7 +317,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
 #: iogt/templates/registration/password_reset_form.html:14
 msgid "Reset my password"
-msgstr ""
+msgstr "گەڕاندنەوەی وشەی نهێنی"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
 msgid "Looking for something?"
@@ -321,7 +326,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
 #: iogt/templates/search/search_block.html:6
 msgid "SEARCH"
-msgstr ""
+msgstr "گەڕان"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
@@ -329,17 +334,17 @@ msgstr ""
 #: iogt/templates/search/search_results.html:47
 #: iogt/templates/search/search_results.html:49
 msgid "Search"
-msgstr ""
+msgstr "گەڕان"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
 #: iogt/templates/search/search_results.html:52
 msgid "No search results for "
-msgstr ""
+msgstr "گەڕان هیچ ئەنجامێکی نەدۆزییەوە بۆ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
 #: iogt/templates/search/search_results.html:46
 msgid "I am looking for"
-msgstr ""
+msgstr "دەگەڕێم بە دوای"
 
 #: iogt/temp_ve/core/views.py:92
 msgid "That page is not translatable."
@@ -361,7 +366,7 @@ msgstr ""
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
 #: iogt/templates/polls/includes/poll_free_text_form.html:16
 msgid "Submit"
-msgstr ""
+msgstr "ناردن"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:17
 #: iogt/templates/polls/includes/poll_free_text_form.html:18
@@ -466,7 +471,7 @@ msgstr ""
 #: iogt/temp_ve/profiles/forms.py:246
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:25
 msgid "Old Password"
-msgstr ""
+msgstr "وشەی نهێنیی پێشووتر"
 
 #: iogt/temp_ve/profiles/forms.py:261
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:32
@@ -489,11 +494,11 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:27
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
 msgid "(e.g. 2086)"
-msgstr ""
+msgstr "(بۆ نموونە ٢٠٨٦)"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:38
 msgid "Confirm New Password"
-msgstr ""
+msgstr "پشتڕاستکردنەوەی وشەی نهێنیی نوێ"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:42
 #: iogt/temp_ve/profiles/templates/profiles/done.html:16
@@ -512,15 +517,15 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/profiles/done.html:18
 #: iogt/temp_ve/usermetadata/templates/persona.html:21
 msgid "Skip"
-msgstr ""
+msgstr "جێی بهێڵە"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:10
 msgid "Type new display name:"
-msgstr ""
+msgstr "نازناوێکی نوێ بنووسە"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:15
 msgid "Update your date of birth:"
-msgstr ""
+msgstr "بەرواری لە دایکبوونت نوێ بکەوە"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:21
 msgid "Update your mobile number:"
@@ -557,37 +562,37 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/profiles/register.html:73
 #: iogt/temp_ve/profiles/templates/registration/login.html:9
 msgid "Register"
-msgstr ""
+msgstr "خۆتۆمار کردن"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:9
 msgid "Already a member?"
-msgstr ""
+msgstr "ئایا ئەندامیت؟"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:10
 #: iogt/templates/base.html:182
 msgid "Login"
-msgstr ""
+msgstr "چوونە ژوورەوە"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:14
 #: iogt/temp_ve/profiles/templates/registration/login.html:8
 msgid "Not a member yet?"
-msgstr ""
+msgstr "هێشتا ئەندام نیت؟"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:15
 msgid "Join us by signing up below."
-msgstr ""
+msgstr "بەشداریکردن"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:21
 msgid "Choose a username"
-msgstr ""
+msgstr "ناوێکی بەکاربەر هەڵبژێرە"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:27
 msgid "Choose a 4-digit pin"
-msgstr ""
+msgstr "کۆدێکی ٤ ژمارەیی هەڵبژێرە"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:30
 msgid "e.g. 2086"
-msgstr ""
+msgstr "(بۆ نموونە ٢٠٨٦)"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:35
 msgid "Enter your mobile number"
@@ -603,20 +608,20 @@ msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:66
 msgid "Please accept the T&amp;Cs in order to complete the registration"
-msgstr ""
+msgstr "من مەرج و بڕگەکانم قبووڵە"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:70
 msgid "I accept the Terms and Conditions"
-msgstr ""
+msgstr "من مەرج و بڕگەکانم قبووڵە"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:5
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:32
 msgid "Reset PIN"
-msgstr ""
+msgstr "گەڕاندنەوەی وشەی نهێنی"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:5
 msgid "PIN Changed"
-msgstr ""
+msgstr "گۆڕینی وشەی نهێنیی"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:7
 msgid "Your PIN has been changed sucessfully."
@@ -632,15 +637,15 @@ msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:10
 msgid "As you type your name comment will appear as:"
-msgstr ""
+msgstr "کاتێک ناوی خۆت دەنووسی، سەرنجەکەت دەردەکەوەی وەک:"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:15
 msgid "Date of Birth: "
-msgstr ""
+msgstr "بەرواری لە دایکبوون"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:20
 msgid " Not set."
-msgstr ""
+msgstr "رێکنەخراو"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:27
 msgid "Mobile number:"
@@ -652,11 +657,11 @@ msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:42
 msgid "log out"
-msgstr ""
+msgstr "چوونە دەرەوە"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:43
 msgid "Edit My Profile"
-msgstr ""
+msgstr "رێکخستنی پرۆفایلەکەم"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:44
 msgid "Change My Password"
@@ -664,7 +669,7 @@ msgstr ""
 
 #: iogt/temp_ve/profiles/templates/registration/login.html:20
 msgid "Your username and password do not match. Please try again."
-msgstr ""
+msgstr "ناوی بەکاربەر و وشەی نهێنی یەک ناگرنەوە، تکایە دووبارە هەوڵ بدەوە"
 
 #: iogt/temp_ve/profiles/templates/registration/login.html:32
 msgid "Eg.: 2086"
@@ -684,7 +689,7 @@ msgstr ""
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Next Question"
-msgstr ""
+msgstr "دواتر"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Submit Survey"
@@ -692,12 +697,12 @@ msgstr ""
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:31
 msgid "You have already completed this survey."
-msgstr ""
+msgstr "تۆ ئەم رووپێوییەت تەواو کردووە"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:34
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
 msgid "Back to Home page"
-msgstr ""
+msgstr "لاپەڕەی سەرەکی"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:39
 msgid "Please log in to take this survey"
@@ -732,11 +737,11 @@ msgstr ""
 
 #: iogt/templates/base.html:104
 msgid "Language"
-msgstr ""
+msgstr "زمان"
 
 #: iogt/templates/base.html:109
 msgid "Change Language"
-msgstr ""
+msgstr "گۆڕینی زمان"
 
 #: iogt/templates/base.html:130
 msgid "IoGT"
@@ -744,40 +749,40 @@ msgstr ""
 
 #: iogt/templates/base.html:136
 msgid "Join"
-msgstr ""
+msgstr "بەشداریکردن"
 
 #: iogt/templates/base.html:138
 #: iogt/templates/base.html:185
 msgid "Profile"
-msgstr ""
+msgstr "پرۆفایل"
 
 #: iogt/templates/base.html:141
 msgid "Menu"
-msgstr ""
+msgstr "لیست"
 
 #: iogt/templates/base.html:194
 msgid "Change your language"
-msgstr ""
+msgstr "گۆڕینی زمان"
 
 #: iogt/templates/core/section_page.html:65
 msgid "Prev"
-msgstr ""
+msgstr "پێشتر"
 
 #: iogt/templates/core/section_page.html:98
 msgid "Next"
-msgstr ""
+msgstr "دواتر"
 
 #: iogt/templates/core/section_page.html:141
 msgid "View More"
-msgstr ""
+msgstr "زیاتر ببینە"
 
 #: iogt/templates/core/tags/latest_listing_homepage.html:4
 msgid "Recommended"
-msgstr ""
+msgstr "پێشنیازکراو"
 
 #: iogt/templates/core/tags/section_listing_homepage.html:45
 msgid "More"
-msgstr "Daha fazlası"
+msgstr "زیاتر ببینە"
 
 #: iogt/templates/polls/poll_page.html:7
 #: iogt/templates/polls/poll_page_in_section.html:8
@@ -796,17 +801,19 @@ msgstr ""
 
 #: iogt/templates/registration/password_reset_done.html:8
 msgid "Back to home page"
-msgstr ""
+msgstr "لاپەڕەی سەرەکی"
 
 #: iogt/templates/registration/password_reset_form.html:6
 msgid ""
 "Enter your email address below, and we'll email instructions for setting a "
 "new one."
 msgstr ""
+"ئیمەیڵەکەت لێرە داخڵ بکە، و ئێمە رێنماییەکانی رێکخستنی دانەیەکت نوێت بۆ "
+"دەنێرین "
 
 #: iogt/templates/search/search_block.html:5
 msgid "Search the site..."
-msgstr ""
+msgstr "گەڕان لە سایت"
 
 #: iogt/templates/search/search_results.html:7
 msgid "Search Results for:"
@@ -814,4 +821,4 @@ msgstr ""
 
 #: iogt/templates/search/search_results.html:55
 msgid "Back to homepage"
-msgstr ""
+msgstr "لاپەڕەی سەرەکی"

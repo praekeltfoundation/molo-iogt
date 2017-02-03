@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 12:37+0000\n"
-"PO-Revision-Date: 2016-08-25 11:58+0000\n"
-"Last-Translator: tsepo <tsepo@praekelt.com>\n"
+"PO-Revision-Date: 2017-02-03 08:13+0000\n"
+"Last-Translator: Botswang <botswang@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: por_PT\n"
+"Language: nep_NP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1485935090.268670\n"
+"X-POOTLE-MTIME: 1486109635.782268\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -109,7 +109,7 @@ msgstr ""
 #: iogt/templates/polls/free_text_detail.html:15
 #: iogt/templates/polls/results.html:31
 msgid "Home"
-msgstr ""
+msgstr "होम"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:38
 #: iogt/temp_ve/commenting/templates/comments/reply.html:18
@@ -183,7 +183,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
 #: iogt/templates/404.html:9
 msgid "Sorry, this page could not be found."
-msgstr ""
+msgstr "हामीले त्यो पाना भेट्न सकेनाैं, माफ गर्नुहोला ।"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
@@ -196,7 +196,6 @@ msgstr ""
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
 msgstr ""
-"Lamentamos, parece que ocorreu um erro. Por favor tente de novo brevemente"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
@@ -322,7 +321,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
 #: iogt/templates/search/search_block.html:6
 msgid "SEARCH"
-msgstr "Procurar"
+msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
@@ -330,17 +329,17 @@ msgstr "Procurar"
 #: iogt/templates/search/search_results.html:47
 #: iogt/templates/search/search_results.html:49
 msgid "Search"
-msgstr "Procurar"
+msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
 #: iogt/templates/search/search_results.html:52
 msgid "No search results for "
-msgstr "Não há resultados de procura para"
+msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
 #: iogt/templates/search/search_results.html:46
 msgid "I am looking for"
-msgstr "Estou à procura de"
+msgstr ""
 
 #: iogt/temp_ve/core/views.py:92
 msgid "That page is not translatable."
@@ -513,7 +512,7 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/profiles/done.html:18
 #: iogt/temp_ve/usermetadata/templates/persona.html:21
 msgid "Skip"
-msgstr ""
+msgstr "ေက်ာ္ရန္"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:10
 msgid "Type new display name:"
@@ -698,7 +697,7 @@ msgstr ""
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:34
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
 msgid "Back to Home page"
-msgstr ""
+msgstr "होम"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:39
 msgid "Please log in to take this survey"
@@ -762,23 +761,23 @@ msgstr ""
 
 #: iogt/templates/core/section_page.html:65
 msgid "Prev"
-msgstr ""
+msgstr "अघिल्लो"
 
 #: iogt/templates/core/section_page.html:98
 msgid "Next"
-msgstr ""
+msgstr "अर्को"
 
 #: iogt/templates/core/section_page.html:141
 msgid "View More"
-msgstr ""
+msgstr "थप"
 
 #: iogt/templates/core/tags/latest_listing_homepage.html:4
 msgid "Recommended"
-msgstr "Mostrar mais informação sobre isso"
+msgstr "सिफारिस गरिएको"
 
 #: iogt/templates/core/tags/section_listing_homepage.html:45
 msgid "More"
-msgstr "Mais"
+msgstr "थप"
 
 #: iogt/templates/polls/poll_page.html:7
 #: iogt/templates/polls/poll_page_in_section.html:8
@@ -797,7 +796,7 @@ msgstr ""
 
 #: iogt/templates/registration/password_reset_done.html:8
 msgid "Back to home page"
-msgstr ""
+msgstr "होम"
 
 #: iogt/templates/registration/password_reset_form.html:6
 msgid ""
@@ -815,4 +814,4 @@ msgstr ""
 
 #: iogt/templates/search/search_results.html:55
 msgid "Back to homepage"
-msgstr ""
+msgstr "होम"
