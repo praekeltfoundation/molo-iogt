@@ -64,7 +64,6 @@
             <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/{{ ENV }}/style-rtl.css">
           {% endcompress %}
         {% endif %}
-        <noscript>Your browser does not support JavaScript!</noscript>
     </head>
 
     <body class="{% block body_class %}{% endblock %}" {% if LANGUAGE_CODE|language_bidi == True %}dir="rtl"{% endif %}>
@@ -168,7 +167,7 @@
       {% endblock %}
 
 
-      
+
 
       {% block search %}
         {% if languages %}
