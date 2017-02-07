@@ -45,9 +45,11 @@
 
 .heading--comment {
   text-transform: uppercase;
-  padding: 0;
+  padding: 0 10px;
 }
-
+.comment__description {
+  padding: 0 10px;
+}
 .heading--search {
   color: $victoria;
   text-transform: uppercase;

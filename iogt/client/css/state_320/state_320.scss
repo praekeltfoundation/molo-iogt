@@ -16,6 +16,14 @@
   @import "_s-survey";
   @import "_s-footer";
 
+  @media only screen and (min-width: 600px) {
+    html { background: #333; }
+    body {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+
   html, body,
   h1, h2, h3, h4, h5, h6,
   input, select, textarea {
@@ -47,8 +55,6 @@
   }
 
   input[type="submit"] {
-    background: $victoria;
-    color: #fff;
     text-align: center;
     text-decoration: none;
     padding: 10px 0;
@@ -57,13 +63,5 @@
  .select-language {
     text-decoration: none;
     float: right;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  html { background: #333; }
-  body {
-    max-width: 320px;
-    margin: 0 auto;
   }
 }
