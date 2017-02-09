@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   background: #fff;
+  overflow: auto;
 }
 
 html, body, input, textarea {
@@ -8,7 +9,6 @@ html, body, input, textarea {
   font-size: 16px;
   line-height: 1.5;
   color: #757575;
-  overflow: auto;
 }
 
 a {
@@ -88,4 +88,13 @@ input[type="submit"] {
   text-transform: uppercase;
   text-decoration: underline;
   width: 100%;
+}
+
+.profiles__form {
+  input[type=submit] {
+    color: #4D4391;
+    text-decoration: underline;
+    font-weight: 400;
+    text-align: left;
+  }
 }
