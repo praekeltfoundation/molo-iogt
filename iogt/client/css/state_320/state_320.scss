@@ -65,3 +65,13 @@
     float: right;
   }
 }
+.profiles__form {
+  input[type=submit] {
+    background: $victoria;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+  }
+}

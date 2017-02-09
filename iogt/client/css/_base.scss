@@ -92,11 +92,9 @@ input[type="submit"] {
 
 .profiles__form {
   input[type=submit] {
-    background: $victoria;
-    color: #fff;
-    margin: 10px 0;
-    padding: 10px 0;
-    text-align: center;
-    text-decoration: none;
+    color: #4D4391;
+    text-decoration: underline;
+    font-weight: 400;
+    text-align: left;
   }
 }
