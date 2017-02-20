@@ -16,7 +16,7 @@
     &:after {
       display: inline-block;
       float: right;
-      @media only screen and (min-width: 320px) { 
+      @media only screen and (min-width: 320px) {
         content: ">";
       }
       @media only screen and (min-width: 490px) {
@@ -42,6 +42,13 @@
 .menu-list__item--icon {
   display: inline-block;
   padding-right: 5px;
+}
+
+.menu-list__item--survey {
+  color: $roman;
+  a {
+    color: $roman;
+  }
 }
 
 @each $name, $color in $color_list {

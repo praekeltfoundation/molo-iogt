@@ -5,18 +5,19 @@
   padding: 5px 15px;
   a {
     color: #07292F;
-    display: inline-block; 
+    display: inline-block;
     font-size: $font-small;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
   }
 }
- 
-.menu-list__description {    
+
+.menu-list__description {
   color: #727172;
   display: block;
   text-transform: initial;
   font-weight: normal;
   font-size: $font-x-small;
+  padding: 0 15px 0 0;
 }
