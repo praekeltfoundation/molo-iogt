@@ -3,10 +3,10 @@
 {% block content %}
 {% if questions %}
   {% for question in questions %}
-
-      <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}">
-      {{ question.title }}
-      </a>
+  <li class="menu-list__item  menu-list__item--poll">
+    <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}">{{ question.title }}</a>
+    <span class="menu-list__description">{{ question.intro }}</span>
+  </li>
   {% endfor %}
 {% endif %}
 
