@@ -4,8 +4,9 @@
 {% if questions %}
   {% for question in questions %}
   <li class="menu-list__item  menu-list__item--poll">
-    <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}">{{ question.title }}</a>
-    <span class="menu-list__description">{{ question.intro }}</span>
+    <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}" class="footer-link">
+      <img src="{% static 'img/poll_icon.png' %}" width="auto" class="menu-list__item--icon" />
+      {{ question.title }}</a>
   </li>
   {% endfor %}
 {% endif %}

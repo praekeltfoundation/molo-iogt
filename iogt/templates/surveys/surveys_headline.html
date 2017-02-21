@@ -1,0 +1,11 @@
+{% load wagtailcore_tags static i18n %}
+
+{% block content %}
+		{% for survey in surveys %}
+    <li class="menu-list__item  menu-list__item--survey">
+  		<a href="{% pageurl survey %}" class="footer-link">
+        <img src="{% static 'img/clipboard.png' %}" width="auto" class="menu-list__item--icon" />
+        {{ survey.title }}</a>
+    </li>
+		{% endfor %}
+{% endblock %}

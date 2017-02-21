@@ -44,20 +44,6 @@
   padding-right: 5px;
 }
 
-.menu-list__item--survey {
-  color: $roman;
-  a {
-    color: $roman;
-  }
-}
-
-.menu-list__item--poll {
-  color: $robin_egg_blue;
-  a {
-    color: $robin_egg_blue;
-  }
-}
-
 @each $name, $color in $color_list {
   .menu-list__item--#{$name} {
     &:after { color: $color; }
