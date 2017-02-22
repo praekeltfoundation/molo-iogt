@@ -176,7 +176,16 @@
       <div class="footer">
         <ul class="menu-list">
           {% surveys_list_headline %}
-          {% poll_headline %}
+          <ul class="menu-list">
+            {% surveys_list_headline %}
+            {% load_polls None as polls %}
+            {% for question in polls %}
+            <li class="menu-list__item  menu-list__item--poll">
+                <a href="{% url 'molo.polls:vote' question.id %}" class="footer-link">
+                  <img src="{% static 'img/poll_icon.png' %}" width="auto" class="menu-list__item--icon" />
+                  {{ question.title }}</a>
+            </li>
+            {% endfor %}
 
           <li class="menu-list__item">
             {% if not user.is_authenticated %}
