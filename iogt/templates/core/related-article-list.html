@@ -11,7 +11,7 @@
         {% image next_article.image width-320 class="article__image" %}
       </a>
     {% endif %}
-    <h1 class="heading heading--xx-large related-articles-up-next__title">
+    <h1 class="heading heading--large related-articles-up-next__title">
       <a href="{% pageurl next_article %}" class="call-to-action__item--text call-to-action__item--text-related-article">
         {{next_article.title}}
       </a>
@@ -27,6 +27,7 @@
 
 {% if self.get_parent_section.enable_recommended_section %}
 {% get_recommended_articles self as recommended_articles %}
+{% if recommended_articles %}
   <h3 class="heading heading--small related-articles__recommended">{% trans "Recommended" %}</h3>
   <div class="related-articles-recommended">
     <ul class="related-articles-recommended-list">
@@ -66,4 +67,5 @@
       {% endfor %}
     </ul>
   </div>
+{% endif %}
 {% endif %}

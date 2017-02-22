@@ -21,13 +21,7 @@
 
 //UP NEXT - LIST
 .related-articles-up-next {
-  &:after {
-    height: 30px;
-    display: block;
-    content: " ";
-    padding: 10px 0;
-    background: url(/static/img/featured_bar_rwanda.png) repeat-x center center;
-  }
+  padding: 0 0 10px;
 }
 .related-articles-up-next__title {
   padding: 10px 15px;
