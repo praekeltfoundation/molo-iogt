@@ -406,7 +406,7 @@ EXTRA_LANG_INFO = {
         'bidi': False,
         'code': 'tg',
         'name': 'Tajik',
-        'name_local': 'Tajik'
+        'name_local': 'тоҷикӣ'
     },
 }
 
