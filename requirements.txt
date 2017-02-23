@@ -1,8 +1,8 @@
-molo.core==4.1.0
-molo.surveys==2.0.0
-molo.profiles==2.0.2
+molo.core==4.3.2
+molo.surveys==2.1.0
+molo.profiles==3.0.0
 molo.commenting==2.0.1
-molo.polls==3.0.1
+molo.polls==3.1.0
 molo.usermetadata==1.1.2
 celery<4.0
 gunicorn
