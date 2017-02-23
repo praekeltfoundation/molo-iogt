@@ -10,7 +10,7 @@
       {% image self.image width-320 %}
     </div>
   {% endif %}
-  
+
   <ul class="section-list-nav section-list-nav{{self.get_effective_extra_style_hints}}">
     <li class="section-list-nav__item section-list-nav__item--arrow-right">
       <a href="/">{% trans "Home" %}</a>
@@ -138,7 +138,7 @@
         {% endfor %}
       </ul>
       {% if section_featured_articles|length > 1 %}
-        <a href="{% pageurl section %}" class="section-list__more">{% trans "View More" %}</a>
+        <a href="{% pageurl section %}" class="section-list__more">{% trans "View more" %}</a>
       {% endif %}
       </div>
     {% endif %}
