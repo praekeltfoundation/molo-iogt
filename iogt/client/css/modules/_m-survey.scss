@@ -1,8 +1,20 @@
 .surveys {
+  background: #F1F1F1;
+  overflow: auto;
   .call-to-action__nav-item--back-home {
     color: $roman;
-    padding: 0 0 10px;
+    padding: 0 10px 10px;
     margin: 0;
+  }
+
+  .call-to-action__nav-item--surveys {
+    padding: 10px 15px;
+    margin: 10px 15px;
+    width: auto;
+  }
+
+  input:focus {
+    border: 1px solid $roman;
   }
 }
 
@@ -23,12 +35,12 @@
 }
 
 .surveys__intro {
-  padding: 0 16px;
+  padding: 0 10px;
   font-weight: normal;
 }
 
 .surveys__results {
-  padding: 5px 16px;
+  padding: 5px 10px;
   margin: 15px 0;
   border-top: 1px solid #DEDEDE;
   border-bottom: 1px solid #DEDEDE;
@@ -51,26 +63,25 @@
   }
 }
 
-.call-to-action--surveys {
-  padding: 5px 16px;
-}
-
-input[type="submit"],
-.call-to-action__nav-item--surveys {
-  color: #000;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
 .surveys__form {
-  padding: 0 16px;
-
+  padding: 0 10px;
   label {
     color: #000;
     padding: 0;
   }
+
+  input[type="submit"] {
+    width: auto;
+  }
+
+  input[type="submit"],
+  .call-to-action__nav-item--surveys {
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
 
 .error--surveys {
-  padding: 0 16px;
+  padding: 0 10px;
 }
