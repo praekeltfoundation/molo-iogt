@@ -21,7 +21,6 @@
 
 .article-list__container--hero {
     padding: 0 0 10px;
-    .section-list__title,
     .article-list__section,
     .article-list__title,
     .article-list__subtitle {
@@ -54,7 +53,7 @@
   font-size: $font-small;
   padding: 0 15px 10px;
   color: #757575;
-} 
+}
 .comment-counter__text {
   display: inline-block;
 }
@@ -67,7 +66,7 @@
     img {
       max-width: 100%;
     }
-    
+
   }
 }
 
