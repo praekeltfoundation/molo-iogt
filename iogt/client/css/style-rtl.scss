@@ -1,14 +1,10 @@
 
-input[type="text"],
-input[type="number"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="search"] {
-  padding: 8px 0;
-}
 .language-selection .language-list__item a:after {
   padding: 0 5px 0 0;
+}
+
+.menu-list__description {
+  padding: 0 0 0 15px;
 }
 
 @media only screen and (min-width: 320px) {
@@ -60,7 +56,7 @@ input[type="search"] {
   }
   .footer {
     .menu-list__item .footer-link {
-      padding: 0 60px 0 20px;
+      padding: 0 60px 15px 20px;
       &:after {
         float: left;
       }
