@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load i18n static core_tags wagtailsettings_tags wagtailcore_tags %}
+{% get_settings %}
+
+{% block content %}
+<h1 class="heading heading--profiles">{% trans "Join" %}</h1>
+
+<div class="call-to-action call-to-action--profile">
+    <h5 class="call-to-action__nav-item call-to-action__nav-item--challenge">{% trans "Already a member?" %}</h5>
+    <a href="{% url "molo.profiles:auth_login" %}" class="call-to-action__nav-item call-to-action__nav-item--login">{% trans "Login" %}</a>
+</div>
+
+<h4 class="heading heading--subtitle">
+    {% trans "Not a member yet?" %}<br/>
+    {% trans "Join us by signing up below." %}
+</h4>
+<div class="profiles">
+  <form method="post" action="{% url "molo.profiles:user_register" %}" class="profiles__form">
+  {% csrf_token %}
+    <fieldset>
+      <label for="id_username">{% trans "Choose a username" %}</label>
+      {{ form.username.errors}}
+      {{ form.username }}
+    </fieldset>
+
+    <fieldset>
+      <label for="id_password">{% trans "Choose a 4-digit pin" %}</label>
+      {{ form.password.errors}}
+      {{ form.password }}
+      <span class="input-hint">({% trans "e.g. 2086" %})</span>
+    </fieldset>
+
+    {% if settings.profiles.UserProfilesSettings.show_mobile_number_field and settings.profiles.UserProfilesSettings.country_code %}
+    <fieldset>
+      <label for="mobile_number">{% trans "Enter your mobile number" %}</label>
+      {{ form.mobile_number.errors}}
+      {{ form.mobile_number }}
+      <span class="input-hint">{% trans "(e.g. 0900000013)" %}</span>
+    </fieldset>
+    {% endif %}
+
+    {% if settings.profiles.UserProfilesSettings.show_email_field %}
+    <fieldset>
+      <label for="id_email">{% trans "Enter your email address" %}</label>
+      {{ form.email.errors}}
+      {{ form.email }}
+      <span class="input-hint">{% trans "(e.g. example@foo.com)" %}</span>
+    </fieldset>
+    {% endif %}
+
+    {% if settings.profiles.UserProfilesSettings.show_security_question_fields  %}
+      {% for field in form %}
+        {% if field in form.security_questions %}
+          <fieldset>
+            <label for="id_email">{% trans field.label_tag %}</label>
+            {{ field.errors}}
+            {{ field }}
+          </fieldset>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    <fieldset>
+      {% if form.terms_and_conditions.errors %}
+        <span class="error">
+          {% trans "Please accept the T&amp;Cs in order to complete the registration" %}
+        </span>
+      {% endif %}
+      {{ form.terms_and_conditions }}
+      {% if settings.profiles.UserProfilesSettings.terms_and_conditions %}
+      <a href="{% pageurl settings.profiles.UserProfilesSettings.terms_and_conditions %}" for="id_terms_and_conditions" class="profiles__terms">{% trans "I accept the Terms and Conditions" %}</a>
+      {% else %}
+      <label for="id_terms_and_conditions" class="profiles__terms">{% trans "I accept the Terms and Conditions" %}</label>
+      {% endif %}
+    </fieldset>
+
+    <input type="submit" value="{% trans "Join" %}"/>
+    <input type="hidden" name="next" value="{% url "molo.profiles:registration_done" %}"/>
+  </form>
+</div>
+{% endblock %}
