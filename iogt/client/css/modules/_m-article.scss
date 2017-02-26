@@ -84,3 +84,30 @@
 .article-list__comments-counter .icon {
   display: none;
 }
+
+//Social Media
+
+.call-to-action__item-share {
+  display: block;
+  margin: 5px 15px;
+  padding: 0 10px 0 0;
+  text-align: center;
+}
+.call-to-action__item-share-with-image {
+  text-align: left;
+}
+.call-to-action__item-share-title {
+  font-size: 13px;
+  display: inline-block;
+  color: #000;
+  padding: 6px 5px;
+  text-decoration: underline;
+}
+
+.call-to-action__item-share--footer {
+  margin: 10px 0;
+  padding: 0;
+  .call-to-action__item-share-title {
+    color: #a3a3a3;
+  }
+}
