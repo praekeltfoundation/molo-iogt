@@ -44,6 +44,12 @@
   display: block;
   margin-bottom: 10px;
   color: #757575;
+  border-bottom: 1px solid #b0b9bb;
+}
+
+.search__result-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
 
