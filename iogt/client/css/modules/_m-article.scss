@@ -1,5 +1,8 @@
 .article {
   overflow: auto;
+  img {
+    width: 100%;
+  }
 }
 
 .article__content {

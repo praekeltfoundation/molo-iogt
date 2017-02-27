@@ -6,7 +6,7 @@
    }
 }
 .personae-list__item {
-  padding: 30px 15px 30px 45px; 
+  padding: 30px 15px 30px 45px;
   position: relative;
   img {
     display: block;
@@ -16,8 +16,10 @@
   padding: 0 0 0 60px;
   &:after {
     display: inline-block;
-    float: right;
-    @media only screen and (min-width: 320px) { 
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    @media only screen and (min-width: 320px) {
       content: ">";
     }
     @media only screen and (min-width: 490px) {
@@ -44,4 +46,3 @@
   padding: 10px;
   margin: 20px 15px;
 }
-
