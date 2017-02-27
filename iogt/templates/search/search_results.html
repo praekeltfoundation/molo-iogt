@@ -15,7 +15,7 @@
         <p class="search--result__subtitle">{{page.subtitle}}</p>
       </a>
     {% else %}
-      <a href="{% pageurl page %}">
+      <a href="{% pageurl page %}" class="search__result-item">
         <h3 class="search--result__section-title search--result__section-title{{page.get_parent_section.get_effective_extra_style_hints}}">{{parent_section.title}}</h3>
         <h1 class="search--result__title">{{page.title}}</h1>
         <p class="search--result__subtitle">{{page.subtitle}}</p>
@@ -30,7 +30,7 @@
     {% endif %}
     {% endwith %}
   {% endfor %}
-
+  </div>
   <div class="pagination">
     {% if search_results.has_previous %}
         <a href="?p={{ search_results.previous_page_number }}&amp;q={{search_query}}" class="pagination__link">&larr;</a>
@@ -40,13 +40,13 @@
         <a href="?p={{ search_results.next_page_number }}&amp;q={{search_query}}" class="pagination__link">&rarr;</a>
     {% endif %}
   </div>
-</div>
+
 {% else %}
   <form action="{% url 'search' %}" id="search-form" class="search-form search-form--main">
     <input placeholder="{% trans "I am looking for" %}" name="q" type="search">
     <input type="submit" value="{% trans "Search"%}">
   </form>
-  <h2 class="heading heading--search">{% trans "Search" %}</h2>
+  <h2 class="heading heading--search">{% trans "Search Results for:" %} &quot;{{search_query}}&quot;</h2>
   <div class="search">
     <h3 class="search__feedback-title">
       {% trans "No search results for " %} {{search_query}}
@@ -63,5 +63,3 @@
       {% include "search/search_block.html" %}
   {% endif %}
 {% endblock %}
-
-

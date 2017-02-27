@@ -35,7 +35,7 @@
       <label for="mobile_number">{% trans "Enter your mobile number" %}</label>
       {{ form.mobile_number.errors}}
       {{ form.mobile_number }}
-      <span class="input-hint">{% trans "(e.g. 0900000013)" %}</span>
+      <span class="input-hint">({% trans "e.g. 0900000013" %})</span>
     </fieldset>
     {% endif %}
 
@@ -44,7 +44,7 @@
       <label for="id_email">{% trans "Enter your email address" %}</label>
       {{ form.email.errors}}
       {{ form.email }}
-      <span class="input-hint">{% trans "(e.g. example@foo.com)" %}</span>
+      <span class="input-hint">({% trans "e.g. example@foo.com" %})</span>
     </fieldset>
     {% endif %}
 

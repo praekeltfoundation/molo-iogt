@@ -105,7 +105,7 @@
     {% load_descendant_articles_for_section section count=5 as section_featured_articles %}
     {% if section_featured_articles %}
     <div class="subsections section-list section-list{{self.get_effective_extra_style_hints}}">
-      <h3 class="section-list__title"><a href="{% pageurl section %}">{{section.title}}</a></h3>
+      <h3 class="section-list__title sub-section-list__title"><a href="{% pageurl section %}">{{section.title}}</a></h3>
       <ul class="article-list">
         {% for article in section_featured_articles %}
            <li class="article-list__item">

@@ -7,7 +7,10 @@
 }
 .article-list__image--small {
   float: right;
-  padding: 55px 0 15px 15px;
+  /* Wraps Text Around Image
+  padding: 55px 0 15px 15px;*/
+  padding: 10px 0 95px 25px;
+  width: 40%;
 }
 
 .section-article-list__title {
