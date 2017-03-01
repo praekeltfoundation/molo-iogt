@@ -1,10 +1,17 @@
- .section__image  {
-  padding: 0;
+
+ .section__image img {
+   width: auto;
+   height: auto;
+ }
+.section__title-heading {
+  padding: 15px 15px 10px;
+}
+.section__description {
+  padding: 0 15px 10px;
 }
 .section__title {
   color: #757575;
 }
-
 .sub-section-list__title {
   &:after {
     padding: 0 10px 0;
@@ -16,7 +23,9 @@
     }
   }
 }
-
+.section-list-nav {
+  padding: 5px 15px 15px;
+}
 .section-list__more {
   text-decoration: none;
   text-align: right;
@@ -34,18 +43,17 @@
 
 
 @each $name, $color in $color_list {
-
   .section--#{$name},
   .section-list--#{$name} {
     border-top: 2px solid $color;
   }
   .section--#{$name} {
     .section__title,
+    .section__info,
     .section__subtitle {
       background: $color;
       color: #fff;
     }
-
     .sub-section-list__title:after {
       color: $color;
     }
@@ -57,13 +65,13 @@
     .section-list__more {
       color: $color;
     }
-
     .article-list__comments-counter .icon  {
       fill: $color;
     }
   }
 
   .section-list-nav--#{$name} {
+    border-top: 1px solid darken($color, 10%);
     background: $color;
     color: #fff;
     .section-list-nav__item a,
