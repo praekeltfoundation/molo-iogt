@@ -1,6 +1,6 @@
 {% load wagtailcore_tags wagtailimages_tags core_tags i18n %}
 
-<div class="related-articles related-articles{{section.get_effective_extra_style_hints}}">
+<div class="related-articles related-articles{{self.get_parent_section.get_effective_extra_style_hints}}">
 {% get_translation self.get_parent_section as section %}
 {% get_next_article self as next_article %}
 {% if next_article and self.get_parent_section.enable_next_section %}
@@ -28,8 +28,8 @@
 {% if self.get_parent_section.enable_recommended_section %}
 {% get_recommended_articles self as recommended_articles %}
 {% if recommended_articles %}
-  <h3 class="heading heading--small related-articles__recommended">{% trans "Recommended" %}</h3>
-  <div class="related-articles-recommended">
+  <h3 class="heading heading--small related-articles__recommended related-articles__recommended{{self.get_parent_section.get_effective_extra_style_hints}}">{% trans "Recommended" %}</h3>
+  <div class="related-articles-recommended related-articles-recommended{{self.get_parent_section.get_effective_extra_style_hints}}">
     <ul class="related-articles-recommended-list">
       {% for article in recommended_articles %}
       <li class="related-articles-recommended-list__item
