@@ -1,0 +1,11 @@
+
+@each $name, $color in $color_list {
+  .related-articles--#{$name} {
+    .related-articles__up-next {
+      color: $color;
+    }
+  }
+  .related-articles__recommended--#{$name}  {
+    color: $color;
+  }
+}

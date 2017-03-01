@@ -8,6 +8,7 @@
 .related-articles__recommended {
   padding: 10px 15px;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .promoted-article-list__anchor-grid {
@@ -25,11 +26,14 @@
 }
 .related-articles-up-next__title {
   padding: 10px 15px;
+  color: #000;
+  a {
+    color: #000;
+  }
 }
 .related-articles-up-next__desc {
   padding: 0 15px;
 }
-
 
 //RECOMMENDED - LIST
 .related-articles-recommended-list__content {
@@ -38,6 +42,10 @@
 .related-articles-recommended__title {
   word-wrap: break-word;
   padding: 0;
+  color: #000;
+  a {
+    color: #000;
+  }
 }
 .related-articles-recommended__desc {
   margin: 0;
