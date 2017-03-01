@@ -5,8 +5,8 @@
 <div class="section-list">
    <ul class="article-list">
     {% for article in articles %}
-      <li class="article-list__item {% if forloop.first %} article-list__item--hero{% endif %}">
-       <div class="article-list__container article-list__container{{article.get_parent_section.get_effective_extra_style_hints}} {% if forloop.first %} article-list__container--hero{% endif %}">
+      <li class="article-list__item {% if forloop.first %}article-list__item--hero{% endif %}">
+       <div class="article-list__container article-list__container{{article.get_parent_section.get_effective_extra_style_hints}} {% if forloop.first %}article-list__container--hero{% endif %}">
         <a href="{% pageurl article %}">
           {% if article.image %}
             {% if forloop.first %}
@@ -20,10 +20,10 @@
           <h3 class="article-list__section">{{ article.get_parent_section.title }}</h3>
         </a>
         <a href="{% pageurl article %}">
-          <h2 class="article-list__title article-list__title--hero">{{article.title}}</h2>
+          <h2 class="article-list__title {% if forloop.first %}article-list__title--hero{% endif %}">{{article.title}}</h2>
           <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
         </a>
-        
+
         </div>
         {% get_comment_count for article as comment_count %}
         {% if comment_count > 0 %}
