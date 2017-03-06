@@ -1,4 +1,8 @@
-
+.polls {
+  .call-to-action__nav-item--back-home {
+    padding: 10px;
+  }
+}
 .call-to-action__nav-item--poll-login,
 .polls__form input[type="submit"] {
   background: $robin_egg_blue;
@@ -25,7 +29,8 @@
 
 @each $name, $color in $color_list {
 	.polls--#{$name} {
-      .polls__results--title {
+      .polls__results--title,
+      .poll__question-title {
         color: $color;
       }
       .call-to-action__nav-item--poll-login,
