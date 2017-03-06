@@ -7,10 +7,12 @@
 }
 .article-list__image--small {
   float: right;
-  /* Wraps Text Around Image
-  padding: 55px 0 15px 15px;*/
-  padding: 10px 0 95px 25px;
+  padding: 10px 0;
   width: 40%;
+}
+.article-list__inner-content {
+  width: 54%;
+  float: left;
 }
 
 .section-article-list__title {
@@ -20,7 +22,6 @@
 .article-list__section ,
 .section-list__title--homepage {
   padding: 5px 0;
-  height: 45px;
   overflow: hidden;
 }
 
@@ -30,8 +31,7 @@
   }
   .article-list__section,
   .section-list__title--homepage {
-    padding: 10px 15px;
-    height: auto;
+    padding: 10px 15px 0;
     overflow: auto;
   }
 }
