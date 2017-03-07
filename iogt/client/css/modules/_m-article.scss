@@ -9,13 +9,12 @@
   word-wrap: break-word;
   a {
     color: #000;
-    display: inline-block;
+    display: block;
     font-weight: bold;
     text-decoration: underline;
   }
 
-  .featured-articles {
-    display: block;
+  .article__pages-link {
     padding: 5px 15px;
   }
 
