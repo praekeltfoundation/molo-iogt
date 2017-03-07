@@ -97,10 +97,10 @@
 
 
 @each $name, $color in $color_list {
-
   .article--#{$name} {
-     .article-list__comments-counter .icon  {
-       fill: $color;
+    ol li:before,
+    .article-numbered-list__item:before {
+        color: $color;
     }
   }
 
@@ -110,11 +110,5 @@
     }
   }
 
-  .article--#{$name} {
-    ol li:before,
-    .article-numbered-list__item:before,
-    .article-list__comments-counter {
-        color: $color;
-    }
-  }
+
 }
