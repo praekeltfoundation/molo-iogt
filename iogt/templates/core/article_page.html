@@ -64,7 +64,7 @@
           {% endfor %}
         </ol>
       {% elif block.block_type == 'page' %}
-        <a href="{% pageurl block.value %}" class="featured-articles">{{block.value }}</a>
+        <a href="{% pageurl block.value %}" class="article__pages-link">{{block.value }}</a>
       {% else %}
           {{ block }}
       {% endif %}

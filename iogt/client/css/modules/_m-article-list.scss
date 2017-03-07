@@ -14,6 +14,8 @@
 
 .article-list__container {
   padding: 10px 15px 10px;
+  clear: both;
+  overflow: auto;
   a {
     display: block;
   }
@@ -24,7 +26,7 @@
     .article-list__section,
     .article-list__title,
     .article-list__subtitle {
-      padding: 10px 15px 5px;
+      padding: 10px 15px 0;
     }
 }
 
