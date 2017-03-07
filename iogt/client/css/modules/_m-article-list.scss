@@ -13,7 +13,7 @@
 }
 
 .article-list__container {
-  padding: 10px 15px 10px;
+  padding: 5px 15px 5px;
   clear: both;
   overflow: auto;
   a {
@@ -22,11 +22,11 @@
 }
 
 .article-list__container--hero {
-    padding: 0 0 10px;
+    padding: 0 0 5px;
     .article-list__section,
     .article-list__title,
     .article-list__subtitle {
-      padding: 10px 15px 0;
+      padding: 5px 15px 0;
     }
 }
 
@@ -53,7 +53,7 @@
 .article-list__comments-counter {
   text-transform: capitalize;
   font-size: $font-small;
-  padding: 0 15px 10px;
+  padding: 0 15px 5px;
   color: #757575;
 }
 .comment-counter__text {
