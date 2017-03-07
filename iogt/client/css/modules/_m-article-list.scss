@@ -7,14 +7,11 @@
     display: block;
     color: #666666;
   }
-  &:last-child {
-    border: none;
-  }
 }
 
 .article-list__container {
-  padding: 10px 15px 10px;
   clear: both;
+  padding: 5px 15px;
   overflow: auto;
   a {
     display: block;
