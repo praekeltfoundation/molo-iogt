@@ -2,6 +2,9 @@
   p {
     padding: 0 15px;
   }
+  .call-to-action__nav-item--back {
+    text-decoration: underline;;
+  }
 }
 .comment__form {
   input[type="submit"] {
@@ -22,44 +25,81 @@
   }
 }
 
-.article-list__comments-counter .icon {
-  display: inline-block;
-  background-size: 78%;
-  vertical-align: text-bottom;
+.comment__post-message .icon {
+    display: inline-block;
 }
-
+.comment-counter__number {
+  padding-left: 5px;
+}
 .comment__counter {
   font-weight: bold;
 }
 .comment__text {
   display: none;
 }
+.comment-list {
+  .comment-list__item p {
+    padding: 0 50px 0 0;
+  }
+  .pagination {
+    text-align: right;
+    .pagination__item {
+      text-transform: uppercase;
+      text-decoration: none;
+      &:after {
+        padding: 0 0 0 5px;
+        @media only screen and (min-width: 320px) {
+          content: ">";
+        }
+        @media only screen and (min-width: 490px) {
+          content: "❯";
+        }
+      }
+    }
+  }
+}
 
-#comments-list {
+#comments-list,
+#comment__list {
   .call-to-action__nav-item--response {
     position: absolute;
     right: 15px;
     top: 5px;
   }
 }
-
+#comment__list {
+  p {
+    padding: 0 50px 0 0;
+  }
+  .call-to-action__nav-item--response {
+    top: 0;
+  }
+}
 
 @each $name, $color in $color_list {
+  .comments--#{$name} {
+    .comment__post-message .icon {
+        fill: $color;
+    }
+    .call-to-action__nav-item--back,
+    .call-to-action__nav-item--response {
+      color: $color;
+    }
+  }
+  .comment-list--#{$name}  {
+    .call-to-action__nav-item--response,
+    .pagination .pagination__item {
+      color: $color;
+    }
+  }
   .comment__form--#{$name} {
     input[type="submit"] {
       background: $color;
       color: #fff;
     }
-
     input[name~="submit_anonymously"] {
       background: none;
       color: $color;
-    }
-  }
-
-  .article-list__comments-counter--#{$name} {
-    .icon  {
-      fill: $color;
     }
   }
 }

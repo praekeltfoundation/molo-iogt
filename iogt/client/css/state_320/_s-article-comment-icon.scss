@@ -1,0 +1,30 @@
+
+.article-list__comments-counter .icon {
+  display: inline-block;
+  background-size: 78%;
+  vertical-align: text-bottom;
+}
+
+
+@each $name, $color in $color_list {
+  .article--#{$name} {
+    .article-list__comments-counter {
+        color: $color;
+    }
+    .article-list__comments-counter .icon  {
+      fill: $color;
+   }
+
+  }
+
+  .article-list__comments-counter--#{$name} .icon  {
+    fill: $color;
+  }
+
+  .section-list--#{$name} {
+    .article-list__comments-counter .icon  {
+      fill: $color;
+    }
+  }
+
+}
