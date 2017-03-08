@@ -1,4 +1,6 @@
-
+.pagination {
+  padding: 5px 15px 15px;
+}
 .pagination__link {
   text-align: right;
   &:after {
@@ -15,5 +17,36 @@
 .pagination__link--current {
   &:after {
     content: "";
+  }
+}
+
+
+.pagination--numbered {
+  padding: 10px 15px 40px;
+}
+.pagination__previous-anchor {
+  float: left;
+}
+.pagination__next-anchor {
+  float:right;
+}
+.pagination__pages-numbers {
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+@each $name, $color in $color_list {
+  .section--#{$name} {
+    .pagination__next-anchor,
+    .pagination__page,
+    .pagination__current {
+      color: $color;
+    }
   }
 }

@@ -1,9 +1,10 @@
 
 .pagination {
-  padding: 5px 15px 15px;
-  .current {
+  padding: 5px 10px;
+  .pagination__current {
     color: #000;
     font-weight: bold;
+    text-decoration: underline;
   }
   a {
     color: #666;
@@ -17,8 +18,14 @@
   text-transform: uppercase;
   padding: 15px;
 }
-
 .pagination__link--current {
   font-size: $font-x-small;
   padding: 5px 15px 0 0;
+}
+
+.pagination--numbered {
+  position: relative;
+}
+.pagination__pages-numbers {
+  display: inline-block;
 }

@@ -1,6 +1,6 @@
 
 {% extends "base.html" %}
-{% load wagtailcore_tags wagtailimages_tags comments i18n%}
+{% load wagtailcore_tags wagtailimages_tags comments i18n pagination%}
 
 {% block content %}
 {% if search_results %}
@@ -55,15 +55,52 @@
       {% endfor %}
     </ul>
   </div>
-  <div class="pagination">
-    {% if search_results.has_previous %}
-        <a href="?p={{ search_results.previous_page_number }}&amp;q={{search_query}}" class="pagination__link">&larr;</a>
-    {% endif %}
-    <span class="pagination__link pagination__link--current">Page {{ search_results.number }} of {{ search_results.paginator.num_pages }}</span>
-    {% if search_results.has_next %}
-      <a href="?p={{ search_results.next_page_number }}&amp;q={{search_query}}" class="pagination__link">&rarr;</a>
-    {% endif %}
-  </div>
+
+
+
+
+
+
+
+    <div class="pagination pagination--numbered">
+      {% if search_results.has_previous %}
+        <a href="?p={{ articles_paginated.previous_page_number }}" class="pagination__previous-anchor">&lt; {% trans "Prev" %}</a>
+      {% endif %}
+      <div class="pagination__pages-numbers">
+        {% get_pages search_results as pages %}
+        {% for page in pages.start %}
+          <a href="?p={{ page }}" class="pagination__page">{{ page }}</a>
+        {% endfor %}
+        {% if pages.ellipses_before %}
+          ...
+        {% endif %}
+        {% for page in pages.before_current %}
+          <a href="?p={{ page }}" class="pagination__page">{{ page}}</a>
+        {% endfor %}
+        <span class="pagination__current">
+            {% if search_results.has_next %}
+              {{ search_results.number }}
+            {% endif %}
+        </span>
+        {% for page in pages.after_current %}
+          <a href="?p={{ page }}" class="pagination__page">{{ page }}</a>
+        {% endfor %}
+        {% if pages.ellipses_after %}
+          ...
+        {% endif %}
+        {% for page in pages.end %}
+          <a href="?p={{ page }}" class="pagination__page">{{ page }}</a>
+        {% endfor %}
+      </div>
+      {% if search_results.has_next %}
+          <a href="?p={{ search_results.next_page_number }}" class="pagination__next-anchor">{% trans "Next" %} &gt;</a>
+      {% endif %}
+    </ul>
+    </div>
+
+
+
+
 
 {% else %}
   <form action="{% url 'search' %}" id="search-form" class="search-form search-form--main">
