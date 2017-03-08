@@ -46,7 +46,9 @@
     </a>
     <a href="{% pageurl sub_article %}" {% if not forloop.first %}class="article-list__inner-content"{% endif %}>
       <h2 class="article-list__title section-article-list__title">{{sub_article.title}}</h2>
+      {% if sub_article.subtitle %}
       <h4 class="article-list__subtitle">{{sub_article.subtitle}}</h4>
+      {% endif %}
     </a>
     </div>
     {% get_comment_count for sub_article as comment_count %}
@@ -127,7 +129,9 @@
               </a>
               <a href="{% pageurl article %}" {% if not forloop.first %}class="article-list__inner-content"{% endif %}>
                 <h2 class="article-list__title section-article-list__title">{{article.title}}</h2>
+                {% if article.subtitle %}
                 <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
+                {% endif %}
               </a>
               </div>
               {% get_comment_count for article as comment_count %}

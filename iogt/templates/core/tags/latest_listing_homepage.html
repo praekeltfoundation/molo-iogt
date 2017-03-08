@@ -21,7 +21,9 @@
         </a>
         <a href="{% pageurl article %}" {% if not forloop.first %}class="article-list__inner-content"{% endif %}>
           <h2 class="article-list__title">{{article.title}}</h2>
+          {% if article.subtitle %}
           <h4 class="article-list__subtitle">{{article.subtitle}}</h4>
+          {% endif %}
         </a>
 
         </div>
