@@ -1,0 +1,16 @@
+
+.article-list__comments-counter {
+  text-transform: capitalize;
+  font-size: $font-small;
+  padding: 10px 15px 0;
+  color: #757575;
+  display: block;
+  .icon {
+    display: none;
+  }
+}
+
+//Move To Comments
+.comment-counter__text {
+  display: inline-block;
+}
