@@ -64,10 +64,12 @@
 
     <div class="pagination pagination--numbered">
       {% if search_results.has_previous %}
-        <a href="?p={{ articles_paginated.previous_page_number }}" class="pagination__previous-anchor">&lt; {% trans "Prev" %}</a>
+        <a href="?p={{ search_results.previous_page_number }}" class="pagination__previous-anchor">&lt; {% trans "Prev" %}</a>
       {% endif %}
+      {% get_pages search_results as pages %}
+      {{search_results}}
       <div class="pagination__pages-numbers">
-        {% get_pages search_results as pages %}
+
         {% for page in pages.start %}
           <a href="?p={{ page }}" class="pagination__page">{{ page }}</a>
         {% endfor %}
@@ -95,7 +97,6 @@
       {% if search_results.has_next %}
           <a href="?p={{ search_results.next_page_number }}" class="pagination__next-anchor">{% trans "Next" %} &gt;</a>
       {% endif %}
-    </ul>
     </div>
 
 
