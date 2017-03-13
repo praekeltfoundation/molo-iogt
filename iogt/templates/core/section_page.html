@@ -69,9 +69,7 @@
 
 
   {% if articles %}
--->{{articles}}
   <div class="pagination pagination--numbered">
-
     {% if articles_paginated.has_previous %}
       <a href="?p={{ articles_paginated.previous_page_number }}" class="pagination__previous-anchor">&lt; {% trans "Prev" %}</a>
     {% endif %}
