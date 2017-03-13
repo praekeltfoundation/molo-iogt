@@ -76,7 +76,7 @@
     <div class="pagination__pages-numbers">
       {% get_pages articles_paginated as pages %}
       {% for page in pages.start %}
-        <a href="?p={{ page }}" class="pagination__page">{{ page }}</a>
+        <a href="?p={{ page }}">{{ page }}</a>
       {% endfor %}
       {% if pages.ellipses_before %}
         ...
@@ -96,7 +96,7 @@
         ...
       {% endif %}
       {% for page in pages.end %}
-        <a href="?p={{ page }}" class="pagination__page">{{ page }}</a>
+        <a href="?p={{ page }}">{{ page }}</a>
       {% endfor %}
     </div>
     {% if articles_paginated.has_next %}
