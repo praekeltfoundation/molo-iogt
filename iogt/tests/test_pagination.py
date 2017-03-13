@@ -39,12 +39,17 @@ class RegistrationViewTest(TestCase, MoloTestCaseMixin):
     def test_second_page_pagination(self):
         response = self.client.get('/sections/english-section/?p=2')
         self.assertContains(response, 'Prev')
-        self.assertContains(response, '<a href="?p=1" class="pagination__page">1</a>')
-        self.assertContains(response, '<a href="?p=3" class="pagination__page">3</a>')
-        self.assertContains(response, '<a href="?p=4" class="pagination__page">4</a>')
+        self.assertContains(response,
+        '<a href="?p=1" class="pagination__page">1</a>')
+        self.assertContains(response,
+        '<a href="?p=3" class="pagination__page">3</a>')
+        self.assertContains(response,
+        '<a href="?p=4" class="pagination__page">4</a>')
         self.assertContains(response, '...')
-        self.assertContains(response, '<a href="?p=15" class="pagination__page">15</a>')
-        self.assertContains(response, '<a href="?p=16" class="pagination__page">16</a>')
+        self.assertContains(response,
+        '<a href="?p=15" class="pagination__page">15</a>')
+        self.assertContains(response,
+        '<a href="?p=16" class="pagination__page">16</a>')
         self.assertContains(response, 'Next')
 
     def test_third_page_pagination(self):
