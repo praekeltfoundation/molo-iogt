@@ -62,47 +62,6 @@
 
 
 
-    <div class="pagination pagination--numbered">
-      {% if search_results.has_previous %}
-        <a href="?p={{ search_results.previous_page_number }}" class="pagination__previous-anchor">&lt; {% trans "Prev" %}</a>
-      {% endif %}
-      {% get_pages search_results as pages %}
-      {{search_results}}
-      <div class="pagination__pages-numbers">
-
-        {% for page in pages.start %}
-          <a href="?p={{ page }}" class="pagination__page">{{ page }}</a>
-        {% endfor %}
-        {% if pages.ellipses_before %}
-          ...
-        {% endif %}
-        {% for page in pages.before_current %}
-          <a href="?p={{ page }}" class="pagination__page">{{ page}}</a>
-        {% endfor %}
-        <span class="pagination__current">
-            {% if search_results.has_next %}
-              {{ search_results.number }}
-            {% endif %}
-        </span>
-        {% for page in pages.after_current %}
-          <a href="?p={{ page }}" class="pagination__page">{{ page }}</a>
-        {% endfor %}
-        {% if pages.ellipses_after %}
-          ...
-        {% endif %}
-        {% for page in pages.end %}
-          <a href="?p={{ page }}" class="pagination__page">{{ page }}</a>
-        {% endfor %}
-      </div>
-      {% if search_results.has_next %}
-          <a href="?p={{ search_results.next_page_number }}" class="pagination__next-anchor">{% trans "Next" %} &gt;</a>
-      {% endif %}
-    </div>
-
-
-
-
-
 {% else %}
   <form action="{% url 'search' %}" id="search-form" class="search-form search-form--main">
     <input placeholder="{% trans "I am looking for" %}" name="q" type="search">
