@@ -58,6 +58,7 @@
       {% endfor %}
     </ul>
   </div>
+  
 {% else %}
   <form action="{% url 'search' %}" id="search-form" class="search-form search-form--main">
     <input placeholder="{% trans "Search the site..." %}" name="q" type="search">
