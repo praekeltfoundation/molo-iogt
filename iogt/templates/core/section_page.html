@@ -68,6 +68,43 @@
 </ul>
 
 
+  {% if articles %}
+  <div class="pagination pagination--numbered">
+    {% if articles_paginated.has_previous %}
+      <a href="?p={{ articles_paginated.previous_page_number }}">&lt; {% trans "Prev" %}</a>
+    {% endif %}
+    <div class="pagination__pages-numbers">
+      {% get_pages articles_paginated as pages %}
+      {% for page in pages.start %}
+        <a href="?p={{ page }}">{{ page }}</a>
+      {% endfor %}
+      {% if pages.ellipses_before %}
+        ...
+      {% endif %}
+      {% for page in pages.before_current %}
+        <a href="?p={{ page }}">{{ page}}</a>
+      {% endfor %}
+      <span class="pagination__current">
+          {% if articles_paginated.has_next %}
+            {{ articles_paginated.number }}
+          {% endif %}
+      </span>
+      {% for page in pages.after_current %}
+        <a href="?p={{ page }}">{{ page }}</a>
+      {% endfor %}
+      {% if pages.ellipses_after %}
+        ...
+      {% endif %}
+      {% for page in pages.end %}
+        <a href="?p={{ page }}">{{ page }}</a>
+      {% endfor %}
+    </div>
+    {% if articles_paginated.has_next %}
+        <a href="?p={{ articles_paginated.next_page_number }}">{% trans "Next" %} &gt;</a>
+    {% endif %}
+  </ul>
+  </div>
+  {% endif %}
 
 
 {% load_child_sections_for_section self as sections %}
