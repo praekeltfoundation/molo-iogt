@@ -2,6 +2,10 @@
   Add independent call-to-action__nav-item classes and class modifiers
 */
 
+.call-to-action__nav-item {
+  text-decoration: none;
+}
+
 .call-to-action__nav-item--challenge {
   color: #fff;
   font-size: $font-large;

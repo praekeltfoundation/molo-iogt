@@ -14,13 +14,11 @@
     .article-list__comments-counter .icon  {
       fill: $color;
    }
-
   }
 
   .article-list__comments-counter--#{$name} .icon  {
     fill: $color;
   }
-
   .section-list--#{$name} {
     .article-list__comments-counter .icon  {
       fill: $color;
