@@ -36,18 +36,23 @@
   right: 0;
   width: 60%;
   margin: 0 auto;
+  a {
+
+  }
 }
 @each $name, $color in $color_list {
   .section--#{$name} {
     .pagination__next-anchor,
     .pagination__previous-anchor,
-    .pagination__page,
-    .pagination__current{
+    .pagination__pages-numbers a,
+    .pagination__current {
       color: $color;
     }
   }
 
-  .pagination__link--current  {
-    color: $color;
+  .pagination--#{$name}  {
+    .pagination__link--current {
+      color: $color;
+    }
   }
 }

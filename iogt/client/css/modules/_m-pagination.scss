@@ -9,6 +9,11 @@
     text-decoration: underline;
   }
 }
+.pagination__previous-anchor,
+.pagination__next-anchor {
+  display: inline-block;
+}
+
 .pagination__link {
   color: #60599C;
   font-size: $font-x-small;
