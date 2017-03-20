@@ -1,10 +1,17 @@
 
-.article-list__comments-counter .icon {
-  display: inline-block;
-  background-size: 78%;
-  vertical-align: text-bottom;
+.section-list {
+  .article-list__comments-counter {
+    padding: 15px 15px 5px;
+  }
 }
-
+.article-list__comments-counter {
+  padding: 15px 5px 5px;
+  .icon {
+    display: inline-block;
+    background-size: 78%;
+    vertical-align: text-bottom;
+  }
+}
 
 @each $name, $color in $color_list {
   .article--#{$name} {
