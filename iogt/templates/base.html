@@ -181,7 +181,7 @@
             {% surveys_list_headline %}
             {% load_polls as polls %}
             {% for question in polls %}
-            <li class="menu-list__item  menu-list__item--poll">
+            <li class="menu-list__item  menu-list__item--poll" style="background:yellow; margin: 0 10px;">
                 <a href="{% url 'molo.polls:poll_details' question.id %}" class="footer-link">
                   <img src="{% static 'img/poll_icon.png' %}" width="auto" class="menu-list__item--icon"/>
                   <span class="footer-link__title">{{ question.title }}</span></a>

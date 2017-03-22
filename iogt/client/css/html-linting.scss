@@ -1,0 +1,63 @@
+/*
+  Reseach Topic
+  - Mobile Validator - the web document must be suitable for:
+    * transmission across mobile networks ,
+    * client / user costs to download website (Website weight)
+    * Expected mobile usability practices on mobile browsers (Opera)
+
+  Mobile Browser Types
+  - WAP standards (support)
+
+  Mobile Devices
+
+  QA DATA
+*/
+
+/* Language attribute presence - a signal to screen readers what language the page is in*/
+html:not([lang]),
+html[lang=""] {
+  background: yellow;
+}
+
+/*
+  This selector targets any meta character set tag that is not set to UTF-8. This tag tells the browser to use the UTF-8 form of character encoding, which is presently the recommended form for HTML documents.
+*/
+meta[charset="UTF-8"]:not(:first-child),
+meta[charset]:not([charset="UTF-8"]) {
+  border: 5px solid red;
+}
+
+
+/* Style to make the elements with inline styles noticeable */
+*[style] {
+  border: 2px solid red;
+}
+
+/* These selectors will highlight any anchor elements that either do not have any href attribute at all, or have a meaningless one.*/
+a:not([href]),
+a[href="#"],
+a[href=""],
+a[href*="javascript:void(0)"] {
+  font-weight: bold;
+  color: red;
+}
+
+/*Unaccessible Images*/
+img:not([alt]) {
+  border: 5px solid red;
+}
+
+
+/* Form element name and input labelling */
+form:not([name]),
+input:not([name]),
+select:not([name]),
+textarea:not([name]) {
+  border: 2px solid red;
+}
+
+/* Unnecessary or Deprecated Attributes */
+script[type="text/javascript"],
+link[rel="stylesheet"][type="text/css"] {
+  background: blue;
+}

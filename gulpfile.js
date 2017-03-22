@@ -14,7 +14,7 @@ var sassPaths = [
     'iogt/client/css/opera-mini_single-view.scss',
     'iogt/client/css/style-rtl.scss',
     'iogt/client/css/style.scss',
-    'iogt/client/css/state_320/state_320.scss',
+    'iogt/client/css/state_320/state_320.scss'
 ];
 
 var sassDest = {
