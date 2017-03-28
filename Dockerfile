@@ -1,37 +1,12 @@
-FROM ubuntu:14.04
-MAINTAINER Milton Madanda <milton@praekelt.com>
-RUN apt-get update && apt-get -y --force-yes install libjpeg-dev zlib1g-dev libxslt1-dev libpq-dev nginx redis-server supervisor python-dev python-pip
-RUN apt-get -y install libffi-dev gettext
+FROM praekeltfoundation/molo-bootstrap:4.4.7-onbuild
 
-RUN pip install --upgrade pip
+ENV DJANGO_SETTINGS_MODULE=iogt.settings.docker \
+    CELERY_APP=iogt \
+    CELERY_WORKER=1 \
+    CELERY_BEAT=1
 
-ENV PROJECT_ROOT /deploy/
-ENV DJANGO_SETTINGS_MODULE iogt.settings.docker
+RUN LANGUAGE_CODE=en django-admin compilemessages && \
+    django-admin collectstatic --noinput && \
+    django-admin compress
 
-WORKDIR /deploy/
-
-COPY iogt /deploy/iogt
-COPY locale /deploy/locale
-ADD manage.py /deploy/
-ADD requirements.txt /deploy/
-ADD setup.py /deploy/
-ADD README.rst /deploy/
-ADD VERSION /deploy/
-
-RUN pip install -e .
-
-RUN mkdir -p /etc/supervisor/conf.d/
-RUN mkdir -p /var/log/supervisor
-RUN rm /etc/nginx/sites-enabled/default
-
-ADD docker/nginx.conf /etc/nginx/sites-enabled/molo.conf
-ADD docker/supervisor.conf /etc/supervisor/conf.d/molo.conf
-ADD docker/supervisord.conf /etc/supervisord.conf
-ADD docker/docker-start.sh /deploy/
-ADD docker/settings.py /deploy/iogt/settings/docker.py
-
-RUN chmod a+x /deploy/docker-start.sh
-
-EXPOSE 80
-
-ENTRYPOINT ["/deploy/docker-start.sh"]
+CMD ["iogt.wsgi:application", "--timeout", "1800"]
