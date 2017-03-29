@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 12:37+0000\n"
-"PO-Revision-Date: 2017-02-02 18:40+0000\n"
-"Last-Translator: Botswang <botswang@praekelt.com>\n"
+"PO-Revision-Date: 2017-03-29 13:06+0000\n"
+"Last-Translator: Vusi <vusim@buisoft.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ara_AE\n"
 "MIME-Version: 1.0\n"
@@ -12,61 +12,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1486060826.239511\n"
+"X-POOTLE-MTIME: 1490792786.156705\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
 msgid "Reply successfully created."
-msgstr ""
+msgstr "عضوا فعلا؟"
 
 #: iogt/temp_ve/commenting/forms.py:10
 #: iogt/temp_ve/commenting/forms.py:61
 msgid "Email address"
-msgstr ""
+msgstr "عنوان البريد الإلكتروني"
 
 #: iogt/temp_ve/commenting/forms.py:63
 msgid "URL"
-msgstr ""
+msgstr "رابط"
 
 #: iogt/temp_ve/commenting/forms.py:65
 msgid "Name"
-msgstr ""
+msgstr "الاسم"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:8
 #: iogt/temp_ve/commenting/views.py:48
 msgid "Anonymous"
-msgstr ""
+msgstr "مجهول"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:16
 msgid ""
 "This comment has been removed by the community. Please read our platform "
 "rules."
-msgstr ""
+msgstr "تمت إزالة هذا التعليق من قبل المجتمع. يرجى قراءة قواعد برنامجنا."
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:21
 msgid "Report"
-msgstr ""
+msgstr "إرسال تقرير عن مشكلة"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:23
 msgid "Reply"
-msgstr ""
+msgstr "الرد"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:6
 msgid "Share a Comment"
-msgstr ""
+msgstr "مشاركة تعليق"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
 msgid "Log in to comment"
-msgstr ""
+msgstr "تسجيل الدخول للتعليق"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:18
 msgid "Commenting on this article is currently disabled"
-msgstr ""
+msgstr "وتعليقا على هذه المادة معطلة حاليا"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:23
 #: iogt/temp_ve/commenting/templates/comments/comments.html:7
 msgid "Comments"
-msgstr ""
+msgstr "تعليقات"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:26
 #: iogt/templates/core/article_page.html:44
@@ -76,7 +76,7 @@ msgstr ""
 #: iogt/templates/core/tags/section_listing_homepage.html:38
 #: iogt/templates/search/search_results.html:28
 msgid "comment"
-msgstr ""
+msgstr "تعليق"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:41
 msgid "view more comments"
@@ -85,18 +85,18 @@ msgstr "المزيد"
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:7
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:6
 msgid "Thanks!"
-msgstr ""
+msgstr "شكراً!"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:9
 msgid "Your comment has been successfully posted"
-msgstr ""
+msgstr "تم نشر تعليقك بنجاح"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:11
 #: iogt/temp_ve/commenting/templates/comments/comments.html:28
 #: iogt/temp_ve/commenting/templates/comments/preview.html:45
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
-msgstr ""
+msgstr "عودة إلى المقال"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:11
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
@@ -114,53 +114,53 @@ msgstr "الصفحة الرئيسية"
 #: iogt/temp_ve/commenting/templates/comments/preview.html:38
 #: iogt/temp_ve/commenting/templates/comments/reply.html:18
 msgid "Please "
-msgstr ""
+msgstr "من فضلك "
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:40
 #: iogt/temp_ve/commenting/templates/comments/reply.html:20
 msgid "log in"
-msgstr ""
+msgstr "تسجيل الدخول"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:41
 #: iogt/temp_ve/commenting/templates/comments/reply.html:21
 msgid " to leave a comment."
-msgstr ""
+msgstr " لترك تعليق."
 
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:7
 msgid "This comment has been reported."
-msgstr ""
+msgstr "تم الإبلاغ عن هذا التعليق."
 
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:8
 msgid ""
 "It will be reviewed by the team and may be removed if it breaks our Platform "
 "rules"
-msgstr ""
+msgstr "سيتم مراجعته من قبل فريق ويمكن إزالتها إذا كان وقوع قواعد منصة لدينا"
 
 #: iogt/temp_ve/commenting/views.py:31
 msgid "Reporting comment replies is not allowed."
-msgstr ""
+msgstr "لا يجوز تقديم التقارير ردود تعليق."
 
 #: iogt/temp_ve/commenting/views.py:34
 msgid "The comment has been reported."
-msgstr ""
+msgstr "تم الإبلاغ عن التعليق."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 #: iogt/templates/403.html:8
 msgid "Access Denied"
-msgstr ""
+msgstr "تم الرفض"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 msgid "You do not have permssion to access this site."
-msgstr ""
+msgstr "لم يكن لديك permssion الوصول إلى هذا الموقع."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
 #: iogt/templates/403_csrf.html:7
 msgid "Unable to Login"
-msgstr ""
+msgstr "غير قادر على تسجيل الدخول"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:13
 msgid "Hi"
-msgstr ""
+msgstr "مرحبا"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
 msgid ""
@@ -169,16 +169,20 @@ msgid ""
 "Basics app for now. To login or register for a profile, visit our free "
 "mobisite through your mobile browser at"
 msgstr ""
+"عفواً، لديك مشكلة في الوصول إلى هذه الخدمة. نظراً لمشكلة تقنية مؤقتة، فإن "
+"خدمة الدخول والتسجيل غير متوفرة لـ \"تطبيق الأساسيات المجانية\" في الوقت "
+"الحالي. للدخول أو تسجيل ملف شخصي يمكنك زيارة موقعنا المجاني من متصفح هاتفك "
+"الجوال عبر "
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
 #: iogt/templates/403_csrf.html:11
 msgid " We're working hard to get this problem resolved. Thank you."
-msgstr ""
+msgstr " نحن نعمل بجد للحصول على هذه المشكلة حلها. شكرا."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
 #: iogt/templates/404.html:8
 msgid "Page not found"
-msgstr ""
+msgstr "الصفحة غير موجودة"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
 #: iogt/templates/404.html:9
@@ -190,138 +194,138 @@ msgstr "عفوا، لا نستطيع إيجاد الصفحة التي تبحث �
 #: iogt/templates/500.html:12
 #: iogt/templates/500.html:16
 msgid "Internal server error"
-msgstr ""
+msgstr "خطأ في السيرفر الداخلي"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr "للأسف، يبدو أن هناك خطأ قد حدث. يرجى إعادة المحاولة قريباً."
+msgstr "عذرا، يبدو أن هناك خطأ. يرجى المحاولة قريبا مرة أخرى ."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
 msgid "Site Language:"
-msgstr ""
+msgstr "اختر لغة الموقع"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
 msgid "Latest"
-msgstr ""
+msgstr "الأحدث"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/topic_of_the_day.html:6
 msgid "Topic of the Day"
-msgstr ""
+msgstr "موضوع اليوم"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:6
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:21
 msgid "Sign in"
-msgstr ""
+msgstr " تسجيل الدخول"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
 msgid "LOGIN TO YOUR ACCOUNT!"
-msgstr ""
+msgstr "تسجيل الدخول إلى حسابك"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
 msgid "We’re excited to have you..."
-msgstr ""
+msgstr "نحن متحمسون أن يكون لك ..."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
 msgid "Your username and password does not match. Please try again."
-msgstr ""
+msgstr "اسم المستخدم وكلمة المرور غير متطابقة. حاول مرة اخرى."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
 #: iogt/temp_ve/profiles/forms.py:76
 #: iogt/temp_ve/profiles/forms.py:299
 #: iogt/temp_ve/profiles/templates/registration/login.html:25
 msgid "Username"
-msgstr ""
+msgstr "اسم المستخدم"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
 #: iogt/temp_ve/profiles/templates/registration/login.html:30
 msgid "4-digit pin"
-msgstr ""
+msgstr "رقم السري 4 أرقام"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:25
 #: iogt/temp_ve/profiles/templates/registration/login.html:37
 #: iogt/templates/registration/password_reset_form.html:4
 msgid "Forgotten your password?"
-msgstr ""
+msgstr "هل نسيت كلمة المرور؟"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
 msgid "Your password has been set.  You may go ahead and log in now."
-msgstr ""
+msgstr "تم تعيين كلمة المرور الخاصة بك. يمكنك تسجيل الدخول الآن."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:9
 #: iogt/temp_ve/profiles/templates/registration/login.html:5
 #: iogt/temp_ve/profiles/templates/registration/login.html:34
 #: iogt/templates/registration/password_reset_complete.html:8
 msgid "Log in"
-msgstr ""
+msgstr "تسجيل الدخول"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
 #: iogt/templates/registration/password_reset_confirm.html:6
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
-msgstr ""
+msgstr "قم بإدخال كلمة المرور الجديدة مرتين."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
 #: iogt/templates/registration/password_reset_confirm.html:10
 msgid "New password:"
-msgstr ""
+msgstr "كلمة مرور جديدة"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
 #: iogt/templates/registration/password_reset_confirm.html:15
 msgid "Confirm password:"
-msgstr ""
+msgstr "تأكيد كلمة المرور"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
 #: iogt/templates/registration/password_reset_confirm.html:19
 msgid "Change my password"
-msgstr ""
+msgstr "تغيير كلمة المرور الخاصة بي"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
-msgstr ""
+msgstr "رابط إعادة تعيين كلمة المرور غير صالح.، ربما لأنه قد سبق استخدامه. يرجى إعادة طلب رابط جديد."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:7
 #: iogt/templates/registration/password_reset_done.html:5
 msgid ""
 "We've emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
-msgstr ""
+msgstr "لقد عبر البريد الالكتروني تعليمات تعيين كلمة المرور الخاصة بك، في حالة وجود حساب مع البريد الإلكتروني الذي أدخلته. يجب أن تتلقى منها قريبا."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:9
 #: iogt/templates/registration/password_reset_done.html:6
 msgid ""
 "If you don't receive an email, please make sure you've entered the address "
 "you registered with, and check your spam folder."
-msgstr ""
+msgstr "إذا كنت لا تتلقى رسالة بريد إلكتروني، يرجى التأكد من أنك أدخلت العنوان الذي سجلت مع، ومراجعة مجلد الرسائل غير المرغوب فيها."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
 msgid ""
 "Forgotten your password? Enter your email address below, and we'll email "
 "instructions for setting a new one."
-msgstr ""
+msgstr "نسيت كلمة المرور؟ إدخل عنوان البريد الالكتروني في الصندوق أدناه، وسنقوم بإرسال إرشادات تغيير كلمة المرور عبر البريد الإلكتروني."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
 #: iogt/templates/registration/password_reset_form.html:10
 msgid "Email address:"
-msgstr ""
+msgstr "البريد الإلكتروني:"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
 #: iogt/templates/registration/password_reset_form.html:14
 msgid "Reset my password"
-msgstr ""
+msgstr "إعادة تعيين كلمة المرور الخاصة بي"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
 msgid "Looking for something?"
-msgstr ""
+msgstr "تبحث عن شيء؟"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
 #: iogt/templates/search/search_block.html:6
 msgid "SEARCH"
-msgstr "بحث"
+msgstr "البحث"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
@@ -329,25 +333,25 @@ msgstr "بحث"
 #: iogt/templates/search/search_results.html:47
 #: iogt/templates/search/search_results.html:49
 msgid "Search"
-msgstr "بحث"
+msgstr "البحث"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
 #: iogt/templates/search/search_results.html:52
 msgid "No search results for "
-msgstr "لا توجد نتائج لبحث"
+msgstr "لا نتائج للبحث "
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
 #: iogt/templates/search/search_results.html:46
 msgid "I am looking for"
-msgstr ""
+msgstr "أنا أبحث عن"
 
 #: iogt/temp_ve/core/views.py:92
 msgid "That page is not translatable."
-msgstr ""
+msgstr "هذه الصفحة ليست للترجمة."
 
 #: iogt/temp_ve/polls/forms.py:20
 msgid "You didn't select a choice"
-msgstr ""
+msgstr "أنت لم تقم بتحديد الخيار"
 
 #: iogt/temp_ve/polls/templates/polls/detail.html:23
 #: iogt/temp_ve/polls/templates/polls/free_text_detail.html:12
@@ -356,158 +360,158 @@ msgstr ""
 #: iogt/templates/polls/free_text_detail.html:13
 #: iogt/templates/polls/includes/poll_question_form.html:45
 msgid "Vote"
-msgstr ""
+msgstr "تصويت"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
 #: iogt/templates/polls/includes/poll_free_text_form.html:16
 msgid "Submit"
-msgstr ""
+msgstr "عرض"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:17
 #: iogt/templates/polls/includes/poll_free_text_form.html:18
 msgid "Thank you! Your response has already been submitted."
-msgstr ""
+msgstr "شكرا! وقد تم بالفعل تقديم ردكم."
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:20
 #: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:20
 #: iogt/templates/polls/includes/poll_free_text_form.html:24
 #: iogt/templates/polls/includes/poll_question_form.html:26
 msgid "Log in to vote"
-msgstr ""
+msgstr "تسجيل الدخول للتصويت"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
 #: iogt/templates/polls/includes/poll_question_form.html:47
 msgid "Show Results"
-msgstr ""
+msgstr "أظهر النتائج"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
 #: iogt/templates/polls/includes/poll_question_form.html:50
 msgid "You voted: "
-msgstr ""
+msgstr "انت ادليت بصوتك: "
 
 #: iogt/temp_ve/polls/templates/polls/poll_page.html:7
 msgid "What's your opinion?"
-msgstr ""
+msgstr "ما هو رأيك؟"
 
 #: iogt/temp_ve/polls/templates/polls/results.html:8
 #: iogt/templates/polls/results.html:8
 msgid "Your answers:"
-msgstr ""
+msgstr "أجوبتك:"
 
 #: iogt/temp_ve/polls/templates/polls/results.html:21
 #: iogt/templates/polls/results.html:28
 msgid "Thank you for voting!"
-msgstr ""
+msgstr "شكرا لتصويتك!"
 
 #: iogt/temp_ve/profiles/admin.py:73
 msgid "Type"
-msgstr ""
+msgstr "النوع"
 
 #: iogt/temp_ve/profiles/admin.py:78
 msgid "Frontend Users"
-msgstr ""
+msgstr "الواجهة المستخدمين"
 
 #: iogt/temp_ve/profiles/admin.py:79
 msgid "Admin Users"
-msgstr ""
+msgstr "امشرف المستخدمين"
 
 #: iogt/temp_ve/profiles/admin_views.py:16
 msgid ""
 "Your email address is not configured. Please update it before exporting."
-msgstr ""
+msgstr "لم يتم تكوين عنوان البريد الإلكتروني الخاص بك. الرجاء تحديثه قبل التصدير."
 
 #: iogt/temp_ve/profiles/admin_views.py:39
 msgid "CSV emailed to '{0}'"
-msgstr ""
+msgstr "CSV عبر البريد الالكتروني إلى ' {0} '"
 
 #: iogt/temp_ve/profiles/forms.py:78
 #: iogt/temp_ve/profiles/forms.py:301
 msgid "This value must contain only letters, numbers and underscores."
-msgstr ""
+msgstr "يجب أن يحتوي على هذه القيمة فقط على الأحرف والأرقام وسفلية."
 
 #: iogt/temp_ve/profiles/forms.py:94
 #: iogt/temp_ve/profiles/forms.py:275
 #: iogt/temp_ve/profiles/forms.py:343
 #: iogt/temp_ve/profiles/forms.py:360
 msgid "This value must contain only numbers."
-msgstr ""
+msgstr "يجب أن تحتوي هذه القيمة على أرقام فقط."
 
 #: iogt/temp_ve/profiles/forms.py:96
 #: iogt/temp_ve/profiles/forms.py:345
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:23
 msgid "PIN"
-msgstr ""
+msgstr "كلمة المرور:"
 
 #: iogt/temp_ve/profiles/forms.py:145
 msgid "Username already exists."
-msgstr ""
+msgstr "اسم المستخدم سبق استعماله"
 
 #: iogt/temp_ve/profiles/forms.py:150
 msgid ""
 "Sorry, but that is an invalid username. Please don't use your %s in your "
 "username."
-msgstr ""
+msgstr "آسف، ولكن هذا هو اسم مستخدم غير صالح. يرجى عدم استخدام الخاص بك %s في اسم المستخدم الخاص بك."
 
 #: iogt/temp_ve/profiles/forms.py:184
 msgid "Display Name"
-msgstr ""
+msgstr "اسم العرض"
 
 #: iogt/temp_ve/profiles/forms.py:208
 msgid ""
 "Sorry, but that is an invalid display name. Please don't use your %s in your "
 "display name."
-msgstr ""
+msgstr "آسف، ولكن هذا هو اسم العرض غير صالح. يرجى عدم استخدام الخاص بك %s في اسم العرض الخاص بك."
 
 #: iogt/temp_ve/profiles/forms.py:244
 #: iogt/temp_ve/profiles/forms.py:259
 msgid "This value must contain only           numbers."
-msgstr ""
+msgstr "يجب أن يحتوي على هذه القيمة أرقام فقط."
 
 #: iogt/temp_ve/profiles/forms.py:246
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:25
 msgid "Old Password"
-msgstr ""
+msgstr "كلمة المرور القديمة"
 
 #: iogt/temp_ve/profiles/forms.py:261
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:32
 msgid "New Password"
-msgstr ""
+msgstr "كلمة مرور جديدة"
 
 #: iogt/temp_ve/profiles/forms.py:277
 msgid "Confirm Password"
-msgstr ""
+msgstr "تأكيد كلمة المرور"
 
 #: iogt/temp_ve/profiles/forms.py:287
 msgid "New passwords do not match."
-msgstr ""
+msgstr "كلمات المرور الجديدة غير متطابقة"
 
 #: iogt/temp_ve/profiles/forms.py:362
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:29
 msgid "Confirm PIN"
-msgstr ""
+msgstr "تأكيد PIN"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:27
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
 msgid "(e.g. 2086)"
-msgstr ""
+msgstr "على سبيل المثال 2086"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:38
 msgid "Confirm New Password"
-msgstr ""
+msgstr "تأكيد كلمة المرور الجديدة"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:42
 #: iogt/temp_ve/profiles/templates/profiles/done.html:16
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:36
 msgid "Save"
-msgstr ""
+msgstr "تخزين"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:6
 msgid "Thank you for joining!"
-msgstr ""
+msgstr "شكراً لانضمامك!"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:9
 msgid "Let us know your birthday to get access to exclusive content."
-msgstr ""
+msgstr "أخبرنا بتاريخ ميلادك للوصول إلى المحتوى الحصري."
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:18
 #: iogt/temp_ve/usermetadata/templates/persona.html:21
@@ -516,171 +520,171 @@ msgstr "تخطى"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:10
 msgid "Type new display name:"
-msgstr ""
+msgstr "نوع جديد عرض أسماء"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:15
 msgid "Update your date of birth:"
-msgstr ""
+msgstr "تاريخ التحديث ميلادك"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:21
 msgid "Update your mobile number:"
-msgstr ""
+msgstr "تحديث رقم الجوال الخاص بك:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:24
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:31
 msgid "(e.g. 0914556789)"
-msgstr ""
+msgstr "مثلا:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:30
 msgid "Update your email address:"
-msgstr ""
+msgstr "تحديث عنوان البريد الإلكتروني الخاص بك:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:33
 #: iogt/temp_ve/profiles/templates/profiles/register.html:47
 msgid "(e.g. example@foo.com)"
-msgstr ""
+msgstr "(على سبيل المثال example@foo.com)"
 
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:6
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:36
 msgid "Forgot PIN"
-msgstr ""
+msgstr "نسيت الرقم السري"
 
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:31
 msgid "Security question"
-msgstr ""
+msgstr "سؤال الأمان"
 
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:32
 msgid "Please answer the following security question."
-msgstr ""
+msgstr "يرجى الإجابة على سؤال الأمان ​​التالي."
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:6
 #: iogt/temp_ve/profiles/templates/profiles/register.html:73
 #: iogt/temp_ve/profiles/templates/registration/login.html:9
 msgid "Register"
-msgstr ""
+msgstr "تسجيل"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:9
 msgid "Already a member?"
-msgstr ""
+msgstr "عضوا فعلا؟"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:10
 #: iogt/templates/base.html:182
 msgid "Login"
-msgstr ""
+msgstr "تسجيل الدخول"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:14
 #: iogt/temp_ve/profiles/templates/registration/login.html:8
 msgid "Not a member yet?"
-msgstr ""
+msgstr "لست عضوا حتى الآن؟"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:15
 msgid "Join us by signing up below."
-msgstr ""
+msgstr "الانضمام إلينا من خلال الاشتراك في الادنى."
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:21
 msgid "Choose a username"
-msgstr ""
+msgstr "اختر اسم المستخدم"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:27
 msgid "Choose a 4-digit pin"
-msgstr ""
+msgstr "اختيار رقم تعريف شخصي 4 أرقام"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:30
 msgid "e.g. 2086"
-msgstr ""
+msgstr "(على سبيل المثال 2086)"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:35
 msgid "Enter your mobile number"
-msgstr ""
+msgstr "أدخل رقم هاتفك المحمول"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:38
 msgid "(e.g. 0900000013)"
-msgstr ""
+msgstr "مثلا:"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:44
 msgid "Enter your email address"
-msgstr ""
+msgstr "أدخل عنوان بريدك الالكتروني"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:66
 msgid "Please accept the T&amp;Cs in order to complete the registration"
-msgstr ""
+msgstr "يرجى قبول T & أمبير؛ جيم من أجل إكمال التسجيل"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:70
 msgid "I accept the Terms and Conditions"
-msgstr ""
+msgstr "أوافق على الشروط والأحكام"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:5
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:32
 msgid "Reset PIN"
-msgstr ""
+msgstr "إعادة تعيين PIN"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:5
 msgid "PIN Changed"
-msgstr ""
+msgstr "PIN تغيير"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:7
 msgid "Your PIN has been changed sucessfully."
-msgstr ""
+msgstr "تم تغيير الرقم السري الخاص بك بنجاح."
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:8
 msgid "Continue to Sign In"
-msgstr ""
+msgstr "الاستمرار في تسجيل الدخول"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:6
 msgid "Hello "
-msgstr ""
+msgstr "مرحباً"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:10
 msgid "As you type your name comment will appear as:"
-msgstr ""
+msgstr "أثناء الكتابة تعليقك الاسم سوف تظهر:"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:15
 msgid "Date of Birth: "
-msgstr ""
+msgstr "تاريخ الولادة"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:20
 msgid " Not set."
-msgstr ""
+msgstr "غير مضبوط."
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:27
 msgid "Mobile number:"
-msgstr ""
+msgstr "رقم الهاتف المحمول"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:37
 msgid "Email Address:"
-msgstr ""
+msgstr "عنوان البريد الإلكتروني:"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:42
 msgid "log out"
-msgstr ""
+msgstr "الخروج"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:43
 msgid "Edit My Profile"
-msgstr ""
+msgstr "تعديل ملفي الشخصي"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:44
 msgid "Change My Password"
-msgstr ""
+msgstr "تغيير كلمة المرور الخاصة بي"
 
 #: iogt/temp_ve/profiles/templates/registration/login.html:20
 msgid "Your username and password do not match. Please try again."
-msgstr ""
+msgstr "اسم المستخدم وكلمة المرور غير متطابقة. حاول مرة اخرى."
 
 #: iogt/temp_ve/profiles/templates/registration/login.html:32
 msgid "Eg.: 2086"
-msgstr ""
+msgstr "مثلا:"
 
 #: iogt/temp_ve/profiles/views.py:129
 msgid "The old password is incorrect."
-msgstr ""
+msgstr "كلمة السر غير صحيحة."
 
 #: iogt/temp_ve/profiles/views.py:152
 msgid "Too many attempts. Please try again later."
-msgstr ""
+msgstr "محاولات كثيرة. الرجاء معاودة المحاولة في وقت لاحق."
 
 #: iogt/temp_ve/profiles/views.py:247
 msgid "The two PINs that you entered do not match. Please try again."
-msgstr ""
+msgstr "واثنين من المسامير التي أدخلتها لا تتطابق. حاول مرة اخرى."
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Next Question"
@@ -688,11 +692,11 @@ msgstr "التالي"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Submit Survey"
-msgstr ""
+msgstr "أرسل الاستطلاع"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:31
 msgid "You have already completed this survey."
-msgstr ""
+msgstr "لقد أنجزت بالفعل هذا الاستطلاع."
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:34
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
@@ -701,63 +705,63 @@ msgstr "الصفحة الرئيسية"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:39
 msgid "Please log in to take this survey"
-msgstr ""
+msgstr "الرجاء الدخول للمشاركة في هذا الاستطلاع"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:12
 msgid "Survey Results"
-msgstr ""
+msgstr "نتائج الاستطلاع"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:14
 msgid ""
 "Your survey has been completed successfully. Please see your submission "
 "results below."
-msgstr ""
+msgstr "وقد تم الانتهاء من الدراسة بنجاح. يرجى الاطلاع على النتائج تقديم أدناه."
 
 #: iogt/temp_ve/surveys/templates/surveys/surveys_list.html:10
 msgid "Take The Survey"
-msgstr ""
+msgstr "شارك في الاستطلاع"
 
 #: iogt/templates/403_csrf.html:9
 msgid ""
 "Sorry, you are having trouble accessing this feature! Due to a temporary "
 "technical issue, login and registrations are not available on the IoGT app "
 "for now."
-msgstr ""
+msgstr "آسف، كنت تواجه مشكلة في الوصول إلى هذه الميزة! وذلك بسبب مشكلة فنية مؤقتة، الدخول والتسجيل لا تتوفر على التطبيق IoGT في الوقت الراهن."
 
 #: iogt/templates/403_csrf.html:10
 msgid ""
 "To login or register for a profile, visit our free mobisite through your "
 "mobile browser at"
-msgstr ""
+msgstr "للدخول أو التسجيل للحصول على لمحة، زيارة موقعنا mobisite مجانا من خلال متصفح الجوال في"
 
 #: iogt/templates/base.html:104
 msgid "Language"
-msgstr ""
+msgstr "اللغة"
 
 #: iogt/templates/base.html:109
 msgid "Change Language"
-msgstr ""
+msgstr "تغير اللغة"
 
 #: iogt/templates/base.html:130
 msgid "IoGT"
-msgstr ""
+msgstr "IoGT"
 
 #: iogt/templates/base.html:136
 msgid "Join"
-msgstr ""
+msgstr "انضم"
 
 #: iogt/templates/base.html:138
 #: iogt/templates/base.html:185
 msgid "Profile"
-msgstr ""
+msgstr "الملف الشخصي"
 
 #: iogt/templates/base.html:141
 msgid "Menu"
-msgstr ""
+msgstr "القاذمة"
 
 #: iogt/templates/base.html:194
 msgid "Change your language"
-msgstr ""
+msgstr "تغيير اللغة"
 
 #: iogt/templates/core/section_page.html:65
 msgid "Prev"
@@ -769,11 +773,11 @@ msgstr "التالي"
 
 #: iogt/templates/core/section_page.html:141
 msgid "View More"
-msgstr "المزيد"
+msgstr "عرض المزيد"
 
 #: iogt/templates/core/tags/latest_listing_homepage.html:4
 msgid "Recommended"
-msgstr "أرغب في معرفة المزيد عن"
+msgstr " موصى به"
 
 #: iogt/templates/core/tags/section_listing_homepage.html:45
 msgid "More"
@@ -782,17 +786,17 @@ msgstr "المزيد"
 #: iogt/templates/polls/poll_page.html:7
 #: iogt/templates/polls/poll_page_in_section.html:8
 msgid "Polls"
-msgstr ""
+msgstr "استفتاءات"
 
 #: iogt/templates/registration/password_reset_complete.html:5
 msgid "Your password has been set. You may go ahead and log in now."
-msgstr ""
+msgstr "تم تعيين كلمة المرور الخاصة بك. يمكنك تسجيل الدخول الآن."
 
 #: iogt/templates/registration/password_reset_confirm.html:22
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
-msgstr ""
+msgstr "رابط إعادة تعيين كلمة المرور غير صالح.، ربما لأنه قد سبق استخدامه. يرجى إعادة طلب رابط جديد."
 
 #: iogt/templates/registration/password_reset_done.html:8
 msgid "Back to home page"
@@ -803,15 +807,156 @@ msgid ""
 "Enter your email address below, and we'll email instructions for setting a "
 "new one."
 msgstr ""
+"أدخل عنوان البريد الالكتروني أدناه، وسنقوم بارسال تعليمات لوضع واحدة جديدة."
 
 #: iogt/templates/search/search_block.html:5
 msgid "Search the site..."
-msgstr ""
+msgstr "البحث في الموقع"
 
 #: iogt/templates/search/search_results.html:7
 msgid "Search Results for:"
-msgstr ""
+msgstr "نتائج البحث عن:"
 
 #: iogt/templates/search/search_results.html:55
 msgid "Back to homepage"
-msgstr "الصفحة الرئيسية"
+msgstr "عودة إلى الصفحة الرئيسية"
+
+#: iogt/settings/base.py:423
+msgid "January"
+msgstr "يناير"
+
+#: iogt/settings/base.py:424
+msgid "February"
+msgstr "فبراير"
+
+#: iogt/settings/base.py:425
+msgid "March"
+msgstr "مارس"
+
+#: iogt/settings/base.py:426
+msgid "April"
+msgstr "إبريل"
+
+#: iogt/settings/base.py:427
+msgid "May"
+msgstr "مايو"
+
+#: iogt/settings/base.py:428
+msgid "June"
+msgstr "يونيو"
+
+#: iogt/settings/base.py:429
+msgid "July"
+msgstr "يوليو"
+
+#: iogt/settings/base.py:430
+msgid "August"
+msgstr "أغسطس"
+
+#: iogt/settings/base.py:431
+msgid "September"
+msgstr "سبتمبر"
+
+#: iogt/settings/base.py:432
+msgid "October"
+msgstr "أكتوبر"
+
+#: iogt/settings/base.py:433
+msgid "November"
+msgstr "نوفمبر"
+
+#: iogt/settings/base.py:434
+msgid "December"
+msgstr "ديسمبر"
+
+#: iogt/settings/base.py:435
+msgid "Add anonymously"
+msgstr "أضف دون أن يعرفك أحد"
+
+#: iogt/temp_ve/commenting/templates/comments/form.html:7
+msgid ""
+"\n"
+"        Please correct the error below\n"
+"      </h6>\n"
+"      </h6 class=\"comment__text comment__text--plural\">\n"
+"        "
+msgid_plural "Please correct the errors below"
+msgstr[0] "\ ن الرجاء تصحيح الخطأ أدناه \ ن </ H6> \ ن </ فئة H6 = \ "comment__text comment__text - \ الجمع"> \ ن        "
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
+msgid "Zulu"
+msgstr "الزولو"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
+msgid "Xhosa"
+msgstr "زوسا"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:211
+msgid "Sotho"
+msgstr "السوتو الشمالية"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:212
+msgid "Venda"
+msgstr "فندا"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:213
+msgid "Tswana"
+msgstr "التسوانية"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:214
+msgid "Tsonga"
+msgstr "تسونجا"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:215
+msgid "Swati"
+msgstr "سواتي"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:216
+msgid "Ndebele"
+msgstr "نديبيلي"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
+#: iogt/templates/core/related-article-list.html:7
+msgid "Next up in"
+msgstr "يصل المقبل في"
+
+#: iogt/templates/comments/comment_block.html:6
+msgid "Have something to add to this article?"
+msgstr "هل لديك ما تضيفه لهذا المقال؟"
+
+#: iogt/templates/comments/form.html:7
+msgid ""
+"\n"
+"        Please correct the error below\n"
+"        "
+msgid_plural "Please correct the errors below"
+msgstr[0] "\ ن الرجاء تصحيح الخطأ أدناه \ ن        "
+
+#: iogt/templates/core/related-article-list.html:31
+msgid "Related Articles"
+msgstr "مقالات ذات علاقة"
+
+#: iogt/templates/core/section_page.html:152
+#: iogt/templates/core/tags/section_listing_homepage.html:47
+msgid "View more"
+msgstr "عرض المزيد"
+
+#: iogt/templates/profiles/register.html:38
+msgid "e.g. 0900000013"
+msgstr "مثلا:"
+
+#: iogt/templates/profiles/register.html:47
+msgid "e.g. example@foo.com"
+msgstr "على سبيل المثال example@foo.com"
+
+#: iogt/templates/registration/login.html:13
+msgid "Login by signing in below."
+msgstr "تسجيل الدخول عن طريق تسجيل الدخول أدناه."
+
+#: iogt/templates/search/search_results.html:81
+msgid "No search results were found for "
+msgstr "لم يتم العثور على نتائج البحث ل "
+
+#: iogt/templates/surveys/surveys_list.html:10
+msgid "Start here"
+msgstr "أبدأ هنا"
