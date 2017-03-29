@@ -8,6 +8,8 @@ LANGUAGE_CODE=en ./manage.py compilemessages
 ./manage.py migrate --noinput
 ./manage.py collectstatic --noinput
 ./manage.py compress
+./manage.py remove_content_rotation_settings_from_sections
+./manage.py remove_all_featured_articles
 
 echo "from django.contrib.auth.models import User
 if not User.objects.filter(username='admin').count():
