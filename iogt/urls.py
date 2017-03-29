@@ -11,7 +11,7 @@ from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 from wagtail.wagtailcore import urls as wagtail_urls
 from molo.profiles.views import RegistrationDone
-from molo.profiles.forms import DateOfBirthForm
+from molo.profiles.forms import DoneForm
 
 
 # implement CAS URLs in a production setting
@@ -37,7 +37,7 @@ urlpatterns += patterns(
     url(r'^profiles/register/done/',
         login_required(RegistrationDone.as_view(
             template_name="profiles/done.html",
-            form_class=DateOfBirthForm
+            form_class=DoneForm
         )),
         name='registration_done'),
     url(r'^profiles/', include('molo.profiles.urls',
