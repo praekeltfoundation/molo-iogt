@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1486063236.486169\n"
+"X-POOTLE-MTIME: 1490369031.667051\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -822,3 +822,125 @@ msgstr ""
 #: iogt/templates/search/search_results.html:55
 msgid "Back to homepage"
 msgstr "لاپەڕەی سەرەکی"
+
+#: iogt/settings/base.py:423
+msgid "January"
+msgstr ""
+
+#: iogt/settings/base.py:424
+msgid "February"
+msgstr ""
+
+#: iogt/settings/base.py:425
+msgid "March"
+msgstr ""
+
+#: iogt/settings/base.py:426
+msgid "April"
+msgstr ""
+
+#: iogt/settings/base.py:427
+msgid "May"
+msgstr ""
+
+#: iogt/settings/base.py:428
+msgid "June"
+msgstr ""
+
+#: iogt/settings/base.py:429
+msgid "July"
+msgstr ""
+
+#: iogt/settings/base.py:430
+msgid "August"
+msgstr ""
+
+#: iogt/settings/base.py:431
+msgid "September"
+msgstr ""
+
+#: iogt/settings/base.py:432
+msgid "October"
+msgstr ""
+
+#: iogt/settings/base.py:433
+msgid "November"
+msgstr ""
+
+#: iogt/settings/base.py:434
+msgid "December"
+msgstr ""
+
+#: iogt/settings/base.py:435
+msgid "Add anonymously"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
+msgid "Zulu"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
+msgid "Xhosa"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:211
+msgid "Sotho"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:212
+msgid "Venda"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:213
+msgid "Tswana"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:214
+msgid "Tsonga"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:215
+msgid "Swati"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:216
+msgid "Ndebele"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
+#: iogt/templates/core/related-article-list.html:7
+msgid "Next up in"
+msgstr ""
+
+#: iogt/templates/comments/comment_block.html:6
+msgid "Have something to add to this article?"
+msgstr ""
+
+#: iogt/templates/core/related-article-list.html:31
+msgid "Related Articles"
+msgstr ""
+
+#: iogt/templates/core/section_page.html:152
+#: iogt/templates/core/tags/section_listing_homepage.html:47
+msgid "View more"
+msgstr ""
+
+#: iogt/templates/profiles/register.html:38
+msgid "e.g. 0900000013"
+msgstr ""
+
+#: iogt/templates/profiles/register.html:47
+msgid "e.g. example@foo.com"
+msgstr ""
+
+#: iogt/templates/registration/login.html:13
+msgid "Login by signing in below."
+msgstr ""
+
+#: iogt/templates/search/search_results.html:81
+msgid "No search results were found for "
+msgstr ""
+
+#: iogt/templates/surveys/surveys_list.html:10
+msgid "Start here"
+msgstr ""
