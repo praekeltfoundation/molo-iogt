@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-30 17:29+0200\n"
+"POT-Creation-Date: 2017-03-30 17:41+0200\n"
 "PO-Revision-Date: 2017-02-01 07:44+0000\n"
 "Last-Translator: Ntu2ko Trevor <trevor@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,114 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1485935090.268670\n"
+
+#: iogt/settings/base.py:415
+msgid "January"
+msgstr ""
+
+#: iogt/settings/base.py:416
+msgid "February"
+msgstr ""
+
+#: iogt/settings/base.py:417
+msgid "March"
+msgstr ""
+
+#: iogt/settings/base.py:418
+msgid "April"
+msgstr ""
+
+#: iogt/settings/base.py:419
+msgid "May"
+msgstr ""
+
+#: iogt/settings/base.py:420
+msgid "June"
+msgstr ""
+
+#: iogt/settings/base.py:421
+msgid "July"
+msgstr ""
+
+#: iogt/settings/base.py:422
+msgid "August"
+msgstr ""
+
+#: iogt/settings/base.py:423
+msgid "September"
+msgstr ""
+
+#: iogt/settings/base.py:424
+msgid "October"
+msgstr ""
+
+#: iogt/settings/base.py:425
+msgid "November"
+msgstr ""
+
+#: iogt/settings/base.py:426
+msgid "December"
+msgstr ""
+
+#: iogt/settings/base.py:427
+msgid "Add anonymously"
+msgstr ""
+
+#: iogt/settings/base.py:429
+msgid "This field is required"
+msgstr ""
+
+#: iogt/settings/base.py:430
+msgid "ARE YOU A"
+msgstr ""
+
+#: iogt/settings/base.py:431
+msgid "Ensure this value has at least 4 characters (it has 1)"
+msgstr ""
+
+#: iogt/settings/base.py:432
+msgid "Type your comment here"
+msgstr ""
+
+#: iogt/settings/base.py:434
+msgid "1"
+msgstr ""
+
+#: iogt/settings/base.py:435
+msgid "2"
+msgstr ""
+
+#: iogt/settings/base.py:436
+msgid "3"
+msgstr ""
+
+#: iogt/settings/base.py:437
+msgid "4"
+msgstr ""
+
+#: iogt/settings/base.py:438
+msgid "5"
+msgstr ""
+
+#: iogt/settings/base.py:439
+msgid "6"
+msgstr ""
+
+#: iogt/settings/base.py:440
+msgid "7"
+msgstr ""
+
+#: iogt/settings/base.py:441
+msgid "8"
+msgstr ""
+
+#: iogt/settings/base.py:442
+msgid "9"
+msgstr ""
+
+#: iogt/settings/base.py:443
+msgid "10"
+msgstr ""
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -110,17 +218,6 @@ msgstr ""
 msgid "Back to article"
 msgstr ""
 
-#: iogt/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-msgstr[1] ""
-
 #: iogt/temp_ve/commenting/templates/comments/preview.html:11
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
 #: iogt/temp_ve/polls/templates/polls/detail.html:25
@@ -163,6 +260,38 @@ msgstr ""
 
 #: iogt/temp_ve/commenting/views.py:34
 msgid "The comment has been reported."
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:215
+msgid "Zulu"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:216
+msgid "Xhosa"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:217
+msgid "Sotho"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:218
+msgid "Venda"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:219
+msgid "Tswana"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:220
+msgid "Tsonga"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:221
+msgid "Swati"
+msgstr ""
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:222
+msgid "Ndebele"
 msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
@@ -921,15 +1050,6 @@ msgstr ""
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
 msgstr ""
-
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-msgstr[1] ""
 
 #: iogt/templates/core/related-article-list.html:31
 msgid "Related Articles"
