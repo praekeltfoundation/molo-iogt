@@ -873,16 +873,6 @@ msgstr "ديسمبر"
 msgid "Add anonymously"
 msgstr "أضف دون أن يعرفك أحد"
 
-#: iogt/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ ن الرجاء تصحيح الخطأ أدناه \ ن </ H6> \ ن </ فئة H6 = \ "comment__text comment__text - \ الجمع"> \ ن        "
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Zulu"
 msgstr "الزولو"
@@ -923,14 +913,6 @@ msgstr "يصل المقبل في"
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
 msgstr "هل لديك ما تضيفه لهذا المقال؟"
-
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ ن الرجاء تصحيح الخطأ أدناه \ ن        "
 
 #: iogt/templates/core/related-article-list.html:31
 msgid "Related Articles"

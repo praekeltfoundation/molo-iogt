@@ -422,21 +422,10 @@ msgid ""
 "Your email address is not configured. Please update it before exporting."
 msgstr "Seu endereço de email não está configurado. Por favor, atualize-o antes de exportar."
 
-#: iogt/temp_ve/profiles/admin_views.py:39
-msgid "CSV emailed to '{0}'"
-msgstr "CSV enviado para ' {0} '"
-
 #: iogt/temp_ve/profiles/forms.py:78
 #: iogt/temp_ve/profiles/forms.py:301
 msgid "This value must contain only letters, numbers and underscores."
 msgstr "Este valor deve conter apenas letras, números e sublinhados."
-
-#: iogt/temp_ve/profiles/forms.py:94
-#: iogt/temp_ve/profiles/forms.py:275
-#: iogt/temp_ve/profiles/forms.py:343
-#: iogt/temp_ve/profiles/forms.py:360
-msgid "This value must contain only numbers."
-msgstr "Insira apenas números."
 
 #: iogt/temp_ve/profiles/forms.py:96
 #: iogt/temp_ve/profiles/forms.py:345
@@ -466,7 +455,7 @@ msgstr "Desculpe, mas isso é um nome de exibição inválido. Por favor, não u
 
 #: iogt/temp_ve/profiles/forms.py:244
 #: iogt/temp_ve/profiles/forms.py:259
-msgid "This value must contain only           numbers."
+msgid "This value must contain only numbers."
 msgstr "Este valor deve conter apenas números."
 
 #: iogt/temp_ve/profiles/forms.py:246
@@ -876,16 +865,6 @@ msgstr "Dezembro"
 msgid "Add anonymously"
 msgstr "Adiciona em anonimato "
 
-#: iogt/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ N Por favor, corrija o erro \ n </ h6> \ n </ class H6 = \ "comment__text comment__text - plural \"> abaixo \ n        "
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Zulu"
 msgstr "zulu"
@@ -926,14 +905,6 @@ msgstr "Em seguida, em"
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
 msgstr "Tem algo a adicionar a este artigo"
-
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ N Por favor, corrija o erro \ n abaixo        "
 
 #: iogt/templates/core/related-article-list.html:31
 msgid "Related Articles"

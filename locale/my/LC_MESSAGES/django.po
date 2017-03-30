@@ -904,16 +904,6 @@ msgid "Add anonymously"
 msgstr "အမည်ဝှက်တင်သွင်း"
 ""
 
-#: iogt/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ n \ n </ h6 class = \ "comment__text comment__text - အများကိန်း \"> \ အောက်ကအမှားပြင်ပေးပါဎ </ h6> \ n        "
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Zulu"
 msgstr "ဇူလူ"
@@ -956,13 +946,6 @@ msgstr "လာမယ့်အတွက်တက်"
 msgid "Have something to add to this article?"
 msgstr "ဤဆောင်းပါးတွင်ထည့်သွင်းဖို့တစ်ခုခုရှိပါသလား?"
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ n \ n အောက်ကအမှားပြင်ပေးပါ        "
 
 #: iogt/templates/core/related-article-list.html:31
 msgid "Related Articles"

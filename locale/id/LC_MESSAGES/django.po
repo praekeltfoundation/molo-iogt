@@ -868,16 +868,6 @@ msgstr "Desember"
 msgid "Add anonymously"
 msgstr "Tambahkan anonim"
 
-#: iogt/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ N Harap perbaiki kesalahan di bawah \ n </ h6> \ n </ class h6 = \ "comment__text comment__text - plural \"> \ n        "
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Zulu"
 msgstr "Zulu"
@@ -918,14 +908,6 @@ msgstr "Selanjutnya di"
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
 msgstr "Memiliki sesuatu untuk menambah artikel ini?"
-
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ N Harap perbaiki kesalahan di bawah \ n        "
 
 #: iogt/templates/core/related-article-list.html:31
 msgid "Related Articles"

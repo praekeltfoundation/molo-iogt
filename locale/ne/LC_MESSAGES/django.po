@@ -868,16 +868,6 @@ msgstr "७ डिसेम्बर २०१०."
 msgid "Add anonymously"
 msgstr "अज्ञात थप्न"
 
-#: iogt/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ N - \ n कृपया तल \ n </ h6> \ n </ h6 वर्ग = \ "बहुसंख्यक \ comment__text comment__text"> त्रुटि ठीक        "
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Zulu"
 msgstr "जुलु"
@@ -918,14 +908,6 @@ msgstr "अर्को अप मा"
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
 msgstr "यस लेखमा थप्न कुरा छ?"
-
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\ N कृपया तल \ n त्रुटि ठीक        "
 
 #: iogt/templates/core/related-article-list.html:31
 msgid "Related Articles"
