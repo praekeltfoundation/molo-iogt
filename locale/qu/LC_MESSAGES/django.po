@@ -234,15 +234,6 @@ msgstr ""
 msgid "view more comments"
 msgstr ""
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-msgstr[1] ""
-
 #: iogt/templates/core/article_page.html:11
 #: iogt/templates/core/section_page.html:20
 #: iogt/templates/surveys/molo_survey_page.html:10
