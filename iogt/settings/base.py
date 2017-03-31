@@ -362,7 +362,7 @@ EXTRA_LANG_INFO = {
         'name_local': 'Tamaziɣt'
     },
     'ku': {
-        'bidi': False,
+        'bidi': True,
         'code': 'ku',
         'name': 'Kurdish',
         'name_local': 'Kurdî'
