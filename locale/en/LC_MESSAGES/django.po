@@ -178,17 +178,6 @@ msgstr ""
 msgid "Back to article"
 msgstr ""
 
-#: iogt/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-msgstr[1] ""
-
 #: iogt/temp_ve/commenting/templates/comments/preview.html:11
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
 #: iogt/temp_ve/polls/templates/polls/detail.html:25
@@ -1021,15 +1010,6 @@ msgstr ""
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
 msgstr ""
-
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-msgstr[1] ""
 
 #: iogt/templates/core/related-article-list.html:31
 msgid "Related Articles"
