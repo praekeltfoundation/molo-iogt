@@ -223,6 +223,9 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('id', 'Bahasa'),
     ('my', 'Burmese'),
     ('tg', 'Tajik'),
+    ('ay', 'Aymara'),
+    ('qu', 'Quechua'),
+    ('rn', 'Kirundi'),
 ]
 
 EXTRA_LANG_INFO = {
@@ -399,6 +402,24 @@ EXTRA_LANG_INFO = {
         'code': 'tg',
         'name': 'Tajik',
         'name_local': 'тоҷикӣ'
+    },
+    'ay': {
+        'bidi': False,
+        'code': 'ay',
+        'name': 'Aymara',
+        'name_local': 'aymar aru'
+    },
+    'qu': {
+        'bidi': False,
+        'code': 'qu',
+        'name': 'Quechua',
+        'name_local': 'Kichwa'
+    },
+    'rn': {
+        'bidi': False,
+        'code': 'rn',
+        'name': 'Kirundi',
+        'name_local': 'Ikirundi'
     },
 }
 
