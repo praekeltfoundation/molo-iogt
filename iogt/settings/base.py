@@ -431,16 +431,6 @@ _("ARE YOU A")
 _("Ensure this value has at least 4 characters (it has 1)")
 _("Type your comment here")
 
-_("1")
-_("2")
-_("3")
-_("4")
-_("5")
-_("6")
-_("7")
-_("8")
-_("9")
-_("10")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
