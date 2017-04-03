@@ -7,8 +7,9 @@
 .related-articles__up-next,
 .related-articles__recommended {
   padding: 10px 15px;
+  font-size: $font-small;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .promoted-article-list__anchor-grid {
@@ -38,6 +39,12 @@
 }
 .related-articles-recommended-list__content {
   padding: 0 10px;
+  .article-list__comments-counter {
+    padding: 0;
+    .comment-counter__text {
+      display: block;
+    }
+  }
 }
 .related-articles-recommended__title {
   word-wrap: break-word;
@@ -49,7 +56,7 @@
   }
 }
 .related-articles-recommended__desc {
-  margin: 0;
+  margin: 8px 0;
 }
 .related-articles-recommended-list {
   list-style: none;

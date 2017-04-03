@@ -1,7 +1,7 @@
 
 .promoted-article-list__anchor-grid {
   float: right;
-  width: 40%;
+  width: 30%;
   margin: 0 15px 0 0;
   .article__image-thumbnail {
     max-height: 150px;
@@ -12,7 +12,10 @@
 }
 .related-articles-recommended-list__content {
   padding: 0 0 0 15px;
-  width: 45%;
+  width: 55%;
+  .article-list__comments-counter .comment-counter__text {
+    display: none;
+  }
 }
 @each $name, $color in $color_list {
   .related-articles--#{$name} {
@@ -20,7 +23,14 @@
       color: $color;
     }
   }
+
   .related-articles__recommended--#{$name}  {
     color: $color;
+  }
+
+  .related-articles-recommended-list__content--#{$name} {
+    .article-list__comments-counter  .icon {
+      fill: $color;
+    }
   }
 }

@@ -30,8 +30,10 @@
 .article-list__image,
 .article__image {
   display: block;
-  width: 100%;
+  //width: 100%;
+  width: auto;
   height: auto;
+  margin: 0 auto 10px;
 }
 .article-list__image--small {
   width: 50%;
