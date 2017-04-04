@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 12:37+0000\n"
-"PO-Revision-Date: 2017-03-28 16:43+0000\n"
-"Last-Translator: Vusi <vusim@buisoft.com>\n"
+"PO-Revision-Date: 2017-04-04 16:41+0000\n"
+"Last-Translator: Reeza <reeza@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: spa_ES\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1490888805.751688\n"
+"X-POOTLE-MTIME: 1491324076.237065\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -253,6 +253,7 @@ msgstr "La contraseña se ha establecido. Usted puede seguir adelante y acceder 
 #: iogt/temp_ve/profiles/templates/registration/login.html:5
 #: iogt/temp_ve/profiles/templates/registration/login.html:34
 #: iogt/templates/registration/password_reset_complete.html:8
+#, fuzzy
 msgid "Log in"
 msgstr "Iniciar sesión"
 
@@ -489,7 +490,7 @@ msgstr "confirmar PIN"
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:27
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
 msgid "(e.g. 2086)"
-msgstr "Ej: 2086"
+msgstr "(Ej: 2086)"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:38
 msgid "Confirm New Password"
@@ -587,7 +588,7 @@ msgstr "Elige una contraseña de 4 números"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:30
 msgid "e.g. 2086"
-msgstr "(Ej: 2086)"
+msgstr "Ej: 2086"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:35
 msgid "Enter your mobile number"
@@ -1006,7 +1007,7 @@ msgstr "¿Dónde vives?"
 #: iogt/temp_ve/profiles/templates/profiles/done.html:53
 #: iogt/temp_ve/profiles/templates/profiles/register.html:72
 msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
-msgstr "{0}4.4{/0} {1}                       {/1} {2}¿Cuál es tu nivel de educación más ?{/2}"
+msgstr "¿CUAL ES TU NIVEL MÁS ALTO DE EDUCACIÓN?"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:63
 msgid "Home Page"
@@ -1085,7 +1086,7 @@ msgstr "¿Dónde vives?"
 
 #: iogt/templates/profiles/register.html:72
 msgid "What is your highest level of education?"
-msgstr "{0}4.4{/0} {1}                       {/1} {2}¿Cuál es tu nivel de educación más ?{/2}"
+msgstr "¿Cual es tu nivel más alto de educación?"
 
 #: iogt/settings/base.py:429
 msgid "This field is required"
@@ -1102,43 +1103,3 @@ msgstr "Asegurar este valor tiene al menos 4 caracteres (que tiene 1)"
 #: iogt/settings/base.py:432
 msgid "Type your comment here"
 msgstr "Escriba su comentario aquí"
-
-#: iogt/settings/base.py:434
-msgid "1"
-msgstr "1 "
-
-#: iogt/settings/base.py:435
-msgid "2"
-msgstr "2"
-
-#: iogt/settings/base.py:436
-msgid "3"
-msgstr "3"
-
-#: iogt/settings/base.py:437
-msgid "4"
-msgstr "4"
-
-#: iogt/settings/base.py:438
-msgid "5"
-msgstr "5"
-
-#: iogt/settings/base.py:439
-msgid "6"
-msgstr "6"
-
-#: iogt/settings/base.py:440
-msgid "7"
-msgstr "7"
-
-#: iogt/settings/base.py:441
-msgid "8"
-msgstr "8"
-
-#: iogt/settings/base.py:442
-msgid "9"
-msgstr "9"
-
-#: iogt/settings/base.py:443
-msgid "10"
-msgstr "10"
