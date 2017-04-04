@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1490709429.171585\n"
+"X-POOTLE-MTIME: 1490888805.751688\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -36,7 +36,6 @@ msgstr "Аталышы"
 #: iogt/temp_ve/commenting/views.py:48
 msgid "Anonymous"
 msgstr "жашыруун"
-""
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:16
 msgid ""
@@ -196,9 +195,7 @@ msgstr "Сервердин ички катасы"
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr ""
-"Кечиресиз, ката кетти. Бир аз убакыттан кийин дагы бир жолу аракет кылып "
-"көрүңүз."
+msgstr "Кечиресиз, ката кетти. Бир аз убакыттан кийин дагы бир жолу аракет кылып көрүңүз."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
@@ -409,12 +406,10 @@ msgstr "Тип"
 #: iogt/temp_ve/profiles/admin.py:78
 msgid "Frontend Users"
 msgstr "алдыңкы акыркы маалымат"
-""
 
 #: iogt/temp_ve/profiles/admin.py:79
 msgid "Admin Users"
 msgstr "Админ Колдонуучунун"
-""
 
 #: iogt/temp_ve/profiles/admin_views.py:16
 msgid ""
@@ -495,7 +490,6 @@ msgstr "ырастоо PIN"
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
 msgid "(e.g. 2086)"
 msgstr "(мис 2086)"
-""
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:38
 msgid "Confirm New Password"
@@ -536,7 +530,6 @@ msgstr "Сиздин мобилдик санын тактоо:"
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:31
 msgid "(e.g. 0914556789)"
 msgstr "(мис 0914556789)"
-""
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:30
 msgid "Update your email address:"
@@ -595,7 +588,6 @@ msgstr "Тандап 4 орундуу казыгы"
 #: iogt/temp_ve/profiles/templates/profiles/register.html:30
 msgid "e.g. 2086"
 msgstr "мис 2086"
-""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:35
 msgid "Enter your mobile number"
@@ -604,7 +596,6 @@ msgstr "Сиздин мобилдик номерин"
 #: iogt/temp_ve/profiles/templates/profiles/register.html:38
 msgid "(e.g. 0900000013)"
 msgstr "(мис 0900000013)"
-""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:44
 msgid "Enter your email address"
@@ -820,7 +811,6 @@ msgstr "Издөө ..."
 #: iogt/templates/search/search_results.html:7
 msgid "Search Results for:"
 msgstr "Издөө жыйынтыктары:"
-""
 
 #: iogt/templates/search/search_results.html:55
 msgid "Back to homepage"
@@ -947,3 +937,208 @@ msgstr "Эч кандай издөө натыйжалары үчүн табыл�
 #: iogt/templates/surveys/surveys_list.html:10
 msgid "Start here"
 msgstr "Бул жерден башта"
+
+#: iogt/temp_ve/profiles/forms.py:112
+#: iogt/temp_ve/profiles/forms.py:245
+#: iogt/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "Калаасы"
+
+#: iogt/temp_ve/profiles/forms.py:116
+#: iogt/temp_ve/profiles/forms.py:249
+#: iogt/temp_ve/profiles/forms.py:300
+msgid "Location"
+msgstr "жери:"
+
+#: iogt/temp_ve/profiles/forms.py:120
+#: iogt/temp_ve/profiles/forms.py:253
+#: iogt/temp_ve/profiles/forms.py:304
+msgid "Education Level"
+msgstr "билим деңгээли"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr "Келгиле, сен өзгөчө мазмунга мүмкүнчүлүк алуу үчүн кандай экени тууралуу көбүрөөк билүү көрөлү."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:18
+#: iogt/temp_ve/profiles/templates/profiles/register.html:45
+msgid "SELECT DATE OF BIRTH"
+msgstr "ТУУЛГАН тандоо DATE"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "ДИСПЛЕЙ АТЫ"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:29
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: iogt/temp_ve/profiles/templates/profiles/register.html:39
+#: iogt/templates/profiles/register.html:39
+msgid ""
+"We value your online security, therefore we hide your username and allow you "
+"to comment and interact with the site with a display name."
+msgstr "Биз сиздин онлайн коопсуздукту, ошондуктан биз сенин атын жашырып жана Комментарий жана дисплей аты сайт менен өз ара жол баалайбыз."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:35
+#: iogt/temp_ve/profiles/templates/profiles/register.html:54
+msgid "I IDENTIFY MY GENDER AS:"
+msgstr "Мен МЕНИН GENDER деп аталат:"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:38
+#: iogt/temp_ve/profiles/templates/profiles/done.html:47
+#: iogt/temp_ve/profiles/templates/profiles/done.html:56
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:31
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:40
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:49
+#: iogt/temp_ve/profiles/templates/profiles/register.html:57
+#: iogt/temp_ve/profiles/templates/profiles/register.html:66
+#: iogt/temp_ve/profiles/templates/profiles/register.html:75
+#: iogt/templates/profiles/register.html:57
+#: iogt/templates/profiles/register.html:66
+#: iogt/templates/profiles/register.html:75
+msgid "Only you will see this"
+msgstr "Ушуну сиз гана көрө аласыз"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:44
+#: iogt/temp_ve/profiles/templates/profiles/register.html:63
+msgid "WHERE DO YOU LIVE?"
+msgstr "СЕН КАЙДА ЖАШАЙСЫҢ?"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:53
+#: iogt/temp_ve/profiles/templates/profiles/register.html:72
+msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
+msgstr "ЭМНЕ билимибиздин жогорку даражасы болуп саналат?"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:63
+msgid "Home Page"
+msgstr "Негизги бет"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:11
+msgid "Update your display name:"
+msgstr "Сиздин дисплей аты өзгөртүү:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:28
+msgid "Update your gender:"
+msgstr "жынысына өзгөртүү:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:37
+msgid "Update where you live:"
+msgstr "Өзгөртүү, силер жашаган жерде:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:46
+msgid "Update your Education Level:"
+msgstr "Сиздин билим өзгөртүү:"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "БИР ЛОГИН ТАНДАГЫЛА"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:24
+#: iogt/templates/profiles/register.html:24
+msgid ""
+"This name you will use to log in and won't appear to other users. Only you "
+"will see this."
+msgstr "Бул ат сиз кирүү үчүн колдонгон жана башка колдонуучуларга чыкпайт. Ушуну сиз гана көрө алат."
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:28
+msgid "CHOOSE A 4-DIGIT PIN"
+msgstr "ТАНДОО 4 орундуу PIN"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:36
+msgid "CHOOSE A DISPLAY NAME"
+msgstr "ТАНДОО дисплей аты"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:81
+msgid "ENTER YOUR MOBILE NUMBER"
+msgstr "ENTER мобилдик саны"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:90
+msgid "ENTER YOUR EMAIL ADDRESS"
+msgstr "ENTER сиздин электрондук почтанын дареги"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:33
+msgid "Gender:"
+msgstr "Калаасы: Бишкек"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:40
+msgid "Location:"
+msgstr "жери:"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:47
+msgid "Education Level:"
+msgstr "Билим деңгээли:"
+
+#: iogt/templates/profiles/register.html:36
+msgid "Choose a display name"
+msgstr "көрсөтүлчү аты тандоо"
+
+#: iogt/templates/profiles/register.html:45
+msgid "Select date of birth"
+msgstr "туулган тандоо датасы"
+
+#: iogt/templates/profiles/register.html:54
+msgid "I identify my gender as:"
+msgstr "Мен гендердик деп аталат:"
+
+#: iogt/templates/profiles/register.html:63
+msgid "Where do you live?"
+msgstr "Сен кайда жашайсың?"
+
+#: iogt/templates/profiles/register.html:72
+msgid "What is your highest level of education?"
+msgstr "билим сиздин жогорку деңгээл деген эмне?"
+
+#: iogt/settings/base.py:429
+msgid "This field is required"
+msgstr "Бул талаа милдеттүү"
+
+#: iogt/settings/base.py:430
+msgid "ARE YOU A"
+msgstr "СЕН"
+
+#: iogt/settings/base.py:431
+msgid "Ensure this value has at least 4 characters (it has 1)"
+msgstr "Бул балл кеминде 4 белгиден бар камсыз кылуу (бул: 1)"
+
+#: iogt/settings/base.py:432
+msgid "Type your comment here"
+msgstr "Бул жерде сиздин Комментарий терүү"
+
+#: iogt/settings/base.py:434
+msgid "1"
+msgstr "1"
+
+#: iogt/settings/base.py:435
+msgid "2"
+msgstr "2"
+
+#: iogt/settings/base.py:436
+msgid "3"
+msgstr "3"
+
+#: iogt/settings/base.py:437
+msgid "4"
+msgstr "4"
+
+#: iogt/settings/base.py:438
+msgid "5"
+msgstr "5"
+
+#: iogt/settings/base.py:439
+msgid "6"
+msgstr "6"
+
+#: iogt/settings/base.py:440
+msgid "7"
+msgstr "7"
+
+#: iogt/settings/base.py:441
+msgid "8"
+msgstr "8"
+
+#: iogt/settings/base.py:442
+msgid "9"
+msgstr "9"
+
+#: iogt/settings/base.py:443
+msgid "10"
+msgstr "10"

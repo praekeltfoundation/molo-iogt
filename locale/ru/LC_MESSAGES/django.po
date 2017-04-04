@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1490786103.565754\n"
+"X-POOTLE-MTIME: 1490888805.751688\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -41,9 +41,7 @@ msgstr "Аноним"
 msgid ""
 "This comment has been removed by the community. Please read our platform "
 "rules."
-msgstr ""
-"Этот комментарий был удален как не соответствующий правилам сообщества. "
-"Прочтите, пожалуйста, правила данной платформы"
+msgstr "Этот комментарий был удален как не соответствующий правилам сообщества. Прочтите, пожалуйста, правила данной платформы"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:21
 msgid "Report"
@@ -63,8 +61,7 @@ msgstr "Войти на комментарий"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:18
 msgid "Commenting on this article is currently disabled"
-msgstr ""
-"Опция \"комментировать\" для данной статьи в настоящий момент дезактивирована"
+msgstr "Опция \"комментировать\" для данной статьи в настоящий момент дезактивирована"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:23
 #: iogt/temp_ve/commenting/templates/comments/comments.html:7
@@ -171,12 +168,7 @@ msgid ""
 "technical issue, login and registrations are not available on the Free "
 "Basics app for now. To login or register for a profile, visit our free "
 "mobisite through your mobile browser at"
-msgstr ""
-"К сожалению, у вас возникли проблемы с доступом к этой фонкции! Из-за "
-"временной технической проблемы вход и регитстрация в приложении Free Basics "
-"невозможна. Чтобы войти в систему или зарегистрироваться для получения "
-"профиля, посетите наш бесплатный мобильный сайт через мобильный браузер на "
-"странице"
+msgstr "К сожалению, у вас возникли проблемы с доступом к этой фонкции! Из-за временной технической проблемы вход и регитстрация в приложении Free Basics невозможна. Чтобы войти в систему или зарегистрироваться для получения профиля, посетите наш бесплатный мобильный сайт через мобильный браузер на странице"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
 #: iogt/templates/403_csrf.html:11
@@ -222,7 +214,6 @@ msgstr "Злободневная тема"
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:21
 msgid "Sign in"
 msgstr "Войти"
-""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
 msgid "LOGIN TO YOUR ACCOUNT!"
@@ -331,7 +322,6 @@ msgstr "Ищу что-то?"
 #: iogt/templates/search/search_block.html:6
 msgid "SEARCH"
 msgstr "ПОИСК"
-""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
@@ -517,9 +507,7 @@ msgstr "Присоединиться"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:9
 msgid "Let us know your birthday to get access to exclusive content."
-msgstr ""
-"Сообщите нам дату своего рождения, чтобы получить доступ к эксклюзивному "
-"контенту."
+msgstr "Сообщите нам дату своего рождения, чтобы получить доступ к эксклюзивному контенту."
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:18
 #: iogt/temp_ve/usermetadata/templates/persona.html:21
@@ -814,9 +802,7 @@ msgstr "Главная страница"
 msgid ""
 "Enter your email address below, and we'll email instructions for setting a "
 "new one."
-msgstr ""
-"Введите адрес Вашей электронной почты, и мы вышлем Вам инструкцию, как "
-"создать новый пароль"
+msgstr "Введите адрес Вашей электронной почты, и мы вышлем Вам инструкцию, как создать новый пароль"
 
 #: iogt/templates/search/search_block.html:5
 msgid "Search the site..."
@@ -825,7 +811,6 @@ msgstr "Поиск на сайте"
 #: iogt/templates/search/search_results.html:7
 msgid "Search Results for:"
 msgstr "Результаты поиска"
-""
 
 #: iogt/templates/search/search_results.html:55
 msgid "Back to homepage"
@@ -952,3 +937,208 @@ msgstr "Нет результатов поиска не было найдено 
 #: iogt/templates/surveys/surveys_list.html:10
 msgid "Start here"
 msgstr "Начните здесь"
+
+#: iogt/temp_ve/profiles/forms.py:112
+#: iogt/temp_ve/profiles/forms.py:245
+#: iogt/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "секс"
+
+#: iogt/temp_ve/profiles/forms.py:116
+#: iogt/temp_ve/profiles/forms.py:249
+#: iogt/temp_ve/profiles/forms.py:300
+msgid "Location"
+msgstr "Расположение"
+
+#: iogt/temp_ve/profiles/forms.py:120
+#: iogt/temp_ve/profiles/forms.py:253
+#: iogt/temp_ve/profiles/forms.py:304
+msgid "Education Level"
+msgstr "Уровень образования"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr "Дайте нам знать больше о себе, чтобы получить доступ к эксклюзивному контенту."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:18
+#: iogt/temp_ve/profiles/templates/profiles/register.html:45
+msgid "SELECT DATE OF BIRTH"
+msgstr "ВЫБОР ДАТЫ РОЖДЕНИЯ"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "Показать Имя"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:29
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: iogt/temp_ve/profiles/templates/profiles/register.html:39
+#: iogt/templates/profiles/register.html:39
+msgid ""
+"We value your online security, therefore we hide your username and allow you "
+"to comment and interact with the site with a display name."
+msgstr "Мы ценим вашу безопасность в Интернете, поэтому мы прячем свое имя пользователя и позволяет вам комментировать и взаимодействовать с сайтом с отображаемым именем."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:35
+#: iogt/temp_ve/profiles/templates/profiles/register.html:54
+msgid "I IDENTIFY MY GENDER AS:"
+msgstr "Я ОПРЕДЕЛИТЬ ПОЛ МОЕГО AS:"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:38
+#: iogt/temp_ve/profiles/templates/profiles/done.html:47
+#: iogt/temp_ve/profiles/templates/profiles/done.html:56
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:31
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:40
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:49
+#: iogt/temp_ve/profiles/templates/profiles/register.html:57
+#: iogt/temp_ve/profiles/templates/profiles/register.html:66
+#: iogt/temp_ve/profiles/templates/profiles/register.html:75
+#: iogt/templates/profiles/register.html:57
+#: iogt/templates/profiles/register.html:66
+#: iogt/templates/profiles/register.html:75
+msgid "Only you will see this"
+msgstr "Только вы увидите это"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:44
+#: iogt/temp_ve/profiles/templates/profiles/register.html:63
+msgid "WHERE DO YOU LIVE?"
+msgstr "Где вы живете?"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:53
+#: iogt/temp_ve/profiles/templates/profiles/register.html:72
+msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
+msgstr "КАКОЙ У ВАС САМЫЙ ВЫСОКИЙ УРОВЕНЬ ОБРАЗОВАНИЯ?"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:63
+msgid "Home Page"
+msgstr "Домашняя Страница"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:11
+msgid "Update your display name:"
+msgstr "Обновление отображаемого имени:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:28
+msgid "Update your gender:"
+msgstr "Обновите свой пол:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:37
+msgid "Update where you live:"
+msgstr "Обновление, где вы живете:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:46
+msgid "Update your Education Level:"
+msgstr "Обновление Уровень образования:"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "Выберите имя пользователя"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:24
+#: iogt/templates/profiles/register.html:24
+msgid ""
+"This name you will use to log in and won't appear to other users. Only you "
+"will see this."
+msgstr "Это имя, которое вы будете использовать, чтобы войти и не будет отображаться другим пользователям. Только вы увидите это."
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:28
+msgid "CHOOSE A 4-DIGIT PIN"
+msgstr "ВЫБРАТЬ 4-значный PIN-код"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:36
+msgid "CHOOSE A DISPLAY NAME"
+msgstr "ВЫБЕРИТЕ ИМЯ ДИСПЛЕЯ"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:81
+msgid "ENTER YOUR MOBILE NUMBER"
+msgstr "Введите номер мобильного телефона"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:90
+msgid "ENTER YOUR EMAIL ADDRESS"
+msgstr "Введите ваш эл. адрес"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:33
+msgid "Gender:"
+msgstr "Пол:"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:40
+msgid "Location:"
+msgstr "Место проведения:"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:47
+msgid "Education Level:"
+msgstr "Уровень образования:"
+
+#: iogt/templates/profiles/register.html:36
+msgid "Choose a display name"
+msgstr "Выберите имя дисплея"
+
+#: iogt/templates/profiles/register.html:45
+msgid "Select date of birth"
+msgstr "Выбрать дату рождения"
+
+#: iogt/templates/profiles/register.html:54
+msgid "I identify my gender as:"
+msgstr "Я идентифицирую мой пол, как:"
+
+#: iogt/templates/profiles/register.html:63
+msgid "Where do you live?"
+msgstr "Где вы живете?"
+
+#: iogt/templates/profiles/register.html:72
+msgid "What is your highest level of education?"
+msgstr "Какой у вас самый высокий уровень образования?"
+
+#: iogt/settings/base.py:429
+msgid "This field is required"
+msgstr "Это поле обязательно к заполнению"
+
+#: iogt/settings/base.py:430
+msgid "ARE YOU A"
+msgstr "ВЫ"
+
+#: iogt/settings/base.py:431
+msgid "Ensure this value has at least 4 characters (it has 1)"
+msgstr "Убедитесь, что это значение имеет по крайней мере 4-х символов (она имеет 1)"
+
+#: iogt/settings/base.py:432
+msgid "Type your comment here"
+msgstr "Введите свой комментарий"
+
+#: iogt/settings/base.py:434
+msgid "1"
+msgstr "1 "
+
+#: iogt/settings/base.py:435
+msgid "2"
+msgstr "2"
+
+#: iogt/settings/base.py:436
+msgid "3"
+msgstr "3"
+
+#: iogt/settings/base.py:437
+msgid "4"
+msgstr "4"
+
+#: iogt/settings/base.py:438
+msgid "5"
+msgstr "5"
+
+#: iogt/settings/base.py:439
+msgid "6"
+msgstr "6"
+
+#: iogt/settings/base.py:440
+msgid "7"
+msgstr "7"
+
+#: iogt/settings/base.py:441
+msgid "8"
+msgstr "8"
+
+#: iogt/settings/base.py:442
+msgid "9"
+msgstr "9"
+
+#: iogt/settings/base.py:443
+msgid "10"
+msgstr "10"
