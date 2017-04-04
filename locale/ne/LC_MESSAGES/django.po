@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1490705311.000790\n"
+"X-POOTLE-MTIME: 1490888805.751688\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -937,3 +937,168 @@ msgstr "कुनै खोज परिणाम भेटिएन "
 #: iogt/templates/surveys/surveys_list.html:10
 msgid "Start here"
 msgstr "यहाँ सुरु गर्नुहोस्"
+
+#: iogt/temp_ve/profiles/forms.py:112
+#: iogt/temp_ve/profiles/forms.py:245
+#: iogt/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "लिङ्ग"
+
+#: iogt/temp_ve/profiles/forms.py:116
+#: iogt/temp_ve/profiles/forms.py:249
+#: iogt/temp_ve/profiles/forms.py:300
+msgid "Location"
+msgstr "स्थान"
+
+#: iogt/temp_ve/profiles/forms.py:120
+#: iogt/temp_ve/profiles/forms.py:253
+#: iogt/temp_ve/profiles/forms.py:304
+msgid "Education Level"
+msgstr "शिक्षा स्तर"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr "हामीलाई आफैलाई विशेष सामग्री पहुँच प्राप्त गर्न बारेमा थप थाहा दिनुहोस्।"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:18
+#: iogt/temp_ve/profiles/templates/profiles/register.html:45
+msgid "SELECT DATE OF BIRTH"
+msgstr "जन्म चयन गर्नुहोस् DATE"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "प्रदर्शन नाम"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:29
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: iogt/temp_ve/profiles/templates/profiles/register.html:39
+#: iogt/templates/profiles/register.html:39
+msgid ""
+"We value your online security, therefore we hide your username and allow you "
+"to comment and interact with the site with a display name."
+msgstr "हामी, आफ्नो अनलाइन सुरक्षा मोल त्यसैले हामी आफ्नो प्रयोगकर्ता नाम लुकाउन र तपाईंले टिप्पणी र प्रदर्शन नाम साइट अन्तरक्रिया गर्न अनुमति दिन्छ।"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:35
+#: iogt/temp_ve/profiles/templates/profiles/register.html:54
+msgid "I IDENTIFY MY GENDER AS:"
+msgstr "म मेरो लिङ्ग रूप पहिचान:"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:38
+#: iogt/temp_ve/profiles/templates/profiles/done.html:47
+#: iogt/temp_ve/profiles/templates/profiles/done.html:56
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:31
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:40
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:49
+#: iogt/temp_ve/profiles/templates/profiles/register.html:57
+#: iogt/temp_ve/profiles/templates/profiles/register.html:66
+#: iogt/temp_ve/profiles/templates/profiles/register.html:75
+#: iogt/templates/profiles/register.html:57
+#: iogt/templates/profiles/register.html:66
+#: iogt/templates/profiles/register.html:75
+msgid "Only you will see this"
+msgstr "तपाईं मात्र यो देख्ने"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:44
+#: iogt/temp_ve/profiles/templates/profiles/register.html:63
+msgid "WHERE DO YOU LIVE?"
+msgstr "तिमि कहाँ बस्छौ?"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:53
+#: iogt/temp_ve/profiles/templates/profiles/register.html:72
+msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
+msgstr "शिक्षाबाट आफ्नो उच्चतम स्तर के हो?"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:63
+msgid "Home Page"
+msgstr "पृष्ठ"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:11
+msgid "Update your display name:"
+msgstr "आफ्नो प्रदर्शन नाम अद्यावधिक:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:28
+msgid "Update your gender:"
+msgstr "तपाईंको लिङ्ग अद्यावधिक:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:37
+msgid "Update where you live:"
+msgstr "अद्यावधिक जहाँ बस्छौं:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:46
+msgid "Update your Education Level:"
+msgstr "आफ्नो शिक्षा स्तर अद्यावधिक:"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "प्रयोगकर्ता नाम छान्नुस"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:24
+#: iogt/templates/profiles/register.html:24
+msgid ""
+"This name you will use to log in and won't appear to other users. Only you "
+"will see this."
+msgstr "यो नाम तपाईंलाई लग गर्न प्रयोग गर्नेछ र अन्य प्रयोगकर्तालाई देखिने छैन। तपाईँले मात्र यो देख्न हुनेछ।"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:28
+msgid "CHOOSE A 4-DIGIT PIN"
+msgstr "4 अंकको पिन छान्नुपर्छ"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:36
+msgid "CHOOSE A DISPLAY NAME"
+msgstr "प्रदर्शनको नाम छनोट"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:81
+msgid "ENTER YOUR MOBILE NUMBER"
+msgstr "तपाईँको मोबाइल नम्बर ENTER"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:90
+msgid "ENTER YOUR EMAIL ADDRESS"
+msgstr "तपाईंको इमेल ठेगाना हाल्नुहोस"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:33
+msgid "Gender:"
+msgstr "लिङ्ग:"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:40
+msgid "Location:"
+msgstr "स्थान:"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:47
+msgid "Education Level:"
+msgstr "शिक्षा स्तर:"
+
+#: iogt/templates/profiles/register.html:36
+msgid "Choose a display name"
+msgstr "प्रदर्शनको नाम चयन"
+
+#: iogt/templates/profiles/register.html:45
+msgid "Select date of birth"
+msgstr "जन्म मिति चयन"
+
+#: iogt/templates/profiles/register.html:54
+msgid "I identify my gender as:"
+msgstr "म मेरो लिङ्ग पहिचान:"
+
+#: iogt/templates/profiles/register.html:63
+msgid "Where do you live?"
+msgstr "तिमि कहाँ बस्छौ?"
+
+#: iogt/templates/profiles/register.html:72
+msgid "What is your highest level of education?"
+msgstr "शिक्षा को आफ्नो उच्चतम स्तर के हो?"
+
+#: iogt/settings/base.py:429
+msgid "This field is required"
+msgstr "यो क्षेत्र आवश्यक छ"
+
+#: iogt/settings/base.py:430
+msgid "ARE YOU A"
+msgstr "के तपाईं एक"
+
+#: iogt/settings/base.py:431
+msgid "Ensure this value has at least 4 characters (it has 1)"
+msgstr "यो मूल्य कम्तिमा 4 वर्ण (यसलाई 1 छ) छ सुनिश्चित"
+
+#: iogt/settings/base.py:432
+msgid "Type your comment here"
+msgstr "तपाईंको टिप्पणी यहाँ टाइप"
