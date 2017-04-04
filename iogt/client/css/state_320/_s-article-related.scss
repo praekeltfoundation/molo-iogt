@@ -13,9 +13,6 @@
 .related-articles-recommended-list__content {
   padding: 0 0 0 15px;
   width: 55%;
-  .article-list__comments-counter .comment-counter__text {
-    display: none;
-  }
 }
 @each $name, $color in $color_list {
   .related-articles--#{$name} {
@@ -26,11 +23,5 @@
 
   .related-articles__recommended--#{$name}  {
     color: $color;
-  }
-
-  .related-articles-recommended-list__content--#{$name} {
-    .article-list__comments-counter  .icon {
-      fill: $color;
-    }
   }
 }

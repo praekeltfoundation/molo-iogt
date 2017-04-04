@@ -41,9 +41,6 @@
   padding: 0 10px;
   .article-list__comments-counter {
     padding: 0;
-    .comment-counter__text {
-      display: block;
-    }
   }
 }
 .related-articles-recommended__title {
@@ -51,6 +48,7 @@
   padding: 0;
   color: #000;
   font-size: 25px;
+  line-height: 1.1;
   a {
     color: #000;
   }

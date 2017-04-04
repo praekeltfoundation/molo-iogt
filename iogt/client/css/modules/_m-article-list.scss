@@ -30,8 +30,7 @@
 .article-list__image,
 .article__image {
   display: block;
-  //width: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
   margin: 0 auto 10px;
 }
@@ -41,37 +40,37 @@
 }
 .article-list__title {
   color: #000;
-  font-size: $font-x-medium;
+  font-size: $font-x-large;
   line-height: 1.1;
   word-wrap: break-all;
 }
 .article-list__subtitle {
   font-weight: normal;
+  margin: 8px 0;
 }
-.section-list {
-  .article-list__comments-counter {
-    padding: 10px 10px 5px;
-  }
-}
+
 .article-list__comments-counter {
   text-transform: capitalize;
   font-size: $font-small;
-  padding: 0 10px 5px;
+  padding: 0 15px 10px;
   color: #757575;
-   clear: left;
+  display: block;
+  clear: left;
+  .icon {
+    display: none;
+  }
 }
-.comment-counter__text {
-  display: inline-block;
-}
+
+
 .article-list__item--hero {
   .article-list__title {
    font-size: $font-x-large;
   }
-  .article-list__image {
-    img {
-      max-width: 100%;
-    }
-
+  .article-list__image img {
+    max-width: 100%;
+  }
+  .section-list__title--homepage {
+    padding: 0 15px;
   }
 }
 
