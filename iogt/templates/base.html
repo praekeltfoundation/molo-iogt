@@ -50,7 +50,7 @@
                <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/{{ ENV }}/state_320.css">
               {% endcompress %}{% endspaceless %}';
 
-         var latoGoogleFont = '<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">';
+         var latoGoogleFont = '<link href="https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,900" rel="stylesheet">';
 
           if(CutsTheMustard === true) {
             if(LargeScreen) {
@@ -183,7 +183,7 @@
             <li class="menu-list__item  menu-list__item--poll">
                 <a href="{% url 'molo.polls:poll_details' question.id %}" class="footer-link">
                   <div class="footer-link__thumbnail-icon">
-                    <img src="{% static 'img/poll_icon.png' %}" class="menu-list__item--icon"/>
+                    <img src="{% static 'img/poll.png' %}" class="menu-list__item--icon"/>
                   </div>
                   <span class="footer-link__title">{{ question.title }}</span>
                 </a>

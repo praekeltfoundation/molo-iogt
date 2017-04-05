@@ -24,8 +24,9 @@
     padding: 0;
   }
 }
-
-
+.comment__date {
+  display: inline;
+}
 .comment__post-message .icon {
   display: inline-block;
 }
@@ -78,15 +79,12 @@
   .call-to-action__nav-item--response {
     position: absolute;
     right: 15px;
-    top: 5px;
+    top: -5px;
   }
 }
 #comment__list {
   p {
     padding: 0 50px 0 0;
-  }
-  .call-to-action__nav-item--response {
-    top: 0;
   }
 }
 

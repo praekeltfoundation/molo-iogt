@@ -1,9 +1,13 @@
 .related-articles {
+
   p {
     margin: 0;
   }
 }
 
+.related-articles__up-next {
+  border-top: 1px solid #cfd4d5;
+}
 .related-articles__up-next,
 .related-articles__recommended {
   padding: 10px 15px;
@@ -11,7 +15,6 @@
   text-transform: uppercase;
   font-weight: 600;
 }
-
 .promoted-article-list__anchor-grid {
   display: block;
   height: auto;
@@ -66,5 +69,5 @@
   padding: 15px 0 0;
   overflow: auto;
   clear: both;
-  border-top: 1px solid #b0b9bb;
+  border-top: 1px solid #cfd4d5;
 }

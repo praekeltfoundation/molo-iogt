@@ -43,9 +43,7 @@
         </li>
       {% endfor%}
       </ul>
-      {% if featured_articles|length > 1 %}
-        <a href="{% pageurl section %}" class="section-list__more">{% trans "View more" %}</a>
-      {% endif %}
+      <a href="{% pageurl section %}" class="section-list__more">{% trans "View more" %}</a>
     </div>
   {% endif %}
 {% endfor %}
