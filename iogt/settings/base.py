@@ -194,9 +194,31 @@ USE_TZ = True
 # list of languges in django
 # https://github.com/django/django/blob/master/django/conf/global_settings.py#L50
 LANGUAGES = global_settings.LANGUAGES + [
+    ('zu', 'Zulu'),
+    ('xh', 'Xhosa'),
+    ('st', 'Sotho'),
+    ('ve', 'Venda'),
+    ('tn', 'Tswana'),
     ('ts', 'Tsonga'),
     ('rw', 'Kinyarwanda'),
+    ('ss', 'Swati'),
+    ('nr', 'Ndebele'),
+    ('wo', 'Wolof'),
+    ('yo', 'Yoruba'),
+    ('ig', 'Igbo'),
+    ('ha', 'Hausa'),
+    ('am', 'Amharic'),
+    ('ms', 'Malay'),
+    ('gn', 'Guarani'),
+    ('gu', 'Gujarati'),
+    ('fil', 'Filipino'),
+    ('nqo', 'N\'ko'),
+    ('sys', 'Syriac'),
+    ('dv', 'Dhivehi'),
+    ('ber', 'Berber'),
     ('ku', 'Kurdish'),
+    ('arc', 'Aramaic'),
+    ('ht', 'Creole Haitian'),
     ('ky', 'Kyrgyz'),
     ('id', 'Bahasa'),
     ('my', 'Burmese'),
@@ -207,6 +229,36 @@ LANGUAGES = global_settings.LANGUAGES + [
 ]
 
 EXTRA_LANG_INFO = {
+    'zu': {
+        'bidi': False,
+        'code': 'zu',
+        'name': 'Zulu',
+        'name_local': 'Zulu'
+    },
+    'xh': {
+        'bidi': False,
+        'code': 'xh',
+        'name': 'Xhosa',
+        'name_local': 'Xhosa'
+    },
+    'st': {
+        'bidi': False,
+        'code': 'st',
+        'name': 'Sotho',
+        'name_local': 'Sotho'
+    },
+    've': {
+        'bidi': False,
+        'code': 've',
+        'name': 'Venda',
+        'name_local': 'Venda'
+    },
+    'tn': {
+        'bidi': False,
+        'code': 'tn',
+        'name': 'Tswana',
+        'name_local': 'Tswana'
+    },
     'ts': {
         'bidi': False,
         'code': 'ts',
@@ -218,6 +270,96 @@ EXTRA_LANG_INFO = {
         'code': 'rw',
         'name': 'Kinyarwanda',
         'name_local': 'Kinyarwanda'
+    },
+    'ss': {
+        'bidi': False,
+        'code': 'ss',
+        'name': 'Swati',
+        'name_local': 'Swati'
+    },
+    'nr': {
+        'bidi': False,
+        'code': 'nr',
+        'name': 'Ndebele',
+        'name_local': 'Ndebele'
+    },
+    'wo': {
+        'bidi': False,
+        'code': 'wo',
+        'name': 'Wolof',
+        'name_local': 'Wolof'
+    },
+    'yo': {
+        'bidi': False,
+        'code': 'yo',
+        'name': 'Yoruba',
+        'name_local': 'Yorùbá'
+    },
+    'ig': {
+        'bidi': False,
+        'code': 'ig',
+        'name': 'Igbo',
+        'name_local': 'Igbo'
+    },
+    'ha': {
+        'bidi': False,
+        'code': 'ha',
+        'name': 'Hausa',
+        'name_local': 'Hausa'
+    },
+    'am': {
+        'bidi': False,
+        'code': 'am',
+        'name': 'Amharic',
+        'name_local': 'አማርኛ'
+    },
+    'ms': {
+        'bidi': False,
+        'code': 'ms',
+        'name': 'Malay',
+        'name_local': 'Malaysia'
+    },
+    'gn': {
+        'bidi': False,
+        'code': 'gn',
+        'name': 'Guarani',
+        'name_local': 'Karaiñe’ême'
+    },
+    'gu': {
+        'bidi': False,
+        'code': 'gu',
+        'name': 'Gujarati',
+        'name_local': 'ગુજરાતી'
+    },
+    'fil': {
+        'bidi': False,
+        'code': 'fil',
+        'name': 'Filipino',
+        'name_local': 'Filipino'
+    },
+    'nqo': {
+        'bidi': False,
+        'code': 'nqo',
+        'name': 'N\'ko',
+        'name_local': 'N\'ko'
+    },
+    'sys': {
+        'bidi': True,
+        'code': 'sys',
+        'name': 'Syriac',
+        'name_local': 'ગુજરાતી'
+    },
+    'dv': {
+        'bidi': False,
+        'code': 'dv',
+        'name': 'Dhivehi',
+        'name_local': 'Dhivehi'
+    },
+    'ber': {
+        'bidi': False,
+        'code': 'ber',
+        'name': 'Berber',
+        'name_local': 'Tamaziɣt'
     },
     'ku': {
         'bidi': True,
