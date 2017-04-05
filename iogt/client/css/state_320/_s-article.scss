@@ -7,11 +7,6 @@
   padding: 10px 0;
   width: 40%;
 }
-.article-list__inner-content {
-  clear: left;
-  float: left;
-  width: 54%;
-}
 .section-article-list__title {
   padding: 7px 0;
 }
@@ -91,10 +86,10 @@
 
   }
 }
+//Please check status
 .call-to-action__item-share-with-image:after {
   margin-top: 3%;
 }
-
 @each $name, $color in $color_list {
   .article--#{$name} {
     ol li:before,
@@ -102,7 +97,6 @@
         color: $color;
     }
   }
-
   .article-list__container--#{$name} {
     .article-list__section {
       color: $color;
