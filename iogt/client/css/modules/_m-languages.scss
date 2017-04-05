@@ -8,7 +8,6 @@
   overflow: auto;
   border-bottom: 1px solid $light_scampi;
 }
-
 .current-language {
   color: #fff;
   display: block;
@@ -20,7 +19,6 @@
     font-weight: bold;
   }
 }
-
 .select-language {
   color: #fff;
   display: block;
@@ -40,23 +38,22 @@
   }
 }
 .select-language--footer {
-   &:after {
-      font-size: $font-small;
-   }
+  padding: 0;
+ &:after {
+    font-size: $font-small;
+ }
 }
-
 .language-selection {
   .language-list {
     background: $east_bay;
   }
-
   .language-list__item {
     padding: 20px;
     a {
       color: #fff;
       &:after {
         padding: 0 0 0 5px;
-        @media only screen and (min-width: 320px) { 
+        @media only screen and (min-width: 320px) {
           content: ">";
         }
         @media only screen and (min-width: 490px) {
@@ -66,15 +63,13 @@
     }
   }
 }
-
 .language-selection-footer {
   padding: 10px 0 0;
-  border-bottom: none; 
+  border-bottom: none;
   .language-list {
-    background: $mecury; 
+    background: $mecury;
   }
   .language-list__item a {
     color: $tiber;
   }
 }
-

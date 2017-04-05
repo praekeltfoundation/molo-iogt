@@ -25,21 +25,17 @@
 .search--result {
   padding: 0;
 }
-.search--results-list {
-  .article-list__comments-counter {
-    padding: 0 15px 5px 0;
-  }
-}
 .search__result-item {
   display: block;
   color: #757575;
 }
 .search--result__section-title {
   text-transform: uppercase;
+  padding: 5px 0;
 }
 .search--result__title {
-  line-height: 1.0;
-  font-size: $font-large ;
+  line-height: 1.1;
+  font-size: $font-x-large;
 }
 .search--result__subtitle {
   margin: 5px 0;
