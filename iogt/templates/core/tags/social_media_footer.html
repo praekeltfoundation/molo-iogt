@@ -4,8 +4,10 @@
   {% for site in social_media %}
    <li class="menu-list__item">
       <a href="{{ site.value.link }}" class="call-to-action__item-share--footer {% if site.value.image %} call-to-action__item-share-with-image {% endif %}">
+        <div class="footer-link__thumbnail-icon">
           {% image site.value.image width-35 class="call-to-action__item-share-img" %}
-            <span class="call-to-action__item-share-title">{{ site.value.title }}</span>
+        </div>
+        <span class="call-to-action__item-share-title footer-link__title">{{ site.value.title }}</span>
       </a>
     </li>
   {% endfor %}

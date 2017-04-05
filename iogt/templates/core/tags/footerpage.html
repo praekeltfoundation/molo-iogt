@@ -7,7 +7,9 @@
    <li class="menu-list__item">
       <a href="{% pageurl page %}" class="footer-link footer-link--cms-upload">
         {% if page.image %}
+        <div class="footer-link__thumbnail-icon">
           {% image page.image width-60 class="menu-list__item--icon" %}
+        </div>
         {% endif %}
         <span class="footer-link__title">{{page.title}}</span>
       </a>

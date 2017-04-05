@@ -1,12 +1,13 @@
 .footer  {
   .menu-list__item {
   position: relative;
+  overflow: auto;
     .footer-link {
-       padding: 0 15px 0 50px;
       text-decoration: none;
       &:after {
         display: inline-block;
         float: right;
+        margin-top: 3%;
         @media only screen and (min-width: 320px) {
           content: ">";
         }
@@ -14,23 +15,31 @@
           content: "❯";
         }
       }
+      .footer-link__title {
+        margin-top: 4%;
+        display: inline-block;
+      }
     }
-  }
 
-  .menu-list__item--language-selection {
-    .footer-link {
-      padding: 0 15px 15px 50px;
+    .footer-link--cms-upload {
+      &:after {
+        margin-top: 0;
+      }
+      .footer-link__title {
+        margin-top: 0;
+        display: inline;
+      }
     }
-  }
 
+  }
   .menu-list__item--icon {
-    display: block;
-    position: absolute;
-    left: 10px;
-    top: 9px;
-    width: 10%;
-    max-width: 35px;
-    height: auto;
+    width: 85%;
   }
-
+}
+.footer-link__thumbnail-icon {
+  display: inline-block;
+  height: auto;
+  max-width: 45px;
+  vertical-align: middle;
+  float: left;
 }
