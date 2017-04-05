@@ -12,17 +12,14 @@
   float: left;
   width: 54%;
 }
-
 .section-article-list__title {
   padding: 7px 0;
 }
-
 .article-list__section ,
 .section-list__title--homepage {
   padding: 5px 0;
   overflow: hidden;
 }
-
 .article-list__item--hero  {
   width: auto;
   .article-list__image {
@@ -34,7 +31,6 @@
     overflow: auto;
   }
 }
-
 .article__content {
   ol, .article-numbered-list {
     padding: 0 15px;
@@ -43,7 +39,6 @@
       list-style-type: none;
       content:counter(li);
       padding: 10px 0;
-
       &:before {
         content: counter(li)'.';
         counter-increment:li;
@@ -68,7 +63,6 @@
 }
 .call-to-action__item-share-title {
   color: #fff;
-  padding: 6px 15px;
   text-decoration: none;
 }
 .call-to-action__item-share--facebook {
@@ -85,17 +79,21 @@
     border-right-color: #4086BB;
   }
 }
-
 .call-to-action__item-share--footer {
   border-color: #a3a3a3;
+  .call-to-action__item-share-title {
+    margin: 4% 0;
+  }
   .call-to-action__item-share-img {
     border-right-color: #a3a3a3;
     display: inline-block;
-    width: 10%;
-    height: auto;
+    padding-right: 5px;
+
   }
 }
-
+.call-to-action__item-share-with-image:after {
+  margin-top: 3%;
+}
 
 @each $name, $color in $color_list {
   .article--#{$name} {
