@@ -16,8 +16,9 @@
         }
       }
       .footer-link__title {
-        margin-top: 4%;
+        margin: 4% 0;
         display: inline-block;
+        width: 80%;
       }
     }
 
@@ -33,7 +34,7 @@
 
   }
   .menu-list__item--icon {
-    width: 85%;
+    width: 87%;
   }
 }
 .footer-link__thumbnail-icon {
@@ -42,4 +43,5 @@
   max-width: 45px;
   vertical-align: middle;
   float: left;
+  width: 20%;
 }

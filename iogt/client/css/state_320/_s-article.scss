@@ -83,11 +83,18 @@
 }
 .call-to-action__item-share--footer {
   border-color: #a3a3a3;
+  .call-to-action__item-share-title {
+    margin: 4% 0;
+  }
   .call-to-action__item-share-img {
     border-right-color: #a3a3a3;
     display: inline-block;
     padding-right: 5px;
+
   }
+}
+.call-to-action__item-share-with-image:after {
+  margin-top: 3%;
 }
 
 @each $name, $color in $color_list {
