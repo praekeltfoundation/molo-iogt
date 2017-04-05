@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 12:37+0000\n"
-"PO-Revision-Date: 2017-03-28 16:43+0000\n"
-"Last-Translator: Vusi <vusim@buisoft.com>\n"
+"PO-Revision-Date: 2017-04-04 16:41+0000\n"
+"Last-Translator: Reeza <reeza@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: spa_ES\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1490719398.313786\n"
+"X-POOTLE-MTIME: 1491324076.237065\n"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
@@ -41,9 +41,7 @@ msgstr "Anónimo"
 msgid ""
 "This comment has been removed by the community. Please read our platform "
 "rules."
-msgstr ""
-"Este comentario ha sido eliminado por la comunidad. Por favor, lee las "
-"normas de participación."
+msgstr "Este comentario ha sido eliminado por la comunidad. Por favor, lee las normas de participación."
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:21
 msgid "Report"
@@ -170,12 +168,7 @@ msgid ""
 "technical issue, login and registrations are not available on the Free "
 "Basics app for now. To login or register for a profile, visit our free "
 "mobisite through your mobile browser at"
-msgstr ""
-"¡Lo sentimos, no ha sido posible acceder a esta función! Debido a un error "
-"técnico temporal, las opciones de registro y de iniciar sesión no están "
-"disponibles por ahora en la aplicación de Free Basics. Para iniciar sesión o "
-"registrar un nuevo usuario, visita la versión web móvil y gratuita desde tu "
-"navegador en"
+msgstr "¡Lo sentimos, no ha sido posible acceder a esta función! Debido a un error técnico temporal, las opciones de registro y de iniciar sesión no están disponibles por ahora en la aplicación de Free Basics. Para iniciar sesión o registrar un nuevo usuario, visita la versión web móvil y gratuita desde tu navegador en"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
 #: iogt/templates/403_csrf.html:11
@@ -202,8 +195,7 @@ msgstr "Error interno del servidor"
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr ""
-"Lo sentimos, parece que se produjo un error. Inténtalo de nuevo más tarde."
+msgstr "Lo sentimos, parece que se produjo un error. Inténtalo de nuevo más tarde."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
@@ -261,6 +253,7 @@ msgstr "La contraseña se ha establecido. Usted puede seguir adelante y acceder 
 #: iogt/temp_ve/profiles/templates/registration/login.html:5
 #: iogt/temp_ve/profiles/templates/registration/login.html:34
 #: iogt/templates/registration/password_reset_complete.html:8
+#, fuzzy
 msgid "Log in"
 msgstr "Iniciar sesión"
 
@@ -497,7 +490,7 @@ msgstr "confirmar PIN"
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:27
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
 msgid "(e.g. 2086)"
-msgstr "Ej: 2086"
+msgstr "(Ej: 2086)"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:38
 msgid "Confirm New Password"
@@ -595,7 +588,7 @@ msgstr "Elige una contraseña de 4 números"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:30
 msgid "e.g. 2086"
-msgstr "(Ej: 2086)"
+msgstr "Ej: 2086"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:35
 msgid "Enter your mobile number"
@@ -672,9 +665,7 @@ msgstr "Cambiar mi contraseña"
 
 #: iogt/temp_ve/profiles/templates/registration/login.html:20
 msgid "Your username and password do not match. Please try again."
-msgstr ""
-"Tu nombre de usuario y contraseña no coinciden. Por favor, inténtalo de "
-"nuevo."
+msgstr "Tu nombre de usuario y contraseña no coinciden. Por favor, inténtalo de nuevo."
 
 #: iogt/temp_ve/profiles/templates/registration/login.html:32
 msgid "Eg.: 2086"
@@ -812,9 +803,7 @@ msgstr "Inicio"
 msgid ""
 "Enter your email address below, and we'll email instructions for setting a "
 "new one."
-msgstr ""
-"Indica tu dirección de e-mail y te enviaremos instrucciones sobre cómo crear "
-"una nueva contraseña"
+msgstr "Indica tu dirección de e-mail y te enviaremos instrucciones sobre cómo crear una nueva contraseña"
 
 #: iogt/templates/search/search_block.html:5
 msgid "Search the site..."
@@ -921,7 +910,6 @@ msgstr "El siguiente paso en"
 msgid "Have something to add to this article?"
 msgstr "¿Quieres añadir algo a este artículo?"
 
-
 #: iogt/templates/core/related-article-list.html:31
 msgid "Related Articles"
 msgstr "Artículos relacionados"
@@ -950,3 +938,168 @@ msgstr "No se han encontrado resultados de búsqueda para "
 #: iogt/templates/surveys/surveys_list.html:10
 msgid "Start here"
 msgstr "Comenzar "
+
+#: iogt/temp_ve/profiles/forms.py:112
+#: iogt/temp_ve/profiles/forms.py:245
+#: iogt/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "Género"
+
+#: iogt/temp_ve/profiles/forms.py:116
+#: iogt/temp_ve/profiles/forms.py:249
+#: iogt/temp_ve/profiles/forms.py:300
+msgid "Location"
+msgstr "Ubicación"
+
+#: iogt/temp_ve/profiles/forms.py:120
+#: iogt/temp_ve/profiles/forms.py:253
+#: iogt/temp_ve/profiles/forms.py:304
+msgid "Education Level"
+msgstr "Nivel de Educación"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr "Vamos a saber más acerca de usted mismo para conseguir el acceso a contenidos exclusivos."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:18
+#: iogt/temp_ve/profiles/templates/profiles/register.html:45
+msgid "SELECT DATE OF BIRTH"
+msgstr "FECHA DE NACIMIENTO SELECT"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "Nombre para mostrar"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:29
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: iogt/temp_ve/profiles/templates/profiles/register.html:39
+#: iogt/templates/profiles/register.html:39
+msgid ""
+"We value your online security, therefore we hide your username and allow you "
+"to comment and interact with the site with a display name."
+msgstr "Valoramos su seguridad en línea, por lo tanto, nos escondemos su nombre de usuario y le permitirá comentar e interactuar con el sitio con un nombre de visualización."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:35
+#: iogt/temp_ve/profiles/templates/profiles/register.html:54
+msgid "I IDENTIFY MY GENDER AS:"
+msgstr "Yo se identifica el género como:"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:38
+#: iogt/temp_ve/profiles/templates/profiles/done.html:47
+#: iogt/temp_ve/profiles/templates/profiles/done.html:56
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:31
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:40
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:49
+#: iogt/temp_ve/profiles/templates/profiles/register.html:57
+#: iogt/temp_ve/profiles/templates/profiles/register.html:66
+#: iogt/temp_ve/profiles/templates/profiles/register.html:75
+#: iogt/templates/profiles/register.html:57
+#: iogt/templates/profiles/register.html:66
+#: iogt/templates/profiles/register.html:75
+msgid "Only you will see this"
+msgstr "Sólo verá este"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:44
+#: iogt/temp_ve/profiles/templates/profiles/register.html:63
+msgid "WHERE DO YOU LIVE?"
+msgstr "¿Dónde vives?"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:53
+#: iogt/temp_ve/profiles/templates/profiles/register.html:72
+msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
+msgstr "¿CUAL ES TU NIVEL MÁS ALTO DE EDUCACIÓN?"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:63
+msgid "Home Page"
+msgstr "Página de inicio"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:11
+msgid "Update your display name:"
+msgstr "Actualiza tu nombre de visualización:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:28
+msgid "Update your gender:"
+msgstr "Actualizar tu sexo:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:37
+msgid "Update where you live:"
+msgstr "Actualización de donde vive:"
+
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:46
+msgid "Update your Education Level:"
+msgstr "Actualizar su nivel de educación:"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "Elija un nombre de usuario"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:24
+#: iogt/templates/profiles/register.html:24
+msgid ""
+"This name you will use to log in and won't appear to other users. Only you "
+"will see this."
+msgstr "Este nombre se utilizará para iniciar sesión y no aparecerá a otros usuarios. Sólo verá este."
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:28
+msgid "CHOOSE A 4-DIGIT PIN"
+msgstr "CHOOSE A PIN de 4 dígitos"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:36
+msgid "CHOOSE A DISPLAY NAME"
+msgstr "ELEGIR UN NOMBRE PARA MOSTRAR"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:81
+msgid "ENTER YOUR MOBILE NUMBER"
+msgstr "Ingrese su número del teléfono"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:90
+msgid "ENTER YOUR EMAIL ADDRESS"
+msgstr "Ingrese tu correo electrónico"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:33
+msgid "Gender:"
+msgstr "Sexo:"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:40
+msgid "Location:"
+msgstr "Ubicación:"
+
+#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:47
+msgid "Education Level:"
+msgstr "Nivel de Educación:"
+
+#: iogt/templates/profiles/register.html:36
+msgid "Choose a display name"
+msgstr "Elegir un nombre para mostrar"
+
+#: iogt/templates/profiles/register.html:45
+msgid "Select date of birth"
+msgstr "Seleccione la fecha de nacimiento"
+
+#: iogt/templates/profiles/register.html:54
+msgid "I identify my gender as:"
+msgstr "Me identifico mi género como:"
+
+#: iogt/templates/profiles/register.html:63
+msgid "Where do you live?"
+msgstr "¿Dónde vives?"
+
+#: iogt/templates/profiles/register.html:72
+msgid "What is your highest level of education?"
+msgstr "¿Cual es tu nivel más alto de educación?"
+
+#: iogt/settings/base.py:429
+msgid "This field is required"
+msgstr "Este campo es requerido"
+
+#: iogt/settings/base.py:430
+msgid "ARE YOU A"
+msgstr "ERES"
+
+#: iogt/settings/base.py:431
+msgid "Ensure this value has at least 4 characters (it has 1)"
+msgstr "Asegurar este valor tiene al menos 4 caracteres (que tiene 1)"
+
+#: iogt/settings/base.py:432
+msgid "Type your comment here"
+msgstr "Escriba su comentario aquí"
