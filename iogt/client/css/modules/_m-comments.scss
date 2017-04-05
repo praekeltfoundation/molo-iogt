@@ -13,8 +13,10 @@
     background: none;
     font-weight: normal;
     text-align: left;
-    padding: 0 0 10px;
+    padding: 0 0 30px;
     margin: 0;
+    font-size: $font-small;
+    text-decoration: underline;
   }
   .call-to-action__nav-item--back {
     padding: 0 15px;
