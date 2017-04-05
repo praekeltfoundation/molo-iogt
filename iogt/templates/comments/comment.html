@@ -10,6 +10,7 @@
         {{node.user.profile.alias}}
       {% endif %}
     {% endif %}
+    <span class="comment__date">{{node.submit_date|date:"j F Y"}}</span>
   </h4>
   {% if node.is_removed %}
     <h6 class="comment__description">
