@@ -57,6 +57,7 @@
   padding: 0 15px;
   .icon {
     display: none;
+    vertical-align: middle;
   }
 }
 
@@ -81,7 +82,10 @@
   text-transform: uppercase;
   color: #000;
   font-size: $font-small;
-  padding: 15px 0 0;
+  vertical-align: middle;
+}
+.comment-counter__text {
+  display: inline-block;
 }
 
 .comment-list {

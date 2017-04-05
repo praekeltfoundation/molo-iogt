@@ -7,15 +7,15 @@
     {% for article in articles %}
       <li class="article-list__item {% if forloop.first %}article-list__item--hero{% endif %}">
        <div class="article-list__container article-list__container{{article.get_parent_section.get_effective_extra_style_hints}} {% if forloop.first %}article-list__container--hero{% endif %}">
+        {% if article.image %}
         <a href="{% pageurl article %}" {% if not forloop.first %}class="article-list__image-content"{% endif %}>
-          {% if article.image %}
-            {% if forloop.first %}
-            {% image article.image original class="article-list__image" %}
-            {% else %}
-            {% image article.image width-100 height-100 class="article-list__image article-list__image--small" %}
-              {% endif %}
-          {% endif %}
+          {% if forloop.first %}
+          {% image article.image original class="article-list__image" %}
+          {% else %}
+          {% image article.image width-100 height-100 class="article-list__image article-list__image--small" %}
+            {% endif %}
         </a>
+        {% endif %}
         <a href="{% pageurl article.get_parent_section %}" {% if not forloop.first %}class="article-list__inner-content"{% endif %}>
           <h3 class="article-list__section">{{ article.get_parent_section.title }}</h3>
         </a>
