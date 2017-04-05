@@ -56,12 +56,12 @@
   .personae__title {
     padding: 0 60px 0 0;
     &:after {
-      float: left;
+     left: 10px;
+     right: auto;
     }
   }
   .personae-list__item--image-container {
     right: 15px;
     left: inherit;
-    background: yellow;
   }
 }
