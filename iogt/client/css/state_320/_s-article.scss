@@ -10,22 +10,14 @@
   padding: 10px 0;
   width: 40%;
 }
-.article-list__inner-content {
-  clear: left;
-  float: left;
-  width: 54%;
-}
-
 .section-article-list__title {
   padding: 7px 0;
 }
-
 .article-list__section ,
 .section-list__title--homepage {
   padding: 5px 0;
   overflow: hidden;
 }
-
 .article-list__item--hero  {
   .article-list__image {
     width: 100%;
@@ -87,7 +79,6 @@
     border-right-color: #4086BB;
   }
 }
-
 .call-to-action__item-share--footer {
   border-color: #a3a3a3;
   .call-to-action__item-share-img {
@@ -98,7 +89,6 @@
   }
 }
 
-
 @each $name, $color in $color_list {
   .article--#{$name} {
     ol li:before,
@@ -106,7 +96,6 @@
         color: $color;
     }
   }
-
   .article-list__container--#{$name} {
     .article-list__section {
       color: $color;
