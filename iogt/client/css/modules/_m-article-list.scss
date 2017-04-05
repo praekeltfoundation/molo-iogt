@@ -22,6 +22,7 @@
     padding: 0 0 5px;
     .article-list__section,
     .article-list__title,
+    .section-list__title,
     .article-list__subtitle {
       padding: 5px 15px 0;
     }
@@ -34,9 +35,13 @@
   height: auto;
   margin: 0 auto 10px;
 }
+.article-list__image-content {
+  text-align: center;
+}
 .article-list__image--small {
   width: 50%;
   height: auto;
+  margin: 0 auto;
 }
 .article-list__title {
   color: #000;
@@ -73,7 +78,6 @@
     padding: 0 15px;
   }
 }
-
 .article-list__section {
   text-transform: uppercase;
   padding: 10px 0 0;
