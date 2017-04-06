@@ -5,7 +5,6 @@
     width: 100%;
   }
 }
-
 .article__content {
   word-wrap: break-word;
   a {
@@ -14,15 +13,12 @@
     font-weight: bold;
     text-decoration: underline;
   }
-
   .article__pages-link {
     padding: 5px 15px;
   }
-
   p {
     padding: 0 15px;
   }
-
   //General article ol, ul, li entered inside the Body P tags - no way of adding classes
   ol li, ul li {
     padding: 0 0 10px;
@@ -46,8 +42,6 @@
       list-style-type: disc;
     }
   }
-
-
   //Article ol, ul, li entered inside the  List and Numbered List Wagtail streamfields
   .article-unordered-list {
     .article-unordered-list__item {
@@ -77,7 +71,6 @@
   padding: 0 15px;
   counter-reset:li;
 }
-
 //Social Media
 .call-to-action__item-share {
   display: block;
@@ -97,7 +90,6 @@
   color: #000;
   text-decoration: underline;
 }
-
 .call-to-action__item-share--footer {
   margin: 0;
   color: #07292f;

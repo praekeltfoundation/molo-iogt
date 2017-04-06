@@ -1,4 +1,3 @@
-
 .heading--comment {
   padding: 10px 15px;
 }
@@ -16,12 +15,10 @@
   .heading.heading--#{$name} {
     color: $color;
   }
-
   .heading--large.heading--#{$name} {
     color: #fff;
     background: $color;
   }
-
   .polls--#{$name} {
     .heading--polls {
       color: $color;

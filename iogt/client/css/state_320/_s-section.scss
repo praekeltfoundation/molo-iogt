@@ -1,5 +1,4 @@
-
- .section__image img {
+.section__image img {
    width: auto;
    height: auto;
  }
@@ -39,7 +38,6 @@
     }
   }
 }
-
 @each $name, $color in $color_list {
   .section--#{$name} {
     .section__title,
@@ -52,15 +50,16 @@
       color: $color;
     }
   }
-
   .section-list--#{$name} {
     .section-list__title--homepage,
     .section-list__title a,
     .section-list__more {
       color: $color;
     }
+    .article-list__item--hero {
+      border-top-color: $color;
+    }
   }
-
   .section-list-nav--#{$name} {
     border-top: 1px solid darken($color, 10%);
     background: $color;

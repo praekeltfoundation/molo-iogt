@@ -1,6 +1,4 @@
-
 @import "../variables/_variables";
-
 @media only screen and (min-width: 320px) {
   @import "_s-call-to-action-buttons";
   @import "_s-article";
@@ -16,7 +14,6 @@
   @import "_s-section";
   @import "_s-survey";
   @import "_s-footer";
-
   @media only screen and (min-width: 600px) {
     html { background: #333; }
     body {
@@ -24,13 +21,11 @@
       margin: 0 auto;
     }
   }
-
   html, body,
   h1, h2, h3, h4, h5, h6,
   input, select, textarea {
     font-family: 'Lato', sans-serif;
   }
-
   input[type="text"],
   input[type="password"],
   input[type="email"],
@@ -38,29 +33,24 @@
   input[type="search"] {
     border-radius: 4px;
   }
-
   select {
     width: 32%;
     display: inline-block;
   }
-
   textarea {
     padding: 5px;
     width: 95%;
   }
-
   .call-to-action__nav-item,
   input[type="submit"] {
     white-space: nowrap;
     padding: 10px 0;
   }
-
   input[type="submit"] {
     text-align: center;
     text-decoration: none;
     padding: 10px 0;
   }
-
  .select-language {
     text-decoration: none;
     float: right;

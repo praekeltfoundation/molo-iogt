@@ -16,8 +16,6 @@
 .pagination__link--arrow {
   display: inline-block;
 }
-
-
 //Numbered Pagination
 .pagination--numbered {
   padding: 10px 15px 40px;
@@ -36,9 +34,6 @@
   right: 0;
   width: 60%;
   margin: 0 auto;
-  a {
-
-  }
 }
 @each $name, $color in $color_list {
   .section--#{$name} {
@@ -49,7 +44,6 @@
       color: $color;
     }
   }
-
   .pagination--#{$name}  {
     .pagination__link--current {
       color: $color;

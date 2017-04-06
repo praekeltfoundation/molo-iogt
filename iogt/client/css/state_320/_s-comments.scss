@@ -1,7 +1,5 @@
 .comments {
-  p {
-    padding: 0 15px;
-  }
+  p {padding: 0 15px;}
   .call-to-action__nav-item--back {
     text-decoration: underline;;
   }
@@ -51,7 +49,6 @@
 .comment__text {
   display: none;
 }
-
 .comment-list {
   .comment-list__item p {
     padding: 0 50px 0 0;
@@ -73,7 +70,6 @@
     }
   }
 }
-
 #comments-list,
 #comment__list {
   .call-to-action__nav-item--response {
@@ -87,8 +83,6 @@
     padding: 0 50px 0 0;
   }
 }
-
-
 @each $name, $color in $color_list {
   .comments--#{$name} {
     .comment__post-message .icon { //This is the comments post form icon
@@ -115,9 +109,7 @@
       color: $color;
     }
   }
-
   .article-list__comments-counter--#{$name} .icon  {
     fill: $color;
   }
-
 }

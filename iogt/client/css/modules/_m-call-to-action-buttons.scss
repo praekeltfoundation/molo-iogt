@@ -1,12 +1,8 @@
-/**
-  Add independent call-to-action__nav-item classes and class modifiers
-*/
 .call-to-action__nav-item {
   color: $victoria;
   text-decoration: underline;
   font-weight: normal;
 }
-
 //Profiles
 .call-to-action--profile {
   padding: 0 15px 15px;
@@ -14,7 +10,6 @@
 .call-to-action--view-profile {
   padding: 0;
 }
-
 .call-to-action__nav-item--challenge {
   text-align: left;
   color: #757575;
@@ -23,7 +18,6 @@
   text-transform: inherit;
   font-size: $font-x-medium;
 }
-
 .call-to-action__nav-item--login {
   color: $victoria;
   font-size: $font-small;
@@ -32,13 +26,11 @@
   margin: 0;
   padding: 0;
 }
-
 //Comments
 .call-to-action__nav-item--response {
   text-transform: capitalize;
   font-weight: bold;
 }
-
 //Poll
 .call-to-action__nav-item-show-results {
   color: #000;
