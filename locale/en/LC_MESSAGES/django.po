@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-31 10:21+0200\n"
+"POT-Creation-Date: 2017-04-06 12:46+0200\n"
 "PO-Revision-Date: 2017-02-01 07:44+0000\n"
 "Last-Translator: Ntu2ko Trevor <trevor@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,71 +19,71 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1485935090.268670\n"
 
-#: iogt/settings/base.py:415
+#: iogt/settings/base.py:436
 msgid "January"
 msgstr ""
 
-#: iogt/settings/base.py:416
+#: iogt/settings/base.py:437
 msgid "February"
 msgstr ""
 
-#: iogt/settings/base.py:417
+#: iogt/settings/base.py:438
 msgid "March"
 msgstr ""
 
-#: iogt/settings/base.py:418
+#: iogt/settings/base.py:439
 msgid "April"
 msgstr ""
 
-#: iogt/settings/base.py:419
+#: iogt/settings/base.py:440
 msgid "May"
 msgstr ""
 
-#: iogt/settings/base.py:420
+#: iogt/settings/base.py:441
 msgid "June"
 msgstr ""
 
-#: iogt/settings/base.py:421
+#: iogt/settings/base.py:442
 msgid "July"
 msgstr ""
 
-#: iogt/settings/base.py:422
+#: iogt/settings/base.py:443
 msgid "August"
 msgstr ""
 
-#: iogt/settings/base.py:423
+#: iogt/settings/base.py:444
 msgid "September"
 msgstr ""
 
-#: iogt/settings/base.py:424
+#: iogt/settings/base.py:445
 msgid "October"
 msgstr ""
 
-#: iogt/settings/base.py:425
+#: iogt/settings/base.py:446
 msgid "November"
 msgstr ""
 
-#: iogt/settings/base.py:426
+#: iogt/settings/base.py:447
 msgid "December"
 msgstr ""
 
-#: iogt/settings/base.py:427
+#: iogt/settings/base.py:448
 msgid "Add anonymously"
 msgstr ""
 
-#: iogt/settings/base.py:429
+#: iogt/settings/base.py:450
 msgid "This field is required"
 msgstr ""
 
-#: iogt/settings/base.py:430
-msgid "ARE YOU A"
+#: iogt/settings/base.py:451 iogt/temp_ve/usermetadata/templates/persona.html:5
+msgid "Are you a ..."
 msgstr ""
 
-#: iogt/settings/base.py:431
+#: iogt/settings/base.py:452
 msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr ""
 
-#: iogt/settings/base.py:432
+#: iogt/settings/base.py:453
 msgid "Type your comment here"
 msgstr ""
 
@@ -110,19 +110,19 @@ msgid "Anonymous"
 msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:16
-#: iogt/templates/comments/comment.html:16
+#: iogt/templates/comments/comment.html:17
 msgid ""
 "This comment has been removed by the community. Please read our platform "
 "rules."
 msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:21
-#: iogt/templates/comments/comment.html:21
+#: iogt/templates/comments/comment.html:22
 msgid "Report"
 msgstr ""
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:23
-#: iogt/templates/comments/comment.html:23
+#: iogt/templates/comments/comment.html:24
 msgid "Reply"
 msgstr ""
 
@@ -149,11 +149,12 @@ msgstr ""
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:26
 #: iogt/templates/comments/comment_block.html:30
 #: iogt/templates/core/article_page.html:43
-#: iogt/templates/core/section_page.html:63
-#: iogt/templates/core/section_page.html:145
+#: iogt/templates/core/related-article-list.html:56
+#: iogt/templates/core/section_page.html:58
+#: iogt/templates/core/section_page.html:140
 #: iogt/templates/core/tags/latest_listing_homepage.html:39
 #: iogt/templates/core/tags/section_listing_homepage.html:40
-#: iogt/templates/search/search_results.html:52
+#: iogt/templates/search/search_results.html:53
 msgid "comment"
 msgstr ""
 
@@ -184,7 +185,7 @@ msgstr ""
 #: iogt/temp_ve/polls/templates/polls/free_text_detail.html:12
 #: iogt/temp_ve/polls/templates/polls/results.html:24
 #: iogt/templates/core/article_page.html:11
-#: iogt/templates/core/section_page.html:20
+#: iogt/templates/core/section_page.html:15
 #: iogt/templates/surveys/molo_survey_page.html:10
 msgid "Home"
 msgstr ""
@@ -222,35 +223,35 @@ msgstr ""
 msgid "The comment has been reported."
 msgstr ""
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:215
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
 msgid "Zulu"
 msgstr ""
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:216
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:204
 msgid "Xhosa"
 msgstr ""
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:217
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
 msgid "Sotho"
 msgstr ""
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:218
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
 msgid "Venda"
 msgstr ""
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:219
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
 msgid "Tswana"
 msgstr ""
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:220
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
 msgid "Tsonga"
 msgstr ""
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:221
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Swati"
 msgstr ""
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:222
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
 msgid "Ndebele"
 msgstr ""
 
@@ -260,6 +261,7 @@ msgid "Access Denied"
 msgstr ""
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
+#: iogt/templates/403.html:9
 msgid "You do not have permssion to access this site."
 msgstr ""
 
@@ -451,7 +453,7 @@ msgstr ""
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
 #: iogt/templates/base.html:143 iogt/templates/search/search_results.html:9
-#: iogt/templates/search/search_results.html:76
+#: iogt/templates/search/search_results.html:75
 msgid "Search"
 msgstr ""
 
@@ -699,7 +701,7 @@ msgid "Home Page"
 msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:64
-#: iogt/templates/base.html:141 iogt/templates/base.html:200
+#: iogt/templates/base.html:141 iogt/templates/base.html:205
 msgid "Profile"
 msgstr ""
 
@@ -765,7 +767,7 @@ msgid "Already a member?"
 msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:10
-#: iogt/templates/base.html:195 iogt/templates/profiles/register.html:10
+#: iogt/templates/base.html:198 iogt/templates/profiles/register.html:10
 msgid "Login"
 msgstr ""
 
@@ -909,15 +911,15 @@ msgstr ""
 msgid "Eg.: 2086"
 msgstr ""
 
-#: iogt/temp_ve/profiles/views.py:144
+#: iogt/temp_ve/profiles/views.py:161
 msgid "The old password is incorrect."
 msgstr ""
 
-#: iogt/temp_ve/profiles/views.py:167
+#: iogt/temp_ve/profiles/views.py:184
 msgid "Too many attempts. Please try again later."
 msgstr ""
 
-#: iogt/temp_ve/profiles/views.py:262
+#: iogt/temp_ve/profiles/views.py:279
 msgid "The two PINs that you entered do not match. Please try again."
 msgstr ""
 
@@ -1003,7 +1005,7 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: iogt/templates/base.html:210
+#: iogt/templates/base.html:217
 msgid "Change your language"
 msgstr ""
 
@@ -1011,20 +1013,20 @@ msgstr ""
 msgid "Have something to add to this article?"
 msgstr ""
 
-#: iogt/templates/core/related-article-list.html:31
+#: iogt/templates/core/related-article-list.html:30
 msgid "Related Articles"
 msgstr ""
 
-#: iogt/templates/core/section_page.html:74
+#: iogt/templates/core/section_page.html:69
 msgid "Prev"
 msgstr ""
 
-#: iogt/templates/core/section_page.html:103
+#: iogt/templates/core/section_page.html:98
 msgid "Next"
 msgstr ""
 
-#: iogt/templates/core/section_page.html:152
-#: iogt/templates/core/tags/section_listing_homepage.html:47
+#: iogt/templates/core/section_page.html:147
+#: iogt/templates/core/tags/section_listing_homepage.html:46
 msgid "View more"
 msgstr ""
 
@@ -1103,20 +1105,20 @@ msgstr ""
 
 #: iogt/templates/search/search_block.html:5
 #: iogt/templates/search/search_results.html:8
-#: iogt/templates/search/search_results.html:75
+#: iogt/templates/search/search_results.html:74
 msgid "Search the site..."
 msgstr ""
 
 #: iogt/templates/search/search_results.html:11
-#: iogt/templates/search/search_results.html:78
+#: iogt/templates/search/search_results.html:77
 msgid "Search Results for:"
 msgstr ""
 
-#: iogt/templates/search/search_results.html:81
+#: iogt/templates/search/search_results.html:80
 msgid "No search results were found for "
 msgstr ""
 
-#: iogt/templates/search/search_results.html:83
+#: iogt/templates/search/search_results.html:82
 msgid "Back to homepage"
 msgstr ""
 
