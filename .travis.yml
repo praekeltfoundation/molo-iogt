@@ -14,6 +14,9 @@ script:
   - flake8
   - py.test
   # Check that the molo.core version in requirements.txt matches the version in the Docker image
-  - \[ "$(sed -nE 's/^molo\.core==(.*)$/\1/p' requirements.txt)" = "$(sed -nE 's/^FROM .*:(.*)-onbuild$/\1/p' Dockerfile)" \]
+  - |
+    rv="$(sed -nE 's/^molo\.core==(.*)$/\1/p' requirements.txt)"
+    dv="$(sed -nE 's/^FROM .*:(.*)-onbuild$/\1/p' Dockerfile)"
+    if [ "$rv" != "$dv" ]; then echo "molo.core version mismatch: $rv != $dv"; return 1; fi
 after_success:
   - coveralls
