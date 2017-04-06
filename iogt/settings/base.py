@@ -448,7 +448,6 @@ _("December")
 _("Add anonymously")
 
 _("This field is required")
-_("ARE YOU A")
 _("Ensure this value has at least 4 characters (it has 1)")
 _("Type your comment here")
 
