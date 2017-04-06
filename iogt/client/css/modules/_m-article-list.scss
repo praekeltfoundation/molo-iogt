@@ -1,3 +1,5 @@
+.article-list {
+}
 .article-list__item {
   position: relative;
   border-bottom: solid 1px #e4e4e4;
@@ -5,6 +7,9 @@
   a {
     display: block;
     color: #666666;
+  }
+  :last-child {
+    border: none;
   }
 }
 .article-list__container {
