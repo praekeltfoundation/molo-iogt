@@ -3,16 +3,17 @@ language: python
 python:
   - "2.7"
 cache:
-  directories:
-    - $HOME/.pip-cache/
+  - pip
+before_install:
+  - pip install --upgrade pip
 install:
-  - pip install --upgrade pip --cache-dir $HOME/.pip-cache/
-  - pip install coveralls --cache-dir $HOME/.pip-cache/
-  - pip install flake8 --cache-dir $HOME/.pip-cache/
-  - pip install -r requirements-dev.txt --cache-dir $HOME/.pip-cache/
-  - pip install -e . --cache-dir $HOME/.pip-cache/
+  - pip install -e .
+  - pip install -r requirements-dev.txt
+  - pip install coveralls
 script:
   - flake8 iogt
   - py.test
+  # Check that the molo.core version in requirements.txt matches the version in the Docker image
+  - \[ "$(sed -nE 's/^molo\.core==(.*)$/\1/p' requirements.txt)" = "$(sed -nE 's/^FROM .*:(.*)-onbuild$/\1/p' Dockerfile)" \]
 after_success:
   - coveralls
