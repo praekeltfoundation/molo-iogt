@@ -24,12 +24,26 @@
     padding: 0;
   }
 }
-
+.comment__date {
+  display: inline;
+}
 .comment__post-message .icon {
+  display: inline-block;
+}
+.article-list__comments-counter {
+  .icon {
     display: inline-block;
+    background-size: 78%;
+    vertical-align: middle;
+  }
+}
+.comment-counter__text {
+  display: none;
+  vertical-align: middle;
 }
 .comment-counter__number {
   padding-left: 5px;
+  vertical-align: middle;
 }
 .comment__counter {
   font-weight: bold;
@@ -37,6 +51,7 @@
 .comment__text {
   display: none;
 }
+
 .comment-list {
   .comment-list__item p {
     padding: 0 50px 0 0;
@@ -64,21 +79,19 @@
   .call-to-action__nav-item--response {
     position: absolute;
     right: 15px;
-    top: 5px;
+    top: -5px;
   }
 }
 #comment__list {
   p {
     padding: 0 50px 0 0;
   }
-  .call-to-action__nav-item--response {
-    top: 0;
-  }
 }
+
 
 @each $name, $color in $color_list {
   .comments--#{$name} {
-    .comment__post-message .icon {
+    .comment__post-message .icon { //This is the comments post form icon
         fill: $color;
     }
     .call-to-action__nav-item--back,
@@ -102,4 +115,9 @@
       color: $color;
     }
   }
+
+  .article-list__comments-counter--#{$name} .icon  {
+    fill: $color;
+  }
+
 }

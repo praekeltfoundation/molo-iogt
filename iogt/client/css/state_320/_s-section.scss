@@ -24,7 +24,7 @@
   }
 }
 .section-list-nav {
-  padding: 5px 15px 15px;
+  padding: 7px 15px 15px;
 }
 .section-list__more {
   text-decoration: none;
@@ -40,13 +40,7 @@
   }
 }
 
-
-
 @each $name, $color in $color_list {
-  .section--#{$name},
-  .section-list--#{$name} {
-    border-top: 2px solid $color;
-  }
   .section--#{$name} {
     .section__title,
     .section__info,

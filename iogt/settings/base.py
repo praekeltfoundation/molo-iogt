@@ -194,35 +194,38 @@ USE_TZ = True
 # list of languges in django
 # https://github.com/django/django/blob/master/django/conf/global_settings.py#L50
 LANGUAGES = global_settings.LANGUAGES + [
-    ('zu', _('Zulu')),
-    ('xh', _('Xhosa')),
-    ('st', _('Sotho')),
-    ('ve', _('Venda')),
-    ('tn', _('Tswana')),
-    ('ts', _('Tsonga')),
-    ('rw', _('Kinyarwanda')),
-    ('ss', _('Swati')),
-    ('nr', _('Ndebele')),
-    ('wo', _('Wolof')),
-    ('yo', _('Yoruba')),
-    ('ig', _('Igbo')),
-    ('ha', _('Hausa')),
-    ('am', _('Amharic')),
-    ('ms', _('Malay')),
-    ('gn', _('Guarani')),
-    ('gu', _('Gujarati')),
-    ('fil', _('Filipino')),
-    ('nqo', _('N\'ko')),
-    ('sys', _('Syriac')),
-    ('dv', _('Dhivehi')),
-    ('ber', _('Berber')),
-    ('ku', _('Kurdish')),
-    ('arc', _('Aramaic')),
-    ('ht', _('Creole Haitian')),
-    ('ky', _('Kyrgyz')),
-    ('id', _('Bahasa')),
-    ('my', _('Burmese')),
-    ('tg', _('Tajik')),
+    ('zu', 'Zulu'),
+    ('xh', 'Xhosa'),
+    ('st', 'Sotho'),
+    ('ve', 'Venda'),
+    ('tn', 'Tswana'),
+    ('ts', 'Tsonga'),
+    ('rw', 'Kinyarwanda'),
+    ('ss', 'Swati'),
+    ('nr', 'Ndebele'),
+    ('wo', 'Wolof'),
+    ('yo', 'Yoruba'),
+    ('ig', 'Igbo'),
+    ('ha', 'Hausa'),
+    ('am', 'Amharic'),
+    ('ms', 'Malay'),
+    ('gn', 'Guarani'),
+    ('gu', 'Gujarati'),
+    ('fil', 'Filipino'),
+    ('nqo', 'N\'ko'),
+    ('sys', 'Syriac'),
+    ('dv', 'Dhivehi'),
+    ('ber', 'Berber'),
+    ('ku', 'Kurdish'),
+    ('arc', 'Aramaic'),
+    ('ht', 'Creole Haitian'),
+    ('ky', 'Kyrgyz'),
+    ('id', 'Bahasa'),
+    ('my', 'Burmese'),
+    ('tg', 'Tajik'),
+    ('ay', 'Aymara'),
+    ('qu', 'Quechua'),
+    ('rn', 'Kirundi'),
 ]
 
 EXTRA_LANG_INFO = {
@@ -359,7 +362,7 @@ EXTRA_LANG_INFO = {
         'name_local': 'Tamaziɣt'
     },
     'ku': {
-        'bidi': False,
+        'bidi': True,
         'code': 'ku',
         'name': 'Kurdish',
         'name_local': 'Kurdî'
@@ -400,6 +403,24 @@ EXTRA_LANG_INFO = {
         'name': 'Tajik',
         'name_local': 'тоҷикӣ'
     },
+    'ay': {
+        'bidi': False,
+        'code': 'ay',
+        'name': 'Aymara',
+        'name_local': 'aymar aru'
+    },
+    'qu': {
+        'bidi': False,
+        'code': 'qu',
+        'name': 'Quechua',
+        'name_local': 'Kichwa'
+    },
+    'rn': {
+        'bidi': False,
+        'code': 'rn',
+        'name': 'Kirundi',
+        'name_local': 'Ikirundi'
+    },
 }
 
 LANG_INFO = (
@@ -409,6 +430,28 @@ django.conf.locale.LANG_INFO = LANG_INFO
 LOCALE_PATHS = [
     join(PROJECT_ROOT, "locale"),
 ]
+
+# Additional strings that need translations
+
+_("January")
+_("February")
+_("March")
+_("April")
+_("May")
+_("June")
+_("July")
+_("August")
+_("September")
+_("October")
+_("November")
+_("December")
+_("Add anonymously")
+
+_("This field is required")
+_("ARE YOU A")
+_("Ensure this value has at least 4 characters (it has 1)")
+_("Type your comment here")
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
@@ -478,7 +521,7 @@ GOOGLE_ANALYTICS_IGNORE_PATH = [
     # but including them here just incase
     '/media/', '/static/',
     # metrics URL used by promethius monitoring system
-    '/metrics/',
+    '/metrics',
 ]
 
 CUSTOM_GOOGLE_ANALYTICS_IGNORE_PATH = environ.get(
