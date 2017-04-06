@@ -592,7 +592,6 @@ msgid "Username already exists."
 msgstr "အသုံးပြုသူအမည်ရှိပြီးဖြစ်သည်။"
 
 #: iogt/temp_ve/profiles/forms.py:193
-#, fuzzy, python-format
 #| msgid ""
 #| "Sorry, but that is an invalid username. Please don't use your %s in your "
 #| "username."

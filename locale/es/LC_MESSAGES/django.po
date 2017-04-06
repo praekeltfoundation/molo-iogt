@@ -389,7 +389,6 @@ msgstr ""
 #: iogt/templates/registration/login.html:5
 #: iogt/templates/registration/login.html:34
 #: iogt/templates/registration/password_reset_complete.html:8
-#, fuzzy
 msgid "Log in"
 msgstr "Iniciar sesión"
 
