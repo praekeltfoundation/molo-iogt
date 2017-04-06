@@ -1,12 +1,8 @@
-
 .surveys {
   .call-to-action__nav-item--back-home {
     padding: 0 15px 10px;
   }
-
-  input[type="submit"] {
-    width: 100%;
-  }
+  input[type="submit"] {width: 100%;}
   input[type="submit"],
   .call-to-action__nav-item--surveys {
     background: $roman;
@@ -17,7 +13,6 @@
     text-transform: uppercase;
     font-size: $font-small;
   }
-
   .section-list-nav {
     background: $roman;
     .section-list-nav__item {
@@ -26,12 +21,10 @@
     }
   }
 }
-
 .surveys__form,
 .error--surveys {
     padding: 0 15px;
 }
-
 .surveys__results,
 .surveys__results {
   padding: 0 15px;

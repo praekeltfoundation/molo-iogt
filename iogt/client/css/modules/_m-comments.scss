@@ -1,14 +1,8 @@
-///Use Molo.commenting plugin
 .comments {
   background: #f0f0f0;
   overflow: auto;
-
-  a {
-    color: #000;
-  }
-  p {
-    padding: 0 10px;
-  }
+  a {color: #000;}
+  p {padding: 0 10px;}
   .call-to-action__nav-item--login {
     background: none;
     font-weight: normal;
@@ -60,8 +54,6 @@
     vertical-align: middle;
   }
 }
-
-
 .comment__title,
 .comments__title {
   color: #000;
@@ -87,7 +79,6 @@
 .comment-counter__text {
   display: inline-block;
 }
-
 .comment-list {
   background: #f0f0f0;
   padding: 10px 0;
@@ -108,7 +99,6 @@
     }
   }
 }
-
 .comment-list__item {
   padding: 5px 15px;
   position: relative;

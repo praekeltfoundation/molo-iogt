@@ -1,16 +1,10 @@
-/**
-  Add independent call-to-action__nav-item classes and class modifiers
-*/
-
 .call-to-action__nav-item {
   text-decoration: none;
 }
-
 .call-to-action__nav-item--challenge {
   color: #fff;
   font-size: $font-large;
 }
-
 .call-to-action__nav-item--login {
   background: #fff;
   color: $victoria;
@@ -19,7 +13,6 @@
   text-align: center;
   text-decoration: none;
 }
-
 .call-to-action__nav-item--logout,
 .call-to-action__nav-item--editprofile,
 .call-to-action__nav-item--change-password {
@@ -28,14 +21,12 @@
   text-align: center;
   text-decoration: none;
 }
-
 //Comments Report Buttons
 .call-to-action__nav-item--response {
   text-decoration: none;
   font-size: $font-small;
   margin: 0;
 }
-
 //Section
 .call-to-action__nav-item--back,
 .call-to-action__nav-item--back-home {

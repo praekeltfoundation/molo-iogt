@@ -1,4 +1,3 @@
-
 .profiles {
   padding: 0 15px 10px;
   p {
@@ -6,21 +5,17 @@
     font-size: $font-small;
     padding: 5px 0;
   }
-
   label {
     display: inline;
     padding: 0 5px 5px 0;
   }
-
   label[for="id_date_of_birth_year"] {
     display: block;
   }
-
   .call-to-action--profile,
   .call-to-action--view-profile {
     padding: 0;
   }
-
 }
 .profiles--csrf {
   p {
@@ -28,7 +23,6 @@
     padding: 0;
   }
 }
-
 .profiles__terms {
   display: inline-block;
   color: #666;
@@ -36,23 +30,19 @@
   text-transform: inherit;
   font-weight: normal;
 }
-
 .profiles__nav-item {
   color: $victoria;
   display: inline;
   text-transform: capitalize;
   text-decoration: underline;
 }
-
 .profile__alias {
   display: inline;
 }
-
 .profile__alias--label {
   font-size: $font-medium;
   font-weight: bold;
 }
-
 .profiles__forgotten-password {
   color: #757575;
   font-weight: bold;
@@ -60,14 +50,12 @@
   font-size: $font-small;
   text-decoration: underline;
 }
-
 .error {
   display: block;
   font-size: $font-small;
   color: red;
   padding: 5px 25px 0 0;
 }
-
 .errorlist li {
   color: red;
   font-size: $font-small;

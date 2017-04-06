@@ -1,4 +1,3 @@
-
 .search-form {
   input[type="submit"] {
     background: url('/static/img/search_icon_black.png') no-repeat 0 0;
@@ -11,7 +10,6 @@
     margin: 10px 0;
   }
 }
-
 .search-form--main {
   background: $victoria;
   padding: 15px 15px 30px;
@@ -19,7 +17,6 @@
     right: 30px;
   }
 }
-
 @each $name, $color in $color_list {
   .search--result__section-title--#{$name} {
     color: $color;
