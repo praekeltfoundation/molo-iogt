@@ -1,6 +1,6 @@
 molo.core==4.4.9
 molo.surveys==2.2.1
-molo.profiles==3.2.0
+molo.profiles==3.2.1
 molo.commenting==2.1.2
 molo.polls==3.2.0
 molo.usermetadata==1.1.3
