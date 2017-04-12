@@ -7,25 +7,26 @@
   {% image self.image width-320 class="article__image" %}
 {% endif %}
 <ul class="section-list-nav section-list-nav{{self.get_parent_section.get_effective_extra_style_hints}}">
-  <li class="section-list-nav__item section-list-nav__item--arrow-right">
-    <a href="/">{% trans "Home" %}</a></li>
-    {% if self.get_parent_section.get_parent_section %}
-    {% with section=self.get_parent_section.get_parent_section %}
-    <li class="section-list-nav__item  section-list-nav__item--arrow-right">
-      <a href="{% pageurl section %}">{{section.title}}</a>
-      {% with sub_section=self.get_parent_section %}
-        <li class="section-list-nav__item">
-          <a href="{% pageurl sub_section %}">{{sub_section.title}}</a>
-        </li>
-      {% endwith %}
+      <li class="section-list-nav__item section-list-nav__item--arrow-right">
+        <a href="/">{% trans "Home" %}</a>
       </li>
-    {% endwith %}
+    {% if self.get_parent_section.get_parent_section %}
+      {% with section=self.get_parent_section.get_parent_section %}
+      <li class="section-list-nav__item  section-list-nav__item--arrow-right">
+        <a href="{% pageurl section %}">{{section.title}}</a>
+      </li>
+      {% endwith %}
+      {% with sub_section=self.get_parent_section %}
+      <li class="section-list-nav__item">
+        <a href="{% pageurl sub_section %}">{{sub_section.title}}</a>
+      </li>
+      {% endwith %}
     {% else %}
-    {% with section=self.get_parent_section %}
-    <li class="section-list-nav__item">
-      <a href="{% pageurl section %}">{{section.title}}</a>
-    </li>
-    {% endwith %}
+      {% with section=self.get_parent_section %}
+      <li class="section-list-nav__item">
+        <a href="{% pageurl section %}">{{section.title}}</a>
+      </li>
+      {% endwith %}
     {% surveys_list_for_pages page=self %}
     {% endif %}
 </ul>
@@ -43,7 +44,6 @@
     <span class="comment-counter__text">{% trans "comment" %}{{comment_count|pluralize}}</span>
     </a>
   {% endif %}
-
   <div class="article__content">
     {% for block in self.body %}
       {% if block.block_type == 'heading' %}
