@@ -55,6 +55,11 @@ urlpatterns += patterns(
         ),
         name='comment_done'),
 
+    url(r'^surveys/',
+        include('molo.surveys.urls',
+                namespace='molo.surveys',
+                app_name='molo.surveys')),
+
     url(r'^polls/', include('molo.polls.urls',
                             namespace='molo.polls',
                             app_name='molo.polls')),
