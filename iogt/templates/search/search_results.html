@@ -62,7 +62,7 @@
         <a href="?p={{ search_results.previous_page_number }}&amp;q={{search_query}}" class="pagination__link pagination__link--previous"><span class="pagination__link--arrow">&larr;</span> Prev</a>
     {% endif %}
 
-    <span class="pagination__link pagination__link--current">Page {{ search_results.number }} of {{ search_results.paginator.num_pages }}</span>
+    <p class="pagination__link pagination__link--current">Page {{ search_results.number }} of {{ search_results.paginator.num_pages }}</p>
 
     {% if search_results.has_next %}
       <a href="?p={{ search_results.next_page_number }}&amp;q={{search_query}}" class="pagination__link pagination__link--next">Next <span class="pagination__link--arrow">&rarr;</span></a>

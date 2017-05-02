@@ -1,5 +1,6 @@
 .pagination {
   padding: 5px 15px 15px;
+  position: relative;
 }
 .pagination__link{
   display: inline-block;
@@ -19,6 +20,14 @@
 //Numbered Pagination
 .pagination--numbered {
   padding: 10px 15px 40px;
+}
+.pagination__link--current {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 40%;
+  text-align: center;
 }
 .pagination__previous-anchor {
   float: left;
