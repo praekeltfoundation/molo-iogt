@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-06 12:46+0200\n"
-"PO-Revision-Date: 2017-04-03 06:01+0000\n"
+"PO-Revision-Date: 2017-04-13 13:47+0000\n"
 "Last-Translator: Reeza <reeza@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bur_MM\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1491199275.077656\n"
+"X-POOTLE-MTIME: 1492091251.089849\n"
 
 #: iogt/settings/base.py:436
 msgid "January"
@@ -162,7 +162,7 @@ msgstr "ပိုပြီးမှတ်ချက်များကိုကြ
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:7
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:6
 msgid "Thanks!"
-msgstr "ကျေးဇူးတင်ပါတယ်!"
+msgstr "ေက်းဇူးတင္ပါတယ္"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:9
 msgid "Your comment has been successfully posted"
@@ -173,7 +173,7 @@ msgstr "သင့်ရဲ့ထင်မြင်ချက်ကိုအော
 #: iogt/temp_ve/commenting/templates/comments/preview.html:45
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
-msgstr "နောက်ကျောဆောင်းပါး"
+msgstr "ေဆာင္းပါးသုိ႔ ျပန္သြားမည္"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:11
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
@@ -221,31 +221,31 @@ msgstr "အဆိုပါမှတ်ချက်ဖော်ပြခဲ့သ
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
 msgid "Zulu"
-msgstr "ဇူလူ"
+msgstr "Zulu"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:204
 msgid "Xhosa"
-msgstr "ဇို"
+msgstr "Xhosa"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
 msgid "Sotho"
-msgstr "Sotho အဘိဓါန်"
+msgstr "Sotho"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
 msgid "Venda"
-msgstr "အဘိဓါန် Venda"
+msgstr "Venda"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
 msgid "Tswana"
-msgstr "အဘိဓါန် Tswana"
+msgstr "Tswana"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
 msgid "Tsonga"
-msgstr "အဘိဓါန် Tsonga"
+msgstr "Tsonga"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Swati"
-msgstr "အဘိဓါန် Swati"
+msgstr "Swati"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
 msgid "Ndebele"
@@ -254,7 +254,7 @@ msgstr "Ndebele"
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 #: iogt/templates/403.html:8
 msgid "Access Denied"
-msgstr "အဆိုပါ စာမ်က္ႏွာကို ဝင္ေရာက္လို႔မရပါ။ "
+msgstr "အဆိုပါ စာမ်က္ႏွာကို ဝင္ေရာက္လို႔မရပါ။"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 #: iogt/templates/403.html:9
@@ -305,7 +305,9 @@ msgstr " ဆာဗာတြင္ မွားယြင္းမႈ တစ္ခ
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr "၀မ္းနည္းပါသည္။ မွားယြင္းေနမႈ တစ္ခုခုရွိေနသည္ဟု ထင္ရပါသည္။ ျပန္လည္ ဝင္ေရာက္ၾကည့္ပါ။ "
+msgstr ""
+"၀မ္းနည္းပါသည္။ မွားယြင္းေနမႈ တစ္ခုခုရွိေနသည္ဟု ထင္ရပါသည္။ ျပန္လည္ "
+"ဝင္ေရာက္ၾကည့္ပါ။"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
@@ -510,7 +512,7 @@ msgstr "မဲအတွက်လက်မှတ်ရေးထိုး"
 #: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
 #: iogt/templates/polls/includes/poll_question_form.html:47
 msgid "Show Results"
-msgstr "show ကိုရလဒ်များ"
+msgstr "ပြပွဲရလဒ်များကို"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
 #: iogt/templates/polls/includes/poll_question_form.html:50
@@ -565,7 +567,7 @@ msgstr "ဒီတန်ဖိုးကသာနံပါတ်များပါ
 #: iogt/temp_ve/profiles/forms.py:96 iogt/temp_ve/profiles/forms.py:489
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:23
 msgid "PIN"
-msgstr "PIN ကို"
+msgstr "တွယ်အပ်"
 
 #: iogt/temp_ve/profiles/forms.py:102 iogt/temp_ve/profiles/forms.py:241
 #: iogt/temp_ve/profiles/forms.py:286
@@ -589,7 +591,7 @@ msgstr "ပညာရေးအဆင့်"
 
 #: iogt/temp_ve/profiles/forms.py:188
 msgid "Username already exists."
-msgstr "အသုံးပြုသူအမည်ရှိပြီးဖြစ်သည်။"
+msgstr "သင္၏ အမည္ username သည္ ရွိျပီးသား ျဖစ္သည္။"
 
 #: iogt/temp_ve/profiles/forms.py:193
 #| msgid ""
@@ -628,12 +630,12 @@ msgstr "စကားဝှက်ကိုအတည်ပြုပါ"
 
 #: iogt/temp_ve/profiles/forms.py:431
 msgid "New passwords do not match."
-msgstr "နယူးစကားဝှက်တွေမတိုက်ဆိုင်ကြဘူး။"
+msgstr "လွ်ိဳ႕ဝွက္နံပါတ္အသစ္မ်ား ကိုက္ညီမႈမရွိပါ။"
 
 #: iogt/temp_ve/profiles/forms.py:506
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:29
 msgid "Confirm PIN"
-msgstr "PIN နံပါတ်ကိုအတည်ပြု"
+msgstr "အတည်ပြု တွယ်အပ်"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:27
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
@@ -661,7 +663,7 @@ msgstr "ကျွန်တော်တို့ကိုသီးသန့်အ
 #: iogt/temp_ve/profiles/templates/profiles/done.html:18
 #: iogt/temp_ve/profiles/templates/profiles/register.html:45
 msgid "SELECT DATE OF BIRTH"
-msgstr "မွေးသက္ကရာဇ် SELECT"
+msgstr "ေမြးေန႔ သကၠရာဇ္ကို ေရြးပါ"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:26
 msgid "DISPLAY NAME"
@@ -757,7 +759,7 @@ msgstr "(ဥပမာ example@foo.com)"
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:6
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:36
 msgid "Forgot PIN"
-msgstr "PIN နံပါတ်မေ့နေ"
+msgstr "PIN နံပါတ္ေမ့ေပ်ာက္သြားသည္"
 
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:31
 msgid "Security question"
@@ -781,7 +783,7 @@ msgstr "အဖြဲ႔ဝင္တစ္ဦး ျဖစ္ျပီးသူ"
 #: iogt/temp_ve/profiles/templates/profiles/register.html:10
 #: iogt/templates/base.html:198 iogt/templates/profiles/register.html:10
 msgid "Login"
-msgstr "log in လုပ္ပါ"
+msgstr "ဝင်​ရန်​"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:14
 #: iogt/temp_ve/profiles/templates/registration/login.html:8
@@ -809,7 +811,7 @@ msgstr ""
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:28
 msgid "CHOOSE A 4-DIGIT PIN"
-msgstr "တစ်ဦးက 4-Digital PIN ကိုရွေးချယ်"
+msgstr "ဂဏန္း ေလးလံုးရွိ လွ်ိဳ႕ဝွက္နံပါတ္တခုျဖည့္ပါ"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:31
 #: iogt/templates/profiles/register.html:31
@@ -823,7 +825,7 @@ msgstr "တစ်ဦးက display အမည်ရွေး"
 #: iogt/temp_ve/profiles/templates/profiles/register.html:48
 #: iogt/templates/profiles/register.html:48
 msgid "Let us know your birthday to get access to exclusive content."
-msgstr "သငျသညျသီးသန့်အကြောင်းအရာတွေ့နိုင်ပါသည်ငါတို့ကိုဤမျှသင့်ရဲ့မွေးနေ့ကိုသိပါစေ။"
+msgstr "သီးသန္႔အေၾကာင္းအရာမ်ား ရရွိႏိုင္ရန္ သင္၏ ေမြးေန႔ကို ေျပာျပပါ။"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:81
 msgid "ENTER YOUR MOBILE NUMBER"
@@ -852,15 +854,15 @@ msgstr "စည္းကမ္းသတ္မွတ္ခ်က္မ်ားက
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:5
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:32
 msgid "Reset PIN"
-msgstr "PIN ကို Reset"
+msgstr "ပြန်ညှိမှု တွယ်အပ်"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:5
 msgid "PIN Changed"
-msgstr "PIN ကိုပြောင်းလဲစေ"
+msgstr "တွယ်အပ် ပြောင်းလဲသွားတယ်"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:7
 msgid "Your PIN has been changed sucessfully."
-msgstr "သင်၏ PIN ကိုအောင်မြင်စွာပြောင်းလဲသွားခဲ့တာဖြစ်ပါတယ်။"
+msgstr "သင်သည်သင်၏အောင်မြင်စွာပြောင်းလဲပြီ တွယ်အပ်"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:8
 msgid "Continue to Sign In"
@@ -868,7 +870,7 @@ msgstr "အတွက်လက်မှတ်ရေးထိုးရန်ဆက
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:6
 msgid "Hello "
-msgstr "မဂၤလာပါ၊ "
+msgstr "မဂၤလာပါ"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:9
 msgid "As you type your name comment will appear as:"
@@ -943,7 +945,7 @@ msgstr "လာမယ့်မေးခွန်းတစ်ခုကို"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Submit Survey"
-msgstr "စစ်တမ်းတင်သွင်း"
+msgstr "ဆန္္းစစ္ေလ့လာခ်က္ survey ကိုတင္မည္။"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:31
 #: iogt/templates/surveys/molo_survey_page.html:50
@@ -1015,7 +1017,7 @@ msgstr "IoGT"
 #: iogt/templates/profiles/register.html:123
 #: iogt/templates/registration/login.html:9
 msgid "Join"
-msgstr "ပါဝင္မည္။ "
+msgstr "ပါဝင္မည္။"
 
 #: iogt/templates/base.html:144
 msgid "Menu"
@@ -1027,7 +1029,7 @@ msgstr "ဘာသာစကား ေျပာင္းလဲမည္"
 
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
-msgstr "ဤဆောင်းပါးတွင်ထည့်သွင်းဖို့တစ်ခုခုရှိပါသလား?"
+msgstr "ဒီေဆာင္းပါးတြင္ ထပ္မံျဖည့္စြက္ခ်င္တာမ်ား ရ်ိပါသလား"
 
 #: iogt/templates/core/related-article-list.html:30
 msgid "Related Articles"
@@ -1065,7 +1067,7 @@ msgstr "တစ်ဦး display ကိုအမညျကိုရှေးခ
 
 #: iogt/templates/profiles/register.html:45
 msgid "Select date of birth"
-msgstr "မွေးသက္ကရာဇ်ကို Select လုပ်ပါ"
+msgstr "ေမြးေန႔ သကၠရာဇ္ကို ေရြးပါ"
 
 #: iogt/templates/profiles/register.html:54
 msgid "I identify my gender as:"
