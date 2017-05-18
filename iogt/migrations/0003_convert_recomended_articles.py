@@ -33,15 +33,16 @@ def convert_articles(apps, schema_editor):
     '''
     Derived from https://github.com/wagtail/wagtail/issues/2110
     '''
-    articles = ArticlePage.objects.all()
+    articles = ArticlePage.objects.all().exact_type(ArticlePage)
 
     for article in articles:
         stream_data = []
         linked_articles = []
         for block in article.body.stream_data:
             if block['type'] == 'page':
-                linked_articles.append(ArticlePage.objects.get(
-                    id=block['value']))
+                if ArticlePage.objects.filter(id=block['value']):
+                    linked_articles.append(ArticlePage.objects.get(
+                        id=block['value']))
             else:
                 # add block to new stream_data
                 stream_data.append(block)
