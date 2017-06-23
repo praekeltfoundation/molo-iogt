@@ -51,6 +51,11 @@
   .article-numbered-list__item {
     padding: 0 0 10px;
   }
+
+  .codehilite {
+    padding: 0 15px;
+    white-space: pre-wrap;
+  }
 }
 .article__image  {
   display: block;
