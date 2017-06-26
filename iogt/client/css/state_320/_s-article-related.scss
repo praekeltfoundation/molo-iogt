@@ -9,15 +9,16 @@
     margin: 0;
   }
 }
+.related-articles-up-next .call-to-action__nav-item-text  {
+  text-align: right;
+}
 .related-articles-recommended-list__content {
   padding: 0 0 0 15px;
   width: 55%;
 }
 @each $name, $color in $color_list {
   .related-articles--#{$name} {
-    .related-articles__up-next {
-      color: $color;
-    }
+    .related-articles-up-next .call-to-action__nav-item-text {color: $color;}
   }
   .related-articles__recommended--#{$name}  {
     color: $color;
