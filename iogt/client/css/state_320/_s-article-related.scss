@@ -9,8 +9,18 @@
     margin: 0;
   }
 }
-.related-articles-up-next .call-to-action__nav-item-text  {
+.related-articles-up-next .call-to-action__nav-item-text {
   text-align: right;
+    &:after {
+    display: inline-block;
+    margin-left: 5px;
+    @media only screen and (min-width: 320px) {
+      content: ">";
+    }
+    @media only screen and (min-width: 490px) {
+      content: "❯";
+    }
+  }
 }
 .related-articles-recommended-list__content {
   padding: 0 0 0 15px;
