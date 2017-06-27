@@ -8,13 +8,13 @@
     <ul class="related-articles-recommended-list">
       {% for article in recommended_articles %}
       <li class="related-articles-recommended-list__item related-articles-recommended-list__item--grid">
-        {% if article.image %}
-        <a href="{% pageurl article %}" class="promoted-article-list__anchor promoted-article-list__anchor-grid">
-          {% image article.image width-200 height-200 class="article__image article__image-thumbnail" %}
-        </a>
-        {% endif %}
-
         <div class="related-articles-recommended-list__content related-articles-recommended-list__content{{self.get_parent_section.get_effective_extra_style_hints}}">
+          {% if article.image %}
+          <a href="{% pageurl article %}" class="article-list__image-content">
+            {% image article.image width-200 height-200 class="article-list__image article-list__image--small" %}
+          </a>
+          {% endif %}
+
           <h2 class="heading related-articles-recommended__title">
             <a href="{% pageurl article %}">{{article.title}}</a>
           </h2>

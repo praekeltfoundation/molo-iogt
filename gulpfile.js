@@ -11,10 +11,10 @@ var gulp              =   require('gulp'),
     livereload        =   require('gulp-livereload');
 
 var sassPaths = [
-    'iogt/client/css/opera-mini_single-view.scss',
-    'iogt/client/css/style-rtl.scss',
-    'iogt/client/css/style.scss',
-    'iogt/client/css/state_320/state_320.scss',
+    'iogt/styles/iogt/opera-mini_single-view.scss',
+    'iogt/styles/iogt/style-rtl.scss',
+    'iogt/styles/iogt/style.scss',
+    'iogt/styles/iogt/state_320/state_320.scss',
 ];
 
 var sassDest = {
@@ -50,7 +50,7 @@ gulp.task('styles:dev', function() {
 
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('iogt/client/css/*.scss', ['styles']);
+    gulp.watch('iogt/styles/iogt/*.scss', ['styles']);
 });
 
 gulp.task('styles', ['styles:dev', 'styles:prd']);
