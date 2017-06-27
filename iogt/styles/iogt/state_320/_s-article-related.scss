@@ -23,8 +23,7 @@
   }
 }
 .related-articles-recommended-list__content {
-  padding: 0 0 0 15px;
-  width: 55%;
+  padding: 0 15px;
 }
 @each $name, $color in $color_list {
   .related-articles--#{$name} {

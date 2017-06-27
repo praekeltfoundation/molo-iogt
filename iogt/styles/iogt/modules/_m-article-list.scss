@@ -67,6 +67,7 @@
 }
 .article-list__item--hero {
   border-top: 2px solid #e4e4e4;
+  padding: 10px 0 0 0;
   .article-list__title {
    font-size: $font-x-large;
   }
@@ -75,6 +76,11 @@
   }
   .section-list__title--homepage {
     padding: 0 15px;
+  }
+}
+@each $name, $color in $color_list {
+  .section-list--#{$name} .article-list__item--hero {
+    padding: 0;
   }
 }
 .article-list__section {

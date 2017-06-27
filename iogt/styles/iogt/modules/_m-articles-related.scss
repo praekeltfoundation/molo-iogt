@@ -32,6 +32,8 @@
     margin: 8px 0;
     &-list__content {
       padding: 0 10px;
+      clear: both;
+      overflow: auto;
       .article-list__comments-counter {
         padding: 0;
       }
