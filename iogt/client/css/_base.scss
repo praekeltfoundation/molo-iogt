@@ -29,6 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
   word-wrap: break-word;
 }
+.codehilite {
+  word-spacing: pre-wrap:
+}
 label {
   color: $victoria;
   display: block;
