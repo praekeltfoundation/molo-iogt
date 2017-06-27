@@ -4,10 +4,13 @@ molo.profiles==3.2.1
 molo.commenting==2.1.2
 molo.polls==3.2.0
 molo.usermetadata==1.2.0
+elasticsearch==1.7.0
+django-modelcluster>=2.0,<3.0
 celery<4.0
 gunicorn
 psycopg2
 django-extensions
+django_compressor==2.0
 six>=1.9
 html5lib==0.9999999
 django-mptt==0.8.5
