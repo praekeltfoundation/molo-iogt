@@ -12,3 +12,4 @@ six>=1.9
 html5lib==0.9999999
 django-mptt==0.8.5
 django-google-analytics-app==2.1.6
+Unidecode==0.04.16
