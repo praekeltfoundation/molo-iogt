@@ -1,53 +1,83 @@
-Molo Core - Language
+FED
 
-HTML structure
-Placed this on the Base.html as it appears on all the pages.
-Studio will supply icons and image assets
-Languages
-Language__current
-Language__title
-Language__title--icon
+  Maintenance, Performance, and Readability.
 
-Language__dropdown-button
+  MARKUP & CSS
+  ---------------
+  -  We use SMACSS, BEM methodologies
 
-Language__list 
-Language-list__toggle
-Language-list__item
-Active
-CSS structure
-BEM & SMACSS methodology
-File name:
- _m-languages.scss
-_s-languages.scss
+  BEM
+  https://en.bem.info/methodology/quick-start/
+  http://getbem.com/introduction/
 
-Let’s answer 4 questions about this block:
-Where does it appear? E.g.: On all the pages - base.html
-What is the purpose of it? 
-Website language navigation
-UX issues: How obvious is the language drop-down  and does it visually indicate the active language to someone that doesn’t understand a current language translation
+  BEM Naming Convention
+    Languages
+    Language__current
+    Language__title
+    Language__title--icon
+    Language__dropdown-button
+
+    Language__list
+    Language-list__toggle
+    Language-list__item
+
+  SMACSS
+  https://smacss.com/book/
+
+  E.G. variables / colors.scss
+    $de_york - #2A9B58;
+    $robin_egg_blue - #37BFBE;
+    $mandy - #EC3B3A;
+    $danube - #5F7AC9;
+    $roman - #EF9955;
+    $saffron - #F2B438;
+    $medium_violet - #B62A99;
+
+  FILE PATH: /styles/app-name/
+    /layout/
+      _l-header.scss
+      _l-footer.scss
+      _l-layout.scss | @import all layout compoments
+    /modules
+      _m-article-list.scss
+      _m-article.scss
+      _m-modules.scss | @import all modules compoments
+    /state
+      _s-article-list.scss
+      _s-article.scss
+      _s-state.scss | @import all state compoments
+    /variables
+      variables.scss
+      color.scss
+    _base.scss
+    _versions.scss
+    styles.scss | @import all compoments
+    styles-rtl.scss
+
+  OUTPUT FILE PATH: /static/css/dev with sourcemaps /maps
+                    /static/css/prd
 
 
-COLOR THEME VARIABLES
-
-$de_york - #2A9B58;
-$robin_egg_blue - #37BFBE;
-$mandy - #EC3B3A;
-$danube - #5F7AC9;
-$roman - #EF9955;
-$saffron - #F2B438;
-$medium_violet - #B62A99;
-
-COMPRESSION 
-- Find a way to run COLLECTSTATIC on static - production 
-- Find a way to include compress tag - on production 
-
-Requirements Development 
-- gulpfile.js
-- package.json 
-
-Run npm install - to install packages 
-Gulp - default task styles 
-       Sourcemaps 
+  CSS / BEM Linting
+  https://github.com/postcss/postcss-bem-linter
+  - Enforce coding standard rules
 
 
+  COMPRESSION / AUTOMATION
+  -------------------------
+  Requirements:
+  Must have node.js npm and gulp installed globally
 
+  - npm install gulp-cli -g
+
+  For asset bundling & processing, concatenating and minification file:
+  - gulpfile.js
+  - package.json
+
+  Commands:
+  - npm install
+  - gulp
+
+  IMAGES FORMATS:
+    SVG, PNG, Sprites icons
+    Images must be compressed
