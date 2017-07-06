@@ -107,6 +107,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
+    'molo.core.middleware.MoloGoogleAnalyticsMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
 
     'molo.core.middleware.AdminLocaleMiddleware',
@@ -114,7 +115,6 @@ MIDDLEWARE_CLASSES = [
     'molo.usermetadata.middleware.PersonaMiddleware',
 
     'molo.core.middleware.NoScriptGASessionMiddleware',
-    'molo.core.middleware.MoloGoogleAnalyticsMiddleware'
 ]
 
 # Template configuration
