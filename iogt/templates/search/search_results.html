@@ -93,9 +93,6 @@
     {% if search_results.has_next %}
       <a href="?p={{ search_results.next_page_number }}&amp;q={{search_query}}" class="pagination__link pagination__link--next">Next <span class="pagination__link--arrow">&rarr;</span></a>
     {% endif %}
-    {% if pages.next %}
-     <a id="more-link" class="call-to-action call-to-action__item more-link" href="#" data-next="{% url 'search_index' %}?page={{pages.next.number}}&q={{search_query}}">Load More</a>
-    {% endif %}
   </div>
 {% else %}
   <form action="{% url 'search' %}" id="search-form" class="search-form search-form--main">
