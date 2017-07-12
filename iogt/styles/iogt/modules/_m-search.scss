@@ -22,19 +22,25 @@
 //Search Results
 .search--result {
   padding: 0;
-}
-.search__result-item {
-  display: block;
-  color: #757575;
-}
-.search--result__section-title {
-  text-transform: uppercase;
-  padding: 5px 0;
-}
-.search--result__title {
-  line-height: 1.1;
-  font-size: $font-x-large;
-}
-.search--result__subtitle {
-  margin: 5px 0;
+  &-item {
+    display: block;
+    color: #757575;
+  }
+  &__section-title {
+    text-transform: uppercase;
+    padding: 5px 0;
+  }
+  &__title {
+    line-height: 1.1;
+    font-size: $font-x-large;
+    &-highlight {
+      font-style: italic;
+    }
+  }
+  &__subtitle {
+    margin: 5px 0;
+  }
+  .highlight-description {
+    font-style: italic;
+  }
 }
