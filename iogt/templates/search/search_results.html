@@ -14,7 +14,6 @@
       <li class="article-list__item article-list__item{{page.get_parent_section.get_effective_extra_style_hints}}">
         <div class="article-list__container">
         {% with parent_section=page.get_parent_section ancestor=page.get_parent_section.get_ancestors.last %}
-
           {% if ancestor.sectionpage.image %}
             <a href="{% pageurl page %}" class="search__result-item article-list__image-content">
               {% if  page.image %}
