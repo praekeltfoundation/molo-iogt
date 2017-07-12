@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load wagtailcore_tags wagtailimages_tags comments pagination el_pagination_tags i18n %}
+{% load wagtailcore_tags wagtailimages_tags comments pagination i18n %}
 {% block title %}{% trans "Search" %}{% endblock %}
 {% block content %}
 {% if search_results %}
@@ -9,7 +9,6 @@
   </form>
   <h2 class="heading heading--search">{% trans "Search Results for:" %} &quot;{{search_query}}&quot;</h2>
   <div class="search search--result">
-    {% paginate 10 results as paginated_results %}
     <ul class="article-list">
       {% for page in paginated_results %}
       <li class="article-list__item article-list__item{{page.get_parent_section.get_effective_extra_style_hints}}">
@@ -86,7 +85,7 @@
       {% endfor %}
     </ul>
   </div>
-  <div id="pagination" class="pagination">
+  <div class="pagination">
     {% if search_results.has_previous %}
         <a href="?p={{ search_results.previous_page_number }}&amp;q={{search_query}}" class="pagination__link pagination__link--previous"><span class="pagination__link--arrow">&larr;</span> Prev</a>
     {% endif %}
