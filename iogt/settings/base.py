@@ -89,6 +89,7 @@ INSTALLED_APPS = [
     'djcelery',
     'django_cas_ng',
     'compressor',
+    'el_pagination',
 ]
 
 COMMENTS_APP = 'molo.commenting'

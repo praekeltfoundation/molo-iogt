@@ -18,7 +18,11 @@
   }
 }
 @each $name, $color in $color_list {
-  .search--result__section-title--#{$name} {
-    color: $color;
+  .search--result .article-list__item--#{$name} {
+    .search--result__section-title,
+    .search--result__title-highlight,
+    .highlight-description {
+      color: $color;
+    }
   }
 }

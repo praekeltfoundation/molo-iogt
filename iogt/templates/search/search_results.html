@@ -1,7 +1,6 @@
-
 {% extends "base.html" %}
-{% load wagtailcore_tags wagtailimages_tags comments i18n pagination%}
-
+{% load wagtailcore_tags wagtailimages_tags comments pagination el_pagination_tags i18n %}
+{% block title %}{% trans "Search" %}{% endblock %}
 {% block content %}
 {% if search_results %}
   <form action="{% url 'search' %}" id="search-form" class="search-form search-form--main">
@@ -10,11 +9,13 @@
   </form>
   <h2 class="heading heading--search">{% trans "Search Results for:" %} &quot;{{search_query}}&quot;</h2>
   <div class="search search--result">
+    {% paginate 10 results as paginated_results %}
     <ul class="article-list">
-      {% for page in search_results %}
-      <li class="article-list__item">
+      {% for page in paginated_results %}
+      <li class="article-list__item article-list__item{{page.get_parent_section.get_effective_extra_style_hints}}">
         <div class="article-list__container">
         {% with parent_section=page.get_parent_section ancestor=page.get_parent_section.get_ancestors.last %}
+
           {% if ancestor.sectionpage.image %}
             <a href="{% pageurl page %}" class="search__result-item article-list__image-content">
               {% if  page.image %}
@@ -22,10 +23,24 @@
               {% endif %}
             </a>
             <a href="{% pageurl page %}" class="search__result-item article-list__inner-content">
-              <h3 class="search--result__section-title search--result__section-title{{page.get_parent_section.get_effective_extra_style_hints}}">
+              <h3 class="search--result__section-title">
                 {{ancestor.title}}</h3>
-              <h1 class="search--result__title">{{page.title}}</h1>
-              <p class="search--result__subtitle">{{page.subtitle}}</p>
+              {% if page.title_highlight %}
+                <h1 class="search--result__title search--result__title-highlight">{{page.title_highlight|safe}}</h1>
+              {% else %}
+                <h1 class="search--result__title">{{page.title}}</h1>
+              {% endif %}
+              {% if page.subtitle_highlight or page.body_highlight %}
+                <p class="search--result__subtitle highlight-description">
+                  {% if page.subtitle_highlight %}
+                    {{page.subtitle_highlight|safe}}
+                  {% elif page.body_highlight %}
+                    {{page.body_highlight|safe}}
+                  {% endif %}
+                </p>
+              {% else %}
+                <p class="ssearch--result__subtitle">{{page.subtitle}}</p>
+              {% endif %}
             </a>
           {% else %}
             <a href="{% pageurl page %}" class="search__result-item article-list__image-content">
@@ -34,10 +49,24 @@
               {% endif %}
             </a>
             <a href="{% pageurl page %}" class="search__result-item article-list__inner-content">
-              <h3 class="search--result__section-title search--result__section-title{{page.get_parent_section.get_effective_extra_style_hints}}">
+              <h3 class="search--result__section-title">
                 {{parent_section.title}}</h3>
-              <h1 class="search--result__title">{{page.title}}</h1>
-              <p class="search--result__subtitle">{{page.subtitle}}</p>
+              {% if page.title_highlight %}
+                <h1 class="search--result__title search--result__title-highlight">{{page.title_highlight|safe}}</h1>
+              {% else %}
+                <h1 class="search--result__title">{{page.title}}</h1>
+              {% endif %}
+              {% if page.subtitle_highlight or page.body_highlight %}
+                <p class="search--result__subtitle highlight-description">
+                  {% if page.subtitle_highlight %}
+                    {{page.subtitle_highlight|safe}}
+                  {% elif page.body_highlight %}
+                    {{page.body_highlight|safe}}
+                  {% endif %}
+                </p>
+              {% else %}
+                <p class="ssearch--result__subtitle">{{page.subtitle}}</p>
+              {% endif %}
             </a>
           {% endif %}
        {% endwith %}
@@ -57,18 +86,18 @@
       {% endfor %}
     </ul>
   </div>
-  <div class="pagination pagination-{{page.get_parent_section.get_effective_extra_style_hints}}">
+  <div id="pagination" class="pagination">
     {% if search_results.has_previous %}
         <a href="?p={{ search_results.previous_page_number }}&amp;q={{search_query}}" class="pagination__link pagination__link--previous"><span class="pagination__link--arrow">&larr;</span> Prev</a>
     {% endif %}
-
     <p class="pagination__link pagination__link--current">Page {{ search_results.number }} of {{ search_results.paginator.num_pages }}</p>
-
     {% if search_results.has_next %}
       <a href="?p={{ search_results.next_page_number }}&amp;q={{search_query}}" class="pagination__link pagination__link--next">Next <span class="pagination__link--arrow">&rarr;</span></a>
     {% endif %}
+    {% if pages.next %}
+     <a id="more-link" class="call-to-action call-to-action__item more-link" href="#" data-next="{% url 'search_index' %}?page={{pages.next.number}}&q={{search_query}}">Load More</a>
+    {% endif %}
   </div>
-
 {% else %}
   <form action="{% url 'search' %}" id="search-form" class="search-form search-form--main">
     <input placeholder="{% trans "Search the site..." %}" name="q" type="search">
@@ -82,9 +111,7 @@
     <a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--back-home">{% trans "Back to homepage" %}</a>
   </div>
 {% endif %}
-
 {% endblock %}
-
 {% block search %}
   {% if search_results %}
       {% include "search/search_block.html" %}
