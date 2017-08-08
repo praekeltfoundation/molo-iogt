@@ -79,7 +79,7 @@ msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr "Таъмини ин қиммат дорад, ҳадди ақал 4 аломат (аз он дорад, 1)"
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
+msgid "Type your comment here..."
 msgstr "Назари худро дар ин ҷо нависед"
 
 #: iogt/temp_ve/commenting/admin_views.py:61

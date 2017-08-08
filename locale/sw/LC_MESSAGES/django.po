@@ -1180,9 +1180,6 @@ msgstr "Kura za"
 msgid "Search the site..."
 msgstr "Tafuta kwenye hii tovuti"
 
-#~ msgid "Type your comment here"
-#~ msgstr "Chapa maoni yako hapa"
-
 #~ msgid "Type new display name:"
 #~ msgstr "Andika jina tambulizi jipya:"
 

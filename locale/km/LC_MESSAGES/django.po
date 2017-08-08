@@ -1196,9 +1196,6 @@ msgstr "ស្វែងរកក្នុងទំព័រនេះ..."
 #~ msgid "ARE YOU A"
 #~ msgstr "តើអ្នកជា..."
 
-#~ msgid "Type your comment here"
-#~ msgstr "វាយបញ្ចូលមតិយោបល់របស់អ្នកនៅទីនេះ"
-
 #~ msgid "1"
 #~ msgstr "1​"
 

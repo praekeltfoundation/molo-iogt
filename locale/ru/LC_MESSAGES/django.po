@@ -80,7 +80,7 @@ msgstr ""
 "Убедитесь, что это значение имеет по крайней мере 4-х символов (она имеет 1)"
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
+msgid "Type your comment here..."
 msgstr "Введите свой комментарий"
 
 #: iogt/temp_ve/commenting/admin_views.py:61

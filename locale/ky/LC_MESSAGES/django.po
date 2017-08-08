@@ -79,7 +79,7 @@ msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr "Бул балл кеминде 4 белгиден бар камсыз кылуу (бул: 1)"
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
+msgid "Type your comment here..."
 msgstr "Бул жерде сиздин Комментарий терүү"
 
 #: iogt/temp_ve/commenting/admin_views.py:61

@@ -228,7 +228,7 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('rn', 'Kirundi'),
     ('pt-mz', 'Portuguese Mozambique'),
     ('lg', 'Ganda'),
-    ('si', 'Sinhalese),
+    ('si', 'Sinhalese'),
 ]
 
 EXTRA_LANG_INFO = {

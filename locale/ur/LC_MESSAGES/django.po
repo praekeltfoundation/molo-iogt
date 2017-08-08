@@ -1189,9 +1189,6 @@ msgstr "سائٹ میں تلاش کریں ..."
 #~ msgid "ARE YOU A"
 #~ msgstr "کیا آپ ایک"
 
-#~ msgid "Type your comment here"
-#~ msgstr "یہاں اپنا تبصرہ لکھیں"
-
 #~ msgid "1"
 #~ msgstr "1"
 

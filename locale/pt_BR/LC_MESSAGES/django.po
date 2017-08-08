@@ -1218,9 +1218,6 @@ msgstr "Procure na página"
 #~ msgid "ARE YOU A"
 #~ msgstr "Seria você"
 
-#~ msgid "Type your comment here"
-#~ msgstr "digite seu comentário aqui"
-
 #~ msgid "1"
 #~ msgstr "1 "
 

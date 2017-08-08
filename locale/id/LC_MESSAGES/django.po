@@ -79,7 +79,7 @@ msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr "Pastikan nilai ini memiliki setidaknya 4 karakter (memiliki 1)"
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
+msgid "Type your comment here..."
 msgstr "Ketik komentar Anda di sini"
 
 #: iogt/temp_ve/commenting/admin_views.py:61

@@ -1202,9 +1202,6 @@ msgstr "Sondages"
 msgid "Search the site..."
 msgstr "Faites une recherche sur le site...."
 
-#~ msgid "Type your comment here"
-#~ msgstr "Entrez votre commentaire ici"
-
 #~ msgid "Type new display name:"
 #~ msgstr "Entrez un nouveau nom d'utilisateur:"
 
