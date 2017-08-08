@@ -84,7 +84,7 @@ msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr ""
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
+msgid "Type your comment here..."
 msgstr ""
 
 #: iogt/temp_ve/commenting/admin_views.py:61
@@ -213,6 +213,10 @@ msgstr ""
 msgid ""
 "It will be reviewed by the team and may be removed if it breaks our Platform "
 "rules"
+msgstr ""
+
+#: iogt/templates/comments/form.html:15
+msgid "Comment Anonymously"
 msgstr ""
 
 #: iogt/temp_ve/commenting/views.py:31

@@ -83,7 +83,7 @@ msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr ""
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
+msgid "Type your comment here..."
 msgstr ""
 
 #: iogt/temp_ve/commenting/admin_views.py:61

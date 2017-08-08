@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-06 12:46+0200\n"
-"PO-Revision-Date: 2017-03-28 13:59+0000\n"
+"POT-Creation-Date: 2017-08-03 15:57+0000\n"
+"PO-Revision-Date: 2017-08-03 16:19+0000\n"
 "Last-Translator: Reeza <reeza@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: swa_TZ\n"
@@ -12,23 +12,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1490888805.751688\n"
+"X-POOTLE-MTIME: 1501777153.603599\n"
 
 #: iogt/settings/base.py:436
 msgid "January"
 msgstr "Januari"
 
-#: iogt/settings/base.py:437
-msgid "February"
-msgstr "Februari"
-
 #: iogt/settings/base.py:438
 msgid "March"
 msgstr "Machi"
-
-#: iogt/settings/base.py:439
-msgid "April"
-msgstr "Aprili"
 
 #: iogt/settings/base.py:440
 msgid "May"
@@ -70,7 +62,8 @@ msgstr "Ongeza bila kujulikana"
 msgid "This field is required"
 msgstr "Hii sehemu inahitajika"
 
-#: iogt/settings/base.py:451 iogt/temp_ve/usermetadata/templates/persona.html:5
+#: iogt/settings/base.py:451
+#: iogt/temp_ve/usermetadata/templates/persona.html:5
 msgid "Are you a ..."
 msgstr "WEWE NI"
 
@@ -79,39 +72,23 @@ msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr "Kuhakikisha thamani hii ina angalau herufi 4 (ina 1)"
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
-msgstr "Chapa maoni yako hapa"
+msgid "Type your comment here..."
+msgstr "Chapa maoni yako hapa..."
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
 msgid "Reply successfully created."
 msgstr "Jibu mafanikio kuundwa."
 
-#: iogt/temp_ve/commenting/forms.py:10 iogt/temp_ve/commenting/forms.py:61
-msgid "Email address"
-msgstr "Anuani ya barua pepe"
-
 #: iogt/temp_ve/commenting/forms.py:63
 msgid "URL"
 msgstr "URL"
 
-#: iogt/temp_ve/commenting/forms.py:65
-msgid "Name"
-msgstr "Jina"
-
 #: iogt/temp_ve/commenting/templates/comments/comment.html:8
-#: iogt/temp_ve/commenting/views.py:48 iogt/templates/comments/comment.html:8
+#: iogt/temp_ve/commenting/views.py:48
+#: iogt/templates/comments/comment.html:8
 msgid "Anonymous"
 msgstr "Bila majina"
-
-#: iogt/temp_ve/commenting/templates/comments/comment.html:16
-#: iogt/templates/comments/comment.html:17
-msgid ""
-"This comment has been removed by the community. Please read our platform "
-"rules."
-msgstr ""
-"Maoni haya yameondolewa na watumiaji wa tovuti hii. Tafadhali soma kanuni za "
-"jukwaa."
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:21
 #: iogt/templates/comments/comment.html:22
@@ -126,11 +103,6 @@ msgstr "Jibu"
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:6
 msgid "Share a Comment"
 msgstr "Sambaza maoni haya"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
-#: iogt/templates/comments/comment_block.html:14
-msgid "Log in to comment"
-msgstr "Ingia kutoa maoni"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:18
 #: iogt/templates/comments/comment_block.html:18
@@ -213,6 +185,10 @@ msgid ""
 msgstr ""
 "Yatapitiwa na timu na anaweza kuondolewa kama ni mapumziko Baraza sheria zetu"
 
+#: iogt/templates/comments/form.html:15
+msgid "Comment Anonymously"
+msgstr "Toa maoni bila kujulikana"
+
 #: iogt/temp_ve/commenting/views.py:31
 msgid "Reporting comment replies is not allowed."
 msgstr "Kuripoti maoni replies hairuhusiwi."
@@ -229,17 +205,9 @@ msgstr "Zulu"
 msgid "Xhosa"
 msgstr "Xhosa"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
-msgid "Sotho"
-msgstr "Kisotho"
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
 msgid "Venda"
 msgstr "Venda"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
-msgid "Tswana"
-msgstr "Tswana"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
 msgid "Tsonga"
@@ -248,10 +216,6 @@ msgstr "Tsonga"
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Swati"
 msgstr "Swati"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
-msgid "Ndebele"
-msgstr "Ndebele"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 #: iogt/templates/403.html:8
@@ -301,7 +265,8 @@ msgstr "Samahani, ukurasa huo haupatikani."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
-#: iogt/templates/500.html:12 iogt/templates/500.html:16
+#: iogt/templates/500.html:12
+#: iogt/templates/500.html:16
 msgid "Internal server error"
 msgstr "Hitilafu ya ndani"
 
@@ -340,10 +305,6 @@ msgstr "Mada ya Siku"
 msgid "Sign in"
 msgstr "Ingia"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
-msgid "LOGIN TO YOUR ACCOUNT!"
-msgstr "Ingia"
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
 msgid "We’re excited to have you..."
 msgstr "Sisi ni msisimko kuwa na wewe ..."
@@ -354,7 +315,8 @@ msgstr ""
 "Umekosea. Tafadhali jaribu tena kwa kuweka jina na nywila (neno la siri) yako"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
-#: iogt/temp_ve/profiles/forms.py:76 iogt/temp_ve/profiles/forms.py:443
+#: iogt/temp_ve/profiles/forms.py:76
+#: iogt/temp_ve/profiles/forms.py:443
 #: iogt/temp_ve/profiles/templates/registration/login.html:25
 #: iogt/templates/registration/login.html:25
 msgid "Username"
@@ -386,20 +348,6 @@ msgstr ""
 #: iogt/templates/registration/password_reset_complete.html:8
 msgid "Log in"
 msgstr "Ingia"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
-#: iogt/templates/registration/password_reset_confirm.html:6
-msgid ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly."
-msgstr ""
-"Tafadhali kuingia password yako mpya mara mbili ili tuweze kuthibitisha wewe "
-"typed katika usahihi."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
-#: iogt/templates/registration/password_reset_confirm.html:10
-msgid "New password:"
-msgstr "Nenosiri Jipya:"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
 #: iogt/templates/registration/password_reset_confirm.html:15
@@ -437,17 +385,6 @@ msgstr ""
 "Kama huna kupokea barua pepe, tafadhali kuhakikisha umeingiza anwani wewe "
 "kusajiliwa na, na kuangalia spam folder yako."
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
-msgid ""
-"Forgotten your password? Enter your email address below, and we'll email "
-"instructions for setting a new one."
-msgstr "Umesahau nywila (neno la siri) yako?"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
-#: iogt/templates/registration/password_reset_form.html:10
-msgid "Email address:"
-msgstr "BARUA PEPE:"
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
 #: iogt/templates/registration/password_reset_form.html:14
 msgid "Reset my password"
@@ -464,7 +401,8 @@ msgstr "Tafuta"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
-#: iogt/templates/base.html:143 iogt/templates/search/search_results.html:9
+#: iogt/templates/base.html:143
+#: iogt/templates/search/search_results.html:9
 #: iogt/templates/search/search_results.html:75
 msgid "Search"
 msgstr "Tafuta"
@@ -522,15 +460,6 @@ msgstr "show Matokeo"
 msgid "You voted: "
 msgstr "You kura: "
 
-#: iogt/temp_ve/polls/templates/polls/poll_page.html:7
-msgid "What's your opinion?"
-msgstr "Nini maoni yako?"
-
-#: iogt/temp_ve/polls/templates/polls/results.html:8
-#: iogt/templates/polls/results.html:8
-msgid "Your answers:"
-msgstr "majibu yako:"
-
 #: iogt/temp_ve/polls/templates/polls/results.html:22
 #: iogt/templates/polls/results.html:28
 msgid "Thank you for voting!"
@@ -539,10 +468,6 @@ msgstr "Asante kwa kupiga kura"
 #: iogt/temp_ve/profiles/admin.py:73
 msgid "Type"
 msgstr "aina"
-
-#: iogt/temp_ve/profiles/admin.py:78
-msgid "Frontend Users"
-msgstr "Mazingira ya mbele Watumiaji"
 
 #: iogt/temp_ve/profiles/admin.py:79
 msgid "Admin Users"
@@ -559,36 +484,31 @@ msgstr ""
 msgid "CSV emailed to '{0}'"
 msgstr "CSV Emailed na ' {0} '"
 
-#: iogt/temp_ve/profiles/forms.py:78 iogt/temp_ve/profiles/forms.py:445
+#: iogt/temp_ve/profiles/forms.py:78
+#: iogt/temp_ve/profiles/forms.py:445
 msgid "This value must contain only letters, numbers and underscores."
 msgstr "Thamani hii lazima iwe na herufi tu, idadi na underscores."
 
-#: iogt/temp_ve/profiles/forms.py:94 iogt/temp_ve/profiles/forms.py:419
-#: iogt/temp_ve/profiles/forms.py:487 iogt/temp_ve/profiles/forms.py:504
-msgid "This value must contain only numbers."
-msgstr "Thamani hii lazima iwe na namba tu."
-
-#: iogt/temp_ve/profiles/forms.py:96 iogt/temp_ve/profiles/forms.py:489
+#: iogt/temp_ve/profiles/forms.py:96
+#: iogt/temp_ve/profiles/forms.py:489
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:23
 msgid "PIN"
 msgstr "PIN"
 
-#: iogt/temp_ve/profiles/forms.py:102 iogt/temp_ve/profiles/forms.py:241
+#: iogt/temp_ve/profiles/forms.py:102
+#: iogt/temp_ve/profiles/forms.py:241
 #: iogt/temp_ve/profiles/forms.py:286
 msgid "Display Name"
 msgstr "Jina Display"
 
-#: iogt/temp_ve/profiles/forms.py:112 iogt/temp_ve/profiles/forms.py:245
-#: iogt/temp_ve/profiles/forms.py:296
-msgid "Gender"
-msgstr "Jinsia"
-
-#: iogt/temp_ve/profiles/forms.py:116 iogt/temp_ve/profiles/forms.py:249
+#: iogt/temp_ve/profiles/forms.py:116
+#: iogt/temp_ve/profiles/forms.py:249
 #: iogt/temp_ve/profiles/forms.py:300
 msgid "Location"
 msgstr "Makao"
 
-#: iogt/temp_ve/profiles/forms.py:120 iogt/temp_ve/profiles/forms.py:253
+#: iogt/temp_ve/profiles/forms.py:120
+#: iogt/temp_ve/profiles/forms.py:253
 #: iogt/temp_ve/profiles/forms.py:304
 msgid "Education Level"
 msgstr "Kiwango cha Elimu"
@@ -606,18 +526,15 @@ msgstr ""
 "Samahani, lakini hiyo ni username batili. Tafadhali wala kutumia yako %s "
 "katika jina lako."
 
-#: iogt/temp_ve/profiles/forms.py:225 iogt/temp_ve/profiles/forms.py:351
+#: iogt/temp_ve/profiles/forms.py:225
+#: iogt/temp_ve/profiles/forms.py:351
 #, python-format
 msgid ""
 "Sorry, but that is an invalid display name. Please don't use your %s in your "
 "display name."
 msgstr ""
-"Samahani, lakini hiyo ni batili kuonyesha jina. Tafadhali wala kutumia yako "
-"%s katika kuonyesha jina lako."
-
-#: iogt/temp_ve/profiles/forms.py:388 iogt/temp_ve/profiles/forms.py:403
-msgid "This value must contain only           numbers."
-msgstr "Thamani hii lazima iwe na namba tu."
+"Samahani, lakini hiyo ni batili kuonyesha jina. Tafadhali wala kutumia yako %"
+"s katika kuonyesha jina lako."
 
 #: iogt/temp_ve/profiles/forms.py:390
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:25
@@ -657,33 +574,10 @@ msgstr "Nywila (neno la siri) mpya"
 msgid "Save"
 msgstr "Hifadhi."
 
-#: iogt/temp_ve/profiles/templates/profiles/done.html:8
-msgid "Thank you for joining!"
-msgstr "Asante kwa kujiunga!"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:13
-msgid "Let us know more about yourself to get access to exclusive content."
-msgstr "Hebu kujua zaidi kuhusu wewe mwenyewe ili upate maudhui ya kipekee."
-
 #: iogt/temp_ve/profiles/templates/profiles/done.html:18
 #: iogt/temp_ve/profiles/templates/profiles/register.html:45
 msgid "SELECT DATE OF BIRTH"
 msgstr "SELECT Tarehe ya kuzaliwa"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:26
-msgid "DISPLAY NAME"
-msgstr "DISPLAY JINA"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:29
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
-#: iogt/temp_ve/profiles/templates/profiles/register.html:39
-#: iogt/templates/profiles/register.html:39
-msgid ""
-"We value your online security, therefore we hide your username and allow you "
-"to comment and interact with the site with a display name."
-msgstr ""
-"Tunathamini usalama wako online, kwa hiyo sisi kujificha jina lako na "
-"itawawezesha kutoa maoni na kuwasiliana na tovuti na jina kuonyesha."
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:35
 #: iogt/temp_ve/profiles/templates/profiles/register.html:54
@@ -705,11 +599,6 @@ msgstr "I TAMBUA GENDER MY AS:"
 msgid "Only you will see this"
 msgstr "Wewe tu ndiye kuona hii"
 
-#: iogt/temp_ve/profiles/templates/profiles/done.html:44
-#: iogt/temp_ve/profiles/templates/profiles/register.html:63
-msgid "WHERE DO YOU LIVE?"
-msgstr "UNAISHI WAPI?"
-
 #: iogt/temp_ve/profiles/templates/profiles/done.html:53
 #: iogt/temp_ve/profiles/templates/profiles/register.html:72
 msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
@@ -720,7 +609,8 @@ msgid "Home Page"
 msgstr "Ukurasa wa mwanzo"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:64
-#: iogt/templates/base.html:141 iogt/templates/base.html:205
+#: iogt/templates/base.html:141
+#: iogt/templates/base.html:205
 msgid "Profile"
 msgstr "Maelezo"
 
@@ -785,11 +675,6 @@ msgstr "Jisajili"
 msgid "Already a member?"
 msgstr "Umeshajiunga?"
 
-#: iogt/temp_ve/profiles/templates/profiles/register.html:10
-#: iogt/templates/base.html:198 iogt/templates/profiles/register.html:10
-msgid "Login"
-msgstr "Ingia"
-
 #: iogt/temp_ve/profiles/templates/profiles/register.html:14
 #: iogt/temp_ve/profiles/templates/registration/login.html:8
 #: iogt/templates/profiles/register.html:14
@@ -831,12 +716,7 @@ msgstr "KUCHAGUA DISPLAY JINA"
 #: iogt/temp_ve/profiles/templates/profiles/register.html:48
 #: iogt/templates/profiles/register.html:48
 msgid "Let us know your birthday to get access to exclusive content."
-msgstr ""
-"Tufahamishe siku yako ya kuzaliwa ili uweze kufikia maudhui ya kipekee."
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:81
-msgid "ENTER YOUR MOBILE NUMBER"
-msgstr "Ingiza namba yako SIMU"
+msgstr "Tufahamishe siku yako ya kuzaliwa ili uweze kufikia maudhui ya kipekee."
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:84
 msgid "(e.g. 0900000013)"
@@ -1024,7 +904,8 @@ msgstr "Badilisha Lugha"
 msgid "IoGT"
 msgstr "IoGT"
 
-#: iogt/templates/base.html:139 iogt/templates/profiles/register.html:6
+#: iogt/templates/base.html:139
+#: iogt/templates/profiles/register.html:6
 #: iogt/templates/profiles/register.html:123
 #: iogt/templates/registration/login.html:9
 msgid "Join"
@@ -1058,11 +939,6 @@ msgstr "Mbele"
 #: iogt/templates/core/tags/section_listing_homepage.html:46
 msgid "View more"
 msgstr "Ona zaidi"
-
-#: iogt/templates/polls/poll_page.html:7
-#: iogt/templates/polls/poll_page_in_section.html:8
-msgid "Polls"
-msgstr "Kura za"
 
 #: iogt/templates/profiles/register.html:21
 msgid "Choose a username"
@@ -1135,12 +1011,6 @@ msgid ""
 "new one."
 msgstr "Andika barua pepe yako hapa na tutakutumia maelekezo ya kubadili"
 
-#: iogt/templates/search/search_block.html:5
-#: iogt/templates/search/search_results.html:8
-#: iogt/templates/search/search_results.html:74
-msgid "Search the site..."
-msgstr "Tafuta kwenye hii tovuti"
-
 #: iogt/templates/search/search_results.html:11
 #: iogt/templates/search/search_results.html:77
 msgid "Search Results for:"
@@ -1157,6 +1027,158 @@ msgstr "Rudi kwenye ukurasa wa mbele."
 #: iogt/templates/surveys/surveys_list.html:10
 msgid "Start here"
 msgstr "Anza hapa"
+
+#: iogt/settings/base.py:437
+msgid "February"
+msgstr "Februari"
+
+#: iogt/settings/base.py:439
+msgid "April"
+msgstr "Aprili"
+
+#: iogt/temp_ve/commenting/forms.py:10
+#: iogt/temp_ve/commenting/forms.py:61
+msgid "Email address"
+msgstr "Anuani ya barua pepe"
+
+#: iogt/temp_ve/commenting/forms.py:65
+msgid "Name"
+msgstr "Jina"
+
+#: iogt/temp_ve/commenting/templates/comments/comment.html:16
+#: iogt/templates/comments/comment.html:17
+msgid ""
+"This comment has been removed by the community. Please read our platform "
+"rules."
+msgstr ""
+"Maoni haya yameondolewa na watumiaji wa tovuti hii. Tafadhali soma kanuni za "
+"jukwaa."
+
+#: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
+#: iogt/templates/comments/comment_block.html:14
+msgid "Log in to comment"
+msgstr "Ingia kutoa maoni"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
+msgid "Sotho"
+msgstr "Kisotho"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
+msgid "Tswana"
+msgstr "Tswana"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
+msgid "Ndebele"
+msgstr "Ndebele"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
+msgid "LOGIN TO YOUR ACCOUNT!"
+msgstr "Ingia"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
+#: iogt/templates/registration/password_reset_confirm.html:6
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Tafadhali kuingia password yako mpya mara mbili ili tuweze kuthibitisha wewe "
+"typed katika usahihi."
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
+#: iogt/templates/registration/password_reset_confirm.html:10
+msgid "New password:"
+msgstr "Nenosiri Jipya:"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr "Umesahau nywila (neno la siri) yako?"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
+#: iogt/templates/registration/password_reset_form.html:10
+msgid "Email address:"
+msgstr "BARUA PEPE:"
+
+#: iogt/temp_ve/polls/templates/polls/poll_page.html:7
+msgid "What's your opinion?"
+msgstr "Nini maoni yako?"
+
+#: iogt/temp_ve/polls/templates/polls/results.html:8
+#: iogt/templates/polls/results.html:8
+msgid "Your answers:"
+msgstr "majibu yako:"
+
+#: iogt/temp_ve/profiles/admin.py:78
+msgid "Frontend Users"
+msgstr "Mazingira ya mbele Watumiaji"
+
+#: iogt/temp_ve/profiles/forms.py:94
+#: iogt/temp_ve/profiles/forms.py:419
+#: iogt/temp_ve/profiles/forms.py:487
+#: iogt/temp_ve/profiles/forms.py:504
+msgid "This value must contain only numbers."
+msgstr "Thamani hii lazima iwe na namba tu."
+
+#: iogt/temp_ve/profiles/forms.py:112
+#: iogt/temp_ve/profiles/forms.py:245
+#: iogt/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "Jinsia"
+
+#: iogt/temp_ve/profiles/forms.py:388
+#: iogt/temp_ve/profiles/forms.py:403
+msgid "This value must contain only           numbers."
+msgstr "Thamani hii lazima iwe na namba tu."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:8
+msgid "Thank you for joining!"
+msgstr "Asante kwa kujiunga!"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr "Hebu kujua zaidi kuhusu wewe mwenyewe ili upate maudhui ya kipekee."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "DISPLAY JINA"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:29
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: iogt/temp_ve/profiles/templates/profiles/register.html:39
+#: iogt/templates/profiles/register.html:39
+msgid ""
+"We value your online security, therefore we hide your username and allow you "
+"to comment and interact with the site with a display name."
+msgstr ""
+"Tunathamini usalama wako online, kwa hiyo sisi kujificha jina lako na "
+"itawawezesha kutoa maoni na kuwasiliana na tovuti na jina kuonyesha."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:44
+#: iogt/temp_ve/profiles/templates/profiles/register.html:63
+msgid "WHERE DO YOU LIVE?"
+msgstr "UNAISHI WAPI?"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:10
+#: iogt/templates/base.html:198
+#: iogt/templates/profiles/register.html:10
+msgid "Login"
+msgstr "Ingia"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:81
+msgid "ENTER YOUR MOBILE NUMBER"
+msgstr "Ingiza namba yako SIMU"
+
+#: iogt/templates/polls/poll_page.html:7
+#: iogt/templates/polls/poll_page_in_section.html:8
+msgid "Polls"
+msgstr "Kura za"
+
+#: iogt/templates/search/search_block.html:5
+#: iogt/templates/search/search_results.html:8
+#: iogt/templates/search/search_results.html:74
+msgid "Search the site..."
+msgstr "Tafuta kwenye hii tovuti"
 
 #~ msgid "Type new display name:"
 #~ msgstr "Andika jina tambulizi jipya:"

@@ -226,6 +226,9 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('ay', 'Aymara'),
     ('qu', 'Quechua'),
     ('rn', 'Kirundi'),
+    ('pt-mz', 'Portuguese Mozambique'),
+    ('lg', 'Ganda'),
+    ('si', 'Sinhalese'),
 ]
 
 EXTRA_LANG_INFO = {
@@ -420,6 +423,24 @@ EXTRA_LANG_INFO = {
         'code': 'rn',
         'name': 'Kirundi',
         'name_local': 'Ikirundi'
+    },
+    'pt-mz': {
+        'bidi': False,
+        'code': 'pt-mz',
+        'name': 'Portuguese Mozambique',
+        'name_local': 'Portuguese Moçambique'
+    },
+    'lg': {
+        'bidi': False,
+        'code': 'lg',
+        'name': 'Ganda',
+        'name_local': 'Luganda'
+    },
+    'si': {
+        'bidi': False,
+        'code': 'si',
+        'name': 'Sinhalese',
+        'name_local': 'සිංහල'
     },
 }
 

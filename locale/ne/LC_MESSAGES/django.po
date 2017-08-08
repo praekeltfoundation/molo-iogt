@@ -79,7 +79,7 @@ msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr "यो मूल्य कम्तिमा 4 वर्ण (यसलाई 1 छ) छ सुनिश्चित"
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
+msgid "Type your comment here..."
 msgstr "तपाईंको टिप्पणी यहाँ टाइप"
 
 #: iogt/temp_ve/commenting/admin_views.py:61

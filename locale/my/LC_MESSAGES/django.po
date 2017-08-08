@@ -79,7 +79,7 @@ msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr "ဒီတန်ဖိုး (1 ရှိပါတယ်) ကအနည်းဆုံး 4 ဇာတ်ကောင်ရှိပါတယ်သေချာ"
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
+msgid "Type your comment here..."
 msgstr "ဒီနေရာမှာသင့်ရဲ့ comment ကိုရိုက်ထည့်ပါ"
 
 #: iogt/temp_ve/commenting/admin_views.py:61
