@@ -3,117 +3,117 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-03 15:57+0000\n"
-"PO-Revision-Date: 2017-08-03 16:18+0000\n"
+"PO-Revision-Date: 2017-08-03 16:15+0000\n"
 "Last-Translator: Reeza <reeza@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fre_FR\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1501777095.115967\n"
+"X-POOTLE-MTIME: 1501776919.195084\n"
 
 #: iogt/settings/base.py:436
 msgid "January"
-msgstr "janvier"
+msgstr "มกราคม"
 
 #: iogt/settings/base.py:438
 msgid "March"
-msgstr "Mars"
+msgstr "มีนาคม"
 
 #: iogt/settings/base.py:440
 msgid "May"
-msgstr "Mai"
+msgstr "พฤษภาคม"
 
 #: iogt/settings/base.py:441
 msgid "June"
-msgstr "Juin"
+msgstr "มิถุนายน"
 
 #: iogt/settings/base.py:442
 msgid "July"
-msgstr "Juillet"
+msgstr "กรกฎาคม"
 
 #: iogt/settings/base.py:443
 msgid "August"
-msgstr "Août"
+msgstr "สิงหาคม"
 
 #: iogt/settings/base.py:444
 msgid "September"
-msgstr "Septembre"
+msgstr "กันยายน"
 
 #: iogt/settings/base.py:445
 msgid "October"
-msgstr "Octobre"
+msgstr "ตุลาคม"
 
 #: iogt/settings/base.py:446
 msgid "November"
-msgstr "Novembre"
+msgstr "พฤศจิกายน"
 
 #: iogt/settings/base.py:447
 msgid "December"
-msgstr "Décembre"
+msgstr "ธันวาคม"
 
 #: iogt/settings/base.py:448
 msgid "Add anonymously"
-msgstr "Ajouter en tant qu'anonyme"
+msgstr "เพิ่มเติมโดยไม่เปิดเผยชื่อ"
 
 #: iogt/settings/base.py:450
 msgid "This field is required"
-msgstr "Ce champ est obligatoire"
+msgstr "ต้องระบุข้อมูลนี้"
 
 #: iogt/settings/base.py:451
 #: iogt/temp_ve/usermetadata/templates/persona.html:5
 msgid "Are you a ..."
-msgstr "Êtes-vous"
+msgstr "คุณคือ..."
 
 #: iogt/settings/base.py:452
 msgid "Ensure this value has at least 4 characters (it has 1)"
-msgstr "Veiller à cette valeur a au moins 4 caractères (il a 1)"
+msgstr "ตรวจสอบว่าค่านี้มีอักขระอย่างน้อย 4 ตัว (มี 1)"
 
 #: iogt/settings/base.py:453
 msgid "Type your comment here..."
-msgstr "Entrez votre commentaire ici...."
+msgstr "พิมพ์ความคิดเห็นของคุณที่นี่..."
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
 msgid "Reply successfully created."
-msgstr "Ce nom d'utilisateur existe déjà."
+msgstr "ตอบสำเร็จแล้ว"
 
 #: iogt/temp_ve/commenting/forms.py:63
 msgid "URL"
-msgstr "Lien "
+msgstr "URL"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:8
 #: iogt/temp_ve/commenting/views.py:48
 #: iogt/templates/comments/comment.html:8
 msgid "Anonymous"
-msgstr "Anonyme"
+msgstr "ไม่เปิดเผยชื่อ"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:21
 #: iogt/templates/comments/comment.html:22
 msgid "Report"
-msgstr "Signaler"
+msgstr "รายงาน"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:23
 #: iogt/templates/comments/comment.html:24
 msgid "Reply"
-msgstr "Répondre"
+msgstr "ตอบกลับ"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:6
 msgid "Share a Comment"
-msgstr "Commentez cet article"
+msgstr "แบ่งปันความคิดเห็น"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:18
 #: iogt/templates/comments/comment_block.html:18
 msgid "Commenting on this article is currently disabled"
-msgstr "Les commentaires ne sont pas disponibles pour cet article"
+msgstr "ไม่สามารถแสดงความคิดเห็นเกี่ยวกับบทความได้ในขณะนี้"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:23
 #: iogt/temp_ve/commenting/templates/comments/comments.html:7
 #: iogt/templates/comments/comment_block.html:23
 msgid "Comments"
-msgstr "Commentaire"
+msgstr "ความคิดเห็น"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:26
 #: iogt/templates/comments/comment_block.html:30
@@ -125,28 +125,28 @@ msgstr "Commentaire"
 #: iogt/templates/core/tags/section_listing_homepage.html:40
 #: iogt/templates/search/search_results.html:53
 msgid "comment"
-msgstr "Commentaire"
+msgstr "ความคิดเห็น"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:41
 #: iogt/templates/comments/comment_block.html:45
 msgid "view more comments"
-msgstr "Plus de "
+msgstr "ดูความคิดเห็นเพิ่มเติม"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:7
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:6
 msgid "Thanks!"
-msgstr "Merci!"
+msgstr "ขอบคุณ!"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:9
 msgid "Your comment has been successfully posted"
-msgstr "Votre commentaire a été posté avec succès"
+msgstr "โพสต์ความคิดเห็นของคุณเรียบร้อยแล้ว"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_done.html:11
 #: iogt/temp_ve/commenting/templates/comments/comments.html:28
 #: iogt/temp_ve/commenting/templates/comments/preview.html:45
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
-msgstr "Retour à l'article"
+msgstr "กลับไปที่บทความ"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:11
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
@@ -157,62 +157,60 @@ msgstr "Retour à l'article"
 #: iogt/templates/core/section_page.html:15
 #: iogt/templates/surveys/molo_survey_page.html:10
 msgid "Home"
-msgstr "Accueil"
+msgstr "หน้าแรก"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:38
 #: iogt/temp_ve/commenting/templates/comments/reply.html:18
 msgid "Please "
-msgstr "S'il vous plaît "
+msgstr "สามารถเข้าไปดู "
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:40
 #: iogt/temp_ve/commenting/templates/comments/reply.html:20
 msgid "log in"
-msgstr "connexion"
+msgstr "เข้าสู่ระบบ"
 
 #: iogt/temp_ve/commenting/templates/comments/preview.html:41
 #: iogt/temp_ve/commenting/templates/comments/reply.html:21
 msgid " to leave a comment."
-msgstr " à laisser un commentaire."
+msgstr " เพื่อแสดงความคิดเห็น"
 
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:7
 msgid "This comment has been reported."
-msgstr "Ce commentaire a été signalé."
+msgstr "ความคิดเห็นนี้ได้รับการรายงานแล้ว"
 
 #: iogt/temp_ve/commenting/templates/comments/report_response.html:8
 msgid ""
 "It will be reviewed by the team and may be removed if it breaks our Platform "
 "rules"
-msgstr ""
-"Il sera examiné par l'équipe et peut être retirée si elle se casse nos "
-"règles de plate-forme"
+msgstr "ทีมงานจะได้รับการตรวจสอบและอาจถูกนำออกถ้ามีการละเมิดกฎแพลตฟอร์มของเรา"
 
 #: iogt/templates/comments/form.html:15
 msgid "Comment Anonymously"
-msgstr "Commenter en anonyme"
+msgstr "แสดงความคิดเห็นโดยไม่ระบุตัวตน"
 
 #: iogt/temp_ve/commenting/views.py:31
 msgid "Reporting comment replies is not allowed."
-msgstr "Rapports commentaire réponses n'est pas autorisé."
+msgstr "ไม่อนุญาตการตอบกลับความคิดเห็นในรายงาน"
 
 #: iogt/temp_ve/commenting/views.py:34
 msgid "The comment has been reported."
-msgstr "Ce commentaire a été signalé."
+msgstr "ความคิดเห็นได้รับการรายงานแล้ว"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
 msgid "Zulu"
-msgstr "Zulu"
+msgstr "พวกสูลู"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:204
 msgid "Xhosa"
-msgstr "Xhosa"
+msgstr "โซซา"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
 msgid "Venda"
-msgstr "Venda"
+msgstr "เวนดา"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
 msgid "Tsonga"
-msgstr "Tsonga"
+msgstr "ซองก้า"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Swati"
@@ -221,21 +219,21 @@ msgstr "Swati"
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 #: iogt/templates/403.html:8
 msgid "Access Denied"
-msgstr "Accès non autorisé"
+msgstr "การเข้าถึงถูกปฏิเสธ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 #: iogt/templates/403.html:9
 msgid "You do not have permssion to access this site."
-msgstr "Vous n'avez pas la permission d'accéder à cette page."
+msgstr "คุณไม่มี permssion ในการเข้าถึงไซต์นี้"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
 #: iogt/templates/403_csrf.html:7
 msgid "Unable to Login"
-msgstr "Connection impossible"
+msgstr "ไม่สามารถเข้าสู่ระบบได้"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:13
 msgid "Hi"
-msgstr "Salut"
+msgstr "สวัสดี"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
 msgid ""
@@ -244,79 +242,75 @@ msgid ""
 "Basics app for now. To login or register for a profile, visit our free "
 "mobisite through your mobile browser at"
 msgstr ""
-"Désolé, il y a une erreur! En raison de problèmes techniques temporaires, la "
-"connexion et la création de profil n'est pas disponible sur l'application "
-"Free Basics. Pour vous connecter ou créer un profil, vous pouvez visiter la "
-"version web mobile gratuite de notre site via votre navigateur en suivant le "
-"lien suivant :"
+"ขออภัย คุณกำลังประสบปัญหาในการเข้าสู่คุณสมบัตินี้ ด้วยเหตุขัดข้องทางเทคนิคชั่"
+"วคราว การเข้าสู่ระบบและการลงทะเบียนไม่สามารถทำได้บนแอป Free Basics ในขณะนี้ "
+"หากคุณต้องการเข้าสู่ระบบหรือลงทะเบียนสร้างโปรไฟล์ของคุณ "
+"คุณสามารถทำได้ผ่านเว็บไซต์สำหรับโทรศัพท์มือถือของเราได้ฟรีที่"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
 #: iogt/templates/403_csrf.html:11
 msgid " We're working hard to get this problem resolved. Thank you."
-msgstr ""
-" Nous travaillons dur pour obtenir ce problème résolu. Je vous remercie."
+msgstr " เรากำลังทำงานอย่างหนักเพื่อแก้ปัญหานี้ ขอขอบคุณ."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
 #: iogt/templates/404.html:8
 msgid "Page not found"
-msgstr "La page demandée a peut-être été déplacée, renommée ou supprimée."
+msgstr "ไม่พบหน้าเว็บที่ต้องการ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
 #: iogt/templates/404.html:9
 msgid "Sorry, this page could not be found."
-msgstr "Oups, cette page ne semble plus exister."
+msgstr "ขออภัย ไม่พบหน้าเว็บที่คุณร้องขอ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
 #: iogt/templates/500.html:12
 #: iogt/templates/500.html:16
 msgid "Internal server error"
-msgstr "Erreur interne du serveur"
+msgstr "ข้อผิดพลาดภายในเซิร์ฟเวอร์"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
 #: iogt/templates/500.html:17
 msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr "Oups, il semble qu'une erreur se soit produite. Essayez de nouveau svp."
+msgstr "ขออภัย มีข้อผิดพลาดเกิดขึ้น โปรดลองอีกครั้งในภายหลัง"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: iogt/temp_ve/core/test_templates/base.html:128
 #: iogt/temp_ve/polls/test_templates/base.html:112
 #: iogt/temp_ve/surveys/test_templates/base.html:112
 msgid "Site Language:"
-msgstr "Langue"
+msgstr "ภาษาของไซต์:"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
 #: iogt/templates/core/related-article-list.html:7
 msgid "Next up in"
-msgstr "Suivant en"
+msgstr "ถัดไปค่ะ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:64
 #: iogt/templates/core/tags/latest_listing_homepage.html:4
 msgid "Recommended"
-msgstr "Recommandé"
+msgstr "แนะนำ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
 msgid "Latest"
-msgstr "Récent"
+msgstr "ล่าสุด"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/topic_of_the_day.html:6
 msgid "Topic of the Day"
-msgstr "Sujet du jour"
+msgstr "หัวข้อของวัน"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:6
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:21
 msgid "Sign in"
-msgstr "se connecter"
+msgstr "ลงชื่อเข้าใช้"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
 msgid "We’re excited to have you..."
-msgstr "Nous sommes ravis de vous avoir ..."
+msgstr "เรารู้สึกตื่นเต้นที่ได้มีคุณ ..."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
 msgid "Your username and password does not match. Please try again."
-msgstr ""
-"Oups, votre nom d'utilisateur et votre mot de passe ne correspondent pas. "
-"Essayez de nouveau svp."
+msgstr "ชื่อผู้ใช้และรหัสผ่านของคุณไม่ถูกต้อง โปรดลองใหม่อีกครั้ง"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
 #: iogt/temp_ve/profiles/forms.py:76
@@ -324,25 +318,24 @@ msgstr ""
 #: iogt/temp_ve/profiles/templates/registration/login.html:25
 #: iogt/templates/registration/login.html:25
 msgid "Username"
-msgstr "Nom d'utilisateur"
+msgstr "ชื่อผู้ใช้"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
 #: iogt/temp_ve/profiles/templates/registration/login.html:30
 #: iogt/templates/registration/login.html:30
 msgid "4-digit pin"
-msgstr "Code PIN à 4 chiffres"
+msgstr "รหัส PIN 4 หลัก"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:25
 #: iogt/temp_ve/profiles/templates/registration/login.html:37
 #: iogt/templates/registration/login.html:37
 #: iogt/templates/registration/password_reset_form.html:4
 msgid "Forgotten your password?"
-msgstr "Vous avez oublié votre mot de passe?"
+msgstr "ลืมรหัสผ่านของคุณใช่ไหม"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
 msgid "Your password has been set.  You may go ahead and log in now."
-msgstr ""
-"Votre mot de passe a été défini. Vous pouvez maintenant ouvrir une session."
+msgstr "ตั้งรหัสผ่านของคุณแล้ว ตอนนี้คุณสามารถเข้าสู่ระบบได้แล้ว"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:9
 #: iogt/temp_ve/profiles/templates/registration/login.html:5
@@ -351,26 +344,25 @@ msgstr ""
 #: iogt/templates/registration/login.html:34
 #: iogt/templates/registration/password_reset_complete.html:8
 msgid "Log in"
-msgstr "Connexion"
+msgstr "เข้าสู่ระบบ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
 #: iogt/templates/registration/password_reset_confirm.html:15
 msgid "Confirm password:"
-msgstr "Confirmer le mot de passe:"
+msgstr "ยืนยันรหัสผ่าน"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
 #: iogt/templates/registration/password_reset_confirm.html:19
 msgid "Change my password"
-msgstr "Changer mon mot de passe"
+msgstr "เปลี่ยนรหัสผ่านของฉัน"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
 msgstr ""
-"Le lien de réinitialisation du mot de passe est invalide, peut-être parce "
-"qu'il a déjà été utilisé. S'il vous plaît demander un nouvelle "
-"réinitialisation."
+"ลิงก์รีเซ็ตรหัสผ่านไม่ถูกต้องอาจเป็นเพราะมีการใช้งานแล้ว "
+"โปรดขอตั้งค่ารหัสผ่านใหม่"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:7
 #: iogt/templates/registration/password_reset_done.html:5
@@ -378,9 +370,8 @@ msgid ""
 "We've emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
 msgstr ""
-"Nous vous avons envoyé un e-instructions pour régler votre mot de passe, si "
-"un compte existe avec l'e-mail que vous avez entrée. Vous devriez les "
-"recevoir sous peu."
+"เราได้ส่งคำแนะนำสำหรับการตั้งค่ารหัสผ่านของคุณทางอีเมลหากบัญชีมีอยู่กับอีเมลท"
+"ี่คุณป้อน คุณควรจะได้รับในไม่ช้า"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:9
 #: iogt/templates/registration/password_reset_done.html:6
@@ -388,22 +379,22 @@ msgid ""
 "If you don't receive an email, please make sure you've entered the address "
 "you registered with, and check your spam folder."
 msgstr ""
-"Si vous ne recevez pas de courriel, s'il vous plaît assurez-vous que vous "
-"avez entré l'adresse de votre inscription, et vérifiez votre dossier spam."
+"หากคุณไม่ได้รับอีเมลโปรดตรวจสอบว่าคุณได้ป้อนที่อยู่ที่คุณลงทะเบียนแล้วและตรวจ"
+"สอบโฟลเดอร์สแปมของคุณ"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
 #: iogt/templates/registration/password_reset_form.html:14
 msgid "Reset my password"
-msgstr "Réinitialiser mon mot de passe"
+msgstr "ตั้งรหัสผ่านใหม่"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
 msgid "Looking for something?"
-msgstr "à la recherche de quelque chose?"
+msgstr "มองหาบางสิ่ง?"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
 #: iogt/templates/search/search_block.html:6
 msgid "SEARCH"
-msgstr "Recherche"
+msgstr "ค้นหา"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
@@ -411,23 +402,23 @@ msgstr "Recherche"
 #: iogt/templates/search/search_results.html:9
 #: iogt/templates/search/search_results.html:75
 msgid "Search"
-msgstr "Recherche"
+msgstr "ค้นหา"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
 msgid "No search results for "
-msgstr "Aucun résultat pour la recherche"
+msgstr "ไม่มีผลการค้นหาสำหรับ..."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
 msgid "I am looking for"
-msgstr "Je recherche"
+msgstr "ฉันกำลังหา..."
 
 #: iogt/temp_ve/core/views.py:96
 msgid "That page is not translatable."
-msgstr "Cette page est intraduisible."
+msgstr "หน้าเว็บนั้นไม่สามารถแปลได้"
 
 #: iogt/temp_ve/polls/forms.py:20
 msgid "You didn't select a choice"
-msgstr "Vous ne l'avez pas sélectionné un choix"
+msgstr "คุณไม่ได้เลือกตัวเลือก"
 
 #: iogt/temp_ve/polls/templates/polls/detail.html:24
 #: iogt/temp_ve/polls/templates/polls/free_text_detail.html:11
@@ -436,162 +427,151 @@ msgstr "Vous ne l'avez pas sélectionné un choix"
 #: iogt/templates/polls/free_text_detail.html:13
 #: iogt/templates/polls/includes/poll_question_form.html:45
 msgid "Vote"
-msgstr "Voter"
+msgstr "โหวต"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:13
 #: iogt/templates/polls/includes/poll_free_text_form.html:16
 #: iogt/templates/surveys/molo_survey_page.html:43
 msgid "Submit"
-msgstr "Validez"
+msgstr "ส่ง"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
 #: iogt/templates/polls/includes/poll_free_text_form.html:18
 msgid "Thank you! Your response has already been submitted."
-msgstr "Je vous remercie! Votre réponse a déjà été soumis."
+msgstr "ขอขอบคุณ! การตอบกลับของคุณได้รับการส่งแล้ว"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:18
 #: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:20
 #: iogt/templates/polls/includes/poll_free_text_form.html:24
 #: iogt/templates/polls/includes/poll_question_form.html:26
 msgid "Log in to vote"
-msgstr "Connectez-vous pour voter"
+msgstr "เข้าสู่ระบบเพื่อโหวต"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
 #: iogt/templates/polls/includes/poll_question_form.html:47
 msgid "Show Results"
-msgstr "Montrer les résultats"
+msgstr "แสดงผล"
 
 #: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
 #: iogt/templates/polls/includes/poll_question_form.html:50
 msgid "You voted: "
-msgstr "Tu as voté: "
+msgstr "คุณได้คะแนน: "
 
 #: iogt/temp_ve/polls/templates/polls/results.html:22
 #: iogt/templates/polls/results.html:28
 msgid "Thank you for voting!"
-msgstr "Merci d'avoir voté!"
+msgstr "ขอบคุณสำหรับการลงคะแนน!"
 
 #: iogt/temp_ve/profiles/admin.py:73
 msgid "Type"
-msgstr "Type "
+msgstr "ประเภท"
 
 #: iogt/temp_ve/profiles/admin.py:79
 msgid "Admin Users"
-msgstr "administrateur utilisateurs"
+msgstr "ผู้ดูแลระบบ"
 
 #: iogt/temp_ve/profiles/admin_views.py:16
 msgid ""
 "Your email address is not configured. Please update it before exporting."
-msgstr ""
-"Votre adresse e-mail est pas configuré. S'il vous plaît mettre à jour avant "
-"de l'exporter."
+msgstr "ไม่ได้กำหนดที่อยู่อีเมลของคุณ โปรดอัปเดตก่อนส่งออก"
 
 #: iogt/temp_ve/profiles/admin_views.py:39
-#, python-brace-format
 msgid "CSV emailed to '{0}'"
-msgstr "CSV envoyé à ' {0} '"
+msgstr "CSV ส่งอีเมลถึง ' {0} '"
 
 #: iogt/temp_ve/profiles/forms.py:78
 #: iogt/temp_ve/profiles/forms.py:445
 msgid "This value must contain only letters, numbers and underscores."
-msgstr ""
-"Cette valeur doit contenir uniquement des lettres, des chiffres ou des "
-"tirets."
+msgstr "ค่านี้ต้องประกอบด้วยตัวอักษรตัวเลขและเครื่องหมายขีดล่างเท่านั้น"
 
 #: iogt/temp_ve/profiles/forms.py:96
 #: iogt/temp_ve/profiles/forms.py:489
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:23
 msgid "PIN"
-msgstr "Pin"
+msgstr "PIN"
 
 #: iogt/temp_ve/profiles/forms.py:102
 #: iogt/temp_ve/profiles/forms.py:241
 #: iogt/temp_ve/profiles/forms.py:286
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "ชื่อที่แสดง"
 
 #: iogt/temp_ve/profiles/forms.py:116
 #: iogt/temp_ve/profiles/forms.py:249
 #: iogt/temp_ve/profiles/forms.py:300
 msgid "Location"
-msgstr "Emplacement"
+msgstr "ที่อยู่"
 
 #: iogt/temp_ve/profiles/forms.py:120
 #: iogt/temp_ve/profiles/forms.py:253
 #: iogt/temp_ve/profiles/forms.py:304
 msgid "Education Level"
-msgstr "Niveau de l'éducation"
+msgstr "ระดับการศึกษา"
 
 #: iogt/temp_ve/profiles/forms.py:188
 msgid "Username already exists."
-msgstr "Ce nom d'utilisateur existe déjà."
+msgstr "มีชื่อผู้ใช้นี้แล้ว"
 
 #: iogt/temp_ve/profiles/forms.py:193
-#, python-format
 msgid ""
 "Sorry, but that is an invalid username. Please don't use your %s in your "
 "username."
-msgstr ""
-"Désolé, mais qui est un nom d'utilisateur non valide. S'il vous plaît ne pas "
-"utiliser votre %s dans votre nom d' utilisateur."
+msgstr "ขออภัยชื่อผู้ใช้ไม่ถูกต้อง โปรดอย่าใช้ %s ของคุณในชื่อผู้ใช้ของคุณ"
 
 #: iogt/temp_ve/profiles/forms.py:225
 #: iogt/temp_ve/profiles/forms.py:351
-#, python-format
 msgid ""
 "Sorry, but that is an invalid display name. Please don't use your %s in your "
 "display name."
-msgstr ""
-"Désolé, mais qui est un nom d'affichage non valide. S'il vous plaît ne pas "
-"utiliser votre %s dans votre nom d'affichage."
+msgstr "ขออภัยชื่อที่แสดงไม่ถูกต้อง โปรดอย่าใช้ %s ของคุณในชื่อที่ใช้แสดง"
 
 #: iogt/temp_ve/profiles/forms.py:390
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:25
 msgid "Old Password"
-msgstr "Ancien mot de passe"
+msgstr "รหัสผ่านเดิม:"
 
 #: iogt/temp_ve/profiles/forms.py:405
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:32
 msgid "New Password"
-msgstr "Nouveau mot de passe :"
+msgstr "รหัสผ่านใหม่"
 
 #: iogt/temp_ve/profiles/forms.py:421
 msgid "Confirm Password"
-msgstr "Confirmez le nouveau mot de passe"
+msgstr "ยืนยันรหัสผ่าน"
 
 #: iogt/temp_ve/profiles/forms.py:431
 msgid "New passwords do not match."
-msgstr "Les nouveaux mots de passe ne sont pas les mêmes."
+msgstr "รหัสผ่านใหม่ไม่ตรงกัน"
 
 #: iogt/temp_ve/profiles/forms.py:506
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:29
 msgid "Confirm PIN"
-msgstr "Confirmer PIN"
+msgstr "ยืนยัน PIN"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:27
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
 msgid "(e.g. 2086)"
-msgstr "(Ex: 2086)"
+msgstr "เช่น: 2086"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:38
 msgid "Confirm New Password"
-msgstr "Confirmez le nouveau mot de passe"
+msgstr "ยืนยันรหัสผ่านใหม่:"
 
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:42
 #: iogt/temp_ve/profiles/templates/profiles/done.html:59
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:70
 msgid "Save"
-msgstr "Sauvegarder"
+msgstr "บันทึก"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:18
 #: iogt/temp_ve/profiles/templates/profiles/register.html:45
 msgid "SELECT DATE OF BIRTH"
-msgstr "SELECT DATE DE NAISSANCE"
+msgstr "เลือกวัน เดือน ปีเกิด"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:35
 #: iogt/temp_ve/profiles/templates/profiles/register.html:54
 msgid "I IDENTIFY MY GENDER AS:"
-msgstr "J'identifions mon sexe AS:"
+msgstr "ฉันระบุเรขาคณิตของฉันเป็น:"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:38
 #: iogt/temp_ve/profiles/templates/profiles/done.html:47
@@ -606,99 +586,99 @@ msgstr "J'identifions mon sexe AS:"
 #: iogt/templates/profiles/register.html:66
 #: iogt/templates/profiles/register.html:75
 msgid "Only you will see this"
-msgstr "Seulement, vous verrez ce"
+msgstr "เฉพาะคุณเท่านั้นที่จะเห็นสิ่งนี้"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:53
 #: iogt/temp_ve/profiles/templates/profiles/register.html:72
 msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
-msgstr "QUEL EST TON PLUS HAUT NIVEAU D'ÉDUCATION?"
+msgstr "เป็นระดับสูงสุดของการศึกษาของคุณคืออะไร?"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:63
 msgid "Home Page"
-msgstr "Accueil"
+msgstr "Home Page (หน้าแรก)"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:64
 #: iogt/templates/base.html:141
 #: iogt/templates/base.html:205
 msgid "Profile"
-msgstr "Profil"
+msgstr "ข้อมูลส่วนตัว"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:11
 msgid "Update your display name:"
-msgstr "Mettez à jour votre nom d'affichage:"
+msgstr "อัปเดตชื่อที่ใช้แสดง:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:20
 msgid "Update your date of birth:"
-msgstr "Mettre à jour ma date de naissance:"
+msgstr "แก้ไขวัน เดือน ปีเกิด:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:28
 msgid "Update your gender:"
-msgstr "Mettre à jour de votre Sexe:"
+msgstr "อัปเดตเพศของคุณ:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:37
 msgid "Update where you live:"
-msgstr "Mise à jour où vous vivez:"
+msgstr "อัปเดตที่ที่คุณอาศัยอยู่:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:46
 msgid "Update your Education Level:"
-msgstr "Mettez à jour votre niveau d'éducation:"
+msgstr "อัปเดตระดับการศึกษาของคุณ:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:55
 msgid "Update your mobile number:"
-msgstr "Mettez à jour votre numéro de téléphone mobile:"
+msgstr "อัปเดตหมายเลขโทรศัพท์เคลื่อนที่ของคุณ:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:58
 msgid "(e.g. 0914556789)"
-msgstr "Par exemple: 8, 8.25, 8.5, 8.75"
+msgstr "เช่น: 0914556789"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:64
 msgid "Update your email address:"
-msgstr "Mettez à jour votre adresse e-mail:"
+msgstr "อัปเดตที่อยู่อีเมลของคุณ:"
 
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:67
 #: iogt/temp_ve/profiles/templates/profiles/register.html:93
 msgid "(e.g. example@foo.com)"
-msgstr "(Par exemple example@foo.com)"
+msgstr "(เช่น example@foo.com)"
 
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:6
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:36
 msgid "Forgot PIN"
-msgstr "Code PIN oublié"
+msgstr "ลืมรหัส PIN"
 
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:31
 msgid "Security question"
-msgstr "Question de sécurité"
+msgstr "คำถามเพื่อความปลอดภัย"
 
 #: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:32
 msgid "Please answer the following security question."
-msgstr "Svp, répondez aux questions de sécurité suivantes."
+msgstr "โปรดตอบคำถามเพื่อความปลอดภัยต่อไปนี้"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:6
 #: iogt/temp_ve/profiles/templates/profiles/register.html:123
 #: iogt/temp_ve/profiles/templates/registration/login.html:9
 msgid "Register"
-msgstr "S'inscrire"
+msgstr "สมัครสมาชิก"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:9
 #: iogt/templates/profiles/register.html:9
 msgid "Already a member?"
-msgstr "Vous avez déjà un compte?"
+msgstr "เป็นสมาชิกอยู่แล้วใช่หรือไม่"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:14
 #: iogt/temp_ve/profiles/templates/registration/login.html:8
 #: iogt/templates/profiles/register.html:14
 #: iogt/templates/registration/login.html:8
 msgid "Not a member yet?"
-msgstr "Vous n'avez pas encore de compte ?"
+msgstr "ยังไม่ได้เป็นสมาชิกใช่หรือไม่"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:15
 #: iogt/templates/profiles/register.html:15
 msgid "Join us by signing up below."
-msgstr "Créez un compte en vous inscrivant ici"
+msgstr "เข้าร่วมกับเราโดยลงชื่อด้านล่าง"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:21
 msgid "CHOOSE A USERNAME"
-msgstr "CHOISISSEZ UN NOM D'UTILISATEUR"
+msgstr "เลือกชื่อผู้ใช้"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:24
 #: iogt/templates/profiles/register.html:24
@@ -706,152 +686,147 @@ msgid ""
 "This name you will use to log in and won't appear to other users. Only you "
 "will see this."
 msgstr ""
-"Ce nom vous utiliserez pour vous connecter et ne pas apparaître aux autres "
-"utilisateurs. Seulement, vous verrez cela."
+"ชื่อนี้คุณจะใช้เพื่อเข้าสู่ระบบและจะไม่ปรากฏแก่ผู้ใช้รายอื่น "
+"เฉพาะคุณเท่านั้นที่จะเห็นสิ่งนี้"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:28
 msgid "CHOOSE A 4-DIGIT PIN"
-msgstr "CHOISIS 4-DIGIT PIN"
+msgstr "เลือกรหัส PIN 4 หลัก"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:31
 #: iogt/templates/profiles/register.html:31
 msgid "e.g. 2086"
-msgstr "(Ex: 2086)"
+msgstr "ต.ย. 2086"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:36
 msgid "CHOOSE A DISPLAY NAME"
-msgstr "CHOISISSEZ UN NOM D'AFFICHAGE"
+msgstr "เลือกชื่อที่แสดง"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:48
 #: iogt/templates/profiles/register.html:48
 msgid "Let us know your birthday to get access to exclusive content."
-msgstr "Entrez votre date d'anniversaire pour accéder à du contenu exclusif."
+msgstr "แจ้งวันเกิดของคุณเพื่อรับสิทธิเข้าสู่เนื้อหาพิเศษ"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:84
 msgid "(e.g. 0900000013)"
-msgstr "Par exemple: 8, 8.25, 8.5, 8.75"
+msgstr "เช่น: 0900000013"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:90
 msgid "ENTER YOUR EMAIL ADDRESS"
-msgstr "entrez votre adresse e-mail"
+msgstr "กรอกที่อยู่อีเมล์ของคุณ"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:112
 #: iogt/templates/profiles/register.html:112
 msgid "Please accept the T&amp;Cs in order to complete the registration"
-msgstr ""
-"S'il vous plaît accepter le T & amp; Cs afin de compléter l'enregistrement"
+msgstr "โปรดยอมรับ T & Cs เพื่อให้การลงทะเบียนสมบูรณ์"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:117
 #: iogt/temp_ve/profiles/templates/profiles/register.html:119
 #: iogt/templates/profiles/register.html:117
 #: iogt/templates/profiles/register.html:119
 msgid "I accept the Terms and Conditions"
-msgstr "J'accepte les conditions d'utilisation"
+msgstr "ฉันยอมรับข้อกำหนดและเงื่อนไข"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:5
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:32
 msgid "Reset PIN"
-msgstr "Réinitialiser mon mot de passe"
+msgstr "รีเซ็ต PIN"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:5
 msgid "PIN Changed"
-msgstr "PIN changé"
+msgstr "PIN เปลี่ยนแล้ว"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:7
 msgid "Your PIN has been changed sucessfully."
-msgstr "Votre NIP a été changé avec succès."
+msgstr "เปลี่ยน PIN ของคุณสำเร็จแล้ว"
 
 #: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:8
 msgid "Continue to Sign In"
-msgstr "Continuer à connecter"
+msgstr "ดำเนินการต่อเพื่อลงชื่อเข้าใช้"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:6
 msgid "Hello "
-msgstr "Bonjour"
+msgstr "สวัสดี "
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:9
 msgid "As you type your name comment will appear as:"
-msgstr "Lorsque vous entrez un commentaire votre nom apparaitra comme"
+msgstr "ขณะที่พิมพ์ชื่อของคุณ ความคิดเห็นจะปรากฏดังนี้:"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:14
 msgid "Date of Birth: "
-msgstr "Date de naissance:"
+msgstr "วัน เดือน ปีเกิด:"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:19
 msgid " Not set."
-msgstr "Aucune information"
+msgstr "ไม่ได้ตั้งค่า"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:26
 msgid "Mobile number:"
-msgstr "Numéro Mobile"
+msgstr "เบอร์มือถือ"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:33
 msgid "Gender:"
-msgstr "Le genre:"
+msgstr "เพศ"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:40
 msgid "Location:"
-msgstr "Emplacement :"
+msgstr "สถานที่ตั้ง:"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:47
 msgid "Education Level:"
-msgstr "Niveau de l'éducation"
+msgstr "ระดับการศึกษา:"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:54
 msgid "Email Address:"
-msgstr "Adresse e-mail:"
+msgstr "อีเมล์:"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:59
 msgid "log out"
-msgstr "Déconnexion"
+msgstr "ออกจากระบบ"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:60
 msgid "Edit My Profile"
-msgstr "Mettre à jour mon profil"
+msgstr "แก้ไขข้อมูลส่วนตัวของฉัน"
 
 #: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:61
 msgid "Change My Password"
-msgstr "Changer mon mot de passe"
+msgstr "เปลี่ยนรหัสผ่านของฉัน"
 
 #: iogt/temp_ve/profiles/templates/registration/login.html:20
 #: iogt/templates/registration/login.html:20
 msgid "Your username and password do not match. Please try again."
-msgstr ""
-"Oups, votre nom d'utilisateur et votre mot de passe ne correspondent pas. "
-"Essayez de nouveau svp."
+msgstr "ชื่อผู้ใช้และรหัสผ่านของคุณไม่ถูกต้อง โปรดลองใหม่อีกครั้ง"
 
 #: iogt/temp_ve/profiles/templates/registration/login.html:32
 #: iogt/templates/registration/login.html:32
 msgid "Eg.: 2086"
-msgstr "Par exemple: 8, 8.25, 8.5, 8.75"
+msgstr "เช่น: 112"
 
 #: iogt/temp_ve/profiles/views.py:161
 msgid "The old password is incorrect."
-msgstr "Le mot de passe est incorrect."
+msgstr "รหัสผ่านเดิมไม่ถูกต้อง"
 
 #: iogt/temp_ve/profiles/views.py:184
 msgid "Too many attempts. Please try again later."
-msgstr "Trop d'essais. Veuillez réessayer plus tard."
+msgstr "มีความพยายามมากเกินไป กรุณาลองใหม่อีกครั้งในภายหลัง."
 
 #: iogt/temp_ve/profiles/views.py:279
 msgid "The two PINs that you entered do not match. Please try again."
-msgstr ""
-"Les deux codes PIN que vous avez entré ne correspondent pas. Veuillez "
-"réessayer."
+msgstr "PIN สองตัวที่คุณป้อนไม่ตรงกัน กรุณาลองอีกครั้ง."
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 #: iogt/templates/surveys/molo_survey_page.html:43
 msgid "Next Question"
-msgstr "Question suivante"
+msgstr "คำถามต่อไป"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Submit Survey"
-msgstr "Soumettre vos réponses"
+msgstr "ส่งแบบสำรวจ"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:31
 #: iogt/templates/surveys/molo_survey_page.html:50
 msgid "You have already completed this survey."
-msgstr "Vous avez déjà répondu à ces questions, merci!"
+msgstr "คุณได้ทำแบบสำรวจนี้เรียบร้อยแล้ว"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:34
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
@@ -861,32 +836,30 @@ msgstr "Vous avez déjà répondu à ces questions, merci!"
 #: iogt/templates/surveys/molo_survey_page.html:47
 #: iogt/templates/surveys/molo_survey_page.html:53
 msgid "Back to Home page"
-msgstr "Retour à l'accueil"
+msgstr "กลับไปที่หน้าแรก"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:39
 #: iogt/templates/surveys/molo_survey_page.html:58
 msgid "Please log in to take this survey"
-msgstr "Svp, connectez-vous pour remplir ce questionnaire"
+msgstr "โปรดเข้าสู่ระบบเพื่อทำแบบสำรวจนี้"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:12
 msgid "Survey Results"
-msgstr "RÉSULTATS DE L'ENQUÊTE"
+msgstr "ผลการสำรวจ"
 
 #: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:14
 msgid ""
 "Your survey has been completed successfully. Please see your submission "
 "results below."
-msgstr ""
-"Votre enquête a été terminée avec succès. S'il vous plaît voir vos résultats "
-"de soumission ci-dessous."
+msgstr "แบบสำรวจของคุณเสร็จสมบูรณ์แล้ว โปรดดูผลลัพธ์การส่งของคุณด้านล่าง"
 
 #: iogt/temp_ve/surveys/templates/surveys/surveys_list.html:10
 msgid "Take The Survey"
-msgstr "Participer au questionnaire"
+msgstr "ทำการสำรวจ"
 
 #: iogt/temp_ve/usermetadata/templates/persona.html:21
 msgid "Skip"
-msgstr "Passez"
+msgstr "ข้าม"
 
 #: iogt/templates/403_csrf.html:9
 msgid ""
@@ -894,187 +867,182 @@ msgid ""
 "technical issue, login and registrations are not available on the IoGT app "
 "for now."
 msgstr ""
-"Désolé, vous rencontrez des difficultés pour accéder à cette fonction! En "
-"raison d'un problème technique temporaire, se connecter et les inscriptions "
-"ne sont pas disponibles sur l'application IOGT pour le moment."
+"ขออภัยคุณประสบปัญหาในการเข้าถึงคุณลักษณะนี้! เนื่องจากปัญหาด้านเทคนิคชั่วคราว"
+"การลงชื่อเข้าใช้และการลงทะเบียนจึงไม่สามารถใช้งานได้ในแอป IoGT ในขณะนี้"
 
 #: iogt/templates/403_csrf.html:10
 msgid ""
 "To login or register for a profile, visit our free mobisite through your "
 "mobile browser at"
 msgstr ""
-"Pour vous identifier ou vous inscrire pour un profil, visitez notre mobisite "
-"gratuitement par votre navigateur mobile à"
+"หากต้องการลงชื่อเข้าใช้หรือลงทะเบียนรายละเอียดให้ไปที่ mobisite "
+"ฟรีผ่านเบราเซอร์มือถือของคุณที่"
 
 #: iogt/templates/base.html:106
 msgid "Language"
-msgstr "Langue"
+msgstr "ภาษา"
 
 #: iogt/templates/base.html:111
 msgid "Change Language"
-msgstr "Changer la langue"
+msgstr "เปลี่ยนภาษา"
 
 #: iogt/templates/base.html:133
 msgid "IoGT"
-msgstr "IOGT"
+msgstr "IoGT"
 
 #: iogt/templates/base.html:139
 #: iogt/templates/profiles/register.html:6
 #: iogt/templates/profiles/register.html:123
 #: iogt/templates/registration/login.html:9
 msgid "Join"
-msgstr "Inscrivez-vous"
+msgstr "เข้าร่วม"
 
 #: iogt/templates/base.html:144
 msgid "Menu"
-msgstr "Menu"
+msgstr "เมนู"
 
 #: iogt/templates/base.html:217
 msgid "Change your language"
-msgstr "Changer la langue"
+msgstr "เปลี่ยนภาษาของคุณ"
 
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
-msgstr "Vous avez quelque chose à ajouter à cet article? "
+msgstr "ต้องการเพิ่มเติมสิ่งใดในบทความนี้หรือไม่"
 
 #: iogt/templates/core/related-article-list.html:30
 msgid "Related Articles"
-msgstr "Articles liés"
+msgstr "บทความที่เกี่ยวข้อง"
 
 #: iogt/templates/core/section_page.html:69
 msgid "Prev"
-msgstr "Précédent"
+msgstr "ย้อนกลับ"
 
 #: iogt/templates/core/section_page.html:98
 msgid "Next"
-msgstr "Suivant"
+msgstr "ต่อไป"
 
 #: iogt/templates/core/section_page.html:147
 #: iogt/templates/core/tags/section_listing_homepage.html:46
 msgid "View more"
-msgstr "Voir plus"
+msgstr "ดูเพิ่มเติม"
 
 #: iogt/templates/profiles/register.html:21
 msgid "Choose a username"
-msgstr "Choisir un nom d'utilisateur"
+msgstr "เลือกชื่อผู้ใช้"
 
 #: iogt/templates/profiles/register.html:28
 msgid "Choose a 4-digit pin"
-msgstr "Choisir un code PIN à 4 chiffres"
+msgstr "เลือกรหัส PIN 4 หลัก"
 
 #: iogt/templates/profiles/register.html:36
 msgid "Choose a display name"
-msgstr "Choisissez un nom d'affichage"
+msgstr "เลือกชื่อที่แสดง"
 
 #: iogt/templates/profiles/register.html:45
 msgid "Select date of birth"
-msgstr "Sélectionner une date de naissance"
+msgstr "เลือกวันเดือนปีเกิด"
 
 #: iogt/templates/profiles/register.html:54
 msgid "I identify my gender as:"
-msgstr "J'identifie mon sexe comme:"
+msgstr "ฉันระบุเพศของฉันเป็น:"
 
 #: iogt/templates/profiles/register.html:63
 msgid "Where do you live?"
-msgstr "Où habites-tu?"
+msgstr "คุณพักอยู่ที่ไหน?"
 
 #: iogt/templates/profiles/register.html:72
 msgid "What is your highest level of education?"
-msgstr "Quel est ton plus haut niveau d'éducation?"
+msgstr "เป็นระดับสูงสุดของการศึกษาของคุณคืออะไร?"
 
 #: iogt/templates/profiles/register.html:81
 msgid "Enter your mobile number"
-msgstr "Entrez votre numéro de téléphone"
+msgstr "ใส่หมายเลขโทรศัพท์มือถือของคุณ"
 
 #: iogt/templates/profiles/register.html:84
 msgid "e.g. 0900000013"
-msgstr "Par exemple: 8, 8.25, 8.5, 8.75"
+msgstr "เช่น: 112"
 
 #: iogt/templates/profiles/register.html:90
 msgid "Enter your email address"
-msgstr "Entrez votre adresse courriel"
+msgstr "กรอกที่อยู่อีเมล์ของคุณ"
 
 #: iogt/templates/profiles/register.html:93
 msgid "e.g. example@foo.com"
-msgstr "par exemple example@foo.com"
+msgstr "เช่น example@foo.com"
 
 #: iogt/templates/registration/login.html:13
 msgid "Login by signing in below."
-msgstr "Connectez-vous ci-dessous."
+msgstr "ลงชื่อด้านล่างเพื่อเข้าสู่ระบบ"
 
 #: iogt/templates/registration/password_reset_complete.html:5
 msgid "Your password has been set. You may go ahead and log in now."
-msgstr ""
-"Votre mot de passe a été défini. Vous pouvez maintenant ouvrir une session."
+msgstr "ตั้งรหัสผ่านของคุณแล้ว ตอนนี้คุณสามารถเข้าสู่ระบบได้แล้ว"
 
 #: iogt/templates/registration/password_reset_confirm.html:22
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
 msgstr ""
-"Le lien de réinitialisation du mot de passe était invalide, peut-être parce "
-"qu'il a déjà été utilisé. S'il vous plaît demander un nouveau mot de passe "
-"réinitialisé."
+"ลิงก์รีเซ็ตรหัสผ่านไม่ถูกต้องอาจเป็นเพราะมีการใช้งานแล้ว "
+"โปรดขอตั้งค่ารหัสผ่านใหม่"
 
 #: iogt/templates/registration/password_reset_done.html:8
 msgid "Back to home page"
-msgstr "Retour à l'accueil"
+msgstr "กลับไปที่หน้าแร"
 
 #: iogt/templates/registration/password_reset_form.html:6
 msgid ""
 "Enter your email address below, and we'll email instructions for setting a "
 "new one."
 msgstr ""
-"Renseignez votre adresse email ci-dessous et nous vous enverrons les "
-"informations pour créer un nouveau mot de passe"
+"ใส่ที่อยู่อีเมลของคุณด้านล่าง เราจะส่งอีเมลถึงคุณพร้อมวิธีการตั้งรหัสผ่านใหม่"
+" "
 
 #: iogt/templates/search/search_results.html:11
 #: iogt/templates/search/search_results.html:77
 msgid "Search Results for:"
-msgstr "Résultats de la recherche pour :"
+msgstr "ผลการค้นหาสำหรับ:"
 
 #: iogt/templates/search/search_results.html:80
 msgid "No search results were found for "
-msgstr "Aucun résultat de recherche n'a été trouvé pour "
+msgstr "ไม่พบผลลัพธ์การค้นหา "
 
 #: iogt/templates/search/search_results.html:82
 msgid "Back to homepage"
-msgstr "Retour à la page d'acceuil"
+msgstr "กลับไปหน้าแรก"
 
 #: iogt/templates/surveys/surveys_list.html:10
 msgid "Start here"
-msgstr "Commencez"
+msgstr "เริ่มที่นี่"
 
 #: iogt/settings/base.py:437
 msgid "February"
-msgstr "Février"
+msgstr "กุมภาพันธ์"
 
 #: iogt/settings/base.py:439
 msgid "April"
-msgstr "Avril"
+msgstr "เมษายน"
 
 #: iogt/temp_ve/commenting/forms.py:10
 #: iogt/temp_ve/commenting/forms.py:61
 msgid "Email address"
-msgstr "Adresse e-mail"
+msgstr "ที่อยู่อีเมล์"
 
 #: iogt/temp_ve/commenting/forms.py:65
 msgid "Name"
-msgstr "Prénom"
+msgstr "ชื่อ"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:16
 #: iogt/templates/comments/comment.html:17
 msgid ""
 "This comment has been removed by the community. Please read our platform "
 "rules."
-msgstr ""
-"Ce commentaire a été retiré par la communauté car il ne respecte pas les "
-"conditions d'utilisation de ce site."
+msgstr "ความคิดเห็นนี้ถูกลบโดยชุมชน โปรดอ่านกฎระเบียบแพลตฟอร์มของเรา"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
 #: iogt/templates/comments/comment_block.html:14
 msgid "Log in to comment"
-msgstr "Connectez-vous pour commenter"
+msgstr "เข้าสู่ระบบเพื่อแสดงความคิดเห็น"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
 msgid "Sotho"
@@ -1090,7 +1058,7 @@ msgstr "Ndebele"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
 msgid "LOGIN TO YOUR ACCOUNT!"
-msgstr "Connectez-vous à votre compte"
+msgstr "ลงชื่อเข้าใช้บัญชีของคุณ!"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
 #: iogt/templates/registration/password_reset_confirm.html:6
@@ -1098,71 +1066,69 @@ msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
 msgstr ""
-"S'il vous plaît entrez votre nouveau mot de passe deux fois afin que nous "
-"puissions vérifier que vous l'avez tapé correctement."
+"โปรดป้อนรหัสผ่านใหม่สองครั้งเพื่อให้เราสามารถยืนยันว่าคุณพิมพ์รหัสผ่านอย่างถู"
+"กต้อง"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
 #: iogt/templates/registration/password_reset_confirm.html:10
 msgid "New password:"
-msgstr "Nouveau mot de passe:"
+msgstr "รหัสผ่านใหม่:"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
 msgid ""
 "Forgotten your password? Enter your email address below, and we'll email "
 "instructions for setting a new one."
 msgstr ""
-"Vous avez oublié votre mot de passe? Entrez votre adresse émail ci-dessous, "
-"et nous vous enverrons des instructions pour installer un nouveau."
+"ลืมรหัสผ่าน? "
+"ป้อนที่อยู่อีเมลของคุณด้านล่างและเราจะส่งอีเมลคำแนะนำในการตั้งค่าใหม่"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
 #: iogt/templates/registration/password_reset_form.html:10
 msgid "Email address:"
-msgstr "Adresse émail:"
+msgstr "อีเมล"
 
 #: iogt/temp_ve/polls/templates/polls/poll_page.html:7
 msgid "What's your opinion?"
-msgstr "Qu'en penses-tu?"
+msgstr "ความคิดเห็นของคุณคืออะไร?"
 
 #: iogt/temp_ve/polls/templates/polls/results.html:8
 #: iogt/templates/polls/results.html:8
 msgid "Your answers:"
-msgstr "_______________ vos réponses."
+msgstr "คำตอบของคุณ:"
 
 #: iogt/temp_ve/profiles/admin.py:78
 msgid "Frontend Users"
-msgstr "Frontend utilisateurs"
+msgstr "ผู้ใช้ Frontend"
 
 #: iogt/temp_ve/profiles/forms.py:94
 #: iogt/temp_ve/profiles/forms.py:419
 #: iogt/temp_ve/profiles/forms.py:487
 #: iogt/temp_ve/profiles/forms.py:504
 msgid "This value must contain only numbers."
-msgstr "Cette valeur ne doit contenir que des chiffres."
+msgstr "ค่านี้ต้องมีตัวเลขเท่านั้น"
 
 #: iogt/temp_ve/profiles/forms.py:112
 #: iogt/temp_ve/profiles/forms.py:245
 #: iogt/temp_ve/profiles/forms.py:296
 msgid "Gender"
-msgstr "Sexe"
+msgstr "เพศ"
 
 #: iogt/temp_ve/profiles/forms.py:388
 #: iogt/temp_ve/profiles/forms.py:403
 msgid "This value must contain only           numbers."
-msgstr "Cette valeur ne doit contenir que des chiffres."
+msgstr "ค่านี้ต้องมีตัวเลขเท่านั้น"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:8
 msgid "Thank you for joining!"
-msgstr "Merci de nous avoir rejoint!"
+msgstr "ขอบคุณสำหรับการเข้าร่วม!"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:13
 msgid "Let us know more about yourself to get access to exclusive content."
-msgstr ""
-"Faites-nous savoir plus sur vous-même pour obtenir l'accès à des contenus "
-"exclusifs."
+msgstr "แจ้งให้เราทราบเกี่ยวกับตัวคุณเองเพื่อเข้าถึงเนื้อหาพิเศษ"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:26
 msgid "DISPLAY NAME"
-msgstr "Afficher un nom"
+msgstr "ชื่อที่แสดง"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:29
 #: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
@@ -1172,74 +1138,76 @@ msgid ""
 "We value your online security, therefore we hide your username and allow you "
 "to comment and interact with the site with a display name."
 msgstr ""
-"Nous apprécions votre sécurité en ligne, donc nous cachons votre nom "
-"d'utilisateur et vous permet de commenter et d'interagir avec le site avec "
-"un nom d'affichage."
+"เราให้ความสำคัญกับการรักษาความปลอดภัยออนไลน์ของคุณดังนั้นเราจึงซ่อนชื่อผู้ใช้"
+"ของคุณและอนุญาตให้คุณแสดงความคิดเห็นและโต้ตอบกับไซต์ด้วยชื่อที่แสดง"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:44
 #: iogt/temp_ve/profiles/templates/profiles/register.html:63
 msgid "WHERE DO YOU LIVE?"
-msgstr "OÙ HABITES-TU?"
+msgstr "คุณพักอยู่ที่ไหน?"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:10
 #: iogt/templates/base.html:198
 #: iogt/templates/profiles/register.html:10
 msgid "Login"
-msgstr "Connexion"
+msgstr "เข้าสู่ระบบ"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:81
 msgid "ENTER YOUR MOBILE NUMBER"
-msgstr "Entrez votre numéro de téléphone"
+msgstr "ป้อนหมายเลขมือถือของคุณ"
 
 #: iogt/templates/polls/poll_page.html:7
 #: iogt/templates/polls/poll_page_in_section.html:8
 msgid "Polls"
-msgstr "Sondages"
+msgstr "โพลต่างๆ"
 
 #: iogt/templates/search/search_block.html:5
 #: iogt/templates/search/search_results.html:8
 #: iogt/templates/search/search_results.html:74
 msgid "Search the site..."
-msgstr "Faites une recherche sur le site...."
-
-#~ msgid "Type your comment here"
-#~ msgstr "Entrez votre commentaire ici"
+msgstr "ค้นหาข้อมูลในเว็บไซต์"
 
 #~ msgid "Type new display name:"
-#~ msgstr "Entrez un nouveau nom d'utilisateur:"
+#~ msgstr "พิมพ์ชื่อที่แสดงใหม่:"
 
 #~ msgid "View More"
-#~ msgstr "Voir plus"
+#~ msgstr "ดูเพิ่มเติม"
 
 #~ msgid "More"
-#~ msgstr "En savoir plus"
+#~ msgstr "เพิ่มเติม"
 
-#~ msgid "Wolof"
-#~ msgstr "Wolof"
+#~ msgid "ARE YOU A"
+#~ msgstr "คุณคือ..."
 
-#~ msgid "Yoruba"
-#~ msgstr "Yoruba"
+#~ msgid "Type your comment here"
+#~ msgstr "พิมพ์ความคิดเห็นของคุณที่นี่"
 
-#~ msgid "Igbo"
-#~ msgstr "Igbo"
+#~ msgid "1"
+#~ msgstr "1"
 
-#~ msgid "Hausa"
-#~ msgstr "Hausa"
+#~ msgid "2"
+#~ msgstr "2"
 
-#~ msgid "Amharic"
-#~ msgstr "Amharic"
+#~ msgid "3"
+#~ msgstr "3"
 
-#~ msgid "Malay"
-#~ msgstr "Malay"
+#~ msgid "4"
+#~ msgstr "4"
 
-#~ msgid "Guarani"
-#~ msgstr "Guarani"
+#~ msgid "5"
+#~ msgstr "5"
 
-#~ msgid "Gujarati"
-#~ msgstr "Gujarati"
+#~ msgid "6"
+#~ msgstr "6"
 
-#~ msgid "Filipino"
-#~ msgstr "Filipino"
+#~ msgid "7"
+#~ msgstr "7"
 
-#~ msgid "N'ko"
-#~ msgstr "N'ko"
+#~ msgid "8"
+#~ msgstr "8"
+
+#~ msgid "9"
+#~ msgstr "9"
+
+#~ msgid "10"
+#~ msgstr "10"

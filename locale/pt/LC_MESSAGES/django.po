@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-06 12:46+0200\n"
-"PO-Revision-Date: 2017-03-29 11:33+0000\n"
-"Last-Translator: Vusi <vusim@buisoft.com>\n"
+"POT-Creation-Date: 2017-08-03 15:57+0000\n"
+"PO-Revision-Date: 2017-08-03 16:22+0000\n"
+"Last-Translator: Reeza <reeza@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: por_PT\n"
 "MIME-Version: 1.0\n"
@@ -12,23 +12,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1490888805.751688\n"
+"X-POOTLE-MTIME: 1501777345.388285\n"
 
 #: iogt/settings/base.py:436
 msgid "January"
 msgstr "janeiro"
 
-#: iogt/settings/base.py:437
-msgid "February"
-msgstr "Fevereiro"
-
 #: iogt/settings/base.py:438
 msgid "March"
 msgstr "Março"
-
-#: iogt/settings/base.py:439
-msgid "April"
-msgstr "Abril"
 
 #: iogt/settings/base.py:440
 msgid "May"
@@ -70,48 +62,33 @@ msgstr "Adiciona em anonimato "
 msgid "This field is required"
 msgstr "Este campo é obrigatório"
 
-#: iogt/settings/base.py:451 iogt/temp_ve/usermetadata/templates/persona.html:5
+#: iogt/settings/base.py:451
+#: iogt/temp_ve/usermetadata/templates/persona.html:5
 msgid "Are you a ..."
-msgstr "ÉS UM(A)"
+msgstr "És um(a)..."
 
 #: iogt/settings/base.py:452
 msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr "Assegurar este valor tem pelo menos 4 caracteres (que tem 1)"
 
 #: iogt/settings/base.py:453
-msgid "Type your comment here"
-msgstr "digite seu comentário aqui"
+msgid "Type your comment here..."
+msgstr "Escreva aqui o seu comentário..."
 
 #: iogt/temp_ve/commenting/admin_views.py:61
 #: iogt/temp_ve/commenting/views.py:111
 msgid "Reply successfully created."
 msgstr "Responder criado com sucesso."
 
-#: iogt/temp_ve/commenting/forms.py:10 iogt/temp_ve/commenting/forms.py:61
-msgid "Email address"
-msgstr "Endereço de e-mail"
-
 #: iogt/temp_ve/commenting/forms.py:63
 msgid "URL"
 msgstr "URL "
 
-#: iogt/temp_ve/commenting/forms.py:65
-msgid "Name"
-msgstr "Nome"
-
 #: iogt/temp_ve/commenting/templates/comments/comment.html:8
-#: iogt/temp_ve/commenting/views.py:48 iogt/templates/comments/comment.html:8
+#: iogt/temp_ve/commenting/views.py:48
+#: iogt/templates/comments/comment.html:8
 msgid "Anonymous"
 msgstr "Anónimo"
-
-#: iogt/temp_ve/commenting/templates/comments/comment.html:16
-#: iogt/templates/comments/comment.html:17
-msgid ""
-"This comment has been removed by the community. Please read our platform "
-"rules."
-msgstr ""
-"Este comentário foi eliminado pela comunidade. Por favor, leia as regras da "
-"nossa plataforma"
 
 #: iogt/temp_ve/commenting/templates/comments/comment.html:21
 #: iogt/templates/comments/comment.html:22
@@ -126,11 +103,6 @@ msgstr "Resposta"
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:6
 msgid "Share a Comment"
 msgstr "partilhe o comentário"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
-#: iogt/templates/comments/comment_block.html:14
-msgid "Log in to comment"
-msgstr "Inicie a sessão para comentar"
 
 #: iogt/temp_ve/commenting/templates/comments/comment_block.html:18
 #: iogt/templates/comments/comment_block.html:18
@@ -214,6 +186,10 @@ msgstr ""
 "Ele será analisado pela equipe e pode ser removido em caso de quebra nossas "
 "regras de Plataforma"
 
+#: iogt/templates/comments/form.html:15
+msgid "Comment Anonymously"
+msgstr "Comentar anonimamente"
+
 #: iogt/temp_ve/commenting/views.py:31
 msgid "Reporting comment replies is not allowed."
 msgstr "Relatórios comentário respostas não é permitido."
@@ -230,17 +206,9 @@ msgstr "zulu"
 msgid "Xhosa"
 msgstr "Xhosa"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
-msgid "Sotho"
-msgstr "Sotho"
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
 msgid "Venda"
 msgstr "Venda"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
-msgid "Tswana"
-msgstr "Tswana"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
 msgid "Tsonga"
@@ -249,10 +217,6 @@ msgstr "Tsonga"
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
 msgid "Swati"
 msgstr "Swati"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
-msgid "Ndebele"
-msgstr "Ndebele"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 #: iogt/templates/403.html:8
@@ -303,7 +267,8 @@ msgstr "Desculpe, não conseguimos encontrar a página."
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
-#: iogt/templates/500.html:12 iogt/templates/500.html:16
+#: iogt/templates/500.html:12
+#: iogt/templates/500.html:16
 msgid "Internal server error"
 msgstr "Erro interno do servidor"
 
@@ -342,10 +307,6 @@ msgstr "Tema do Dia"
 msgid "Sign in"
 msgstr "assinar em"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
-msgid "LOGIN TO YOUR ACCOUNT!"
-msgstr "Entrar na sua conta."
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
 msgid "We’re excited to have you..."
 msgstr "Estamos animado para tê-lo ..."
@@ -357,7 +318,8 @@ msgstr ""
 "novo. "
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
-#: iogt/temp_ve/profiles/forms.py:76 iogt/temp_ve/profiles/forms.py:443
+#: iogt/temp_ve/profiles/forms.py:76
+#: iogt/temp_ve/profiles/forms.py:443
 #: iogt/temp_ve/profiles/templates/registration/login.html:25
 #: iogt/templates/registration/login.html:25
 msgid "Username"
@@ -388,18 +350,6 @@ msgstr "Sua senha foi definida. Você pode ir em frente e entrar agora."
 #: iogt/templates/registration/password_reset_complete.html:8
 msgid "Log in"
 msgstr "Entrar"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
-#: iogt/templates/registration/password_reset_confirm.html:6
-msgid ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly."
-msgstr "Nova palavra-passe:"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
-#: iogt/templates/registration/password_reset_confirm.html:10
-msgid "New password:"
-msgstr "Nova palavra-passe:"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
 #: iogt/templates/registration/password_reset_confirm.html:15
@@ -437,19 +387,6 @@ msgstr ""
 "Se você não receber um e-mail, por favor, certifique-se de que introduziu o "
 "endereço que você registrou, e verifique a pasta de spam."
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
-msgid ""
-"Forgotten your password? Enter your email address below, and we'll email "
-"instructions for setting a new one."
-msgstr ""
-"Esqueceu sua senha? Digite seu endereço de e-mail abaixo, e vamos enviar "
-"instruções para configurar um novo."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
-#: iogt/templates/registration/password_reset_form.html:10
-msgid "Email address:"
-msgstr "Endereço de e-mail:"
-
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
 #: iogt/templates/registration/password_reset_form.html:14
 msgid "Reset my password"
@@ -466,7 +403,8 @@ msgstr "Procurar"
 
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
-#: iogt/templates/base.html:143 iogt/templates/search/search_results.html:9
+#: iogt/templates/base.html:143
+#: iogt/templates/search/search_results.html:9
 #: iogt/templates/search/search_results.html:75
 msgid "Search"
 msgstr "Procurar"
@@ -524,15 +462,6 @@ msgstr "Mostrar resultados"
 msgid "You voted: "
 msgstr "Você votou: "
 
-#: iogt/temp_ve/polls/templates/polls/poll_page.html:7
-msgid "What's your opinion?"
-msgstr "Qual a sua opinião?"
-
-#: iogt/temp_ve/polls/templates/polls/results.html:8
-#: iogt/templates/polls/results.html:8
-msgid "Your answers:"
-msgstr "Suas respostas ..."
-
 #: iogt/temp_ve/polls/templates/polls/results.html:22
 #: iogt/templates/polls/results.html:28
 msgid "Thank you for voting!"
@@ -541,10 +470,6 @@ msgstr "Obrigado por votar!"
 #: iogt/temp_ve/profiles/admin.py:73
 msgid "Type"
 msgstr "Tipo"
-
-#: iogt/temp_ve/profiles/admin.py:78
-msgid "Frontend Users"
-msgstr "Os usuários de frontend"
 
 #: iogt/temp_ve/profiles/admin.py:79
 msgid "Admin Users"
@@ -562,36 +487,31 @@ msgstr ""
 msgid "CSV emailed to '{0}'"
 msgstr "CSV enviado para ' {0} '"
 
-#: iogt/temp_ve/profiles/forms.py:78 iogt/temp_ve/profiles/forms.py:445
+#: iogt/temp_ve/profiles/forms.py:78
+#: iogt/temp_ve/profiles/forms.py:445
 msgid "This value must contain only letters, numbers and underscores."
 msgstr "Este valor deve conter apenas letras, números e sublinhados."
 
-#: iogt/temp_ve/profiles/forms.py:94 iogt/temp_ve/profiles/forms.py:419
-#: iogt/temp_ve/profiles/forms.py:487 iogt/temp_ve/profiles/forms.py:504
-msgid "This value must contain only numbers."
-msgstr "Insira apenas números."
-
-#: iogt/temp_ve/profiles/forms.py:96 iogt/temp_ve/profiles/forms.py:489
+#: iogt/temp_ve/profiles/forms.py:96
+#: iogt/temp_ve/profiles/forms.py:489
 #: iogt/temp_ve/profiles/templates/profiles/reset_password.html:23
 msgid "PIN"
 msgstr "PIN"
 
-#: iogt/temp_ve/profiles/forms.py:102 iogt/temp_ve/profiles/forms.py:241
+#: iogt/temp_ve/profiles/forms.py:102
+#: iogt/temp_ve/profiles/forms.py:241
 #: iogt/temp_ve/profiles/forms.py:286
 msgid "Display Name"
 msgstr "Novo Nome"
 
-#: iogt/temp_ve/profiles/forms.py:112 iogt/temp_ve/profiles/forms.py:245
-#: iogt/temp_ve/profiles/forms.py:296
-msgid "Gender"
-msgstr "Gênero"
-
-#: iogt/temp_ve/profiles/forms.py:116 iogt/temp_ve/profiles/forms.py:249
+#: iogt/temp_ve/profiles/forms.py:116
+#: iogt/temp_ve/profiles/forms.py:249
 #: iogt/temp_ve/profiles/forms.py:300
 msgid "Location"
 msgstr "Localização"
 
-#: iogt/temp_ve/profiles/forms.py:120 iogt/temp_ve/profiles/forms.py:253
+#: iogt/temp_ve/profiles/forms.py:120
+#: iogt/temp_ve/profiles/forms.py:253
 #: iogt/temp_ve/profiles/forms.py:304
 msgid "Education Level"
 msgstr "Nível de educação"
@@ -606,21 +526,18 @@ msgid ""
 "Sorry, but that is an invalid username. Please don't use your %s in your "
 "username."
 msgstr ""
-"Desculpe, mas isso é um nome de usuário inválido. Por favor, não use o seu "
-"%s em seu nome de usuário."
+"Desculpe, mas isso é um nome de usuário inválido. Por favor, não use o seu %"
+"s em seu nome de usuário."
 
-#: iogt/temp_ve/profiles/forms.py:225 iogt/temp_ve/profiles/forms.py:351
+#: iogt/temp_ve/profiles/forms.py:225
+#: iogt/temp_ve/profiles/forms.py:351
 #, python-format
 msgid ""
 "Sorry, but that is an invalid display name. Please don't use your %s in your "
 "display name."
 msgstr ""
-"Desculpe, mas isso é um nome de exibição inválido. Por favor, não use o seu "
-"%s no seu nome de exibição."
-
-#: iogt/temp_ve/profiles/forms.py:388 iogt/temp_ve/profiles/forms.py:403
-msgid "This value must contain only           numbers."
-msgstr "Este valor deve conter apenas números."
+"Desculpe, mas isso é um nome de exibição inválido. Por favor, não use o seu %"
+"s no seu nome de exibição."
 
 #: iogt/temp_ve/profiles/forms.py:390
 #: iogt/temp_ve/profiles/templates/profiles/change_password.html:25
@@ -660,35 +577,10 @@ msgstr "Confirme a nova palavra-passe"
 msgid "Save"
 msgstr "Salvar"
 
-#: iogt/temp_ve/profiles/templates/profiles/done.html:8
-msgid "Thank you for joining!"
-msgstr "Obrigado por aderir!"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:13
-msgid "Let us know more about yourself to get access to exclusive content."
-msgstr ""
-"Deixe-nos saber mais sobre si mesmo para obter acesso a conteúdos exclusivos."
-
 #: iogt/temp_ve/profiles/templates/profiles/done.html:18
 #: iogt/temp_ve/profiles/templates/profiles/register.html:45
 msgid "SELECT DATE OF BIRTH"
 msgstr "SELECT DATE DE NASCIMENTO"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:26
-msgid "DISPLAY NAME"
-msgstr "MOSTRAR NOME"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:29
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
-#: iogt/temp_ve/profiles/templates/profiles/register.html:39
-#: iogt/templates/profiles/register.html:39
-msgid ""
-"We value your online security, therefore we hide your username and allow you "
-"to comment and interact with the site with a display name."
-msgstr ""
-"Valorizamos a sua segurança online, portanto, esconder o seu nome de usuário "
-"e permitem que você para comentar e interagir com o site com um nome de "
-"exibição."
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:35
 #: iogt/temp_ve/profiles/templates/profiles/register.html:54
@@ -710,11 +602,6 @@ msgstr "Eu me identifico meu gênero AS:"
 msgid "Only you will see this"
 msgstr "Somente você vai ver isso"
 
-#: iogt/temp_ve/profiles/templates/profiles/done.html:44
-#: iogt/temp_ve/profiles/templates/profiles/register.html:63
-msgid "WHERE DO YOU LIVE?"
-msgstr "ONDE VOCÊ MORA?"
-
 #: iogt/temp_ve/profiles/templates/profiles/done.html:53
 #: iogt/temp_ve/profiles/templates/profiles/register.html:72
 msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
@@ -725,7 +612,8 @@ msgid "Home Page"
 msgstr "Pagina inicial"
 
 #: iogt/temp_ve/profiles/templates/profiles/done.html:64
-#: iogt/templates/base.html:141 iogt/templates/base.html:205
+#: iogt/templates/base.html:141
+#: iogt/templates/base.html:205
 msgid "Profile"
 msgstr "Perfil "
 
@@ -790,11 +678,6 @@ msgstr "Registe-se"
 msgid "Already a member?"
 msgstr "Já é membro?"
 
-#: iogt/temp_ve/profiles/templates/profiles/register.html:10
-#: iogt/templates/base.html:198 iogt/templates/profiles/register.html:10
-msgid "Login"
-msgstr "Inicie a sessão"
-
 #: iogt/temp_ve/profiles/templates/profiles/register.html:14
 #: iogt/temp_ve/profiles/templates/registration/login.html:8
 #: iogt/templates/profiles/register.html:14
@@ -838,10 +721,6 @@ msgstr "ESCOLHA UM NOME DE EXIBIÇÃO"
 msgid "Let us know your birthday to get access to exclusive content."
 msgstr ""
 "Escreva a sua data de nascimento para ter acesso aos conteúdos exclusivos."
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:81
-msgid "ENTER YOUR MOBILE NUMBER"
-msgstr "ENTER seu número de telemóvel"
 
 #: iogt/temp_ve/profiles/templates/profiles/register.html:84
 msgid "(e.g. 0900000013)"
@@ -1032,7 +911,8 @@ msgstr "Mudar idioma"
 msgid "IoGT"
 msgstr "IOGT"
 
-#: iogt/templates/base.html:139 iogt/templates/profiles/register.html:6
+#: iogt/templates/base.html:139
+#: iogt/templates/profiles/register.html:6
 #: iogt/templates/profiles/register.html:123
 #: iogt/templates/registration/login.html:9
 msgid "Join"
@@ -1066,11 +946,6 @@ msgstr "Mbele"
 #: iogt/templates/core/tags/section_listing_homepage.html:46
 msgid "View more"
 msgstr "Ver mais"
-
-#: iogt/templates/polls/poll_page.html:7
-#: iogt/templates/polls/poll_page_in_section.html:8
-msgid "Polls"
-msgstr "Sondagem"
 
 #: iogt/templates/profiles/register.html:21
 msgid "Choose a username"
@@ -1144,12 +1019,6 @@ msgstr ""
 "Introduza o seu email abaixo e nós enviaremos intruções para definir uma "
 "nova senha"
 
-#: iogt/templates/search/search_block.html:5
-#: iogt/templates/search/search_results.html:8
-#: iogt/templates/search/search_results.html:74
-msgid "Search the site..."
-msgstr "Pesquisar na página"
-
 #: iogt/templates/search/search_results.html:11
 #: iogt/templates/search/search_results.html:77
 msgid "Search Results for:"
@@ -1167,11 +1036,157 @@ msgstr "Regressar a página inicial"
 msgid "Start here"
 msgstr "Comece aqui"
 
-#~ msgid "Type new display name:"
-#~ msgstr "Digite o novo nome:"
+#: iogt/settings/base.py:437
+msgid "February"
+msgstr "Fevereiro"
 
-#~ msgid "View More"
-#~ msgstr "Ver mais"
+#: iogt/settings/base.py:439
+msgid "April"
+msgstr "Abril"
 
-#~ msgid "More"
-#~ msgstr "Mais"
+#: iogt/temp_ve/commenting/forms.py:10
+#: iogt/temp_ve/commenting/forms.py:61
+msgid "Email address"
+msgstr "Endereço de e-mail"
+
+#: iogt/temp_ve/commenting/forms.py:65
+msgid "Name"
+msgstr "Nome"
+
+#: iogt/temp_ve/commenting/templates/comments/comment.html:16
+#: iogt/templates/comments/comment.html:17
+msgid ""
+"This comment has been removed by the community. Please read our platform "
+"rules."
+msgstr ""
+"Este comentário foi eliminado pela comunidade. Por favor, leia as regras da "
+"nossa plataforma"
+
+#: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
+#: iogt/templates/comments/comment_block.html:14
+msgid "Log in to comment"
+msgstr "Inicie a sessão para comentar"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
+msgid "Sotho"
+msgstr "Sotho"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
+msgid "Tswana"
+msgstr "Tswana"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
+msgid "Ndebele"
+msgstr "Ndebele"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
+msgid "LOGIN TO YOUR ACCOUNT!"
+msgstr "Entrar na sua conta."
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
+#: iogt/templates/registration/password_reset_confirm.html:6
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr "Nova palavra-passe:"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
+#: iogt/templates/registration/password_reset_confirm.html:10
+msgid "New password:"
+msgstr "Nova palavra-passe:"
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+"Esqueceu sua senha? Digite seu endereço de e-mail abaixo, e vamos enviar "
+"instruções para configurar um novo."
+
+#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
+#: iogt/templates/registration/password_reset_form.html:10
+msgid "Email address:"
+msgstr "Endereço de e-mail:"
+
+#: iogt/temp_ve/polls/templates/polls/poll_page.html:7
+msgid "What's your opinion?"
+msgstr "Qual a sua opinião?"
+
+#: iogt/temp_ve/polls/templates/polls/results.html:8
+#: iogt/templates/polls/results.html:8
+msgid "Your answers:"
+msgstr "Suas respostas ..."
+
+#: iogt/temp_ve/profiles/admin.py:78
+msgid "Frontend Users"
+msgstr "Os usuários de frontend"
+
+#: iogt/temp_ve/profiles/forms.py:94
+#: iogt/temp_ve/profiles/forms.py:419
+#: iogt/temp_ve/profiles/forms.py:487
+#: iogt/temp_ve/profiles/forms.py:504
+msgid "This value must contain only numbers."
+msgstr "Insira apenas números."
+
+#: iogt/temp_ve/profiles/forms.py:112
+#: iogt/temp_ve/profiles/forms.py:245
+#: iogt/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "Gênero"
+
+#: iogt/temp_ve/profiles/forms.py:388
+#: iogt/temp_ve/profiles/forms.py:403
+msgid "This value must contain only           numbers."
+msgstr "Este valor deve conter apenas números."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:8
+msgid "Thank you for joining!"
+msgstr "Obrigado por aderir!"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr ""
+"Deixe-nos saber mais sobre si mesmo para obter acesso a conteúdos exclusivos."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "MOSTRAR NOME"
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:29
+#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: iogt/temp_ve/profiles/templates/profiles/register.html:39
+#: iogt/templates/profiles/register.html:39
+msgid ""
+"We value your online security, therefore we hide your username and allow you "
+"to comment and interact with the site with a display name."
+msgstr ""
+"Valorizamos a sua segurança online, portanto, esconder o seu nome de usuário "
+"e permitem que você para comentar e interagir com o site com um nome de "
+"exibição."
+
+#: iogt/temp_ve/profiles/templates/profiles/done.html:44
+#: iogt/temp_ve/profiles/templates/profiles/register.html:63
+msgid "WHERE DO YOU LIVE?"
+msgstr "ONDE VOCÊ MORA?"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:10
+#: iogt/templates/base.html:198
+#: iogt/templates/profiles/register.html:10
+msgid "Login"
+msgstr "Inicie a sessão"
+
+#: iogt/temp_ve/profiles/templates/profiles/register.html:81
+msgid "ENTER YOUR MOBILE NUMBER"
+msgstr "ENTER seu número de telemóvel"
+
+#: iogt/templates/polls/poll_page.html:7
+#: iogt/templates/polls/poll_page_in_section.html:8
+msgid "Polls"
+msgstr "Sondagem"
+
+#: iogt/templates/search/search_block.html:5
+#: iogt/templates/search/search_results.html:8
+#: iogt/templates/search/search_results.html:74
+msgid "Search the site..."
+msgstr "Pesquisar na página"
+
