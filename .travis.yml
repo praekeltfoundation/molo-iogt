@@ -31,7 +31,7 @@ jobs:
       env:
         - IMAGE_NAME=praekeltfoundation/molo-iogt
         - REGISTRY_USER=praekeltorgdeploy
-        - secure: "pnvFFZopJn0o7rlcT5sHkoC+ursFGPr50ORXCC5/daL5Mq17/d5fD858nPPRxqfk/+PQ2cugWz9CJQxsgI/55VuWhrUehqGDOwsVZht6nRAvzcTEV1Au7QlfXVx2tQDfLOCh5v3LYS6rKLROrwk+vYjrlSKAbTKqY3znjFQEOCTwATEQCMLj70mcWOw7YvQvk2MvgsoRKWZdQN8HXVs4hP4HmUkvJxW/G/o5omoCQYpEvntfxNwtOjJEahwvbTZgMaGE0v5HfDX8E5eVf4XYq5kJ2eOa7GhM1bfIcwqwqrIcNDJSwzh8jhCc+YW+mEI3KgpfsNXR0EFu8gNhd5Cc3/XNXCqwq6tKdoHM3MgR3rja5C3Ie2COBAJU3K9osnklDpgJeE8ZWZ8l2hIihtOL6CKxeFLLMRn9HgYXyo697SbUp8BU0n5t5dDcS84G5F/xWwEZQi+TCaCmWewc0G6fByR/UamJ7SS6pO1X8QS1g0jDmMpPLRNxyrSOlniz88H9KGW1afyMBq+d2ShpDBvg9zIK6CpaE2P164ecAFcdrbZTB0w3R9vNbxPSAVpcOuiROkP4vPwRqtukEZSboilcuQzD7oFbMSfFR4cc6d+/7xnVFMrKfqT+rYpAO0fWiuDq6ZPn8U3pDnKo2cdUajoNkzOgP+oq+5UQTILZHOdui3M="
+        - secure: "XjvNvodG7ZirmphWtXz9QMOFH2Ohf9DL5s45N33N6MZqUP5ewbi+wA7IiUZMh691XsbBmp+l/mwUn21nbay4WNjIZZnmE9CA/RXodgToTVUT4LuNVfJTqLRzztVRuUD9oJvsy0pEjrRDNxDDfzPQ8+P/Kh03UO5+luVvmPYwytI8uoyCLyvVBlwnSwWh3sDPs3P3574XK2NS8AnQxEcCiYM3pytjikoNLtZtAWRmVFPuzD5pycXGPAlV6QueDW39rq6dpRHOQk5zE/bYXrhStyb5i/HNMOS4Ix32Fd3S7DPSOMGp0fG5la0uTYP9YItuwjHayxUjdq3h8rc20RY7hXxYzKXQwxXYd/f3YXR8lGT+i/Y0QPzG7X3qmIrAR/wt76T/nSLNGwsjL5pmjA7nlpMUTgJixGAFvV+LKijjIFP4/0QOhXOAfDtAXeBLpQASpHUiEzu5RE7K7rUzryeV6MgPKwjJu1dAMTXyhd9zlS+TG3JHfhZbkg9r2unGmGKCh3lSZtkTIj6/D/K1g688KXahwkkLynwU1pl+moZf8ioMPlkbLI58Or5cIl/x3enDFI1co1Aav0UeP5ODBhjJ1M/d0ejDb8RUn30q/oIN6D37Cdv5TyNFSO332p3V+AXxs+IDgZKjbEvgW/dL9i6u/AN9tNxO6ypMqMalnFip8ao="
 
       # Update Docker: we want some new docker build features
       install:
