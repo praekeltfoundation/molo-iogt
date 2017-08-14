@@ -1,0 +1,33 @@
+.heading--comment {
+  padding: 10px 15px;
+}
+.heading--profiles {
+  background: $victoria;
+  color: #fff;
+}
+.heading--search  {
+  font-size: $font-small;
+}
+.comment__description {
+  padding: 0 40px 30px 15px;
+}
+.comment__post-message {
+  .comment__description {
+    padding: 0 40px 30px 0;
+  }
+}
+@each $name, $color in $color_list {
+  .heading.heading--#{$name} {
+    color: $color;
+  }
+  .heading--large.heading--#{$name} {
+    color: #fff;
+    background: $color;
+  }
+  .polls--#{$name} {
+    .heading--polls {
+      color: $color;
+      border-top: 2px solid $color;
+    }
+  }
+}

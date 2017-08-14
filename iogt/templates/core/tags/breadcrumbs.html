@@ -1,0 +1,20 @@
+
+{% load wagtailcore_tags i18n %}
+{% if ancestors %}
+  <li class="section-list-nav__item">
+    <a href="/" class="section-list-nav__link">{% trans "Home" %}</a>
+  </li>
+  {% for ancestor in ancestors %}
+  <li class="section-list-nav__item {% if forloop.last %}section-list-nav__item--current{% endif %}">
+    {% if forloop.last %}
+      <span class="section-list-nav__link">
+        {{ ancestor }}
+      </span>
+    {% else %}
+      <a href="{% pageurl ancestor %}" class="section-list-nav__link">
+        {{ ancestor }}
+      </a>
+    {% endif %}
+  </li>
+  {% endfor %}
+{% endif %}

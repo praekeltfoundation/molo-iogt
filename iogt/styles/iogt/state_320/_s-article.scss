@@ -1,0 +1,103 @@
+.article-list__image,
+.article__image {
+  margin: 0 auto;
+}
+.article-list__image--small {
+  float: right;
+  padding: 10px 0 0 3px;
+  width: 40%;
+}
+.section-article-list__title {
+  padding: 7px 0;
+}
+.article-list__section ,
+.section-list__title--homepage {
+  padding: 5px 0;
+  overflow: hidden;
+}
+.article-list__item--hero  {
+  width: auto;
+  .article-list__image {
+    width: 100%;
+  }
+  .article-list__section,
+  .section-list__title--homepage {
+    padding: 10px 15px 0;
+    overflow: auto;
+  }
+}
+.article__content {
+  ol, .article-numbered-list {
+    padding: 0 15px;
+    counter-reset: li;
+    li, .article-numbered-list__item {
+      list-style-type: none;
+      content:counter(li);
+      padding: 10px 0;
+      &:before {
+        content: counter(li)'.';
+        counter-increment:li;
+        display: inline-block;
+        font-size: $font-x-large;
+        padding: 0 10px 0 0;
+      }
+    }
+  }
+}
+//Social Media
+.call-to-action__item-share {
+  width: 65%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  .call-to-action__item-share-img {
+    border-right-width: 1px;
+    border-right-style: solid;
+  }
+}
+.call-to-action__item-share-title {
+  color: #fff;
+  text-decoration: none;
+}
+.call-to-action__item-share--facebook {
+  background: #3B5998;
+  border-color: #2C4376;
+  .call-to-action__item-share-img {
+    border-right-color: #2C4376;
+  }
+}
+.call-to-action__item-share--twitter {
+  background: #55ACEE;
+  border-color: #4086BB;
+  .call-to-action__item-share-img {
+    border-right-color: #4086BB;
+  }
+}
+.call-to-action__item-share--footer {
+  border-color: #a3a3a3;
+  .call-to-action__item-share-title {
+    margin: 4% 0;
+  }
+  .call-to-action__item-share-img {
+    border-right-color: #a3a3a3;
+    display: inline-block;
+    padding-right: 5px;
+  }
+}
+//Please check status
+.call-to-action__item-share-with-image:after {
+  margin-top: 3%;
+}
+@each $name, $color in $color_list {
+  .article--#{$name} {
+    ol li:before,
+    .article-numbered-list__item:before {
+        color: $color;
+    }
+  }
+  .article-list__container--#{$name} {
+    .article-list__section {
+      color: $color;
+    }
+  }
+}

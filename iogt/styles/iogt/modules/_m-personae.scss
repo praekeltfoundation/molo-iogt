@@ -1,0 +1,33 @@
+.personae {
+  background: $victoria;
+  color: #fff;
+  overflow: auto;
+  a {
+    color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+}
+.personae-list__item {
+  border-top: 1px solid #60579C;
+  padding: 10px 15px;
+  word-wrap: break-all;
+  &:last-child {
+    border-bottom: 1px solid #60579C;
+  }
+  .personae__image {
+    display: none;
+  }
+}
+.personae__title {
+  text-transform: uppercase;
+}
+.personae-nav {
+  padding-left: 35px;
+  display: block;
+  margin-top: 15px;
+}
+.personae__skip {
+  display: block;
+  padding: 15px;
+}

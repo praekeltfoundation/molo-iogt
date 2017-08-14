@@ -1,0 +1,48 @@
+.polls {
+  .call-to-action__nav-item--back-home {
+    padding: 10px;
+  }
+}
+.call-to-action__nav-item--poll-login,
+.polls__form input[type="submit"] {
+  background: $robin_egg_blue;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+}
+.call-to-action--polls {
+  .call-to-action__nav-item--poll-login,
+  .polls__form input[type="submit"] {
+    background: $robin_egg_blue;
+    color: #fff;
+  }
+}
+.choice-result__percent-bar {
+  background: $robin_egg_blue;
+  display: block;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+@each $name, $color in $color_list {
+	.polls--#{$name} {
+    .polls__results--title,
+    .poll__question-title {
+      color: $color;
+    }
+    .call-to-action__nav-item--poll-login,
+    .polls__form input[type="submit"] {
+      background: $color;
+    }
+  }
+  .polls-results--#{$name} {
+  	.choice-result__percent-bar {
+      background: $color;
+    }
+    .choice-result__percent,
+    .polls__results--title,
+    .call-to-action__nav-item--back-home {
+      color: $color;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.pagination {
+  padding: 5px 15px 35px;
+  position: relative;
+  &__link {
+    display: inline-block;
+    &:hover {color: #666;}
+    &--previous {float: left;}
+    &--next {float: right;}
+    &--arrow {display: inline-block;}
+    &--current {
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      position: absolute;
+      width: 40%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  //Numbered Pagination
+  &--numbered {padding: 10px 15px 40px;}
+  &__previous-anchor {float: left;}
+  &__next-anchor {float:right;}
+  &__pages-numbers {
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@each $name, $color in $color_list {
+  .section--#{$name} {
+    .pagination {
+      &__next-anchor,
+      &__previous-anchor
+      &__pages-numbers a,
+      &__current {
+        color: $color;
+      }
+    }
+  }
+  .pagination--#{$name}  {
+    .pagination__link--current {
+      color: $color;
+    }
+  }
+}

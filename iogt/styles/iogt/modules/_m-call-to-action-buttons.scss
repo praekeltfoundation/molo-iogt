@@ -1,0 +1,44 @@
+.call-to-action__nav-item {
+  color: $victoria;
+  text-decoration: underline;
+  font-weight: normal;
+}
+//Profiles
+.call-to-action--profile {
+  padding: 0 15px 15px;
+}
+.call-to-action--view-profile {
+  padding: 0;
+}
+.call-to-action__nav-item--challenge {
+  text-align: left;
+  color: #757575;
+  margin: 0;
+  text-decoration: none;
+  text-transform: inherit;
+  font-size: $font-x-medium;
+}
+.call-to-action__nav-item--login {
+  color: $victoria;
+  font-size: $font-small;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+//Comments
+.call-to-action__nav-item--response {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+//Poll
+.call-to-action__nav-item-show-results {
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+//Articles & General Pages
+.call-to-action__nav-item--back-home {
+  color: $victoria;
+  font-weight: bold;
+}

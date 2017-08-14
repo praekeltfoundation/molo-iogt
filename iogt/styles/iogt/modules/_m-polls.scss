@@ -1,0 +1,68 @@
+.polls {
+  label {
+    display: inline-block;
+    color: #757575;
+    cursor: pointer;
+    text-transform: none;
+    font-weight: normal;
+    font-size: $font-medium;
+    width: 100%;
+  }
+  input[type="radio"] {
+    margin: 0 10px 0 0;
+  }
+  .call-to-action__nav-item--back-home {
+    padding: 10px 15px;
+  }
+}
+.poll__question--title,
+.poll__question-title,
+.polls__title {
+  padding: 10px 15px 0;
+  font-size: $font-x-medium;
+  color: #000;
+}
+.polls__form {
+  padding: 0 15px;
+}
+.polls__choice-error {
+  padding: 10px 15px;
+}
+.call-to-action--polls {
+  .call-to-action__nav-item,
+  .call-to-action__nav-item--back-home {
+      color: $robin_egg_blue;
+      &:before {
+        font-size: $font-medium;
+      }
+  }
+}
+.call-to-action__nav-item--poll-login,
+.polls__form input[type="submit"] {
+  color: #000;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.polls--results {
+ border-top: 2px solid $robin_egg_blue;
+}
+.polls__results {
+  padding: 0 15px;
+}
+.polls__results--title {
+  padding: 10px 15px;
+  font-size: $font-medium;
+  text-transform: uppercase;
+  color: $robin_egg_blue;
+  font-weight: normal;
+}
+.polls-result-list__item {
+  padding: 10px 0;
+}
+.choice-result__title {
+  margin-top: 0;
+}
+.choice-result__percent {
+  font-size: $font-xx-large;
+  color: $robin_egg_blue;
+}

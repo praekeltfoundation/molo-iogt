@@ -88,7 +88,7 @@ INSTALLED_APPS = [
     'molo.polls',
     'djcelery',
     'django_cas_ng',
-    'compressor',
+    'compressor'
 ]
 
 COMMENTS_APP = 'molo.commenting'
@@ -107,6 +107,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
+    'molo.core.middleware.MoloGoogleAnalyticsMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
 
     'molo.core.middleware.AdminLocaleMiddleware',
@@ -114,7 +115,6 @@ MIDDLEWARE_CLASSES = [
     'molo.usermetadata.middleware.PersonaMiddleware',
 
     'molo.core.middleware.NoScriptGASessionMiddleware',
-    'molo.core.middleware.MoloGoogleAnalyticsMiddleware'
 ]
 
 # Template configuration
@@ -226,6 +226,9 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('ay', 'Aymara'),
     ('qu', 'Quechua'),
     ('rn', 'Kirundi'),
+    ('pt-mz', 'Portuguese Mozambique'),
+    ('lg', 'Ganda'),
+    ('si', 'Sinhalese'),
 ]
 
 EXTRA_LANG_INFO = {
@@ -421,6 +424,24 @@ EXTRA_LANG_INFO = {
         'name': 'Kirundi',
         'name_local': 'Ikirundi'
     },
+    'pt-mz': {
+        'bidi': False,
+        'code': 'pt-mz',
+        'name': 'Portuguese Mozambique',
+        'name_local': 'Portuguese Moçambique'
+    },
+    'lg': {
+        'bidi': False,
+        'code': 'lg',
+        'name': 'Ganda',
+        'name_local': 'Luganda'
+    },
+    'si': {
+        'bidi': False,
+        'code': 'si',
+        'name': 'Sinhalese',
+        'name_local': 'සිංහල'
+    },
 }
 
 LANG_INFO = (
@@ -448,7 +469,6 @@ _("December")
 _("Add anonymously")
 
 _("This field is required")
-_("ARE YOU A")
 _("Ensure this value has at least 4 characters (it has 1)")
 _("Type your comment here")
 

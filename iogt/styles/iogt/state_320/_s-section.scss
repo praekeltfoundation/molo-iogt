@@ -1,0 +1,79 @@
+.section__image img {
+   width: auto;
+   height: auto;
+ }
+.section__title-heading {
+  padding: 15px 15px 10px;
+}
+.section__description {
+  padding: 0 15px 10px;
+}
+.section__title {
+  color: #757575;
+}
+.sub-section-list__title {
+  &:after {
+    padding: 0 10px 0;
+    @media only screen and (min-width: 320px) {
+      content: ">";
+    }
+    @media only screen and (min-width: 490px) {
+      content: "❯";
+    }
+  }
+}
+.section-list-nav {
+  padding: 7px 15px;
+}
+.section-list-nav__item {
+  .section-list-nav__link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+.section-list__more {
+  text-decoration: none;
+  text-align: right;
+  &:after {
+    padding: 0 0 0 10px;
+    @media only screen and (min-width: 320px) {
+      content: ">";
+    }
+    @media only screen and (min-width: 490px) {
+      content: "❯";
+    }
+  }
+}
+@each $name, $color in $color_list {
+  .section--#{$name} {
+    .section__title,
+    .section__info,
+    .section__subtitle {
+      background: $color;
+      color: #fff;
+    }
+    .sub-section-list__title:after {
+      color: $color;
+    }
+  }
+  .section-list--#{$name} {
+    .section-list__title--homepage,
+    .section-list__title a,
+    .section-list__more {
+      color: $color;
+    }
+    .article-list__item--hero {
+      border-top-color: $color;
+    }
+  }
+  .section-list-nav--#{$name} {
+    border-top: 1px solid darken($color, 10%);
+    background: $color;
+    color: #fff;
+    .section-list-nav__item a,
+    .section-list-nav__item--arrow-right:after {
+      color: #fff;
+    }
+  }
+
+}

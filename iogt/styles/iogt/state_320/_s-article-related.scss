@@ -1,0 +1,35 @@
+.promoted-article-list__anchor-grid {
+  float: right;
+  width: 30%;
+  margin: 0 15px 0 0;
+  .article__image-thumbnail {
+    max-height: 150px;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0;
+  }
+}
+.related-articles-up-next .call-to-action__nav-item-text {
+  text-align: right;
+    &:after {
+    display: inline-block;
+    margin-left: 5px;
+    @media only screen and (min-width: 320px) {
+      content: ">";
+    }
+    @media only screen and (min-width: 490px) {
+      content: "❯";
+    }
+  }
+}
+.related-articles-recommended-list__content {
+  padding: 0 15px;
+}
+@each $name, $color in $color_list {
+  .related-articles--#{$name} {
+    .related-articles-up-next .call-to-action__nav-item-text {color: $color;}
+  }
+  .related-articles__recommended--#{$name}  {
+    color: $color;
+  }
+}
