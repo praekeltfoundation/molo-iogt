@@ -1,4 +1,4 @@
-FROM praekeltfoundation/molo-bootstrap:4.4.9-onbuild
+FROM praekeltfoundation/molo-bootstrap:4.4.15-onbuild
 
 ENV DJANGO_SETTINGS_MODULE=iogt.settings.docker \
     CELERY_APP=iogt \
