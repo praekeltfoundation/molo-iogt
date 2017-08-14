@@ -3,16 +3,60 @@ language: python
 python:
   - "2.7"
 cache:
-  directories:
-    - $HOME/.pip-cache/
+  - pip
+before_install:
+  - pip install --upgrade pip
 install:
-  - pip install --upgrade pip --cache-dir $HOME/.pip-cache/
-  - pip install coveralls --cache-dir $HOME/.pip-cache/
-  - pip install flake8 --cache-dir $HOME/.pip-cache/
-  - pip install -r requirements-dev.txt --cache-dir $HOME/.pip-cache/
-  - pip install -e . --cache-dir $HOME/.pip-cache/
+  - pip install -e .
+  - pip install -r requirements-dev.txt
+  - pip install coveralls
 script:
-  - flake8 iogt
+  - flake8
+  # Ensure plural expressions are not allowed in PO files
+  # Disabled: need to find a better way of doing this
+  #- grep -Rq "plural=EXPRESSION" --include \*.po locale/
   - py.test
 after_success:
   - coveralls
+
+
+jobs:
+  include:
+    - stage: test
+    - stage: docker
+      python: "2.7"
+      sudo: required
+      dist: trusty
+      services: [docker]
+      env:
+        - IMAGE_NAME=praekeltfoundation/molo-iogt
+        - REGISTRY_USER=praekeltorgdeploy
+        - secure: "Xyv4c5S8UcULlJgkOvG3L4BeOJ5I33/yYWRGuSDjf3Fc9h+9CRYESDC/uwOLSnV7JItpUN5PoVOp1bYse0w+6M9AJL/yBB0VCSci1H0dnhewvYeVWKq1aIiuDHBzhTubbAexOG3pPfYrcuooO/j2T1tC4dnUNiLhkzYRUMHfFmyyed+WciznUdMYzUQM8T9pPe0O7CgHvH61+4ScLlh16EFVHOxRYIxPCUq7/BHhhiSkQ8ssAsoXQWZUe+336hHQczo2Zfg0yLpA/LpB5cqhAxsgouEM+mECETjJFxuG2y3FUcoWYCsPHiuPi3L4FYJ79a9INt2uKDZ6mPJB4Wt6J6iJiyyVkgedDydx7bUrpWyBsIXYvcwGwfUSdcqq6lYDXSXRhI/R8SpdurmQCrkhDsOqJw6wOvrOikqa/waItoH+wps5h7/5gIEnRbvS44L1Ydf5yFtvbeEUcEbjGpCuIYLQaB9cCSpNuZXt6CpVbLL0hPEROcO2sxKm7L+lOnwK6X8Tzg6YBuInMySG/wEMM5LD113ScR/65/eUs7fW+5VUlZsBxnw76YOTly9nIntfXVIUxtFX5Uk8iKrtC1HhmvhQmDynlqiX3TZsd9q5EvXwarqat2KcKcAwUvZWr4aBoResPNuvsIKXPLPcWnIm5/LU+2PHF+zyjr98pS8ZtVA="
+
+      # Update Docker: we want some new docker build features
+      install:
+        - sudo apt-get update
+        - sudo apt-get install -y -o Dpkg::Options::="--force-confold" docker-ce
+
+      before_script:
+        - molo_version="$(sed -nE 's/^molo\.core==(.*)$/\1/p' requirements.txt)"
+        - docker pull "$IMAGE_NAME" || true
+      script:
+        - docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" --build-arg MOLO_VERSION="$molo_version" .
+
+      before_deploy:
+        - pip install docker-ci-deploy==0.3.0
+        - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
+      deploy:
+        - provider: script
+          script: dcd --version "$(git rev-parse --short HEAD)" --version-latest "$IMAGE_NAME"
+          on:
+            branch: develop
+        - provider: script
+          script: dcd --tag "$TRAVIS_TAG" -- "$IMAGE_NAME"
+          on:
+            tags: true
+
+      # Built steps inherited from the default stage that we don't want
+      before_install: ignore
+      after_success: []
