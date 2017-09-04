@@ -88,7 +88,8 @@ INSTALLED_APPS = [
     'molo.polls',
     'djcelery',
     'django_cas_ng',
-    'compressor'
+    'compressor',
+    'storages'
 ]
 
 COMMENTS_APP = 'molo.commenting'
@@ -554,3 +555,12 @@ CSRF_FAILURE_VIEW = 'molo.core.views.csrf_failure'
 
 FREE_BASICS_URL_FOR_CSRF_MESSAGE = environ.get(
     'FREE_BASICS_URL_FOR_CSRF_MESSAGE', '')
+
+AWS_STORAGE_BUCKET_NAME = environ.get('AWS_STORAGE_BUCKET_NAME', '')
+AWS_ACCESS_KEY_ID = environ.get('AWS_ACCESS_KEY_ID', '')
+AWS_SECRET_ACCESS_KEY = environ.get('AWS_SECRET_ACCESS_KEY', '')
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+if AWS_STORAGE_BUCKET_NAME and AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
+    MEDIA_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
