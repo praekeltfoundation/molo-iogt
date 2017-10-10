@@ -1,5 +1,8 @@
 .profiles {
   padding: 0 15px 10px;
+  .heading--subtitle {
+      padding: 10px 0;
+  }
   p {
     display: inline;
     font-size: $font-small;
@@ -25,10 +28,11 @@
 }
 .profiles__terms {
   display: inline-block;
-  color: #666;
+  color: $victoria;
   font-size: $font-small;
   text-transform: inherit;
   font-weight: normal;
+  text-decoration: underline;
 }
 .profiles__nav-item {
   color: $victoria;
