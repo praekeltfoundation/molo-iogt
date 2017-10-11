@@ -49,5 +49,7 @@ docs/_build
 media/
 
 node_modules/
+package-lock.json
 
 celerybeat-schedule
+celerybeat-schedule.db
