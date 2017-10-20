@@ -68,3 +68,10 @@ label.profiles__terms {
   color: red;
   font-size: $font-small;
 }
+.required:after {
+  content: "*";
+  color: red;
+  font-size: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
+}

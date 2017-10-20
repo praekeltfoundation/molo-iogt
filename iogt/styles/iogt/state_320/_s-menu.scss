@@ -1,10 +1,6 @@
 .logo {
   display: inline;
 }
-#profile_icon,
-#join_icon { background: url('/static/img/profile_icon.png') no-repeat center center; }
-#menu_icon { background: url('/static/img/burger_icon.png ') no-repeat center center; }
-#search_icon { background: url('/static/img/search_icon_white.png') no-repeat center center; }
 .menu-list__item {
   position: relative;
   a, .footer-links {
@@ -23,12 +19,10 @@
   }
 }
 .header__nav-item {
-  padding-right: 23px;
   text-decoration: none;
-  display: inline-block;
-  text-indent: -999em;
-  width: 21px;
-  height: 23px;
+  &:last-child {
+    padding-right: 0;
+  }
 }
 .menu-links {
   display: inline-block;
