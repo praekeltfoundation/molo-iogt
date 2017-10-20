@@ -50,7 +50,7 @@ gulp.task('styles:dev', function() {
 
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('iogt/styles/iogt/*.scss', ['styles']);
+    gulp.watch('iogt/styles/iogt/**/*.scss', ['styles']);
 });
 
 gulp.task('styles', ['styles:dev', 'styles:prd']);

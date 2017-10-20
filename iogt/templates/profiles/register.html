@@ -18,7 +18,7 @@
   <form method="post" action="{% url "molo.profiles:user_register" %}" class="profiles__form">
   {% csrf_token %}
     <fieldset>
-      <label for="id_username">{% trans "Choose a username" %}</label>
+      <label for="id_username" class="required">{% trans "Choose a username" %}</label>
       {{ form.username.errors}}
       {{ form.username }}
       <span class="input-hint">{% trans "This name you will use to log in and won't appear to other users. Only you will see this." %}</span>
@@ -100,7 +100,7 @@
     {% endif %}
 
     <fieldset>
-      <label for="id_password">{% trans "Choose a 4-digit pin" %}</label>
+      <label for="id_password" class="required">{% trans "Choose a 4-digit pin" %}</label>
       {{ form.password.errors}}
       {{ form.password }}
       <span class="input-hint">({% trans "e.g." %} 2086)</span>
