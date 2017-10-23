@@ -1,5 +1,8 @@
 .logo {
   display: inline;
+  img {
+    margin-bottom: 0;
+  }
 }
 .menu-list__item {
   position: relative;
@@ -20,14 +23,12 @@
 }
 .header__nav-item {
   text-decoration: none;
-  &:last-child {
-    padding-right: 0;
-  }
+  padding: 0 0 0 10px;
 }
 .menu-links {
   display: inline-block;
-  float: right;
-  margin: 5% auto 0;
+  text-align: right;
+  width: 58%;
 }
 .menu-list__item--icon {
   display: inline-block;
