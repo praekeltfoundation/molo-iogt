@@ -39,8 +39,7 @@
         {% block extra_css %}{% endblock %}
         <script type="text/javascript">
            var CutsTheMustard = 'querySelector' in document && 'localStorage' in window && 'addEventListener' in window;
-           var LargeScreen = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) >= 200);
-
+           var LargeScreen = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) >= 240);
           var operaMiniSingleView = '{% spaceless %}
           {% compress css %}
                <link rel="stylesheet" type="text/css" media="handheld" href="{{ STATIC_URL }}css/{{ ENV }}/opera-mini_single-view.css">

@@ -1,68 +1,13 @@
-@import "../variables/_variables";
-@media only screen and (min-width: 320px) {
-  @import "_s-call-to-action-buttons";
-  @import "_s-article";
-  @import "_s-article-related";
-  @import "_s-comments";
-  @import "_s-heading";
-  @import "_s-menu";
-  @import "_s-pagination";
-  @import "_s-personae";
-  @import "_s-polls";
-  @import "_s-profiles";
-  @import "_s-search";
-  @import "_s-section";
-  @import "_s-survey";
-  @import "_s-footer";
-  @media only screen and (min-width: 600px) {
-    html { background: #333; }
+
+@media only screen and (min-width: 600px) {
+html { background: #333; }
     body {
       max-width: 320px;
       margin: 0 auto;
     }
-  }
-  html, body,
-  h1, h2, h3, h4, h5, h6,
-  input, select, textarea {
-    font-family: 'Lato', sans-serif;
-  }
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="search"] {
-    border-radius: 4px;
-  }
-  select {
-    width: 32%;
-    display: inline-block;
-  }
-  textarea {
-    padding: 5px;
-    width: 95%;
-  }
-  .call-to-action__nav-item,
-  input[type="submit"] {
-    white-space: nowrap;
-    padding: 10px 0;
-  }
-  input[type="submit"] {
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 0;
-  }
- .select-language {
-    text-decoration: none;
-    float: right;
-  }
 }
-.profiles__form {
-  input[type=submit] {
-    background: $victoria;
-    color: #fff;
-    margin: 10px 0;
-    padding: 10px 0;
-    text-align: center;
-    text-decoration: none;
-  }
+html, body,
+h1, h2, h3, h4, h5, h6,
+input, select, textarea {
+    font-family: 'Lato', sans-serif;
 }
