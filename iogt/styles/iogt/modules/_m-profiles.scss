@@ -14,6 +14,12 @@
       padding: 0 5px;
       text-decoration: underline;
   }
+    .call-to-action__nav-item,
+    input[type="submit"] {
+        color: #fff;
+        padding: 10px 0;
+        text-decoration: none;
+    }
   label {
     display: inline;
     padding: 0 5px 5px 0;
@@ -25,6 +31,7 @@
   .call-to-action--view-profile {
     padding: 0;
   }
+
 }
 .profiles--csrf {
   p {
