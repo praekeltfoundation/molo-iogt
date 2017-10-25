@@ -54,4 +54,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('styles', ['styles:dev', 'styles:prd']);
-gulp.task('default', ['styles','watch']);
+gulp.task('default', ['styles']);
