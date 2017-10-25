@@ -23,12 +23,16 @@
 }
 .header__nav-item {
   text-decoration: none;
-  padding: 0 0 0 10px;
+   @media only screen and (min-width: 320px) {
+       padding: 0 0 0 10px;
+   }
 }
 .menu-links {
   display: inline-block;
-  text-align: right;
-  width: 58%;
+  @media only screen and (min-width: 320px) {
+      text-align: right;
+      width: 58%;
+  }
 }
 .menu-list__item--icon {
   display: inline-block;
