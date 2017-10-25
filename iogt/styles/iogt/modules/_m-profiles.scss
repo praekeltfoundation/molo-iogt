@@ -8,6 +8,12 @@
     font-size: $font-small;
     padding: 5px 0;
   }
+  a {
+      text-decoration: none;
+      color: $victoria;
+      padding: 0 5px;
+      text-decoration: underline;
+  }
   label {
     display: inline;
     padding: 0 5px 5px 0;
@@ -52,7 +58,7 @@ label.profiles__terms {
   font-weight: bold;
 }
 .profiles__forgotten-password {
-  color: #757575;
+  color: $victoria;
   font-weight: bold;
   text-transform: uppercase;
   font-size: $font-small;

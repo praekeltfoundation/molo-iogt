@@ -1,7 +1,12 @@
-.section__image img {
-   width: auto;
-   height: auto;
- }
+.section__image {
+    @media only screen and (min-width: 360px) {
+        img {
+           width: auto;
+           height: auto;
+         }
+    }
+
+}
 .section__title-heading {
   padding: 15px 15px 10px;
 }

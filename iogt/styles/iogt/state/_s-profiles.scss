@@ -1,0 +1,46 @@
+.profiles__forgotten-password {
+  font-size: $font-x-small;
+}
+.call-to-action--profile {
+  background: $victoria;
+  color: #fff;
+}
+.call-to-action--view-profile {
+  background: transparent;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"] {
+  border-radius: 4px;
+}
+select {
+  width: 32%;
+  display: inline-block;
+}
+textarea {
+  padding: 5px;
+  width: 95%;
+}
+.call-to-action__nav-item,
+input[type="submit"] {
+  white-space: nowrap;
+  padding: 10px 0;
+}
+input[type="submit"] {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.profiles__form {
+    input[type=submit] {
+      background: $victoria;
+      color: #fff;
+      margin: 10px 0;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+    }
+}

@@ -1,6 +1,10 @@
-.section__image img {
-  width: 100%;
-  height: auto;
+.section__image {
+    margin: 0 auto;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
 }
 .section__title-heading {
   padding: 5px 10px 10px;
