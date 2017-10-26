@@ -136,7 +136,7 @@
         </a>
         <div class="menu-links">
         {% if not user.is_authenticated %}
-        <a id="join_icon"href="{% url 'molo.profiles:user_register' %}" class="header__nav-item">{% trans "Login" %}</a>
+        <a id="join_icon"href="{% url 'molo.profiles:user_register' %}" class="header__nav-item">{% trans "Log In" %}</a>
         {% else %}
         <a id="profile_icon" href="{% url 'molo.profiles:view_my_profile' %}" class="header__nav-item">{% trans "Profile" %}</a>
         {% endif %}
