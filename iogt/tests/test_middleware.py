@@ -28,7 +28,7 @@ class TestMiddlewareUtils(TestCase):
         self.assertEqual(clean_path('admin'), ['admin'])
         self.assertEqual(clean_path('admin/login'), ['admin', 'login'])
         self.assertEqual(clean_path('/admin/login/'), ['admin', 'login'])
-        self.assertEqual(clean_path('admin/login'), ['admin', 'login'])
+        self.assertEqual(clean_path('admin/login/'), ['admin', 'login'])
         self.assertEqual(clean_path('/admin/login'), ['admin', 'login'])
         self.assertEqual(clean_path('/admin/login/extra'),
                          ['admin', 'login', 'extra'])
