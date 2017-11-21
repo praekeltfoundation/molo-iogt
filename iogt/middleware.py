@@ -11,7 +11,8 @@ def clean_path(path):
     if path == u'/':
         return [u'/']
     else:
-        return filter(lambda a: a != '', path.split('/'))
+        return [segment for segment
+                in path.split(u'/') if segment]
 
 
 def clean_paths(paths):
