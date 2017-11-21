@@ -67,6 +67,7 @@ COMPRESS_OFFLINE_CONTEXT = {
     'ENV': ENV,
 }
 
+HTTPS_PATHS = ['admin', 'profiles/register/', 'profiles/login/']
 
 try:
     from .local import *  # noqa
