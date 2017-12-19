@@ -15,7 +15,7 @@
         {% csrf_token %}
         {% for field in form %}
           <fieldset>
-            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+            <label for="{{ field.id_for_label }}"{% if field.field.required %}class="required"{% endif %}>{{ field.label }}</label>
             <span class="surveys__helptext">{{ field.help_text }}</span>
             {{ field }}
             {% if field.errors %}

@@ -1,71 +1,71 @@
 .surveys {
-  background: #F1F1F1;
+  background: $washed_gray;
   overflow: auto;
-  .call-to-action__nav-item--back-home {
-    color: $roman;
-    padding: 0 10px 10px;
-    margin: 0;
-  }
-  .call-to-action__nav-item--surveys {
-    padding: 10px 15px;
-    margin: 10px 15px;
-    width: auto;
-  }
   input:focus {
     border: 1px solid $roman;
   }
-}
-.surveys__title {
-  color: $roman;
-  border-top: 2px solid $roman;
-}
-.surveys__title  {
-  padding: 5px 15px;
-  font-size: $font-x-large;
-}
-.surveys__thank-you {
-  padding: 10px 16px;
-  font-size: $font-x-large;
-}
-.surveys__intro {
-  padding: 0 10px;
-  font-weight: normal;
-}
-.surveys__results {
-  padding: 5px 10px;
-  margin: 15px 0;
-  border-top: 1px solid #DEDEDE;
-  border-bottom: 1px solid #DEDEDE;
-}
-.surveys__helptext {
-  color: #999;
-  font-size: $font-x-small;
-  padding-bottom: 10px;
-  display: block;
-}
-.surveys__answer {
-  background: #DEDEDE;
-  padding: 10px 5px;
-  margin: 10px 5px;
-  word-wrap: break-all;
-  span {
+  &__title {
+    color: $roman;
+    border-top: 2px solid $roman;
+    padding: 5px 15px;
+    font-size: $font-x-large;
+  }
+  &__thank-you {
+    padding: 10px 16px;
+    font-size: $font-x-large;
+  }
+  &__intro {
+    padding: 0 15px;
+    font-weight: normal;
+  }
+  &__results {
+    padding: 5px 10px;
+    margin: 15px 0;
+    border-top: 1px solid $mineral_gray ;
+    border-bottom: 1px solid $mineral_gray ;
+  }
+  &__helptext {
+    color: #999;
+    font-size: $font-x-small;
+    padding-bottom: 10px;
     display: block;
   }
-}
-.surveys__form {
-  padding: 0 10px;
-  label {
-    color: #000;
-    padding: 0;
+  &__answer {
+    background: $mineral_gray;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    word-wrap: break-all;
+    span {
+      display: block;
+    }
   }
-  input[type="submit"] {
-    width: auto;
+  &__form {
+    padding: 0 10px;
+    label {
+      color: #000;
+      padding: 0;
+    }
+    input[type="submit"] {
+      width: auto;
+    }
+    input[type="submit"],
+    .call-to-action__nav-item--surveys {
+      color: #000;
+      text-decoration: underline;
+      font-weight: bold;
+    }
   }
-  input[type="submit"],
-  .call-to-action__nav-item--surveys {
-    color: #000;
-    text-decoration: underline;
-    font-weight: bold;
+  .call-to-action {
+    &__nav-item--back-home {
+      color: $roman;
+      padding: 0 10px 10px;
+      margin: 0;
+    }
+    &__nav-item--surveys {
+      padding: 10px 15px;
+      margin: 10px 15px;
+      width: auto;
+    }
   }
 }
 .error--surveys {
