@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "iogt =========================",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "marked": "0.3.9"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
