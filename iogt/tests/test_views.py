@@ -54,7 +54,7 @@ class ViewsTestCase(TestCase, MoloTestCaseMixin):
         get the status of the queues
         """
 
-        response = self.client.get(reverse('health_iogt'))
+        response = self.client.get(reverse('health'))
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
@@ -73,7 +73,7 @@ class ViewsTestCase(TestCase, MoloTestCaseMixin):
             resp = requests.Response()
             resp.status = status.HTTP_200_OK
             req.return_value = resp, details.encode()
-            response = self.client.get(reverse('health_iogt'))
+            response = self.client.get(reverse('health'))
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
@@ -92,7 +92,7 @@ class ViewsTestCase(TestCase, MoloTestCaseMixin):
             resp = requests.Response()
             resp.status = status.HTTP_200_OK
             req.return_value = resp, details.encode()
-            response = self.client.get(reverse('health_iogt'))
+            response = self.client.get(reverse('health'))
 
         self.assertEqual(response.status_code,
                          status.HTTP_500_INTERNAL_SERVER_ERROR)
