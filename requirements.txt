@@ -19,3 +19,4 @@ django-google-analytics-app==2.1.6
 Unidecode==0.04.16
 django-storages
 boto
+pyrabbit
