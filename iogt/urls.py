@@ -13,6 +13,8 @@ from wagtail.wagtailcore import urls as wagtail_urls
 from molo.profiles.views import RegistrationDone
 from molo.profiles.forms import DoneForm
 
+from . import views
+
 
 # implement CAS URLs in a production setting
 if settings.ENABLE_SSO:
@@ -67,6 +69,11 @@ urlpatterns += patterns(
     url(r'^robots\.txt$', TemplateView.as_view(
         template_name='robots.txt', content_type='text/plain')),
     url(r'^sitemap\.xml$', 'wagtail.contrib.wagtailsitemaps.views.sitemap'),
+    url(
+        r'^health_iogt/$',
+        views.health_iogt,
+        name='health_iogt'
+    ),
     url(r'', include('molo.core.urls')),
     url(r'', include(wagtail_urls)),
 )
