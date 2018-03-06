@@ -48,7 +48,6 @@ class ViewsTestCase(TestCase, MoloTestCaseMixin):
             'molo.commenting:molo-comments-report', args=(comment.pk,)))
         self.assertEqual(response['location'], '/cr/4/1/#c1')
 
-    @override_settings(RABBITMQ_MANAGEMENT_INTERFACE=None)
     def test_health_no_interface_set(self):
         """
         When there is no management interface configured it should not try and
@@ -59,6 +58,7 @@ class ViewsTestCase(TestCase, MoloTestCaseMixin):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
+    @override_settings(RABBITMQ_MANAGEMENT_INTERFACE='rabbitmq.com:15672')
     def test_health_good(self):
         """
         If there is a management interface configured it should check the
@@ -77,6 +77,7 @@ class ViewsTestCase(TestCase, MoloTestCaseMixin):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
+    @override_settings(RABBITMQ_MANAGEMENT_INTERFACE='rabbitmq.com:15672')
     def test_health_stuck(self):
         """
         If there is a management interface configured it should check the

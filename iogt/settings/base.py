@@ -533,6 +533,7 @@ GOOGLE_ANALYTICS = {}
 GOOGLE_ANALYTICS_IGNORE_PATH = [
     # health check used by marathon
     '/health/',
+    '/health_iogt/',
     # admin interfaces for wagtail and django
     '/admin/', '/django-admin/',
     # Universal Core content import URL
