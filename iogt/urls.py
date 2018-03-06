@@ -70,7 +70,7 @@ urlpatterns += patterns(
         template_name='robots.txt', content_type='text/plain')),
     url(r'^sitemap\.xml$', 'wagtail.contrib.wagtailsitemaps.views.sitemap'),
     url(
-        r'^health_iogt/$',
+        r'^health/$',
         views.health_iogt,
         name='health_iogt'
     ),

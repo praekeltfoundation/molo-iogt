@@ -3,3 +3,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /django-admin/
 Disallow: /health/
+Disallow: /health_iogt/
