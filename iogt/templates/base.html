@@ -8,7 +8,8 @@
         <meta charset="utf-8" />
         <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="{% if self.social_media_description %}{{ self.social_media_description }}{% else %}{{ self.subtitle }}{% endif %}" />
+        {% trans "Internet of Good Things (IoGT) is a set of free, mobile-ready web-based resources and applications that bring good to your life by helping you and your community access educational and lifesaving information." as description %}
+        <meta name="description" content="{% if self.social_media_description %}{{ self.social_media_description }}{% elif self.subtitle %}{{ self.subtitle }}{% elif self.search_description %}{{self.search_description}}{% else %}{{ description }}{% endif %}" />
         <meta name="keywords" content="{% if self.specific.metadata_tags %}{{self.specific.metadata_tags.all|join:','}}{% endif %}" />
         <meta name="twitter:card" content="summary"/>
         {% image self.social_media_image height-200 as tmp_photo %}
@@ -16,7 +17,7 @@
           {% image self.image height-200 as article_photo %}
         {% endif %}
         <meta property="og:title" content= "{% if self.social_media_title %}{{ self.social_media_title }}{% elif self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}"/>
-        <meta property="og:description" content="{% if self.social_media_description %}{{ self.social_media_description }}{% else %}{{ self.subtitle }}{% endif %}"/>
+        <meta property="og:description" content="{% if self.social_media_description %}{{ self.social_media_description }}{% elif self.subtitle %}{{ self.subtitle }}{% else %}{{ description }}{% endif %}"/>
         <meta property="og:url" content="{{ request.build_absolute_uri }}" />
         <meta property="og:image" content="{% if self.social_media_image %}{{ tmp_photo.url }}{% elif article_photo.url %}{{ article_photo.url }}{% else %}{{request.site.root_url}}{% static 'img/iogt_share_1200.png' %}{% endif %}"/>
         <meta property="og:image:width" content="200" />
