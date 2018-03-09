@@ -78,6 +78,7 @@ class SSLRedirectMiddleware(object):
 class IogtMoloGoogleAnalyticsMiddleware(MoloGoogleAnalyticsMiddleware):
     """Uses GA IDs stored in Wagtail to track pageviews using celery"""
     def submit_tracking(self, account, request, response):
+        print 'submit_tracking'
         try:
             title = BeautifulSoup(
                 response.content, "html.parser"
@@ -100,7 +101,6 @@ class IogtMoloGoogleAnalyticsMiddleware(MoloGoogleAnalyticsMiddleware):
         # send user unique id and details after cookie's been set
         if hasattr(request, 'user') and hasattr(request.user, 'profile'):
             profile = request.user.profile
-            uuid = profile.uuid
 
             custom_params = {}
             if profile.gender:
@@ -111,8 +111,7 @@ class IogtMoloGoogleAnalyticsMiddleware(MoloGoogleAnalyticsMiddleware):
                 custom_params[age_key] = calculate_age(profile.date_of_birth)
 
             params = build_ga_params(
-                request, account, path=path,
-                referer=referer, title=title, user_id=uuid,
+                request, account, path=path, referer=referer, title=title,
                 custom_params=custom_params)
 
         send_ga_tracking.delay(params)

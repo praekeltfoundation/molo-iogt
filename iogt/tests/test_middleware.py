@@ -136,7 +136,6 @@ class TestGoogleAnalyticsMiddleware(TestCase, MoloTestCaseMixin):
         self.superuser = User.objects.create_superuser(
             username='testuser', password='password', email='test@email.com')
         profile = self.superuser.profile
-        profile.uuid = 'test-uuid'
         profile.gender = 'female'
         profile.date_of_birth = '2000-01-01'
         profile.save()
