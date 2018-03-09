@@ -1,3 +1,7 @@
+import datetime
+import responses
+import mock
+
 from django.test import (
     TestCase,
     Client,
@@ -5,11 +9,17 @@ from django.test import (
     override_settings,
 )
 
+from django.core.urlresolvers import reverse
+from django.contrib.sessions.middleware import SessionMiddleware
+from django.contrib.auth.models import User
+
 from molo.core.tests.base import MoloTestCaseMixin
-from molo.core.models import Main
+from molo.core.models import Main, SectionIndexPage
+from wagtail.wagtailsearch.backends import get_search_backend
 
 from iogt.middleware import (
     SSLRedirectMiddleware,
+    IogtMoloGoogleAnalyticsMiddleware,
     clean_path,
     clean_paths,
     is_match,
@@ -17,6 +27,10 @@ from iogt.middleware import (
 
 
 PERMANENT_REDIRECT_STATUS_CODE = 301
+
+
+def override_get_today():
+    return datetime.date(2017, 1, 1)
 
 
 class TestMiddlewareUtils(TestCase):
@@ -113,3 +127,69 @@ class TestSSLRedirectMiddleware(TestCase, MoloTestCaseMixin):
 
         self.assertEqual(response.status_code,
                          PERMANENT_REDIRECT_STATUS_CODE)
+
+
+class TestGoogleAnalyticsMiddleware(TestCase, MoloTestCaseMixin):
+
+    def setUp(self):
+        self.client = Client()
+        self.superuser = User.objects.create_superuser(
+            username='testuser', password='password', email='test@email.com')
+        profile = self.superuser.profile
+        profile.uuid = 'test-uuid'
+        profile.gender = 'female'
+        profile.date_of_birth = '2000-01-01'
+        profile.save()
+
+        # Creates Main language
+        self.mk_main()
+        main = Main.objects.all().first()
+        self.section_index = SectionIndexPage.objects.child_of(main).first()
+        self.english_section = self.mk_section(
+            self.section_index, title='English section')
+
+    def make_fake_request(self, url, headers={}):
+        """
+        We don't have any normal views, so we're creating fake
+        views using django's RequestFactory
+        """
+        rf = RequestFactory()
+        request = rf.get(url, **headers)
+        session_middleware = SessionMiddleware()
+        session_middleware.process_request(request)
+        request.session.save()
+        request.user = self.superuser
+        return request
+
+    @responses.activate
+    @mock.patch('iogt.middleware.get_today', override_get_today)
+    @mock.patch("google_analytics.tasks.send_ga_tracking.delay")
+    def test_ga_middleware(self, mock_method):
+        """
+        When a url is request the path that goes to GA must include the gender
+        and age if available.
+        """
+
+        self.backend = get_search_backend('default')
+        self.backend.reset_index()
+        self.mk_articles(self.english_section, count=2)
+        self.backend.refresh_index()
+
+        response = self.client.get(reverse('search'), {
+            'q': 'Test'
+        })
+        headers = {'HTTP_X_IORG_FBS_UIP': '100.100.200.10'}
+        request = self.make_fake_request(
+            '/search/?q=Test', headers)
+
+        middleware = IogtMoloGoogleAnalyticsMiddleware()
+        account = ''
+        response = middleware.submit_tracking(account, request, response)
+
+        mock_method.assert_called()
+
+        args, kwargs = mock_method.call_args_list[0]
+        url = args[0]['utm_url']
+
+        self.assertTrue('age=17' in url)
+        self.assertTrue('gender=female' in url)

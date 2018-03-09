@@ -109,7 +109,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
-    'molo.core.middleware.MoloGoogleAnalyticsMiddleware',
+    'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
 
     'molo.core.middleware.AdminLocaleMiddleware',
@@ -546,6 +546,10 @@ GOOGLE_ANALYTICS_IGNORE_PATH = [
     # metrics URL used by promethius monitoring system
     '/metrics',
 ]
+
+GOOGLE_ANALYTICS_AGE_KEY = environ.get('GOOGLE_ANALYTICS_AGE_KEY', 'age')
+GOOGLE_ANALYTICS_GENDER_KEY = environ.get('GOOGLE_ANALYTICS_GENDER_KEY',
+                                          'gender')
 
 CUSTOM_GOOGLE_ANALYTICS_IGNORE_PATH = environ.get(
     'GOOGLE_ANALYTICS_IGNORE_PATH')

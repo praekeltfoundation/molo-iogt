@@ -1,7 +1,15 @@
+import datetime
 from urlparse import urlparse
+
+from bs4 import BeautifulSoup
 
 from django.conf import settings
 from django.http import HttpResponsePermanentRedirect
+
+from google_analytics.utils import build_ga_params, set_cookie
+from google_analytics.tasks import send_ga_tracking
+
+from molo.core.middleware import MoloGoogleAnalyticsMiddleware
 
 
 def clean_path(path):
@@ -39,6 +47,10 @@ def is_match(path, possible_matches):
     return False
 
 
+def get_today():
+    return datetime.date.today()
+
+
 class SSLRedirectMiddleware(object):
     def process_request(self, request):
         https_paths = getattr(settings, 'HTTPS_PATHS', [])
@@ -61,3 +73,48 @@ class SSLRedirectMiddleware(object):
             return request.META['HTTP_X_FORWARDED_PROTO'] == 'https'
 
         return False
+
+
+class IogtMoloGoogleAnalyticsMiddleware(MoloGoogleAnalyticsMiddleware):
+    """Uses GA IDs stored in Wagtail to track pageviews using celery"""
+    def submit_tracking(self, account, request, response):
+        try:
+            title = BeautifulSoup(
+                response.content, "html.parser"
+            ).html.head.title.text.encode('utf-8')
+        except Exception:
+            title = None
+
+        path = request.get_full_path()
+        referer = request.META.get('HTTP_REFERER', '')
+        params = build_ga_params(
+            request, account, path=path, referer=referer, title=title)
+        response = set_cookie(params, response)
+
+        def calculate_age(dob):
+            dob = datetime.datetime.strptime(dob, '%Y-%m-%d').date()
+            today = get_today()
+            print today, dob
+            return (today.year - dob.year -
+                    ((today.month, today.day) < (dob.month, dob.day)))
+
+        # send user unique id and details after cookie's been set
+        if hasattr(request, 'user') and hasattr(request.user, 'profile'):
+            profile = request.user.profile
+            uuid = profile.uuid
+
+            custom_params = {}
+            if profile.gender:
+                gender_key = settings.GOOGLE_ANALYTICS_GENDER_KEY
+                custom_params[gender_key] = profile.gender
+            if profile.date_of_birth:
+                age_key = settings.GOOGLE_ANALYTICS_AGE_KEY
+                custom_params[age_key] = calculate_age(profile.date_of_birth)
+
+            params = build_ga_params(
+                request, account, path=path,
+                referer=referer, title=title, user_id=uuid,
+                custom_params=custom_params)
+
+        send_ga_tracking.delay(params)
+        return response
