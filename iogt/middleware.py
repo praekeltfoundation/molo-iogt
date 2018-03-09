@@ -78,7 +78,6 @@ class SSLRedirectMiddleware(object):
 class IogtMoloGoogleAnalyticsMiddleware(MoloGoogleAnalyticsMiddleware):
     """Uses GA IDs stored in Wagtail to track pageviews using celery"""
     def submit_tracking(self, account, request, response):
-        print 'submit_tracking'
         try:
             title = BeautifulSoup(
                 response.content, "html.parser"
@@ -93,7 +92,6 @@ class IogtMoloGoogleAnalyticsMiddleware(MoloGoogleAnalyticsMiddleware):
         response = set_cookie(params, response)
 
         def calculate_age(dob):
-            dob = datetime.datetime.strptime(dob, '%Y-%m-%d').date()
             today = get_today()
             return (today.year - dob.year -
                     ((today.month, today.day) < (dob.month, dob.day)))
