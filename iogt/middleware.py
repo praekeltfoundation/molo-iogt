@@ -94,7 +94,6 @@ class IogtMoloGoogleAnalyticsMiddleware(MoloGoogleAnalyticsMiddleware):
         def calculate_age(dob):
             dob = datetime.datetime.strptime(dob, '%Y-%m-%d').date()
             today = get_today()
-            print today, dob
             return (today.year - dob.year -
                     ((today.month, today.day) < (dob.month, dob.day)))
 
