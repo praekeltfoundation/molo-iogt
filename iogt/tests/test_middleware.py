@@ -137,7 +137,7 @@ class TestGoogleAnalyticsMiddleware(TestCase, MoloTestCaseMixin):
             username='testuser', password='password', email='test@email.com')
         profile = self.superuser.profile
         profile.gender = 'female'
-        profile.date_of_birth = '2000-01-01'
+        profile.date_of_birth = datetime.date(2000, 1, 1)
         profile.save()
 
         # Creates Main language
