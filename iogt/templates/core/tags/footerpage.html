@@ -1,6 +1,8 @@
-{% load wagtailcore_tags wagtailimages_tags core_tags wagtailsettings_tags %}
+{% load wagtailcore_tags wagtailimages_tags core_tags wagtailsettings_tags i18n %}
 {% get_settings %}
-{% pageurl settings.profiles.UserProfilesSettings.terms_and_conditions as terms_url %}
+{% if settings.profiles.UserProfilesSettings.terms_and_conditions %}
+  {% pageurl settings.profiles.UserProfilesSettings.terms_and_conditions as terms_url %}
+{% endif %}
 {% social_media_footer %}
 {% if footers %}
   {% for page in footers %}
