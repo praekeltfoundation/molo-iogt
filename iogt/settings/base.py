@@ -231,6 +231,8 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('pt-mz', 'Portuguese Mozambique'),
     ('lg', 'Ganda'),
     ('si', 'Sinhalese'),
+    ('ps', 'Pashto'),
+    ('fa', 'Dari'),
 ]
 
 EXTRA_LANG_INFO = {
@@ -443,6 +445,18 @@ EXTRA_LANG_INFO = {
         'code': 'si',
         'name': 'Sinhalese',
         'name_local': 'සිංහල'
+    },
+    'ps': {
+        'bidi': False,
+        'code': 'ps',
+        'name': 'Pashto',
+        'name_local': 'پښتو'
+    },
+    'fa': {
+        'bidi': False,
+        'code': 'fa',
+        'name': 'Dari',
+        'name_local': 'دری,'
     },
 }
 
