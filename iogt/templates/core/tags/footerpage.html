@@ -1,11 +1,10 @@
 {% load wagtailcore_tags wagtailimages_tags core_tags wagtailsettings_tags %}
 {% get_settings %}
 {% pageurl settings.profiles.UserProfilesSettings.terms_and_conditions as terms_url %}
-
 {% social_media_footer %}
 {% if footers %}
   {% for page in footers %}
-  {% pageurl page as page_url %}
+  	{% pageurl page as page_url %}
     {% if page_url != terms_url %}
       <li class="menu-list__item">
         <a href="{% pageurl page %}" class="footer-link {% if not page.image %}footer-link--no-image-upload{% endif %}">
