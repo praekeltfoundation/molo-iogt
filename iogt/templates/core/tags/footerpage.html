@@ -1,18 +1,22 @@
-
-{% load wagtailcore_tags wagtailimages_tags core_tags %}
+{% load wagtailcore_tags wagtailimages_tags core_tags wagtailsettings_tags %}
+{% get_settings %}
+{% pageurl settings.profiles.UserProfilesSettings.terms_and_conditions as terms_url %}
 
 {% social_media_footer %}
 {% if footers %}
-	{% for page in footers %}
-   <li class="menu-list__item">
-      <a href="{% pageurl page %}" class="footer-link {% if not page.image %}footer-link--no-image-upload{% endif %}">
+  {% for page in footers %}
+  {% pageurl page as page_url %}
+    {% if page_url != terms_url %}
+      <li class="menu-list__item">
+        <a href="{% pageurl page %}" class="footer-link {% if not page.image %}footer-link--no-image-upload{% endif %}">
         {% if page.image %}
-        <div class="footer-link__thumbnail-icon">
-          {% image page.image width-40 class="menu-list__item--icon" %}
-        </div>
+          <div class="footer-link__thumbnail-icon">
+            {% image page.image width-40 class="menu-list__item--icon" %}
+          </div>
         {% endif %}
-        <span class="footer-link__title">{{page.title}}</span>
-      </a>
-    </li>
+          <span class="footer-link__title">{{page.title}}</span>
+        </a>
+      </li>
+    {% endif %}
   {% endfor %}
 {% endif %}
