@@ -190,5 +190,5 @@ class TestGoogleAnalyticsMiddleware(TestCase, MoloTestCaseMixin):
         args, kwargs = mock_method.call_args_list[0]
         url = args[0]['utm_url']
 
-        self.assertTrue('age=17' in url)
-        self.assertTrue('gender=female' in url)
+        self.assertTrue('cd1=17' in url)
+        self.assertTrue('cd2=female' in url)
