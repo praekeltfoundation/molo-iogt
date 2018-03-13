@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-03 15:57+0000\n"
+"POT-Creation-Date: 2018-03-13 10:38+0000\n"
 "PO-Revision-Date: 2017-08-03 16:13+0000\n"
 "Last-Translator: Reeza <reeza@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,861 +12,70 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1501776809.399762\n"
+"X-POOTLE-MTIME: 1501775843.017085\n"
 
-#: iogt/settings/base.py:436
+#: iogt/settings/base.py:459
 msgid "January"
 msgstr "جنوری"
 
-#: iogt/settings/base.py:438
+#: iogt/settings/base.py:461
 msgid "March"
 msgstr "مارچ"
 
-#: iogt/settings/base.py:440
-msgid "May"
-msgstr "مئی"
-
-#: iogt/settings/base.py:441
+#: iogt/settings/base.py:464
 msgid "June"
 msgstr "جون"
 
-#: iogt/settings/base.py:442
+#: iogt/settings/base.py:465
 msgid "July"
 msgstr "جولائی"
 
-#: iogt/settings/base.py:443
+#: iogt/settings/base.py:466
 msgid "August"
 msgstr "اگست"
 
-#: iogt/settings/base.py:444
+#: iogt/settings/base.py:467
 msgid "September"
 msgstr "ستمبر"
 
-#: iogt/settings/base.py:445
+#: iogt/settings/base.py:468
 msgid "October"
 msgstr "اکتوبر"
 
-#: iogt/settings/base.py:446
+#: iogt/settings/base.py:469
 msgid "November"
 msgstr "نومبر"
 
-#: iogt/settings/base.py:447
+#: iogt/settings/base.py:470
 msgid "December"
 msgstr "دسمبر"
 
-#: iogt/settings/base.py:448
+#: iogt/settings/base.py:471
 msgid "Add anonymously"
 msgstr "نام چھپا کر شامل کریں"
 
-#: iogt/settings/base.py:450
+#: iogt/settings/base.py:473
 msgid "This field is required"
 msgstr "اس کو پر کرنا ضروری ہے"
 
-#: iogt/settings/base.py:451
-#: iogt/temp_ve/usermetadata/templates/persona.html:5
-msgid "Are you a ..."
-msgstr "کیا آپ ایک ۔۔۔"
-
-#: iogt/settings/base.py:452
+#: iogt/settings/base.py:474
 msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr "اس قدر کو یقینی بنائیں کہ کم از کم 4 حروف (اس میں 1 ہے)"
 
-#: iogt/settings/base.py:453
-msgid "Type your comment here..."
-msgstr "اپنا تبصرہ یہاں ٹائپ کریں ..."
-
-#: iogt/temp_ve/commenting/admin_views.py:61
-#: iogt/temp_ve/commenting/views.py:111
-msgid "Reply successfully created."
-msgstr "کامیابی سے جواب دیا گیا."
-
-#: iogt/temp_ve/commenting/forms.py:63
-msgid "URL"
-msgstr "یو آر ایل"
-
-#: iogt/temp_ve/commenting/templates/comments/comment.html:8
-#: iogt/temp_ve/commenting/views.py:48
-#: iogt/templates/comments/comment.html:8
-msgid "Anonymous"
-msgstr "گمنام"
-
-#: iogt/temp_ve/commenting/templates/comments/comment.html:21
-#: iogt/templates/comments/comment.html:22
-msgid "Report"
-msgstr "آگاہی نامہ"
-
-#: iogt/temp_ve/commenting/templates/comments/comment.html:23
-#: iogt/templates/comments/comment.html:24
-msgid "Reply"
-msgstr "جواب"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:6
-msgid "Share a Comment"
-msgstr "تبصرہ شیر کریں"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:18
-#: iogt/templates/comments/comment_block.html:18
-msgid "Commenting on this article is currently disabled"
-msgstr "اس مضمون پر تبصرہ فی الحال غیر فعال ہے"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:23
-#: iogt/temp_ve/commenting/templates/comments/comments.html:7
-#: iogt/templates/comments/comment_block.html:23
-msgid "Comments"
-msgstr "تبصرے"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:26
-#: iogt/templates/comments/comment_block.html:30
-#: iogt/templates/core/article_page.html:43
-#: iogt/templates/core/related-article-list.html:56
-#: iogt/templates/core/section_page.html:58
-#: iogt/templates/core/section_page.html:140
-#: iogt/templates/core/tags/latest_listing_homepage.html:39
-#: iogt/templates/core/tags/section_listing_homepage.html:40
-#: iogt/templates/search/search_results.html:53
-msgid "comment"
-msgstr "تبصرہ"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:41
-#: iogt/templates/comments/comment_block.html:45
-msgid "view more comments"
-msgstr "مزید تبصرے دیکھیں"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_done.html:7
-#: iogt/temp_ve/commenting/templates/comments/report_response.html:6
-msgid "Thanks!"
-msgstr "شکریہ!"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_done.html:9
-msgid "Your comment has been successfully posted"
-msgstr "آپ کی رائے کو کامیابی سے تعینات کردیا گیا ہے"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_done.html:11
-#: iogt/temp_ve/commenting/templates/comments/comments.html:28
-#: iogt/temp_ve/commenting/templates/comments/preview.html:45
-#: iogt/temp_ve/commenting/templates/comments/report_response.html:10
-msgid "Back to article"
-msgstr "مضمون پر واپس"
-
-#: iogt/temp_ve/commenting/templates/comments/preview.html:11
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
-#: iogt/temp_ve/polls/templates/polls/detail.html:25
-#: iogt/temp_ve/polls/templates/polls/free_text_detail.html:12
-#: iogt/temp_ve/polls/templates/polls/results.html:24
-#: iogt/templates/core/article_page.html:11
-#: iogt/templates/core/section_page.html:15
-#: iogt/templates/surveys/molo_survey_page.html:10
-msgid "Home"
-msgstr "گھر"
-
-#: iogt/temp_ve/commenting/templates/comments/preview.html:38
-#: iogt/temp_ve/commenting/templates/comments/reply.html:18
-msgid "Please "
-msgstr "براہ مہربانی. "
-
-#: iogt/temp_ve/commenting/templates/comments/preview.html:40
-#: iogt/temp_ve/commenting/templates/comments/reply.html:20
-msgid "log in"
-msgstr "لاگ ان"
-
-#: iogt/temp_ve/commenting/templates/comments/preview.html:41
-#: iogt/temp_ve/commenting/templates/comments/reply.html:21
-msgid " to leave a comment."
-msgstr " ایک تبصرہ چھوڑنے کے لئے."
-
-#: iogt/temp_ve/commenting/templates/comments/report_response.html:7
-msgid "This comment has been reported."
-msgstr "یہ تبصرہ اطلاع دی گئی ہے."
-
-#: iogt/temp_ve/commenting/templates/comments/report_response.html:8
-msgid ""
-"It will be reviewed by the team and may be removed if it breaks our Platform "
-"rules"
-msgstr ""
-"یہ ٹیم کی طرف سے جائزہ لیا جائے گا اور اگر یہ ہمارے پلیٹ فارم کے قوانین کو "
-"توڑتا ہے تو اسے ہٹایا جاسکتا ہے"
-
-#: iogt/templates/comments/form.html:15
-msgid "Comment Anonymously"
-msgstr "نامکمل تبصرہ"
-
-#: iogt/temp_ve/commenting/views.py:31
-msgid "Reporting comment replies is not allowed."
-msgstr "رپورٹنگ تبصرہ جوابات کی اجازت نہیں ہے."
-
-#: iogt/temp_ve/commenting/views.py:34
-msgid "The comment has been reported."
-msgstr "یہ اطلاع دی گئی ہے."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
-msgid "Zulu"
-msgstr "زولو"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:204
-msgid "Xhosa"
-msgstr "ژوسا"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
-msgid "Venda"
-msgstr "وینڈا"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
-msgid "Tsonga"
-msgstr "زونگا"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
-msgid "Swati"
-msgstr "سواتی"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 #: iogt/templates/403.html:8
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 msgid "Access Denied"
 msgstr "رسائی کی تردید"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 #: iogt/templates/403.html:9
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 msgid "You do not have permssion to access this site."
 msgstr "آپ کو اس سائٹ تک رسائی حاصل کرنے کے لئے فیڈریشن نہیں ہے."
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
 #: iogt/templates/403_csrf.html:7
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
 msgid "Unable to Login"
 msgstr "لاگ ان کرنے میں ناکام"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:13
-msgid "Hi"
-msgstr "ہیلو"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
-msgid ""
-"Sorry, you are having trouble accessing this feature! Due to a temporary "
-"technical issue, login and registrations are not available on the Free "
-"Basics app for now. To login or register for a profile, visit our free "
-"mobisite through your mobile browser at"
-msgstr ""
-"معذرت، آپ کو اس سہولت تک رسائی حاصل کرنے میں دشواری ہو رہی کر رہے ہیں! عارضی "
-"تکنیکی مسئلے کی وجہ سے لاگ ان اور رجسٹریشن مفت مبادیات اپلی کیشن پر دستیاب "
-"نہیں ہیں. پروفائل لاگ ان یا رجسٹریشن کے لئے اپنے موبائل براؤزر کے ذریعے "
-"ہماری مفت موبائل ویب سائٹ استعمال کریں۔"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
-#: iogt/templates/403_csrf.html:11
-msgid " We're working hard to get this problem resolved. Thank you."
-msgstr " ہم اس مسئلہ کو حل کرنے کے لئے سخت محنت کر رہے ہیں. شکریہ"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
-#: iogt/templates/404.html:8
-msgid "Page not found"
-msgstr "صفحہ نہیں ملا"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
-#: iogt/templates/404.html:9
-msgid "Sorry, this page could not be found."
-msgstr "معذرت, یہ صفحہ نہیں مل سکا"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
-#: iogt/templates/500.html:12
-#: iogt/templates/500.html:16
-msgid "Internal server error"
-msgstr "اندرونی سرور کی خرابی"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
-#: iogt/templates/500.html:17
-msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr "معذرت,کوی نقص لگ رہا ہے. براہ کرم پھر کوشش کریں"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
-#: iogt/temp_ve/core/test_templates/base.html:128
-#: iogt/temp_ve/polls/test_templates/base.html:112
-#: iogt/temp_ve/surveys/test_templates/base.html:112
-msgid "Site Language:"
-msgstr "سائٹ کی زبان:"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
-#: iogt/templates/core/related-article-list.html:7
-msgid "Next up in"
-msgstr "اگلے اوپر"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:64
-#: iogt/templates/core/tags/latest_listing_homepage.html:4
-msgid "Recommended"
-msgstr "تجاویز"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
-msgid "Latest"
-msgstr "تازہ ترین"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/topic_of_the_day.html:6
-msgid "Topic of the Day"
-msgstr "دن کی موضوع"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:6
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:21
-msgid "Sign in"
-msgstr "سائن ان"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
-msgid "We’re excited to have you..."
-msgstr "ہم آپ کے لئے حوصلہ افزائی کر رہے ہیں ..."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
-msgid "Your username and password does not match. Please try again."
-msgstr "آپ کا صارف نام اور پاس ورڈ مماثلت نہیں ہے. دوبارہ کوشش کریں."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
-#: iogt/temp_ve/profiles/forms.py:76
-#: iogt/temp_ve/profiles/forms.py:443
-#: iogt/temp_ve/profiles/templates/registration/login.html:25
-#: iogt/templates/registration/login.html:25
-msgid "Username"
-msgstr "صارف نام"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
-#: iogt/temp_ve/profiles/templates/registration/login.html:30
-#: iogt/templates/registration/login.html:30
-msgid "4-digit pin"
-msgstr "4 عددی پن"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:25
-#: iogt/temp_ve/profiles/templates/registration/login.html:37
-#: iogt/templates/registration/login.html:37
-#: iogt/templates/registration/password_reset_form.html:4
-msgid "Forgotten your password?"
-msgstr "اپنا پاس ورڈ بھول گئے؟"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
-msgid "Your password has been set.  You may go ahead and log in now."
-msgstr "آپ کا پاس ورڈ مقرر کیا گیا ہے. آپ آگے بڑھیں اور اب لاگ ان کریں."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:9
-#: iogt/temp_ve/profiles/templates/registration/login.html:5
-#: iogt/temp_ve/profiles/templates/registration/login.html:34
-#: iogt/templates/registration/login.html:5
-#: iogt/templates/registration/login.html:34
-#: iogt/templates/registration/password_reset_complete.html:8
-msgid "Log in"
-msgstr "لاگ ان"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
-#: iogt/templates/registration/password_reset_confirm.html:15
-msgid "Confirm password:"
-msgstr "پاس ورڈ کی توثیق کریں:"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
-#: iogt/templates/registration/password_reset_confirm.html:19
-msgid "Change my password"
-msgstr "اپنا پاس ورڈ تبدیل کریں"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
-msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used.  Please request a new password reset."
-msgstr ""
-"پاس ورڈ دوبارہ ترتیب لنک غلط تھا، ممکنہ طور پر کیونکہ اس کا استعمال پہلے سے "
-"ہی ہوا ہے. براہ کرم ایک نیا پاس ورڈ ری سیٹ کی درخواست کریں."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:7
-#: iogt/templates/registration/password_reset_done.html:5
-msgid ""
-"We've emailed you instructions for setting your password, if an account "
-"exists with the email you entered. You should receive them shortly."
-msgstr ""
-"ہم نے آپ کے پاس ورڈ کی ترتیب دینے کے لئے آپ کو ہدایت دی ہے، اگر آپ نے درج "
-"کردہ ای میل کے ساتھ ایک اکاؤنٹ موجود ہے. تمہیں انہیں جلد ہی ملنا چاہئے."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:9
-#: iogt/templates/registration/password_reset_done.html:6
-msgid ""
-"If you don't receive an email, please make sure you've entered the address "
-"you registered with, and check your spam folder."
-msgstr ""
-"اگر آپ کو ایک ای میل نہیں ملتا ہے تو، براہ کرم یقینی بنائیں کہ آپ نے اپنے "
-"ایڈریس کو درج کردہ درجے درج کیا ہے، اور اپنے سپیم فولڈر کو چیک کریں."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
-#: iogt/templates/registration/password_reset_form.html:14
-msgid "Reset my password"
-msgstr "میرا پاس ورڈ ری سیٹ کریں"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
-msgid "Looking for something?"
-msgstr "کچھ تلاش کر رہے ہیں؟"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
-#: iogt/templates/search/search_block.html:6
-msgid "SEARCH"
-msgstr "تلاش"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
-#: iogt/templates/base.html:143
-#: iogt/templates/search/search_results.html:9
-#: iogt/templates/search/search_results.html:75
-msgid "Search"
-msgstr "تلاش"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
-msgid "No search results for "
-msgstr "تلاش کا کوئی نتیجہ نہیں"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
-msgid "I am looking for"
-msgstr "میں اس کو تلاش کر رہا ہوں"
-
-#: iogt/temp_ve/core/views.py:96
-msgid "That page is not translatable."
-msgstr "یہ صفحہ قابل ترجمہ نہیں ہے."
-
-#: iogt/temp_ve/polls/forms.py:20
-msgid "You didn't select a choice"
-msgstr "آپ نے ایک انتخاب کا انتخاب نہیں کیا"
-
-#: iogt/temp_ve/polls/templates/polls/detail.html:24
-#: iogt/temp_ve/polls/templates/polls/free_text_detail.html:11
-#: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:35
-#: iogt/templates/polls/detail.html:26
-#: iogt/templates/polls/free_text_detail.html:13
-#: iogt/templates/polls/includes/poll_question_form.html:45
-msgid "Vote"
-msgstr "ووٹ"
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:13
-#: iogt/templates/polls/includes/poll_free_text_form.html:16
-#: iogt/templates/surveys/molo_survey_page.html:43
-msgid "Submit"
-msgstr "جمع کریں"
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
-#: iogt/templates/polls/includes/poll_free_text_form.html:18
-msgid "Thank you! Your response has already been submitted."
-msgstr "آپ کا شکریہ! آپ کا جواب پہلے ہی پیش کیا گیا ہے."
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:18
-#: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:20
-#: iogt/templates/polls/includes/poll_free_text_form.html:24
-#: iogt/templates/polls/includes/poll_question_form.html:26
-msgid "Log in to vote"
-msgstr "ووٹ ڈالنے کے لئے لاگ ان کریں"
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
-#: iogt/templates/polls/includes/poll_question_form.html:47
-msgid "Show Results"
-msgstr "نتائج دکھائیں"
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
-#: iogt/templates/polls/includes/poll_question_form.html:50
-msgid "You voted: "
-msgstr "آپ نے ووٹ دیا: "
-
-#: iogt/temp_ve/polls/templates/polls/results.html:22
-#: iogt/templates/polls/results.html:28
-msgid "Thank you for voting!"
-msgstr "ووٹنگ کے لئے آپ کا شکریہ!"
-
-#: iogt/temp_ve/profiles/admin.py:73
-msgid "Type"
-msgstr "قسم"
-
-#: iogt/temp_ve/profiles/admin.py:79
-msgid "Admin Users"
-msgstr "منتظم صارفین"
-
-#: iogt/temp_ve/profiles/admin_views.py:16
-msgid ""
-"Your email address is not configured. Please update it before exporting."
-msgstr "آپ کا ای میل پتہ ترتیب نہیں ہے. برآمد کرنے سے پہلے اسے اپ ڈیٹ کریں."
-
-#: iogt/temp_ve/profiles/admin_views.py:39
-msgid "CSV emailed to '{0}'"
-msgstr "CSV ' {0} ' کو ای میل کیا گیا"
-
-#: iogt/temp_ve/profiles/forms.py:78
-#: iogt/temp_ve/profiles/forms.py:445
-msgid "This value must contain only letters, numbers and underscores."
-msgstr "اس قیمت میں صرف حروف، نمبر اور زیر غور ہونا لازمی ہے."
-
-#: iogt/temp_ve/profiles/forms.py:96
-#: iogt/temp_ve/profiles/forms.py:489
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:23
-msgid "PIN"
-msgstr "پن"
-
-#: iogt/temp_ve/profiles/forms.py:102
-#: iogt/temp_ve/profiles/forms.py:241
-#: iogt/temp_ve/profiles/forms.py:286
-msgid "Display Name"
-msgstr "ڈسپلے کا نام"
-
-#: iogt/temp_ve/profiles/forms.py:116
-#: iogt/temp_ve/profiles/forms.py:249
-#: iogt/temp_ve/profiles/forms.py:300
-msgid "Location"
-msgstr "مقام"
-
-#: iogt/temp_ve/profiles/forms.py:120
-#: iogt/temp_ve/profiles/forms.py:253
-#: iogt/temp_ve/profiles/forms.py:304
-msgid "Education Level"
-msgstr "تعلیمی معیار"
-
-#: iogt/temp_ve/profiles/forms.py:188
-msgid "Username already exists."
-msgstr "صارف نام پہلے سے موجود ہے."
-
-#: iogt/temp_ve/profiles/forms.py:193
-msgid ""
-"Sorry, but that is an invalid username. Please don't use your %s in your "
-"username."
-msgstr ""
-"معذرت، لیکن یہ ایک غلط صارف نامہ ہے. آپ استعمال نہ کریں %s اپنے صارف نام میں."
-
-#: iogt/temp_ve/profiles/forms.py:225
-#: iogt/temp_ve/profiles/forms.py:351
-msgid ""
-"Sorry, but that is an invalid display name. Please don't use your %s in your "
-"display name."
-msgstr ""
-"افسوس، لیکن یہ ایک غلط ڈسپلے کا نام ہے. براہ کرم اپنے ڈسپلے کا نام میں %s "
-"استعمال نہ کریں."
-
-#: iogt/temp_ve/profiles/forms.py:390
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:25
-msgid "Old Password"
-msgstr "سابقہ پاسورڈ"
-
-#: iogt/temp_ve/profiles/forms.py:405
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:32
-msgid "New Password"
-msgstr "نیا پاس ورڈ"
-
-#: iogt/temp_ve/profiles/forms.py:421
-msgid "Confirm Password"
-msgstr "پاس ورڈ کی توثیق کریں"
-
-#: iogt/temp_ve/profiles/forms.py:431
-msgid "New passwords do not match."
-msgstr "نئے پاس ورڈ مماثل نہیں کرتے"
-
-#: iogt/temp_ve/profiles/forms.py:506
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:29
-msgid "Confirm PIN"
-msgstr "PIN کی توثیق کریں"
-
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:27
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
-msgid "(e.g. 2086)"
-msgstr "(مثلاَ: 2086)"
-
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:38
-msgid "Confirm New Password"
-msgstr "نیے پاس ورڈ کی تصدیق کریں"
-
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:42
-#: iogt/temp_ve/profiles/templates/profiles/done.html:59
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:70
-msgid "Save"
-msgstr "محفوظ"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:18
-#: iogt/temp_ve/profiles/templates/profiles/register.html:45
-msgid "SELECT DATE OF BIRTH"
-msgstr "تاریخِ پیدائش چنیں"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:35
-#: iogt/temp_ve/profiles/templates/profiles/register.html:54
-msgid "I IDENTIFY MY GENDER AS:"
-msgstr "میں اپنے گریجویٹ کے طور پر متعین کروں گا:"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:38
-#: iogt/temp_ve/profiles/templates/profiles/done.html:47
-#: iogt/temp_ve/profiles/templates/profiles/done.html:56
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:31
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:40
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:49
-#: iogt/temp_ve/profiles/templates/profiles/register.html:57
-#: iogt/temp_ve/profiles/templates/profiles/register.html:66
-#: iogt/temp_ve/profiles/templates/profiles/register.html:75
-#: iogt/templates/profiles/register.html:57
-#: iogt/templates/profiles/register.html:66
-#: iogt/templates/profiles/register.html:75
-msgid "Only you will see this"
-msgstr "صرف تم اسے دیکھیں گے"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:53
-#: iogt/temp_ve/profiles/templates/profiles/register.html:72
-msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
-msgstr "تعلیم کا سب سے اعلی سطح کیا ہے؟"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:63
-msgid "Home Page"
-msgstr "صفحہِ اول"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:64
-#: iogt/templates/base.html:141
-#: iogt/templates/base.html:205
-msgid "Profile"
-msgstr "پروفائل"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:11
-msgid "Update your display name:"
-msgstr "اپنے ڈسپلے کا نام اپ ڈیٹ کریں:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:20
-msgid "Update your date of birth:"
-msgstr "اپنی تاریخِ پیدائش کواپ ڈیٹ کریں"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:28
-msgid "Update your gender:"
-msgstr "اپنی صنف کو اپ ڈیٹ کریں:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:37
-msgid "Update where you live:"
-msgstr "اپ ڈیٹ کریں جہاں آپ رہتے ہیں"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:46
-msgid "Update your Education Level:"
-msgstr "اپنی تعلیمی سطح کو اپ ڈیٹ کریں:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:55
-msgid "Update your mobile number:"
-msgstr "اپنا موبائل نمبر اپ ڈیٹ کریں:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:58
-msgid "(e.g. 0914556789)"
-msgstr "(مثال کے طور پر 0914556789)"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:64
-msgid "Update your email address:"
-msgstr "اپنا ای میل ایڈریس اپ ڈیٹ کریں:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:67
-#: iogt/temp_ve/profiles/templates/profiles/register.html:93
-msgid "(e.g. example@foo.com)"
-msgstr "(مثال کے طور پر example@foo.com)"
-
-#: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:6
-#: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:36
-msgid "Forgot PIN"
-msgstr "PIN بھول گیا"
-
-#: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:31
-msgid "Security question"
-msgstr "حفاظتی سوال"
-
-#: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:32
-msgid "Please answer the following security question."
-msgstr "مندرجہ ذیل حفاظتی سوال کا جواب دیں."
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:6
-#: iogt/temp_ve/profiles/templates/profiles/register.html:123
-#: iogt/temp_ve/profiles/templates/registration/login.html:9
-msgid "Register"
-msgstr "رجسٹر"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:9
-#: iogt/templates/profiles/register.html:9
-msgid "Already a member?"
-msgstr "پہلے سے ہی رکنیت حاصل ہے؟"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:14
-#: iogt/temp_ve/profiles/templates/registration/login.html:8
-#: iogt/templates/profiles/register.html:14
-#: iogt/templates/registration/login.html:8
-msgid "Not a member yet?"
-msgstr "ابھی تک رکن نہیں؟"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:15
-#: iogt/templates/profiles/register.html:15
-msgid "Join us by signing up below."
-msgstr "ہمارے ساتھ شمل ہونے کے لے ںیچے سائن اپ کریں"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:21
-msgid "CHOOSE A USERNAME"
-msgstr "صارف کا نام منتخب کریں"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:24
-#: iogt/templates/profiles/register.html:24
-msgid ""
-"This name you will use to log in and won't appear to other users. Only you "
-"will see this."
-msgstr ""
-"یہ نام آپ لاگ ان کرنے کے لئے استعمال کریں گے اور دوسرے صارفین کو نہیں دکھائے "
-"جائیں گے. صرف تم اسے دیکھیں گے."
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:28
-msgid "CHOOSE A 4-DIGIT PIN"
-msgstr "چارعدد الفاز بطور پن منتخب کریں"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:31
-#: iogt/templates/profiles/register.html:31
-msgid "e.g. 2086"
-msgstr "مثلاَ: 2086"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:36
-msgid "CHOOSE A DISPLAY NAME"
-msgstr "ایک نئے ڈسپلے نام منتخب کریں"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:48
-#: iogt/templates/profiles/register.html:48
-msgid "Let us know your birthday to get access to exclusive content."
-msgstr "ہمارے خصوصی مواد تک رسائی حاصل کرنے کے لئے اپنی سالگرہ بتائیں."
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:84
-msgid "(e.g. 0900000013)"
-msgstr "(مثال کے طور پر 0900000013)"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:90
-msgid "ENTER YOUR EMAIL ADDRESS"
-msgstr "اپنا ای میل کا پتا لکھو"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:112
-#: iogt/templates/profiles/register.html:112
-msgid "Please accept the T&amp;Cs in order to complete the registration"
-msgstr "رجسٹریشن کو مکمل کرنے کیلئے براہ مہربانی T & amp؛ Cs قبول کریں"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:117
-#: iogt/temp_ve/profiles/templates/profiles/register.html:119
-#: iogt/templates/profiles/register.html:117
-#: iogt/templates/profiles/register.html:119
-msgid "I accept the Terms and Conditions"
-msgstr "میں قوائد و ضوابط کو قبول کرتا ہوں"
-
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:5
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:32
-msgid "Reset PIN"
-msgstr "PIN دوبارہ ترتیب دیں"
-
-#: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:5
-msgid "PIN Changed"
-msgstr "پن تبدیل ہوگیا"
-
-#: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:7
-msgid "Your PIN has been changed sucessfully."
-msgstr "آپ کا PIN آرام سے بدل گیا ہے."
-
-#: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:8
-msgid "Continue to Sign In"
-msgstr "سائن ان جاری رکھیں"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:6
-msgid "Hello "
-msgstr "آداب"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:9
-msgid "As you type your name comment will appear as:"
-msgstr "جیسے آپ اپنا نام ٹائپ کریںنگےآپ کا تبصرہ ایسے دگھے گا"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:14
-msgid "Date of Birth: "
-msgstr "تاریخِ پیدائش "
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:19
-msgid " Not set."
-msgstr "اندرآج نہیں ہے."
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:26
-msgid "Mobile number:"
-msgstr "موبائل فون کانمبر:"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:33
-msgid "Gender:"
-msgstr "جنس"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:40
-msgid "Location:"
-msgstr "مقام"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:47
-msgid "Education Level:"
-msgstr "تعلیمی معیار:"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:54
-msgid "Email Address:"
-msgstr "برقی پتہ"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:59
-msgid "log out"
-msgstr "لاگ آوٹ"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:60
-msgid "Edit My Profile"
-msgstr "اپنی پروفائل میں ترمیم"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:61
-msgid "Change My Password"
-msgstr "اپنا پاس ورڈ تبدیل کریں"
-
-#: iogt/temp_ve/profiles/templates/registration/login.html:20
-#: iogt/templates/registration/login.html:20
-msgid "Your username and password do not match. Please try again."
-msgstr "آپ کا صارف نام اور پاس ورڈ مطابقت نہیں رگھتا. دوبارہ کوشش کریں."
-
-#: iogt/temp_ve/profiles/templates/registration/login.html:32
-#: iogt/templates/registration/login.html:32
-msgid "Eg.: 2086"
-msgstr "مثلاَ: 2086"
-
-#: iogt/temp_ve/profiles/views.py:161
-msgid "The old password is incorrect."
-msgstr "پرانا پاس ورڈ غلط ہے."
-
-#: iogt/temp_ve/profiles/views.py:184
-msgid "Too many attempts. Please try again later."
-msgstr "بہت سے کوششیں براہ کرم کچھ دیر بعد کوشش کریں."
-
-#: iogt/temp_ve/profiles/views.py:279
-msgid "The two PINs that you entered do not match. Please try again."
-msgstr "آپ نے درج کردہ دو پنز نہیں ملتے. دوبارہ کوشش کریں."
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
-#: iogt/templates/surveys/molo_survey_page.html:43
-msgid "Next Question"
-msgstr "اگلا سوال"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
-msgid "Submit Survey"
-msgstr "جائزہ جمع کریں"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:31
-#: iogt/templates/surveys/molo_survey_page.html:50
-msgid "You have already completed this survey."
-msgstr "آپ نے پہلے ہی اس سروے کو مکمل کر لیا ہے."
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:34
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
-#: iogt/templates/polls/detail.html:28
-#: iogt/templates/polls/free_text_detail.html:15
-#: iogt/templates/polls/results.html:31
-#: iogt/templates/surveys/molo_survey_page.html:47
-#: iogt/templates/surveys/molo_survey_page.html:53
-msgid "Back to Home page"
-msgstr "ہوم پیج پر واپس جائیں"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:39
-#: iogt/templates/surveys/molo_survey_page.html:58
-msgid "Please log in to take this survey"
-msgstr "اس جائزے کو کرنے کے لینے لئے لاگ ان کریں"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:12
-msgid "Survey Results"
-msgstr "سروے کے نتائج"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:14
-msgid ""
-"Your survey has been completed successfully. Please see your submission "
-"results below."
-msgstr ""
-"آپ کا سروے کامیابی سے مکمل ہوگیا ہے. براہ مہربانی ذیل میں آپ کے جمع کرانے کے "
-"نتائج دیکھیں."
-
-#: iogt/temp_ve/surveys/templates/surveys/surveys_list.html:10
-msgid "Take The Survey"
-msgstr "جائزہ مکمل کریں"
-
-#: iogt/temp_ve/usermetadata/templates/persona.html:21
-msgid "Skip"
-msgstr "آگے بڑھیں"
 
 #: iogt/templates/403_csrf.html:9
 msgid ""
@@ -877,121 +86,396 @@ msgstr ""
 "معذرت، آپ کو اس خصوصیت تک پہنچنے میں دشواری ہے. ایک عارضی تکنیکی مسئلہ کی "
 "وجہ سے، اب کے لئے آئی او جی ٹی اے پی پر لاگ ان اور رجسٹریشن دستیاب نہیں ہیں."
 
-#: iogt/templates/403_csrf.html:10
-msgid ""
-"To login or register for a profile, visit our free mobisite through your "
-"mobile browser at"
-msgstr ""
-"پروفائل کے لئے لاگ ان یا رجسٹر کرنے کے لئے، اپنے موبائل براؤزر کے ذریعے "
-"ہماری مفت حرکتیں ملاحظہ کریں"
+#: iogt/templates/403_csrf.html:11
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
+msgid " We're working hard to get this problem resolved. Thank you."
+msgstr " ہم اس مسئلہ کو حل کرنے کے لئے سخت محنت کر رہے ہیں. شکریہ"
 
-#: iogt/templates/base.html:106
+#: iogt/templates/404.html:8
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
+msgid "Page not found"
+msgstr "صفحہ نہیں ملا"
+
+#: iogt/templates/404.html:9
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
+msgid "Sorry, this page could not be found."
+msgstr "معذرت, یہ صفحہ نہیں مل سکا"
+
+#: iogt/templates/500.html:12
+#: iogt/templates/500.html:16
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
+msgid "Internal server error"
+msgstr "اندرونی سرور کی خرابی"
+
+#: iogt/templates/500.html:17
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
+msgid "Sorry, there seems to be an error. Please try again soon."
+msgstr "معذرت,کوی نقص لگ رہا ہے. براہ کرم پھر کوشش کریں"
+
+#: iogt/templates/base.html:11
+msgid ""
+"Internet of Good Things (IoGT) is a set of free, mobile-ready web-based "
+"resources and applications that bring good to your life by helping you and "
+"your community access educational and lifesaving information."
+msgstr ""
+
+#: iogt/templates/base.html:121
 msgid "Language"
 msgstr "زبان"
 
-#: iogt/templates/base.html:111
+#: iogt/templates/base.html:126
 msgid "Change Language"
 msgstr "زبان کی تبدیلی"
 
-#: iogt/templates/base.html:133
+#: iogt/templates/base.html:148
 msgid "IoGT"
 msgstr "IoGT"
 
-#: iogt/templates/base.html:139
+#: iogt/templates/base.html:154
 #: iogt/templates/profiles/register.html:6
 #: iogt/templates/profiles/register.html:123
 #: iogt/templates/registration/login.html:9
 msgid "Join"
 msgstr "شامل ہوں"
 
-#: iogt/templates/base.html:144
+#: iogt/templates/base.html:158
 msgid "Menu"
 msgstr "مینو"
 
-#: iogt/templates/base.html:217
+#: iogt/templates/base.html:231
 msgid "Change your language"
 msgstr "اپنی زبان تبدیل کریں"
+
+#: iogt/templates/comments/comment.html:8
+#: temp/temp_ve/commenting/templates/comments/comment.html:8
+#: temp/temp_ve/commenting/templates/notifications/notice.html:10
+#: temp/temp_ve/commenting/views.py:48
+msgid "Anonymous"
+msgstr "گمنام"
+
+#: iogt/templates/comments/comment.html:17
+#: temp/temp_ve/commenting/templates/comments/comment.html:16
+msgid ""
+"This comment has been removed by the community. Please read our platform "
+"rules."
+msgstr ""
+"یہ تبصرہ کمیونٹی کی طرف سے ہٹا دیا گیا ہے. براہ مہربانی ہمارے پلیٹ فارم کے "
+"قواعد پڑھیں."
+
+#: iogt/templates/comments/comment.html:22
+#: temp/temp_ve/commenting/templates/comments/comment.html:26
+msgid "Report"
+msgstr "آگاہی نامہ"
+
+#: iogt/templates/comments/comment.html:24
+#: temp/temp_ve/commenting/templates/comments/comment.html:39
+msgid "Reply"
+msgstr "جواب"
 
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
 msgstr "اس مضمون میں شامل کرنے کے لئے کچھ ہے؟"
 
-#: iogt/templates/core/related-article-list.html:30
-msgid "Related Articles"
-msgstr "متعلقہ مضامین"
+#: iogt/templates/comments/comment_block.html:14
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:14
+msgid "Log in to comment"
+msgstr "تبصرہ کرنے کے لیے لاگ ان کریں"
 
-#: iogt/templates/core/section_page.html:69
-msgid "Prev"
-msgstr "پچھلا"
+#: iogt/templates/comments/comment_block.html:18
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:18
+msgid "Commenting on this article is currently disabled"
+msgstr "اس مضمون پر تبصرہ فی الحال غیر فعال ہے"
 
-#: iogt/templates/core/section_page.html:98
+#: iogt/templates/comments/comment_block.html:22
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:23
+#: temp/temp_ve/commenting/templates/comments/comments.html:7
+msgid "Comments"
+msgstr "تبصرے"
+
+#: iogt/templates/comments/comment_block.html:29
+#: iogt/templates/core/article_page.html:24
+#: iogt/templates/core/related-article-list.html:32
+#: iogt/templates/core/section_page.html:46
+#: iogt/templates/core/section_page.html:126
+#: iogt/templates/core/tags/latest_listing_homepage.html:39
+#: iogt/templates/core/tags/section_listing_homepage.html:40
+#: iogt/templates/search/search_results.html:80
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:26
+msgid "comment"
+msgstr "تبصرہ"
+
+#: iogt/templates/comments/comment_block.html:44
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:41
+msgid "view more comments"
+msgstr "مزید تبصرے دیکھیں"
+
+#: iogt/templates/comments/form.html:7
+msgid ""
+"\n"
+"        Please correct the error below\n"
+"        "
+msgid_plural "Please correct the errors below"
+msgstr[0] "\\ n براہ مہربانی ذیل میں غلطی درست کریں \\ n        "
+
+#: iogt/templates/comments/form.html:14
+#: temp/temp_ve/commenting/forms.py:18
+msgid "Comment"
+msgstr ""
+
+#: iogt/templates/comments/form.html:15
+msgid "Comment Anonymously"
+msgstr "نامکمل تبصرہ"
+
+#: iogt/templates/core/next-article.html:8
+#: iogt/templates/core/section_page.html:85
 msgid "Next"
 msgstr "اگلا"
 
-#: iogt/templates/core/section_page.html:147
+#: iogt/templates/core/related-article-list.html:6
+msgid "Related Articles"
+msgstr "متعلقہ مضامین"
+
+#: iogt/templates/core/section_page.html:55
+msgid "Prev"
+msgstr "پچھلا"
+
+#: iogt/templates/core/section_page.html:133
 #: iogt/templates/core/tags/section_listing_homepage.html:46
 msgid "View more"
 msgstr "مزید دیکھیں"
+
+#: iogt/templates/core/tags/breadcrumbs.html:5
+#: temp/temp_ve/commenting/templates/comments/preview.html:11
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
+#: temp/temp_ve/polls/templates/polls/detail.html:25
+#: temp/temp_ve/polls/templates/polls/free_text_detail.html:12
+#: temp/temp_ve/polls/templates/polls/results.html:24
+msgid "Home"
+msgstr "گھر"
+
+#: iogt/templates/core/tags/latest_listing_homepage.html:4
+#: temp/temp_ve/commenting/test_templates/article_page.html:63
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:64
+msgid "Recommended"
+msgstr "تجاویز"
+
+#: iogt/templates/polls/detail.html:26
+#: iogt/templates/polls/free_text_detail.html:13
+#: iogt/templates/polls/includes/poll_question_form.html:45
+#: temp/temp_ve/polls/templates/polls/detail.html:24
+#: temp/temp_ve/polls/templates/polls/free_text_detail.html:11
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:35
+msgid "Vote"
+msgstr "ووٹ"
+
+#: iogt/templates/polls/detail.html:28
+#: iogt/templates/polls/free_text_detail.html:15
+#: iogt/templates/polls/results.html:31
+#: iogt/templates/surveys/molo_survey_page.html:34
+#: iogt/templates/surveys/molo_survey_page.html:40
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:35
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
+msgid "Back to Home page"
+msgstr "ہوم پیج پر واپس جائیں"
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:16
+#: iogt/templates/surveys/molo_survey_page.html:30
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:13
+msgid "Submit"
+msgstr "جمع کریں"
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:18
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
+msgid "Thank you! Your response has already been submitted."
+msgstr "آپ کا شکریہ! آپ کا جواب پہلے ہی پیش کیا گیا ہے."
+
+#: iogt/templates/polls/includes/poll_question_form.html:47
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
+msgid "Show Results"
+msgstr "نتائج دکھائیں"
+
+#: iogt/templates/polls/includes/poll_question_form.html:50
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
+msgid "You voted: "
+msgstr "آپ نے ووٹ دیا: "
+
+#: iogt/templates/polls/poll_page.html:7
+#: iogt/templates/polls/poll_page_in_section.html:8
+msgid "Polls"
+msgstr "انتخابات"
+
+#: iogt/templates/polls/results.html:28
+#: temp/temp_ve/polls/templates/polls/results.html:22
+msgid "Thank you for voting!"
+msgstr "ووٹنگ کے لئے آپ کا شکریہ!"
+
+#: iogt/templates/profiles/register.html:9
+#: temp/temp_ve/profiles/templates/profiles/register.html:9
+msgid "Already a member?"
+msgstr "پہلے سے ہی رکنیت حاصل ہے؟"
+
+#: iogt/templates/profiles/register.html:14
+#: iogt/templates/registration/login.html:8
+#: temp/temp_ve/profiles/templates/profiles/register.html:14
+#: temp/temp_ve/profiles/templates/registration/login.html:8
+#: temp/temp_ve/profiles/test_templates/login.html:8
+msgid "Not a member yet?"
+msgstr "ابھی تک رکن نہیں؟"
+
+#: iogt/templates/profiles/register.html:15
+#: temp/temp_ve/profiles/templates/profiles/register.html:15
+msgid "Join us by signing up below."
+msgstr "ہمارے ساتھ شمل ہونے کے لے ںیچے سائن اپ کریں"
 
 #: iogt/templates/profiles/register.html:21
 msgid "Choose a username"
 msgstr "صارف کا نام منتخب کریں"
 
-#: iogt/templates/profiles/register.html:28
-msgid "Choose a 4-digit pin"
-msgstr "چارعدد الفاز بطور پن منتخب کریں"
-
-#: iogt/templates/profiles/register.html:36
+#: iogt/templates/profiles/register.html:29
 msgid "Choose a display name"
 msgstr "ڈسپلے کا نام منتخب کریں"
 
-#: iogt/templates/profiles/register.html:45
+#: iogt/templates/profiles/register.html:38
 msgid "Select date of birth"
 msgstr "تاریخِ پیدائش چنیں"
 
-#: iogt/templates/profiles/register.html:54
+#: iogt/templates/profiles/register.html:41
+#: temp/temp_ve/profiles/templates/profiles/register.html:48
+msgid "Let us know your birthday to get access to exclusive content."
+msgstr "ہمارے خصوصی مواد تک رسائی حاصل کرنے کے لئے اپنی سالگرہ بتائیں."
+
+#: iogt/templates/profiles/register.html:47
 msgid "I identify my gender as:"
 msgstr "میں اپنی صنف کی شناخت کرتا ہوں جیسے:"
 
-#: iogt/templates/profiles/register.html:63
+#: iogt/templates/profiles/register.html:50
+#: iogt/templates/profiles/register.html:59
+#: iogt/templates/profiles/register.html:68
+#: temp/temp_ve/profiles/templates/profiles/done.html:38
+#: temp/temp_ve/profiles/templates/profiles/done.html:47
+#: temp/temp_ve/profiles/templates/profiles/done.html:56
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:31
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:40
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:49
+#: temp/temp_ve/profiles/templates/profiles/register.html:57
+#: temp/temp_ve/profiles/templates/profiles/register.html:66
+#: temp/temp_ve/profiles/templates/profiles/register.html:75
+msgid "Only you will see this"
+msgstr "صرف تم اسے دیکھیں گے"
+
+#: iogt/templates/profiles/register.html:56
 msgid "Where do you live?"
 msgstr "آپ کہاں رہتے ہیں"
 
-#: iogt/templates/profiles/register.html:72
+#: iogt/templates/profiles/register.html:65
 msgid "What is your highest level of education?"
 msgstr "آپ کی اعلی درجے کی تعلیم کیا ہے؟"
 
-#: iogt/templates/profiles/register.html:81
-msgid "Enter your mobile number"
-msgstr "اپنا موبائل نمبر درج کیجئے"
-
-#: iogt/templates/profiles/register.html:84
+#: iogt/templates/profiles/register.html:77
 msgid "e.g. 0900000013"
 msgstr "مثال کے طور پر 0900000013"
 
-#: iogt/templates/profiles/register.html:90
+#: iogt/templates/profiles/register.html:83
 msgid "Enter your email address"
 msgstr "اپنا ای میل کا پتا لکھو"
 
-#: iogt/templates/profiles/register.html:93
+#: iogt/templates/profiles/register.html:86
 msgid "e.g. example@foo.com"
 msgstr "مثال کے طور پر example@foo.com"
+
+#: iogt/templates/profiles/register.html:106
+msgid "e.g."
+msgstr ""
+
+#: iogt/templates/profiles/register.html:112
+#: temp/temp_ve/profiles/templates/profiles/register.html:112
+msgid "Please accept the T&amp;Cs in order to complete the registration"
+msgstr "رجسٹریشن کو مکمل کرنے کیلئے براہ مہربانی T & amp؛ Cs قبول کریں"
+
+#: iogt/templates/profiles/register.html:117
+#: iogt/templates/profiles/register.html:119
+#: temp/temp_ve/profiles/templates/profiles/register.html:117
+#: temp/temp_ve/profiles/templates/profiles/register.html:119
+msgid "I accept the Terms and Conditions"
+msgstr "میں قوائد و ضوابط کو قبول کرتا ہوں"
+
+#: iogt/templates/registration/login.html:5
+#: iogt/templates/registration/login.html:34
+#: iogt/templates/registration/password_reset_complete.html:8
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:9
+#: temp/temp_ve/profiles/templates/registration/login.html:5
+#: temp/temp_ve/profiles/templates/registration/login.html:34
+#: temp/temp_ve/profiles/test_templates/login.html:5
+#: temp/temp_ve/profiles/test_templates/login.html:34
+msgid "Log in"
+msgstr "لاگ ان"
 
 #: iogt/templates/registration/login.html:13
 msgid "Login by signing in below."
 msgstr "لاگ ان کرنے کے لیے نیچے سائن ان کریں"
 
+#: iogt/templates/registration/login.html:25
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
+#: temp/temp_ve/profiles/forms.py:76
+#: temp/temp_ve/profiles/forms.py:443
+#: temp/temp_ve/profiles/templates/registration/login.html:25
+#: temp/temp_ve/profiles/test_templates/login.html:25
+msgid "Username"
+msgstr "صارف نام"
+
+#: iogt/templates/registration/login.html:30
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
+#: temp/temp_ve/profiles/templates/registration/login.html:30
+#: temp/temp_ve/profiles/test_templates/login.html:30
+msgid "4-digit pin"
+msgstr "4 عددی پن"
+
+#: iogt/templates/registration/login.html:32
+#: temp/temp_ve/profiles/templates/registration/login.html:32
+#: temp/temp_ve/profiles/test_templates/login.html:32
+msgid "Eg.: 2086"
+msgstr "مثلاَ: 2086"
+
+#: iogt/templates/registration/login.html:37
+#: iogt/templates/registration/password_reset_form.html:4
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:25
+#: temp/temp_ve/profiles/templates/registration/login.html:37
+#: temp/temp_ve/profiles/test_templates/login.html:37
+msgid "Forgotten your password?"
+msgstr "اپنا پاس ورڈ بھول گئے؟"
+
 #: iogt/templates/registration/password_reset_complete.html:5
 msgid "Your password has been set. You may go ahead and log in now."
 msgstr "آپ کا پاس ورڈ مقرر کیا گیا ہے. آپ آگے بڑھیں اور اب لاگ ان کریں."
 
-#: iogt/templates/registration/password_reset_confirm.html:22
+#: iogt/templates/registration/password_reset_confirm.html:15
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
+msgid "Confirm password:"
+msgstr "پاس ورڈ کی توثیق کریں:"
+
+#: iogt/templates/registration/password_reset_confirm.html:19
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
+msgid "Change my password"
+msgstr "اپنا پاس ورڈ تبدیل کریں"
+
+#: iogt/templates/registration/password_reset_done.html:5
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:7
 msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used. Please request a new password reset."
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
 msgstr ""
-"پاس ورڈ دوبارہ ترتیب لنک غلط تھا، ممکنہ طور پر کیونکہ اس کا استعمال پہلے سے "
-"ہی ہوا ہے. براہ کرم ایک نیا پاس ورڈ ری سیٹ کی درخواست کریں."
+"ہم نے آپ کے پاس ورڈ کی ترتیب دینے کے لئے آپ کو ہدایت دی ہے، اگر آپ نے درج "
+"کردہ ای میل کے ساتھ ایک اکاؤنٹ موجود ہے. تمہیں انہیں جلد ہی ملنا چاہئے."
+
+#: iogt/templates/registration/password_reset_done.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:9
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"اگر آپ کو ایک ای میل نہیں ملتا ہے تو، براہ کرم یقینی بنائیں کہ آپ نے اپنے "
+"ایڈریس کو درج کردہ درجے درج کیا ہے، اور اپنے سپیم فولڈر کو چیک کریں."
 
 #: iogt/templates/registration/password_reset_done.html:8
 msgid "Back to home page"
@@ -1005,144 +489,608 @@ msgstr ""
 "ذیل میں اپنا ای میل ایڈریس درج کریں، اور ہم ایک نیا ترتیب دینے کیلئے ہدایات "
 "ای میل کریں گے."
 
-#: iogt/templates/search/search_results.html:11
-#: iogt/templates/search/search_results.html:77
-msgid "Search Results for:"
-msgstr "کے لئے تلاش کے نتائج:"
+#: iogt/templates/registration/password_reset_form.html:14
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
+msgid "Reset my password"
+msgstr "میرا پاس ورڈ ری سیٹ کریں"
 
-#: iogt/templates/search/search_results.html:80
+#: iogt/templates/search/search_block.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
+msgid "SEARCH"
+msgstr "تلاش"
+
+#: iogt/templates/search/search_results.html:3
+#: iogt/templates/search/search_results.html:8
+#: iogt/templates/search/search_results.html:103
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
+msgid "Search"
+msgstr "تلاش"
+
+#: iogt/templates/search/search_results.html:108
 msgid "No search results were found for "
 msgstr "کے لئے کوئی تلاش کے نتائج نہیں مل سکا "
 
-#: iogt/templates/search/search_results.html:82
+#: iogt/templates/search/search_results.html:110
 msgid "Back to homepage"
 msgstr "واپِس ہوم پیج پر"
+
+#: iogt/templates/surveys/molo_survey_page.html:30
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
+msgid "Next Question"
+msgstr "اگلا سوال"
+
+#: iogt/templates/surveys/molo_survey_page.html:37
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:32
+msgid "You have already completed this survey."
+msgstr "آپ نے پہلے ہی اس سروے کو مکمل کر لیا ہے."
+
+#: iogt/templates/surveys/molo_survey_page.html:45
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:40
+msgid "Please log in to take this survey"
+msgstr "اس جائزے کو کرنے کے لینے لئے لاگ ان کریں"
 
 #: iogt/templates/surveys/surveys_list.html:10
 msgid "Start here"
 msgstr "یہاں سے شروع کریں"
 
-#: iogt/settings/base.py:437
-msgid "February"
-msgstr "فروری"
+#: temp/temp_ve/commenting/admin_views.py:61
+#: temp/temp_ve/commenting/views.py:111
+msgid "Reply successfully created."
+msgstr "کامیابی سے جواب دیا گیا."
 
-#: iogt/settings/base.py:439
-msgid "April"
-msgstr "اپریل"
-
-#: iogt/temp_ve/commenting/forms.py:10
-#: iogt/temp_ve/commenting/forms.py:61
+#: temp/temp_ve/commenting/forms.py:13
+#: temp/temp_ve/commenting/forms.py:68
 msgid "Email address"
 msgstr "ای میل"
 
-#: iogt/temp_ve/commenting/forms.py:65
-msgid "Name"
-msgstr "نام"
+#: temp/temp_ve/commenting/forms.py:19
+msgid "Type your comment here..."
+msgstr "اپنا تبصرہ یہاں ٹائپ کریں ..."
 
-#: iogt/temp_ve/commenting/templates/comments/comment.html:16
-#: iogt/templates/comments/comment.html:17
-msgid ""
-"This comment has been removed by the community. Please read our platform "
-"rules."
+#: temp/temp_ve/commenting/forms.py:70
+msgid "URL"
+msgstr "یو آر ایل"
+
+#: temp/temp_ve/commenting/templates/comments/comment.html:23
+msgid "Ago"
 msgstr ""
-"یہ تبصرہ کمیونٹی کی طرف سے ہٹا دیا گیا ہے. براہ مہربانی ہمارے پلیٹ فارم کے "
-"قواعد پڑھیں."
 
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
-#: iogt/templates/comments/comment_block.html:14
-msgid "Log in to comment"
-msgstr "تبصرہ کرنے کے لیے لاگ ان کریں"
+#: temp/temp_ve/commenting/templates/comments/comment.html:31
+#: temp/temp_ve/commenting/templates/comments/comment.html:34
+#: temp/temp_ve/commenting/templates/comments/comment.html:41
+msgid "Replies"
+msgstr ""
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
-msgid "Sotho"
-msgstr "سوتھو"
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:6
+msgid "Share a Comment"
+msgstr "تبصرہ شیر کریں"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
-msgid "Tswana"
-msgstr "سوانا"
+#: temp/temp_ve/commenting/templates/comments/comment_done.html:7
+#: temp/temp_ve/commenting/templates/comments/report_response.html:6
+msgid "Thanks!"
+msgstr "شکریہ!"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
+#: temp/temp_ve/commenting/templates/comments/comment_done.html:9
+msgid "Your comment has been successfully posted"
+msgstr "آپ کی رائے کو کامیابی سے تعینات کردیا گیا ہے"
+
+#: temp/temp_ve/commenting/templates/comments/comment_done.html:11
+#: temp/temp_ve/commenting/templates/comments/comments.html:28
+#: temp/temp_ve/commenting/templates/comments/preview.html:44
+#: temp/temp_ve/commenting/templates/comments/reply.html:8
+#: temp/temp_ve/commenting/templates/comments/report_response.html:10
+msgid "Back to article"
+msgstr "مضمون پر واپس"
+
+#: temp/temp_ve/commenting/templates/comments/form.html:7
+msgid ""
+"\n"
+"        Please correct the error below\n"
+"      </h6>\n"
+"      </h6 class=\"comment__text comment__text--plural\">\n"
+"        "
+msgid_plural "Please correct the errors below"
+msgstr[0] ""
+"\\ n براہ کرم غلطی کو درست کریں \\ n </ h6> \\ n </ h6 class = \\ \""
+"comment__text comment__text - plural \"> \\ n        "
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:37
+#: temp/temp_ve/commenting/templates/comments/reply.html:41
+msgid "Please "
+msgstr "براہ مہربانی. "
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:40
+#: temp/temp_ve/commenting/templates/comments/reply.html:44
+msgid " to leave a comment."
+msgstr " ایک تبصرہ چھوڑنے کے لئے."
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:15
+msgid "Recent replies"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:17
+msgid "Earlier replies"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:29
+msgid "of"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/comments/report_response.html:7
+msgid "This comment has been reported."
+msgstr "یہ تبصرہ اطلاع دی گئی ہے."
+
+#: temp/temp_ve/commenting/templates/comments/report_response.html:8
+msgid ""
+"It will be reviewed by the team and may be removed if it breaks our Platform "
+"rules"
+msgstr ""
+"یہ ٹیم کی طرف سے جائزہ لیا جائے گا اور اگر یہ ہمارے پلیٹ فارم کے قوانین کو "
+"توڑتا ہے تو اسے ہٹایا جاسکتا ہے"
+
+#: temp/temp_ve/commenting/templates/notifications/notice.html:15
+msgid "replied to your comment on: "
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/notice.html:18
+msgid "ago"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
+msgid "You have"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:19
+msgid "Read replies:"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:27
+msgid "Back home"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:6
+msgid "Notification:"
+msgstr ""
+
+#: temp/temp_ve/commenting/views.py:31
+msgid "Reporting comment replies is not allowed."
+msgstr "رپورٹنگ تبصرہ جوابات کی اجازت نہیں ہے."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
+msgid "Zulu"
+msgstr "زولو"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:204
+msgid "Xhosa"
+msgstr "ژوسا"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
+msgid "Venda"
+msgstr "وینڈا"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
+msgid "Tsonga"
+msgstr "زونگا"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
+msgid "Swati"
+msgstr "سواتی"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
 msgid "Ndebele"
 msgstr "بیٹا"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:13
+msgid "Hi"
+msgstr "ہیلو"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
+msgid ""
+"Sorry, you are having trouble accessing this feature! Due to a temporary "
+"technical issue, login and registrations are not available on the Free "
+"Basics app for now. To login or register for a profile, visit our free "
+"mobisite through your mobile browser at"
+msgstr ""
+"معذرت، آپ کو اس سہولت تک رسائی حاصل کرنے میں دشواری ہو رہی کر رہے ہیں! عارضی "
+"تکنیکی مسئلے کی وجہ سے لاگ ان اور رجسٹریشن مفت مبادیات اپلی کیشن پر دستیاب "
+"نہیں ہیں. پروفائل لاگ ان یا رجسٹریشن کے لئے اپنے موبائل براؤزر کے ذریعے "
+"ہماری مفت موبائل ویب سائٹ استعمال کریں۔"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
+#: temp/temp_ve/core/test_templates/base.html:128
+#: temp/temp_ve/polls/test_templates/base.html:112
+#: temp/temp_ve/surveys/test_templates/base.html:112
+msgid "Site Language:"
+msgstr "سائٹ کی زبان:"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
+msgid "Latest"
+msgstr "تازہ ترین"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/topic_of_the_day.html:6
+msgid "Topic of the Day"
+msgstr "دن کی موضوع"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:21
+msgid "Sign in"
+msgstr "سائن ان"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
 msgid "LOGIN TO YOUR ACCOUNT!"
 msgstr "آپ کے اکاؤنٹ میں لاگ ان کریں!"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
-#: iogt/templates/registration/password_reset_confirm.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
+msgid "We’re excited to have you..."
+msgstr "ہم آپ کے لئے حوصلہ افزائی کر رہے ہیں ..."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
+msgid "Your username and password does not match. Please try again."
+msgstr "آپ کا صارف نام اور پاس ورڈ مماثلت نہیں ہے. دوبارہ کوشش کریں."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "آپ کا پاس ورڈ مقرر کیا گیا ہے. آپ آگے بڑھیں اور اب لاگ ان کریں."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
 msgid ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly."
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
 msgstr ""
-"براہ کرم دو بار اپنا نیا پاس ورڈ درج کریں تاکہ ہم اس بات کی تصدیق کرسکیں کہ "
-"آپ نے اسے صحیح طریقے سے ٹائپ کیا."
+"پاس ورڈ دوبارہ ترتیب لنک غلط تھا، ممکنہ طور پر کیونکہ اس کا استعمال پہلے سے "
+"ہی ہوا ہے. براہ کرم ایک نیا پاس ورڈ ری سیٹ کی درخواست کریں."
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
-#: iogt/templates/registration/password_reset_confirm.html:10
-msgid "New password:"
-msgstr "نیا پاس ورڈ:"
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
+msgid "I am looking for"
+msgstr "میں اس کو تلاش کر رہا ہوں"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
+#: temp/temp_ve/core/views.py:96
+msgid "That page is not translatable."
+msgstr "یہ صفحہ قابل ترجمہ نہیں ہے."
+
+#: temp/temp_ve/polls/forms.py:20
+msgid "You didn't select a choice"
+msgstr "آپ نے ایک انتخاب کا انتخاب نہیں کیا"
+
+#: temp/temp_ve/profiles/admin.py:73
+msgid "Type"
+msgstr "قسم"
+
+#: temp/temp_ve/profiles/admin.py:79
+msgid "Admin Users"
+msgstr "منتظم صارفین"
+
+#: temp/temp_ve/profiles/admin_views.py:16
 msgid ""
-"Forgotten your password? Enter your email address below, and we'll email "
-"instructions for setting a new one."
+"Your email address is not configured. Please update it before exporting."
+msgstr "آپ کا ای میل پتہ ترتیب نہیں ہے. برآمد کرنے سے پہلے اسے اپ ڈیٹ کریں."
+
+#: temp/temp_ve/profiles/forms.py:78
+#: temp/temp_ve/profiles/forms.py:445
+msgid "This value must contain only letters, numbers and underscores."
+msgstr "اس قیمت میں صرف حروف، نمبر اور زیر غور ہونا لازمی ہے."
+
+#: temp/temp_ve/profiles/forms.py:96
+#: temp/temp_ve/profiles/forms.py:489
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:23
+msgid "PIN"
+msgstr "پن"
+
+#: temp/temp_ve/profiles/forms.py:102
+#: temp/temp_ve/profiles/forms.py:241
+#: temp/temp_ve/profiles/forms.py:286
+msgid "Display Name"
+msgstr "ڈسپلے کا نام"
+
+#: temp/temp_ve/profiles/forms.py:116
+#: temp/temp_ve/profiles/forms.py:249
+#: temp/temp_ve/profiles/forms.py:300
+msgid "Location"
+msgstr "مقام"
+
+#: temp/temp_ve/profiles/forms.py:188
+msgid "Username already exists."
+msgstr "صارف نام پہلے سے موجود ہے."
+
+#: temp/temp_ve/profiles/forms.py:193
+msgid ""
+"Sorry, but that is an invalid username. Please don't use your %s in your "
+"username."
 msgstr ""
-"ذیل میں اپنا ای میل ایڈریس درج کریں، اور ہم نیا رگھنے کے لئے آپ کو ہدایات "
-"ای میل کریں گے."
+"معذرت، لیکن یہ ایک غلط صارف نامہ ہے. آپ استعمال نہ کریں %s اپنے صارف نام میں."
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
-#: iogt/templates/registration/password_reset_form.html:10
-msgid "Email address:"
-msgstr "ای میل"
+#: temp/temp_ve/profiles/forms.py:225
+#: temp/temp_ve/profiles/forms.py:351
+msgid ""
+"Sorry, but that is an invalid display name. Please don't use your %s in your "
+"display name."
+msgstr ""
+"افسوس، لیکن یہ ایک غلط ڈسپلے کا نام ہے. براہ کرم اپنے ڈسپلے کا نام میں %s "
+"استعمال نہ کریں."
 
-#: iogt/temp_ve/polls/templates/polls/poll_page.html:7
-msgid "What's your opinion?"
-msgstr "اپ کی رائے کیا ہے؟"
+#: temp/temp_ve/profiles/forms.py:390
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:25
+msgid "Old Password"
+msgstr "سابقہ پاسورڈ"
 
-#: iogt/temp_ve/polls/templates/polls/results.html:8
+#: temp/temp_ve/profiles/forms.py:405
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:32
+msgid "New Password"
+msgstr "نیا پاس ورڈ"
+
+#: temp/temp_ve/profiles/forms.py:421
+msgid "Confirm Password"
+msgstr "پاس ورڈ کی توثیق کریں"
+
+#: temp/temp_ve/profiles/forms.py:506
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:29
+msgid "Confirm PIN"
+msgstr "PIN کی توثیق کریں"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:38
+msgid "Confirm New Password"
+msgstr "نیے پاس ورڈ کی تصدیق کریں"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:35
+#: temp/temp_ve/profiles/templates/profiles/register.html:54
+msgid "I IDENTIFY MY GENDER AS:"
+msgstr "میں اپنے گریجویٹ کے طور پر متعین کروں گا:"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:53
+#: temp/temp_ve/profiles/templates/profiles/register.html:72
+msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
+msgstr "تعلیم کا سب سے اعلی سطح کیا ہے؟"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:63
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:8
+msgid "Home Page"
+msgstr "صفحہِ اول"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:11
+msgid "Update your display name:"
+msgstr "اپنے ڈسپلے کا نام اپ ڈیٹ کریں:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:20
+msgid "Update your date of birth:"
+msgstr "اپنی تاریخِ پیدائش کواپ ڈیٹ کریں"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:28
+msgid "Update your gender:"
+msgstr "اپنی صنف کو اپ ڈیٹ کریں:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:37
+msgid "Update where you live:"
+msgstr "اپ ڈیٹ کریں جہاں آپ رہتے ہیں"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:46
+msgid "Update your Education Level:"
+msgstr "اپنی تعلیمی سطح کو اپ ڈیٹ کریں:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:55
+msgid "Update your mobile number:"
+msgstr "اپنا موبائل نمبر اپ ڈیٹ کریں:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:58
+msgid "(e.g. 0914556789)"
+msgstr "(مثال کے طور پر 0914556789)"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:64
+msgid "Update your email address:"
+msgstr "اپنا ای میل ایڈریس اپ ڈیٹ کریں:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:67
+#: temp/temp_ve/profiles/templates/profiles/register.html:93
+msgid "(e.g. example@foo.com)"
+msgstr "(مثال کے طور پر example@foo.com)"
+
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:6
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:36
+msgid "Forgot PIN"
+msgstr "PIN بھول گیا"
+
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:31
+msgid "Security question"
+msgstr "حفاظتی سوال"
+
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:32
+msgid "Please answer the following security question."
+msgstr "مندرجہ ذیل حفاظتی سوال کا جواب دیں."
+
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:7
+msgid "Welcome Back!"
+msgstr ""
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:6
+#: temp/temp_ve/profiles/templates/profiles/register.html:123
+#: temp/temp_ve/profiles/templates/registration/login.html:9
+#: temp/temp_ve/profiles/test_templates/login.html:9
+msgid "Register"
+msgstr "رجسٹر"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:28
+msgid "CHOOSE A 4-DIGIT PIN"
+msgstr "چارعدد الفاز بطور پن منتخب کریں"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:31
+msgid "e.g. 2086"
+msgstr "مثلاَ: 2086"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:36
+msgid "CHOOSE A DISPLAY NAME"
+msgstr "ایک نئے ڈسپلے نام منتخب کریں"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:84
+msgid "(e.g. 0900000013)"
+msgstr "(مثال کے طور پر 0900000013)"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:90
+msgid "ENTER YOUR EMAIL ADDRESS"
+msgstr "اپنا ای میل کا پتا لکھو"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:5
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:32
+msgid "Reset PIN"
+msgstr "PIN دوبارہ ترتیب دیں"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:5
+msgid "PIN Changed"
+msgstr "پن تبدیل ہوگیا"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:7
+msgid "Your PIN has been changed sucessfully."
+msgstr "آپ کا PIN آرام سے بدل گیا ہے."
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:8
+msgid "Continue to Sign In"
+msgstr "سائن ان جاری رکھیں"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:6
+msgid "Hello "
+msgstr "آداب"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:9
+msgid "As you type your name comment will appear as:"
+msgstr "جیسے آپ اپنا نام ٹائپ کریںنگےآپ کا تبصرہ ایسے دگھے گا"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:14
+msgid "Date of Birth: "
+msgstr "تاریخِ پیدائش "
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
+msgid " Not set."
+msgstr "اندرآج نہیں ہے."
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26
+msgid "Mobile number:"
+msgstr "موبائل فون کانمبر:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:33
+msgid "Gender:"
+msgstr "جنس"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:40
+msgid "Location:"
+msgstr "مقام"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:47
+msgid "Education Level:"
+msgstr "تعلیمی معیار:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:54
+msgid "Email Address:"
+msgstr "برقی پتہ"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:59
+msgid "log out"
+msgstr "لاگ آوٹ"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:60
+msgid "Edit My Profile"
+msgstr "اپنی پروفائل میں ترمیم"
+
+#: temp/temp_ve/profiles/views.py:161
+msgid "The old password is incorrect."
+msgstr "پرانا پاس ورڈ غلط ہے."
+
+#: temp/temp_ve/profiles/views.py:184
+msgid "Too many attempts. Please try again later."
+msgstr "بہت سے کوششیں براہ کرم کچھ دیر بعد کوشش کریں."
+
+#: temp/temp_ve/profiles/views.py:279
+msgid "The two PINs that you entered do not match. Please try again."
+msgstr "آپ نے درج کردہ دو پنز نہیں ملتے. دوبارہ کوشش کریں."
+
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
+msgid "Submit Survey"
+msgstr "جائزہ جمع کریں"
+
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:12
+msgid "Survey Results"
+msgstr "سروے کے نتائج"
+
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:14
+msgid ""
+"Your survey has been completed successfully. Please see your submission "
+"results below."
+msgstr ""
+"آپ کا سروے کامیابی سے مکمل ہوگیا ہے. براہ مہربانی ذیل میں آپ کے جمع کرانے کے "
+"نتائج دیکھیں."
+
+#: temp/temp_ve/surveys/templates/surveys/surveys_list.html:10
+msgid "Take The Survey"
+msgstr "جائزہ مکمل کریں"
+
+#: temp/temp_ve/usermetadata/templates/persona.html:5
+msgid "Are you a ..."
+msgstr "کیا آپ ایک ۔۔۔"
+
+#: temp/temp_ve/usermetadata/templates/persona.html:21
+msgid "Skip"
+msgstr "آگے بڑھیں"
+
+#: iogt/settings/base.py:460
+msgid "February"
+msgstr "فروری"
+
+#: iogt/settings/base.py:462
+msgid "April"
+msgstr "اپریل"
+
+#: iogt/settings/base.py:463
+msgid "May"
+msgstr "مئی"
+
+#: iogt/settings/base.py:475
+msgid "Type your comment here"
+msgstr "یہاں اپنا تبصرہ لکھیں"
+
+#: iogt/templates/403_csrf.html:10
+msgid ""
+"To login or register for a profile, visit our free mobisite through your "
+"mobile browser at"
+msgstr ""
+"پروفائل کے لئے لاگ ان یا رجسٹر کرنے کے لئے، اپنے موبائل براؤزر کے ذریعے "
+"ہماری مفت حرکتیں ملاحظہ کریں"
+
+#: iogt/templates/base.html:156
+#: iogt/templates/base.html:219
+#: temp/temp_ve/profiles/templates/profiles/done.html:64
+msgid "Profile"
+msgstr "پروفائل"
+
+#: iogt/templates/base.html:212
+#: iogt/templates/profiles/register.html:10
+#: temp/temp_ve/profiles/templates/profiles/register.html:10
+msgid "Login"
+msgstr "لاگ ان"
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:24
+#: iogt/templates/polls/includes/poll_question_form.html:26
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:18
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:20
+msgid "Log in to vote"
+msgstr "ووٹ ڈالنے کے لئے لاگ ان کریں"
+
 #: iogt/templates/polls/results.html:8
+#: temp/temp_ve/polls/templates/polls/results.html:8
 msgid "Your answers:"
 msgstr "آپ کا جواب:"
 
-#: iogt/temp_ve/profiles/admin.py:78
-msgid "Frontend Users"
-msgstr "فرنٹ اینڈ صارفین"
+#: iogt/templates/profiles/register.html:24
+#: temp/temp_ve/profiles/templates/profiles/register.html:24
+msgid ""
+"This name you will use to log in and won't appear to other users. Only you "
+"will see this."
+msgstr ""
+"یہ نام آپ لاگ ان کرنے کے لئے استعمال کریں گے اور دوسرے صارفین کو نہیں دکھائے "
+"جائیں گے. صرف تم اسے دیکھیں گے."
 
-#: iogt/temp_ve/profiles/forms.py:94
-#: iogt/temp_ve/profiles/forms.py:419
-#: iogt/temp_ve/profiles/forms.py:487
-#: iogt/temp_ve/profiles/forms.py:504
-msgid "This value must contain only numbers."
-msgstr "یہ قیمت صرف نمبروں پر مشتمل ہے."
-
-#: iogt/temp_ve/profiles/forms.py:112
-#: iogt/temp_ve/profiles/forms.py:245
-#: iogt/temp_ve/profiles/forms.py:296
-msgid "Gender"
-msgstr "جنس"
-
-#: iogt/temp_ve/profiles/forms.py:388
-#: iogt/temp_ve/profiles/forms.py:403
-msgid "This value must contain only           numbers."
-msgstr "یہ قیمت صرف نمبروں پر مشتمل ہے."
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:8
-msgid "Thank you for joining!"
-msgstr "شامل ہونے کے لئے آپ کا شکریہ!"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:13
-msgid "Let us know more about yourself to get access to exclusive content."
-msgstr "ہمیں خصوصی مواد تک رسائی حاصل کرنے کے بارے میں مزید جاننے دو"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:26
-msgid "DISPLAY NAME"
-msgstr "ڈسپلے نام"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:29
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
-#: iogt/temp_ve/profiles/templates/profiles/register.html:39
-#: iogt/templates/profiles/register.html:39
+#: iogt/templates/profiles/register.html:32
+#: temp/temp_ve/profiles/templates/profiles/done.html:29
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: temp/temp_ve/profiles/templates/profiles/register.html:39
 msgid ""
 "We value your online security, therefore we hide your username and allow you "
 "to comment and interact with the site with a display name."
@@ -1151,31 +1099,197 @@ msgstr ""
 "دیتے ہیں اور آپ کو سائٹ کے ڈسپلے کا نام سے تبصرہ کرنے اور اس سے رابطہ کرنے "
 "کی اجازت دیتے ہیں."
 
-#: iogt/temp_ve/profiles/templates/profiles/done.html:44
-#: iogt/temp_ve/profiles/templates/profiles/register.html:63
+#: iogt/templates/profiles/register.html:74
+msgid "Enter your mobile number"
+msgstr "اپنا موبائل نمبر درج کیجئے"
+
+#: iogt/templates/profiles/register.html:103
+msgid "Choose a 4-digit pin"
+msgstr "چارعدد الفاز بطور پن منتخب کریں"
+
+#: iogt/templates/registration/login.html:20
+#: temp/temp_ve/profiles/templates/registration/login.html:20
+#: temp/temp_ve/profiles/test_templates/login.html:20
+msgid "Your username and password do not match. Please try again."
+msgstr "آپ کا صارف نام اور پاس ورڈ مطابقت نہیں رگھتا. دوبارہ کوشش کریں."
+
+#: iogt/templates/registration/password_reset_confirm.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"براہ کرم دو بار اپنا نیا پاس ورڈ درج کریں تاکہ ہم اس بات کی تصدیق کرسکیں کہ "
+"آپ نے اسے صحیح طریقے سے ٹائپ کیا."
+
+#: iogt/templates/registration/password_reset_confirm.html:10
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
+msgid "New password:"
+msgstr "نیا پاس ورڈ:"
+
+#: iogt/templates/registration/password_reset_confirm.html:22
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+"پاس ورڈ دوبارہ ترتیب لنک غلط تھا، ممکنہ طور پر کیونکہ اس کا استعمال پہلے سے "
+"ہی ہوا ہے. براہ کرم ایک نیا پاس ورڈ ری سیٹ کی درخواست کریں."
+
+#: iogt/templates/registration/password_reset_form.html:10
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
+msgid "Email address:"
+msgstr "ای میل"
+
+#: iogt/templates/search/search_block.html:5
+#: iogt/templates/search/search_results.html:7
+#: iogt/templates/search/search_results.html:102
+msgid "Search the site..."
+msgstr "سائٹ میں تلاش کریں ..."
+
+#: iogt/templates/search/search_results.html:10
+#: iogt/templates/search/search_results.html:105
+msgid "Search Results for:"
+msgstr "کے لئے تلاش کے نتائج:"
+
+#: temp/temp_ve/commenting/forms.py:72
+msgid "Name"
+msgstr "نام"
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:39
+#: temp/temp_ve/commenting/templates/comments/reply.html:43
+msgid "log in"
+msgstr "لاگ ان"
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:29
+msgid "Page"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
+msgid "unread replies"
+msgstr ""
+
+#: temp/temp_ve/commenting/test_templates/article_page.html:48
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
+msgid "Next up in"
+msgstr "اگلے اوپر"
+
+#: temp/temp_ve/commenting/views.py:34
+msgid "The comment has been reported."
+msgstr "یہ اطلاع دی گئی ہے."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
+msgid "Sotho"
+msgstr "سوتھو"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
+msgid "Tswana"
+msgstr "سوانا"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+"ذیل میں اپنا ای میل ایڈریس درج کریں، اور ہم نیا رگھنے کے لئے آپ کو ہدایات "
+"ای میل کریں گے."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
+msgid "Looking for something?"
+msgstr "کچھ تلاش کر رہے ہیں؟"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
+msgid "No search results for "
+msgstr "تلاش کا کوئی نتیجہ نہیں"
+
+#: temp/temp_ve/polls/templates/polls/poll_page.html:7
+msgid "What's your opinion?"
+msgstr "اپ کی رائے کیا ہے؟"
+
+#: temp/temp_ve/profiles/admin.py:78
+msgid "Frontend Users"
+msgstr "فرنٹ اینڈ صارفین"
+
+#: temp/temp_ve/profiles/admin_views.py:39
+msgid "CSV emailed to '{0}'"
+msgstr "CSV ' {0} ' کو ای میل کیا گیا"
+
+#: temp/temp_ve/profiles/forms.py:94
+#: temp/temp_ve/profiles/forms.py:419
+#: temp/temp_ve/profiles/forms.py:487
+#: temp/temp_ve/profiles/forms.py:504
+msgid "This value must contain only numbers."
+msgstr "یہ قیمت صرف نمبروں پر مشتمل ہے."
+
+#: temp/temp_ve/profiles/forms.py:112
+#: temp/temp_ve/profiles/forms.py:245
+#: temp/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "جنس"
+
+#: temp/temp_ve/profiles/forms.py:120
+#: temp/temp_ve/profiles/forms.py:253
+#: temp/temp_ve/profiles/forms.py:304
+msgid "Education Level"
+msgstr "تعلیمی معیار"
+
+#: temp/temp_ve/profiles/forms.py:388
+#: temp/temp_ve/profiles/forms.py:403
+msgid "This value must contain only           numbers."
+msgstr "یہ قیمت صرف نمبروں پر مشتمل ہے."
+
+#: temp/temp_ve/profiles/forms.py:431
+msgid "New passwords do not match."
+msgstr "نئے پاس ورڈ مماثل نہیں کرتے"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:27
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:25
+msgid "(e.g. 2086)"
+msgstr "(مثلاَ: 2086)"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:42
+#: temp/temp_ve/profiles/templates/profiles/done.html:59
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:70
+msgid "Save"
+msgstr "محفوظ"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:8
+msgid "Thank you for joining!"
+msgstr "شامل ہونے کے لئے آپ کا شکریہ!"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr "ہمیں خصوصی مواد تک رسائی حاصل کرنے کے بارے میں مزید جاننے دو"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:18
+#: temp/temp_ve/profiles/templates/profiles/register.html:45
+msgid "SELECT DATE OF BIRTH"
+msgstr "تاریخِ پیدائش چنیں"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "ڈسپلے نام"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:44
+#: temp/temp_ve/profiles/templates/profiles/register.html:63
 msgid "WHERE DO YOU LIVE?"
 msgstr "کیا آپ رہتے ہیں؟"
 
-#: iogt/temp_ve/profiles/templates/profiles/register.html:10
-#: iogt/templates/base.html:198
-#: iogt/templates/profiles/register.html:10
-msgid "Login"
-msgstr "لاگ ان"
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:5
+msgid "Login Success"
+msgstr ""
 
-#: iogt/temp_ve/profiles/templates/profiles/register.html:81
+#: temp/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "صارف کا نام منتخب کریں"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:81
 msgid "ENTER YOUR MOBILE NUMBER"
 msgstr "اپنا موبائل نمبر درج کیجئے"
 
-#: iogt/templates/polls/poll_page.html:7
-#: iogt/templates/polls/poll_page_in_section.html:8
-msgid "Polls"
-msgstr "انتخابات"
-
-#: iogt/templates/search/search_block.html:5
-#: iogt/templates/search/search_results.html:8
-#: iogt/templates/search/search_results.html:74
-msgid "Search the site..."
-msgstr "سائٹ میں تلاش کریں ..."
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:61
+msgid "Change My Password"
+msgstr "اپنا پاس ورڈ تبدیل کریں"
 
 #~ msgid "Type new display name:"
 #~ msgstr "نیا ڈسپلے نام ٹائپ کریں"
