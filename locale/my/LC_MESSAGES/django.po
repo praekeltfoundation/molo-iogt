@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-06 12:46+0200\n"
-"PO-Revision-Date: 2017-04-13 13:47+0000\n"
+"POT-Creation-Date: 2018-03-13 10:38+0000\n"
+"PO-Revision-Date: 2018-03-13 13:08+0000\n"
 "Last-Translator: Reeza <reeza@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bur_MM\n"
@@ -12,978 +12,70 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1492091251.089849\n"
+"X-POOTLE-MTIME: 1520946502.458928\n"
 
-#: iogt/settings/base.py:436
+#: iogt/settings/base.py:459
 msgid "January"
 msgstr "ဇန္နဝါရီ"
 
-#: iogt/settings/base.py:437
-msgid "February"
-msgstr "ေဖေဖာ္ဝါရီ"
-
-#: iogt/settings/base.py:438
+#: iogt/settings/base.py:461
 msgid "March"
 msgstr "မတ္"
 
-#: iogt/settings/base.py:439
-msgid "April"
-msgstr "ဧျပီ"
-
-#: iogt/settings/base.py:440
-msgid "May"
-msgstr "ေမ"
-
-#: iogt/settings/base.py:441
+#: iogt/settings/base.py:464
 msgid "June"
 msgstr "ဇြန္"
 
-#: iogt/settings/base.py:442
+#: iogt/settings/base.py:465
 msgid "July"
 msgstr "ဇူလိုင္"
 
-#: iogt/settings/base.py:443
+#: iogt/settings/base.py:466
 msgid "August"
 msgstr "ၾသဂုတ္"
 
-#: iogt/settings/base.py:444
+#: iogt/settings/base.py:467
 msgid "September"
 msgstr "စက္တင္ဘာ"
 
-#: iogt/settings/base.py:445
+#: iogt/settings/base.py:468
 msgid "October"
 msgstr "ေအာက္တိုဘာ"
 
-#: iogt/settings/base.py:446
+#: iogt/settings/base.py:469
 msgid "November"
 msgstr "ႏိုဝင္ဘာ"
 
-#: iogt/settings/base.py:447
+#: iogt/settings/base.py:470
 msgid "December"
 msgstr "ဒီဇင္ဘာ"
 
-#: iogt/settings/base.py:448
+#: iogt/settings/base.py:471
 msgid "Add anonymously"
 msgstr "ဇန္နဝါရီ"
 
-#: iogt/settings/base.py:450
+#: iogt/settings/base.py:473
 msgid "This field is required"
 msgstr "ဤစာကွက်လပ်မှာဖြည့်ရန်လိုအပ်ပါသည်"
 
-#: iogt/settings/base.py:451 iogt/temp_ve/usermetadata/templates/persona.html:5
-msgid "Are you a ..."
-msgstr "သင္သည္"
-
-#: iogt/settings/base.py:452
+#: iogt/settings/base.py:474
 msgid "Ensure this value has at least 4 characters (it has 1)"
 msgstr "ဒီတန်ဖိုး (1 ရှိပါတယ်) ကအနည်းဆုံး 4 ဇာတ်ကောင်ရှိပါတယ်သေချာ"
 
-#: iogt/settings/base.py:453
-msgid "Type your comment here..."
-msgstr "ဒီနေရာမှာသင့်ရဲ့ comment ကိုရိုက်ထည့်ပါ"
-
-#: iogt/temp_ve/commenting/admin_views.py:61
-#: iogt/temp_ve/commenting/views.py:111
-msgid "Reply successfully created."
-msgstr "အောင်မြင်စွာဖန်တီးပြန်ကြားချက်:"
-
-#: iogt/temp_ve/commenting/forms.py:10 iogt/temp_ve/commenting/forms.py:61
-msgid "Email address"
-msgstr "အီးမေးလိပ်စာ"
-
-#: iogt/temp_ve/commenting/forms.py:63
-msgid "URL"
-msgstr "URL"
-
-#: iogt/temp_ve/commenting/forms.py:65
-msgid "Name"
-msgstr "အမည္"
-
-#: iogt/temp_ve/commenting/templates/comments/comment.html:8
-#: iogt/temp_ve/commenting/views.py:48 iogt/templates/comments/comment.html:8
-msgid "Anonymous"
-msgstr "အမည္မသိ (မေဖာ္လို)"
-
-#: iogt/temp_ve/commenting/templates/comments/comment.html:16
-#: iogt/templates/comments/comment.html:17
-msgid ""
-"This comment has been removed by the community. Please read our platform "
-"rules."
-msgstr ""
-"ယင္းမွတ္ခ်က္ကို အဖြဲ႔အစည္းမွ ဖ်က္လိုျပီျဖစ္ပါတယ္။ ေက်းဇူးျပဳ၍ စည္းမ်ဥ္းစည္းကမ္းမ်ားကို ေလ့လာဖတ္ရႈေပးပါ။"
-
-#: iogt/temp_ve/commenting/templates/comments/comment.html:21
-#: iogt/templates/comments/comment.html:22
-msgid "Report"
-msgstr "အစီရင်ခံစာ"
-
-#: iogt/temp_ve/commenting/templates/comments/comment.html:23
-#: iogt/templates/comments/comment.html:24
-msgid "Reply"
-msgstr "ပြန်ကြားချက်"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:6
-msgid "Share a Comment"
-msgstr "မွတ္ခ်က္ကို မွ်ေဝသည္။"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:14
-#: iogt/templates/comments/comment_block.html:14
-msgid "Log in to comment"
-msgstr "မွတ္ခ်က္ေပးရန္ log in လုပ္ပါ။"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:18
-#: iogt/templates/comments/comment_block.html:18
-msgid "Commenting on this article is currently disabled"
-msgstr "ယင္း စာပိုဒ္တြင္ မွတ္ခ်က္ျပဳခြင့္မရွိေသးပါ။ "
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:23
-#: iogt/temp_ve/commenting/templates/comments/comments.html:7
-#: iogt/templates/comments/comment_block.html:23
-msgid "Comments"
-msgstr "မှတ်ချက်များ"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:26
-#: iogt/templates/comments/comment_block.html:30
-#: iogt/templates/core/article_page.html:43
-#: iogt/templates/core/related-article-list.html:56
-#: iogt/templates/core/section_page.html:58
-#: iogt/templates/core/section_page.html:140
-#: iogt/templates/core/tags/latest_listing_homepage.html:39
-#: iogt/templates/core/tags/section_listing_homepage.html:40
-#: iogt/templates/search/search_results.html:53
-msgid "comment"
-msgstr "မွတ္ခ်က္"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_block.html:41
-#: iogt/templates/comments/comment_block.html:45
-msgid "view more comments"
-msgstr "ပိုပြီးမှတ်ချက်များကိုကြည့်ရှု"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_done.html:7
-#: iogt/temp_ve/commenting/templates/comments/report_response.html:6
-msgid "Thanks!"
-msgstr "ေက်းဇူးတင္ပါတယ္"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_done.html:9
-msgid "Your comment has been successfully posted"
-msgstr "သင့်ရဲ့ထင်မြင်ချက်ကိုအောင်မြင်စွာပေါင်းထည့်ပြီးပါပြီ"
-
-#: iogt/temp_ve/commenting/templates/comments/comment_done.html:11
-#: iogt/temp_ve/commenting/templates/comments/comments.html:28
-#: iogt/temp_ve/commenting/templates/comments/preview.html:45
-#: iogt/temp_ve/commenting/templates/comments/report_response.html:10
-msgid "Back to article"
-msgstr "ေဆာင္းပါးသုိ႔ ျပန္သြားမည္"
-
-#: iogt/temp_ve/commenting/templates/comments/preview.html:11
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
-#: iogt/temp_ve/polls/templates/polls/detail.html:25
-#: iogt/temp_ve/polls/templates/polls/free_text_detail.html:12
-#: iogt/temp_ve/polls/templates/polls/results.html:24
-#: iogt/templates/core/article_page.html:11
-#: iogt/templates/core/section_page.html:15
-#: iogt/templates/surveys/molo_survey_page.html:10
-msgid "Home"
-msgstr "အဓိက စာမ်က္ႏွာ"
-
-#: iogt/temp_ve/commenting/templates/comments/preview.html:38
-#: iogt/temp_ve/commenting/templates/comments/reply.html:18
-msgid "Please "
-msgstr "ကျေးဇူးပြု "
-
-#: iogt/temp_ve/commenting/templates/comments/preview.html:40
-#: iogt/temp_ve/commenting/templates/comments/reply.html:20
-msgid "log in"
-msgstr "ဝင်​ရန်​"
-
-#: iogt/temp_ve/commenting/templates/comments/preview.html:41
-#: iogt/temp_ve/commenting/templates/comments/reply.html:21
-msgid " to leave a comment."
-msgstr " မှတ်ချက်ထားခဲ့ဖို့။"
-
-#: iogt/temp_ve/commenting/templates/comments/report_response.html:7
-msgid "This comment has been reported."
-msgstr "ဤမှတ်ချက်ကိုအစီရင်ခံခဲ့သည်။"
-
-#: iogt/temp_ve/commenting/templates/comments/report_response.html:8
-msgid ""
-"It will be reviewed by the team and may be removed if it breaks our Platform "
-"rules"
-msgstr "ဒါဟာအသင်းအားဖြင့်သုံးသပ်သွားမည်ဖြစ်ပြီးကြောင့်ပလက်ဖောင်းစည်းမျဉ်းစည်းကမ်းတွေကိုဖောက်ဖျက်လျှင်ဖယ်ထုတ်ခြင်းခံရစေခြင်းငှါ"
-
-#: iogt/temp_ve/commenting/views.py:31
-msgid "Reporting comment replies is not allowed."
-msgstr "မှတ်ချက်ပြန်ကြားချက်ကိုအစီရင်ခံခွင့်ပြုမထားပေ။"
-
-#: iogt/temp_ve/commenting/views.py:34
-msgid "The comment has been reported."
-msgstr "အဆိုပါမှတ်ချက်ဖော်ပြခဲ့သည်သိရသည်။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
-msgid "Zulu"
-msgstr "Zulu"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:204
-msgid "Xhosa"
-msgstr "Xhosa"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
-msgid "Sotho"
-msgstr "Sotho"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
-msgid "Venda"
-msgstr "Venda"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
-msgid "Tswana"
-msgstr "Tswana"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
-msgid "Tsonga"
-msgstr "Tsonga"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
-msgid "Swati"
-msgstr "Swati"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
-msgid "Ndebele"
-msgstr "Ndebele"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 #: iogt/templates/403.html:8
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 msgid "Access Denied"
 msgstr "အဆိုပါ စာမ်က္ႏွာကို ဝင္ေရာက္လို႔မရပါ။"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 #: iogt/templates/403.html:9
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 msgid "You do not have permssion to access this site."
 msgstr "သင်ဤ site ကိုဝင်ရောက်ဖို့ permssion ရှိသည်မဟုတ်ကြဘူး။"
 
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
 #: iogt/templates/403_csrf.html:7
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
 msgid "Unable to Login"
 msgstr "အတွက်လက်မှတ်ထိုးဖို့မအောင်မြင်ဘူး"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:13
-msgid "Hi"
-msgstr "မင်္ဂလာပါ"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
-msgid ""
-"Sorry, you are having trouble accessing this feature! Due to a temporary "
-"technical issue, login and registrations are not available on the Free "
-"Basics app for now. To login or register for a profile, visit our free "
-"mobisite through your mobile browser at"
-msgstr ""
-"ဝမ်းနည်းပါတယ်, သင်သည်ဤအင်္ဂါရပ်ကိုရယူသုံးဒုက္ခရှိခြင်းကြသည်! ကြောင့်ယာယီနည်းပညာပိုင်းဆိုင်ရာပြဿနာ, "
-"ဝင်ရောက်ခြင်းနှင့်မှတ်ပုံတင်ယခုများအတွက်အခမဲ့အခြေခံပေါ်တယ်ပေါ်တွင်မရနိုင်ပါဖြစ်ကြသည်။ "
-"အတွက်လက်မှတ်ထိုးတစ်ခုသို့မဟုတ်ပရိုဖိုင်အတွက်မှတ်ပုံတင်ရန်မှာသင့်မိုဘိုင်းဘရောက်ဇာကိုတဆင့်ကျွန်တော်တို့ရဲ့အခမဲ့မိုဘိုင်းက်ဘ်ဆိုက်ဝင်ရောက်ကြည့်ရှုရန်"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
-#: iogt/templates/403_csrf.html:11
-msgid " We're working hard to get this problem resolved. Thank you."
-msgstr " ငါတို့သည်ဤပြဿနာကိုပြေလည်ရခက်တဲ့အလုပ်လုပ်ကိုင်ပါတယ်။ ကျေးဇူးတင်ပါတယ်။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
-#: iogt/templates/404.html:8
-msgid "Page not found"
-msgstr " စာမ်က္ႏွာကို ရွာေဖြ၍ မရပါ။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
-#: iogt/templates/404.html:9
-msgid "Sorry, this page could not be found."
-msgstr "၀မ္းနည္းပါသည္။ အဆိုပါစာမ်က္ႏွာကို ကၽြႏု္ပ္တို႔ ရွာမေတြ႔ပါ၊ "
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
-#: iogt/templates/500.html:12 iogt/templates/500.html:16
-msgid "Internal server error"
-msgstr " ဆာဗာတြင္ မွားယြင္းမႈ တစ္ခုခုျဖစ္ေနပါသည္။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
-#: iogt/templates/500.html:17
-msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr ""
-"၀မ္းနည္းပါသည္။ မွားယြင္းေနမႈ တစ္ခုခုရွိေနသည္ဟု ထင္ရပါသည္။ ျပန္လည္ "
-"ဝင္ေရာက္ၾကည့္ပါ။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
-#: iogt/temp_ve/core/test_templates/base.html:128
-#: iogt/temp_ve/polls/test_templates/base.html:112
-#: iogt/temp_ve/surveys/test_templates/base.html:112
-msgid "Site Language:"
-msgstr "ဆိုက်ကိုဘာသာစကား:"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
-#: iogt/templates/core/related-article-list.html:7
-msgid "Next up in"
-msgstr "လာမယ့်အတွက်တက်"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:64
-#: iogt/templates/core/tags/latest_listing_homepage.html:4
-msgid "Recommended"
-msgstr "အႀကံျပဳေထာက္ခံျခင္း၊"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
-msgid "Latest"
-msgstr "နောက်ဆုံး"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/topic_of_the_day.html:6
-msgid "Topic of the Day"
-msgstr "နေ့၏ခေါင်းစဉ်"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:6
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:21
-msgid "Sign in"
-msgstr "ဝင္ရန္"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
-msgid "LOGIN TO YOUR ACCOUNT!"
-msgstr "သင့်အကောင့်အတွက်လက်မှတ်ထိုး!"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
-msgid "We’re excited to have you..."
-msgstr "ငါတို့သည်သင်တို့ရှိသည်ဖို့စိတ်လှုပ်ရှားနေ ..."
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
-msgid "Your username and password does not match. Please try again."
-msgstr "သင့်ရဲ့အသုံးပြုသူအမည်နှင့်စကားဝှက်ကိုမတိုက်ဆိုင်ပါဘူး။ ထပ်ကြိုးစားပါ။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
-#: iogt/temp_ve/profiles/forms.py:76 iogt/temp_ve/profiles/forms.py:443
-#: iogt/temp_ve/profiles/templates/registration/login.html:25
-#: iogt/templates/registration/login.html:25
-msgid "Username"
-msgstr "အသုံးပြုသူအမည်"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
-#: iogt/temp_ve/profiles/templates/registration/login.html:30
-#: iogt/templates/registration/login.html:30
-msgid "4-digit pin"
-msgstr "ဂဏန္း ေလးလံုးရွိ လွ်ိဳ႕ဝွက္နံပါတ္"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:25
-#: iogt/temp_ve/profiles/templates/registration/login.html:37
-#: iogt/templates/registration/login.html:37
-#: iogt/templates/registration/password_reset_form.html:4
-msgid "Forgotten your password?"
-msgstr "မိမိိ လွ်ိဳ႕ဝွက္နံပါတ္ password ကို မသိေတာ့ပါ။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
-msgid "Your password has been set.  You may go ahead and log in now."
-msgstr "သင့်ရဲ့စကားဝှက်ကိုသတ်မှတ်ပြီးပါပြီ။ သငျသညျရှေ့သွားနှင့်ယခုဝငျရောကျနိုငျသညျ။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:9
-#: iogt/temp_ve/profiles/templates/registration/login.html:5
-#: iogt/temp_ve/profiles/templates/registration/login.html:34
-#: iogt/templates/registration/login.html:5
-#: iogt/templates/registration/login.html:34
-#: iogt/templates/registration/password_reset_complete.html:8
-msgid "Log in"
-msgstr "ဝင်​ရန်​"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
-#: iogt/templates/registration/password_reset_confirm.html:6
-msgid ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly."
-msgstr "အကြှနျုပျတို့သညျကိုမှန်မှန်ကန်ကန်ထဲမှာရိုက်အတည်ပြုရန်နိုင်အောင်နှစ်ကြိမ်သင့်ရဲ့စကားဝှက်အသစ်ရိုက်ထည့်ပေးပါ။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
-#: iogt/templates/registration/password_reset_confirm.html:10
-msgid "New password:"
-msgstr "စကားဝှကိအသစ်:"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
-#: iogt/templates/registration/password_reset_confirm.html:15
-msgid "Confirm password:"
-msgstr "စကားဝှက်ကိုအတည်ပြုပါ:"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
-#: iogt/templates/registration/password_reset_confirm.html:19
-msgid "Change my password"
-msgstr "မိမိ၏ လွ်ိဳ႕ဝွက္နံပါတ္ password ကိုေျပာင္းမည္။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
-msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used.  Please request a new password reset."
-msgstr ""
-"စကားဝှက်ကိုပြန်ညှိမှုပြုလုပ်ထားပြီးအသုံးပြုခဲ့ပြီးဖြစ်နိုင်သည်ကြောင့်၎င်း, မမှန်ကန်ပါ။ "
-"သစ်တစ်ခုစကားဝှက်ပြန်ညှိတောင်းဆိုရန်ပေးပါ။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:7
-#: iogt/templates/registration/password_reset_done.html:5
-msgid ""
-"We've emailed you instructions for setting your password, if an account "
-"exists with the email you entered. You should receive them shortly."
-msgstr ""
-"ငါတို့သည်သင်တို့အကောင့်တစ်ခုသင်ထည့်သွင်းအီးမေးလ်နှင့်အတူတည်ရှိနေလျှင်သင့်ရဲ့စကားဝှက်ကိုထူထောင်ဖို့ဘယ်လိုအဘို့ညွှန်ကြားချက်မေးလ်ပို့ပေးပါတယ်။ "
-"သငျသညျမကြာမီသူတို့ကိုလကျခံသငျ့သညျ။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:9
-#: iogt/templates/registration/password_reset_done.html:6
-msgid ""
-"If you don't receive an email, please make sure you've entered the address "
-"you registered with, and check your spam folder."
-msgstr ""
-"အီးမေးလ်လက်ခံရရှိဘူးဆိုရငျ, သငျသညျသငျနှငျ့အတူမှတ်ပုံတင်ပြီးလိပ်စာသို့ဝင်သေချာ, သင်၏ spam များကို folder "
-"ကိုစစ်ဆေးပါ။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
-msgid ""
-"Forgotten your password? Enter your email address below, and we'll email "
-"instructions for setting a new one."
-msgstr ""
-"သင့်ရဲ့စကားဝှက်ကိုမေ့နေတာလား? သင့်အီးမေးလ်လိပ်စာအောက်တွင်ဖော်ပြထားသောထည့်ပါ, ကျွန်တော်တစ်ဦးအသစ်တယောက် "
-"setting များအတွက်ညွှန်ကြားချက်အီးမေးလ်ပို့ပါလိမ့်မယ်။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
-#: iogt/templates/registration/password_reset_form.html:10
-msgid "Email address:"
-msgstr "အီးမေးလိပ်စာ:"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
-#: iogt/templates/registration/password_reset_form.html:14
-msgid "Reset my password"
-msgstr "မိိမိ၏ လွွ်ိဳ႕ဝွက္နံပါတ္ password ကိုေျပာင္းမည္။"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
-msgid "Looking for something?"
-msgstr "အရာတစ်ခုခုကိုရှာဖွေနေပါသလား"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
-#: iogt/templates/search/search_block.html:6
-msgid "SEARCH"
-msgstr "ရွာေဖြရန္"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
-#: iogt/templates/base.html:143 iogt/templates/search/search_results.html:9
-#: iogt/templates/search/search_results.html:75
-msgid "Search"
-msgstr "ရွာေဖြရန္"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
-msgid "No search results for "
-msgstr "ရွာေဖြြသည့္ ရလဒ္မ်ားတြင္ မရွိပါ"
-
-#: iogt/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
-msgid "I am looking for"
-msgstr "ကြ်ႏု္ပ္ရွာေဖြေနသည္မွာ"
-
-#: iogt/temp_ve/core/views.py:96
-msgid "That page is not translatable."
-msgstr "ဒါကစာမကျြနှာဘာသာပြန်ချက်မဟုတ်ပါ။"
-
-#: iogt/temp_ve/polls/forms.py:20
-msgid "You didn't select a choice"
-msgstr "သင်ရွေးချယ်ခဲ့ပါဘူး"
-
-#: iogt/temp_ve/polls/templates/polls/detail.html:24
-#: iogt/temp_ve/polls/templates/polls/free_text_detail.html:11
-#: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:35
-#: iogt/templates/polls/detail.html:26
-#: iogt/templates/polls/free_text_detail.html:13
-#: iogt/templates/polls/includes/poll_question_form.html:45
-msgid "Vote"
-msgstr "အားေပးမႈ"
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:13
-#: iogt/templates/polls/includes/poll_free_text_form.html:16
-#: iogt/templates/surveys/molo_survey_page.html:43
-msgid "Submit"
-msgstr "Submit လုပ္မည္"
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
-#: iogt/templates/polls/includes/poll_free_text_form.html:18
-msgid "Thank you! Your response has already been submitted."
-msgstr "ကျေးဇူးတင်ပါတယ်! သင့်ရဲ့တုန့်ပြန်ပြီးသားတင်သွင်းခဲ့တာဖြစ်ပါတယ်။"
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:18
-#: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:20
-#: iogt/templates/polls/includes/poll_free_text_form.html:24
-#: iogt/templates/polls/includes/poll_question_form.html:26
-msgid "Log in to vote"
-msgstr "မဲအတွက်လက်မှတ်ရေးထိုး"
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
-#: iogt/templates/polls/includes/poll_question_form.html:47
-msgid "Show Results"
-msgstr "ပြပွဲရလဒ်များကို"
-
-#: iogt/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
-#: iogt/templates/polls/includes/poll_question_form.html:50
-msgid "You voted: "
-msgstr "သငျသညျမဲပေး: "
-
-#: iogt/temp_ve/polls/templates/polls/poll_page.html:7
-msgid "What's your opinion?"
-msgstr "သင့်ရဲ့အမြင်ကဘာလဲ?"
-
-#: iogt/temp_ve/polls/templates/polls/results.html:8
-#: iogt/templates/polls/results.html:8
-msgid "Your answers:"
-msgstr "သင့်ရဲ့အဖြေကို:"
-
-#: iogt/temp_ve/polls/templates/polls/results.html:22
-#: iogt/templates/polls/results.html:28
-msgid "Thank you for voting!"
-msgstr "မဲပေးဘို့သင့်ကိုကျေးဇူးတင်ပါသည်"
-
-#: iogt/temp_ve/profiles/admin.py:73
-msgid "Type"
-msgstr "ပုံစံ"
-
-#: iogt/temp_ve/profiles/admin.py:78
-msgid "Frontend Users"
-msgstr "ရှေ့ဆုံးကိုအသုံးပြုသူများသည်"
-
-#: iogt/temp_ve/profiles/admin.py:79
-msgid "Admin Users"
-msgstr "အဒ်မင်အသုံးပြုသူများ"
-
-#: iogt/temp_ve/profiles/admin_views.py:16
-msgid ""
-"Your email address is not configured. Please update it before exporting."
-msgstr "Your email address is not inserted. Please insert it before exporting."
-
-#: iogt/temp_ve/profiles/admin_views.py:39
-#, python-brace-format
-msgid "CSV emailed to '{0}'"
-msgstr "CSV ဖိုင် 'ဖို့မေးလ်ပို့ပေး {0} ' '"
-
-#: iogt/temp_ve/profiles/forms.py:78 iogt/temp_ve/profiles/forms.py:445
-msgid "This value must contain only letters, numbers and underscores."
-msgstr "ဒီတန်ဖိုးကသာအက္ခရာများ, နံပါတ်များနှင့် _ ပါဝင်ရပါမည်။"
-
-#: iogt/temp_ve/profiles/forms.py:94 iogt/temp_ve/profiles/forms.py:419
-#: iogt/temp_ve/profiles/forms.py:487 iogt/temp_ve/profiles/forms.py:504
-msgid "This value must contain only numbers."
-msgstr "ဒီတန်ဖိုးကသာနံပါတ်များပါဝင်ရပါမည်။"
-
-#: iogt/temp_ve/profiles/forms.py:96 iogt/temp_ve/profiles/forms.py:489
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:23
-msgid "PIN"
-msgstr "တွယ်အပ်"
-
-#: iogt/temp_ve/profiles/forms.py:102 iogt/temp_ve/profiles/forms.py:241
-#: iogt/temp_ve/profiles/forms.py:286
-msgid "Display Name"
-msgstr "ဖော်ပြမည့်အမည်"
-
-#: iogt/temp_ve/profiles/forms.py:112 iogt/temp_ve/profiles/forms.py:245
-#: iogt/temp_ve/profiles/forms.py:296
-msgid "Gender"
-msgstr "ကျား, မ"
-
-#: iogt/temp_ve/profiles/forms.py:116 iogt/temp_ve/profiles/forms.py:249
-#: iogt/temp_ve/profiles/forms.py:300
-msgid "Location"
-msgstr "သင္၏ႏိုင္ငံ -"
-
-#: iogt/temp_ve/profiles/forms.py:120 iogt/temp_ve/profiles/forms.py:253
-#: iogt/temp_ve/profiles/forms.py:304
-msgid "Education Level"
-msgstr "ပညာရေးအဆင့်"
-
-#: iogt/temp_ve/profiles/forms.py:188
-msgid "Username already exists."
-msgstr "သင္၏ အမည္ username သည္ ရွိျပီးသား ျဖစ္သည္။"
-
-#: iogt/temp_ve/profiles/forms.py:193
-#| msgid ""
-#| "Sorry, but that is an invalid username. Please don't use your %s in your "
-#| "username."
-msgid ""
-"Sorry, but that is an invalid username. Please don't use your %s in your "
-"username."
-msgstr ""
-"ဝမ်းနည်းပါတယ်, သို့သော်မမှန်ကန်သောအသုံးပြုသူအမည်ဖြစ်ပါတယ်။ သင့်ရဲ့အသုံးပြုသူအမည်၌သင်တို့၏% ကိုအသုံးမပြုကြပါ။"
-
-#: iogt/temp_ve/profiles/forms.py:225 iogt/temp_ve/profiles/forms.py:351
-#, python-format
-msgid ""
-"Sorry, but that is an invalid display name. Please don't use your %s in your "
-"display name."
-msgstr "ဝမ်းနည်းပါတယ်, သို့သော်မမှန်ကန်သောနာမည်ဖြစ်ပါတယ်။ သင်တို့၏နာမ၌သင်တို့၏% s ကိုအသုံးမပြုကြပါ။"
-
-#: iogt/temp_ve/profiles/forms.py:388 iogt/temp_ve/profiles/forms.py:403
-msgid "This value must contain only           numbers."
-msgstr "ဒီတန်ဖိုးကသာနံပါတ်များပါဝင်ရပါမည်။"
-
-#: iogt/temp_ve/profiles/forms.py:390
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:25
-msgid "Old Password"
-msgstr "ယခင္က လွ်ိဳ႕ဝွက္နံပါတ္ (password)"
-
-#: iogt/temp_ve/profiles/forms.py:405
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:32
-msgid "New Password"
-msgstr "စကားဝှကိအသစ်"
-
-#: iogt/temp_ve/profiles/forms.py:421
-msgid "Confirm Password"
-msgstr "စကားဝှက်ကိုအတည်ပြုပါ"
-
-#: iogt/temp_ve/profiles/forms.py:431
-msgid "New passwords do not match."
-msgstr "လွ်ိဳ႕ဝွက္နံပါတ္အသစ္မ်ား ကိုက္ညီမႈမရွိပါ။"
-
-#: iogt/temp_ve/profiles/forms.py:506
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:29
-msgid "Confirm PIN"
-msgstr "အတည်ပြု တွယ်အပ်"
-
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:27
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:25
-msgid "(e.g. 2086)"
-msgstr "ဥပမာ - ၂၀၈၆"
-
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:38
-msgid "Confirm New Password"
-msgstr "လွ်ိဳ႕ဝွက္နံပါတ္ password အသစ္ကို ထပ္မံ ျဖည့္စြက္ပါ"
-
-#: iogt/temp_ve/profiles/templates/profiles/change_password.html:42
-#: iogt/temp_ve/profiles/templates/profiles/done.html:59
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:70
-msgid "Save"
-msgstr "ကယ်ဆယ်"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:8
-msgid "Thank you for joining!"
-msgstr "ပူးပေါင်းဘို့သင့်ကိုကျေးဇူးတင်ပါသည်"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:13
-msgid "Let us know more about yourself to get access to exclusive content."
-msgstr "ကျွန်တော်တို့ကိုသီးသန့်အကြောင်းအရာ access ကိုရမှကိုယ့်ကိုယ်အကြောင်းပိုမိုသိပါစေ။"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:18
-#: iogt/temp_ve/profiles/templates/profiles/register.html:45
-msgid "SELECT DATE OF BIRTH"
-msgstr "ေမြးေန႔ သကၠရာဇ္ကို ေရြးပါ"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:26
-msgid "DISPLAY NAME"
-msgstr "ဖော်ပြမည့်အမည်"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:29
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:14
-#: iogt/temp_ve/profiles/templates/profiles/register.html:39
-#: iogt/templates/profiles/register.html:39
-msgid ""
-"We value your online security, therefore we hide your username and allow you "
-"to comment and interact with the site with a display name."
-msgstr ""
-"ငါတို့သည်သင့်ရဲ့အသုံးပြုသူအမည်ဖုံးကွယ်နှငျ့သငျမှတ်ချက်ပေးရန်နှင့် display ကိုနာမကိုအမှီနှင့်အတူဆိုက်နှင့်ဆက်ဆံဖို့ခွင့်ပြု, "
-"သင်၏အွန်လိုင်းလုံခြုံရေးတန်ဖိုးထား။"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:35
-#: iogt/temp_ve/profiles/templates/profiles/register.html:54
-msgid "I IDENTIFY MY GENDER AS:"
-msgstr ": သကဲ့သို့ငါ၏ GENDER ငါကိုခှဲခွား"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:38
-#: iogt/temp_ve/profiles/templates/profiles/done.html:47
-#: iogt/temp_ve/profiles/templates/profiles/done.html:56
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:31
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:40
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:49
-#: iogt/temp_ve/profiles/templates/profiles/register.html:57
-#: iogt/temp_ve/profiles/templates/profiles/register.html:66
-#: iogt/temp_ve/profiles/templates/profiles/register.html:75
-#: iogt/templates/profiles/register.html:57
-#: iogt/templates/profiles/register.html:66
-#: iogt/templates/profiles/register.html:75
-msgid "Only you will see this"
-msgstr "သင်သည်ဤမှသာလျှင်မြင်ရပါလိမ့်မည်"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:44
-#: iogt/temp_ve/profiles/templates/profiles/register.html:63
-msgid "WHERE DO YOU LIVE?"
-msgstr "သင်ဘယ်မှာနေလဲ?"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:53
-#: iogt/temp_ve/profiles/templates/profiles/register.html:72
-msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
-msgstr "ပညာရေးသင့်အမြင့်ဆုံးအဆင့်ဆိုတာဘာလဲ?"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:63
-msgid "Home Page"
-msgstr "မူလစာမျက်နှာစာမျက်နှာ"
-
-#: iogt/temp_ve/profiles/templates/profiles/done.html:64
-#: iogt/templates/base.html:141 iogt/templates/base.html:205
-msgid "Profile"
-msgstr "မိမိ စာမ်က္ႏွာ"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:11
-msgid "Update your display name:"
-msgstr "သင့်ရဲ့ Display ကိုအမည်ကိုအပ်ဒိတ်လုပ်:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:20
-msgid "Update your date of birth:"
-msgstr "ေမြးရက္၊လ၊ခုႏွစ္ ကို မွန္ကန္စြာ ျပန္လည္ျဖည့္စြက္မည္"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:28
-msgid "Update your gender:"
-msgstr "သင့်ရဲ့ကျား, မကိုအပ်ဒိတ်လုပ်:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:37
-msgid "Update where you live:"
-msgstr "သငျသညျအသကျရှငျဘယ်မှာ Update ကို:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:46
-msgid "Update your Education Level:"
-msgstr "သင့်ရဲ့ပညာရေးအဆင့်ကိုအပ်ဒိတ်လုပ်:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:55
-msgid "Update your mobile number:"
-msgstr "သင့်ရဲ့မိုဘိုင်းနံပါတ်ကိုအပ်ဒိတ်လုပ်:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:58
-msgid "(e.g. 0914556789)"
-msgstr "(ဥပမာ 0914556789)"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:64
-msgid "Update your email address:"
-msgstr "သင့်အီးမေးလ်လိပ်စာကိုအပ်ဒိတ်လုပ်:"
-
-#: iogt/temp_ve/profiles/templates/profiles/editprofile.html:67
-#: iogt/temp_ve/profiles/templates/profiles/register.html:93
-msgid "(e.g. example@foo.com)"
-msgstr "(ဥပမာ example@foo.com)"
-
-#: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:6
-#: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:36
-msgid "Forgot PIN"
-msgstr "PIN နံပါတ္ေမ့ေပ်ာက္သြားသည္"
-
-#: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:31
-msgid "Security question"
-msgstr "လုံၿခံဳေရးေမးခြန္း -"
-
-#: iogt/temp_ve/profiles/templates/profiles/forgot_password.html:32
-msgid "Please answer the following security question."
-msgstr "အောက်ပါလုံခြုံရေးမေးခွန်းကိုဖြေဆိုပေးပါ။"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:6
-#: iogt/temp_ve/profiles/templates/profiles/register.html:123
-#: iogt/temp_ve/profiles/templates/registration/login.html:9
-msgid "Register"
-msgstr "အမည္စာရင္း ေပးသြင္းမည္"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:9
-#: iogt/templates/profiles/register.html:9
-msgid "Already a member?"
-msgstr "အဖြဲ႔ဝင္တစ္ဦး ျဖစ္ျပီးသူ"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:10
-#: iogt/templates/base.html:198 iogt/templates/profiles/register.html:10
-msgid "Login"
-msgstr "ဝင်​ရန်​"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:14
-#: iogt/temp_ve/profiles/templates/registration/login.html:8
-#: iogt/templates/profiles/register.html:14
-#: iogt/templates/registration/login.html:8
-msgid "Not a member yet?"
-msgstr "အဖြဲြဲ႔ဝင္မျဖစ္ေသးသူ"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:15
-#: iogt/templates/profiles/register.html:15
-msgid "Join us by signing up below."
-msgstr " ဒီမွာ ပါဝင္ႏိုင္ရန္ ေအာက္ပါ အခ်က္အလက္မ်ားကို ျဖည့္စြက္ျပီး Sign Up လုပ္လိုက္ပါ။"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:21
-msgid "CHOOSE A USERNAME"
-msgstr "နာမည္ေရြးခ်ယ္ပါ။"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:24
-#: iogt/templates/profiles/register.html:24
-msgid ""
-"This name you will use to log in and won't appear to other users. Only you "
-"will see this."
-msgstr ""
-"ဤသည်နာမတော်ကိုသင်တို့အားလော့ဂ်နှင့်အခြားအသုံးပြုသူများမှပေါ်လာမည်မဟုတ်ကိုသုံးပါလိမ့်မယ်။ သာသင်ဤမြင်လိမ့်မည်။"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:28
-msgid "CHOOSE A 4-DIGIT PIN"
-msgstr "ဂဏန္း ေလးလံုးရွိ လွ်ိဳ႕ဝွက္နံပါတ္တခုျဖည့္ပါ"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:31
-#: iogt/templates/profiles/register.html:31
-msgid "e.g. 2086"
-msgstr "ဥပမာ - ၂၀၈၆"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:36
-msgid "CHOOSE A DISPLAY NAME"
-msgstr "တစ်ဦးက display အမည်ရွေး"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:48
-#: iogt/templates/profiles/register.html:48
-msgid "Let us know your birthday to get access to exclusive content."
-msgstr "သီးသန္႔အေၾကာင္းအရာမ်ား ရရွိႏိုင္ရန္ သင္၏ ေမြးေန႔ကို ေျပာျပပါ။"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:81
-msgid "ENTER YOUR MOBILE NUMBER"
-msgstr "သင်၏မိုဘိုင်းနံပါတ် ENTER"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:84
-msgid "(e.g. 0900000013)"
-msgstr "(ဥပမာ 0900000013)"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:90
-msgid "ENTER YOUR EMAIL ADDRESS"
-msgstr "သင့်ရဲ့အီးမေးလ်လိပ်စာကို ENTER"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:112
-#: iogt/templates/profiles/register.html:112
-msgid "Please accept the T&amp;Cs in order to complete the registration"
-msgstr "ထို T က & amp ကိုလက်ခံ ကျေးဇူးပြု. ; CS မှတ်ပုံတင်ဖြည့်စွက်နိုင်ရန်အတွက်"
-
-#: iogt/temp_ve/profiles/templates/profiles/register.html:117
-#: iogt/temp_ve/profiles/templates/profiles/register.html:119
-#: iogt/templates/profiles/register.html:117
-#: iogt/templates/profiles/register.html:119
-msgid "I accept the Terms and Conditions"
-msgstr "စည္းကမ္းသတ္မွတ္ခ်က္မ်ားကို သေဘာတူနားလည္ျပီး ျဖစ္သည္။"
-
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:5
-#: iogt/temp_ve/profiles/templates/profiles/reset_password.html:32
-msgid "Reset PIN"
-msgstr "ပြန်ညှိမှု တွယ်အပ်"
-
-#: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:5
-msgid "PIN Changed"
-msgstr "တွယ်အပ် ပြောင်းလဲသွားတယ်"
-
-#: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:7
-msgid "Your PIN has been changed sucessfully."
-msgstr "သင်သည်သင်၏အောင်မြင်စွာပြောင်းလဲပြီ တွယ်အပ်"
-
-#: iogt/temp_ve/profiles/templates/profiles/reset_password_success.html:8
-msgid "Continue to Sign In"
-msgstr "အတွက်လက်မှတ်ရေးထိုးရန်ဆက်လက်"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:6
-msgid "Hello "
-msgstr "မဂၤလာပါ"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:9
-msgid "As you type your name comment will appear as:"
-msgstr "သင္၏ အမည္ကို ရိုက္လိုက္သည္ႏွင့္ comment သည္ ယခုကဲ့သို႔ ေပၚမည္"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:14
-msgid "Date of Birth: "
-msgstr "ေမြးရက္၊လ၊ခုႏွစ္"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:19
-msgid " Not set."
-msgstr "မသတ္မွတ္ ရေသးပါ။"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:26
-msgid "Mobile number:"
-msgstr "လက်ကိုင်ဖုန်းနာပတ်:"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:33
-msgid "Gender:"
-msgstr "ကျား, မ:"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:40
-msgid "Location:"
-msgstr "သင္၏ႏိုင္ငံ -"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:47
-msgid "Education Level:"
-msgstr "ပညာရေးအဆင့်:"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:54
-msgid "Email Address:"
-msgstr "အီးမေးလိပ်စာ:"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:59
-msgid "log out"
-msgstr "log out လုပ္မည္"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:60
-msgid "Edit My Profile"
-msgstr "မိမိ ကိုယ္ပိုင္စာမ်က္ႏွာကို ျပန္လည္ျပင္ဆင္ ျဖည့္စြက္မည္။"
-
-#: iogt/temp_ve/profiles/templates/profiles/viewprofile.html:61
-msgid "Change My Password"
-msgstr "မိမိ၏ လွ်ိဳ႕ဝွက္နံပါတ္ password ကိုေျပာင္းမည္။"
-
-#: iogt/temp_ve/profiles/templates/registration/login.html:20
-#: iogt/templates/registration/login.html:20
-msgid "Your username and password do not match. Please try again."
-msgstr "သင္၏ အမည္ username ႏွင့္ လွ်ိဳ႕ဝွက္နံပါတ္ password တို႔မွာ ကိုက္ညီမႈမရွိပါ။ ထပ္မံၾကိဳးစားၾကည့္ပါ။"
-
-#: iogt/temp_ve/profiles/templates/registration/login.html:32
-#: iogt/templates/registration/login.html:32
-msgid "Eg.: 2086"
-msgstr "ဥပမာ,: 2086"
-
-#: iogt/temp_ve/profiles/views.py:161
-msgid "The old password is incorrect."
-msgstr "အဟောင်းကိုစကားဝှက်မမှန်ပါသည်။"
-
-#: iogt/temp_ve/profiles/views.py:184
-msgid "Too many attempts. Please try again later."
-msgstr "သိပ်အများကြီးကြိုးစားမှု။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ။"
-
-#: iogt/temp_ve/profiles/views.py:279
-msgid "The two PINs that you entered do not match. Please try again."
-msgstr "သငျသညျဝငျကွသောနှစ်ဦးပင်နံပါတ်များမတိုက်ဆိုင်ကြဘူး။ ထပ်ကြိုးစားပါ။"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
-#: iogt/templates/surveys/molo_survey_page.html:43
-msgid "Next Question"
-msgstr "လာမယ့်မေးခွန်းတစ်ခုကို"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
-msgid "Submit Survey"
-msgstr "ဆန္္းစစ္ေလ့လာခ်က္ survey ကိုတင္မည္။"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:31
-#: iogt/templates/surveys/molo_survey_page.html:50
-msgid "You have already completed this survey."
-msgstr "သငျသညျပြီးသားဒီစစ်တမ်းပြီးစီးခဲ့ပါပြီ။"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:34
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
-#: iogt/templates/polls/detail.html:28
-#: iogt/templates/polls/free_text_detail.html:15
-#: iogt/templates/polls/results.html:31
-#: iogt/templates/surveys/molo_survey_page.html:47
-#: iogt/templates/surveys/molo_survey_page.html:53
-msgid "Back to Home page"
-msgstr "နောက်ကျောမူလစာမျက်နှာစာမျက်နှာ"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page.html:39
-#: iogt/templates/surveys/molo_survey_page.html:58
-msgid "Please log in to take this survey"
-msgstr "ဒီစစ်တမ်းကိုယူရန်အတွက်ဝင်ရောက်ပါ"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:12
-msgid "Survey Results"
-msgstr "စစ်တမ်းရလဒ်များ"
-
-#: iogt/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:14
-msgid ""
-"Your survey has been completed successfully. Please see your submission "
-"results below."
-msgstr "သင့်ရဲ့စစ်တမ်းကိုအောင်မြင်စွာပြီးစီးခဲ့ပြီ။ အောက်တွင်သင့်တင်သွင်းခဲ့တဲ့ရလဒ်များကိုကြည့်ပေးပါ။"
-
-#: iogt/temp_ve/surveys/templates/surveys/surveys_list.html:10
-msgid "Take The Survey"
-msgstr "အဆိုပါစစ်တမ်းကိုယူ"
-
-#: iogt/temp_ve/usermetadata/templates/persona.html:21
-msgid "Skip"
-msgstr "ေက်ာ္ရန္"
 
 #: iogt/templates/403_csrf.html:9
 msgid ""
@@ -991,127 +83,404 @@ msgid ""
 "technical issue, login and registrations are not available on the IoGT app "
 "for now."
 msgstr ""
-"ဝမ်းနည်းပါတယ်, သငျသညျဤအင်္ဂါရပ်နှင့်ချိတ်ဆက်ဒုက္ခရှိခြင်းကြသည်! ကြောင့်ယာယီနည်းပညာပိုင်းဆိုင်ရာပြဿနာဖို့, "
-"login နဲ့မှတ်ပုံတင်ယခုများအတွက် IoGT app ကိုအပေါ်ကိုမရရှိနိုင်ကြသည်။"
+"ဝမ်းနည်းပါတယ်, သငျသညျဤအင်္ဂါရပ်နှင့်ချိတ်ဆက်ဒုက္ခရှိခြင်းကြသည်! "
+"ကြောင့်ယာယီနည်းပညာပိုင်းဆိုင်ရာပြဿနာဖို့, login နဲ့မှတ်ပုံတင်ယခုများအတွက် "
+"IoGT app ကိုအပေါ်ကိုမရရှိနိုင်ကြသည်။"
 
-#: iogt/templates/403_csrf.html:10
-msgid ""
-"To login or register for a profile, visit our free mobisite through your "
-"mobile browser at"
+#: iogt/templates/403_csrf.html:11
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
+msgid " We're working hard to get this problem resolved. Thank you."
+msgstr " ငါတို့သည်ဤပြဿနာကိုပြေလည်ရခက်တဲ့အလုပ်လုပ်ကိုင်ပါတယ်။ ကျေးဇူးတင်ပါတယ်။"
+
+#: iogt/templates/404.html:8
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
+msgid "Page not found"
+msgstr " စာမ်က္ႏွာကို ရွာေဖြ၍ မရပါ။"
+
+#: iogt/templates/404.html:9
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
+msgid "Sorry, this page could not be found."
+msgstr "၀မ္းနည္းပါသည္။ အဆိုပါစာမ်က္ႏွာကို ကၽြႏု္ပ္တို႔ ရွာမေတြ႔ပါ၊ "
+
+#: iogt/templates/500.html:12
+#: iogt/templates/500.html:16
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
+msgid "Internal server error"
+msgstr " ဆာဗာတြင္ မွားယြင္းမႈ တစ္ခုခုျဖစ္ေနပါသည္။"
+
+#: iogt/templates/500.html:17
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
+msgid "Sorry, there seems to be an error. Please try again soon."
 msgstr ""
-"login တစ်ခုသို့မဟုတ်ပရိုဖိုင်အတွက်မှတ်ပုံတင်ရန်မှာသင့်မိုဘိုင်းဘရောက်ဇာကိုတဆင့်ကျွန်တော်တို့ရဲ့အခမဲ့မိုဘိုင်းက်ဘ်ဆိုက်ဝင်ရောက်ကြည့်ရှုရန်"
+"၀မ္းနည္းပါသည္။ မွားယြင္းေနမႈ တစ္ခုခုရွိေနသည္ဟု ထင္ရပါသည္။ ျပန္လည္ "
+"ဝင္ေရာက္ၾကည့္ပါ။"
 
-#: iogt/templates/base.html:106
+#: iogt/templates/base.html:11
+msgid ""
+"Internet of Good Things (IoGT) is a set of free, mobile-ready web-based "
+"resources and applications that bring good to your life by helping you and "
+"your community access educational and lifesaving information."
+msgstr ""
+"IoGTသည္ သင့္ဘ၀ထံသုိ႔ ေကာင္းျခင္းမ်ားယူေဆာင္ေပးႏုိင္သည့္ ၀က္ဘ္အေျချပဳ "
+"အရင္းအျမစ္မ်ားႏွင့္ လက္ကုိင္ဖုန္းမွတဆင့္ ဖြင့္ယူသုံးစဲြႏုိင္သည့္ "
+"စာမ်က္ႏွာမ်ားစုစည္းထားသည့္ အစု တစ္ခုျဖစ္ၿပီး သင္ႏွင့္သင့္ရပ္ရြာလူထုထံသုိ႔ "
+"ပညာေပးႏွင့္ အသက္ရွင္သန္ေရး အေထာက္အကူျပဳ သတင္းအခ်က္အလက္မ်ား ရရွိေစႏုိင္သည္။ "
+
+#: iogt/templates/base.html:121
 msgid "Language"
 msgstr "ဘာသာစကား"
 
-#: iogt/templates/base.html:111
+#: iogt/templates/base.html:126
 msgid "Change Language"
 msgstr "ဘာသာစကား ေျပာင္းလဲမည္။"
 
-#: iogt/templates/base.html:133
+#: iogt/templates/base.html:148
 msgid "IoGT"
 msgstr "IoGT"
 
-#: iogt/templates/base.html:139 iogt/templates/profiles/register.html:6
+#: iogt/templates/base.html:154
+#: iogt/templates/profiles/register.html:6
 #: iogt/templates/profiles/register.html:123
 #: iogt/templates/registration/login.html:9
 msgid "Join"
 msgstr "ပါဝင္မည္။"
 
-#: iogt/templates/base.html:144
+#: iogt/templates/base.html:158
 msgid "Menu"
 msgstr "မိမိိ၏ ပရိုဖိုင္း"
 
-#: iogt/templates/base.html:217
+#: iogt/templates/base.html:231
 msgid "Change your language"
 msgstr "ဘာသာစကား ေျပာင္းလဲမည္"
+
+#: iogt/templates/comments/comment.html:8
+#: temp/temp_ve/commenting/templates/comments/comment.html:8
+#: temp/temp_ve/commenting/templates/notifications/notice.html:10
+#: temp/temp_ve/commenting/views.py:48
+msgid "Anonymous"
+msgstr "အမည္မသိ (မေဖာ္လို)"
+
+#: iogt/templates/comments/comment.html:17
+#: temp/temp_ve/commenting/templates/comments/comment.html:16
+msgid ""
+"This comment has been removed by the community. Please read our platform "
+"rules."
+msgstr ""
+"ယင္းမွတ္ခ်က္ကို အဖြဲ႔အစည္းမွ ဖ်က္လိုျပီျဖစ္ပါတယ္။ ေက်းဇူးျပဳ၍ "
+"စည္းမ်ဥ္းစည္းကမ္းမ်ားကို ေလ့လာဖတ္ရႈေပးပါ။"
+
+#: iogt/templates/comments/comment.html:22
+#: temp/temp_ve/commenting/templates/comments/comment.html:26
+msgid "Report"
+msgstr "အစီရင်ခံစာ"
+
+#: iogt/templates/comments/comment.html:24
+#: temp/temp_ve/commenting/templates/comments/comment.html:39
+msgid "Reply"
+msgstr "ပြန်ကြားချက်"
 
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
 msgstr "ဒီေဆာင္းပါးတြင္ ထပ္မံျဖည့္စြက္ခ်င္တာမ်ား ရ်ိပါသလား"
 
-#: iogt/templates/core/related-article-list.html:30
-msgid "Related Articles"
-msgstr "ဆက်စပ်ဆောင်းပါးများ"
+#: iogt/templates/comments/comment_block.html:14
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:14
+msgid "Log in to comment"
+msgstr "မွတ္ခ်က္ေပးရန္ log in လုပ္ပါ။"
 
-#: iogt/templates/core/section_page.html:69
-msgid "Prev"
-msgstr "လွန်ခဲ့သော"
+#: iogt/templates/comments/comment_block.html:18
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:18
+msgid "Commenting on this article is currently disabled"
+msgstr "ယင္း စာပိုဒ္တြင္ မွတ္ခ်က္ျပဳခြင့္မရွိေသးပါ။ "
 
-#: iogt/templates/core/section_page.html:98
+#: iogt/templates/comments/comment_block.html:22
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:23
+#: temp/temp_ve/commenting/templates/comments/comments.html:7
+msgid "Comments"
+msgstr "မှတ်ချက်များ"
+
+#: iogt/templates/comments/comment_block.html:29
+#: iogt/templates/core/article_page.html:24
+#: iogt/templates/core/related-article-list.html:32
+#: iogt/templates/core/section_page.html:46
+#: iogt/templates/core/section_page.html:126
+#: iogt/templates/core/tags/latest_listing_homepage.html:39
+#: iogt/templates/core/tags/section_listing_homepage.html:40
+#: iogt/templates/search/search_results.html:80
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:26
+msgid "comment"
+msgstr "မွတ္ခ်က္"
+
+#: iogt/templates/comments/comment_block.html:44
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:41
+msgid "view more comments"
+msgstr "ပိုပြီးမှတ်ချက်များကိုကြည့်ရှု"
+
+#: iogt/templates/comments/form.html:14
+#: temp/temp_ve/commenting/forms.py:18
+
+msgid "Comment"
+msgstr "မှတ်ချက်များ"
+
+#: iogt/templates/comments/form.html:15
+msgid "Comment Anonymously"
+msgstr ""
+
+#: iogt/templates/core/next-article.html:8
+#: iogt/templates/core/section_page.html:85
 msgid "Next"
 msgstr "ေနာက္ထပ္/လာမည့္၊"
 
-#: iogt/templates/core/section_page.html:147
+#: iogt/templates/core/related-article-list.html:6
+msgid "Related Articles"
+msgstr "ဆက်စပ်ဆောင်းပါးများ"
+
+#: iogt/templates/core/section_page.html:55
+msgid "Prev"
+msgstr "လွန်ခဲ့သော"
+
+#: iogt/templates/core/section_page.html:133
 #: iogt/templates/core/tags/section_listing_homepage.html:46
 msgid "View more"
 msgstr "ဆက္လက္ၾကည့္ရႈမည္"
+
+#: iogt/templates/core/tags/breadcrumbs.html:5
+#: temp/temp_ve/commenting/templates/comments/preview.html:11
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
+#: temp/temp_ve/polls/templates/polls/detail.html:25
+#: temp/temp_ve/polls/templates/polls/free_text_detail.html:12
+#: temp/temp_ve/polls/templates/polls/results.html:24
+msgid "Home"
+msgstr "အဓိက စာမ်က္ႏွာ"
+
+#: iogt/templates/core/tags/latest_listing_homepage.html:4
+#: temp/temp_ve/commenting/test_templates/article_page.html:63
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:64
+msgid "Recommended"
+msgstr "အႀကံျပဳေထာက္ခံျခင္း၊"
+
+#: iogt/templates/polls/detail.html:26
+#: iogt/templates/polls/free_text_detail.html:13
+#: iogt/templates/polls/includes/poll_question_form.html:45
+#: temp/temp_ve/polls/templates/polls/detail.html:24
+#: temp/temp_ve/polls/templates/polls/free_text_detail.html:11
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:35
+msgid "Vote"
+msgstr "အားေပးမႈ"
+
+#: iogt/templates/polls/detail.html:28
+#: iogt/templates/polls/free_text_detail.html:15
+#: iogt/templates/polls/results.html:31
+#: iogt/templates/surveys/molo_survey_page.html:34
+#: iogt/templates/surveys/molo_survey_page.html:40
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:35
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
+msgid "Back to Home page"
+msgstr "နောက်ကျောမူလစာမျက်နှာစာမျက်နှာ"
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:16
+#: iogt/templates/surveys/molo_survey_page.html:30
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:13
+msgid "Submit"
+msgstr "Submit လုပ္မည္"
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:18
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
+msgid "Thank you! Your response has already been submitted."
+msgstr "ကျေးဇူးတင်ပါတယ်! သင့်ရဲ့တုန့်ပြန်ပြီးသားတင်သွင်းခဲ့တာဖြစ်ပါတယ်။"
+
+#: iogt/templates/polls/includes/poll_question_form.html:47
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
+msgid "Show Results"
+msgstr "ပြပွဲရလဒ်များကို"
+
+#: iogt/templates/polls/includes/poll_question_form.html:50
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
+msgid "You voted: "
+msgstr "သငျသညျမဲပေး: "
 
 #: iogt/templates/polls/poll_page.html:7
 #: iogt/templates/polls/poll_page_in_section.html:8
 msgid "Polls"
 msgstr "ရွေးကောက်ပွဲ"
 
+#: iogt/templates/polls/results.html:28
+#: temp/temp_ve/polls/templates/polls/results.html:22
+msgid "Thank you for voting!"
+msgstr "မဲပေးဘို့သင့်ကိုကျေးဇူးတင်ပါသည်"
+
+#: iogt/templates/profiles/register.html:9
+#: temp/temp_ve/profiles/templates/profiles/register.html:9
+msgid "Already a member?"
+msgstr "အဖြဲ႔ဝင္တစ္ဦး ျဖစ္ျပီးသူ"
+
+#: iogt/templates/profiles/register.html:14
+#: iogt/templates/registration/login.html:8
+#: temp/temp_ve/profiles/templates/profiles/register.html:14
+#: temp/temp_ve/profiles/templates/registration/login.html:8
+#: temp/temp_ve/profiles/test_templates/login.html:8
+msgid "Not a member yet?"
+msgstr "အဖြဲြဲ႔ဝင္မျဖစ္ေသးသူ"
+
+#: iogt/templates/profiles/register.html:15
+#: temp/temp_ve/profiles/templates/profiles/register.html:15
+msgid "Join us by signing up below."
+msgstr ""
+" ဒီမွာ ပါဝင္ႏိုင္ရန္ ေအာက္ပါ အခ်က္အလက္မ်ားကို ျဖည့္စြက္ျပီး Sign Up "
+"လုပ္လိုက္ပါ။"
+
 #: iogt/templates/profiles/register.html:21
 msgid "Choose a username"
 msgstr "Username (အမည္) ျဖည့္ပါ"
 
-#: iogt/templates/profiles/register.html:28
-msgid "Choose a 4-digit pin"
-msgstr "ဂဏန္း ေလးလံုးရွိ လွ်ိဳ႕ဝွက္နံပါတ္တခုျဖည့္ပါ"
-
-#: iogt/templates/profiles/register.html:36
+#: iogt/templates/profiles/register.html:29
 msgid "Choose a display name"
 msgstr "တစ်ဦး display ကိုအမညျကိုရှေးခယျြပါ"
 
-#: iogt/templates/profiles/register.html:45
+#: iogt/templates/profiles/register.html:38
 msgid "Select date of birth"
 msgstr "ေမြးေန႔ သကၠရာဇ္ကို ေရြးပါ"
 
-#: iogt/templates/profiles/register.html:54
+#: iogt/templates/profiles/register.html:41
+#: temp/temp_ve/profiles/templates/profiles/register.html:48
+msgid "Let us know your birthday to get access to exclusive content."
+msgstr "သီးသန္႔အေၾကာင္းအရာမ်ား ရရွိႏိုင္ရန္ သင္၏ ေမြးေန႔ကို ေျပာျပပါ။"
+
+#: iogt/templates/profiles/register.html:47
 msgid "I identify my gender as:"
 msgstr ": သကဲ့သို့ငါ၏ကျားငါခွဲခြားသတ်မှတ်"
 
-#: iogt/templates/profiles/register.html:63
+#: iogt/templates/profiles/register.html:50
+#: iogt/templates/profiles/register.html:59
+#: iogt/templates/profiles/register.html:68
+#: temp/temp_ve/profiles/templates/profiles/done.html:38
+#: temp/temp_ve/profiles/templates/profiles/done.html:47
+#: temp/temp_ve/profiles/templates/profiles/done.html:56
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:31
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:40
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:49
+#: temp/temp_ve/profiles/templates/profiles/register.html:57
+#: temp/temp_ve/profiles/templates/profiles/register.html:66
+#: temp/temp_ve/profiles/templates/profiles/register.html:75
+msgid "Only you will see this"
+msgstr "သင်သည်ဤမှသာလျှင်မြင်ရပါလိမ့်မည်"
+
+#: iogt/templates/profiles/register.html:56
 msgid "Where do you live?"
 msgstr "သင်ဘယ်မှာနေလဲ?"
 
-#: iogt/templates/profiles/register.html:72
+#: iogt/templates/profiles/register.html:65
 msgid "What is your highest level of education?"
 msgstr "ပညာရေး၏သင့်ရဲ့အမြင့်ဆုံးအဆင့်အထိကဘာလဲ?"
 
-#: iogt/templates/profiles/register.html:81
-msgid "Enter your mobile number"
-msgstr "သင့်ရဲ့မိုဘိုင်းနံပါတ်ရိုက်ထည့်"
-
-#: iogt/templates/profiles/register.html:84
+#: iogt/templates/profiles/register.html:77
 msgid "e.g. 0900000013"
 msgstr "ဥပမာ 0900000013"
 
-#: iogt/templates/profiles/register.html:90
+#: iogt/templates/profiles/register.html:83
 msgid "Enter your email address"
 msgstr "သင့်အီးမေးလ်လိပ်စာကိုရိုက်ထည့်"
 
-#: iogt/templates/profiles/register.html:93
+#: iogt/templates/profiles/register.html:86
 msgid "e.g. example@foo.com"
 msgstr "ဥပမာ example@foo.com"
+
+#: iogt/templates/profiles/register.html:106
+msgid "e.g."
+msgstr ""
+
+#: iogt/templates/profiles/register.html:112
+#: temp/temp_ve/profiles/templates/profiles/register.html:112
+msgid "Please accept the T&amp;Cs in order to complete the registration"
+msgstr ""
+"ထို T က & amp ကိုလက်ခံ ကျေးဇူးပြု. ; CS မှတ်ပုံတင်ဖြည့်စွက်နိုင်ရန်အတွက်"
+
+#: iogt/templates/profiles/register.html:117
+#: iogt/templates/profiles/register.html:119
+#: temp/temp_ve/profiles/templates/profiles/register.html:117
+#: temp/temp_ve/profiles/templates/profiles/register.html:119
+msgid "I accept the Terms and Conditions"
+msgstr "စည္းကမ္းသတ္မွတ္ခ်က္မ်ားကို သေဘာတူနားလည္ျပီး ျဖစ္သည္။"
+
+#: iogt/templates/registration/login.html:5
+#: iogt/templates/registration/login.html:34
+#: iogt/templates/registration/password_reset_complete.html:8
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:9
+#: temp/temp_ve/profiles/templates/registration/login.html:5
+#: temp/temp_ve/profiles/templates/registration/login.html:34
+#: temp/temp_ve/profiles/test_templates/login.html:5
+#: temp/temp_ve/profiles/test_templates/login.html:34
+msgid "Log in"
+msgstr "ဝင်​ရန်​"
 
 #: iogt/templates/registration/login.html:13
 msgid "Login by signing in below."
 msgstr "log in လုပ္ရန္ ေအာက္မွာ ျဖည္႔စြက္ပါ"
 
+#: iogt/templates/registration/login.html:25
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
+#: temp/temp_ve/profiles/forms.py:76
+#: temp/temp_ve/profiles/forms.py:443
+#: temp/temp_ve/profiles/templates/registration/login.html:25
+#: temp/temp_ve/profiles/test_templates/login.html:25
+msgid "Username"
+msgstr "အသုံးပြုသူအမည်"
+
+#: iogt/templates/registration/login.html:30
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
+#: temp/temp_ve/profiles/templates/registration/login.html:30
+#: temp/temp_ve/profiles/test_templates/login.html:30
+msgid "4-digit pin"
+msgstr "ဂဏန္း ေလးလံုးရွိ လွ်ိဳ႕ဝွက္နံပါတ္"
+
+#: iogt/templates/registration/login.html:32
+#: temp/temp_ve/profiles/templates/registration/login.html:32
+#: temp/temp_ve/profiles/test_templates/login.html:32
+msgid "Eg.: 2086"
+msgstr "ဥပမာ,: 2086"
+
+#: iogt/templates/registration/login.html:37
+#: iogt/templates/registration/password_reset_form.html:4
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:25
+#: temp/temp_ve/profiles/templates/registration/login.html:37
+#: temp/temp_ve/profiles/test_templates/login.html:37
+msgid "Forgotten your password?"
+msgstr "မိမိိ လွ်ိဳ႕ဝွက္နံပါတ္ password ကို မသိေတာ့ပါ။"
+
 #: iogt/templates/registration/password_reset_complete.html:5
 msgid "Your password has been set. You may go ahead and log in now."
-msgstr "သင့်ရဲ့စကားဝှက်ကိုသတ်မှတ်ပြီးပါပြီ။ သငျသညျရှေ့သွားနှင့်ယခုဝငျရောကျနိုငျသညျ။"
-
-#: iogt/templates/registration/password_reset_confirm.html:22
-msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used. Please request a new password reset."
 msgstr ""
-"စကားဝှက်ကိုပြန်ညှိ link ကိုကပြီးသားအသုံးပြုခဲ့ဖြစ်နိုင်သည်ကြောင့်၎င်း, မမှန်ကန်ပါ။ "
-"အသစ်တစ်ခုကိုစကားဝှက်ပြန်ညှိကိုတောင်းဆိုပါ။"
+"သင့်ရဲ့စကားဝှက်ကိုသတ်မှတ်ပြီးပါပြီ။ သငျသညျရှေ့သွားနှင့်ယခုဝငျရောကျနိုငျသညျ။"
+
+#: iogt/templates/registration/password_reset_confirm.html:15
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
+msgid "Confirm password:"
+msgstr "စကားဝှက်ကိုအတည်ပြုပါ:"
+
+#: iogt/templates/registration/password_reset_confirm.html:19
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
+msgid "Change my password"
+msgstr "မိမိ၏ လွ်ိဳ႕ဝွက္နံပါတ္ password ကိုေျပာင္းမည္။"
+
+#: iogt/templates/registration/password_reset_done.html:5
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:7
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+"ငါတို့သည်သင်တို့အကောင့်တစ်ခုသင်ထည့်သွင်းအီးမေးလ်နှင့်အတူတည်ရှိနေလျှင်သင့်ရဲ့စ"
+"ကားဝှက်ကိုထူထောင်ဖို့ဘယ်လိုအဘို့ညွှန်ကြားချက်မေးလ်ပို့ပေးပါတယ်။ "
+"သငျသညျမကြာမီသူတို့ကိုလကျခံသငျ့သညျ။"
+
+#: iogt/templates/registration/password_reset_done.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:9
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"အီးမေးလ်လက်ခံရရှိဘူးဆိုရငျ, သငျသညျသငျနှငျ့အတူမှတ်ပုံတင်ပြီးလိပ်စာသို့ဝင်သေချာ"
+", သင်၏ spam များကို folder ကိုစစ်ဆေးပါ။"
 
 #: iogt/templates/registration/password_reset_done.html:8
 msgid "Back to home page"
@@ -1122,30 +491,809 @@ msgid ""
 "Enter your email address below, and we'll email instructions for setting a "
 "new one."
 msgstr ""
-"သင္၏ အီးေမးလ္ လိပ္စာကို ေအာက္ပါေနရာတြင္ ျဖည့္ပါ။ ကြ်ႏု္ပ္တုိ႔မွ အခ်က္အလက္မ်ား ျပန္လည္ပို႔ေပးပါမည္။"
+"သင္၏ အီးေမးလ္ လိပ္စာကို ေအာက္ပါေနရာတြင္ ျဖည့္ပါ။ ကြ်ႏု္ပ္တုိ႔မွ အခ်က္အလက္မ်ား"
+" ျပန္လည္ပို႔ေပးပါမည္။"
 
-#: iogt/templates/search/search_block.html:5
+#: iogt/templates/registration/password_reset_form.html:14
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
+msgid "Reset my password"
+msgstr "မိိမိ၏ လွွ်ိဳ႕ဝွက္နံပါတ္ password ကိုေျပာင္းမည္။"
+
+#: iogt/templates/search/search_block.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
+msgid "SEARCH"
+msgstr "ရွာေဖြရန္"
+
+#: iogt/templates/search/search_results.html:3
 #: iogt/templates/search/search_results.html:8
-#: iogt/templates/search/search_results.html:74
-msgid "Search the site..."
-msgstr "ဝက္ဘ္ဆိုက္တြင္ ရွာေဖြရန္"
+#: iogt/templates/search/search_results.html:103
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
+msgid "Search"
+msgstr "ရွာေဖြရန္"
 
-#: iogt/templates/search/search_results.html:11
-#: iogt/templates/search/search_results.html:77
-msgid "Search Results for:"
-msgstr "ရှာရန်ရလဒ်များ:"
-
-#: iogt/templates/search/search_results.html:80
+#: iogt/templates/search/search_results.html:108
 msgid "No search results were found for "
 msgstr "ရှာဖွေရေးရလဒ်အတွက်မတွေ့ "
 
-#: iogt/templates/search/search_results.html:82
+#: iogt/templates/search/search_results.html:110
 msgid "Back to homepage"
 msgstr "နောက်ကျောပင်မစာမျက်နှာမှ"
+
+#: iogt/templates/surveys/molo_survey_page.html:30
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
+msgid "Next Question"
+msgstr "လာမယ့်မေးခွန်းတစ်ခုကို"
+
+#: iogt/templates/surveys/molo_survey_page.html:37
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:32
+msgid "You have already completed this survey."
+msgstr "သငျသညျပြီးသားဒီစစ်တမ်းပြီးစီးခဲ့ပါပြီ။"
+
+#: iogt/templates/surveys/molo_survey_page.html:45
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:40
+msgid "Please log in to take this survey"
+msgstr "ဒီစစ်တမ်းကိုယူရန်အတွက်ဝင်ရောက်ပါ"
 
 #: iogt/templates/surveys/surveys_list.html:10
 msgid "Start here"
 msgstr "ဒီမွာ စတင္လိုက္ပါ"
+
+#: temp/temp_ve/commenting/admin_views.py:61
+#: temp/temp_ve/commenting/views.py:111
+msgid "Reply successfully created."
+msgstr "အောင်မြင်စွာဖန်တီးပြန်ကြားချက်:"
+
+#: temp/temp_ve/commenting/forms.py:13
+#: temp/temp_ve/commenting/forms.py:68
+msgid "Email address"
+msgstr "အီးမေးလိပ်စာ"
+
+#: temp/temp_ve/commenting/forms.py:19
+
+msgid "Type your comment here..."
+msgstr "ဒီနေရာမှာသင့်ရဲ့ comment ကိုရိုက်ထည့်ပါ"
+
+#: temp/temp_ve/commenting/forms.py:70
+msgid "URL"
+msgstr "URL"
+
+#: temp/temp_ve/commenting/templates/comments/comment.html:23
+msgid "Ago"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/comments/comment.html:31
+#: temp/temp_ve/commenting/templates/comments/comment.html:34
+#: temp/temp_ve/commenting/templates/comments/comment.html:41
+msgid "Replies"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:6
+msgid "Share a Comment"
+msgstr "မွတ္ခ်က္ကို မွ်ေဝသည္။"
+
+#: temp/temp_ve/commenting/templates/comments/comment_done.html:7
+#: temp/temp_ve/commenting/templates/comments/report_response.html:6
+msgid "Thanks!"
+msgstr "ေက်းဇူးတင္ပါတယ္"
+
+#: temp/temp_ve/commenting/templates/comments/comment_done.html:9
+msgid "Your comment has been successfully posted"
+msgstr "သင့်ရဲ့ထင်မြင်ချက်ကိုအောင်မြင်စွာပေါင်းထည့်ပြီးပါပြီ"
+
+#: temp/temp_ve/commenting/templates/comments/comment_done.html:11
+#: temp/temp_ve/commenting/templates/comments/comments.html:28
+#: temp/temp_ve/commenting/templates/comments/preview.html:44
+#: temp/temp_ve/commenting/templates/comments/reply.html:8
+#: temp/temp_ve/commenting/templates/comments/report_response.html:10
+msgid "Back to article"
+msgstr "ေဆာင္းပါးသုိ႔ ျပန္သြားမည္"
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:37
+#: temp/temp_ve/commenting/templates/comments/reply.html:41
+msgid "Please "
+msgstr "ကျေးဇူးပြု "
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:40
+#: temp/temp_ve/commenting/templates/comments/reply.html:44
+msgid " to leave a comment."
+msgstr " မှတ်ချက်ထားခဲ့ဖို့။"
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:15
+msgid "Recent replies"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:17
+msgid "Earlier replies"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:29
+msgid "of"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/comments/report_response.html:7
+msgid "This comment has been reported."
+msgstr "ဤမှတ်ချက်ကိုအစီရင်ခံခဲ့သည်။"
+
+#: temp/temp_ve/commenting/templates/comments/report_response.html:8
+msgid ""
+"It will be reviewed by the team and may be removed if it breaks our Platform "
+"rules"
+msgstr ""
+"ဒါဟာအသင်းအားဖြင့်သုံးသပ်သွားမည်ဖြစ်ပြီးကြောင့်ပလက်ဖောင်းစည်းမျဉ်းစည်းကမ်းတွေက"
+"ိုဖောက်ဖျက်လျှင်ဖယ်ထုတ်ခြင်းခံရစေခြင်းငှါ"
+
+#: temp/temp_ve/commenting/templates/notifications/notice.html:15
+msgid "replied to your comment on: "
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/notice.html:18
+msgid "ago"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
+msgid "You have"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:19
+msgid "Read replies:"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:27
+msgid "Back home"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:6
+msgid "Notification:"
+msgstr ""
+
+#: temp/temp_ve/commenting/views.py:31
+msgid "Reporting comment replies is not allowed."
+msgstr "မှတ်ချက်ပြန်ကြားချက်ကိုအစီရင်ခံခွင့်ပြုမထားပေ။"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
+msgid "Zulu"
+msgstr "Zulu"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:204
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
+msgid "Venda"
+msgstr "Venda"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
+msgid "Tsonga"
+msgstr "Tsonga"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
+msgid "Swati"
+msgstr "Swati"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
+msgid "Ndebele"
+msgstr "Ndebele"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:13
+msgid "Hi"
+msgstr "မင်္ဂလာပါ"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
+msgid ""
+"Sorry, you are having trouble accessing this feature! Due to a temporary "
+"technical issue, login and registrations are not available on the Free "
+"Basics app for now. To login or register for a profile, visit our free "
+"mobisite through your mobile browser at"
+msgstr ""
+"ဝမ်းနည်းပါတယ်, သင်သည်ဤအင်္ဂါရပ်ကိုရယူသုံးဒုက္ခရှိခြင်းကြသည်! "
+"ကြောင့်ယာယီနည်းပညာပိုင်းဆိုင်ရာပြဿနာ, ဝင်ရောက်ခြင်းနှင့်မှတ်ပုံတင်ယခုများအတွက"
+"်အခမဲ့အခြေခံပေါ်တယ်ပေါ်တွင်မရနိုင်ပါဖြစ်ကြသည်။ အတွက်လက်မှတ်ထိုးတစ်ခုသို့မဟုတ်"
+"ပရိုဖိုင်အတွက်မှတ်ပုံတင်ရန်မှာသင့်မိုဘိုင်းဘရောက်ဇာကိုတဆင့်ကျွန်တော်တို့ရဲ့အခ"
+"မဲ့မိုဘိုင်းက်ဘ်ဆိုက်ဝင်ရောက်ကြည့်ရှုရန်"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
+#: temp/temp_ve/core/test_templates/base.html:128
+#: temp/temp_ve/polls/test_templates/base.html:112
+#: temp/temp_ve/surveys/test_templates/base.html:112
+msgid "Site Language:"
+msgstr "ဆိုက်ကိုဘာသာစကား:"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
+msgid "Latest"
+msgstr "နောက်ဆုံး"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/topic_of_the_day.html:6
+msgid "Topic of the Day"
+msgstr "နေ့၏ခေါင်းစဉ်"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:21
+msgid "Sign in"
+msgstr "ဝင္ရန္"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
+msgid "LOGIN TO YOUR ACCOUNT!"
+msgstr "သင့်အကောင့်အတွက်လက်မှတ်ထိုး!"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
+msgid "We’re excited to have you..."
+msgstr "ငါတို့သည်သင်တို့ရှိသည်ဖို့စိတ်လှုပ်ရှားနေ ..."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
+msgid "Your username and password does not match. Please try again."
+msgstr "သင့်ရဲ့အသုံးပြုသူအမည်နှင့်စကားဝှက်ကိုမတိုက်ဆိုင်ပါဘူး။ ထပ်ကြိုးစားပါ။"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr ""
+"သင့်ရဲ့စကားဝှက်ကိုသတ်မှတ်ပြီးပါပြီ။ သငျသညျရှေ့သွားနှင့်ယခုဝငျရောကျနိုငျသညျ။"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"စကားဝှက်ကိုပြန်ညှိမှုပြုလုပ်ထားပြီးအသုံးပြုခဲ့ပြီးဖြစ်နိုင်သည်ကြောင့်၎င်း, "
+"မမှန်ကန်ပါ။ သစ်တစ်ခုစကားဝှက်ပြန်ညှိတောင်းဆိုရန်ပေးပါ။"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
+msgid "I am looking for"
+msgstr "ကြ်ႏု္ပ္ရွာေဖြေနသည္မွာ"
+
+#: temp/temp_ve/core/views.py:96
+msgid "That page is not translatable."
+msgstr "ဒါကစာမကျြနှာဘာသာပြန်ချက်မဟုတ်ပါ။"
+
+#: temp/temp_ve/polls/forms.py:20
+msgid "You didn't select a choice"
+msgstr "သင်ရွေးချယ်ခဲ့ပါဘူး"
+
+#: temp/temp_ve/profiles/admin.py:73
+msgid "Type"
+msgstr "ပုံစံ"
+
+#: temp/temp_ve/profiles/admin.py:79
+msgid "Admin Users"
+msgstr "အဒ်မင်အသုံးပြုသူများ"
+
+#: temp/temp_ve/profiles/admin_views.py:16
+msgid ""
+"Your email address is not configured. Please update it before exporting."
+msgstr "Your email address is not inserted. Please insert it before exporting."
+
+#: temp/temp_ve/profiles/forms.py:78
+#: temp/temp_ve/profiles/forms.py:445
+msgid "This value must contain only letters, numbers and underscores."
+msgstr "ဒီတန်ဖိုးကသာအက္ခရာများ, နံပါတ်များနှင့် _ ပါဝင်ရပါမည်။"
+
+#: temp/temp_ve/profiles/forms.py:96
+#: temp/temp_ve/profiles/forms.py:489
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:23
+msgid "PIN"
+msgstr "တွယ်အပ်"
+
+#: temp/temp_ve/profiles/forms.py:102
+#: temp/temp_ve/profiles/forms.py:241
+#: temp/temp_ve/profiles/forms.py:286
+msgid "Display Name"
+msgstr "ဖော်ပြမည့်အမည်"
+
+#: temp/temp_ve/profiles/forms.py:116
+#: temp/temp_ve/profiles/forms.py:249
+#: temp/temp_ve/profiles/forms.py:300
+msgid "Location"
+msgstr "သင္၏ႏိုင္ငံ -"
+
+#: temp/temp_ve/profiles/forms.py:188
+msgid "Username already exists."
+msgstr "သင္၏ အမည္ username သည္ ရွိျပီးသား ျဖစ္သည္။"
+
+#: temp/temp_ve/profiles/forms.py:193
+msgid ""
+"Sorry, but that is an invalid username. Please don't use your %s in your "
+"username."
+msgstr ""
+"ဝမ်းနည်းပါတယ်, သို့သော်မမှန်ကန်သောအသုံးပြုသူအမည်ဖြစ်ပါတယ်။ "
+"သင့်ရဲ့အသုံးပြုသူအမည်၌သင်တို့၏% ကိုအသုံးမပြုကြပါ။"
+
+#: temp/temp_ve/profiles/forms.py:225
+#: temp/temp_ve/profiles/forms.py:351
+#, python-format
+msgid ""
+"Sorry, but that is an invalid display name. Please don't use your %s in your "
+"display name."
+msgstr ""
+"ဝမ်းနည်းပါတယ်, သို့သော်မမှန်ကန်သောနာမည်ဖြစ်ပါတယ်။ သင်တို့၏နာမ၌သင်တို့၏% s "
+"ကိုအသုံးမပြုကြပါ။"
+
+#: temp/temp_ve/profiles/forms.py:390
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:25
+msgid "Old Password"
+msgstr "ယခင္က လွ်ိဳ႕ဝွက္နံပါတ္ (password)"
+
+#: temp/temp_ve/profiles/forms.py:405
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:32
+msgid "New Password"
+msgstr "စကားဝှကိအသစ်"
+
+#: temp/temp_ve/profiles/forms.py:421
+msgid "Confirm Password"
+msgstr "စကားဝှက်ကိုအတည်ပြုပါ"
+
+#: temp/temp_ve/profiles/forms.py:506
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:29
+msgid "Confirm PIN"
+msgstr "အတည်ပြု တွယ်အပ်"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:38
+msgid "Confirm New Password"
+msgstr "လွ်ိဳ႕ဝွက္နံပါတ္ password အသစ္ကို ထပ္မံ ျဖည့္စြက္ပါ"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:35
+#: temp/temp_ve/profiles/templates/profiles/register.html:54
+msgid "I IDENTIFY MY GENDER AS:"
+msgstr ": သကဲ့သို့ငါ၏ GENDER ငါကိုခှဲခွား"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:53
+#: temp/temp_ve/profiles/templates/profiles/register.html:72
+msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
+msgstr "ပညာရေးသင့်အမြင့်ဆုံးအဆင့်ဆိုတာဘာလဲ?"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:63
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:8
+msgid "Home Page"
+msgstr "မူလစာမျက်နှာစာမျက်နှာ"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:11
+msgid "Update your display name:"
+msgstr "သင့်ရဲ့ Display ကိုအမည်ကိုအပ်ဒိတ်လုပ်:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:20
+msgid "Update your date of birth:"
+msgstr "ေမြးရက္၊လ၊ခုႏွစ္ ကို မွန္ကန္စြာ ျပန္လည္ျဖည့္စြက္မည္"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:28
+msgid "Update your gender:"
+msgstr "သင့်ရဲ့ကျား, မကိုအပ်ဒိတ်လုပ်:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:37
+msgid "Update where you live:"
+msgstr "သငျသညျအသကျရှငျဘယ်မှာ Update ကို:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:46
+msgid "Update your Education Level:"
+msgstr "သင့်ရဲ့ပညာရေးအဆင့်ကိုအပ်ဒိတ်လုပ်:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:55
+msgid "Update your mobile number:"
+msgstr "သင့်ရဲ့မိုဘိုင်းနံပါတ်ကိုအပ်ဒိတ်လုပ်:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:58
+msgid "(e.g. 0914556789)"
+msgstr "(ဥပမာ 0914556789)"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:64
+msgid "Update your email address:"
+msgstr "သင့်အီးမေးလ်လိပ်စာကိုအပ်ဒိတ်လုပ်:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:67
+#: temp/temp_ve/profiles/templates/profiles/register.html:93
+msgid "(e.g. example@foo.com)"
+msgstr "(ဥပမာ example@foo.com)"
+
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:6
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:36
+msgid "Forgot PIN"
+msgstr "PIN နံပါတ္ေမ့ေပ်ာက္သြားသည္"
+
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:31
+msgid "Security question"
+msgstr "လုံၿခံဳေရးေမးခြန္း -"
+
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:32
+msgid "Please answer the following security question."
+msgstr "အောက်ပါလုံခြုံရေးမေးခွန်းကိုဖြေဆိုပေးပါ။"
+
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:7
+msgid "Welcome Back!"
+msgstr ""
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:6
+#: temp/temp_ve/profiles/templates/profiles/register.html:123
+#: temp/temp_ve/profiles/templates/registration/login.html:9
+#: temp/temp_ve/profiles/test_templates/login.html:9
+msgid "Register"
+msgstr "အမည္စာရင္း ေပးသြင္းမည္"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:28
+msgid "CHOOSE A 4-DIGIT PIN"
+msgstr "ဂဏန္း ေလးလံုးရွိ လွ်ိဳ႕ဝွက္နံပါတ္တခုျဖည့္ပါ"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:31
+msgid "e.g. 2086"
+msgstr "ဥပမာ - ၂၀၈၆"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:36
+msgid "CHOOSE A DISPLAY NAME"
+msgstr "တစ်ဦးက display အမည်ရွေး"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:84
+msgid "(e.g. 0900000013)"
+msgstr "(ဥပမာ 0900000013)"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:90
+msgid "ENTER YOUR EMAIL ADDRESS"
+msgstr "သင့်ရဲ့အီးမေးလ်လိပ်စာကို ENTER"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:5
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:32
+msgid "Reset PIN"
+msgstr "ပြန်ညှိမှု တွယ်အပ်"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:5
+msgid "PIN Changed"
+msgstr "တွယ်အပ် ပြောင်းလဲသွားတယ်"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:7
+msgid "Your PIN has been changed sucessfully."
+msgstr "သင်သည်သင်၏အောင်မြင်စွာပြောင်းလဲပြီ တွယ်အပ်"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:8
+msgid "Continue to Sign In"
+msgstr "အတွက်လက်မှတ်ရေးထိုးရန်ဆက်လက်"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:6
+msgid "Hello "
+msgstr "မဂၤလာပါ"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:9
+msgid "As you type your name comment will appear as:"
+msgstr "သင္၏ အမည္ကို ရိုက္လိုက္သည္ႏွင့္ comment သည္ ယခုကဲ့သို႔ ေပၚမည္"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:14
+msgid "Date of Birth: "
+msgstr "ေမြးရက္၊လ၊ခုႏွစ္"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
+msgid " Not set."
+msgstr "မသတ္မွတ္ ရေသးပါ။"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26
+msgid "Mobile number:"
+msgstr "လက်ကိုင်ဖုန်းနာပတ်:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:33
+msgid "Gender:"
+msgstr "ကျား, မ:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:40
+msgid "Location:"
+msgstr "သင္၏ႏိုင္ငံ -"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:47
+msgid "Education Level:"
+msgstr "ပညာရေးအဆင့်:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:54
+msgid "Email Address:"
+msgstr "အီးမေးလိပ်စာ:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:59
+msgid "log out"
+msgstr "log out လုပ္မည္"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:60
+msgid "Edit My Profile"
+msgstr "မိမိ ကိုယ္ပိုင္စာမ်က္ႏွာကို ျပန္လည္ျပင္ဆင္ ျဖည့္စြက္မည္။"
+
+#: temp/temp_ve/profiles/views.py:161
+msgid "The old password is incorrect."
+msgstr "အဟောင်းကိုစကားဝှက်မမှန်ပါသည်။"
+
+#: temp/temp_ve/profiles/views.py:184
+msgid "Too many attempts. Please try again later."
+msgstr "သိပ်အများကြီးကြိုးစားမှု။ နောက်တခါထပ်ကြိုးစားကြည့်ပါ။"
+
+#: temp/temp_ve/profiles/views.py:279
+msgid "The two PINs that you entered do not match. Please try again."
+msgstr "သငျသညျဝငျကွသောနှစ်ဦးပင်နံပါတ်များမတိုက်ဆိုင်ကြဘူး။ ထပ်ကြိုးစားပါ။"
+
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
+msgid "Submit Survey"
+msgstr "ဆန္္းစစ္ေလ့လာခ်က္ survey ကိုတင္မည္။"
+
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:12
+msgid "Survey Results"
+msgstr "စစ်တမ်းရလဒ်များ"
+
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:14
+msgid ""
+"Your survey has been completed successfully. Please see your submission "
+"results below."
+msgstr ""
+"သင့်ရဲ့စစ်တမ်းကိုအောင်မြင်စွာပြီးစီးခဲ့ပြီ။ "
+"အောက်တွင်သင့်တင်သွင်းခဲ့တဲ့ရလဒ်များကိုကြည့်ပေးပါ။"
+
+#: temp/temp_ve/surveys/templates/surveys/surveys_list.html:10
+msgid "Take The Survey"
+msgstr "အဆိုပါစစ်တမ်းကိုယူ"
+
+#: temp/temp_ve/usermetadata/templates/persona.html:5
+msgid "Are you a ..."
+msgstr "သင္သည္"
+
+#: temp/temp_ve/usermetadata/templates/persona.html:21
+msgid "Skip"
+msgstr "ေက်ာ္ရန္"
+
+#: iogt/settings/base.py:460
+msgid "February"
+msgstr "ေဖေဖာ္ဝါရီ"
+
+#: iogt/settings/base.py:462
+msgid "April"
+msgstr "ဧျပီ"
+
+#: iogt/settings/base.py:463
+msgid "May"
+msgstr "ေမ"
+
+#: iogt/settings/base.py:475
+msgid "Type your comment here"
+msgstr "ဒီနေရာမှာသင့်ရဲ့ comment ကိုရိုက်ထည့်ပါ"
+
+#: iogt/templates/403_csrf.html:10
+msgid ""
+"To login or register for a profile, visit our free mobisite through your "
+"mobile browser at"
+msgstr ""
+"login တစ်ခုသို့မဟုတ်ပရိုဖိုင်အတွက်မှတ်ပုံတင်ရန်မှာသင့်မိုဘိုင်းဘရောက်ဇာကိုတဆင"
+"့်ကျွန်တော်တို့ရဲ့အခမဲ့မိုဘိုင်းက်ဘ်ဆိုက်ဝင်ရောက်ကြည့်ရှုရန်"
+
+#: iogt/templates/base.html:156
+#: iogt/templates/base.html:219
+#: temp/temp_ve/profiles/templates/profiles/done.html:64
+msgid "Profile"
+msgstr "မိမိ စာမ်က္ႏွာ"
+
+#: iogt/templates/base.html:212
+#: iogt/templates/profiles/register.html:10
+#: temp/temp_ve/profiles/templates/profiles/register.html:10
+msgid "Login"
+msgstr "ဝင်​ရန်​"
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:24
+#: iogt/templates/polls/includes/poll_question_form.html:26
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:18
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:20
+msgid "Log in to vote"
+msgstr "မဲအတွက်လက်မှတ်ရေးထိုး"
+
+#: iogt/templates/polls/results.html:8
+#: temp/temp_ve/polls/templates/polls/results.html:8
+msgid "Your answers:"
+msgstr "သင့်ရဲ့အဖြေကို:"
+
+#: iogt/templates/profiles/register.html:24
+#: temp/temp_ve/profiles/templates/profiles/register.html:24
+msgid ""
+"This name you will use to log in and won't appear to other users. Only you "
+"will see this."
+msgstr ""
+"ဤသည်နာမတော်ကိုသင်တို့အားလော့ဂ်နှင့်အခြားအသုံးပြုသူများမှပေါ်လာမည်မဟုတ်ကိုသုံး"
+"ပါလိမ့်မယ်။ သာသင်ဤမြင်လိမ့်မည်။"
+
+#: iogt/templates/profiles/register.html:32
+#: temp/temp_ve/profiles/templates/profiles/done.html:29
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: temp/temp_ve/profiles/templates/profiles/register.html:39
+msgid ""
+"We value your online security, therefore we hide your username and allow you "
+"to comment and interact with the site with a display name."
+msgstr ""
+"ငါတို့သည်သင့်ရဲ့အသုံးပြုသူအမည်ဖုံးကွယ်နှငျ့သငျမှတ်ချက်ပေးရန်နှင့် display "
+"ကိုနာမကိုအမှီနှင့်အတူဆိုက်နှင့်ဆက်ဆံဖို့ခွင့်ပြု, "
+"သင်၏အွန်လိုင်းလုံခြုံရေးတန်ဖိုးထား။"
+
+#: iogt/templates/profiles/register.html:74
+msgid "Enter your mobile number"
+msgstr "သင့်ရဲ့မိုဘိုင်းနံပါတ်ရိုက်ထည့်"
+
+#: iogt/templates/profiles/register.html:103
+msgid "Choose a 4-digit pin"
+msgstr "ဂဏန္း ေလးလံုးရွိ လွ်ိဳ႕ဝွက္နံပါတ္တခုျဖည့္ပါ"
+
+#: iogt/templates/registration/login.html:20
+#: temp/temp_ve/profiles/templates/registration/login.html:20
+#: temp/temp_ve/profiles/test_templates/login.html:20
+msgid "Your username and password do not match. Please try again."
+msgstr ""
+"သင္၏ အမည္ username ႏွင့္ လွ်ိဳ႕ဝွက္နံပါတ္ password တို႔မွာ ကိုက္ညီမႈမရွိပါ။ "
+"ထပ္မံၾကိဳးစားၾကည့္ပါ။"
+
+#: iogt/templates/registration/password_reset_confirm.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"အကြှနျုပျတို့သညျကိုမှန်မှန်ကန်ကန်ထဲမှာရိုက်အတည်ပြုရန်နိုင်အောင်နှစ်ကြိမ်သင့်ရ"
+"ဲ့စကားဝှက်အသစ်ရိုက်ထည့်ပေးပါ။"
+
+#: iogt/templates/registration/password_reset_confirm.html:10
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
+msgid "New password:"
+msgstr "စကားဝှကိအသစ်:"
+
+#: iogt/templates/registration/password_reset_confirm.html:22
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+"စကားဝှက်ကိုပြန်ညှိ link ကိုကပြီးသားအသုံးပြုခဲ့ဖြစ်နိုင်သည်ကြောင့်၎င်း, "
+"မမှန်ကန်ပါ။ အသစ်တစ်ခုကိုစကားဝှက်ပြန်ညှိကိုတောင်းဆိုပါ။"
+
+#: iogt/templates/registration/password_reset_form.html:10
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
+msgid "Email address:"
+msgstr "အီးမေးလိပ်စာ:"
+
+#: iogt/templates/search/search_block.html:5
+#: iogt/templates/search/search_results.html:7
+#: iogt/templates/search/search_results.html:102
+msgid "Search the site..."
+msgstr "ဝက္ဘ္ဆိုက္တြင္ ရွာေဖြရန္"
+
+#: iogt/templates/search/search_results.html:10
+#: iogt/templates/search/search_results.html:105
+msgid "Search Results for:"
+msgstr "ရှာရန်ရလဒ်များ:"
+
+#: temp/temp_ve/commenting/forms.py:72
+msgid "Name"
+msgstr "အမည္"
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:39
+#: temp/temp_ve/commenting/templates/comments/reply.html:43
+msgid "log in"
+msgstr "ဝင်​ရန်​"
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:29
+msgid "Page"
+msgstr ""
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
+msgid "unread replies"
+msgstr ""
+
+#: temp/temp_ve/commenting/test_templates/article_page.html:48
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
+msgid "Next up in"
+msgstr "လာမယ့်အတွက်တက်"
+
+#: temp/temp_ve/commenting/views.py:34
+msgid "The comment has been reported."
+msgstr "အဆိုပါမှတ်ချက်ဖော်ပြခဲ့သည်သိရသည်။"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
+msgid "Sotho"
+msgstr "Sotho"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
+msgid "Tswana"
+msgstr "Tswana"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+"သင့်ရဲ့စကားဝှက်ကိုမေ့နေတာလား? သင့်အီးမေးလ်လိပ်စာအောက်တွင်ဖော်ပြထားသောထည့်ပါ, "
+"ကျွန်တော်တစ်ဦးအသစ်တယောက် setting "
+"များအတွက်ညွှန်ကြားချက်အီးမေးလ်ပို့ပါလိမ့်မယ်။"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
+msgid "Looking for something?"
+msgstr "အရာတစ်ခုခုကိုရှာဖွေနေပါသလား"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
+msgid "No search results for "
+msgstr "ရွာေဖြြသည့္ ရလဒ္မ်ားတြင္ မရွိပါ"
+
+#: temp/temp_ve/polls/templates/polls/poll_page.html:7
+msgid "What's your opinion?"
+msgstr "သင့်ရဲ့အမြင်ကဘာလဲ?"
+
+#: temp/temp_ve/profiles/admin.py:78
+msgid "Frontend Users"
+msgstr "ရှေ့ဆုံးကိုအသုံးပြုသူများသည်"
+
+#: temp/temp_ve/profiles/admin_views.py:39
+#, python-brace-format
+msgid "CSV emailed to '{0}'"
+msgstr "CSV ဖိုင် 'ဖို့မေးလ်ပို့ပေး {0} ' '"
+
+#: temp/temp_ve/profiles/forms.py:94
+#: temp/temp_ve/profiles/forms.py:419
+#: temp/temp_ve/profiles/forms.py:487
+#: temp/temp_ve/profiles/forms.py:504
+msgid "This value must contain only numbers."
+msgstr "ဒီတန်ဖိုးကသာနံပါတ်များပါဝင်ရပါမည်။"
+
+#: temp/temp_ve/profiles/forms.py:112
+#: temp/temp_ve/profiles/forms.py:245
+#: temp/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "ကျား, မ"
+
+#: temp/temp_ve/profiles/forms.py:120
+#: temp/temp_ve/profiles/forms.py:253
+#: temp/temp_ve/profiles/forms.py:304
+msgid "Education Level"
+msgstr "ပညာရေးအဆင့်"
+
+#: temp/temp_ve/profiles/forms.py:388
+#: temp/temp_ve/profiles/forms.py:403
+msgid "This value must contain only           numbers."
+msgstr "ဒီတန်ဖိုးကသာနံပါတ်များပါဝင်ရပါမည်။"
+
+#: temp/temp_ve/profiles/forms.py:431
+msgid "New passwords do not match."
+msgstr "လွ်ိဳ႕ဝွက္နံပါတ္အသစ္မ်ား ကိုက္ညီမႈမရွိပါ။"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:27
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:25
+msgid "(e.g. 2086)"
+msgstr "ဥပမာ - ၂၀၈၆"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:42
+#: temp/temp_ve/profiles/templates/profiles/done.html:59
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:70
+msgid "Save"
+msgstr "ကယ်ဆယ်"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:8
+msgid "Thank you for joining!"
+msgstr "ပူးပေါင်းဘို့သင့်ကိုကျေးဇူးတင်ပါသည်"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr ""
+"ကျွန်တော်တို့ကိုသီးသန့်အကြောင်းအရာ access "
+"ကိုရမှကိုယ့်ကိုယ်အကြောင်းပိုမိုသိပါစေ။"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:18
+#: temp/temp_ve/profiles/templates/profiles/register.html:45
+msgid "SELECT DATE OF BIRTH"
+msgstr "ေမြးေန႔ သကၠရာဇ္ကို ေရြးပါ"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "ဖော်ပြမည့်အမည်"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:44
+#: temp/temp_ve/profiles/templates/profiles/register.html:63
+msgid "WHERE DO YOU LIVE?"
+msgstr "သင်ဘယ်မှာနေလဲ?"
+
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:5
+msgid "Login Success"
+msgstr ""
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "နာမည္ေရြးခ်ယ္ပါ။"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:81
+msgid "ENTER YOUR MOBILE NUMBER"
+msgstr "သင်၏မိုဘိုင်းနံပါတ် ENTER"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:61
+msgid "Change My Password"
+msgstr "မိမိ၏ လွ်ိဳ႕ဝွက္နံပါတ္ password ကိုေျပာင္းမည္။"
 
 #~ msgid "Type new display name:"
 #~ msgstr "မိမိ အမည္အသစ္ကို ရိုက္ထည့္မည္"
