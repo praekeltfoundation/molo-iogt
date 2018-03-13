@@ -217,17 +217,9 @@ msgstr "Comentar"
 msgid "view more comments"
 msgstr "Ver mais"
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\\ N Por favor, corrija o erro \\ n abaixo        "
-
 #: iogt/templates/comments/form.html:14
 #: temp/temp_ve/commenting/forms.py:18
-#, fuzzy
+
 msgid "Comment"
 msgstr "Comentar"
 
@@ -591,18 +583,6 @@ msgstr "O seu comentário foi publicado com sucesso"
 #: temp/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
 msgstr "Voltar ao artigo"
-
-#: temp/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-"\\ N Por favor, corrija o erro \\ n </ h6> \\ n </ class H6 = \\ \""
-"comment__text comment__text - plural \"> abaixo \\ n        "
 
 #: temp/temp_ve/commenting/templates/comments/preview.html:37
 #: temp/temp_ve/commenting/templates/comments/reply.html:41

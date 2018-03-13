@@ -210,14 +210,6 @@ msgstr "تبصرہ"
 msgid "view more comments"
 msgstr "مزید تبصرے دیکھیں"
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] "\\ n براہ مہربانی ذیل میں غلطی درست کریں \\ n        "
-
 #: iogt/templates/comments/form.html:14
 #: temp/temp_ve/commenting/forms.py:18
 msgid "Comment"
@@ -582,18 +574,6 @@ msgstr "آپ کی رائے کو کامیابی سے تعینات کردیا گی
 #: temp/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
 msgstr "مضمون پر واپس"
-
-#: temp/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-"\\ n براہ کرم غلطی کو درست کریں \\ n </ h6> \\ n </ h6 class = \\ \""
-"comment__text comment__text - plural \"> \\ n        "
 
 #: temp/temp_ve/commenting/templates/comments/preview.html:37
 #: temp/temp_ve/commenting/templates/comments/reply.html:41

@@ -213,17 +213,9 @@ msgstr "टिप्पणी"
 msgid "view more comments"
 msgstr "थप टिप्पणीहरू हेर्न"
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-
 #: iogt/templates/comments/form.html:14
 #: temp/temp_ve/commenting/forms.py:18
-#, fuzzy
+
 msgid "Comment"
 msgstr "टिप्पणी"
 
@@ -550,7 +542,7 @@ msgid "Email address"
 msgstr "इ - मेल ठेगाना"
 
 #: temp/temp_ve/commenting/forms.py:19
-#, fuzzy
+
 msgid "Type your comment here..."
 msgstr "तपाईंको टिप्पणी यहाँ टाइप"
 
@@ -588,16 +580,6 @@ msgstr "तपाईंको टिप्पणी सफलतापूर्�
 #: temp/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
 msgstr "फिर्ता लेख"
-
-#: temp/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
 
 #: temp/temp_ve/commenting/templates/comments/preview.html:37
 #: temp/temp_ve/commenting/templates/comments/reply.html:41

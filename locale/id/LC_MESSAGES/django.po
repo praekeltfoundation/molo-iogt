@@ -214,17 +214,8 @@ msgstr "Komentar"
 msgid "view more comments"
 msgstr "melihat lebih komentar"
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-
 #: iogt/templates/comments/form.html:14
 #: temp/temp_ve/commenting/forms.py:18
-#, fuzzy
 msgid "Comment"
 msgstr "Komentar"
 
@@ -550,7 +541,6 @@ msgid "Email address"
 msgstr "Email"
 
 #: temp/temp_ve/commenting/forms.py:19
-#, fuzzy
 msgid "Type your comment here..."
 msgstr "Ketik komentar Anda di sini"
 
@@ -588,21 +578,6 @@ msgstr "Komentar kamu telah berhasil dikirim "
 #: temp/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
 msgstr "Kembali ke Artikel"
-
-#: temp/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-
-#: temp/temp_ve/commenting/templates/comments/preview.html:37
-#: temp/temp_ve/commenting/templates/comments/reply.html:41
-msgid "Please "
-msgstr "Tolong "
 
 #: temp/temp_ve/commenting/templates/comments/preview.html:40
 #: temp/temp_ve/commenting/templates/comments/reply.html:44

@@ -218,17 +218,9 @@ msgstr "комментарий"
 msgid "view more comments"
 msgstr "Посмотреть еще"
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-
 #: iogt/templates/comments/form.html:14
 #: temp/temp_ve/commenting/forms.py:18
-#, fuzzy
+
 msgid "Comment"
 msgstr "Комментарии"
 
@@ -557,7 +549,7 @@ msgid "Email address"
 msgstr "Адрес электронной почты"
 
 #: temp/temp_ve/commenting/forms.py:19
-#, fuzzy
+
 msgid "Type your comment here..."
 msgstr "Введите свой комментарий"
 
@@ -595,21 +587,6 @@ msgstr "Ваш комментарий успешно опубликован"
 #: temp/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
 msgstr "Вернуться к статье"
-
-#: temp/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-
-#: temp/temp_ve/commenting/templates/comments/preview.html:37
-#: temp/temp_ve/commenting/templates/comments/reply.html:41
-msgid "Please "
-msgstr "Пожалуйста "
 
 #: temp/temp_ve/commenting/templates/comments/preview.html:40
 #: temp/temp_ve/commenting/templates/comments/reply.html:44

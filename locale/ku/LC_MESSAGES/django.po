@@ -215,17 +215,8 @@ msgstr "سەرنج"
 msgid "view more comments"
 msgstr "زیاتر ببینە"
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-
 #: iogt/templates/comments/form.html:14
 #: temp/temp_ve/commenting/forms.py:18
-#, fuzzy
 msgid "Comment"
 msgstr "سەرنج"
 
@@ -248,7 +239,6 @@ msgstr "پێشتر"
 
 #: iogt/templates/core/section_page.html:133
 #: iogt/templates/core/tags/section_listing_homepage.html:46
-#, fuzzy
 msgid "View more"
 msgstr "زیاتر ببینە"
 
@@ -419,7 +409,7 @@ msgid "Log in"
 msgstr "چوونە ژوورەوە"
 
 #: iogt/templates/registration/login.html:13
-#, fuzzy
+
 msgid "Login by signing in below."
 msgstr "بەشداریکردن"
 
@@ -586,16 +576,6 @@ msgstr ""
 #: temp/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
 msgstr ""
-
-#: temp/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
 
 #: temp/temp_ve/commenting/templates/comments/preview.html:37
 #: temp/temp_ve/commenting/templates/comments/reply.html:41
@@ -808,12 +788,12 @@ msgstr "وشەی نهێنیی پێشووتر"
 
 #: temp/temp_ve/profiles/forms.py:405
 #: temp/temp_ve/profiles/templates/profiles/change_password.html:32
-#, fuzzy
+
 msgid "New Password"
 msgstr "وشەی نهێنیی پێشووتر"
 
 #: temp/temp_ve/profiles/forms.py:421
-#, fuzzy
+
 msgid "Confirm Password"
 msgstr "پشتڕاستکردنەوەی وشەی نهێنیی نوێ"
 
@@ -1106,7 +1086,7 @@ msgstr ""
 
 #: iogt/templates/registration/password_reset_confirm.html:10
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
-#, fuzzy
+
 msgid "New password:"
 msgstr "وشەی نهێنیی پێشووتر"
 
@@ -1267,7 +1247,7 @@ msgid "ENTER YOUR MOBILE NUMBER"
 msgstr ""
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:61
-#, fuzzy
+
 msgid "Change My Password"
 msgstr "گۆڕینی وشەی نهێنیی"
 

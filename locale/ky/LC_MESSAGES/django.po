@@ -216,17 +216,9 @@ msgstr "түшүндүрмө"
 msgid "view more comments"
 msgstr "Дагы"
 
-#: iogt/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
-
 #: iogt/templates/comments/form.html:14
 #: temp/temp_ve/commenting/forms.py:18
-#, fuzzy
+
 msgid "Comment"
 msgstr "Пикирлер"
 
@@ -552,7 +544,7 @@ msgid "Email address"
 msgstr "Электрондук почта дареги"
 
 #: temp/temp_ve/commenting/forms.py:19
-#, fuzzy
+
 msgid "Type your comment here..."
 msgstr "Бул жерде сиздин Комментарий терүү"
 
@@ -590,16 +582,6 @@ msgstr "Сиздин комментарий ийгиликтүү жарыяла�
 #: temp/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
 msgstr "Кайра-беренесине"
-
-#: temp/temp_ve/commenting/templates/comments/form.html:7
-msgid ""
-"\n"
-"        Please correct the error below\n"
-"      </h6>\n"
-"      </h6 class=\"comment__text comment__text--plural\">\n"
-"        "
-msgid_plural "Please correct the errors below"
-msgstr[0] ""
 
 #: temp/temp_ve/commenting/templates/comments/preview.html:37
 #: temp/temp_ve/commenting/templates/comments/reply.html:41
