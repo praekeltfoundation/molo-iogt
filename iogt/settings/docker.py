@@ -46,3 +46,22 @@ ADMIN_LANGUAGE_CODE = environ.get('ADMIN_LANGUAGE_CODE', "en")
 FROM_EMAIL = environ.get('FROM_EMAIL', "support@moloproject.org")
 CONTENT_IMPORT_SUBJECT = environ.get(
     'CONTENT_IMPORT_SUBJECT', 'Molo Content Import')
+
+
+# Setup for CAS
+if CAS_SERVER_URL:
+    ENABLE_SSO = True
+
+    MIDDLEWARE_CLASSES += [
+        'molo.core.middleware.MoloCASMiddleware',
+        'molo.core.middleware.Custom403Middleware',
+    ]
+
+    AUTHENTICATION_BACKENDS = [
+        'django.contrib.auth.backends.ModelBackend',
+        'molo.core.backends.MoloCASBackend',
+    ]
+
+    CAS_ADMIN_PREFIX = '/admin/'
+    LOGIN_URL = 'molo.profiles:auth_login'
+    CAS_VERSION = '3'
