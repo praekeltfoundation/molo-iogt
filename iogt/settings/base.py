@@ -77,6 +77,7 @@ INSTALLED_APPS = [
     'wagtail.contrib.wagtailsitemaps',
     'wagtail.contrib.modeladmin',
     'wagtailsurveys',
+    'wagtail_personalisation',
 
     'mptt',
     'molo.usermetadata',
