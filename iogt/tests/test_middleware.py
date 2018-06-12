@@ -156,7 +156,9 @@ class TestGoogleAnalyticsMiddleware(TestCase, MoloTestCaseMixin):
         profile.date_of_birth = datetime.date(2000, 1, 1)
         profile.save()
 
-        self.section_index = SectionIndexPage.objects.child_of(self.main).first()
+        self.section_index = SectionIndexPage.objects.child_of(
+            self.main
+        ).first()
         self.english_section = self.mk_section(
             self.section_index, title='English section')
 
