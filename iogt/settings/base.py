@@ -112,12 +112,12 @@ MIDDLEWARE_CLASSES = [
     'wagtail.wagtailcore.middleware.SiteMiddleware',
     'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
+    'wagtail.wagtailcore.middleware.SiteMiddleware',
 
     'molo.core.middleware.AdminLocaleMiddleware',
-
     'molo.usermetadata.middleware.PersonaMiddleware',
-
     'molo.core.middleware.NoScriptGASessionMiddleware',
+    'molo.core.middleware.MultiSiteRedirectToHomepage',
 ]
 
 # Template configuration
@@ -519,13 +519,15 @@ WAGTAIL_SITE_NAME = SITE_NAME
 # http://wagtail.readthedocs.org/en/latest/core_components/
 #     search/backends.html#elasticsearch-backend
 #
-# WAGTAILSEARCH_BACKENDS = {
-#     'default': {
-#         'BACKEND': ('wagtail.wagtailsearch.backends.'
-#                     'elasticsearch.ElasticSearch'),
-#         'INDEX': 'base',
-#     },
-# }
+
+WAGTAILSEARCH_BACKENDS = {
+    'default': {
+        'BACKEND': (
+            'wagtail.wagtailsearch.backends.elasticsearch.ElasticsearchSearchBackend'
+        ),
+        'INDEX': 'base',
+    },
+}
 
 
 # Whether to use face/feature detection to improve image
