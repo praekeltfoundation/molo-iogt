@@ -523,7 +523,8 @@ WAGTAIL_SITE_NAME = SITE_NAME
 WAGTAILSEARCH_BACKENDS = {
     'default': {
         'BACKEND': (
-            'wagtail.wagtailsearch.backends.elasticsearch.ElasticsearchSearchBackend'
+            'wagtail.wagtailsearch.backends.'
+            'elasticsearch.ElasticsearchSearchBackend'
         ),
         'INDEX': 'base',
     },
