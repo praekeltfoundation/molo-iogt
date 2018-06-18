@@ -53,17 +53,17 @@ setup(name='iogt',
       include_package_data=True,
       zip_safe=False,
       install_requires=install_requires,
-      extras_require = {
-        'test': [
-            'pytest==3.0.0',
-            'pytest-django==3.1.1',
-            'responses',
-        ],
-        'cover': [
-            'pytest-cov',
-        ],
-        'lint': [
-            'flake8==3.4.1',
-        ],
+      extras_require={
+          'test': [
+              'pytest==3.0.0',
+              'pytest-django==3.1.1',
+              'responses',
+          ],
+          'cover': [
+              'pytest-cov',
+          ],
+          'lint': [
+              'flake8==3.4.1',
+          ],
       },
       entry_points={})
