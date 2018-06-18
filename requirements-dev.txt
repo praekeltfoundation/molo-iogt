@@ -1,5 +1,2 @@
-pytest==3.0.0
-pytest-django==2.9.1
-pytest-cov
-pytest-xdist
-flake8
+# Our dependencies are all specified in setup.py
+-e .[test,cover,lint]
