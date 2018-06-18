@@ -1,7 +1,5 @@
 sudo: false
 language: python
-python:
-  - "2.7"
 cache:
   - pip
 before_install:
@@ -12,9 +10,6 @@ install:
   - pip install coveralls
 script:
   - flake8
-  # Ensure plural expressions are not allowed in PO files
-  # Disabled: need to find a better way of doing this
-  #- grep -Rq "plural=EXPRESSION" --include \*.po locale/
   - py.test
 after_success:
   - coveralls
@@ -23,8 +18,14 @@ after_success:
 jobs:
   include:
     - stage: test
-    - stage: docker
       python: "2.7"
+    - python: "3.6"
+    # Clear unused build steps
+      services: []
+      deploy: []
+      after_success: []
+    - stage: docker
+      python: "3.6"
       sudo: required
       dist: trusty
       services: [docker]
@@ -42,11 +43,11 @@ jobs:
         - molo_version="$(sed -nE 's/^molo\.core==(.*)$/\1/p' requirements.txt)"
         - docker pull "$IMAGE_NAME" || true
       script:
-        - docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" --build-arg MOLO_VERSION="$molo_version" .
+        - docker build --pull --tag "$IMAGE_NAME" --build-arg MOLO_VERSION="$molo_version" .
 
       before_deploy:
         - pip install docker-ci-deploy==0.3.0
-        - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
+        - echo -n $REGISTRY_PASS | docker login -u "$REGISTRY_USER" --password-stdin
       deploy:
         - provider: script
           script: dcd --version "$(git rev-parse --short HEAD)" --version-latest "$IMAGE_NAME"
