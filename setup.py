@@ -11,12 +11,12 @@ def read(*parts):
 
 
 install_requires = [
-    'molo.core==4.4.15',
-    'molo.surveys==2.3.0',
-    'molo.profiles==3.2.1',
-    'molo.commenting==2.1.3',
-    'molo.polls==3.2.0',
-    "molo.usermetadata==1.2.0",
+    'molo.core==5.22.5',
+    'molo.surveys>=5.9.12, <5.10',
+    'molo.profiles>=5.0.0,<6.0.0',
+    'molo.commenting>=5.2.4,<5.5',
+    'molo.polls>=5.0.1, <6.0',
+    'molo.usermetadata>=1.2.0',
     'elasticsearch==1.7.0',
     'django-modelcluster>=2.0,<3.0',
     'djangorestframework>=3.1.3,<3.7',
@@ -30,9 +30,12 @@ install_requires = [
     'django-mptt==0.8.5',
     'django-google-analytics-app==4.3.0',
     'Unidecode==0.04.16',
-    'django-storages',
+    'django-storages==1.6.3',
+    'wagtail_personalisation',
+    'dj-database-url>=0.5.0,<0.6.0',
     'boto',
     'pyrabbit',
+    'responses',
 ]
 
 setup(name='iogt',

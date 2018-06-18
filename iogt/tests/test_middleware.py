@@ -1,6 +1,6 @@
+import mock
 import datetime
 import responses
-import mock
 
 from django.test import (
     TestCase,
@@ -9,12 +9,16 @@ from django.test import (
     override_settings,
 )
 
-from django.core.urlresolvers import reverse
-from django.contrib.sessions.middleware import SessionMiddleware
 from django.contrib.auth.models import User
+from django.core.urlresolvers import reverse
+from django.contrib.contenttypes.models import ContentType
+from django.contrib.sessions.middleware import SessionMiddleware
 
+from molo.core.models import Languages
+from molo.core.models import SiteLanguageRelation
 from molo.core.tests.base import MoloTestCaseMixin
 from molo.core.models import Main, SectionIndexPage
+
 from wagtail.wagtailsearch.backends import get_search_backend
 
 from iogt.middleware import (
@@ -91,6 +95,11 @@ class TestSSLRedirectMiddleware(TestCase, MoloTestCaseMixin):
     def setUp(self):
         self.mk_main()
         self.main = Main.objects.all().first()
+        self.english = SiteLanguageRelation.objects.create(
+            language_setting=Languages.for_site(self.main.get_site()),
+            locale='en', is_active=True
+        )
+        self.main = Main.objects.all().first()
         self.factory = RequestFactory()
 
     def test_no_redirect_for_home_page(self):
@@ -132,6 +141,13 @@ class TestSSLRedirectMiddleware(TestCase, MoloTestCaseMixin):
 class TestGoogleAnalyticsMiddleware(TestCase, MoloTestCaseMixin):
 
     def setUp(self):
+        # Creates Main language
+        self.mk_main()
+        self.main = Main.objects.all().first()
+        self.english = SiteLanguageRelation.objects.create(
+            language_setting=Languages.for_site(self.main.get_site()),
+            locale='en', is_active=True,
+        )
         self.client = Client()
         self.superuser = User.objects.create_superuser(
             username='testuser', password='password', email='test@email.com')
@@ -140,10 +156,9 @@ class TestGoogleAnalyticsMiddleware(TestCase, MoloTestCaseMixin):
         profile.date_of_birth = datetime.date(2000, 1, 1)
         profile.save()
 
-        # Creates Main language
-        self.mk_main()
-        main = Main.objects.all().first()
-        self.section_index = SectionIndexPage.objects.child_of(main).first()
+        self.section_index = SectionIndexPage.objects.child_of(
+            self.main
+        ).first()
         self.english_section = self.mk_section(
             self.section_index, title='English section')
 
