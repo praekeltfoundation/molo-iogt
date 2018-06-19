@@ -41,7 +41,6 @@ jobs:
 
       before_script:
         - molo_version="$(sed -nE 's/^molo\.core==(.*)$/\1/p' requirements.txt)"
-        - docker pull "$IMAGE_NAME" || true
       script:
         - docker build --pull --tag "$IMAGE_NAME" --build-arg MOLO_VERSION="$molo_version" .
 
