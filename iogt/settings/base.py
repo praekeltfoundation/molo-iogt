@@ -33,7 +33,7 @@ DEBUG = True
 ENV = 'dev'
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '').split(",")
 
 
 # Base URL to use when referring to full URLs within the Wagtail admin
@@ -57,9 +57,16 @@ INSTALLED_APPS = [
     'taggit',
     'modelcluster',
 
-    'molo.core',
     'iogt',
+    'molo.core',
+    'molo.profiles',
     'google_analytics',
+    'molo.usermetadata',
+    'molo.surveys',
+    'django_comments',
+    'molo.commenting',
+    'molo.polls',
+    'wagtail_personalisation',
 
     'wagtail.wagtailcore',
     'wagtail.wagtailadmin',
@@ -74,19 +81,12 @@ INSTALLED_APPS = [
     'wagtail.wagtailforms',
     'wagtailmedia',
     'wagtail.contrib.settings',
-    'wagtail.contrib.wagtailsitemaps',
     'wagtail.contrib.modeladmin',
     'wagtailsurveys',
-    'wagtail_personalisation',
+    'wagtail.contrib.wagtailsitemaps',
 
     'mptt',
-    'molo.usermetadata',
-    'molo.surveys',
-    'molo.profiles',
-    'molo.commenting',
-    'django_comments',
     'raven.contrib.django.raven_compat',
-    'molo.polls',
     'djcelery',
     'django_cas_ng',
     'compressor',
@@ -110,14 +110,13 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
-    'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
-    'wagtail.wagtailcore.middleware.SiteMiddleware',
 
     'molo.core.middleware.AdminLocaleMiddleware',
-    'molo.usermetadata.middleware.PersonaMiddleware',
     'molo.core.middleware.NoScriptGASessionMiddleware',
+    'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
     'molo.core.middleware.MultiSiteRedirectToHomepage',
+    'molo.usermetadata.middleware.PersonaMiddleware',
 ]
 
 # Template configuration
@@ -133,8 +132,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'molo.core.context_processors.locale',
                 'wagtail.contrib.settings.context_processors.settings',
+                'molo.core.context_processors.locale',
                 'iogt.processors.compress_settings',
             ],
         },
@@ -461,9 +460,7 @@ EXTRA_LANG_INFO = {
     },
 }
 
-LANG_INFO = (
-    dict(django.conf.locale.LANG_INFO.items() + EXTRA_LANG_INFO.items()))
-django.conf.locale.LANG_INFO = LANG_INFO
+django.conf.locale.LANG_INFO.update(EXTRA_LANG_INFO)
 
 LOCALE_PATHS = [
     join(PROJECT_ROOT, "locale"),

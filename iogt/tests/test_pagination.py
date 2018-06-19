@@ -1,9 +1,7 @@
 from django.test import TestCase, Client
 
-from molo.core.models import Main
-from molo.core.models import Languages
-from molo.core.models import SiteLanguage
-from molo.core.models import SiteLanguageRelation
+from molo.core.models import (
+    Main, Languages, SiteLanguageRelation, SiteLanguage)
 from molo.core.tests.base import MoloTestCaseMixin
 
 
