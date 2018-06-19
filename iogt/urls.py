@@ -6,14 +6,14 @@ from django.conf import settings
 from django.contrib import admin
 from django.contrib.auth.decorators import login_required
 from django.views.generic import TemplateView
-
+from wagtail.contrib.wagtailsitemaps.views import sitemap
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 from wagtail.wagtailcore import urls as wagtail_urls
 from molo.profiles.views import RegistrationDone
 from molo.profiles.forms import DoneForm
 
-from . import views
+from iogt.views import health_iogt
 
 
 # implement CAS URLs in a production setting
@@ -31,9 +31,7 @@ urlpatterns += [
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
     url(r'^meta/', include('molo.usermetadata.urls',
-                           namespace='molo.usermetadata',
-                           app_name='molo.usermetadata')),
-
+        namespace='molo.usermetadata', app_name='molo.usermetadata')),
     url(r'^profiles/register/done/',
         login_required(RegistrationDone.as_view(
             template_name="profiles/done.html",
@@ -42,36 +40,21 @@ urlpatterns += [
         name='registration_done'),
     url(r'^profiles/', include('molo.profiles.urls',
         namespace='molo.profiles')),
-
     url(r'^commenting/', include('molo.commenting.urls',
-        namespace='molo.commenting',
-        app_name='molo.commenting')),
-
+        namespace='molo.commenting', app_name='molo.commenting')),
     url(r'', include('django_comments.urls')),
-
     url(r'^commenting/comment_done/',
-        TemplateView.as_view(
-            template_name="comments/comment_done.html"
-        ),
+        TemplateView.as_view(template_name="comments/comment_done.html"),
         name='comment_done'),
-
-    url(r'^surveys/',
-        include('molo.surveys.urls',
-                namespace='molo.surveys',
-                app_name='molo.surveys')),
-
+    url(r'^surveys/', include('molo.surveys.urls',
+        namespace='molo.surveys', app_name='molo.surveys')),
     url(r'^polls/', include('molo.polls.urls',
-                            namespace='molo.polls',
-                            app_name='molo.polls')),
+        namespace='molo.polls', app_name='molo.polls')),
     url('^', include('django.contrib.auth.urls')),
     url(r'^robots\.txt$', TemplateView.as_view(
         template_name='robots.txt', content_type='text/plain')),
-    url(r'^sitemap\.xml$', 'wagtail.contrib.wagtailsitemaps.views.sitemap'),
-    url(
-        r'^health/$',
-        views.health_iogt,
-        name='health_iogt'
-    ),
+    url(r'^sitemap\.xml$', sitemap),
+    url(r'^health/$', health_iogt, name='health_iogt'),
     url(r'', include('molo.core.urls')),
     url(r'', include(wagtail_urls)),
 ]

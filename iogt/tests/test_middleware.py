@@ -2,31 +2,21 @@ import mock
 import datetime
 import responses
 
-from django.test import (
-    TestCase,
-    Client,
-    RequestFactory,
-    override_settings,
-)
-
+from django.test import TestCase, Client, RequestFactory, override_settings
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.sessions.middleware import SessionMiddleware
 
-from molo.core.models import Languages
-from molo.core.models import SiteLanguageRelation
+from molo.core.models import (
+    Languages, SiteLanguageRelation, Main, SectionIndexPage)
 from molo.core.tests.base import MoloTestCaseMixin
-from molo.core.models import Main, SectionIndexPage
 
 from wagtail.wagtailsearch.backends import get_search_backend
 
 from iogt.middleware import (
-    SSLRedirectMiddleware,
-    IogtMoloGoogleAnalyticsMiddleware,
-    clean_path,
-    clean_paths,
-    is_match,
+    SSLRedirectMiddleware, IogtMoloGoogleAnalyticsMiddleware, clean_path,
+    clean_paths, is_match,
 )
 
 

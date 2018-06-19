@@ -11,14 +11,12 @@ from django.test import TestCase, Client, override_settings
 
 from rest_framework import status
 
-from molo.core.models import Main
-from molo.core.models import Languages
-from molo.commenting.models import MoloComment
-from molo.core.models import SiteLanguageRelation
+from molo.core.models import Main, Languages, SiteLanguageRelation
 from molo.core.tests.base import MoloTestCaseMixin
+from molo.commenting.models import MoloComment
 
 
-class ViewsTestCase(TestCase, MoloTestCaseMixin):
+class ViewsTestCase(MoloTestCaseMixin, TestCase):
 
     def setUp(self):
         self.mk_main()
