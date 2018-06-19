@@ -82,7 +82,6 @@ INSTALLED_APPS = [
     'mptt',
     'molo.usermetadata',
     'molo.surveys',
-    'molo.profiles',
     'molo.commenting',
     'django_comments',
     'raven.contrib.django.raven_compat',
