@@ -1,2 +1,5 @@
-# Our dependencies are all specified in setup.py
--e .[test,cover,lint]
+pytest==3.0.0
+pytest-django==3.1.1
+responses
+pytest-cov
+flake8==3.4.1

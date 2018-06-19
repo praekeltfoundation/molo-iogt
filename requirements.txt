@@ -1,2 +1,23 @@
-# Our dependencies are all specified in setup.py
--e .
+molo.core==6.9.0
+molo.surveys==6.8.0
+molo.commenting==6.2.9
+molo.polls==6.3.0
+molo.usermetadata==6.0.0
+elasticsearch==1.7.0
+django-modelcluster>=3.1,<4.0
+djangorestframework==3.4.0
+celery<4.0
+gunicorn
+psycopg2
+django-extensions>=1,<2
+django_compressor==2.0
+six>=1.9
+html5lib==0.9999999
+django-mptt==0.8.7
+django-google-analytics-app==4.3.0
+Unidecode==0.04.16
+django-storages==1.6.3
+dj-database-url>=0.5.0,<0.6.0
+boto
+pyrabbit
+responses
