@@ -6,6 +6,7 @@ from django.conf import settings
 from django.contrib import admin
 from django.contrib.auth.decorators import login_required
 from django.views.generic import TemplateView
+from django_cas_ng import views as cas_views
 from wagtail.contrib.wagtailsitemaps.views import sitemap
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
@@ -16,15 +17,15 @@ from molo.profiles.forms import DoneForm
 from iogt.views import health_iogt
 
 
+urlpatterns = []
 # implement CAS URLs in a production setting
 if settings.ENABLE_SSO:
-    urlpatterns = [
-        url(r'^admin/login/', 'django_cas_ng.views.login'),
-        url(r'^admin/logout/', 'django_cas_ng.views.logout'),
-        url(r'^admin/callback/', 'django_cas_ng.views.callback'),
+    urlpatterns += [
+        url(r'^admin/login/', cas_views.login),
+        url(r'^admin/logout/', cas_views.logout),
+        url(r'^admin/callback/', cas_views.callback),
     ]
-else:
-    urlpatterns = []
+
 
 urlpatterns += [
     url(r'^django-admin/', include(admin.site.urls)),
