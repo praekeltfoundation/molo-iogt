@@ -33,7 +33,7 @@ DEBUG = True
 ENV = 'dev'
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '').split(",")
 
 
 # Base URL to use when referring to full URLs within the Wagtail admin
@@ -57,9 +57,16 @@ INSTALLED_APPS = [
     'taggit',
     'modelcluster',
 
-    'molo.core',
     'iogt',
+    'molo.core',
+    'molo.profiles',
     'google_analytics',
+    'molo.usermetadata',
+    'molo.surveys',
+    'django_comments',
+    'molo.commenting',
+    'molo.polls',
+    'wagtail_personalisation',
 
     'wagtail.wagtailcore',
     'wagtail.wagtailadmin',
@@ -74,18 +81,12 @@ INSTALLED_APPS = [
     'wagtail.wagtailforms',
     'wagtailmedia',
     'wagtail.contrib.settings',
-    'wagtail.contrib.wagtailsitemaps',
     'wagtail.contrib.modeladmin',
     'wagtailsurveys',
+    'wagtail.contrib.wagtailsitemaps',
 
     'mptt',
-    'molo.usermetadata',
-    'molo.surveys',
-    'molo.profiles',
-    'molo.commenting',
-    'django_comments',
     'raven.contrib.django.raven_compat',
-    'molo.polls',
     'djcelery',
     'django_cas_ng',
     'compressor',
@@ -109,14 +110,13 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     'wagtail.wagtailcore.middleware.SiteMiddleware',
-    'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
     'wagtail.wagtailredirects.middleware.RedirectMiddleware',
 
     'molo.core.middleware.AdminLocaleMiddleware',
-
-    'molo.usermetadata.middleware.PersonaMiddleware',
-
     'molo.core.middleware.NoScriptGASessionMiddleware',
+    'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
+    'molo.core.middleware.MultiSiteRedirectToHomepage',
+    'molo.usermetadata.middleware.PersonaMiddleware',
 ]
 
 # Template configuration
@@ -132,8 +132,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'molo.core.context_processors.locale',
                 'wagtail.contrib.settings.context_processors.settings',
+                'molo.core.context_processors.locale',
                 'iogt.processors.compress_settings',
             ],
         },
@@ -460,9 +460,7 @@ EXTRA_LANG_INFO = {
     },
 }
 
-LANG_INFO = (
-    dict(django.conf.locale.LANG_INFO.items() + EXTRA_LANG_INFO.items()))
-django.conf.locale.LANG_INFO = LANG_INFO
+django.conf.locale.LANG_INFO.update(EXTRA_LANG_INFO)
 
 LOCALE_PATHS = [
     join(PROJECT_ROOT, "locale"),
@@ -518,14 +516,32 @@ WAGTAIL_SITE_NAME = SITE_NAME
 # http://wagtail.readthedocs.org/en/latest/core_components/
 #     search/backends.html#elasticsearch-backend
 #
-# WAGTAILSEARCH_BACKENDS = {
-#     'default': {
-#         'BACKEND': ('wagtail.wagtailsearch.backends.'
-#                     'elasticsearch.ElasticSearch'),
-#         'INDEX': 'base',
-#     },
-# }
 
+ES_HOST = environ.get('ES_HOST')
+ES_INDEX = environ.get('ES_INDEX')
+ES_VERSION = int(environ.get('ES_VERSION', 5))
+
+ES_BACKEND_V1 = 'gem.wagtailsearch.backends.elasticsearch'
+ES_BACKEND_V2 = 'gem.wagtailsearch.backends.elasticsearch2'
+ES_BACKEND_V5 = 'gem.wagtailsearch.backends.elasticsearch5'
+
+if ES_VERSION == 5:
+    SELECTED_ES_BACKEND = ES_BACKEND_V5
+elif ES_VERSION == 2:
+    SELECTED_ES_BACKEND = ES_BACKEND_V2
+else:
+    SELECTED_ES_BACKEND = ES_BACKEND_V1
+
+ES_SELECTED_INDEX = ES_INDEX or environ.get('MARATHON_APP_ID', '')
+
+if ES_HOST and ES_SELECTED_INDEX:
+    WAGTAILSEARCH_BACKENDS = {
+        'default': {
+            'BACKEND': SELECTED_ES_BACKEND,
+            'URLS': [ES_HOST],
+            'INDEX': ES_SELECTED_INDEX.replace('/', '')
+        },
+    }
 
 # Whether to use face/feature detection to improve image
 # cropping - requires OpenCV
