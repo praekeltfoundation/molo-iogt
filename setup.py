@@ -7,13 +7,11 @@ with open(os.path.join(here, 'README.rst')) as f:
     README = f.read()
 
 with open(os.path.join(here, 'requirements.txt')) as f:
-    requires = filter(None, f.readlines())
+    requires = f.read().split("\n")
 
-with open(os.path.join(here, 'VERSION')) as f:
-    version = f.read().strip()
 
 setup(name='iogt',
-      version=version,
+      version='0.0.1',
       description='iogt',
       long_description=README,
       classifiers=[
@@ -21,10 +19,11 @@ setup(name='iogt',
           "Topic :: Internet :: WWW/HTTP",
           "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
       ],
-      author='Praekelt Foundation',
-      author_email='dev@praekelt.com',
-      url='None',
+      author='Praekelt.org',
+      author_email='dev@praekelt.org',
+      url='https://github.com/praekelt/molo-iogt',
       license='BSD',
+      keywords='praekelt, mobi, web, django',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
