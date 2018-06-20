@@ -17,6 +17,7 @@ from molo.profiles.forms import DoneForm
 from iogt.views import health_iogt
 
 
+urlpatterns = []
 # implement CAS URLs in a production setting
 if settings.ENABLE_SSO:
     urlpatterns += [
@@ -24,8 +25,7 @@ if settings.ENABLE_SSO:
         url(r'^admin/logout/', cas_views.logout),
         url(r'^admin/callback/', cas_views.callback),
     ]
-else:
-    urlpatterns = []
+
 
 urlpatterns += [
     url(r'^django-admin/', include(admin.site.urls)),
