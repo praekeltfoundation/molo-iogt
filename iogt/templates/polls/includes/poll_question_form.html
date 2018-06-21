@@ -1,8 +1,8 @@
 {% load i18n static poll_votings %}
 
 {% block facebook_pixel_tracking_js %}
-document.getElementByClassName('surveys__form')[0].addEventListener('submit', function() {
-    fbq('track', 'Lead', {value: this.getAttribute('action')}); //survey submission
+fbq('track', 'Lead', {
+    value: document.getElementByClassName('surveys__form')[0].getAttribute('action')
 });
 {% endblock %}
 
