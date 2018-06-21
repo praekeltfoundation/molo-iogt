@@ -75,12 +75,22 @@
       t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
       document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-      fbq('init', '413876948808281');
-      fbq('track', "PageView");
+      fbq('init', '{{ FACEBOOK_PIXEL }}');
+      fbq('track', 'PageView');
+      if(document.history.length>3) fbq(
+          'track', 'PageView',
+          {value: 'users visiting minimum 3 pages on the site'}
+      );
+
+      {% block facebook_pixel_tracking_js %}{% endblock %}
+
       </script>
       <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=413876948808281&ev=PageView&noscript=1"
+      src="https://www.facebook.com/tr?id={{ FACEBOOK_PIXEL }}&ev=PageView&noscript=1"
       /></noscript>
+
+      {% block facebook_pixel_tracking_no_js %}{% endblock %}
+
       <!-- End Facebook Pixel Code -->  
     </head>
 
