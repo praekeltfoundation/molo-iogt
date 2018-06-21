@@ -77,7 +77,7 @@
 
       fbq('init', '{{ FACEBOOK_PIXEL }}');
       fbq('track', 'PageView');
-      if(document.history.length>3) fbq(
+      if(document.history.length>2) fbq(
           'track', 'PageView',
           {value: 'users visiting minimum 3 pages on the site'}
       );
