@@ -231,7 +231,9 @@ class TestFaceBookPixelHistoryCounter(TestCase, MoloTestCaseMixin):
         )
         response = self.client.get(reverse('search'))
         self.assertEqual(
-            int(response.client.cookies.get(settings.FACEBOOK_PIXEL_COOKIE_KEY).value),
+            int(response.client.cookies.get(
+                settings.FACEBOOK_PIXEL_COOKIE_KEY
+            ).value),
             view_count + 1
         )
 
@@ -239,6 +241,8 @@ class TestFaceBookPixelHistoryCounter(TestCase, MoloTestCaseMixin):
         """ test if the no script html tag exists """
         response = self.client.get(reverse('search'))
         self.assertEqual(
-            int(response.client.cookies.get(settings.FACEBOOK_PIXEL_COOKIE_KEY).value),
+            int(response.client.cookies.get(
+                settings.FACEBOOK_PIXEL_COOKIE_KEY
+            ).value),
             1
         )
