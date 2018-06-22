@@ -77,21 +77,21 @@
 
       fbq('init', '{{ FACEBOOK_PIXEL }}');
       fbq('track', 'PageView');
-      if(document.history.length>2) fbq(
-          'track', 'PageView',
-          {value: 'users visiting minimum 3 pages on the site'}
-      );
+
+      {% if FACEBOOK_PIXEL_HISTORY_COUNT > 2 %}
+        fbq('track', 'PageViewMinimum3Pages');
+      {% endif %}
 
       {% block facebook_pixel_tracking_js %}{% endblock %}
-
       </script>
+
       <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id={{ FACEBOOK_PIXEL }}&ev=PageView&noscript=1"
       /></noscript>
 
       {% if FACEBOOK_PIXEL_HISTORY_COUNT > 2 %}
           <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id={{ FACEBOOK_PIXEL }}&ev=PageView&noscript=1&value=VisitingMinimum3Pages"
+            src="https://www.facebook.com/tr?id={{ FACEBOOK_PIXEL }}&ev=PageViewMinimum3Pages&noscript=1&value=VisitingMinimum3Pages"
           /></noscript>
       {% endif %}
 
