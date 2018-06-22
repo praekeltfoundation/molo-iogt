@@ -115,6 +115,7 @@ MIDDLEWARE_CLASSES = [
     'molo.core.middleware.AdminLocaleMiddleware',
     'molo.core.middleware.NoScriptGASessionMiddleware',
     'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
+    'iogt.middleware.FaceBookPixelHistoryCounter',
     'molo.core.middleware.MultiSiteRedirectToHomepage',
     'molo.usermetadata.middleware.PersonaMiddleware',
 ]
@@ -604,3 +605,4 @@ RABBITMQ_MANAGEMENT_INTERFACE = environ.get(
     'RABBITMQ_MANAGEMENT_INTERFACE')
 
 FACEBOOK_PIXEL = 413876948808281
+FACEBOOK_PIXEL_COOKIE_KEY = 'facebook_pixel_hit_count'

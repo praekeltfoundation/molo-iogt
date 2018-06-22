@@ -2,11 +2,12 @@ import mock
 import datetime
 import responses
 
-from django.test import TestCase, Client, RequestFactory, override_settings
+from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
-from django.contrib.contenttypes.models import ContentType
+from django.utils.encoding import escape_uri_path
 from django.contrib.sessions.middleware import SessionMiddleware
+from django.test import TestCase, Client, RequestFactory, override_settings
 
 from molo.core.models import (
     Languages, SiteLanguageRelation, Main, SectionIndexPage)
@@ -197,3 +198,47 @@ class TestGoogleAnalyticsMiddleware(TestCase, MoloTestCaseMixin):
 
         self.assertTrue('cd1=17' in url)
         self.assertTrue('cd2=female' in url)
+
+
+class TestFaceBookPixelHistoryCounter(TestCase, MoloTestCaseMixin):
+    def setUp(self):
+        # Creates Main language
+        self.mk_main()
+        self.main = Main.objects.all().first()
+        self.english = SiteLanguageRelation.objects.create(
+            language_setting=Languages.for_site(self.main.get_site()),
+            locale='en', is_active=True,
+        )
+        self.client = Client()
+        self.superuser = User.objects.create_superuser(
+            username='testuser', password='password', email='test@email.com')
+        profile = self.superuser.profile
+        profile.gender = 'female'
+        profile.date_of_birth = datetime.date(2000, 1, 1)
+        profile.save()
+
+        self.section_index = SectionIndexPage.objects.child_of(
+            self.main
+        ).first()
+        self.english_section = self.mk_section(
+            self.section_index, title='English section')
+
+    def test_more_that_3_page_views(self):
+        """ test if the no script html tag exists """
+        view_count = 5
+        self.client.cookies.load(
+            {settings.FACEBOOK_PIXEL_COOKIE_KEY: view_count}
+        )
+        response = self.client.get(reverse('search'))
+        self.assertEqual(
+            int(response.client.cookies.get(settings.FACEBOOK_PIXEL_COOKIE_KEY).value),
+            view_count + 1
+        )
+
+    def test_less_that_3_page_views(self):
+        """ test if the no script html tag exists """
+        response = self.client.get(reverse('search'))
+        self.assertEqual(
+            int(response.client.cookies.get(settings.FACEBOOK_PIXEL_COOKIE_KEY).value),
+            1
+        )
