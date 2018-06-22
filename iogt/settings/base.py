@@ -485,6 +485,7 @@ _("Add anonymously")
 _("This field is required")
 _("Ensure this value has at least 4 characters (it has 1)")
 _("Type your comment here")
+_('Enter a valid phone number.')
 
 
 # Static files (CSS, JavaScript, Images)
