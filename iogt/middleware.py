@@ -156,5 +156,8 @@ class FaceBookPixelHistoryCounter(object):
         :return response:
         """
         count = int(request.COOKIES.get(cls.cookie_key, 0))
-        response.context_data.update({'FACEBOOK_PIXEL_HISTORY_COUNT': count})
+        response.context_data.update({
+            'FACEBOOK_PIXEL_HISTORY_COUNT': count,
+            'FACEBOOK_PIXEL': settings.FACEBOOK_PIXEL
+        })
         return response
