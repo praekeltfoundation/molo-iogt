@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 10:38+0000\n"
-"PO-Revision-Date: 2018-03-13 12:59+0000\n"
-"Last-Translator: Reeza <reeza@praekelt.org>\n"
+"POT-Creation-Date: 2018-06-24 17:03+0000\n"
+"PO-Revision-Date: 2018-06-24 17:17+0000\n"
+"Last-Translator: Saeed <saeed@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: por_MZ\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1520945975.160904\n"
+"X-POOTLE-MTIME: 1529860654.507671\n"
 
 #: iogt/settings/base.py:459
 msgid "January"
@@ -218,7 +218,6 @@ msgstr "Ver mais"
 
 #: iogt/templates/comments/form.html:14
 #: temp/temp_ve/commenting/forms.py:18
-
 msgid "Comment"
 msgstr "Comentar"
 
@@ -234,10 +233,6 @@ msgstr "Próxima"
 #: iogt/templates/core/related-article-list.html:6
 msgid "Related Articles"
 msgstr "Artigos Relacionados"
-
-#: iogt/templates/core/section_page.html:55
-msgid "Prev"
-msgstr "Anterior"
 
 #: iogt/templates/core/section_page.html:133
 #: iogt/templates/core/tags/section_listing_homepage.html:46
@@ -380,13 +375,9 @@ msgstr "Por exemplo, 8, 8.25, 8.5, 8.75"
 msgid "Enter your email address"
 msgstr "Insira o seu endereço de email"
 
-#: iogt/templates/profiles/register.html:86
-msgid "e.g. example@foo.com"
-msgstr "por exemplo example@foo.com"
-
 #: iogt/templates/profiles/register.html:106
 msgid "e.g."
-msgstr ""
+msgstr "ex."
 
 #: iogt/templates/profiles/register.html:112
 #: temp/temp_ve/profiles/templates/profiles/register.html:112
@@ -554,13 +545,13 @@ msgstr "URL "
 
 #: temp/temp_ve/commenting/templates/comments/comment.html:23
 msgid "Ago"
-msgstr ""
+msgstr "Atrás"
 
 #: temp/temp_ve/commenting/templates/comments/comment.html:31
 #: temp/temp_ve/commenting/templates/comments/comment.html:34
 #: temp/temp_ve/commenting/templates/comments/comment.html:41
 msgid "Replies"
-msgstr ""
+msgstr "Respostas"
 
 #: temp/temp_ve/commenting/templates/comments/comment_block.html:6
 msgid "Share a Comment"
@@ -595,15 +586,15 @@ msgstr " para deixar um comentário."
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:15
 msgid "Recent replies"
-msgstr ""
+msgstr "Respostas recentes"
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:17
 msgid "Earlier replies"
-msgstr ""
+msgstr "Respostas anteriores"
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:29
 msgid "of"
-msgstr ""
+msgstr "do"
 
 #: temp/temp_ve/commenting/templates/comments/report_response.html:7
 msgid "This comment has been reported."
@@ -619,28 +610,28 @@ msgstr ""
 
 #: temp/temp_ve/commenting/templates/notifications/notice.html:15
 msgid "replied to your comment on: "
-msgstr ""
+msgstr "respondeu ao seu comentário sobre:"
 
 #: temp/temp_ve/commenting/templates/notifications/notice.html:18
 msgid "ago"
-msgstr ""
+msgstr "atrás"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
 #: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
 msgid "You have"
-msgstr ""
+msgstr "Você tem"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:19
 msgid "Read replies:"
-msgstr ""
+msgstr "Leia as respostas:"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:27
 msgid "Back home"
-msgstr ""
+msgstr "De volta para a Página inicial"
 
 #: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:6
 msgid "Notification:"
-msgstr ""
+msgstr "Notificação:"
 
 #: temp/temp_ve/commenting/views.py:31
 msgid "Reporting comment replies is not allowed."
@@ -894,7 +885,7 @@ msgstr "Por favor, responda a seguinte pergunta de segurança."
 
 #: temp/temp_ve/profiles/templates/profiles/login_success.html:7
 msgid "Welcome Back!"
-msgstr ""
+msgstr "Bem vindo(a) de volta!"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:6
 #: temp/temp_ve/profiles/templates/profiles/register.html:123
@@ -902,6 +893,10 @@ msgstr ""
 #: temp/temp_ve/profiles/test_templates/login.html:9
 msgid "Register"
 msgstr "Registe-se"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "ESCOLHA UM NOME DE USUÁRIO"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:28
 msgid "CHOOSE A 4-DIGIT PIN"
@@ -1025,6 +1020,18 @@ msgstr "És um(a)..."
 msgid "Skip"
 msgstr "Pular"
 
+#: iogt/settings/base.py:489
+msgid "Enter a valid phone number."
+msgstr "Digite um número de telefone válido."
+
+#: iogt/templates/core/tags/social_media_article.html:7
+msgid "Share on Facebook"
+msgstr "Compartilhar no Facebook"
+
+#: iogt/templates/core/tags/social_media_article.html:14
+msgid "Share on Twitter"
+msgstr "Compartilhar no Twitter"
+
 #: iogt/settings/base.py:460
 msgid "February"
 msgstr "Fevereiro"
@@ -1060,6 +1067,10 @@ msgstr "Perfil "
 #: temp/temp_ve/profiles/templates/profiles/register.html:10
 msgid "Login"
 msgstr "Inicie a sessão"
+
+#: iogt/templates/core/section_page.html:55
+msgid "Prev"
+msgstr "Anterior"
 
 #: iogt/templates/polls/includes/poll_free_text_form.html:24
 #: iogt/templates/polls/includes/poll_question_form.html:26
@@ -1097,6 +1108,10 @@ msgstr ""
 #: iogt/templates/profiles/register.html:74
 msgid "Enter your mobile number"
 msgstr "Digite seu número de telemóvel"
+
+#: iogt/templates/profiles/register.html:86
+msgid "e.g. example@foo.com"
+msgstr "por exemplo example@foo.com"
 
 #: iogt/templates/profiles/register.html:103
 msgid "Choose a 4-digit pin"
@@ -1158,12 +1173,12 @@ msgstr "Inicie a sessão"
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:29
 msgid "Page"
-msgstr ""
+msgstr "Página"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
 #: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
 msgid "unread replies"
-msgstr ""
+msgstr "respostas não lidas"
 
 #: temp/temp_ve/commenting/test_templates/article_page.html:48
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
@@ -1274,11 +1289,7 @@ msgstr "Onde você mora?"
 
 #: temp/temp_ve/profiles/templates/profiles/login_success.html:5
 msgid "Login Success"
-msgstr ""
-
-#: temp/temp_ve/profiles/templates/profiles/register.html:21
-msgid "CHOOSE A USERNAME"
-msgstr "ESCOLHA UM NOME DE USUÁRIO"
+msgstr "Sessão iniciada com sucesso"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:81
 msgid "ENTER YOUR MOBILE NUMBER"
