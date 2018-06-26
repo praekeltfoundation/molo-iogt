@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 10:38+0000\n"
-"PO-Revision-Date: 2018-03-13 13:00+0000\n"
-"Last-Translator: Reeza <reeza@praekelt.org>\n"
+"POT-Creation-Date: 2018-06-24 17:03+0000\n"
+"PO-Revision-Date: 2018-06-24 17:18+0000\n"
+"Last-Translator: Saeed <saeed@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1520946015.854330\n"
+"X-POOTLE-MTIME: 1529860718.352032\n"
 
 #: iogt/settings/base.py:459
 msgid "January"
@@ -219,7 +219,6 @@ msgstr "Ver mais"
 
 #: iogt/templates/comments/form.html:14
 #: temp/temp_ve/commenting/forms.py:18
-
 msgid "Comment"
 msgstr "Comentar"
 
@@ -235,10 +234,6 @@ msgstr "Próximo"
 #: iogt/templates/core/related-article-list.html:6
 msgid "Related Articles"
 msgstr "Artigos Relacionados"
-
-#: iogt/templates/core/section_page.html:55
-msgid "Prev"
-msgstr "Anterior"
 
 #: iogt/templates/core/section_page.html:133
 #: iogt/templates/core/tags/section_listing_homepage.html:46
@@ -380,10 +375,6 @@ msgstr "Por exemplo, 8, 8.25, 8.5, 8.75"
 #: iogt/templates/profiles/register.html:83
 msgid "Enter your email address"
 msgstr "Insira o seu endereço de email"
-
-#: iogt/templates/profiles/register.html:86
-msgid "e.g. example@foo.com"
-msgstr "por exemplo example@foo.com"
 
 #: iogt/templates/profiles/register.html:106
 msgid "e.g."
@@ -904,6 +895,10 @@ msgstr ""
 msgid "Register"
 msgstr "Registe-se"
 
+#: temp/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "ESCOLHA UM NOME DE USUÁRIO"
+
 #: temp/temp_ve/profiles/templates/profiles/register.html:28
 msgid "CHOOSE A 4-DIGIT PIN"
 msgstr "ESCOLHER UMA PIN de 4 dígitos"
@@ -1026,6 +1021,18 @@ msgstr "Seria você..."
 msgid "Skip"
 msgstr "Pular"
 
+#: iogt/settings/base.py:489
+msgid "Enter a valid phone number."
+msgstr "Digite um número de telefone válido."
+
+#: iogt/templates/core/tags/social_media_article.html:7
+msgid "Share on Facebook"
+msgstr "Compartilhar no Facebook"
+
+#: iogt/templates/core/tags/social_media_article.html:14
+msgid "Share on Twitter"
+msgstr "Compartilhar no Twitter"
+
 #: iogt/settings/base.py:460
 msgid "February"
 msgstr "Fevereiro"
@@ -1061,6 +1068,10 @@ msgstr "Perfil "
 #: temp/temp_ve/profiles/templates/profiles/register.html:10
 msgid "Login"
 msgstr "Inicie a sessão"
+
+#: iogt/templates/core/section_page.html:55
+msgid "Prev"
+msgstr "Anterior"
 
 #: iogt/templates/polls/includes/poll_free_text_form.html:24
 #: iogt/templates/polls/includes/poll_question_form.html:26
@@ -1098,6 +1109,10 @@ msgstr ""
 #: iogt/templates/profiles/register.html:74
 msgid "Enter your mobile number"
 msgstr "Digite seu número de telemóvel"
+
+#: iogt/templates/profiles/register.html:86
+msgid "e.g. example@foo.com"
+msgstr "por exemplo example@foo.com"
 
 #: iogt/templates/profiles/register.html:103
 msgid "Choose a 4-digit pin"
@@ -1276,10 +1291,6 @@ msgstr "Onde você mora?"
 #: temp/temp_ve/profiles/templates/profiles/login_success.html:5
 msgid "Login Success"
 msgstr ""
-
-#: temp/temp_ve/profiles/templates/profiles/register.html:21
-msgid "CHOOSE A USERNAME"
-msgstr "ESCOLHA UM NOME DE USUÁRIO"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:81
 msgid "ENTER YOUR MOBILE NUMBER"

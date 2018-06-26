@@ -1,7 +1,8 @@
 from django.test import TestCase, Client
-from molo.core.tests.base import MoloTestCaseMixin
 
-from molo.core.models import SiteLanguage
+from molo.core.models import (
+    Main, Languages, SiteLanguageRelation, SiteLanguage)
+from molo.core.tests.base import MoloTestCaseMixin
 
 
 class RegistrationViewTest(TestCase, MoloTestCaseMixin):
@@ -9,10 +10,12 @@ class RegistrationViewTest(TestCase, MoloTestCaseMixin):
     def setUp(self):
         self.client = Client()
         # Creates Main language
-        self.english = SiteLanguage.objects.create(
-            locale='en',
-        )
         self.mk_main()
+        main = Main.objects.all().first()
+        self.english = SiteLanguageRelation.objects.create(
+            language_setting=Languages.for_site(main.get_site()),
+            locale='en',
+            is_active=True)
 
         # Creates a section under the index page
         self.english_section = self.mk_section(
@@ -22,8 +25,7 @@ class RegistrationViewTest(TestCase, MoloTestCaseMixin):
                 self.english_section, title=str(i))
 
     def test_first_page_pagination(self):
-        response = self.client.get('/sections/english-section/')
-
+        response = self.client.get('/sections-main-1/english-section/')
         self.assertNotContains(response, 'Prev')
         self.assertContains(response, '<a href="?p=2">2</a>')
         self.assertContains(response, '<a href="?p=3">3</a>')
@@ -33,7 +35,7 @@ class RegistrationViewTest(TestCase, MoloTestCaseMixin):
         self.assertContains(response, 'Next')
 
     def test_second_page_pagination(self):
-        response = self.client.get('/sections/english-section/?p=2')
+        response = self.client.get('/sections-main-1/english-section/?p=2')
         self.assertContains(response, 'Prev')
         self.assertContains(response, '<a href="?p=1">1</a>')
         self.assertContains(response, '<a href="?p=3">3</a>')
@@ -44,7 +46,7 @@ class RegistrationViewTest(TestCase, MoloTestCaseMixin):
         self.assertContains(response, 'Next')
 
     def test_third_page_pagination(self):
-        response = self.client.get('/sections/english-section/?p=3')
+        response = self.client.get('/sections-main-1/english-section/?p=3')
         self.assertContains(response, 'Prev')
         self.assertContains(response, '<a href="?p=1">1</a>')
         self.assertContains(response, '<a href="?p=2">2</a>')
@@ -56,7 +58,7 @@ class RegistrationViewTest(TestCase, MoloTestCaseMixin):
         self.assertContains(response, 'Next')
 
     def test_fifth_page_pagination(self):
-        response = self.client.get('/sections/english-section/?p=5')
+        response = self.client.get('/sections-main-1/english-section/?p=5')
         self.assertContains(response, 'Prev')
         self.assertContains(response, '<a href="?p=1">1</a>')
         self.assertContains(response, '<a href="?p=2">2</a>')
@@ -70,7 +72,7 @@ class RegistrationViewTest(TestCase, MoloTestCaseMixin):
         self.assertContains(response, 'Next')
 
     def test_fourteenth_page_pagination(self):
-        response = self.client.get('/sections/english-section/?p=14')
+        response = self.client.get('/sections-main-1/english-section/?p=14')
         self.assertContains(response, 'Prev')
         self.assertContains(response, '<a href="?p=1">1</a>')
         self.assertContains(response, '<a href="?p=2">2</a>')
@@ -82,7 +84,7 @@ class RegistrationViewTest(TestCase, MoloTestCaseMixin):
         self.assertContains(response, 'Next')
 
     def test_fifteenth_page_pagination(self):
-        response = self.client.get('/sections/english-section/?p=15')
+        response = self.client.get('/sections-main-1/english-section/?p=15')
         self.assertContains(response, 'Prev')
         self.assertContains(response, '<a href="?p=1">1</a>')
         self.assertContains(response, '<a href="?p=2">2</a>')
@@ -93,7 +95,7 @@ class RegistrationViewTest(TestCase, MoloTestCaseMixin):
         self.assertContains(response, 'Next')
 
     def test_sixteenth_page_pagination(self):
-        response = self.client.get('/sections/english-section/?p=16')
+        response = self.client.get('/sections-main-1/english-section/?p=16')
         self.assertContains(response, 'Prev')
         self.assertContains(response, '<a href="?p=1">1</a>')
         self.assertContains(response, '<a href="?p=2">2</a>')

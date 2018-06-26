@@ -1,22 +1,31 @@
-import requests
 import json
-
-from datetime import datetime
-from django.core.urlresolvers import reverse
-from django.test import TestCase, Client, override_settings
-from django.contrib.auth.models import User
-from molo.core.tests.base import MoloTestCaseMixin
-from molo.commenting.models import MoloComment
-from django.contrib.contenttypes.models import ContentType
-from django.contrib.sites.models import Site
+import requests
 from mock import Mock, patch
+from datetime import datetime
+
+from django.core.urlresolvers import reverse
+from django.contrib.auth.models import User
+from django.contrib.sites.models import Site
+from django.contrib.contenttypes.models import ContentType
+from django.test import TestCase, Client, override_settings
+
 from rest_framework import status
 
+from molo.core.models import Main, Languages, SiteLanguageRelation
+from molo.core.tests.base import MoloTestCaseMixin
+from molo.commenting.models import MoloComment
 
-class ViewsTestCase(TestCase, MoloTestCaseMixin):
+
+class ViewsTestCase(MoloTestCaseMixin, TestCase):
 
     def setUp(self):
         self.mk_main()
+        main = Main.objects.all().first()
+        self.english = SiteLanguageRelation.objects.create(
+            language_setting=Languages.for_site(main.get_site()),
+            locale='en',
+            is_active=True)
+
         self.user = User.objects.create_user(
             'test', 'test@example.org', 'test')
         self.content_type = ContentType.objects.get_for_model(self.user)
