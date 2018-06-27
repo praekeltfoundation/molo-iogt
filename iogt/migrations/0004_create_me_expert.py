@@ -46,8 +46,7 @@ def create_group(apps, schema_editor):
     access_admin = Permission.objects.get(codename='access_admin')
 
     # Language
-    add_sitelanguage = Permission.objects.get(codename='add_sitelanguage')
-    add_sitelanguage_relation = Permission.objects.get(codename='add_sitelanguagerelation')
+    change_sitelanguage = Permission.objects.get(codename='change_languages')
 
     # Comments
     add_comment = Permission.objects.get(codename='add_comment')
@@ -73,7 +72,7 @@ def create_group(apps, schema_editor):
     # A Django permissions
     me_expert.permissions.add(
         access_admin,
-        add_sitelanguage, add_sitelanguage_relation,
+        change_sitelanguage,
         add_comment, change_comment, delete_comment, can_moderate,
         add_molocomment, edit_molocomment, delete_molocomment,
         add_cannedresponse, edit_cannedresponse, delete_cannedresponse,
