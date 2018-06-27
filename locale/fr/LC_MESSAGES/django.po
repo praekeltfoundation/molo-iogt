@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 10:38+0000\n"
-"PO-Revision-Date: 2018-03-13 12:43+0000\n"
-"Last-Translator: Reeza <reeza@praekelt.org>\n"
+"POT-Creation-Date: 2018-06-24 17:03+0000\n"
+"PO-Revision-Date: 2018-06-24 17:06+0000\n"
+"Last-Translator: Saeed <saeed@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fre_FR\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1501775843.017085\n"
+"X-POOTLE-MTIME: 1529859972.864560\n"
 
 #: iogt/settings/base.py:459
 msgid "January"
@@ -234,10 +234,6 @@ msgstr "Suivant"
 msgid "Related Articles"
 msgstr "Articles liés"
 
-#: iogt/templates/core/section_page.html:55
-msgid "Prev"
-msgstr "Précédent"
-
 #: iogt/templates/core/section_page.html:133
 #: iogt/templates/core/tags/section_listing_homepage.html:46
 msgid "View more"
@@ -275,7 +271,7 @@ msgstr "Voter"
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:35
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
 msgid "Back to Home page"
-msgstr "Retour à l'accueil"
+msgstr "Retour à la page d'accueil"
 
 #: iogt/templates/polls/includes/poll_free_text_form.html:16
 #: iogt/templates/surveys/molo_survey_page.html:30
@@ -286,7 +282,7 @@ msgstr "Validez"
 #: iogt/templates/polls/includes/poll_free_text_form.html:18
 #: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
 msgid "Thank you! Your response has already been submitted."
-msgstr "Je vous remercie! Votre réponse a déjà été soumis."
+msgstr "Merci! Votre réponse a déjà été enregistrée."
 
 #: iogt/templates/polls/includes/poll_question_form.html:47
 #: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
@@ -296,7 +292,7 @@ msgstr "Montrer les résultats"
 #: iogt/templates/polls/includes/poll_question_form.html:50
 #: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
 msgid "You voted: "
-msgstr "Tu as voté: "
+msgstr "Vous avez voté :"
 
 #: iogt/templates/polls/poll_page.html:7
 #: iogt/templates/polls/poll_page_in_section.html:8
@@ -306,7 +302,7 @@ msgstr "Sondages"
 #: iogt/templates/polls/results.html:28
 #: temp/temp_ve/polls/templates/polls/results.html:22
 msgid "Thank you for voting!"
-msgstr "Merci d'avoir voté!"
+msgstr "Merci pour votre vote!"
 
 #: iogt/templates/profiles/register.html:9
 #: temp/temp_ve/profiles/templates/profiles/register.html:9
@@ -336,17 +332,16 @@ msgstr "Choisissez un nom d'affichage"
 
 #: iogt/templates/profiles/register.html:38
 msgid "Select date of birth"
-msgstr "Sélectionner une date de naissance"
+msgstr "Entrez votre date de naissance"
 
 #: iogt/templates/profiles/register.html:41
 #: temp/temp_ve/profiles/templates/profiles/register.html:48
 msgid "Let us know your birthday to get access to exclusive content."
-msgstr "Entrez votre date d'anniversaire."
+msgstr "Entrez votre date d'anniversaire pour accéder à du contenu exclusif"
 
 #: iogt/templates/profiles/register.html:47
 msgid "I identify my gender as:"
-msgstr ""
-"J'identifie mon sexe comme : Masculin / Féminin / Je préfère ne pas le dire"
+msgstr "J'identifie mon genre comme :"
 
 #: iogt/templates/profiles/register.html:50
 #: iogt/templates/profiles/register.html:59
@@ -361,44 +356,39 @@ msgstr ""
 #: temp/temp_ve/profiles/templates/profiles/register.html:66
 #: temp/temp_ve/profiles/templates/profiles/register.html:75
 msgid "Only you will see this"
-msgstr "Seulement vous verrez ceci"
+msgstr "Vous serez le/la seul(e) à voir ceci"
 
 #: iogt/templates/profiles/register.html:56
 msgid "Where do you live?"
-msgstr "Où habites-tu?"
+msgstr "Où habitez-vous? "
 
 #: iogt/templates/profiles/register.html:65
 msgid "What is your highest level of education?"
-msgstr "Quel est ton plus haut niveau d'éducation?"
+msgstr "Quel est votre plus haut niveau d'éducation? "
 
 #: iogt/templates/profiles/register.html:77
 msgid "e.g. 0900000013"
-msgstr "Par exemple: 8, 8.25, 8.5, 8.75"
+msgstr "(Ex: 0900000013)"
 
 #: iogt/templates/profiles/register.html:83
 msgid "Enter your email address"
-msgstr "Entrez votre adresse courriel"
-
-#: iogt/templates/profiles/register.html:86
-msgid "e.g. example@foo.com"
-msgstr "par exemple example@foo.com"
+msgstr "Entrez votre adresse email"
 
 #: iogt/templates/profiles/register.html:106
 msgid "e.g."
-msgstr ""
+msgstr "Ex:"
 
 #: iogt/templates/profiles/register.html:112
 #: temp/temp_ve/profiles/templates/profiles/register.html:112
 msgid "Please accept the T&amp;Cs in order to complete the registration"
-msgstr ""
-"S'il vous plaît accepter le T & amp; Cs afin de compléter l'enregistrement"
+msgstr "Acceptez les conditions pour poursuivre l'inscription"
 
 #: iogt/templates/profiles/register.html:117
 #: iogt/templates/profiles/register.html:119
 #: temp/temp_ve/profiles/templates/profiles/register.html:117
 #: temp/temp_ve/profiles/templates/profiles/register.html:119
 msgid "I accept the Terms and Conditions"
-msgstr "J'accepte les conditions d'utilisation"
+msgstr "J'accepte les conditions d'utilisation "
 
 #: iogt/templates/registration/login.html:5
 #: iogt/templates/registration/login.html:34
@@ -435,7 +425,7 @@ msgstr "Code PIN à 4 chiffres"
 #: temp/temp_ve/profiles/templates/registration/login.html:32
 #: temp/temp_ve/profiles/test_templates/login.html:32
 msgid "Eg.: 2086"
-msgstr "Par exemple: 8, 8.25, 8.5, 8.75"
+msgstr "Ex: 2086"
 
 #: iogt/templates/registration/login.html:37
 #: iogt/templates/registration/password_reset_form.html:4
@@ -448,12 +438,13 @@ msgstr "Vous avez oublié votre mot de passe?"
 #: iogt/templates/registration/password_reset_complete.html:5
 msgid "Your password has been set. You may go ahead and log in now."
 msgstr ""
-"Votre mot de passe a été défini. Vous pouvez maintenant ouvrir une session."
+"Votre mot de passe a bien été réinitialisé, vous pouvez de nouveau vous "
+"connecter."
 
 #: iogt/templates/registration/password_reset_confirm.html:15
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
 msgid "Confirm password:"
-msgstr "Confirmer le mot de passe:"
+msgstr "Confirmez votre mot de passe :"
 
 #: iogt/templates/registration/password_reset_confirm.html:19
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
@@ -556,13 +547,13 @@ msgstr "Lien "
 
 #: temp/temp_ve/commenting/templates/comments/comment.html:23
 msgid "Ago"
-msgstr ""
+msgstr "Il y a"
 
 #: temp/temp_ve/commenting/templates/comments/comment.html:31
 #: temp/temp_ve/commenting/templates/comments/comment.html:34
 #: temp/temp_ve/commenting/templates/comments/comment.html:41
 msgid "Replies"
-msgstr ""
+msgstr "Réponses"
 
 #: temp/temp_ve/commenting/templates/comments/comment_block.html:6
 msgid "Share a Comment"
@@ -597,15 +588,15 @@ msgstr " à laisser un commentaire."
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:15
 msgid "Recent replies"
-msgstr ""
+msgstr "Réponses récentes"
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:17
 msgid "Earlier replies"
-msgstr ""
+msgstr "Réponses précédentes"
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:29
 msgid "of"
-msgstr ""
+msgstr "de"
 
 #: temp/temp_ve/commenting/templates/comments/report_response.html:7
 msgid "This comment has been reported."
@@ -621,28 +612,28 @@ msgstr ""
 
 #: temp/temp_ve/commenting/templates/notifications/notice.html:15
 msgid "replied to your comment on: "
-msgstr ""
+msgstr "a répondu à votre commentaire :"
 
 #: temp/temp_ve/commenting/templates/notifications/notice.html:18
 msgid "ago"
-msgstr ""
+msgstr "Il y a"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
 #: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
 msgid "You have"
-msgstr ""
+msgstr "vous avez"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:19
 msgid "Read replies:"
-msgstr ""
+msgstr "Réponses lues"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:27
 msgid "Back home"
-msgstr ""
+msgstr "Retour à la page d'accueil"
 
 #: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:6
 msgid "Notification:"
-msgstr ""
+msgstr "Notification :"
 
 #: temp/temp_ve/commenting/views.py:31
 msgid "Reporting comment replies is not allowed."
@@ -902,7 +893,7 @@ msgstr "Svp, répondez aux questions de sécurité suivantes."
 
 #: temp/temp_ve/profiles/templates/profiles/login_success.html:7
 msgid "Welcome Back!"
-msgstr ""
+msgstr "Heureux de vous revoir!"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:6
 #: temp/temp_ve/profiles/templates/profiles/register.html:123
@@ -910,6 +901,10 @@ msgstr ""
 #: temp/temp_ve/profiles/test_templates/login.html:9
 msgid "Register"
 msgstr "S'inscrire"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "CHOISISSEZ UN NOM D'UTILISATEUR"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:28
 msgid "CHOOSE A 4-DIGIT PIN"
@@ -1034,6 +1029,18 @@ msgstr "Êtes-vous"
 msgid "Skip"
 msgstr "Passez"
 
+#: iogt/settings/base.py:489
+msgid "Enter a valid phone number."
+msgstr "Entrez un numéro de téléphone valide svp"
+
+#: iogt/templates/core/tags/social_media_article.html:7
+msgid "Share on Facebook"
+msgstr "Partage sur Facebook"
+
+#: iogt/templates/core/tags/social_media_article.html:14
+msgid "Share on Twitter"
+msgstr "Partage sur Twitter"
+
 #: iogt/settings/base.py:460
 msgid "February"
 msgstr "Février"
@@ -1069,6 +1076,10 @@ msgstr "Profil"
 #: temp/temp_ve/profiles/templates/profiles/register.html:10
 msgid "Login"
 msgstr "Connexion"
+
+#: iogt/templates/core/section_page.html:55
+msgid "Prev"
+msgstr "Précédent"
 
 #: iogt/templates/polls/includes/poll_free_text_form.html:24
 #: iogt/templates/polls/includes/poll_question_form.html:26
@@ -1107,6 +1118,10 @@ msgstr ""
 #: iogt/templates/profiles/register.html:74
 msgid "Enter your mobile number"
 msgstr "Entrez votre numéro de téléphone"
+
+#: iogt/templates/profiles/register.html:86
+msgid "e.g. example@foo.com"
+msgstr "(Ex: example@foo.com)"
 
 #: iogt/templates/profiles/register.html:103
 msgid "Choose a 4-digit pin"
@@ -1170,12 +1185,12 @@ msgstr "connexion"
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:29
 msgid "Page"
-msgstr ""
+msgstr "Page"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
 #: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
 msgid "unread replies"
-msgstr ""
+msgstr "Réponses non lues"
 
 #: temp/temp_ve/commenting/test_templates/article_page.html:48
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
@@ -1288,11 +1303,7 @@ msgstr "OÙ HABITES-TU?"
 
 #: temp/temp_ve/profiles/templates/profiles/login_success.html:5
 msgid "Login Success"
-msgstr ""
-
-#: temp/temp_ve/profiles/templates/profiles/register.html:21
-msgid "CHOOSE A USERNAME"
-msgstr "CHOISISSEZ UN NOM D'UTILISATEUR"
+msgstr "Connexion réussie"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:81
 msgid "ENTER YOUR MOBILE NUMBER"

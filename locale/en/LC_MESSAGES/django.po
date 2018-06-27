@@ -1225,3 +1225,15 @@ msgstr ""
 #: temp/temp_ve/usermetadata/templates/persona.html:21
 msgid "Skip"
 msgstr ""
+
+#: iogt/settings/base.py:489
+msgid "Enter a valid phone number."
+msgstr ""
+
+#: iogt/templates/core/tags/social_media_article.html:7
+msgid "Share on Facebook"
+msgstr ""
+
+#: iogt/templates/core/tags/social_media_article.html:14
+msgid "Share on Twitter"
+msgstr ""
