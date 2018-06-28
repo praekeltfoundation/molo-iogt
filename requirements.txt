@@ -1,7 +1,7 @@
 molo.core==6.9.0
 molo.surveys==6.8.0
 molo.commenting==6.2.9
-molo.polls==6.3.0
+molo.polls==6.4.0
 molo.usermetadata==6.0.0
 elasticsearch==1.7.0
 django-modelcluster==3.1
