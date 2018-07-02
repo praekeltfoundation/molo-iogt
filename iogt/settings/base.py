@@ -33,7 +33,7 @@ DEBUG = True
 ENV = 'dev'
 
 
-ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '').split(",")
+ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '*').split(",")
 
 
 # Base URL to use when referring to full URLs within the Wagtail admin
