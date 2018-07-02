@@ -166,10 +166,13 @@ DATABASES = {'default': dj_database_url.config(
 #         'CONN_MAX_AGE': 600,
 #     }
 # }
+CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_IMPORTS = ('molo.core.tasks', 'google_analytics.tasks')
+CELERY_ALWAYS_EAGER = False
+CELERY_IMPORTS = (
+    'molo.core.tasks', 'google_analytics.tasks', 'molo.profiles.task',
+    'molo.commenting.tasks')
 BROKER_URL = environ.get('BROKER_URL', 'redis://localhost:6379/0')
 CELERY_RESULT_BACKEND = environ.get(
     'CELERY_RESULT_BACKEND', 'redis://localhost:6379/0')
@@ -577,6 +580,10 @@ GOOGLE_ANALYTICS_IGNORE_PATH = [
     '/media/', '/static/',
     # metrics URL used by promethius monitoring system
     '/metrics',
+    # REST API
+    '/api/',
+    # PWA serviceworker
+    '/serviceworker.js',
 ]
 
 GOOGLE_ANALYTICS_AGE_KEY = environ.get('GOOGLE_ANALYTICS_AGE_KEY', 'cd1')
@@ -605,5 +612,5 @@ if AWS_STORAGE_BUCKET_NAME and AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
 RABBITMQ_MANAGEMENT_INTERFACE = environ.get(
     'RABBITMQ_MANAGEMENT_INTERFACE')
 
-FACEBOOK_PIXEL = 413876948808281
+FACEBOOK_PIXEL = '413876948808281'
 FACEBOOK_PIXEL_COOKIE_KEY = 'facebook_pixel_hit_count'
