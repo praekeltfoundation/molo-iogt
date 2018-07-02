@@ -155,9 +155,24 @@ class FaceBookPixelHistoryCounter(object):
         :param response:
         :return response:
         """
-        count = int(request.COOKIES.get(cls.cookie_key, 0))
-        response.context_data.update({
-            'FACEBOOK_PIXEL_HISTORY_COUNT': count,
-            'FACEBOOK_PIXEL': settings.FACEBOOK_PIXEL
-        })
+        exclude = [
+            settings.MEDIA_URL,
+            settings.STATIC_URL,
+            '/footer',
+            '/admin',
+            'django-admin/',
+            '/import/',
+            '/locale/',
+            '/favicon.ico',
+            '/robots.txt',
+            '/metrics',
+            '/api/',
+            '/serviceworker.js',
+        ]
+        if not any([p for p in exclude if request.path.startswith(p)]):
+            count = int(request.COOKIES.get(cls.cookie_key, 0))
+            response.context_data.update({
+                'FACEBOOK_PIXEL_HISTORY_COUNT': count,
+                'FACEBOOK_PIXEL': settings.FACEBOOK_PIXEL
+            })
         return response
