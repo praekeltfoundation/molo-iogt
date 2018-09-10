@@ -2,6 +2,7 @@
 
 var gulp              =   require('gulp'),
     sass              =   require('gulp-sass'),
+    sassGlob          =   require('gulp-sass-glob'),
     watch             =   require('gulp-watch'),
     cleanCSSMinify    =   require('gulp-clean-css'),
     rename            =   require('gulp-rename'),
