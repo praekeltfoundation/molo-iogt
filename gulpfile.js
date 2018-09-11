@@ -15,6 +15,7 @@ var sassPaths = [
     'iogt/styles/iogt/style-rtl.scss',
     'iogt/styles/iogt/style.scss',
     'iogt/styles/iogt/state_320/state_320.scss',
+    'iogt/styles/iogt/maintenance.scss',
 ];
 
 var sassDest = {
