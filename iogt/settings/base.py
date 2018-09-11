@@ -117,6 +117,7 @@ MIDDLEWARE_CLASSES = [
     'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
     'iogt.middleware.FaceBookPixelHistoryCounter',
     'molo.core.middleware.MultiSiteRedirectToHomepage',
+    'molo.core.middleware.MaintenanceModeMiddleware',
     'molo.usermetadata.middleware.PersonaMiddleware',
 ]
 
@@ -614,3 +615,6 @@ RABBITMQ_MANAGEMENT_INTERFACE = environ.get(
 
 FACEBOOK_PIXEL = '413876948808281'
 FACEBOOK_PIXEL_COOKIE_KEY = 'facebook_pixel_hit_count'
+
+MAINTENANCE_MODE_TEMPLATE = 'maintenance.html'
+MAINTENANCE_MODE = environ.get('MAINTENANCE_MODE', None)
