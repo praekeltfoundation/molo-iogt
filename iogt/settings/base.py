@@ -508,6 +508,7 @@ STATICFILES_FINDERS = [
 
 MEDIA_ROOT = join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
+WAGTAILMEDIA_MEDIA_MODEL = 'core.MoloMedia'
 
 # Wagtail settings
 LOGIN_URL = 'molo.profiles:auth_login'
