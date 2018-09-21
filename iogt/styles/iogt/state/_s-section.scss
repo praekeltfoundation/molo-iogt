@@ -1,21 +1,36 @@
-.section__image {
+.section {
+  &__image {
     @media only screen and (min-width: 360px) {
-        img {
-           width: auto;
-           height: auto;
-         }
+      img {
+         width: auto;
+         height: auto;
+       }
     }
+  }
+  &__title {
+    color: #757575;
+    &-heading {
+      padding: 15px 15px 10px;
+    }
+  }
+  &__description {
+    padding: 0 15px 10px;
+  }
+  &__more {
+    text-decoration: none;
+    text-align: right;
+    &:after {
+      padding: 0 0 0 10px;
+      @media only screen and (min-width: 320px) {
+        content: ">";
+      }
+      @media only screen and (min-width: 490px) {
+        content: "❯";
+      }
+    }
+  }
+}
 
-}
-.section__title-heading {
-  padding: 15px 15px 10px;
-}
-.section__description {
-  padding: 0 15px 10px;
-}
-.section__title {
-  color: #757575;
-}
 .sub-section-list__title {
   &:after {
     padding: 0 10px 0;
@@ -29,26 +44,13 @@
 }
 .section-list-nav {
   padding: 7px 15px;
-}
-.section-list-nav__item {
-  .section-list-nav__link {
-    color: #757575;
-    text-decoration: none;
-  }
-}
-.section-list__more {
-  text-decoration: none;
-  text-align: right;
-  &:after {
-    padding: 0 0 0 10px;
-    @media only screen and (min-width: 320px) {
-      content: ">";
-    }
-    @media only screen and (min-width: 490px) {
-      content: "❯";
+  &__item {
+    .section-list-nav__link {
+      text-decoration: none;
     }
   }
 }
+
 @each $name, $color in $color_list {
   .section--#{$name} {
     .section__title,
@@ -76,6 +78,7 @@
     background: $color;
     color: #fff;
     .section-list-nav__item a,
+    .section-list-nav__link,
     .section-list-nav__item--arrow-right:after {
       color: #fff;
     }
