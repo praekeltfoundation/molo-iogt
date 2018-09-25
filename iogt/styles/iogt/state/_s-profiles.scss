@@ -5,7 +5,8 @@
   background: $victoria;
   color: #fff;
 }
-.call-to-action--view-profile {
+.call-to-action--view-profile,
+.call-to-action--view-profiles {
   background: transparent;
 }
 
@@ -17,8 +18,9 @@ input[type="search"] {
   border-radius: 4px;
 }
 select {
-  width: 32%;
+  width: 30%;
   display: inline-block;
+  margin: 0 3px 0 0;
 }
 textarea {
   padding: 5px;
