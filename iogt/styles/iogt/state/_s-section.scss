@@ -70,6 +70,19 @@
     .section-list__more {
       color: $color;
     }
+    .section-list__more {
+      text-align: right;
+      &:after {
+        display: inline-block;
+        @media only screen and (min-width: 320px) {
+          content: ">";
+        }
+        @media only screen and (min-width: 490px) {
+          content: "❯";
+        }
+      }
+    }
+
     .article-list__item--hero {
       border-top-color: $color;
     }
