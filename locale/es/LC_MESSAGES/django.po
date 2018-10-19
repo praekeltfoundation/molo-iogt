@@ -959,7 +959,7 @@ msgid "Date of Birth: "
 msgstr "Fecha de nacimiento:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
-msgid " Not set."
+msgid "Not set."
 msgstr " no se establece"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26

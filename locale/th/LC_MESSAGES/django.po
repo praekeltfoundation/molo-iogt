@@ -936,7 +936,7 @@ msgid "Date of Birth: "
 msgstr "วัน เดือน ปีเกิด:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
-msgid " Not set."
+msgid "Not set."
 msgstr "ไม่ได้ตั้งค่า"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26
