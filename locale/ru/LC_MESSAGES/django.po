@@ -955,7 +955,7 @@ msgid "Date of Birth: "
 msgstr "Дата рождения: 21.04.1984 "
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
-msgid " Not set."
+msgid "Not set."
 msgstr " Не установлено"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26

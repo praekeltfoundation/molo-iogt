@@ -13,7 +13,8 @@
       <fieldset>
         <label>{% trans "As you type your name comment will appear as:" %}</label>
         <p class="profiles__description profiles__alias">
-          {{ user.profile.alias | default:" Anonymous " }}</p>
+          {% trans "Anonymous" as defaultText %}
+          {{ user.profile.alias | default:defaultText }}</p>
       </fieldset>
     </div>
 
@@ -67,7 +68,7 @@
   <div class="call-to-action call-to-action--profiles">
     <a href="{% url "molo.profiles:auth_logout" %}" class="call-to-action__nav-item call-to-action__nav-item--logout">{% trans "log out" %}</a>
     <a href="{% url "molo.profiles:edit_my_profile" %}" class="call-to-action__nav-item call-to-action__nav-item--editprofile">{% trans "Edit My Profile" %}</a>
-    <a href="{% url "molo.profiles:profile_password_change" %}" class="call-to-action__nav-item call-to-action__nav-item--change-password">{% trans "Change my pin" %}</a>
+    <a href="{% url "molo.profiles:profile_password_change" %}" class="call-to-action__nav-item call-to-action__nav-item--change-password">{% trans "Change my password" %}</a>
   </div>
 </div>
 {% endblock %}

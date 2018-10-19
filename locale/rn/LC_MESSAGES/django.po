@@ -946,8 +946,8 @@ msgid "Date of Birth: "
 msgstr "Date of Birth: "
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
-msgid " Not set."
-msgstr " Not set."
+msgid "Not set."
+msgstr "Not set."
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26
 msgid "Mobile number:"
