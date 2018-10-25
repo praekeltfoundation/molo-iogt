@@ -20,12 +20,15 @@
     text-decoration: none;
     text-align: right;
     &:after {
-      padding: 0 0 0 10px;
+      padding: 0 10px;
       @media only screen and (min-width: 320px) {
         content: ">";
+        margin-left: 5px;
       }
       @media only screen and (min-width: 490px) {
         content: "❯";
+        margin-left: 10px;
+        font-size: 0.75em;
       }
     }
   }
@@ -75,6 +78,7 @@
       text-decoration: none;
       &:after {
         display: inline-block;
+        padding: 0 10px;
         @media only screen and (min-width: 320px) {
           content: ">";
         }
