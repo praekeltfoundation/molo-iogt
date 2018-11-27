@@ -19,3 +19,4 @@ boto
 pyrabbit
 responses
 python-cas==1.2.0
+Markdown<3.0
