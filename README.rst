@@ -9,7 +9,7 @@ Getting started
 To get started::
 
     $ virtualenv ve
-    $ pip install -r requirements.txt.
+    $ pip install -r requirements.txt
     $ pip install -e .
     $ ./manage.py migrate
     $ ./manage.py createsuperuser
@@ -39,6 +39,7 @@ Running Workers
 
 ::
 
+$ pip install -r requirements-dev.txt
 $ ./manage.py celery worker -A iogt -l INFO
 $ ./manage.py celerybeat -A iogt -l INFO
 $ sudo service redis-server start
