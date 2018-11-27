@@ -60,6 +60,30 @@ $ pip install -r requirements-dev.txt
 $ flake8
 $ py.test
 
+Writing Test Cases
+==================
+
+* Use test Molo test mixin `molo.core.tests.base.MoloTestCaseMixin`
+
+The Molo test mixin contains helper methods to generate test content necessary for the main sight.
+
+::
+
+    class MyTest(MoloTestCaseMixin, TestCase):
+
+        def setUp(self):
+            self.mk_main()
+            main = Main.objects.all().first()
+            lang = Languages.for_site(main.get_site()
+            self.english = SiteLanguageRelation.objects.create(
+                language_setting=lang), locale='en', is_active=True)
+
+            self.user = User.objects.create_user(
+                'test', 'test@example.org', 'test')
+
+            self.client = Client()
+            ...
+
 
 Enabled Molo Plugins
 ====================
