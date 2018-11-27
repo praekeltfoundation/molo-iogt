@@ -3,4 +3,3 @@ pytest-django==3.1.1
 responses
 pytest-cov
 flake8==3.4.1
-Markdown<3.0
