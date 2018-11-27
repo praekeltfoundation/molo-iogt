@@ -63,9 +63,9 @@ $ py.test
 Writing Test Cases
 ==================
 
-* Use test Molo test mixin `molo.core.tests.base.MoloTestCaseMixin`
+You can make use of the Molo test mixin `molo.core.tests.base.MoloTestCaseMixin`
 
-The Molo test mixin contains helper methods to generate test content necessary for the main sight.
+* The Molo test mixin contains helper methods to generate test content necessary for the main sight.
 
 ::
 
