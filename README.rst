@@ -103,3 +103,28 @@ Enabled Molo Plugins
 * `molo.surveys` https://github.com/praekelt/molo.surveys
 * `molo.commenting` https://github.com/praekelt/molo.commenting
 * `molo.polls` https://github.com/praekelt/molo.polls
+
+
+Basic Settings and their defaults
+=================================
+
+    for all available settings see
+
+    `./iogt/settings/base.py`, `./iogt/settings/dev.py`, `./iogt/settings/docker.py` and `./iogt/settings/production.py`
+
+::
+
+    ADMIN_LANGUAGE_CODE = 'en'
+
+    AWS_STORAGE_BUCKET_NAME = ''
+    AWS_ACCESS_KEY_ID = ''
+    AWS_SECRET_ACCESS_KEY = ''
+
+    FACEBOOK_PIXEL = <FACEBOOK_PIXEL KEY>
+    FACEBOOK_PIXEL_COOKIE_KEY = 'facebook_pixel_hit_count'
+
+    MAINTENANCE_MODE = None
+    MAINTENANCE_MODE_TEMPLATE = 'maintenance.html'
+
+    FROM_EMAIL = 'support@moloproject.org'
+    CONTENT_IMPORT_SUBJECT = 'Molo Content Import'
