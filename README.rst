@@ -84,8 +84,8 @@ You can make use of the Molo test mixin `molo.core.tests.base.MoloTestCaseMixin`
             self.client = Client()
             ...
 
-IoGT Middle wares
-=================
+IoGT Middlewares
+================
 
 `SSLRedirectMiddleware`
 
