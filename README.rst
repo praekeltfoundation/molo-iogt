@@ -85,6 +85,15 @@ The Molo test mixin contains helper methods to generate test content necessary f
             self.client = Client()
             ...
 
+IoGT Middle wares
+=================
+
+`SSLRedirectMiddleware`
+
+`FaceBookPixelHistoryCounter`
+
+`IogtMoloGoogleAnalyticsMiddleware`
+
 
 Enabled Molo Plugins
 ====================
