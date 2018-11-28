@@ -84,6 +84,15 @@ You can make use of the Molo test mixin `molo.core.tests.base.MoloTestCaseMixin`
             self.client = Client()
             ...
 
+        def test_register_auto_login(self):
+            # Not logged in, redirects to login page
+            login_url = reverse('molo.profiles:edit_my_profile')
+            expected_url = '/login/?next=/profiles/edit/myprofile/'
+
+            response = self.client.get(login_url)
+            self.assertEqual(response.status_code, 302)
+            self.assertEqual(response['Location'], expected_url)
+
 IoGT Middlewares
 ================
 
