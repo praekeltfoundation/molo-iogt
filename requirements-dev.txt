@@ -1,5 +1,5 @@
-pytest==3.0.0
-pytest-django==3.1.1
+pytest
+pytest-django
 responses
 pytest-cov
-flake8==3.4.1
+flake8
