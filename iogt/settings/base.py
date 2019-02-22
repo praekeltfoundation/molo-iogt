@@ -117,6 +117,7 @@ MIDDLEWARE_CLASSES = [
     'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
     'molo.core.middleware.MultiSiteRedirectToHomepage',
     'molo.usermetadata.middleware.PersonaMiddleware',
+    'iogt.middleware.ReferrerPolicyMiddleware',
 ]
 
 # Template configuration
@@ -603,3 +604,5 @@ if AWS_STORAGE_BUCKET_NAME and AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
 
 RABBITMQ_MANAGEMENT_INTERFACE = environ.get(
     'RABBITMQ_MANAGEMENT_INTERFACE')
+
+REFERRER_POLICY = "origin"

@@ -3,6 +3,7 @@ import datetime
 import responses
 
 from django.test import TestCase, Client, RequestFactory, override_settings
+from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.contrib.contenttypes.models import ContentType
@@ -197,3 +198,21 @@ class TestGoogleAnalyticsMiddleware(TestCase, MoloTestCaseMixin):
 
         self.assertTrue('cd1=17' in url)
         self.assertTrue('cd2=female' in url)
+
+
+class TestReferrerPolicyMiddleware(TestCase, MoloTestCaseMixin):
+    def setUp(self):
+        self.mk_main()
+        self.main = Main.objects.all().first()
+        self.english = SiteLanguageRelation.objects.create(
+            language_setting=Languages.for_site(self.main.get_site()),
+            locale='en', is_active=True
+        )
+        self.main = Main.objects.all().first()
+        self.factory = RequestFactory()
+        self.client = Client()
+
+    def test_referrer_policy_middleware(self):
+        response = self.client.get(reverse('search'))
+        self.assertIn("Referrer-Policy", response)
+        self.assertEqual(response["Referrer-Policy"], settings.REFERRER_POLICY)
