@@ -105,3 +105,8 @@ class ViewsTestCase(MoloTestCaseMixin, TestCase):
 
         self.assertEqual(response.status_code,
                          status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    @override_settings(MAINTENANCE_MODE=True)
+    def test_maintenance_mode(self):
+        response = self.client.get('/')
+        self.assertTemplateUsed(response, 'maintenance.html')

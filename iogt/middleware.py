@@ -113,3 +113,66 @@ class IogtMoloGoogleAnalyticsMiddleware(MoloGoogleAnalyticsMiddleware):
 
         send_ga_tracking.delay(params)
         return response
+
+
+class FaceBookPixelHistoryCounter(object):
+    days_expire = 1
+    cookie_key = settings.FACEBOOK_PIXEL_COOKIE_KEY
+    cookie_date_format = "%a, %d-%b-%Y %H:%M:%S GMT"
+
+    @classmethod
+    def set_cookie(cls, response, key, value, days_expire=None):
+        today = datetime.datetime.utcnow()
+        max_age = days_expire or cls.days_expire * 24 * 60 * 60
+        expires = datetime.datetime.strftime(
+            today + datetime.timedelta(seconds=max_age),
+            cls.cookie_date_format
+        )
+        response.set_cookie(
+            key, value,
+            max_age=max_age,
+            expires=expires,
+            domain=settings.SESSION_COOKIE_DOMAIN,
+            secure=settings.SESSION_COOKIE_SECURE or None
+        )
+
+    @classmethod
+    def process_response(cls, request, response):
+        """
+        Get and Set facebook_pixel_hit_count_key and increment by 1
+        :param request:
+        :param response:
+        :return response:
+        """
+        count = int(request.COOKIES.get(cls.cookie_key, 0))
+        count += 1
+        cls.set_cookie(response, cls.cookie_key, count)
+        return response
+
+    @classmethod
+    def process_template_response(cls, request, response):
+        """
+        :param response:
+        :return response:
+        """
+        exclude = [
+            settings.MEDIA_URL,
+            settings.STATIC_URL,
+            '/footer',
+            '/admin',
+            'django-admin/',
+            '/import/',
+            '/locale/',
+            '/favicon.ico',
+            '/robots.txt',
+            '/metrics',
+            '/api/',
+            '/serviceworker.js',
+        ]
+        if not any([p for p in exclude if request.path.startswith(p)]):
+            count = int(request.COOKIES.get(cls.cookie_key, 0))
+            response.context_data.update({
+                'FACEBOOK_PIXEL_HISTORY_COUNT': count,
+                'FACEBOOK_PIXEL': settings.FACEBOOK_PIXEL
+            })
+        return response
