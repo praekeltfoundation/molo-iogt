@@ -119,6 +119,7 @@ MIDDLEWARE_CLASSES = [
     'molo.core.middleware.MultiSiteRedirectToHomepage',
     'molo.core.middleware.MaintenanceModeMiddleware',
     'molo.usermetadata.middleware.PersonaMiddleware',
+    'iogt.middleware.ReferrerPolicyMiddleware',
 ]
 
 # Template configuration
@@ -619,3 +620,5 @@ FACEBOOK_PIXEL_COOKIE_KEY = 'facebook_pixel_hit_count'
 
 MAINTENANCE_MODE_TEMPLATE = 'maintenance.html'
 MAINTENANCE_MODE = environ.get('MAINTENANCE_MODE', None)
+
+REFERRER_POLICY = "origin"
