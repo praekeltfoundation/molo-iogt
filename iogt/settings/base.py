@@ -33,7 +33,7 @@ DEBUG = True
 ENV = 'dev'
 
 
-ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '').split(",")
+ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '*').split(",")
 
 
 # Base URL to use when referring to full URLs within the Wagtail admin
@@ -115,7 +115,9 @@ MIDDLEWARE_CLASSES = [
     'molo.core.middleware.AdminLocaleMiddleware',
     'molo.core.middleware.NoScriptGASessionMiddleware',
     'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
+    'iogt.middleware.FaceBookPixelHistoryCounter',
     'molo.core.middleware.MultiSiteRedirectToHomepage',
+    'molo.core.middleware.MaintenanceModeMiddleware',
     'molo.usermetadata.middleware.PersonaMiddleware',
 ]
 
@@ -165,10 +167,13 @@ DATABASES = {'default': dj_database_url.config(
 #         'CONN_MAX_AGE': 600,
 #     }
 # }
+CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_IMPORTS = ('molo.core.tasks', 'google_analytics.tasks')
+CELERY_ALWAYS_EAGER = False
+CELERY_IMPORTS = (
+    'molo.core.tasks', 'google_analytics.tasks', 'molo.profiles.task',
+    'molo.commenting.tasks')
 BROKER_URL = environ.get('BROKER_URL', 'redis://localhost:6379/0')
 CELERY_RESULT_BACKEND = environ.get(
     'CELERY_RESULT_BACKEND', 'redis://localhost:6379/0')
@@ -503,6 +508,7 @@ STATICFILES_FINDERS = [
 
 MEDIA_ROOT = join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
+WAGTAILMEDIA_MEDIA_MODEL = 'core.MoloMedia'
 
 # Wagtail settings
 LOGIN_URL = 'molo.profiles:auth_login'
@@ -576,6 +582,10 @@ GOOGLE_ANALYTICS_IGNORE_PATH = [
     '/media/', '/static/',
     # metrics URL used by promethius monitoring system
     '/metrics',
+    # REST API
+    '/api/',
+    # PWA serviceworker
+    '/serviceworker.js',
 ]
 
 GOOGLE_ANALYTICS_AGE_KEY = environ.get('GOOGLE_ANALYTICS_AGE_KEY', 'cd1')
@@ -603,3 +613,9 @@ if AWS_STORAGE_BUCKET_NAME and AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
 
 RABBITMQ_MANAGEMENT_INTERFACE = environ.get(
     'RABBITMQ_MANAGEMENT_INTERFACE')
+
+FACEBOOK_PIXEL = '413876948808281'
+FACEBOOK_PIXEL_COOKIE_KEY = 'facebook_pixel_hit_count'
+
+MAINTENANCE_MODE_TEMPLATE = 'maintenance.html'
+MAINTENANCE_MODE = environ.get('MAINTENANCE_MODE', None)

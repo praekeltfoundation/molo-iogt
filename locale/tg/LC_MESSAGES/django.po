@@ -956,7 +956,7 @@ msgid "Date of Birth: "
 msgstr "ЗОДРӮЗ:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
-msgid " Not set."
+msgid "Not set."
 msgstr "Танзим нашудааст."
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26

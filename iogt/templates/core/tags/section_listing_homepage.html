@@ -43,7 +43,9 @@
         </li>
       {% endfor%}
       </ul>
-      <a href="{% pageurl section %}" class="section-list__more">{% trans "View more" %}</a>
+      <a href="{% pageurl section %}" class="section-list__more">
+        {% trans "View more" %}
+      </a>
     </div>
   {% endif %}
 {% endfor %}

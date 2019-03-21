@@ -136,9 +136,9 @@
     {% endif %}
 {% endfor %}
 </div>
-{% has_questions self as questions %}
+{% has_questions self.get_main_language_page as questions %}
 {% if questions %}
-  {% poll_page_in_section page=self %}
+  {% poll_page_in_section page=self.get_main_language_page %}
 {% endif %}
 
 {% surveys_list_for_pages page=self.get_main_language_page %}

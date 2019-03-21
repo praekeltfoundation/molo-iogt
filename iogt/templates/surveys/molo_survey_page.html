@@ -1,49 +1,55 @@
 {% extends 'base.html' %}
 {% load wagtailcore_tags core_tags i18n %}
 {% block content %}
-<div class="surveys">
-  <ul class="section-list-nav">
-    {% block breadcrumbs %}
-      {% breadcrumbs %}
-    {% endblock %}
-  </ul>
-  <h1 class="surveys__title">{{ page.title }}</h1>
-  <h4 class="surveys__intro">{{ page.intro }}</h4>
-  {% if user.is_authenticated and user.is_active or request.is_preview or self.allow_anonymous_submissions %}
-    {% if form %}
-      <form class="surveys__form" action="{% pageurl self %}{% if self.multi_step %}?p={{ fields_step.number|add:"1" }}{% endif %}" method="post">
-        {% csrf_token %}
-        {% for field in form %}
-          <fieldset>
-            <label for="{{ field.id_for_label }}"{% if field.field.required %}class="required"{% endif %}>{{ field.label }}</label>
-            <span class="surveys__helptext">{{ field.help_text }}</span>
-            {{ field }}
-            {% if field.errors %}
-              <ul class="error error--surveys">
-              {% for error in field.errors %}
-                <li>{{ error }}</li>
-              {% endfor %}
-              </ul>
+    <div class="surveys">
+        <ul class="section-list-nav">
+            {% block breadcrumbs %}
+                {% breadcrumbs %}
+            {% endblock %}
+        </ul>
+        <h1 class="surveys__title">{{ page.title }}</h1>
+        <h4 class="surveys__intro">{{ page.introduction }}</h4>
+        {% if user.is_authenticated and user.is_active or request.is_preview or self.allow_anonymous_submissions %}
+            {% if form %}
+                <form class="surveys__form" action="{% pageurl self %}{% if self.multi_step %}?p={{ fields_step.number|add:"1" }}{% endif %}" method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <fieldset>
+                            <label for="{{ field.id_for_label }}"{% if field.field.required %}class="required"{% endif %}>{{ field.label }}</label>
+                            <span class="surveys__helptext">{{ field.help_text }}</span>
+                            {{ field }}
+                            {% if field.errors %}
+                                <ul class="error error--surveys">
+                                    {% for error in field.errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </fieldset>
+                    {% endfor %}
+
+                    {% if page.terms_and_conditions.exists and page.terms_and_conditions.first.terms_and_conditions.live %}
+                      <a href="{% pageurl page.terms_and_conditions.first.terms_and_conditions %}" target="_blank" class="surveys__terms">
+                          {{ page.terms_and_conditions.first.terms_and_conditions.title }}
+                      </a>
+                    {% endif %}
+                    <input type="submit" value="{% if is_intermediate_step %}{% trans 'Next Question' %}{% else %}{% trans 'Submit' %}{% endif %}" />
+                </form>
+                <div class="call-to-action call-to-action--surveys">
+                    <a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--back-home">
+                        {% trans "Back to Home page" %}</a>
+                </div>
+            {% else %}
+                <p class="error error--surveys">{% trans 'You have already completed this survey.' %}</p>
+                <div class="call-to-action call-to-action--surveys">
+                    <a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--back-home">
+                        {% trans "Back to Home page" %}</a>
+                </div>
             {% endif %}
-          </fieldset>
-        {% endfor %}
-        <input type="submit" value="{% if is_intermediate_step %}{% trans 'Next Question' %}{% else %}{% trans 'Submit' %}{% endif %}" />
-      </form>
-      <div class="call-to-action call-to-action--surveys">
-        <a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--back-home">
-        {% trans "Back to Home page" %}</a>
-      </div>
-    {% else %}
-      <p class="error error--surveys">{% trans 'You have already completed this survey.' %}</p>
-      <div class="call-to-action call-to-action--surveys">
-        <a href="{{request.site.root_page.url}}" class="call-to-action__nav-item call-to-action__nav-item--back-home">
-        {% trans "Back to Home page" %}</a>
-      </div>
-    {% endif %}
-  {% else %}
-    <div class="call-to-action call-to-action--surveys">
-      <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}" class="call-to-action__nav-item call-to-action__nav-item--surveys">{% trans 'Please log in to take this survey' %}</a>
+        {% else %}
+            <div class="call-to-action call-to-action--surveys">
+                <a href="{% url 'molo.profiles:auth_login' %}?next={{request.path}}" class="call-to-action__nav-item call-to-action__nav-item--surveys">{% trans 'Please log in to take this survey' %}</a>
+            </div>
+        {% endif %}
     </div>
-  {% endif %}
-</div>
 {% endblock %}
