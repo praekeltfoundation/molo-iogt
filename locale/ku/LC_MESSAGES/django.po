@@ -932,7 +932,7 @@ msgid "Date of Birth: "
 msgstr "بەرواری لە دایکبوون"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
-msgid " Not set."
+msgid "Not set."
 msgstr "رێکنەخراو"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26

@@ -14,14 +14,14 @@
       padding: 0 5px;
       text-decoration: underline;
   }
-    .call-to-action__nav-item,
-    input[type="submit"] {
-        color: #fff;
-        padding: 10px 0;
-        text-decoration: none;
-    }
+  .call-to-action__nav-item,
+  input[type="submit"] {
+      color: #fff;
+      padding: 10px 0;
+      text-decoration: none;
+  }
   label {
-    display: inline;
+    display: block;
     padding: 0 5px 5px 0;
   }
   label[for="id_date_of_birth_year"] {
@@ -44,7 +44,7 @@ label.profiles__terms {
     text-decoration: none;
 }
 .profiles__terms {
-  display: inline-block;
+  display: inline-block !important;
   color: $victoria;
   font-size: $font-small;
   text-transform: inherit;

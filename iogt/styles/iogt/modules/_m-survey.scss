@@ -54,6 +54,14 @@
       text-decoration: underline;
       font-weight: bold;
     }
+    &__terms {
+      display: inline-block !important;
+      color: $victoria;
+      font-size: $font-small;
+      text-transform: inherit;
+      font-weight: normal;
+      text-decoration: underline;
+    }
   }
   .call-to-action {
     &__nav-item--back-home {

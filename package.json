@@ -8,20 +8,21 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.13",
-    "gulp-gzip": "^1.4.0",
+    "gulp-clean-css": "^2.4.0",
+    "gulp-gzip": "^1.4.2",
     "gulp-livereload": "^3.8.1",
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-watch": "^4.3.9"
+    "gulp-sourcemaps": "^1.12.1",
+    "gulp-watch": "^5.0.0",
+    "hoek": "4.2.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/praekelt/molo-iogt.git"
   },
-  "author": "Mitso Qalaba",
+  "author": "Praekelt",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/praekelt/molo-iogt/issues"
