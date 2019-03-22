@@ -49,7 +49,7 @@
                <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/{{ ENV }}/state_320.css">
               {% endcompress %}{% endspaceless %}';
 
-         var latoGoogleFont = '<link href="https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,900" rel="stylesheet">';
+         var latoGoogleFont = '<link href="{{ STATIC_URL }}/google/fonts.css" rel="stylesheet">';
 
           if(CutsTheMustard === true) {
             if(LargeScreen) {
@@ -69,30 +69,30 @@
 
       <!-- Facebook Pixel Code -->
       <script>
-      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-      document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-      fbq('init', '{{ FACEBOOK_PIXEL }}');
-      fbq('track', 'PageView');
-
-      {% if FACEBOOK_PIXEL_HISTORY_COUNT > 2 %}
-        fbq('track', 'PageViewMinimum3Pages');
-      {% endif %}
+      {#!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?#}
+      {#n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;#}
+      {#n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;#}
+      {#t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,#}
+      {#document,'script','https://connect.facebook.net/en_US/fbevents.js');#}
+{##}
+{#      fbq('init', '{{ FACEBOOK_PIXEL }}');#}
+{#      fbq('track', 'PageView');#}
+{##}
+{#      {% if FACEBOOK_PIXEL_HISTORY_COUNT > 2 %}#}
+{#        fbq('track', 'PageViewMinimum3Pages');#}
+{#      {% endif %}#}
 
       {% block facebook_pixel_tracking_js %}{% endblock %}
       </script>
 
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id={{ FACEBOOK_PIXEL }}&ev=PageView&noscript=1"
-      /></noscript>
+{#      <noscript><img height="1" width="1" style="display:none"#}
+{#      src="https://www.facebook.com/tr?id={{ FACEBOOK_PIXEL }}&ev=PageView&noscript=1"#}
+{#      /></noscript>#}
 
       {% if FACEBOOK_PIXEL_HISTORY_COUNT > 2 %}
-          <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id={{ FACEBOOK_PIXEL }}&ev=PageViewMinimum3Pages&noscript=1&value=VisitingMinimum3Pages"
-          /></noscript>
+{#          <noscript><img height="1" width="1" style="display:none"#}
+{#            src="https://www.facebook.com/tr?id={{ FACEBOOK_PIXEL }}&ev=PageViewMinimum3Pages&noscript=1&value=VisitingMinimum3Pages"#}
+{#          /></noscript>#}
       {% endif %}
 
       {% block facebook_pixel_tracking_no_js %}{% endblock %}
