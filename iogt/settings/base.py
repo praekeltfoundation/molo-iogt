@@ -40,6 +40,7 @@ ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '*').split(",")
 # backend - e.g. in notification emails. Don't include '/admin' or
 # a trailing slash
 BASE_URL = 'http://example.com'
+EXTERNAL_LINK_CHECK = "internetofgoodthings.org"
 
 
 # Application definition
@@ -138,6 +139,7 @@ TEMPLATES = [
                 'wagtail.contrib.settings.context_processors.settings',
                 'molo.core.context_processors.locale',
                 'iogt.processors.compress_settings',
+                'iogt.processors.external_link',
             ],
         },
     },

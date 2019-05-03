@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+  <div class="article-list">
+    <p>{% trans "You are about to leave The Internet of Good Things, and may be charged by your service provider" %}</p>
+    <a href="{{ next }}">{% trans "Click to continue" %}</a>
+  </div>
+{% endblock content %}
+
+{% block external-link %}{% endblock external-link %}
