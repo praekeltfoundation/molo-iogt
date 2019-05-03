@@ -268,7 +268,6 @@
             </li>
           {% endif %}
           {% footer_page %}
-          
         </ul>
       </div>
 
@@ -276,6 +275,18 @@
         <p>&copy; The Internet of Good Things</p>
       </div>
       {% endblock %}
+      {% block external-link %}
+      <script>
+        // convert all external links to redirect to banner
+        var links = document.getElementsByTagName("a");
+        for (i = 0; i < links.length; i++) {
+            var link = links[i].href;
+            if (link.indexOf("{{ external_link_check }}") === -1 && link.indexOf("{% url 'external_link' %}") === -1) {
+                links[i].href = "{% url 'external_link' %}?next=" + link;
+            }
+        }
+      </script>
+      {% endblock external-link %}
       {% block extra_js %}{% endblock %}
       {% wagtailuserbar %}
     </body>
