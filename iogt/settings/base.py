@@ -40,7 +40,10 @@ ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '*').split(",")
 # backend - e.g. in notification emails. Don't include '/admin' or
 # a trailing slash
 BASE_URL = 'http://example.com'
-EXTERNAL_LINK_CHECK = "internetofgoodthings.org"
+EXTERNAL_LINK_CHECK = environ.get(
+    'EXTERNAL_LINK_CHECK',
+    "goodinternet.org,internetofgoodthings.org",
+).split(",")
 
 
 # Application definition

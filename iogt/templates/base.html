@@ -279,9 +279,21 @@
       <script>
         // convert all external links to redirect to banner
         var links = document.getElementsByTagName("a");
+        var external_link_checks = new Array(
+            {% for link in external_link_check %}
+            "{{ link }}",
+            {% endfor %}
+        );
         for (i = 0; i < links.length; i++) {
             var link = links[i].href;
-            if (link.indexOf("{{ external_link_check }}") === -1 && link.indexOf("{% url 'external_link' %}") === -1) {
+            var valid = false;
+            for (j = 0; j < external_link_checks.length; j++) {
+                if (link.indexOf(external_link_checks[j]) !== -1) {
+                    valid = true;
+                    break;
+                }
+            }
+            if (!valid) {
                 links[i].href = "{% url 'external_link' %}?next=" + link;
             }
         }
