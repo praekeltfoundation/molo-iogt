@@ -294,7 +294,7 @@
                 }
             }
             if (!valid) {
-                links[i].href = "{% url 'external_link' %}?next=" + link;
+                links[i].href = "{% url 'external_link' %}?next=" + link + "&prev=" + window.location.href;
             }
         }
       </script>

@@ -2,9 +2,15 @@
 {% load i18n %}
 
 {% block content %}
-  <div class="article-list">
-    <p>{% trans "You are about to leave The Internet of Good Things, and may be charged by your service provider" %}</p>
-    <a href="{{ next }}">{% trans "Click to continue" %}</a>
+  <h4 class="heading heading--subtitle">{% trans "Standard data charges might apply"%}</h4>
+  <div class="profiles">
+    <p>{% trans "You are leaving The Internet of Good Things website to visit an external website and standard data charges by your network provider might apply" %}</p>
+    <br />
+    <br />
+    <p><a href="{{ next }}">&gt;&gt; {% trans "Continue" %}</a></p>
+    <br />
+    <br />
+    <p><a href="{{ prev }}">&gt;&gt; {% trans "Cancel" %}</a></p>
   </div>
 {% endblock content %}
 

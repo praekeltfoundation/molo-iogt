@@ -1056,6 +1056,26 @@ msgstr "Maelezo"
 msgid "Login"
 msgstr "Ingia"
 
+#: iogt/templates/core/external-link.html:5
+msgid "Standard data charges might apply"
+msgstr "Mashtaka ya data ya kawaida yanaweza kutumika"
+
+#: iogt/templates/core/external-link.html:7
+msgid ""
+"You are leaving The Internet of Good Things website to visit an external "
+"website and standard data charges by your network provider might apply"
+msgstr ""
+"Unaondoka kwenye tovuti ya tovuti ya Good Things kutembelea tovuti ya nje "
+"na mashtaka ya data ya kawaida na mtoa huduma wako wa mtandao anaweza kuomba"
+
+#: iogt/templates/core/external-link.html:10
+msgid "Continue"
+msgstr "Endelea"
+
+#: iogt/templates/core/external-link.html:13
+msgid "Cancel"
+msgstr "Futa"
+
 #: iogt/templates/polls/includes/poll_free_text_form.html:24
 #: iogt/templates/polls/includes/poll_question_form.html:26
 #: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:18
