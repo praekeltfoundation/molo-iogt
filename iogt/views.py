@@ -42,4 +42,5 @@ class ExternalLink(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
         context["next"] = self.request.GET.get("next")
+        context["prev"] = self.request.GET.get("prev")
         return context
