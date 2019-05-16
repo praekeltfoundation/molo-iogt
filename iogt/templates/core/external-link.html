@@ -1,16 +1,15 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n static %}
 
 {% block content %}
-  <h4 class="heading heading--subtitle">{% trans "Standard data charges might apply"%}</h4>
-  <div class="profiles">
-    <p>{% trans "You are leaving The Internet of Good Things website to visit an external website and standard data charges by your network provider might apply" %}</p>
-    <br />
-    <br />
-    <p><a href="{{ next }}">&gt;&gt; {% trans "Continue" %}</a></p>
-    <br />
-    <br />
-    <p><a href="{{ prev }}">&gt;&gt; {% trans "Cancel" %}</a></p>
+  <img src="{% static 'img/external_banner_warning.jpg' %}" />
+  <div class="external">
+    <a href="{{ next }}">
+      <p class="btn btn-primary">{% trans "Continue" %}</p>
+    </a>
+    <a href="{{ prev }}">
+      <p class="btn">{% trans "No Thanks" %}</p>
+    </a>
   </div>
 {% endblock content %}
 

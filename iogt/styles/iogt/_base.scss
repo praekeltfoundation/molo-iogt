@@ -94,3 +94,18 @@ input[type="submit"] {
     text-align: left;
   }
 }
+.external {
+    text-align: center;
+    p {
+        border: 1px solid #ccc;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .btn {
+        padding: 5px 0px;
+    }
+    .btn-primary {
+        background-color: #6960a1;
+        color: #fff;
+    }
+}
