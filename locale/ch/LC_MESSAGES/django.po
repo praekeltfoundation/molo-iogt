@@ -1186,7 +1186,7 @@ msgstr "mamuna/mkazi:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:40
 msgid "Location:"
-msgstr "Malo""
+msgstr "Malo"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:47
 msgid "Education Level:"
