@@ -1,0 +1,1259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-09 13:33+0200\n"
+"PO-Revision-Date: 2017-02-01 07:44+0000\n"
+"Last-Translator: Ntu2ko Trevor <trevor@praekelt.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: chi_CH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1485935090.268670\n"
+
+#: iogt/settings/base.py:459
+msgid "January"
+msgstr "Januwale"
+
+#: iogt/settings/base.py:460
+msgid "February"
+msgstr "Febuluwale"
+
+#: iogt/settings/base.py:461
+msgid "March"
+msgstr "Malitchi"
+
+#: iogt/settings/base.py:462
+msgid "April"
+msgstr "Epulo"
+
+#: iogt/settings/base.py:463
+msgid "May"
+msgstr "May"
+
+#: iogt/settings/base.py:464
+msgid "June"
+msgstr "Juni"
+
+#: iogt/settings/base.py:465
+msgid "July"
+msgstr "Julae"
+
+#: iogt/settings/base.py:466
+msgid "August"
+msgstr "Ogasiti"
+
+#: iogt/settings/base.py:467
+msgid "September"
+msgstr "Seputembala"
+
+#: iogt/settings/base.py:468
+msgid "October"
+msgstr "Okotobala"
+
+#: iogt/settings/base.py:469
+msgid "November"
+msgstr "Novembala"
+
+#: iogt/settings/base.py:470
+msgid "December"
+msgstr "Dicembala"
+
+#: iogt/settings/base.py:471
+msgid "Add anonymously"
+msgstr "Onjezerani mwachinsinsi"
+
+#: iogt/settings/base.py:473
+msgid "This field is required"
+msgstr "Mukuyenera kulemba apa"
+
+#: iogt/settings/base.py:474
+msgid "Ensure this value has at least 4 characters (it has 1)"
+msgstr "Lembani mawu okhala ndi malemba atatu"
+
+#: iogt/settings/base.py:475
+msgid "Type your comment here"
+msgstr "Lembani maganizo anu apa"
+
+#: iogt/templates/403.html:8
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
+msgid "Access Denied"
+msgstr "Chilolezo Chakanizidwa"
+
+#: iogt/templates/403.html:9
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
+msgid "You do not have permssion to access this site."
+msgstr "Mulibe chilolezo choona tsambali"
+
+#: iogt/templates/403_csrf.html:7
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
+msgid "Unable to Login"
+msgstr "Mwalephera kulowa"
+
+#: iogt/templates/403_csrf.html:9
+msgid ""
+"Sorry, you are having trouble accessing this feature! Due to a temporary "
+"technical issue, login and registrations are not available on the IoGT app "
+"for now."
+msgstr "Pepani mukulephera kuona zinthu za pa tsambali chifukwa cha vuto "
+"limene tilinalo. Kulowa ndi kulembetsa sizikutheka pa loGT pakadali pano"
+
+#: iogt/templates/403_csrf.html:10
+msgid ""
+"To login or register for a profile, visit our free mobisite through your "
+"mobile browser at"
+msgstr "Internet of Good Things (IoGT) ndi njira yoperekera uthenga "
+"ofunikira okhudza moyo wa tsiku ndi tsiku kudzera pa phone ya m'manja, "
+"mwa ulere."
+
+#: iogt/templates/403_csrf.html:11
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
+msgid " We're working hard to get this problem resolved. Thank you."
+msgstr "Tikuyesetsa kukonza vutoli. Zikomo."
+
+#: iogt/templates/404.html:8
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
+msgid "Page not found"
+msgstr "Tsamba-li palibe"
+
+#: iogt/templates/404.html:9
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
+msgid "Sorry, this page could not be found."
+msgstr "Pepani tsamba-li palibe"
+
+#: iogt/templates/500.html:12 iogt/templates/500.html:16
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
+msgid "Internal server error"
+msgstr "Vuto la sisitimu"
+
+#: iogt/templates/500.html:17
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
+msgid "Sorry, there seems to be an error. Please try again soon."
+msgstr "Pepani zikuoneka ngati pali vuto. Chonde yesaniso nthawi ina"
+
+#: iogt/templates/base.html:11
+msgid ""
+"Internet of Good Things (IoGT) is a set of free, mobile-ready web-based "
+"resources and applications that bring good to your life by helping you and "
+"your community access educational and lifesaving information."
+msgstr "Internet of Good Things (IoGT) ndi njira yoperekera uthenga "
+"ofunikira okhudza moyo wa tsiku ndi tsiku kudzera pa phone ya m'manja, "
+"mwa ulere."
+
+#: iogt/templates/base.html:121
+msgid "Language"
+msgstr "Chiyankhulo"
+
+#: iogt/templates/base.html:126
+msgid "Change Language"
+msgstr "Sinthani chiyankhulo"
+
+#: iogt/templates/base.html:148
+msgid "IoGT"
+msgstr "loGT"
+
+#: iogt/templates/base.html:154 iogt/templates/profiles/register.html:6
+#: iogt/templates/profiles/register.html:123
+#: iogt/templates/registration/login.html:9
+msgid "Join"
+msgstr "Lowani"
+
+#: iogt/templates/base.html:156 iogt/templates/base.html:219
+#: temp/temp_ve/profiles/templates/profiles/done.html:64
+msgid "Profile"
+msgstr "Mbiri yanu"
+
+#: iogt/templates/base.html:158
+msgid "Menu"
+msgstr "Menyu"
+
+#: iogt/templates/base.html:212 iogt/templates/profiles/register.html:10
+#: temp/temp_ve/profiles/templates/profiles/register.html:10
+msgid "Login"
+msgstr "Lowani"
+
+#: iogt/templates/base.html:231
+msgid "Change your language"
+msgstr "Sinthani chiyankhulo"
+
+#: iogt/templates/comments/comment.html:8
+#: temp/temp_ve/commenting/templates/comments/comment.html:8
+#: temp/temp_ve/commenting/templates/notifications/notice.html:10
+#: temp/temp_ve/commenting/views.py:48
+msgid "Anonymous"
+msgstr "Osadziwika"
+
+#: iogt/templates/comments/comment.html:17
+#: temp/temp_ve/commenting/templates/comments/comment.html:16
+msgid ""
+"This comment has been removed by the community. Please read our platform "
+"rules."
+msgstr "Maganizo awa achotsedwa ndi anthu ogwiritsa ntchito tsambali "
+"chonde welenganiso malamulo a tsambali"
+
+#: iogt/templates/comments/comment.html:22
+#: temp/temp_ve/commenting/templates/comments/comment.html:26
+msgid "Report"
+msgstr "Nenezani"
+
+#: iogt/templates/comments/comment.html:24
+#: temp/temp_ve/commenting/templates/comments/comment.html:39
+msgid "Reply"
+msgstr "Yankhani"
+
+#: iogt/templates/comments/comment_block.html:6
+msgid "Have something to add to this article?"
+msgstr "Muli ndi choonjezera pa nkhaniyi?"
+
+#: iogt/templates/comments/comment_block.html:14
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:14
+msgid "Log in to comment"
+msgstr "Lowani kuti mupereke maganizo anu"
+
+#: iogt/templates/comments/comment_block.html:18
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:18
+msgid "Commenting on this article is currently disabled"
+msgstr "Simungathe kuika maganizo anu pa nkhani-yi pakadali pano."
+
+#: iogt/templates/comments/comment_block.html:22
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:23
+#: temp/temp_ve/commenting/templates/comments/comments.html:7
+msgid "Comments"
+msgstr "Maganizo anu"
+
+#: iogt/templates/comments/comment_block.html:29
+#: iogt/templates/core/article_page.html:24
+#: iogt/templates/core/related-article-list.html:32
+#: iogt/templates/core/section_page.html:46
+#: iogt/templates/core/section_page.html:126
+#: iogt/templates/core/tags/latest_listing_homepage.html:39
+#: iogt/templates/core/tags/section_listing_homepage.html:40
+#: iogt/templates/search/search_results.html:80
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:26
+msgid "comment"
+msgstr "Ndemanga yanu"
+
+#: iogt/templates/comments/comment_block.html:44
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:41
+msgid "view more comments"
+msgstr "onani maganizo a ena"
+
+#: iogt/templates/comments/form.html:14 temp/temp_ve/commenting/forms.py:18
+msgid "Comment"
+msgstr "Ndemanga yanu"
+
+#: iogt/templates/comments/form.html:15
+msgid "Comment Anonymously"
+msgstr "Ikani ndemanga yanu mwachinsisi"
+
+#: iogt/templates/core/next-article.html:8
+#: iogt/templates/core/section_page.html:85
+msgid "Next"
+msgstr "Pitirizani"
+
+#: iogt/templates/core/related-article-list.html:6
+msgid "Related Articles"
+msgstr "Nkhani zofanana"
+
+#: iogt/templates/core/section_page.html:55
+msgid "Prev"
+msgstr "m'mbuyo"
+
+#: iogt/templates/core/section_page.html:133
+#: iogt/templates/core/tags/section_listing_homepage.html:46
+msgid "View more"
+msgstr "onani zambiri"
+
+#: iogt/templates/core/tags/breadcrumbs.html:5
+#: temp/temp_ve/commenting/templates/comments/preview.html:11
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/breadcrumbs.html:6
+#: temp/temp_ve/polls/templates/polls/detail.html:25
+#: temp/temp_ve/polls/templates/polls/free_text_detail.html:12
+#: temp/temp_ve/polls/templates/polls/results.html:24
+msgid "Home"
+msgstr "Tsamba loyambilira"
+
+#: iogt/templates/core/tags/latest_listing_homepage.html:4
+#: temp/temp_ve/commenting/test_templates/article_page.html:63
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:64
+msgid "Recommended"
+msgstr "Zina zoti muone"
+
+#: iogt/templates/polls/detail.html:26
+#: iogt/templates/polls/free_text_detail.html:13
+#: iogt/templates/polls/includes/poll_question_form.html:45
+#: temp/temp_ve/polls/templates/polls/detail.html:24
+#: temp/temp_ve/polls/templates/polls/free_text_detail.html:11
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:35
+msgid "Vote"
+msgstr "votani"
+
+#: iogt/templates/polls/detail.html:28
+#: iogt/templates/polls/free_text_detail.html:15
+#: iogt/templates/polls/results.html:31
+#: iogt/templates/surveys/molo_survey_page.html:34
+#: iogt/templates/surveys/molo_survey_page.html:40
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:35
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
+msgid "Back to Home page"
+msgstr "Bwelerani ku tsamba loyambilira"
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:16
+#: iogt/templates/surveys/molo_survey_page.html:30
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:13
+msgid "Submit"
+msgstr "Pelekani"
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:18
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
+msgid "Thank you! Your response has already been submitted."
+msgstr "Zikomo. Yankho lanu lapelekedwa kale"
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:24
+#: iogt/templates/polls/includes/poll_question_form.html:26
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:18
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:20
+msgid "Log in to vote"
+msgstr "Lowani kuti muvote"
+
+#: iogt/templates/polls/includes/poll_question_form.html:47
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
+msgid "Show Results"
+msgstr "Onetsani zotsatira"
+
+#: iogt/templates/polls/includes/poll_question_form.html:50
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
+msgid "You voted: "
+msgstr "Mudasankha: "
+
+#: iogt/templates/polls/poll_page.html:7
+#: iogt/templates/polls/poll_page_in_section.html:8
+msgid "Polls"
+msgstr "mavoti"
+
+#: iogt/templates/polls/results.html:8
+#: temp/temp_ve/polls/templates/polls/results.html:8
+msgid "Your answers:"
+msgstr "Mayankho anu:"
+
+#: iogt/templates/polls/results.html:28
+#: temp/temp_ve/polls/templates/polls/results.html:22
+msgid "Thank you for voting!"
+msgstr "Zikomo povota!"
+
+#: iogt/templates/profiles/register.html:9
+#: temp/temp_ve/profiles/templates/profiles/register.html:9
+msgid "Already a member?"
+msgstr "Kodi ndinu membala kale?"
+
+#: iogt/templates/profiles/register.html:14
+#: iogt/templates/registration/login.html:8
+#: temp/temp_ve/profiles/templates/profiles/register.html:14
+#: temp/temp_ve/profiles/templates/registration/login.html:8
+#: temp/temp_ve/profiles/test_templates/login.html:8
+msgid "Not a member yet?"
+msgstr "Kodi sinu membala?"
+
+#: iogt/templates/profiles/register.html:15
+#: temp/temp_ve/profiles/templates/profiles/register.html:15
+msgid "Join us by signing up below."
+msgstr "Lowani polembetsa pamusipa."
+
+#: iogt/templates/profiles/register.html:21
+msgid "Choose a username"
+msgstr "Sankhani dzina loti mugwiritse ntchito."
+
+#: iogt/templates/profiles/register.html:24
+#: temp/temp_ve/profiles/templates/profiles/register.html:24
+msgid ""
+"This name you will use to log in and won't appear to other users. Only you "
+"will see this."
+msgstr "Dzina ili mugwiritsa ntchito polowa ndipo silionekwa kwa ena. Inu nokha ndiamene muziliona."
+
+#: iogt/templates/profiles/register.html:29
+msgid "Choose a display name"
+msgstr "Sankhani dzina loti mugwiritse ntchito"
+
+#: iogt/templates/profiles/register.html:32
+#: temp/temp_ve/profiles/templates/profiles/done.html:29
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: temp/temp_ve/profiles/templates/profiles/register.html:39
+msgid ""
+"We value your online security, therefore we hide your username and allow you "
+"to comment and interact with the site with a display name."
+msgstr "Timasamala za chitetezo chanu pa tsambali, kotelo timabisa dzina lanu "
+"kuti muzipeleka ndemanga zanu m'dzina lapadera la pa tsambali."
+
+#: iogt/templates/profiles/register.html:38
+msgid "Select date of birth"
+msgstr "Sankhani tsiku la kubadwa"
+
+#: iogt/templates/profiles/register.html:41
+#: temp/temp_ve/profiles/templates/profiles/register.html:48
+msgid "Let us know your birthday to get access to exclusive content."
+msgstr "Tiuzeni zambiri za inu kuti muthe kuona zina zambiri pa tsambali."
+
+#: iogt/templates/profiles/register.html:47
+msgid "I identify my gender as:"
+msgstr "mamuna/mkazi:"
+
+#: iogt/templates/profiles/register.html:50
+#: iogt/templates/profiles/register.html:59
+#: iogt/templates/profiles/register.html:68
+#: temp/temp_ve/profiles/templates/profiles/done.html:38
+#: temp/temp_ve/profiles/templates/profiles/done.html:47
+#: temp/temp_ve/profiles/templates/profiles/done.html:56
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:31
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:40
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:49
+#: temp/temp_ve/profiles/templates/profiles/register.html:57
+#: temp/temp_ve/profiles/templates/profiles/register.html:66
+#: temp/temp_ve/profiles/templates/profiles/register.html:75
+msgid "Only you will see this"
+msgstr "Inu nokha ndi amene muone izi"
+
+#: iogt/templates/profiles/register.html:56
+msgid "Where do you live?"
+msgstr "Mumakhala kuti?"
+
+#: iogt/templates/profiles/register.html:65
+msgid "What is your highest level of education?"
+msgstr "Mudalekeza pati maphunziro anu?"
+
+#: iogt/templates/profiles/register.html:74
+msgid "Enter your mobile number"
+msgstr "Lowetsani nambala yanu ya lamya ya mmanja"
+
+#: iogt/templates/profiles/register.html:77
+msgid "e.g. 0900000013"
+msgstr "mwachitsanzo: 0900000013"
+
+#: iogt/templates/profiles/register.html:83
+msgid "Enter your email address"
+msgstr "Lembani email yanu"
+
+#: iogt/templates/profiles/register.html:86
+msgid "e.g. example@foo.com"
+msgstr "chitsanzo: mwachitsanzo@foo.com"
+
+#: iogt/templates/profiles/register.html:103
+msgid "Choose a 4-digit pin"
+msgstr "Sankhani nambala ya chinsisi ya ma nambala anayi"
+
+#: iogt/templates/profiles/register.html:106
+msgid "e.g."
+msgstr "chitsanzo"
+
+#: iogt/templates/profiles/register.html:112
+#: temp/temp_ve/profiles/templates/profiles/register.html:112
+msgid "Please accept the T&amp;Cs in order to complete the registration"
+msgstr "Chonde vomerezani malamulo a tsambali kuti mutsirize kulembetsa"
+
+#: iogt/templates/profiles/register.html:117
+#: iogt/templates/profiles/register.html:119
+#: temp/temp_ve/profiles/templates/profiles/register.html:117
+#: temp/temp_ve/profiles/templates/profiles/register.html:119
+msgid "I accept the Terms and Conditions"
+msgstr "Ndikuvomela malamulo a tsamba-li"
+
+#: iogt/templates/registration/login.html:5
+#: iogt/templates/registration/login.html:34
+#: iogt/templates/registration/password_reset_complete.html:8
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:9
+#: temp/temp_ve/profiles/templates/registration/login.html:5
+#: temp/temp_ve/profiles/templates/registration/login.html:34
+#: temp/temp_ve/profiles/test_templates/login.html:5
+#: temp/temp_ve/profiles/test_templates/login.html:34
+msgid "Log in"
+msgstr "Lowani"
+
+#: iogt/templates/registration/login.html:13
+msgid "Login by signing in below."
+msgstr "Lowani polemba pamusipa."
+
+#: iogt/templates/registration/login.html:20
+#: temp/temp_ve/profiles/templates/registration/login.html:20
+#: temp/temp_ve/profiles/test_templates/login.html:20
+msgid "Your username and password do not match. Please try again."
+msgstr "Dzina lanu ndi liu lanu la chinsisi sizikugwirizana. Chonde yesaniso."
+
+#: iogt/templates/registration/login.html:25
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
+#: temp/temp_ve/profiles/forms.py:76 temp/temp_ve/profiles/forms.py:443
+#: temp/temp_ve/profiles/templates/registration/login.html:25
+#: temp/temp_ve/profiles/test_templates/login.html:25
+msgid "Username"
+msgstr "Dzina lomwe muzigwiritsa ntchito"
+
+#: iogt/templates/registration/login.html:30
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
+#: temp/temp_ve/profiles/templates/registration/login.html:30
+#: temp/temp_ve/profiles/test_templates/login.html:30
+msgid "4-digit pin"
+msgstr "Manambala 4 a chinsisi"
+
+#: iogt/templates/registration/login.html:32
+#: temp/temp_ve/profiles/templates/registration/login.html:32
+#: temp/temp_ve/profiles/test_templates/login.html:32
+msgid "Eg.: 2086"
+msgstr "mwachitsanzo 2086"
+
+#: iogt/templates/registration/login.html:37
+#: iogt/templates/registration/password_reset_form.html:4
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:25
+#: temp/temp_ve/profiles/templates/registration/login.html:37
+#: temp/temp_ve/profiles/test_templates/login.html:37
+msgid "Forgotten your password?"
+msgstr "Mwaiwala liwu lanu la chinsisi?"
+
+#: iogt/templates/registration/password_reset_complete.html:5
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr "Liu lanu lachinsisi laloledwa mukhoza kulowa tsopano."
+
+#: iogt/templates/registration/password_reset_confirm.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr "Chonde lembani liu lanu lachinsisi kawiri kuti tidziwe ngati mwalondola."
+
+#: iogt/templates/registration/password_reset_confirm.html:10
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
+msgid "New password:"
+msgstr "Liwu lanu lachinsisi latsopano:"
+
+#: iogt/templates/registration/password_reset_confirm.html:15
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
+msgid "Confirm password:"
+msgstr "Vomelezani liu lachinsisi:"
+
+#: iogt/templates/registration/password_reset_confirm.html:19
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
+msgid "Change my password"
+msgstr "Sinthani liwu la chinsisi"
+
+#: iogt/templates/registration/password_reset_confirm.html:22
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr "uthenga omwe munalandira kuti mukonze liwu la chinsinsi sukugwira ntchito. "
+"Nkutheka kuti uthengawu wagwiritsidwa ntchito kale. Chonde funsani kuti "
+"akutumizireni uthenga wina."
+
+#: iogt/templates/registration/password_reset_done.html:5
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:7
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr "Takutumizilani uthenga ku email kwanu ofotokoza mene mungakhazikitsire "
+"Liu lanu la chinsisi. Ngati email yanu ili yolondola mulandira uthengawu "
+"posachedwapa."
+
+#: iogt/templates/registration/password_reset_done.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:9
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr "Ngati simulandira uthenga ku email kwanu, chonde onetsetsani kuti "
+"mwapereka address yomwe munalembetsera pa tsambali ndiponso muyang'ane ku spam."
+
+#: iogt/templates/registration/password_reset_done.html:8
+msgid "Back to home page"
+msgstr "Bwelerani pa chiyambi"
+
+#: iogt/templates/registration/password_reset_form.html:6
+msgid ""
+"Enter your email address below, and we'll email instructions for setting a "
+"new one."
+msgstr "Perekani email yanu m'musimu ndipo tikutumizilani ndondomeko zopangila "
+"liwu la chinsinsi latsopano."
+
+#: iogt/templates/registration/password_reset_form.html:10
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
+msgid "Email address:"
+msgstr "Email yanu:"
+
+#: iogt/templates/registration/password_reset_form.html:14
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
+msgid "Reset my password"
+msgstr "Sinthani liwu la chinsisi"
+
+#: iogt/templates/search/search_block.html:5
+#: iogt/templates/search/search_results.html:7
+#: iogt/templates/search/search_results.html:102
+msgid "Search the site..."
+msgstr "Fufuzani tsambali"
+
+#: iogt/templates/search/search_block.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
+msgid "SEARCH"
+msgstr "FUFUZANI"
+
+#: iogt/templates/search/search_results.html:3
+#: iogt/templates/search/search_results.html:8
+#: iogt/templates/search/search_results.html:103
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
+msgid "Search"
+msgstr "Fufuzani"
+
+#: iogt/templates/search/search_results.html:10
+#: iogt/templates/search/search_results.html:105
+msgid "Search Results for:"
+msgstr "Zotsatira za kufufuza za:"
+
+#: iogt/templates/search/search_results.html:108
+msgid "No search results were found for "
+msgstr "Zotsatira za kafukufuku wanu sizidapezeke"
+
+#: iogt/templates/search/search_results.html:110
+msgid "Back to homepage"
+msgstr "Bwelerani ku tsamba loyambilira"
+
+#: iogt/templates/surveys/molo_survey_page.html:30
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
+msgid "Next Question"
+msgstr "Funso lotsatira"
+
+#: iogt/templates/surveys/molo_survey_page.html:37
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:32
+msgid "You have already completed this survey."
+msgstr "Mwayankha kale mafunsowa."
+
+#: iogt/templates/surveys/molo_survey_page.html:45
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:40
+msgid "Please log in to take this survey"
+msgstr "Chonde lowani kuti mutenge nawo mbali mu kafukufukuyu"
+
+#: iogt/templates/surveys/surveys_list.html:10
+msgid "Start here"
+msgstr "Yambirani apa"
+
+#: temp/temp_ve/commenting/admin_views.py:61
+#: temp/temp_ve/commenting/views.py:111
+msgid "Reply successfully created."
+msgstr "Yankho latumizidwa."
+
+#: temp/temp_ve/commenting/forms.py:13 temp/temp_ve/commenting/forms.py:68
+msgid "Email address"
+msgstr "address ya email yanu"
+
+#: temp/temp_ve/commenting/forms.py:19
+msgid "Type your comment here..."
+msgstr "Lembani maganizo anu apa"
+
+#: temp/temp_ve/commenting/forms.py:70
+msgid "URL"
+msgstr "URL"
+
+#: temp/temp_ve/commenting/forms.py:72
+msgid "Name"
+msgstr "Dzina"
+
+#: temp/temp_ve/commenting/templates/comments/comment.html:23
+msgid "Ago"
+msgstr "papita"
+
+#: temp/temp_ve/commenting/templates/comments/comment.html:31
+#: temp/temp_ve/commenting/templates/comments/comment.html:34
+#: temp/temp_ve/commenting/templates/comments/comment.html:41
+msgid "Replies"
+msgstr "Mayankho"
+
+#: temp/temp_ve/commenting/templates/comments/comment_block.html:6
+msgid "Share a Comment"
+msgstr "Perekani maganizo anu"
+
+#: temp/temp_ve/commenting/templates/comments/comment_done.html:7
+#: temp/temp_ve/commenting/templates/comments/report_response.html:6
+msgid "Thanks!"
+msgstr "Zikomo!"
+
+#: temp/temp_ve/commenting/templates/comments/comment_done.html:9
+msgid "Your comment has been successfully posted"
+msgstr "Maganizo anu apelekedwa."
+
+#: temp/temp_ve/commenting/templates/comments/comment_done.html:11
+#: temp/temp_ve/commenting/templates/comments/comments.html:28
+#: temp/temp_ve/commenting/templates/comments/preview.html:44
+#: temp/temp_ve/commenting/templates/comments/reply.html:8
+#: temp/temp_ve/commenting/templates/comments/report_response.html:10
+msgid "Back to article"
+msgstr "Bwelerani ku nkhani"
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:37
+#: temp/temp_ve/commenting/templates/comments/reply.html:41
+msgid "Please "
+msgstr "Chonde "
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:39
+#: temp/temp_ve/commenting/templates/comments/reply.html:43
+msgid "log in"
+msgstr "Lowani"
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:40
+#: temp/temp_ve/commenting/templates/comments/reply.html:44
+msgid " to leave a comment."
+msgstr "perekani maganizo anu"
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:15
+msgid "Recent replies"
+msgstr "Mayankho a tsopano"
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:17
+msgid "Earlier replies"
+msgstr "Mayankho a kale"
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:29
+msgid "Page"
+msgstr "Tsamba"
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:29
+msgid "of"
+msgstr "a"
+
+#: temp/temp_ve/commenting/templates/comments/report_response.html:7
+msgid "This comment has been reported."
+msgstr "Ndemanga yanu yanenezedwa."
+
+#: temp/temp_ve/commenting/templates/comments/report_response.html:8
+msgid ""
+"It will be reviewed by the team and may be removed if it breaks our Platform "
+"rules"
+msgstr "Ziunikidwanso ndi ogwira ntchito athu ndipo zidzachotsedwa ngati "
+"zikuphwanya malamulo a tsambali."
+
+#: temp/temp_ve/commenting/templates/notifications/notice.html:15
+msgid "replied to your comment on: "
+msgstr "Ayankha pa ndemanga yanu pa: "
+
+#: temp/temp_ve/commenting/templates/notifications/notice.html:18
+msgid "ago"
+msgstr "papita"
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
+msgid "You have"
+msgstr "muli ndi"
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
+msgid "unread replies"
+msgstr "Mayankho omwe sanawelengedwe"
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:19
+msgid "Read replies:"
+msgstr "Mayankho omwe awerengedwa kale:"
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:27
+msgid "Back home"
+msgstr "Bwelerani pa tsamba loyambilira"
+
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:6
+msgid "Notification:"
+msgstr "Chidziwitso"
+
+#: temp/temp_ve/commenting/test_templates/article_page.html:48
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
+msgid "Next up in"
+msgstr "Zotsatira mu"
+
+#: temp/temp_ve/commenting/views.py:31
+msgid "Reporting comment replies is not allowed."
+msgstr "Simungathe kuneneza oyankha ndemanga."
+
+#: temp/temp_ve/commenting/views.py:34
+msgid "The comment has been reported."
+msgstr "Ndemanga yanu yanenezedwa."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
+msgid "Zulu"
+msgstr "Zulu"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:204
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
+msgid "Sotho"
+msgstr "Sotho"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
+msgid "Venda"
+msgstr "Venda"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
+msgid "Tswana"
+msgstr "Tswana"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
+msgid "Tsonga"
+msgstr "Tsonga"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:209
+msgid "Swati"
+msgstr "Swati"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:210
+msgid "Ndebele"
+msgstr "Ndebele"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:13
+msgid "Hi"
+msgstr "Mulibwanji"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
+msgid ""
+"Sorry, you are having trouble accessing this feature! Due to a temporary "
+"technical issue, login and registrations are not available on the Free "
+"Basics app for now. To login or register for a profile, visit our free "
+"mobisite through your mobile browser at"
+msgstr "Pepani Mukulephera kuona tsambali chifukwa. Kulowa komanso kulembetsa "
+"sizikutheka kudzera pa Free basic app pakadali pano. Kuti mulowe kapena "
+"kulembetsa tsegulani tsamba ili pa lamya yanu ya mmanja"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
+#: temp/temp_ve/core/test_templates/base.html:128
+#: temp/temp_ve/polls/test_templates/base.html:112
+#: temp/temp_ve/surveys/test_templates/base.html:112
+msgid "Site Language:"
+msgstr "Chiyankhulo cha tsambali:"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
+msgid "Latest"
+msgstr "zatsopano"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/topic_of_the_day.html:6
+msgid "Topic of the Day"
+msgstr "Mutu wa lero"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:21
+msgid "Sign in"
+msgstr "Lowani"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
+msgid "LOGIN TO YOUR ACCOUNT!"
+msgstr "LOWANI KU TSAMBA LANU"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
+msgid "We’re excited to have you..."
+msgstr "ndife okondwa kukhala nanu..."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
+msgid "Your username and password does not match. Please try again."
+msgstr "Dzina lanu ndi liwu lanu la chinsisi sizinagwirizane."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "Liu lanu lachinsisi laloledwa mukhoza kulowa tsopano."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr "uthenga omwe munalandira kuti mukonze liwu la chinsinsi sukugwira ntchito. "
+"Nkutheka kuti uthengawu wagwiritsidwa ntchito kale. Chonde funsani kuti "
+"akutumizireni uthenga wina"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr "Mwaiwala liwu lanu la chinsisi? Lembani email yanu m'munsimu ndipo "
+"tikutumizirani uthenga kukuuzani zoti muchite."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
+msgid "Looking for something?"
+msgstr "Mukuyang'ana kanthu?"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
+msgid "No search results for "
+msgstr "Zotsatira za kafukufuku wanu sizidapezeke"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
+msgid "I am looking for"
+msgstr "ndikufuna kuyang'ana"
+
+#: temp/temp_ve/core/views.py:96
+msgid "That page is not translatable."
+msgstr "za pa tsambali sizingatanthauzilidwe mu chilankhulo china"
+
+#: temp/temp_ve/polls/forms.py:20
+msgid "You didn't select a choice"
+msgstr "simunasankhe"
+
+#: temp/temp_ve/polls/templates/polls/poll_page.html:7
+msgid "What's your opinion?"
+msgstr "Maganizo anu ndiotani?"
+
+#: temp/temp_ve/profiles/admin.py:73
+msgid "Type"
+msgstr "Lembani"
+
+#: temp/temp_ve/profiles/admin.py:78
+msgid "Frontend Users"
+msgstr "Ogwiritsa ntchito tsambali"
+
+#: temp/temp_ve/profiles/admin.py:79
+msgid "Admin Users"
+msgstr "Oyendetsa tsambali"
+
+#: temp/temp_ve/profiles/admin_views.py:16
+msgid ""
+"Your email address is not configured. Please update it before exporting."
+msgstr "email yanu sitinaitsikimize. Chonde onetsesani kuti yatsikimizidwa "
+"musanayambe kutumiza."
+
+#: temp/temp_ve/profiles/admin_views.py:39
+#, python-brace-format
+msgid "CSV emailed to '{0}'"
+msgstr " CSV yatumizidwa ku '{0}'"
+
+#: temp/temp_ve/profiles/forms.py:78 temp/temp_ve/profiles/forms.py:445
+msgid "This value must contain only letters, numbers and underscores."
+msgstr "umu mukhale malemba, ma nambala ndi zizindikiro zina."
+
+#: temp/temp_ve/profiles/forms.py:94 temp/temp_ve/profiles/forms.py:419
+#: temp/temp_ve/profiles/forms.py:487 temp/temp_ve/profiles/forms.py:504
+msgid "This value must contain only numbers."
+msgstr "Lembani ma nambala okha okha."
+
+#: temp/temp_ve/profiles/forms.py:96 temp/temp_ve/profiles/forms.py:489
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:23
+msgid "PIN"
+msgstr "Numbala ya chinsisi"
+
+#: temp/temp_ve/profiles/forms.py:102 temp/temp_ve/profiles/forms.py:241
+#: temp/temp_ve/profiles/forms.py:286
+msgid "Display Name"
+msgstr "Dzina"
+
+#: temp/temp_ve/profiles/forms.py:112 temp/temp_ve/profiles/forms.py:245
+#: temp/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "lembani ngati muli mamuna kapena mkazi"
+
+#: temp/temp_ve/profiles/forms.py:116 temp/temp_ve/profiles/forms.py:249
+#: temp/temp_ve/profiles/forms.py:300
+msgid "Location"
+msgstr "Malo"
+
+#: temp/temp_ve/profiles/forms.py:120 temp/temp_ve/profiles/forms.py:253
+#: temp/temp_ve/profiles/forms.py:304
+msgid "Education Level"
+msgstr "Maphunziro anu"
+
+#: temp/temp_ve/profiles/forms.py:188
+msgid "Username already exists."
+msgstr "Dzina limeneli lilipo kale."
+
+#: temp/temp_ve/profiles/forms.py:193
+#, python-format
+msgid ""
+"Sorry, but that is an invalid username. Please don't use your %s in your "
+"username."
+msgstr "Pepani dzina ili silololedwa. Chonde onetsetsani kuti"
+
+#: temp/temp_ve/profiles/forms.py:225 temp/temp_ve/profiles/forms.py:351
+#, python-format
+msgid ""
+"Sorry, but that is an invalid display name. Please don't use your %s in your "
+"display name."
+msgstr "Pepani dzina ili silololedwa. Chonde onetsetsani kuti"
+
+#: temp/temp_ve/profiles/forms.py:388 temp/temp_ve/profiles/forms.py:403
+msgid "This value must contain only           numbers."
+msgstr "Lembani ma nambala okha okha."
+
+#: temp/temp_ve/profiles/forms.py:390
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:25
+msgid "Old Password"
+msgstr "Liwu la chinsisi la kale "
+
+#: temp/temp_ve/profiles/forms.py:405
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:32
+msgid "New Password"
+msgstr "Liu la chinsisi la tsopano"
+
+#: temp/temp_ve/profiles/forms.py:421
+msgid "Confirm Password"
+msgstr "Liwu la chinsisi la tsopano"
+
+#: temp/temp_ve/profiles/forms.py:431
+msgid "New passwords do not match."
+msgstr "Liu lachinsisi latsopano silikufanana."
+
+#: temp/temp_ve/profiles/forms.py:506
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:29
+msgid "Confirm PIN"
+msgstr "Vomelezani nambala ya chinsisi"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:27
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:25
+msgid "(e.g. 2086)"
+msgstr "(chitsanzo 2086)"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:38
+msgid "Confirm New Password"
+msgstr "Liwu la chinsisi la tsopano"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:42
+#: temp/temp_ve/profiles/templates/profiles/done.html:59
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:70
+msgid "Save"
+msgstr "Sungani"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:8
+msgid "Thank you for joining!"
+msgstr "Zikomo pokhala mmodzi mwa ife!"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr "Tiuzeni zambiri za inu kuti muthe kuona zina zambiri pa tsambali."
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:18
+#: temp/temp_ve/profiles/templates/profiles/register.html:45
+msgid "SELECT DATE OF BIRTH"
+msgstr "Sankhani tsiku la kubadwa"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "Dzina"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:35
+#: temp/temp_ve/profiles/templates/profiles/register.html:54
+msgid "I IDENTIFY MY GENDER AS:"
+msgstr "mamuna/mkazi:"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:44
+#: temp/temp_ve/profiles/templates/profiles/register.html:63
+msgid "WHERE DO YOU LIVE?"
+msgstr "Mumakhala kuti?"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:53
+#: temp/temp_ve/profiles/templates/profiles/register.html:72
+msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
+msgstr "Mudalekeza pati maphunziro anu?"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:63
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:8
+msgid "Home Page"
+msgstr "Tsamba loyambilira"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:11
+msgid "Update your display name:"
+msgstr "Konzani dzina lomwe lizioneka pa tsambali:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:20
+msgid "Update your date of birth:"
+msgstr "Lembani Tsiku lanu la kubadwa:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:28
+msgid "Update your gender:"
+msgstr "Lembani ngati muli mamuna kapena mkazi:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:37
+msgid "Update where you live:"
+msgstr "Lembani komwe mukukhala:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:46
+msgid "Update your Education Level:"
+msgstr "Lembani za maphunziro anu:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:55
+msgid "Update your mobile number:"
+msgstr "Lembani nambala ya lamya yanu ya mmanja:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:58
+msgid "(e.g. 0914556789)"
+msgstr "(chitsanzo 0914556789)"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:64
+msgid "Update your email address:"
+msgstr "Konzani email adress:"
+
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:67
+#: temp/temp_ve/profiles/templates/profiles/register.html:93
+msgid "(e.g. example@foo.com)"
+msgstr "(chitsanzo mwachitsanzo@foo.com)"
+
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:6
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:36
+msgid "Forgot PIN"
+msgstr "Mwaiwala Liu lachinsisi"
+
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:31
+msgid "Security question"
+msgstr "Funso la chitetezo"
+
+#: temp/temp_ve/profiles/templates/profiles/forgot_password.html:32
+msgid "Please answer the following security question."
+msgstr "Chonde yankhani mafunso awa."
+
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:5
+msgid "Login Success"
+msgstr "Tsopano mwalowa"
+
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:7
+msgid "Welcome Back!"
+msgstr "Takulandiraniso!"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:6
+#: temp/temp_ve/profiles/templates/profiles/register.html:123
+#: temp/temp_ve/profiles/templates/registration/login.html:9
+#: temp/temp_ve/profiles/test_templates/login.html:9
+msgid "Register"
+msgstr "Lembetsani"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "Sankhani dzina loti mugwiritse ntchito."
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:28
+msgid "CHOOSE A 4-DIGIT PIN"
+msgstr "Sankhani nambala ya chinsisi ya ma nambala anayi"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:31
+msgid "e.g. 2086"
+msgstr "chitsanzo 2086"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:36
+msgid "CHOOSE A DISPLAY NAME"
+msgstr "Sankhani dzina loti mugwiritse ntchito"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:81
+msgid "ENTER YOUR MOBILE NUMBER"
+msgstr "Lowetsani nambala yanu ya lamya ya mmanja"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:84
+msgid "(e.g. 0900000013)"
+msgstr "(chitsanzo 0900000013)"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:90
+msgid "ENTER YOUR EMAIL ADDRESS"
+msgstr "Lembani email yanu"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:5
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:32
+msgid "Reset PIN"
+msgstr "Sinthani nambala yanu ya chinsisi"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:5
+msgid "PIN Changed"
+msgstr "Nambala ya chinsisi yasinthidwa"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:7
+msgid "Your PIN has been changed sucessfully."
+msgstr "Nambala yanu yasinthidwa"
+
+#: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:8
+msgid "Continue to Sign In"
+msgstr "Pitilizani kuti mulowe"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:6
+msgid "Hello "
+msgstr "Mulibwanji"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:9
+msgid "As you type your name comment will appear as:"
+msgstr "Mukalemba dzina lanu ndemanga  ibwera motere:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:14
+msgid "Date of Birth: "
+msgstr "Tsiku Lobadwa:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
+msgid "Not set."
+msgstr "Palibe kalikonse"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26
+msgid "Mobile number:"
+msgstr "Nambala ya lamya ya mmanja:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:33
+msgid "Gender:"
+msgstr "mamuna/mkazi:"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:40
+msgid "Location:"
+msgstr "Malo""
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:47
+msgid "Education Level:"
+msgstr "Maphunziro anu"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:54
+msgid "Email Address:"
+msgstr "Email yanu"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:59
+msgid "log out"
+msgstr "Tulukani"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:60
+msgid "Edit My Profile"
+msgstr "Kukonza mbiri yanga"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:61
+msgid "Change My Password"
+msgstr "Sinthani liwu la chinsisi"
+
+#: temp/temp_ve/profiles/views.py:161
+msgid "The old password is incorrect."
+msgstr "Liu lanu lachinsisi lakale ndi lolakwika."
+
+#: temp/temp_ve/profiles/views.py:184
+msgid "Too many attempts. Please try again later."
+msgstr "Mwayesa kwambiri, chonde yesaniso nthawi ina."
+
+#: temp/temp_ve/profiles/views.py:279
+msgid "The two PINs that you entered do not match. Please try again."
+msgstr "Manambala achinsisi awiri amene mwalowetsa sakugwirizana chonde yesaniso"
+
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
+msgid "Submit Survey"
+msgstr "Pelekani kafukufuku wanu"
+
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:12
+msgid "Survey Results"
+msgstr "Zotsatira za kafukufuku"
+
+#: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:14
+msgid ""
+"Your survey has been completed successfully. Please see your submission "
+"results below."
+msgstr "Kafukufuku wanu mwamaliza chonde onani mayankho anu mmusimu"
+
+#: temp/temp_ve/surveys/templates/surveys/surveys_list.html:10
+msgid "Take The Survey"
+msgstr "Tengani mbali pa kafukufuku"
+
+#: temp/temp_ve/usermetadata/templates/persona.html:5
+msgid "Are you a ..."
+msgstr "Ndinu..."
+
+#: temp/temp_ve/usermetadata/templates/persona.html:21
+msgid "Skip"
+msgstr "Dumphani"
+
+#: iogt/settings/base.py:489
+msgid "Enter a valid phone number."
+msgstr "Ikani number ya lamya yolondola."
+
+#: iogt/templates/core/tags/social_media_article.html:7
+msgid "Share on Facebook"
+msgstr "Gawanani ndi anzanu pa Faceboook"
+
+#: iogt/templates/core/tags/social_media_article.html:14
+msgid "Share on Twitter"
+msgstr "Gawanani ndi anzanu pa Twitter"
