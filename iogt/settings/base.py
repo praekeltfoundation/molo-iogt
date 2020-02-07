@@ -469,6 +469,12 @@ EXTRA_LANG_INFO = {
         'name': 'Dari',
         'name_local': 'دری,'
     },
+    'ch': {
+          'bidi': False,
+          'code': 'ch',
+          'name': 'Chichewa',
+          'name_local': 'Chichewa'
+    },
 }
 
 django.conf.locale.LANG_INFO.update(EXTRA_LANG_INFO)
