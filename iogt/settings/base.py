@@ -244,6 +244,7 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('si', 'Sinhalese'),
     ('ps', 'Pashto'),
     ('fa', 'Dari'),
+    ('ch', 'Chichewa'),
 ]
 
 EXTRA_LANG_INFO = {
