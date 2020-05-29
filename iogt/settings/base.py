@@ -245,7 +245,7 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('ps', 'Pashto'),
     ('fa', 'Dari'),
     ('ch', 'Chichewa'),
-    ('sh', 'Shona'),
+    ('sho', 'Shona'),
 ]
 
 EXTRA_LANG_INFO = {
@@ -477,9 +477,9 @@ EXTRA_LANG_INFO = {
           'name': 'Chichewa',
           'name_local': 'Chichewa'
     },
-    'sh': {
+    'sho': {
         'bidi': False,
-        'code': 'sh',
+        'code': 'sho',
         'name': 'Shona',
         'name_local': 'Shona'
     },
