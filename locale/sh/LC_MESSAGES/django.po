@@ -827,7 +827,7 @@ msgid ""
 "Basics app for now. To login or register for a profile, visit our free "
 "mobisite through your mobile browser at"
 msgstr ""
-"Ruregerero, nekusangana nedambudziko mukuwana mvumo yekushandisa chikamu ichi.
+"Ruregerero, nekusangana nedambudziko mukuwana mvumo yekushandisa chikamu ichi. "
 "Nekuda kwekusangana nezvipingaidzo kwenguva pfupi, kupinda nekunyoresa hazvipo padandemutande reFree "
 "Basics panguva ino. Kuti ukwanise kupinda kana kunyoresa nezvako, shanyira dandemutande redu remahara "
 "uchishandisa dandemutande renharembozha yako pa? "
@@ -975,7 +975,8 @@ msgid ""
 "Sorry, but that is an invalid username. Please don't use your %s in your "
 "username."
 msgstr ""
-"Ruregerero, zita iri hariiti, tapota zita rako sezita rekushandisa."
+"Ruregerero, zita iri hariiti, tapota zita %s rako sezita "
+"rekushandisa."
 
 #: temp/temp_ve/profiles/forms.py:225 temp/temp_ve/profiles/forms.py:351
 #, python-format
@@ -983,11 +984,8 @@ msgid ""
 "Sorry, but that is an invalid display name. Please don't use your %s in your "
 "display name."
 msgstr ""
-"Ruregerero, zita iri hariiti, tapota zita rako sezita rekushandisa."
-
-#: temp/temp_ve/profiles/forms.py:388 temp/temp_ve/profiles/forms.py:403
-msgid "This value must contain only numbers."
-msgstr "This value must contain only numbers. "
+"Ruregerero, zita iri hariiti, tapota zita %s rako sezita "
+"rekushandisa."
 
 #: temp/temp_ve/profiles/forms.py:390
 #: temp/temp_ve/profiles/templates/profiles/change_password.html:25
@@ -1200,7 +1198,7 @@ msgstr "murume kana mukadzi:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:40
 msgid "Location:"
-msgstr "Nzvimbo:""
+msgstr "Nzvimbo:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:47
 msgid "Education Level:"
