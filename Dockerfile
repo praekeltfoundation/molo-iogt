@@ -8,4 +8,4 @@ RUN LANGUAGE_CODE=en SECRET_KEY=compilemessages-key django-admin compilemessages
     SECRET_KEY=collectstatic-key django-admin collectstatic --noinput && \
     SECRET_KEY=compress-key django-admin compress
 
-CMD ["iogt.wsgi:application", "--timeout", "1800", "--processes", "4"]
+CMD ["iogt.wsgi:application", "--timeout", "1800"]
