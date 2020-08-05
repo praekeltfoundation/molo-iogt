@@ -25,7 +25,7 @@ msgstr "Kamay"
 
 #: iogt/settings/base.py:460
 msgid "February"
-msgstr "Panchy"
+msgstr "Panchi"
 
 #: iogt/settings/base.py:461
 msgid "March"
@@ -110,8 +110,8 @@ msgstr "IOGT-man yaykunkapaka, mana ushankichu, kunanwika shirmaypi  llakikunata
 msgid ""
 "To login or register for a profile, visit our free mobisite through your "
 "mobile browser at"
-msgstr "Kuti ukwanise kupinda kana kunyoresa nezvako, shanyira dandemutande "
-"redu remahara uchishandisa dandemutande renharembozha yako padandemutande rinoti"
+msgstr "Kuti ukwanise kupinda kana kunyoresa nezvako, shanyira dandemutande redu "
+"remahara uchishandisa dandemutande renharembozha yako padandemutande rinoti"
 
 #: iogt/templates/403_csrf.html:11
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
@@ -376,8 +376,7 @@ msgstr "kallarinkapak, shuk shutita akllay "
 msgid ""
 "This name you will use to log in and won't appear to other users. Only you "
 "will see this."
-msgstr "kay shutika, kallarinkapallami kan, Shukkuna mana rikuyta ushankachu. "
-"Kanllami rikuyta ushankimi."
+msgstr "kay shutika, kallarinkapallami kan, Shukkuna mana rikuyta ushankachu. Kanllami rikuyta ushankimi."
 
 #: iogt/templates/profiles/register.html:29
 msgid "Choose a display name"
@@ -390,8 +389,8 @@ msgstr "rikuchinkapak, shuk shutita akllay"
 msgid ""
 "We value your online security, therefore we hide your username and allow you "
 "to comment and interact with the site with a display name."
-msgstr "kaypi llankaymanta kampak shsutita wakichinchik, chaymanta, kampak "
-"shutita rikushpa, tinkirinata ushankimi."
+msgstr "kaypi llankaymanta kampak shutita wakayachina, chaymanta, kampak shutita "
+"rikushpa, tinkirinata ushankimi."
 
 #: iogt/templates/profiles/register.html:38
 msgid "Select date of birth"
@@ -524,7 +523,8 @@ msgstr "kanpak chaskina shuti ñami churayta ushashkanchik, kunanka ñami yaykuy
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
-msgstr "alli kakta yachankapak, kanpak chaskina shutita, ishkay kutin killkapay,. Allita killkashkakimi."
+msgstr "alli kakta yachankapak, kanpak chaskina shutita, ishkay kutin killkapay,. "
+"Allita killkashkakimi."
 
 #: iogt/templates/registration/password_reset_confirm.html:10
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
@@ -727,7 +727,8 @@ msgstr "kay yuyaytaka ñami willarkanchik"
 msgid ""
 "It will be reviewed by the team and may be removed if it breaks our Platform "
 "rules"
-msgstr "chaytaka, ñukanchipak tantanakuymi allita rikunka, mana alli kakpika, anchuchirinkami."
+msgstr "chaytaka, ñukanchipak tantanakuymi allita rikunka, mana alli kakpika, "
+"anchuchirinkami."
 
 #: temp/temp_ve/commenting/templates/notifications/notice.html:15
 msgid "replied to your comment on: "
@@ -921,6 +922,7 @@ msgstr "kay chanika, killkaykunatalla, yupaykunatalla, uchilla killkaykunatallam
 
 #: temp/temp_ve/profiles/forms.py:94 temp/temp_ve/profiles/forms.py:419
 #: temp/temp_ve/profiles/forms.py:487 temp/temp_ve/profiles/forms.py:504
+#: temp/temp_ve/profiles/forms.py:388 temp/temp_ve/profiles/forms.py:403
 msgid "This value must contain only numbers."
 msgstr "kay chanika, yupaykunatalla charinami kan "
 
@@ -958,7 +960,7 @@ msgstr "rurakpa shuti ñami tiyan "
 msgid ""
 "Sorry, but that is an invalid username. Please don't use your %s in your "
 "username."
-msgstr "Sorry, but that is an invalid username. Please don't use your %s in your "
+msgstr "Sorry, but that is an invalid username. Please don't use your %s name in your "
 "username. "
 
 #: temp/temp_ve/profiles/forms.py:225 temp/temp_ve/profiles/forms.py:351
@@ -966,8 +968,8 @@ msgstr "Sorry, but that is an invalid username. Please don't use your %s in your
 msgid ""
 "Sorry, but that is an invalid display name. Please don't use your %s in your "
 "display name."
-msgstr "Sorry, but that is an invalid username. Please don't use your %s in "
-"your username. "
+msgstr "Sorry, but that is an invalid username. Please don't use your %s name in your "
+"username. "
 
 #: temp/temp_ve/profiles/forms.py:390
 #: temp/temp_ve/profiles/templates/profiles/change_password.html:25
@@ -1226,8 +1228,7 @@ msgstr "tapuykunamanta tikrachishkakuna"
 msgid ""
 "Your survey has been completed successfully. Please see your submission "
 "results below."
-msgstr "Kampak tikrachishkakunaka, allimi. Kampak rurashkamanta, "
-"urapi rikupay"
+msgstr "Kampak tikrachishkakunaka, allimi. Kampak rurashkamanta, urapi rikupay"
 
 #: temp/temp_ve/surveys/templates/surveys/surveys_list.html:10
 msgid "Take The Survey"
