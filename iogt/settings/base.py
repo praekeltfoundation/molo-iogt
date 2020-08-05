@@ -237,7 +237,7 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('my', 'Burmese'),
     ('tg', 'Tajik'),
     ('ay', 'Aymara'),
-    ('qu', 'Quichua'),
+    ('qu', 'Kichwa'),
     ('rn', 'Kirundi'),
     ('pt-mz', 'Portuguese Mozambique'),
     ('lg', 'Ganda'),
@@ -432,7 +432,7 @@ EXTRA_LANG_INFO = {
     'qu': {
         'bidi': False,
         'code': 'qu',
-        'name': 'Quichua',
+        'name': 'Kichwa',
         'name_local': 'Kichwa'
     },
     'rn': {
