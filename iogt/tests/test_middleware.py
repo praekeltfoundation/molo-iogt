@@ -2,6 +2,8 @@ import mock
 import datetime
 import responses
 
+import pytest
+
 from django.test import TestCase, Client, RequestFactory, override_settings
 from django.conf import settings
 from django.contrib.auth.models import User
@@ -224,6 +226,7 @@ class TestFaceBookPixelHistoryCounter(TestCase, MoloTestCaseMixin):
         self.english_section = self.mk_section(
             self.section_index, title='English section')
 
+    @pytest.mark.skip(reason="Set up Facebook pixel tracking (or remove)")
     def test_more_that_3_page_views(self):
         """ test if the no script html tag exists """
         view_count = 5
@@ -238,6 +241,7 @@ class TestFaceBookPixelHistoryCounter(TestCase, MoloTestCaseMixin):
             view_count + 1
         )
 
+    @pytest.mark.skip(reason="Set up Facebook pixel tracking (or remove)")
     def test_less_that_3_page_views(self):
         """ test if the no script html tag exists """
         response = self.client.get(reverse('search'))
