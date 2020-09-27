@@ -10,6 +10,7 @@ celery<4.0
 gunicorn
 psycopg2
 django_compressor==2.2
+django-appconf==1.0.3
 django-mptt==0.8.7
 django-google-analytics-app==4.3.3
 Unidecode==0.04.16
