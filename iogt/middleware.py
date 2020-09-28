@@ -92,8 +92,8 @@ class IogtMoloGoogleAnalyticsMiddleware(MoloGoogleAnalyticsMiddleware):
 
         def calculate_age(dob):
             today = get_today()
-            return (today.year - dob.year -
-                    ((today.month, today.day) < (dob.month, dob.day)))
+            return (today.year - dob.year - (
+                (today.month, today.day) < (dob.month, dob.day)))
 
         # send user unique id and details after cookie's been set
         if hasattr(request, 'user') and hasattr(request.user, 'profile'):

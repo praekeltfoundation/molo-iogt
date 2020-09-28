@@ -472,10 +472,10 @@ EXTRA_LANG_INFO = {
         'name_local': 'دری,'
     },
     'ch': {
-          'bidi': False,
-          'code': 'ch',
-          'name': 'Chichewa',
-          'name_local': 'Chichewa'
+        'bidi': False,
+        'code': 'ch',
+        'name': 'Chichewa',
+        'name_local': 'Chichewa'
     },
     'sho': {
         'bidi': False,

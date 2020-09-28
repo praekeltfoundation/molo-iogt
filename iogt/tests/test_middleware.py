@@ -4,7 +4,6 @@ import responses
 
 import pytest
 
-from django.test import TestCase, Client, RequestFactory, override_settings
 from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
