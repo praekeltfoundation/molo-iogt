@@ -25,7 +25,7 @@ msgstr "Kamay"
 
 #: iogt/settings/base.py:460
 msgid "February"
-msgstr "Panchi"
+msgstr "Panchiy"
 
 #: iogt/settings/base.py:461
 msgid "March"
@@ -103,15 +103,14 @@ msgid ""
 "Sorry, you are having trouble accessing this feature! Due to a temporary "
 "technical issue, login and registrations are not available on the IoGT app "
 "for now."
-msgstr "IOGT-man yaykunkapaka, mana ushankichu, kunanwika shirmaypi  llakikunata "
-"charinchik, ashata pararinkarami."
+msgstr "IOGT-man yaykunkapaka, mana ushankichu, kunanwika shirmaypi  llakikunata charinchik, ashata pararinkarami."
 
 #: iogt/templates/403_csrf.html:10
 msgid ""
 "To login or register for a profile, visit our free mobisite through your "
 "mobile browser at"
-msgstr "Kuti ukwanise kupinda kana kunyoresa nezvako, shanyira dandemutande redu "
-"remahara uchishandisa dandemutande renharembozha yako padandemutande rinoti"
+msgstr "Kuti ukwanise kupinda kana kunyoresa nezvako, shanyira dandemutande "
+"redu remahara uchishandisa dandemutande renharembozha yako padandemutande rinoti"
 
 #: iogt/templates/403_csrf.html:11
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
@@ -352,7 +351,7 @@ msgstr "shitashkamanta, yupaychani!"
 #: iogt/templates/profiles/register.html:9
 #: temp/temp_ve/profiles/templates/profiles/register.html:9
 msgid "Already a member?"
-msgstr "ñami aylluyarishka kanki?"
+msgstr "ñami aylluyarishka kanki"
 
 #: iogt/templates/profiles/register.html:14
 #: iogt/templates/registration/login.html:8
@@ -376,7 +375,8 @@ msgstr "kallarinkapak, shuk shutita akllay "
 msgid ""
 "This name you will use to log in and won't appear to other users. Only you "
 "will see this."
-msgstr "kay shutika, kallarinkapallami kan, Shukkuna mana rikuyta ushankachu. Kanllami rikuyta ushankimi."
+msgstr "kay shutika, kallarinkapallami kan, Shukkuna mana rikuyta ushankachu. "
+"Kanllami rikuyta ushankimi."
 
 #: iogt/templates/profiles/register.html:29
 msgid "Choose a display name"
@@ -399,7 +399,8 @@ msgstr "kampak wacharishka pachata akllapay"
 #: iogt/templates/profiles/register.html:41
 #: temp/temp_ve/profiles/templates/profiles/register.html:48
 msgid "Let us know your birthday to get access to exclusive content."
-msgstr "kanmanlla  shuk willaykunata rikuchinkapak kanpa wachariska pachata churapay"
+msgstr "kanmanlla shuk willaykunata rikuchinkapak kanpa wacharishka "
+"pachata churapay"
 
 #: iogt/templates/profiles/register.html:47
 msgid "I identify my gender as:"
@@ -516,7 +517,8 @@ msgstr "kanpak chaskina shutita kunkarkankichu?"
 
 #: iogt/templates/registration/password_reset_complete.html:5
 msgid "Your password has been set. You may go ahead and log in now."
-msgstr "kanpak chaskina shuti ñami churayta ushashkanchik, kunanka ñami yaykuyta ushankimi"
+msgstr "kanpak chaskina shuti ñami churayta ushashkanchik, kunanka ñami "
+"yaykuyta ushankimi"
 
 #: iogt/templates/registration/password_reset_confirm.html:6
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
@@ -572,8 +574,8 @@ msgstr "kallarik pankaman tikrapay"
 msgid ""
 "Enter your email address below, and we'll email instructions for setting a "
 "new one."
-msgstr "kampak chaskipawachita  yaykuchipay, chay kipa, mushuk riksichinata "
-"rurankapak, kallarishunmi."
+msgstr "kampak chaskipawachita  yaykuchipay, chay kipa, mushuk riksichinata rurankapak, "
+"kallarishunmi."
 
 #: iogt/templates/registration/password_reset_form.html:10
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
@@ -727,8 +729,7 @@ msgstr "kay yuyaytaka ñami willarkanchik"
 msgid ""
 "It will be reviewed by the team and may be removed if it breaks our Platform "
 "rules"
-msgstr "chaytaka, ñukanchipak tantanakuymi allita rikunka, mana alli kakpika, "
-"anchuchirinkami."
+msgstr "chaytaka, ñukanchipak tantanakuymi allita rikunka, mana alli kakpika, anchuchirinkami."
 
 #: temp/temp_ve/commenting/templates/notifications/notice.html:15
 msgid "replied to your comment on: "
@@ -850,11 +851,13 @@ msgstr "kaykunamanta kushikushkami kanchik"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
 msgid "Your username and password does not match. Please try again."
-msgstr "kanpak shuti, chaskina shutipash mana chaskita ushanchikkchu. Yaykunata kutin  rurapay."
+msgstr "kanpak shuti, chaskina shutipash mana chaskita ushanchikkchu. "
+"Yaykunata kutin  rurapay."
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
 msgid "Your password has been set.  You may go ahead and log in now."
-msgstr "kampak chaskina shuti ñami churarishka kan. Kunanta yaykuyta ushanki, kallaripaylla."
+msgstr "kampak chaskina shuti ñami churarishka kan. Kunanta yaykuyta "
+"ushanki, kallaripaylla."
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
 msgid ""
@@ -909,7 +912,8 @@ msgstr "rurakkunami kayta rikunmi"
 #: temp/temp_ve/profiles/admin_views.py:16
 msgid ""
 "Your email address is not configured. Please update it before exporting."
-msgstr "kampak chaski shuti mana alli rurashka kanchu. Manarak shuk latuman yallishpallatak, allichipay"
+msgstr "kampak chaski shuti mana alli rurashka kanchu. Manarak shuk latuman "
+"yallishpallatak, allichipay"
 
 #: temp/temp_ve/profiles/admin_views.py:39
 #, python-brace-format
@@ -918,11 +922,11 @@ msgstr " CSV-ta, chaskipi chayachishkami '{0}'"
 
 #: temp/temp_ve/profiles/forms.py:78 temp/temp_ve/profiles/forms.py:445
 msgid "This value must contain only letters, numbers and underscores."
-msgstr "kay chanika, killkaykunatalla, yupaykunatalla, uchilla killkaykunatallami charin kan"
+msgstr "kay chanika, killkaykunatalla, yupaykunatalla, uchilla killkaykunatallami "
+"charin kan"
 
 #: temp/temp_ve/profiles/forms.py:94 temp/temp_ve/profiles/forms.py:419
 #: temp/temp_ve/profiles/forms.py:487 temp/temp_ve/profiles/forms.py:504
-#: temp/temp_ve/profiles/forms.py:388 temp/temp_ve/profiles/forms.py:403
 msgid "This value must contain only numbers."
 msgstr "kay chanika, yupaykunatalla charinami kan "
 
@@ -960,15 +964,15 @@ msgstr "rurakpa shuti ñami tiyan "
 msgid ""
 "Sorry, but that is an invalid username. Please don't use your %s in your "
 "username."
-msgstr "Sorry, but that is an invalid username. Please don't use your %s name in your "
-"username. "
+msgstr "Sorry, but that is an invalid username. Please don't use your %s in your"
+ "username. "
 
 #: temp/temp_ve/profiles/forms.py:225 temp/temp_ve/profiles/forms.py:351
 #, python-format
 msgid ""
 "Sorry, but that is an invalid display name. Please don't use your %s in your "
 "display name."
-msgstr "Sorry, but that is an invalid username. Please don't use your %s name in your "
+msgstr "Sorry, but that is an invalid username. Please don't use your %s in your "
 "username. "
 
 #: temp/temp_ve/profiles/forms.py:390
