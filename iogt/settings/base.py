@@ -89,6 +89,8 @@ INSTALLED_APPS = [
     'wagtailsurveys',
     'wagtail.contrib.wagtailsitemaps',
 
+    'wagtailschemaorg',
+
     'mptt',
     'raven.contrib.django.raven_compat',
     'djcelery',

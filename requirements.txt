@@ -3,6 +3,7 @@ molo.surveys==6.10.5
 molo.commenting==6.2.9
 molo.polls==6.4.0
 molo.usermetadata==6.0.0
+wagtail-schema.org==0.3.0
 elasticsearch==1.7.0
 django-modelcluster==3.1
 djangorestframework==3.4.0
