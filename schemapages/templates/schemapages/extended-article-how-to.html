@@ -1,0 +1,103 @@
+{% load wagtailcore_tags wagtailimages_tags core_tags wagtailembeds_tags  %}
+
+
+<h3 class="heading heading--large">{{ how_to_data.title_for_how_to }}</h3>
+
+{% image how_to_data.image_when_finished width-320 %}
+
+{% if how_to_data.description %}
+    <h4 class="article__heading">Description</h4>
+    <p>{{ how_to_data.description|handle_markdown }}</p>
+{% endif %}
+
+{% if how_to_data.estimated_cost %}
+    <h4 class="article__heading">Estimated cost</h4>
+    <p>{{ how_to_data.estimated_cost }}</p>
+{% endif %}
+
+{% if how_to_data.materials_required %}
+    <h4 class="article__heading">Materials required</h4>
+    <ul class="unordered-list">
+    {% for item in how_to_data.materials_required %}
+    <li class="unordered-list__item">{{ item|handle_markdown }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+{% if how_to_data.tools_required %}
+    <h4 class="article__heading">Tools required</h4>
+    <ul class="unordered-list">
+    {% for item in how_to_data.tools_required %}
+    <li class="unordered-list__item">{{ item|handle_markdown }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+{% if how_to_data.steps %}
+    <ol class="ordered-list">
+
+    {% for item in how_to_data.steps %}
+    <h4 class="article__heading"><li>{{ item.step_name|handle_markdown }}</li></h4>
+    {% image item.step_image width-290 %}
+        {% for block in item.step_parts %}
+           {% if block.block_type == 'suggestion' %}
+    <p><em>Note:</em> {{ block }}</p>
+           {% else %}
+    <p>{{ block }}</p>
+	   {% endif %}
+        {% endfor %}
+    {% endfor %}
+
+    </ol>
+{% endif %}
+
+{% for block in faq_data.question_and_answer %}
+    {% if block.block_type == 'title_for_faq' %}
+      <h3 class="heading heading--large">{{ block.value }}</h3>
+    {% elif block.block_type == 'image' %}
+      {% image block.value width-320 %}
+    {% elif block.value.youtube_link %}
+    <div class="responsive-object">
+      {% embed block.value.youtube_link %}
+    </div>
+      <button>
+      <a href={{block.value.file.url}} download>Click to Download!</a>
+      </button>
+      <a href={{block.value.youtube_link}}>Click to watch on youtube!</a>
+    {% elif block.value.type == 'video'%}
+      <video width="320" height="240" controls>
+          <source src={{block.value.file.url}} type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    {% elif block.value.type == 'audio'%}
+      <div>
+          <audio controls><source src={{block.value.file.url}}
+            type="audio/mpeg">Click here to download
+            <a href={{block.value.file.url}}>{{block.value.title}}</a>
+          </audio>
+      </div>
+    {% elif block.block_type == 'numbered_list' %}
+      <ol class="ordered-list">
+      {% for item in block.value %}
+        <li class="ordered-list__item">{{ item|handle_markdown }}</li>
+      {% endfor %}
+      </ol>
+    {% elif block.block_type == 'list' %}
+      <ul class="unordered-list">
+      {% for item in block.value %}
+        <li class="unordered-list__item">{{ item|handle_markdown }}</li>
+      {% endfor %}
+    </ul>
+    {% elif block.block_type == 'faq' %}
+      <ul class="unordered-list">
+      {% for item in block.value %}
+        <h4 class="article__heading">{{ item.question }}</h4>
+	<p>{{ item.answer }}</p>
+      {% endfor %}
+      </ul>
+      {% else %}
+      {{ block }}
+    {% endif %}
+
+{% endfor %}
+
