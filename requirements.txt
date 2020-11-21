@@ -3,6 +3,7 @@ molo.surveys==6.10.5
 molo.commenting==6.2.9
 molo.polls==6.4.0
 molo.usermetadata==6.0.0
+wagtail-schema.org==0.3.0
 elasticsearch==1.7.0
 django-modelcluster==3.1
 djangorestframework==3.4.0
@@ -11,6 +12,7 @@ gunicorn
 psycopg2
 django_compressor==2.2
 django-appconf==1.0.3
+django-import-export<2.4.0
 django-mptt==0.8.7
 django-google-analytics-app==4.3.3
 Unidecode==0.04.16
@@ -23,3 +25,4 @@ responses
 python-cas==1.2.0
 markdown>=3.0.1
 redis==2.10.6
+sentry-sdk==0.10.2

@@ -11,7 +11,7 @@ with open(os.path.join(here, 'requirements.txt')) as f:
 
 
 setup(name='iogt',
-      version='0.0.1',
+      version='2.9.0',
       description='iogt',
       long_description=README,
       classifiers=[
