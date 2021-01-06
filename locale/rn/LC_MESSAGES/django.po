@@ -2,29 +2,42 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 10:38+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2018-03-09 13:33+0200\n"
+"PO-Revision-Date: 2017-02-01 07:44+0000\n"
+"Last-Translator: Ntu2ko Trevor <trevor@praekelt.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: rn\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1501775843.017085\n"
+"X-POOTLE-MTIME: 1485935090.268670\n"
 
 #: iogt/settings/base.py:459
 msgid "January"
 msgstr "Nzero"
 
+#: iogt/settings/base.py:460
+msgid "February"
+msgstr "Ruhuhuma"
+
 #: iogt/settings/base.py:461
 msgid "March"
 msgstr "Ntwarante"
+
+#: iogt/settings/base.py:462
+msgid "April"
+msgstr "Ndamukiza"
+
+#: iogt/settings/base.py:463
+msgid "May"
+msgstr "Rusama"
 
 #: iogt/settings/base.py:464
 msgid "June"
@@ -36,7 +49,7 @@ msgstr "Mukakaro"
 
 #: iogt/settings/base.py:466
 msgid "August"
-msgstr "Myandagaro"
+msgstr "Nyandagaro"
 
 #: iogt/settings/base.py:467
 msgid "September"
@@ -56,147 +69,164 @@ msgstr "Kigarama"
 
 #: iogt/settings/base.py:471
 msgid "Add anonymously"
-msgstr "Add anonymously"
+msgstr "Ongerako ikitazwi"
 
 #: iogt/settings/base.py:473
 msgid "This field is required"
-msgstr "This field is required"
+msgstr "Ikikibanza kirasabwa"
 
 #: iogt/settings/base.py:474
 msgid "Ensure this value has at least 4 characters (it has 1)"
-msgstr "Ensure this value has at least 4 characters (it has 1)"
+msgstr "Menya neza ko ahahantu habwirizwa kuba nimiburiburi ibimenyetso 4 (hafise 1)"
+
+#: iogt/settings/base.py:475
+msgid "Type your comment here"
+msgstr "Andika iciyumviro canyu hano"
 
 #: iogt/templates/403.html:8
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:8
 msgid "Access Denied"
-msgstr "Access Denied"
+msgstr "Kwuguruka Biranse"
 
 #: iogt/templates/403.html:9
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403.html:9
 msgid "You do not have permssion to access this site."
-msgstr "You do not have permssion to access this site."
+msgstr "Ntaburenganzira mufise bwo gushika kururu rubuga"
 
 #: iogt/templates/403_csrf.html:7
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:10
 msgid "Unable to Login"
-msgstr "Unable to Login"
+msgstr "Ntibishoboka Kwinjira"
 
 #: iogt/templates/403_csrf.html:9
 msgid ""
 "Sorry, you are having trouble accessing this feature! Due to a temporary "
 "technical issue, login and registrations are not available on the IoGT app "
 "for now."
-msgstr ""
-"Sorry, you are having trouble accessing this feature! Due to a temporary "
-"technical issue, login and registrations are not available on the IoGT app "
-"for now."
+msgstr "Ihangane, hari ikibazo co gushika kuvyakozwe! Kubera ikibazo cubuhinga cakanya gato, "
+"kwinjira no kwiyandikisha kuri porogarame ya IoGT ntibikunda murikano kanya."
+
+#: iogt/templates/403_csrf.html:10
+msgid ""
+"To login or register for a profile, visit our free mobisite through your "
+"mobile browser at"
+msgstr "Kwinjira canke kwiyandikisha kumwidondoro, cakurubuga rwacu rwubuntu "
+"mukoresheje ngendanwa yanyu kuri"
 
 #: iogt/templates/403_csrf.html:11
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
 msgid " We're working hard to get this problem resolved. Thank you."
-msgstr " We're working hard to get this problem resolved. Thank you."
+msgstr "Turiko turakora cane kugirango iki kibazo gitorerwe inyishu. Murakoze."
 
 #: iogt/templates/404.html:8
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:8
 msgid "Page not found"
-msgstr "Page not found"
+msgstr "Urupapuro ntirubonetse"
 
 #: iogt/templates/404.html:9
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/404.html:10
 msgid "Sorry, this page could not be found."
-msgstr "Sorry, this page could not be found."
+msgstr "Ihangane, uru rupapuro ntirushoboye kuboneka."
 
-#: iogt/templates/500.html:12
-#: iogt/templates/500.html:16
+#: iogt/templates/500.html:12 iogt/templates/500.html:16
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:12
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:16
 msgid "Internal server error"
-msgstr "Internal server error"
+msgstr "Ikosa rya seriveri imbere"
 
 #: iogt/templates/500.html:17
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/500.html:18
 msgid "Sorry, there seems to be an error. Please try again soon."
-msgstr "Sorry, there seems to be an error. Please try again soon."
+msgstr "Ihangane, birasa nkaho hari ikosa. Muragerageza hanyuma."
 
 #: iogt/templates/base.html:11
 msgid ""
 "Internet of Good Things (IoGT) is a set of free, mobile-ready web-based "
 "resources and applications that bring good to your life by helping you and "
 "your community access educational and lifesaving information."
-msgstr ""
+msgstr "Internet of Good Things (IoGT) nuruhererekane rwagusa, writeguye kugendanwa "
+"kurubuga rwo kumurongo hamwe nibisabwa bizana ivyiza mubuzima bwanyu bikabafasha hamwe "
+"nababanyi banyu kubona amakuru yindero kandi arokora ubuzima."
 
 #: iogt/templates/base.html:121
 msgid "Language"
-msgstr "Language"
+msgstr "Ururimi"
 
 #: iogt/templates/base.html:126
 msgid "Change Language"
-msgstr "Change Language"
+msgstr "Guhindura Ururimi"
 
 #: iogt/templates/base.html:148
 msgid "IoGT"
 msgstr "IoGT"
 
-#: iogt/templates/base.html:154
-#: iogt/templates/profiles/register.html:6
+#: iogt/templates/base.html:154 iogt/templates/profiles/register.html:6
 #: iogt/templates/profiles/register.html:123
 #: iogt/templates/registration/login.html:9
 msgid "Join"
-msgstr "Join"
+msgstr "Kwifadikanya"
+
+#: iogt/templates/base.html:156 iogt/templates/base.html:219
+#: temp/temp_ve/profiles/templates/profiles/done.html:64
+msgid "Profile"
+msgstr "Umwidondoro"
 
 #: iogt/templates/base.html:158
 msgid "Menu"
-msgstr "Ibirimwo"
+msgstr "Urutonde"
+
+#: iogt/templates/base.html:212 iogt/templates/profiles/register.html:10
+#: temp/temp_ve/profiles/templates/profiles/register.html:10
+msgid "Login"
+msgstr "Kwinjira"
 
 #: iogt/templates/base.html:231
 msgid "Change your language"
-msgstr "Change your language"
+msgstr "Guhindura ururimi rwanyu"
 
 #: iogt/templates/comments/comment.html:8
 #: temp/temp_ve/commenting/templates/comments/comment.html:8
 #: temp/temp_ve/commenting/templates/notifications/notice.html:10
 #: temp/temp_ve/commenting/views.py:48
 msgid "Anonymous"
-msgstr "Anonymous"
+msgstr "Ikitazwi"
 
 #: iogt/templates/comments/comment.html:17
 #: temp/temp_ve/commenting/templates/comments/comment.html:16
 msgid ""
 "This comment has been removed by the community. Please read our platform "
 "rules."
-msgstr ""
-"This comment has been removed by the community. Please read our platform "
-"rules."
+msgstr "Iki ciyumvuro carakuweho. Musabwe gusoma amategeko yurubuga rwacu."
 
 #: iogt/templates/comments/comment.html:22
 #: temp/temp_ve/commenting/templates/comments/comment.html:26
 msgid "Report"
-msgstr "Tubwire"
+msgstr "Icegeranyo"
 
 #: iogt/templates/comments/comment.html:24
 #: temp/temp_ve/commenting/templates/comments/comment.html:39
 msgid "Reply"
-msgstr "Inyishu imwe"
+msgstr "Inyishu"
 
 #: iogt/templates/comments/comment_block.html:6
 msgid "Have something to add to this article?"
-msgstr "Have something to add to this article?"
+msgstr "Mufise ico mwokwongera kuriyingingo?"
 
 #: iogt/templates/comments/comment_block.html:14
 #: temp/temp_ve/commenting/templates/comments/comment_block.html:14
 msgid "Log in to comment"
-msgstr "Log in to comment"
+msgstr "Injira mugushikiriza iciyumviro"
 
 #: iogt/templates/comments/comment_block.html:18
 #: temp/temp_ve/commenting/templates/comments/comment_block.html:18
 msgid "Commenting on this article is currently disabled"
-msgstr "Commenting on this article is currently disabled"
+msgstr "Gushikiriza iciyumviro kuriyingingo ntibirekuwe murikanokanya"
 
 #: iogt/templates/comments/comment_block.html:22
 #: temp/temp_ve/commenting/templates/comments/comment_block.html:23
 #: temp/temp_ve/commenting/templates/comments/comments.html:7
 msgid "Comments"
-msgstr "Ivyifuzo:"
+msgstr "Ivyiyunviro"
 
 #: iogt/templates/comments/comment_block.html:29
 #: iogt/templates/core/article_page.html:24
@@ -208,39 +238,38 @@ msgstr "Ivyifuzo:"
 #: iogt/templates/search/search_results.html:80
 #: temp/temp_ve/commenting/templates/comments/comment_block.html:26
 msgid "comment"
-msgstr "Icashikirijwe"
+msgstr "Iciyunviro"
 
 #: iogt/templates/comments/comment_block.html:44
 #: temp/temp_ve/commenting/templates/comments/comment_block.html:41
 msgid "view more comments"
-msgstr "view more comments"
+msgstr "Raba ivyunviro vyinshi"
 
-#: iogt/templates/comments/form.html:14
-#: temp/temp_ve/commenting/forms.py:18
+#: iogt/templates/comments/form.html:14 temp/temp_ve/commenting/forms.py:18
 msgid "Comment"
-msgstr ""
+msgstr "Iciyunviro"
 
 #: iogt/templates/comments/form.html:15
 msgid "Comment Anonymously"
-msgstr ""
+msgstr "Iciyunviro cuwutazwi"
 
 #: iogt/templates/core/next-article.html:8
 #: iogt/templates/core/section_page.html:85
 msgid "Next"
-msgstr "Next"
+msgstr "Ahakurikira"
 
 #: iogt/templates/core/related-article-list.html:6
 msgid "Related Articles"
-msgstr "Related Articles"
+msgstr "Ingingo bijanye"
 
 #: iogt/templates/core/section_page.html:55
 msgid "Prev"
-msgstr "Prev"
+msgstr "Imbere"
 
 #: iogt/templates/core/section_page.html:133
 #: iogt/templates/core/tags/section_listing_homepage.html:46
 msgid "View more"
-msgstr "Raba ibindi"
+msgstr "Kuraba vyinshi"
 
 #: iogt/templates/core/tags/breadcrumbs.html:5
 #: temp/temp_ve/commenting/templates/comments/preview.html:11
@@ -249,13 +278,13 @@ msgstr "Raba ibindi"
 #: temp/temp_ve/polls/templates/polls/free_text_detail.html:12
 #: temp/temp_ve/polls/templates/polls/results.html:24
 msgid "Home"
-msgstr "Home"
+msgstr "Kwitanguriro"
 
 #: iogt/templates/core/tags/latest_listing_homepage.html:4
 #: temp/temp_ve/commenting/test_templates/article_page.html:63
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:64
 msgid "Recommended"
-msgstr "Recommended"
+msgstr "Ibisabwa"
 
 #: iogt/templates/polls/detail.html:26
 #: iogt/templates/polls/free_text_detail.html:13
@@ -264,7 +293,7 @@ msgstr "Recommended"
 #: temp/temp_ve/polls/templates/polls/free_text_detail.html:11
 #: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:35
 msgid "Vote"
-msgstr "Vote"
+msgstr "Mutore"
 
 #: iogt/templates/polls/detail.html:28
 #: iogt/templates/polls/free_text_detail.html:15
@@ -274,43 +303,55 @@ msgstr "Vote"
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:35
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:9
 msgid "Back to Home page"
-msgstr "Back to Home page"
+msgstr "Gusubira kwitanguriro"
 
 #: iogt/templates/polls/includes/poll_free_text_form.html:16
 #: iogt/templates/surveys/molo_survey_page.html:30
 #: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:13
 msgid "Submit"
-msgstr "Emeza"
+msgstr "Tanga"
 
 #: iogt/templates/polls/includes/poll_free_text_form.html:18
 #: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:15
 msgid "Thank you! Your response has already been submitted."
-msgstr "Thank you! Your response has already been submitted."
+msgstr "Murakoze! Inyishu yanyu yatanzwe."
+
+#: iogt/templates/polls/includes/poll_free_text_form.html:24
+#: iogt/templates/polls/includes/poll_question_form.html:26
+#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:18
+#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:20
+msgid "Log in to vote"
+msgstr "Injira kugira mutore"
 
 #: iogt/templates/polls/includes/poll_question_form.html:47
 #: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:37
 msgid "Show Results"
-msgstr "Show Results"
+msgstr "Kwerekana inyishu"
 
 #: iogt/templates/polls/includes/poll_question_form.html:50
 #: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:40
 msgid "You voted: "
-msgstr "You voted: "
+msgstr "Mwatoye: "
 
 #: iogt/templates/polls/poll_page.html:7
 #: iogt/templates/polls/poll_page_in_section.html:8
 msgid "Polls"
-msgstr "Polls"
+msgstr "Abatora"
+
+#: iogt/templates/polls/results.html:8
+#: temp/temp_ve/polls/templates/polls/results.html:8
+msgid "Your answers:"
+msgstr "Inyishu zanyu:"
 
 #: iogt/templates/polls/results.html:28
 #: temp/temp_ve/polls/templates/polls/results.html:22
 msgid "Thank you for voting!"
-msgstr "Thank you for voting!"
+msgstr "Mwakoze gutora!"
 
 #: iogt/templates/profiles/register.html:9
 #: temp/temp_ve/profiles/templates/profiles/register.html:9
 msgid "Already a member?"
-msgstr "Already a member?"
+msgstr "Musanzwe muri abanywanywi?"
 
 #: iogt/templates/profiles/register.html:14
 #: iogt/templates/registration/login.html:8
@@ -318,33 +359,50 @@ msgstr "Already a member?"
 #: temp/temp_ve/profiles/templates/registration/login.html:8
 #: temp/temp_ve/profiles/test_templates/login.html:8
 msgid "Not a member yet?"
-msgstr "Not a member yet?"
+msgstr "Ntimuraba abanywanywi?"
 
 #: iogt/templates/profiles/register.html:15
 #: temp/temp_ve/profiles/templates/profiles/register.html:15
 msgid "Join us by signing up below."
-msgstr "Join us by signing up below."
+msgstr "Ifadikanye natwe mukwiyandikisha hepfo."
 
 #: iogt/templates/profiles/register.html:21
 msgid "Choose a username"
-msgstr "Choose a username"
+msgstr "Hitamwo izina mukoresha"
+
+#: iogt/templates/profiles/register.html:24
+#: temp/temp_ve/profiles/templates/profiles/register.html:24
+msgid ""
+"This name you will use to log in and won't appear to other users. Only you "
+"will see this."
+msgstr "Irizina muzorikoresha mukwinjira kandi ntirizoboneka kubandi bakoresha. "
+"Mwebwe gusa nimwe muzoribona."
 
 #: iogt/templates/profiles/register.html:29
 msgid "Choose a display name"
-msgstr "Choose a display name"
+msgstr "Hitamwo izina ryerekanwa"
+
+#: iogt/templates/profiles/register.html:32
+#: temp/temp_ve/profiles/templates/profiles/done.html:29
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:14
+#: temp/temp_ve/profiles/templates/profiles/register.html:39
+msgid ""
+"We value your online security, therefore we hide your username and allow you "
+"to comment and interact with the site with a display name."
+msgstr "Duha agaciro umutekano wanyu wo kumurongo, kubwivyo turanyegeza izina ryanyu mukoresha kandi tubemerera gutanga iciyumviro no gukorana nurubuga hamwe nizina ryerekanwa."
 
 #: iogt/templates/profiles/register.html:38
 msgid "Select date of birth"
-msgstr "Select date of birth"
+msgstr "Hitamwo itariki yamavuko"
 
 #: iogt/templates/profiles/register.html:41
 #: temp/temp_ve/profiles/templates/profiles/register.html:48
 msgid "Let us know your birthday to get access to exclusive content."
-msgstr "Let us know your birthday to get access to exclusive content."
+msgstr "Tumenyeshe itariki yamavuko yanyu kugirango tubone ibintu vyihariye."
 
 #: iogt/templates/profiles/register.html:47
 msgid "I identify my gender as:"
-msgstr "I identify my gender as:"
+msgstr "Ndagaragaje igitsina canje nk’:"
 
 #: iogt/templates/profiles/register.html:50
 #: iogt/templates/profiles/register.html:59
@@ -359,43 +417,51 @@ msgstr "I identify my gender as:"
 #: temp/temp_ve/profiles/templates/profiles/register.html:66
 #: temp/temp_ve/profiles/templates/profiles/register.html:75
 msgid "Only you will see this"
-msgstr "Only you will see this"
+msgstr "Mwebwegusa nimwe muzobona ibi."
 
 #: iogt/templates/profiles/register.html:56
 msgid "Where do you live?"
-msgstr "Where do you live?"
+msgstr "Muba hehe?"
 
 #: iogt/templates/profiles/register.html:65
 msgid "What is your highest level of education?"
-msgstr "What is your highest level of education?"
+msgstr "Niyihe mpamyabushobozi yo kurwego rwohejuru mumashure mufise?"
+
+#: iogt/templates/profiles/register.html:74
+msgid "Enter your mobile number"
+msgstr "Andika nimero ya telefone ngendanwa yanyu"
 
 #: iogt/templates/profiles/register.html:77
 msgid "e.g. 0900000013"
-msgstr "e.g. 0900000013"
+msgstr "Akarorero: 0900000013"
 
 #: iogt/templates/profiles/register.html:83
 msgid "Enter your email address"
-msgstr "Enter your email address"
+msgstr "Injiza aderese imeyiri yanyu"
 
 #: iogt/templates/profiles/register.html:86
 msgid "e.g. example@foo.com"
-msgstr "e.g. example@foo.com"
+msgstr "Ak: akarorero@foo.com"
+
+#: iogt/templates/profiles/register.html:103
+msgid "Choose a 4-digit pin"
+msgstr "Hitamwo ibiharuro kabanga 4"
 
 #: iogt/templates/profiles/register.html:106
 msgid "e.g."
-msgstr ""
+msgstr "Ak:"
 
 #: iogt/templates/profiles/register.html:112
 #: temp/temp_ve/profiles/templates/profiles/register.html:112
 msgid "Please accept the T&amp;Cs in order to complete the registration"
-msgstr "Please accept the T&amp;Cs in order to complete the registration"
+msgstr "Musabwe kwemeza amategeko namabwirizwa kugira murangize kwiyandikisha."
 
 #: iogt/templates/profiles/register.html:117
 #: iogt/templates/profiles/register.html:119
 #: temp/temp_ve/profiles/templates/profiles/register.html:117
 #: temp/temp_ve/profiles/templates/profiles/register.html:119
 msgid "I accept the Terms and Conditions"
-msgstr "I accept the Terms and Conditions"
+msgstr "Ndemeye amategeko namabwirizwa."
 
 #: iogt/templates/registration/login.html:5
 #: iogt/templates/registration/login.html:34
@@ -406,33 +472,38 @@ msgstr "I accept the Terms and Conditions"
 #: temp/temp_ve/profiles/test_templates/login.html:5
 #: temp/temp_ve/profiles/test_templates/login.html:34
 msgid "Log in"
-msgstr "Log in"
+msgstr "Injira"
 
 #: iogt/templates/registration/login.html:13
 msgid "Login by signing in below."
-msgstr "Login by signing in below."
+msgstr "Injira winjiriye hepfo"
+
+#: iogt/templates/registration/login.html:20
+#: temp/temp_ve/profiles/templates/registration/login.html:20
+#: temp/temp_ve/profiles/test_templates/login.html:20
+msgid "Your username and password do not match. Please try again."
+msgstr "Izina mukoresha nijambo kabanga ntibihuye. Subira mugerageze."
 
 #: iogt/templates/registration/login.html:25
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:17
-#: temp/temp_ve/profiles/forms.py:76
-#: temp/temp_ve/profiles/forms.py:443
+#: temp/temp_ve/profiles/forms.py:76 temp/temp_ve/profiles/forms.py:443
 #: temp/temp_ve/profiles/templates/registration/login.html:25
 #: temp/temp_ve/profiles/test_templates/login.html:25
 msgid "Username"
-msgstr "Username"
+msgstr "Izina mukorersha"
 
 #: iogt/templates/registration/login.html:30
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:19
 #: temp/temp_ve/profiles/templates/registration/login.html:30
 #: temp/temp_ve/profiles/test_templates/login.html:30
 msgid "4-digit pin"
-msgstr "4-digit pin"
+msgstr "Ibiharuro kabanga 4"
 
 #: iogt/templates/registration/login.html:32
 #: temp/temp_ve/profiles/templates/registration/login.html:32
 #: temp/temp_ve/profiles/test_templates/login.html:32
 msgid "Eg.: 2086"
-msgstr "Eg.: 2086"
+msgstr "Ak: 2086"
 
 #: iogt/templates/registration/login.html:37
 #: iogt/templates/registration/password_reset_form.html:4
@@ -440,61 +511,88 @@ msgstr "Eg.: 2086"
 #: temp/temp_ve/profiles/templates/registration/login.html:37
 #: temp/temp_ve/profiles/test_templates/login.html:37
 msgid "Forgotten your password?"
-msgstr "Forgotten your password?"
+msgstr "Mwibagiye ijambo kabanga ryanyu?"
 
 #: iogt/templates/registration/password_reset_complete.html:5
 msgid "Your password has been set. You may go ahead and log in now."
-msgstr "Your password has been set. You may go ahead and log in now."
+msgstr "Ijambo kabanga ryanyu ryashizweho. Murashobora gukomeza imbere mukinjira."
+
+#: iogt/templates/registration/password_reset_confirm.html:6
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr "Musabwe kwinjiza ijambo kabanga ryanyu rishasha incuro zibiri kugira duhinyuze "
+"ko mwaryanditsemwo neza."
+
+#: iogt/templates/registration/password_reset_confirm.html:10
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
+msgid "New password:"
+msgstr "Ijambo kabanga rishasha:"
 
 #: iogt/templates/registration/password_reset_confirm.html:15
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:16
 msgid "Confirm password:"
-msgstr "Confirm password:"
+msgstr "Emeza ijambo kabanga:"
 
 #: iogt/templates/registration/password_reset_confirm.html:19
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:17
 msgid "Change my password"
-msgstr "Change my password"
+msgstr "Guhindura ijambo kabanga ryanje"
+
+#: iogt/templates/registration/password_reset_confirm.html:22
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr "Ihuza ryogusubiramwo ijambo kabanga ntiryemewe, birashobokako ryamaze gukoreshwa. "
+"Musabwe gusaba irindihuza ryo gushiramwo ijambo kabanga rishasha."
 
 #: iogt/templates/registration/password_reset_done.html:5
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:7
 msgid ""
 "We've emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
-msgstr ""
-"We've emailed you instructions for setting your password, if an account "
-"exists with the email you entered. You should receive them shortly."
+msgstr "Twabarungikiye imeyiri irimwo amabwirizwa yo gushiramwo ijambo kabanga. "
+"Niba konte ibaho hamwe na imeyiri mwinjije, muraza kuvyakira bidatevye."
 
 #: iogt/templates/registration/password_reset_done.html:6
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_done.html:9
 msgid ""
 "If you don't receive an email, please make sure you've entered the address "
 "you registered with, and check your spam folder."
-msgstr ""
-"If you don't receive an email, please make sure you've entered the address "
-"you registered with, and check your spam folder."
+msgstr "sNiba mutaronse imeyiri, banza mumenyeneza ko mwinjije aderese mwiyandikishirijeko, "
+"kandi murabe no mububiko bwa spam."
 
 #: iogt/templates/registration/password_reset_done.html:8
 msgid "Back to home page"
-msgstr "Back to home page"
+msgstr "Gusubira kwitanguriro"
 
 #: iogt/templates/registration/password_reset_form.html:6
 msgid ""
 "Enter your email address below, and we'll email instructions for setting a "
 "new one."
-msgstr ""
-"Enter your email address below, and we'll email instructions for setting a "
-"new one."
+msgstr "Injiza aderese yanyu ya imeyiri hepfo, hanyuma turaza kubaha amabwirizwa yo gushiramwo iyindi nshansha."
+
+#: iogt/templates/registration/password_reset_form.html:10
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
+msgid "Email address:"
+msgstr "Aderese ya imeyiri:"
 
 #: iogt/templates/registration/password_reset_form.html:14
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:12
 msgid "Reset my password"
-msgstr "Reset my password"
+msgstr "Gusubiramwo ijambo kabanga ryanje"
+
+#: iogt/templates/search/search_block.html:5
+#: iogt/templates/search/search_results.html:7
+#: iogt/templates/search/search_results.html:102
+msgid "Search the site..."
+msgstr "Kurondera urubuga..."
 
 #: iogt/templates/search/search_block.html:6
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:7
 msgid "SEARCH"
-msgstr "Rondera"
+msgstr "KURONDERA "
 
 #: iogt/templates/search/search_results.html:3
 #: iogt/templates/search/search_results.html:8
@@ -502,75 +600,83 @@ msgstr "Rondera"
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:52
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:57
 msgid "Search"
-msgstr "Rondera"
+msgstr "Kurondera"
+
+#: iogt/templates/search/search_results.html:10
+#: iogt/templates/search/search_results.html:105
+msgid "Search Results for:"
+msgstr "Kurondera inyishu:"
 
 #: iogt/templates/search/search_results.html:108
 msgid "No search results were found for "
-msgstr "No search results were found for "
+msgstr "Ntanyishu zivyo mwarondeye zabonetse"
 
 #: iogt/templates/search/search_results.html:110
 msgid "Back to homepage"
-msgstr "Back to homepage"
+msgstr "Gusubira Kwitanguriro"
 
 #: iogt/templates/surveys/molo_survey_page.html:30
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Next Question"
-msgstr "Next Question"
+msgstr "Ikibazo Gikurikira"
 
 #: iogt/templates/surveys/molo_survey_page.html:37
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:32
 msgid "You have already completed this survey."
-msgstr "You have already completed this survey."
+msgstr "Mwamaze kurangiza ubu bushakashatsi."
 
 #: iogt/templates/surveys/molo_survey_page.html:45
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:40
 msgid "Please log in to take this survey"
-msgstr "Please log in to take this survey"
+msgstr "Musabwe kwinjira kugirango mukore ubu bushakashatsi"
 
 #: iogt/templates/surveys/surveys_list.html:10
 msgid "Start here"
-msgstr "Start here"
+msgstr "Tangurira hano."
 
 #: temp/temp_ve/commenting/admin_views.py:61
 #: temp/temp_ve/commenting/views.py:111
 msgid "Reply successfully created."
-msgstr "Reply successfully created."
+msgstr "Inyishu yatanzwe neza."
 
-#: temp/temp_ve/commenting/forms.py:13
-#: temp/temp_ve/commenting/forms.py:68
+#: temp/temp_ve/commenting/forms.py:13 temp/temp_ve/commenting/forms.py:68
 msgid "Email address"
-msgstr "Email address"
+msgstr "Aderese ya imeyiri:"
 
 #: temp/temp_ve/commenting/forms.py:19
 msgid "Type your comment here..."
-msgstr ""
+msgstr "Andika iciyumviro canyu hano"
 
 #: temp/temp_ve/commenting/forms.py:70
 msgid "URL"
 msgstr "URL"
 
+#: temp/temp_ve/commenting/forms.py:72
+msgid "Name"
+msgstr "Izina"
+
 #: temp/temp_ve/commenting/templates/comments/comment.html:23
 msgid "Ago"
-msgstr ""
+msgstr "Kera"
 
 #: temp/temp_ve/commenting/templates/comments/comment.html:31
 #: temp/temp_ve/commenting/templates/comments/comment.html:34
 #: temp/temp_ve/commenting/templates/comments/comment.html:41
 msgid "Replies"
-msgstr ""
+msgstr "Inyishu"
 
 #: temp/temp_ve/commenting/templates/comments/comment_block.html:6
 msgid "Share a Comment"
-msgstr "Share a Comment"
+msgstr "Gusangiza iciyumviro"
 
 #: temp/temp_ve/commenting/templates/comments/comment_done.html:7
 #: temp/temp_ve/commenting/templates/comments/report_response.html:6
 msgid "Thanks!"
-msgstr "murakoze"
+msgstr "Murakoze!"
 
 #: temp/temp_ve/commenting/templates/comments/comment_done.html:9
 msgid "Your comment has been successfully posted"
-msgstr "Your comment has been successfully posted"
+msgstr "Iciyumviro canyu cashizwe ahagaragara"
 
 #: temp/temp_ve/commenting/templates/comments/comment_done.html:11
 #: temp/temp_ve/commenting/templates/comments/comments.html:28
@@ -578,70 +684,92 @@ msgstr "Your comment has been successfully posted"
 #: temp/temp_ve/commenting/templates/comments/reply.html:8
 #: temp/temp_ve/commenting/templates/comments/report_response.html:10
 msgid "Back to article"
-msgstr "Back to article"
+msgstr "Gusubira kungingo"
 
 #: temp/temp_ve/commenting/templates/comments/preview.html:37
 #: temp/temp_ve/commenting/templates/comments/reply.html:41
 msgid "Please "
-msgstr "Please "
+msgstr "Musabwe "
+
+#: temp/temp_ve/commenting/templates/comments/preview.html:39
+#: temp/temp_ve/commenting/templates/comments/reply.html:43
+msgid "log in"
+msgstr "Kwinjira"
 
 #: temp/temp_ve/commenting/templates/comments/preview.html:40
 #: temp/temp_ve/commenting/templates/comments/reply.html:44
 msgid " to leave a comment."
-msgstr " to leave a comment."
+msgstr "Siga iciyumviro"
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:15
 msgid "Recent replies"
-msgstr ""
+msgstr "Inyishu ziherutse"
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:17
 msgid "Earlier replies"
-msgstr ""
+msgstr "Inyishu zambere"
+
+#: temp/temp_ve/commenting/templates/comments/reply.html:29
+msgid "Page"
+msgstr "Urupapuro"
 
 #: temp/temp_ve/commenting/templates/comments/reply.html:29
 msgid "of"
-msgstr ""
+msgstr "vya"
 
 #: temp/temp_ve/commenting/templates/comments/report_response.html:7
 msgid "This comment has been reported."
-msgstr "This comment has been reported."
+msgstr "Iki ciyumviro catangajwe."
 
 #: temp/temp_ve/commenting/templates/comments/report_response.html:8
 msgid ""
 "It will be reviewed by the team and may be removed if it breaks our Platform "
 "rules"
-msgstr ""
-"It will be reviewed by the team and may be removed if it breaks our Platform "
-"rules"
+msgstr "Kiraza gusubirwamwo numurwi kandi kirashobora gukurwaho niba kinyuranye namategeko "
+"yurubuga rwacu"
 
 #: temp/temp_ve/commenting/templates/notifications/notice.html:15
 msgid "replied to your comment on: "
-msgstr ""
+msgstr "Ishura kuciyumviro cawe kuri:"
 
 #: temp/temp_ve/commenting/templates/notifications/notice.html:18
 msgid "ago"
-msgstr ""
+msgstr "Kera"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
 #: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
 msgid "You have"
-msgstr ""
+msgstr "Mufise"
+
+#: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
+#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
+msgid "unread replies"
+msgstr "Inyishu zitarasomwa"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:19
 msgid "Read replies:"
-msgstr ""
+msgstr "Gusoma inyishu:"
 
 #: temp/temp_ve/commenting/templates/notifications/reply_list.html:27
 msgid "Back home"
-msgstr ""
+msgstr "Gusubira kwitanguriro"
 
 #: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:6
 msgid "Notification:"
-msgstr ""
+msgstr "Kumenyesha"
+
+#: temp/temp_ve/commenting/test_templates/article_page.html:48
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
+msgid "Next up in"
+msgstr "Ibikurikira"
 
 #: temp/temp_ve/commenting/views.py:31
 msgid "Reporting comment replies is not allowed."
-msgstr "Reporting comment replies is not allowed."
+msgstr "Gutanga iciyunviro kunyishu ntivyemewe."
+
+#: temp/temp_ve/commenting/views.py:34
+msgid "The comment has been reported."
+msgstr "Iciyumviro catanzwe."
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:203
 msgid "Zulu"
@@ -651,9 +779,17 @@ msgstr "Zulu"
 msgid "Xhosa"
 msgstr "Xhosa"
 
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
+msgid "Sotho"
+msgstr "Sotho"
+
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:206
 msgid "Venda"
 msgstr "Venda"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
+msgid "Tswana"
+msgstr "Tswana"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:208
 msgid "Tsonga"
@@ -669,7 +805,7 @@ msgstr "Ndebele"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:13
 msgid "Hi"
-msgstr "Hi"
+msgstr "Bite"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/403_csrf.html:14
 msgid ""
@@ -677,644 +813,443 @@ msgid ""
 "technical issue, login and registrations are not available on the Free "
 "Basics app for now. To login or register for a profile, visit our free "
 "mobisite through your mobile browser at"
-msgstr ""
-"Sorry, you are having trouble accessing this feature! Due to a temporary "
-"technical issue, login and registrations are not available on the Free "
-"Basics app for now. To login or register for a profile, visit our free "
-"mobisite through your mobile browser at"
+msgstr "SIhangane, hari ikibazo co kugera kuribi bikorwa! Muri kanokanya, bivanye "
+"nikibazo cubuhinga cakanya gato, kwinjira nokwiyandikisha ntibishoboka kuri porogarame yacu. "
+"Kwinjira canke kwiyandikisha kumwidondoro, cakurubuga rwacu rwubuntu mukoresheje ngendanwa yanyu kuri"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/base.html:113
 #: temp/temp_ve/core/test_templates/base.html:128
 #: temp/temp_ve/polls/test_templates/base.html:112
 #: temp/temp_ve/surveys/test_templates/base.html:112
 msgid "Site Language:"
-msgstr "Site Language:"
+msgstr "Ururimi rw’Urubuga:"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/latest_listing_homepage.html:6
 msgid "Latest"
-msgstr "ivyakera"
+msgstr "Ibigezweho"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/tags/topic_of_the_day.html:6
 msgid "Topic of the Day"
-msgstr "Topic of the Day"
+msgstr "Ingingo y’Umunsi"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:6
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:21
 msgid "Sign in"
-msgstr "Sign in"
+msgstr "Kwinjira"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:11
 msgid "LOGIN TO YOUR ACCOUNT!"
-msgstr "LOGIN TO YOUR ACCOUNT!"
+msgstr "INJIRA KURI KONTE YANYU!"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:12
 msgid "We’re excited to have you..."
-msgstr "We’re excited to have you..."
+msgstr "Turahimbawe kubafita…"
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/login.html:15
 msgid "Your username and password does not match. Please try again."
-msgstr "Your username and password does not match. Please try again."
+msgstr "Izina mukoresha n’ijambo kabanga ntibihuye. Muragerageza hanyuma."
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_complete.html:7
 msgid "Your password has been set.  You may go ahead and log in now."
-msgstr "Your password has been set.  You may go ahead and log in now."
+msgstr "Ijambo kabanga ryanyu ryashizweho. Ubu murashobora gukomeza mukinjira."
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:21
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
-msgstr ""
-"The password reset link was invalid, possibly because it has already been "
-"used.  Please request a new password reset."
+msgstr "Ihuriro ryo gusubiramwo ijambo kabanga ntiryemewe, birashobokako rimaze "
+"gukoreshwa. Musabwe gusaba ihuriro rishasha."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr "Mwibagiye ijambo kabanga ryanyu? Injiza imeyiri yanyu hepfo, hanyuma "
+"turabarungikira amabwirizwa yogushiramwo irindi rishasha."
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
+msgid "Looking for something?"
+msgstr "Harikintu murondera?"
+
+#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
+msgid "No search results for "
+msgstr "Ntanyishu kuvyo mwarondeye "
 
 #: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:56
 msgid "I am looking for"
-msgstr "I am looking for"
+msgstr "Ndikondarondera"
 
 #: temp/temp_ve/core/views.py:96
 msgid "That page is not translatable."
-msgstr "That page is not translatable."
+msgstr "cUrwo rupapuro ntirusobanurwa"
 
 #: temp/temp_ve/polls/forms.py:20
 msgid "You didn't select a choice"
-msgstr "You didn't select a choice"
+msgstr "Ntimwahisemwo"
+
+#: temp/temp_ve/polls/templates/polls/poll_page.html:7
+msgid "What's your opinion?"
+msgstr "Mwiyumvira iki?"
 
 #: temp/temp_ve/profiles/admin.py:73
 msgid "Type"
-msgstr "Ubwoko:"
+msgstr "Andika"
+
+#: temp/temp_ve/profiles/admin.py:78
+msgid "Frontend Users"
+msgstr "Abakoresha Bimbere"
 
 #: temp/temp_ve/profiles/admin.py:79
 msgid "Admin Users"
-msgstr "Admin Users"
+msgstr "Abakoresha"
 
 #: temp/temp_ve/profiles/admin_views.py:16
 msgid ""
 "Your email address is not configured. Please update it before exporting."
-msgstr ""
-"Your email address is not configured. Please update it before exporting."
+msgstr "Imeyiri yanyu ntiyashizweho. Musabwe kuyisubiramwo imbere yo gusohora."
 
-#: temp/temp_ve/profiles/forms.py:78
-#: temp/temp_ve/profiles/forms.py:445
+#: temp/temp_ve/profiles/admin_views.py:39
+#, python-brace-format
+msgid "CSV emailed to '{0}'"
+msgstr "CSV imeri kuri '{0}'"
+
+#: temp/temp_ve/profiles/forms.py:78 temp/temp_ve/profiles/forms.py:445
 msgid "This value must contain only letters, numbers and underscores."
-msgstr "This value must contain only letters, numbers and underscores."
+msgstr "Hano habwirizwa kwuzurishwa nindome, ibiharuro hamwe nuturongo vyonyene"
 
-#: temp/temp_ve/profiles/forms.py:96
-#: temp/temp_ve/profiles/forms.py:489
+#: temp/temp_ve/profiles/forms.py:94 temp/temp_ve/profiles/forms.py:419
+#: temp/temp_ve/profiles/forms.py:487 temp/temp_ve/profiles/forms.py:504
+msgid "This value must contain only numbers."
+msgstr "kay chanika, yupaykunatalla charinami kan "
+
+#: temp/temp_ve/profiles/forms.py:96 temp/temp_ve/profiles/forms.py:489
 #: temp/temp_ve/profiles/templates/profiles/reset_password.html:23
 msgid "PIN"
-msgstr "PIN"
+msgstr "IGIHARURO KABANGA"
 
-#: temp/temp_ve/profiles/forms.py:102
-#: temp/temp_ve/profiles/forms.py:241
+#: temp/temp_ve/profiles/forms.py:102 temp/temp_ve/profiles/forms.py:241
 #: temp/temp_ve/profiles/forms.py:286
 msgid "Display Name"
-msgstr "Display Name"
+msgstr "Izina ryerekanwa"
 
-#: temp/temp_ve/profiles/forms.py:116
-#: temp/temp_ve/profiles/forms.py:249
+#: temp/temp_ve/profiles/forms.py:112 temp/temp_ve/profiles/forms.py:245
+#: temp/temp_ve/profiles/forms.py:296
+msgid "Gender"
+msgstr "Igitsina"
+
+#: temp/temp_ve/profiles/forms.py:116 temp/temp_ve/profiles/forms.py:249
 #: temp/temp_ve/profiles/forms.py:300
 msgid "Location"
-msgstr "Ahantu"
+msgstr "Aho muhagaze"
+
+#: temp/temp_ve/profiles/forms.py:120 temp/temp_ve/profiles/forms.py:253
+#: temp/temp_ve/profiles/forms.py:304
+msgid "Education Level"
+msgstr "Urwego rwamashure"
 
 #: temp/temp_ve/profiles/forms.py:188
 msgid "Username already exists."
-msgstr "Username already exists."
+msgstr "Izina mukoresheje risanzweho"
 
 #: temp/temp_ve/profiles/forms.py:193
+#, python-format
 msgid ""
 "Sorry, but that is an invalid username. Please don't use your %s in your "
 "username."
-msgstr ""
-"Sorry, but that is an invalid username. Please don't use your %s in your "
-"username."
+msgstr "Ihangane, iryozina mukoresheje ntiryemewe. Musabwe kudakoresha izina %s ryanyu"
+ "mukibanza cizina musanzwe mukoresha."
 
-#: temp/temp_ve/profiles/forms.py:225
-#: temp/temp_ve/profiles/forms.py:351
+#: temp/temp_ve/profiles/forms.py:225 temp/temp_ve/profiles/forms.py:351
+#, python-format
 msgid ""
 "Sorry, but that is an invalid display name. Please don't use your %s in your "
 "display name."
-msgstr ""
-"Sorry, but that is an invalid display name. Please don't use your %s in your "
-"display name."
+msgstr "Ihangane, iryozina mukoresheje ntiryemewe. Musabwe kudakoresha izina %s ryanyu "
+"mukibanza cizina musanzwe mukoresha."
+
+#: temp/temp_ve/profiles/forms.py:388 temp/temp_ve/profiles/forms.py:403
+msgid "This value has to contain only numbers."
+msgstr "Hano habwirizwa kwuzurishwa nibiharuro vyonyene #."
 
 #: temp/temp_ve/profiles/forms.py:390
 #: temp/temp_ve/profiles/templates/profiles/change_password.html:25
 msgid "Old Password"
-msgstr "Old Password"
+msgstr "Ijambo Kabanga Ryakera"
 
 #: temp/temp_ve/profiles/forms.py:405
 #: temp/temp_ve/profiles/templates/profiles/change_password.html:32
 msgid "New Password"
-msgstr "New Password"
+msgstr "Ijambo Kabanga Rishasha"
 
 #: temp/temp_ve/profiles/forms.py:421
 msgid "Confirm Password"
-msgstr "Confirm Password"
+msgstr "Emeza Ijambo Kabanga"
+
+#: temp/temp_ve/profiles/forms.py:431
+msgid "New passwords do not match."
+msgstr "Amajambo kabanga mashasha ntasa."
 
 #: temp/temp_ve/profiles/forms.py:506
 #: temp/temp_ve/profiles/templates/profiles/reset_password.html:29
 msgid "Confirm PIN"
-msgstr "Confirm PIN"
+msgstr "Emeza Igiharuro Kabanga"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:27
+#: temp/temp_ve/profiles/templates/profiles/reset_password.html:25
+msgid "(e.g. 2086)"
+msgstr "(ak: 2086)"
 
 #: temp/temp_ve/profiles/templates/profiles/change_password.html:38
 msgid "Confirm New Password"
-msgstr "Confirm New Password"
+msgstr "Emeza Ijambo Kabanga Rishasha"
+
+#: temp/temp_ve/profiles/templates/profiles/change_password.html:42
+#: temp/temp_ve/profiles/templates/profiles/done.html:59
+#: temp/temp_ve/profiles/templates/profiles/editprofile.html:70
+msgid "Save"
+msgstr "Emezabwanyuma"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:8
+msgid "Thank you for joining!"
+msgstr "Mwakoze kwifadikanya!"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:13
+msgid "Let us know more about yourself to get access to exclusive content."
+msgstr "Reka tumenye vyinshi kuri mwebwe kugirango mubone ibintu vyihariye."
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:18
+#: temp/temp_ve/profiles/templates/profiles/register.html:45
+msgid "SELECT DATE OF BIRTH"
+msgstr "HITAMWO ITARIKI YAMAVUKO"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:26
+msgid "DISPLAY NAME"
+msgstr "IZINA RYEREKANWA"
 
 #: temp/temp_ve/profiles/templates/profiles/done.html:35
 #: temp/temp_ve/profiles/templates/profiles/register.html:54
 msgid "I IDENTIFY MY GENDER AS:"
-msgstr "I IDENTIFY MY GENDER AS:"
+msgstr "NDAGARAGAJE IGITSINA CANJE NK’"
+
+#: temp/temp_ve/profiles/templates/profiles/done.html:44
+#: temp/temp_ve/profiles/templates/profiles/register.html:63
+msgid "WHERE DO YOU LIVE?"
+msgstr "MUBA HEHE?"
 
 #: temp/temp_ve/profiles/templates/profiles/done.html:53
 #: temp/temp_ve/profiles/templates/profiles/register.html:72
 msgid "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
-msgstr "WHAT IS YOUR HIGHEST LEVEL OF EDUCATION?"
+msgstr "NIYIHE MPAMYABUSHOBOZI YO KURWERWO RWOHEJURU MUMASHURE MUFISE?"
 
 #: temp/temp_ve/profiles/templates/profiles/done.html:63
 #: temp/temp_ve/profiles/templates/profiles/login_success.html:8
 msgid "Home Page"
-msgstr "Home Page"
+msgstr "Urupapuro Rwitanguriro"
 
 #: temp/temp_ve/profiles/templates/profiles/editprofile.html:11
 msgid "Update your display name:"
-msgstr "Update your display name:"
+msgstr "Vuga izina ryanyu"
 
 #: temp/temp_ve/profiles/templates/profiles/editprofile.html:20
 msgid "Update your date of birth:"
-msgstr "Update your date of birth:"
+msgstr "Vuga itariki yamavuko:"
 
 #: temp/temp_ve/profiles/templates/profiles/editprofile.html:28
 msgid "Update your gender:"
-msgstr "Update your gender:"
+msgstr "Vuga igitsina canyu."
 
 #: temp/temp_ve/profiles/templates/profiles/editprofile.html:37
 msgid "Update where you live:"
-msgstr "Update where you live:"
+msgstr "Vuga aho muba."
 
 #: temp/temp_ve/profiles/templates/profiles/editprofile.html:46
 msgid "Update your Education Level:"
-msgstr "Update your Education Level:"
+msgstr "Vuga impamyabushobozi yamashure yanyu."
 
 #: temp/temp_ve/profiles/templates/profiles/editprofile.html:55
 msgid "Update your mobile number:"
-msgstr "Update your mobile number:"
+msgstr "Vuga inomero ya telefone ngendanwa yanyu."
 
 #: temp/temp_ve/profiles/templates/profiles/editprofile.html:58
 msgid "(e.g. 0914556789)"
-msgstr "(e.g. 0914556789)"
+msgstr "(ak: 0914556789)"
 
 #: temp/temp_ve/profiles/templates/profiles/editprofile.html:64
 msgid "Update your email address:"
-msgstr "Update your email address:"
+msgstr "Vuga aderese ya imeyiri yanyu."
 
 #: temp/temp_ve/profiles/templates/profiles/editprofile.html:67
 #: temp/temp_ve/profiles/templates/profiles/register.html:93
 msgid "(e.g. example@foo.com)"
-msgstr "(e.g. example@foo.com)"
+msgstr "(ak: akarorero@foo.com)"
 
 #: temp/temp_ve/profiles/templates/profiles/forgot_password.html:6
 #: temp/temp_ve/profiles/templates/profiles/forgot_password.html:36
 msgid "Forgot PIN"
-msgstr "Forgot PIN"
+msgstr "Mwibagiye Igiharuro Kabanga"
 
 #: temp/temp_ve/profiles/templates/profiles/forgot_password.html:31
 msgid "Security question"
-msgstr "Security question"
+msgstr "Ikibazo cumutekano"
 
 #: temp/temp_ve/profiles/templates/profiles/forgot_password.html:32
 msgid "Please answer the following security question."
-msgstr "Please answer the following security question."
+msgstr "Musabwe kwishura ikibazo cumutekano."
+
+#: temp/temp_ve/profiles/templates/profiles/login_success.html:5
+msgid "Login Success"
+msgstr "Kwinjira Birakunze"
 
 #: temp/temp_ve/profiles/templates/profiles/login_success.html:7
 msgid "Welcome Back!"
-msgstr ""
+msgstr "Murakagaruka!"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:6
 #: temp/temp_ve/profiles/templates/profiles/register.html:123
 #: temp/temp_ve/profiles/templates/registration/login.html:9
 #: temp/temp_ve/profiles/test_templates/login.html:9
 msgid "Register"
-msgstr "Register"
+msgstr "Iyandikishe"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:21
+msgid "CHOOSE A USERNAME"
+msgstr "HITAMWO IZINA MUKORESHA"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:28
 msgid "CHOOSE A 4-DIGIT PIN"
-msgstr "CHOOSE A 4-DIGIT PIN"
+msgstr "Hitamwo Ibiharuro Kabanga 4"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:31
 msgid "e.g. 2086"
-msgstr "e.g. 2086"
+msgstr "Ak: 2086"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:36
 msgid "CHOOSE A DISPLAY NAME"
-msgstr "CHOOSE A DISPLAY NAME"
+msgstr "Hitamwo izina ryerekanwa"
+
+#: temp/temp_ve/profiles/templates/profiles/register.html:81
+msgid "ENTER YOUR MOBILE NUMBER"
+msgstr "Injiza inimero ya telefone ngendanwa yanyu"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:84
 msgid "(e.g. 0900000013)"
-msgstr "(e.g. 0900000013)"
+msgstr "(ak: 0914556789)"
 
 #: temp/temp_ve/profiles/templates/profiles/register.html:90
 msgid "ENTER YOUR EMAIL ADDRESS"
-msgstr "ENTER YOUR EMAIL ADDRESS"
+msgstr "Injiza aderese imeyiri yanyu"
 
 #: temp/temp_ve/profiles/templates/profiles/reset_password.html:5
 #: temp/temp_ve/profiles/templates/profiles/reset_password.html:32
 msgid "Reset PIN"
-msgstr "Reset PIN"
+msgstr "Gusubiramwo Igiharuro Kabanga"
 
 #: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:5
 msgid "PIN Changed"
-msgstr "PIN Changed"
+msgstr "Igiharuro Kabanga cahinduwe"
 
 #: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:7
 msgid "Your PIN has been changed sucessfully."
-msgstr "Your PIN has been changed sucessfully."
+msgstr "Igiharuro Kabanga canyu cahinduwe neza."
 
 #: temp/temp_ve/profiles/templates/profiles/reset_password_success.html:8
 msgid "Continue to Sign In"
-msgstr "Continue to Sign In"
+msgstr "Komeza kugira mwinjire."
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:6
 msgid "Hello "
-msgstr "Hello "
+msgstr "Ndabaramukije"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:9
 msgid "As you type your name comment will appear as:"
-msgstr "As you type your name comment will appear as:"
+msgstr "Nkuko mwanditse izina ryanyu, iciyumviro kiza kuboneka nka:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:14
 msgid "Date of Birth: "
-msgstr "Date of Birth: "
+msgstr "Itariki y’Amavuko:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:19
 msgid "Not set."
-msgstr "Not set."
+msgstr "Ntiyashizweho"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:26
 msgid "Mobile number:"
-msgstr "Mobile number:"
+msgstr "Inimero ya telefone ngendanwa:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:33
 msgid "Gender:"
-msgstr "Gender:"
+msgstr "Igitsina:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:40
 msgid "Location:"
-msgstr "ahantu:"
+msgstr "Aho muhagaze:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:47
 msgid "Education Level:"
-msgstr "Education Level:"
+msgstr "Urwego rw’impamyabushobozi mumashure:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:54
 msgid "Email Address:"
-msgstr "Email Address:"
+msgstr "Aderese ya Imeyiri:"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:59
 msgid "log out"
-msgstr "log out"
+msgstr "Gusohoka"
 
 #: temp/temp_ve/profiles/templates/profiles/viewprofile.html:60
 msgid "Edit My Profile"
-msgstr "Edit My Profile"
+msgstr "Guhindura Umwidondoro Wanje"
+
+#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:61
+msgid "Change My Password"
+msgstr "Guhindura Ijambo Kabanga ryanje"
 
 #: temp/temp_ve/profiles/views.py:161
 msgid "The old password is incorrect."
-msgstr "The old password is incorrect."
+msgstr "Ijambo kabanga ryakera siryo."
 
 #: temp/temp_ve/profiles/views.py:184
 msgid "Too many attempts. Please try again later."
-msgstr "Too many attempts. Please try again later."
+msgstr "Mwagerageje incuro nyinshi. Musabwe kugeragezakandi hanyuma."
 
 #: temp/temp_ve/profiles/views.py:279
 msgid "The two PINs that you entered do not match. Please try again."
-msgstr "The two PINs that you entered do not match. Please try again."
+msgstr "Ibiharuro Kabanga mwinjije kabiri ntibisa. Musabwe kugeragezakandi hanyuma."
 
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page.html:28
 msgid "Submit Survey"
-msgstr "Submit Survey"
+msgstr "Gutanga Ubushakakatsi"
 
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:12
 msgid "Survey Results"
-msgstr "Survey Results"
+msgstr "Umwimbu w’ubushakashatsi"
 
 #: temp/temp_ve/surveys/templates/surveys/molo_survey_page_landing.html:14
 msgid ""
 "Your survey has been completed successfully. Please see your submission "
 "results below."
-msgstr ""
-"Your survey has been completed successfully. Please see your submission "
-"results below."
+msgstr "Ubushakashatsi bwanyu bwarangiye neza. Musabwe kuraba inyishu zanyu zarungitswe hepfo."
 
 #: temp/temp_ve/surveys/templates/surveys/surveys_list.html:10
 msgid "Take The Survey"
-msgstr "Take The Survey"
+msgstr "Fata ubushakashatsi."
 
 #: temp/temp_ve/usermetadata/templates/persona.html:5
 msgid "Are you a ..."
-msgstr ""
+msgstr "Muri..."
 
 #: temp/temp_ve/usermetadata/templates/persona.html:21
 msgid "Skip"
-msgstr "Skip"
-
-#: iogt/settings/base.py:460
-msgid "February"
-msgstr "Ruhuhuma"
-
-#: iogt/settings/base.py:462
-msgid "April"
-msgstr "Ndamukiza"
-
-#: iogt/settings/base.py:463
-msgid "May"
-msgstr "Rusama"
-
-#: iogt/settings/base.py:475
-msgid "Type your comment here"
-msgstr "Andike aha ico wabivuze"
-
-#: iogt/templates/403_csrf.html:10
-msgid ""
-"To login or register for a profile, visit our free mobisite through your "
-"mobile browser at"
-msgstr ""
-"To login or register for a profile, visit our free mobisite through your "
-"mobile browser at"
-
-#: iogt/templates/base.html:156
-#: iogt/templates/base.html:219
-#: temp/temp_ve/profiles/templates/profiles/done.html:64
-msgid "Profile"
-msgstr "Profile"
-
-#: iogt/templates/base.html:212
-#: iogt/templates/profiles/register.html:10
-#: temp/temp_ve/profiles/templates/profiles/register.html:10
-msgid "Login"
-msgstr "Login"
-
-#: iogt/templates/polls/includes/poll_free_text_form.html:24
-#: iogt/templates/polls/includes/poll_question_form.html:26
-#: temp/temp_ve/polls/templates/polls/includes/poll_free_text_form.html:18
-#: temp/temp_ve/polls/templates/polls/includes/poll_question_form.html:20
-msgid "Log in to vote"
-msgstr "Log in to vote"
-
-#: iogt/templates/polls/results.html:8
-#: temp/temp_ve/polls/templates/polls/results.html:8
-msgid "Your answers:"
-msgstr "Your answers:"
-
-#: iogt/templates/profiles/register.html:24
-#: temp/temp_ve/profiles/templates/profiles/register.html:24
-msgid ""
-"This name you will use to log in and won't appear to other users. Only you "
-"will see this."
-msgstr ""
-"This name you will use to log in and won't appear to other users. Only you "
-"will see this."
-
-#: iogt/templates/profiles/register.html:32
-#: temp/temp_ve/profiles/templates/profiles/done.html:29
-#: temp/temp_ve/profiles/templates/profiles/editprofile.html:14
-#: temp/temp_ve/profiles/templates/profiles/register.html:39
-msgid ""
-"We value your online security, therefore we hide your username and allow you "
-"to comment and interact with the site with a display name."
-msgstr ""
-"We value your online security, therefore we hide your username and allow you "
-"to comment and interact with the site with a display name."
-
-#: iogt/templates/profiles/register.html:74
-msgid "Enter your mobile number"
-msgstr "Enter your mobile number"
-
-#: iogt/templates/profiles/register.html:103
-msgid "Choose a 4-digit pin"
-msgstr "Choose a 4-digit pin"
-
-#: iogt/templates/registration/login.html:20
-#: temp/temp_ve/profiles/templates/registration/login.html:20
-#: temp/temp_ve/profiles/test_templates/login.html:20
-msgid "Your username and password do not match. Please try again."
-msgstr "Your username and password do not match. Please try again."
-
-#: iogt/templates/registration/password_reset_confirm.html:6
-#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:10
-msgid ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly."
-msgstr ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly."
-
-#: iogt/templates/registration/password_reset_confirm.html:10
-#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_confirm.html:14
-msgid "New password:"
-msgstr "New password:"
-
-#: iogt/templates/registration/password_reset_confirm.html:22
-msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used. Please request a new password reset."
-msgstr ""
-"The password reset link was invalid, possibly because it has already been "
-"used. Please request a new password reset."
-
-#: iogt/templates/registration/password_reset_form.html:10
-#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:10
-msgid "Email address:"
-msgstr "Email address:"
-
-#: iogt/templates/search/search_block.html:5
-#: iogt/templates/search/search_results.html:7
-#: iogt/templates/search/search_results.html:102
-msgid "Search the site..."
-msgstr "Search the site..."
-
-#: iogt/templates/search/search_results.html:10
-#: iogt/templates/search/search_results.html:105
-msgid "Search Results for:"
-msgstr "Search Results for:"
-
-#: temp/temp_ve/commenting/forms.py:72
-msgid "Name"
-msgstr "Name"
-
-#: temp/temp_ve/commenting/templates/comments/preview.html:39
-#: temp/temp_ve/commenting/templates/comments/reply.html:43
-msgid "log in"
-msgstr "log in"
-
-#: temp/temp_ve/commenting/templates/comments/reply.html:29
-msgid "Page"
-msgstr ""
-
-#: temp/temp_ve/commenting/templates/notifications/reply_list.html:9
-#: temp/temp_ve/commenting/templates/notifications/tags/notification_banner.html:12
-msgid "unread replies"
-msgstr ""
-
-#: temp/temp_ve/commenting/test_templates/article_page.html:48
-#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/core/article_page.html:49
-msgid "Next up in"
-msgstr "Next up in"
-
-#: temp/temp_ve/commenting/views.py:34
-msgid "The comment has been reported."
-msgstr "The comment has been reported."
-
-#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:205
-msgid "Sotho"
-msgstr "Sotho"
-
-#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/settings/base.py:207
-msgid "Tswana"
-msgstr "Tswana"
-
-#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/registration/password_reset_form.html:6
-msgid ""
-"Forgotten your password? Enter your email address below, and we'll email "
-"instructions for setting a new one."
-msgstr ""
-"Forgotten your password? Enter your email address below, and we'll email "
-"instructions for setting a new one."
-
-#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_block.html:6
-msgid "Looking for something?"
-msgstr "Looking for something?"
-
-#: temp/temp_ve/core/cookiecutter/scaffold/{{cookiecutter.directory}}/{{cookiecutter.app_name}}/templates/search/search_results.html:53
-msgid "No search results for "
-msgstr "No search results for "
-
-#: temp/temp_ve/polls/templates/polls/poll_page.html:7
-msgid "What's your opinion?"
-msgstr "What's your opinion?"
-
-#: temp/temp_ve/profiles/admin.py:78
-msgid "Frontend Users"
-msgstr "Frontend Users"
-
-#: temp/temp_ve/profiles/admin_views.py:39
-msgid "CSV emailed to '{0}'"
-msgstr "CSV emailed to '{0}'"
-
-#: temp/temp_ve/profiles/forms.py:94
-#: temp/temp_ve/profiles/forms.py:419
-#: temp/temp_ve/profiles/forms.py:487
-#: temp/temp_ve/profiles/forms.py:504
-msgid "This value must contain only numbers."
-msgstr "This value must contain only numbers."
-
-#: temp/temp_ve/profiles/forms.py:112
-#: temp/temp_ve/profiles/forms.py:245
-#: temp/temp_ve/profiles/forms.py:296
-msgid "Gender"
-msgstr "Gender"
-
-#: temp/temp_ve/profiles/forms.py:120
-#: temp/temp_ve/profiles/forms.py:253
-#: temp/temp_ve/profiles/forms.py:304
-msgid "Education Level"
-msgstr "Education Level"
-
-#: temp/temp_ve/profiles/forms.py:388
-#: temp/temp_ve/profiles/forms.py:403
-msgid "This value must contain only           numbers."
-msgstr "This value must contain only           numbers."
-
-#: temp/temp_ve/profiles/forms.py:431
-msgid "New passwords do not match."
-msgstr "New passwords do not match."
-
-#: temp/temp_ve/profiles/templates/profiles/change_password.html:27
-#: temp/temp_ve/profiles/templates/profiles/reset_password.html:25
-msgid "(e.g. 2086)"
-msgstr "(e.g. 2086)"
-
-#: temp/temp_ve/profiles/templates/profiles/change_password.html:42
-#: temp/temp_ve/profiles/templates/profiles/done.html:59
-#: temp/temp_ve/profiles/templates/profiles/editprofile.html:70
-msgid "Save"
-msgstr "bika"
-
-#: temp/temp_ve/profiles/templates/profiles/done.html:8
-msgid "Thank you for joining!"
-msgstr "Thank you for joining!"
-
-#: temp/temp_ve/profiles/templates/profiles/done.html:13
-msgid "Let us know more about yourself to get access to exclusive content."
-msgstr "Let us know more about yourself to get access to exclusive content."
-
-#: temp/temp_ve/profiles/templates/profiles/done.html:18
-#: temp/temp_ve/profiles/templates/profiles/register.html:45
-msgid "SELECT DATE OF BIRTH"
-msgstr "SELECT DATE OF BIRTH"
-
-#: temp/temp_ve/profiles/templates/profiles/done.html:26
-msgid "DISPLAY NAME"
-msgstr "DISPLAY NAME"
-
-#: temp/temp_ve/profiles/templates/profiles/done.html:44
-#: temp/temp_ve/profiles/templates/profiles/register.html:63
-msgid "WHERE DO YOU LIVE?"
-msgstr "WHERE DO YOU LIVE?"
-
-#: temp/temp_ve/profiles/templates/profiles/login_success.html:5
-msgid "Login Success"
-msgstr ""
-
-#: temp/temp_ve/profiles/templates/profiles/register.html:21
-msgid "CHOOSE A USERNAME"
-msgstr "CHOOSE A USERNAME"
-
-#: temp/temp_ve/profiles/templates/profiles/register.html:81
-msgid "ENTER YOUR MOBILE NUMBER"
-msgstr "ENTER YOUR MOBILE NUMBER"
-
-#: temp/temp_ve/profiles/templates/profiles/viewprofile.html:61
-msgid "Change My Password"
-msgstr "Change My Password"
-
-#~ msgid "Type new display name:"
-#~ msgstr "Type new display name:"
-
-#~ msgid "View More"
-#~ msgstr "Raba ibindi"
-
-#~ msgid "More"
-#~ msgstr "Ibindi"
-
-#~ msgid "ARE YOU A"
-#~ msgstr "ARE YOU A"
-
-#~ msgid "1"
-#~ msgstr "678"
-
-#~ msgid "2"
-#~ msgstr "678"
-
-#~ msgid "3"
-#~ msgstr "678"
-
-#~ msgid "4"
-#~ msgstr "678"
-
-#~ msgid "5"
-#~ msgstr "678"
-
-#~ msgid "6"
-#~ msgstr "678"
-
-#~ msgid "7"
-#~ msgstr "678"
-
-#~ msgid "8"
-#~ msgstr "678"
-
-#~ msgid "9"
-#~ msgstr "678"
-
-#~ msgid "10"
-#~ msgstr "678"
+msgstr "Simba"
+
+#: iogt/settings/base.py:489
+msgid "Enter a valid phone number."
+msgstr "Injiza inimero yatelefone yemewe."
+
+#: iogt/templates/core/tags/social_media_article.html:7
+msgid "Share on Facebook"
+msgstr "Gusangira kuri Facebook"
+
+#: iogt/templates/core/tags/social_media_article.html:14
+msgid "Share on Twitter"
+msgstr "Gusangira kuri Twitter"
