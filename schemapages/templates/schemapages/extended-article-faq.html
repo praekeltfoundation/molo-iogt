@@ -1,6 +1,12 @@
 {% load wagtailcore_tags wagtailimages_tags core_tags wagtailembeds_tags  %}
+{% load schema_tags %}
 
-<h3 class="heading heading--large">{{ faq_data.title_for_faq }}</h3>
+
+{% if faq_data.title_for_faq %}
+    <h3 class="heading heading--large">{{ faq_data.title_for_faq }}</h3>
+{% endif %}
+
+{% faq_ld faq_data %}
 
 {% for block in faq_data.question_and_answer %}
     <h4 class="article__heading">{{ block.question }}</h4>

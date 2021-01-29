@@ -1,7 +1,13 @@
 {% load wagtailcore_tags wagtailimages_tags core_tags wagtailembeds_tags  %}
 
+{% load schema_tags %}
 
-<h3 class="heading heading--large">{{ how_to_data.title_for_how_to }}</h3>
+
+{% if how_to_data.title_for_how_to %}
+    <h3 class="heading heading--large">{{ how_to_data.title_for_how_to }}</h3>
+{% endif %}
+
+{% howto_ld how_to_data %}
 
 {% image how_to_data.image_when_finished width-320 %}
 
@@ -41,7 +47,7 @@
     {% image item.step_image width-290 %}
         {% for block in item.step_parts %}
            {% if block.block_type == 'suggestion' %}
-    <p><em>Note:</em> {{ block }}</p>
+	   <p><em>{{ block }}</em></p>
            {% else %}
     <p>{{ block }}</p>
 	   {% endif %}

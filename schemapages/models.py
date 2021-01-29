@@ -14,7 +14,7 @@ class ExtendedArticlePage(PageLDMixin, ArticlePage):
     structured_data = StreamField(
         blocks.StreamBlock([
             ('faq', blocks.StructBlock([
-                ('title_for_faq', blocks.CharBlock()),
+                ('title_for_faq', blocks.CharBlock(required=False)),
                 ('question_and_answer', blocks.ListBlock(blocks.StructBlock([
                     ('question', blocks.CharBlock()),
                     ('answer', blocks.CharBlock()),
@@ -22,7 +22,7 @@ class ExtendedArticlePage(PageLDMixin, ArticlePage):
             ], icon='help', max_num=1)),
 
             ('how_to', blocks.StructBlock([
-                ('title_for_how_to', blocks.CharBlock()),
+                ('title_for_how_to', blocks.CharBlock(required=False)),
                 ('image_when_finished', ImageChooserBlock(required=False)),
                 ('description', MarkDownBlock(required=False)),
                 ('estimated_cost', blocks.CharBlock(required=False)),
@@ -36,7 +36,7 @@ class ExtendedArticlePage(PageLDMixin, ArticlePage):
                     ('step_parts', blocks.StreamBlock([
                         ('instruction', blocks.CharBlock()),
                         ('suggestion', blocks.CharBlock()),
-                    ])),
+                    ], required=False)),
                 ]))),
             ], icon='list-ul', max_num=1)),
 
@@ -51,9 +51,6 @@ class ExtendedArticlePage(PageLDMixin, ArticlePage):
         ArticlePage.content_panels[:4] \
         + [StreamFieldPanel('structured_data')] \
         + ArticlePage.content_panels[4:]
-
-    def ld_entity(self):
-        return {}
 
 
 SectionPage.subpage_types += ['schemapages.ExtendedArticlePage']
