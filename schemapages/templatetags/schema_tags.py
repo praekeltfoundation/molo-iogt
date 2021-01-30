@@ -7,7 +7,7 @@ from django import template
 register = template.Library()
 
 
-LD_TAGS = '<script type="application/ld+json">{}</script>' 
+LD_TAGS = '<script type="application/ld+json">{}</script>'
 
 
 @register.simple_tag()
@@ -46,7 +46,7 @@ def howto_ld(how_to_data):
     if how_to_data['estimated_cost']:
         ld["estimatedCost"] = {
             "@type": "MonetaryAmount",
-            #"currency": "USD",
+            # "currency": "USD",
             "value": how_to_data.get('estimated_cost', ""),
         },
 
@@ -56,15 +56,15 @@ def howto_ld(how_to_data):
             ld['supply'].append({
                 "@type": "HowToSupply",
                 "name": item,
-        })
-        
+            })
+
     if how_to_data['tools_required']:
         ld['tool'] = []
         for item in how_to_data['tools_required']:
             ld['tool'].append({
                 "@type": "HowToTool",
                 "name": item,
-        })
+            })
 
     if how_to_data['steps']:
         ld['step'] = []
@@ -74,13 +74,12 @@ def howto_ld(how_to_data):
                 "name": item['step_name'],
                 "itemListElement": [
                     {
-                        "@type": "HowToTip" \
-                            if block.block_type == 'suggestion' \
-                            else "HowToDirection",
+                        "@type": "HowToTip"
+                        if block.block_type == 'suggestion'
+                        else "HowToDirection",
                         "text": block.value,
                     } for block in item['step_parts']
                 ],
             })
 
     return mark_safe(LD_TAGS.format(json.dumps(ld, indent=4)))
-
