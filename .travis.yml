@@ -2,8 +2,6 @@ sudo: false
 language: python
 cache:
   - pip
-before_install:
-  - pip install --upgrade pip
 install:
   - pip install -e .
   - pip install -r requirements-dev.txt
