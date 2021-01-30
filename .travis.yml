@@ -18,8 +18,7 @@ after_success:
 jobs:
   include:
     - stage: test
-      python: "2.7"
-    - python: "3.6"
+      python: "3.6"
     # Clear unused build steps
       services: []
       deploy: []
