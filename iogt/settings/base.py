@@ -98,6 +98,7 @@ INSTALLED_APPS = [
     'wagtail.contrib.wagtailsitemaps',
 
     'wagtailschemaorg',
+    'schemapages',
 
     'mptt',
     'raven.contrib.django.raven_compat',
