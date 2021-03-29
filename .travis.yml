@@ -2,15 +2,13 @@ sudo: false
 language: python
 cache:
   - pip
-before_install:
-  - pip install --upgrade pip
 install:
   - pip install -e .
   - pip install -r requirements-dev.txt
   - pip install coveralls
 script:
   - flake8
-  - py.test
+  - py.test --disable-warnings
 after_success:
   - coveralls
 
@@ -18,45 +16,52 @@ after_success:
 jobs:
   include:
     - stage: test
-      python: "2.7"
-    - python: "3.6"
+      python: "3.6"
     # Clear unused build steps
       services: []
       deploy: []
       after_success: []
-    - stage: docker
-      python: "3.6"
-      sudo: required
-      dist: trusty
-      services: [docker]
-      env:
-        - IMAGE_NAME=praekeltfoundation/molo-iogt
-        - REGISTRY_USER=praekeltorgdeploy
-        - secure: "XjvNvodG7ZirmphWtXz9QMOFH2Ohf9DL5s45N33N6MZqUP5ewbi+wA7IiUZMh691XsbBmp+l/mwUn21nbay4WNjIZZnmE9CA/RXodgToTVUT4LuNVfJTqLRzztVRuUD9oJvsy0pEjrRDNxDDfzPQ8+P/Kh03UO5+luVvmPYwytI8uoyCLyvVBlwnSwWh3sDPs3P3574XK2NS8AnQxEcCiYM3pytjikoNLtZtAWRmVFPuzD5pycXGPAlV6QueDW39rq6dpRHOQk5zE/bYXrhStyb5i/HNMOS4Ix32Fd3S7DPSOMGp0fG5la0uTYP9YItuwjHayxUjdq3h8rc20RY7hXxYzKXQwxXYd/f3YXR8lGT+i/Y0QPzG7X3qmIrAR/wt76T/nSLNGwsjL5pmjA7nlpMUTgJixGAFvV+LKijjIFP4/0QOhXOAfDtAXeBLpQASpHUiEzu5RE7K7rUzryeV6MgPKwjJu1dAMTXyhd9zlS+TG3JHfhZbkg9r2unGmGKCh3lSZtkTIj6/D/K1g688KXahwkkLynwU1pl+moZf8ioMPlkbLI58Or5cIl/x3enDFI1co1Aav0UeP5ODBhjJ1M/d0ejDb8RUn30q/oIN6D37Cdv5TyNFSO332p3V+AXxs+IDgZKjbEvgW/dL9i6u/AN9tNxO6ypMqMalnFip8ao="
 
-      # Update Docker: we want some new docker build features
-      install:
-        - sudo apt-get update
-        - sudo apt-get install -y -o Dpkg::Options::="--force-confold" docker-ce
 
-      before_script:
-        - molo_version="$(sed -nE 's/^molo\.core==(.*)$/\1/p' requirements.txt)"
-      script:
-        - docker build --pull --tag "$IMAGE_NAME" --build-arg MOLO_VERSION="$molo_version" .
+# The automated docker build test is no longer working. The $REGISTRY_PASS
+# password (set within `secure` below) has been changed by Praekelt Foundation
+# and the new password is not known. However, the docker build is still being
+# tested as part of the release process.
 
-      before_deploy:
-        - pip install docker-ci-deploy==0.3.0
-        - echo -n $REGISTRY_PASS | docker login -u "$REGISTRY_USER" --password-stdin
-      deploy:
-        - provider: script
-          script: dcd --version "$(git rev-parse --short HEAD)" --version-latest "$IMAGE_NAME"
-          on:
-            branch: develop
-        - provider: script
-          script: dcd --tag "$TRAVIS_TAG" -- "$IMAGE_NAME"
-          on:
-            tags: true
-
-      # Built steps inherited from the default stage that we don't want
-      before_install: ignore
-      after_success: []
+#
+#    - stage: docker
+#      python: "3.6"
+#      sudo: required
+#      dist: trusty
+#      services: [docker]
+#      env:
+#        - IMAGE_NAME=praekeltfoundation/molo-iogt
+#        - REGISTRY_USER=praekeltorgdeploy
+#        - secure: "XjvNvodG7ZirmphWtXz9QMOFH2Ohf9DL5s45N33N6MZqUP5ewbi+wA7IiUZMh691XsbBmp+l/mwUn21nbay4WNjIZZnmE9CA/RXodgToTVUT4LuNVfJTqLRzztVRuUD9oJvsy0pEjrRDNxDDfzPQ8+P/Kh03UO5+luVvmPYwytI8uoyCLyvVBlwnSwWh3sDPs3P3574XK2NS8AnQxEcCiYM3pytjikoNLtZtAWRmVFPuzD5pycXGPAlV6QueDW39rq6dpRHOQk5zE/bYXrhStyb5i/HNMOS4Ix32Fd3S7DPSOMGp0fG5la0uTYP9YItuwjHayxUjdq3h8rc20RY7hXxYzKXQwxXYd/f3YXR8lGT+i/Y0QPzG7X3qmIrAR/wt76T/nSLNGwsjL5pmjA7nlpMUTgJixGAFvV+LKijjIFP4/0QOhXOAfDtAXeBLpQASpHUiEzu5RE7K7rUzryeV6MgPKwjJu1dAMTXyhd9zlS+TG3JHfhZbkg9r2unGmGKCh3lSZtkTIj6/D/K1g688KXahwkkLynwU1pl+moZf8ioMPlkbLI58Or5cIl/x3enDFI1co1Aav0UeP5ODBhjJ1M/d0ejDb8RUn30q/oIN6D37Cdv5TyNFSO332p3V+AXxs+IDgZKjbEvgW/dL9i6u/AN9tNxO6ypMqMalnFip8ao="
+#
+#      # Update Docker: we want some new docker build features
+#      install:
+#        - sudo apt-get update
+#        - sudo apt-get install -y -o Dpkg::Options::="--force-confold" docker-ce
+#
+#      before_script:
+#        - molo_version="$(sed -nE 's/^molo\.core==(.*)$/\1/p' requirements.txt)"
+#      script:
+#        - docker build --pull --tag "$IMAGE_NAME" --build-arg MOLO_VERSION="$molo_version" .
+#
+#      before_deploy:
+#        - pip install docker-ci-deploy==0.3.0
+#        - echo -n $REGISTRY_PASS | docker login -u "$REGISTRY_USER" --password-stdin
+#      deploy:
+#        - provider: script
+#          script: dcd --version "$(git rev-parse --short HEAD)" --version-latest "$IMAGE_NAME"
+#          on:
+#            branch: develop
+#        - provider: script
+#          script: dcd --tag "$TRAVIS_TAG" -- "$IMAGE_NAME"
+#          on:
+#            tags: true
+#
+#      # Built steps inherited from the default stage that we don't want
+#      before_install: ignore
+#      after_success: []

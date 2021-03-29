@@ -1,0 +1,20 @@
+{% load wagtailcore_tags wagtailimages_tags core_tags wagtailembeds_tags  %}
+<article class="{{articletype}}">
+
+	<br/>
+
+<div class="article__content">
+
+  {% for block in self.structured_data %}
+    {% if block.block_type == 'faq' %}
+      {% include "schemapages/extended-article-faq.html" with faq_data=block.value %}
+    {% elif block.block_type == 'how_to' %}
+      {% include "schemapages/extended-article-how-to.html" with how_to_data=block.value %}
+    {% endif %}
+  {% endfor %}
+
+</div>
+
+    <br/>
+
+</article>

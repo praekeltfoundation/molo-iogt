@@ -14,7 +14,7 @@ from wagtail.wagtailcore import urls as wagtail_urls
 from molo.profiles.views import RegistrationDone
 from molo.profiles.forms import DoneForm
 
-from iogt.views import health_iogt
+from iogt.views import ExternalLink, health_iogt
 
 
 urlpatterns = []
@@ -28,6 +28,7 @@ if settings.ENABLE_SSO:
 
 
 urlpatterns += [
+    url(r'^external-link/', ExternalLink.as_view(), name="external_link"),
     url(r'^django-admin/', include(admin.site.urls)),
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),

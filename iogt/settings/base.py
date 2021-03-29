@@ -14,12 +14,20 @@ from os import environ
 import django.conf.locale
 from django.conf import global_settings
 from django.utils.translation import ugettext_lazy as _
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 import dj_database_url
 import djcelery
 from celery.schedules import crontab
 djcelery.setup_loader()
 # Absolute filesystem path to the Django project directory:
 PROJECT_ROOT = dirname(dirname(dirname(abspath(__file__))))
+
+
+sentry_sdk.init(
+    dsn=environ.get('SENTRY_DSN', ''),
+    integrations=[DjangoIntegration()]
+)
 
 
 # Quick-start development settings - unsuitable for production
@@ -40,6 +48,10 @@ ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '*').split(",")
 # backend - e.g. in notification emails. Don't include '/admin' or
 # a trailing slash
 BASE_URL = 'http://example.com'
+EXTERNAL_LINK_CHECK = environ.get(
+    'EXTERNAL_LINK_CHECK',
+    "goodinternet.org,internetofgoodthings.org",
+).split(",")
 
 
 # Application definition
@@ -85,6 +97,9 @@ INSTALLED_APPS = [
     'wagtailsurveys',
     'wagtail.contrib.wagtailsitemaps',
 
+    'wagtailschemaorg',
+    'schemapages',
+
     'mptt',
     'raven.contrib.django.raven_compat',
     'djcelery',
@@ -115,10 +130,11 @@ MIDDLEWARE_CLASSES = [
     'molo.core.middleware.AdminLocaleMiddleware',
     'molo.core.middleware.NoScriptGASessionMiddleware',
     'iogt.middleware.IogtMoloGoogleAnalyticsMiddleware',
-    'iogt.middleware.FaceBookPixelHistoryCounter',
+    # 'iogt.middleware.FaceBookPixelHistoryCounter',
     'molo.core.middleware.MultiSiteRedirectToHomepage',
     'molo.core.middleware.MaintenanceModeMiddleware',
     'molo.usermetadata.middleware.PersonaMiddleware',
+    'iogt.middleware.ReferrerPolicyMiddleware',
 ]
 
 # Template configuration
@@ -137,6 +153,7 @@ TEMPLATES = [
                 'wagtail.contrib.settings.context_processors.settings',
                 'molo.core.context_processors.locale',
                 'iogt.processors.compress_settings',
+                'iogt.processors.external_link',
             ],
         },
     },
@@ -231,13 +248,15 @@ LANGUAGES = global_settings.LANGUAGES + [
     ('my', 'Burmese'),
     ('tg', 'Tajik'),
     ('ay', 'Aymara'),
-    ('qu', 'Quechua'),
+    ('qu', 'Kichwa'),
     ('rn', 'Kirundi'),
     ('pt-mz', 'Portuguese Mozambique'),
     ('lg', 'Ganda'),
     ('si', 'Sinhalese'),
     ('ps', 'Pashto'),
     ('fa', 'Dari'),
+    ('ch', 'Chichewa'),
+    ('sho', 'Shona'),
 ]
 
 EXTRA_LANG_INFO = {
@@ -424,7 +443,7 @@ EXTRA_LANG_INFO = {
     'qu': {
         'bidi': False,
         'code': 'qu',
-        'name': 'Quechua',
+        'name': 'Kichwa',
         'name_local': 'Kichwa'
     },
     'rn': {
@@ -462,6 +481,18 @@ EXTRA_LANG_INFO = {
         'code': 'fa',
         'name': 'Dari',
         'name_local': 'دری,'
+    },
+    'ch': {
+        'bidi': False,
+        'code': 'ch',
+        'name': 'Chichewa',
+        'name_local': 'Chichewa'
+    },
+    'sho': {
+        'bidi': False,
+        'code': 'sho',
+        'name': 'Shona',
+        'name_local': 'Shona'
     },
 }
 
@@ -614,8 +645,13 @@ if AWS_STORAGE_BUCKET_NAME and AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
 RABBITMQ_MANAGEMENT_INTERFACE = environ.get(
     'RABBITMQ_MANAGEMENT_INTERFACE')
 
-FACEBOOK_PIXEL = '413876948808281'
-FACEBOOK_PIXEL_COOKIE_KEY = 'facebook_pixel_hit_count'
+# FACEBOOK_PIXEL = '413876948808281'
+# FACEBOOK_PIXEL_COOKIE_KEY = 'facebook_pixel_hit_count'
+
+FACEBOOK_PIXEL = ''
+FACEBOOK_PIXEL_COOKIE_KEY = ''
 
 MAINTENANCE_MODE_TEMPLATE = 'maintenance.html'
 MAINTENANCE_MODE = environ.get('MAINTENANCE_MODE', None)
+
+REFERRER_POLICY = "origin"

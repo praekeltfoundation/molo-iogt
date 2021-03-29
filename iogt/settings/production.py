@@ -1,4 +1,5 @@
 from .base import *  # noqa
+from os import environ
 
 
 # Disable debug mode
@@ -41,6 +42,14 @@ COMPRESS_OFFLINE = True
 #         }
 #     }
 # }
+
+# django-storages for AZURE
+AZURE_ACCOUNT_NAME = environ.get('AZURE_ACCOUNT_NAME', None)  # noqa: F405
+AZURE_ACCOUNT_KEY = environ.get('AZURE_ACCOUNT_KEY', None)  # noqa: F405
+AZURE_CONTAINER = environ.get('AZURE_CONTAINER', None)  # noqa: F405
+
+if AZURE_ACCOUNT_NAME and AZURE_ACCOUNT_KEY and AZURE_CONTAINER:
+    DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 
 
 COMPRESS_OFFLINE_CONTEXT = {

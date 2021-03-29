@@ -6,12 +6,12 @@ here = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(here, 'README.rst')) as f:
     README = f.read()
 
-with open(os.path.join(here, 'requirements.txt')) as f:
+with open(os.path.join(here, 'requirements-frozen.txt')) as f:
     requires = f.read().split("\n")
 
 
 setup(name='iogt',
-      version='0.0.1',
+      version='1.1.0',
       description='iogt',
       long_description=README,
       classifiers=[
@@ -21,7 +21,7 @@ setup(name='iogt',
       ],
       author='Praekelt.org',
       author_email='dev@praekelt.org',
-      url='https://github.com/praekelt/molo-iogt',
+      url='https://github.com/unicef/molo-iogt',
       license='BSD',
       keywords='praekelt, mobi, web, django',
       packages=find_packages(),

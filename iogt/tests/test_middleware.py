@@ -2,6 +2,8 @@ import mock
 import datetime
 import responses
 
+import pytest
+
 from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
@@ -223,6 +225,7 @@ class TestFaceBookPixelHistoryCounter(TestCase, MoloTestCaseMixin):
         self.english_section = self.mk_section(
             self.section_index, title='English section')
 
+    @pytest.mark.skip(reason="Set up Facebook pixel tracking (or remove)")
     def test_more_that_3_page_views(self):
         """ test if the no script html tag exists """
         view_count = 5
@@ -237,6 +240,7 @@ class TestFaceBookPixelHistoryCounter(TestCase, MoloTestCaseMixin):
             view_count + 1
         )
 
+    @pytest.mark.skip(reason="Set up Facebook pixel tracking (or remove)")
     def test_less_that_3_page_views(self):
         """ test if the no script html tag exists """
         response = self.client.get(reverse('search'))
@@ -246,3 +250,21 @@ class TestFaceBookPixelHistoryCounter(TestCase, MoloTestCaseMixin):
             ).value),
             1
         )
+
+
+class TestReferrerPolicyMiddleware(TestCase, MoloTestCaseMixin):
+    def setUp(self):
+        self.mk_main()
+        self.main = Main.objects.all().first()
+        self.english = SiteLanguageRelation.objects.create(
+            language_setting=Languages.for_site(self.main.get_site()),
+            locale='en', is_active=True
+        )
+        self.main = Main.objects.all().first()
+        self.factory = RequestFactory()
+        self.client = Client()
+
+    def test_referrer_policy_middleware(self):
+        response = self.client.get(reverse('search'))
+        self.assertIn("Referrer-Policy", response)
+        self.assertEqual(response["Referrer-Policy"], settings.REFERRER_POLICY)

@@ -2,10 +2,10 @@
 {% get_settings %}
 
 {% if settings.core.SiteSettings.facebook_sharing %}
-    <a href="http://www.facebook.com/sharer.php?u=http{% if request.is_secure %}s{%endif %}://{{ request.get_host }}{{ request.path }}" target="_blank" class="call-to-action__item-share call-to-action__item-share--facebook {% if facebook %} call-to-action__item-share-with-image {% endif %}">
-        {% image facebook width-35 class="call-to-action__item-share-img" %}
-        <span class="call-to-action__item-share-title">{% trans 'Share on Facebook'%}</span>
-    </a>
+{#    <a href="http://www.facebook.com/sharer.php?u=http{% if request.is_secure %}s{%endif %}://{{ request.get_host }}{{ request.path }}" target="_blank" class="call-to-action__item-share call-to-action__item-share--facebook {% if facebook %} call-to-action__item-share-with-image {% endif %}">#}
+{#        {% image facebook width-35 class="call-to-action__item-share-img" %}#}
+{#        <span class="call-to-action__item-share-title">{% trans 'Share on Facebook'%}</span>#}
+{#    </a>#}
 {% endif %}
 
 {% if settings.core.SiteSettings.twitter_sharing %}

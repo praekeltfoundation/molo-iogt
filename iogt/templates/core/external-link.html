@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block content %}
+  <img src="{% static 'img/external_banner_warning.jpg' %}" />
+  <div class="external">
+    <p>
+      <a href="{{ next }}">
+        <img src="{% static 'img/continue.jpg' %}"
+             alt="{% trans 'Continue' %}"/>
+      </a>
+    </a>
+    <p>
+      <a href="{{ prev }}">
+        <img src="{% static 'img/cancel.jpg' %}" alt="{% trans 'Cancel' %}" />
+      </a>
+    </p>
+  </div>
+{% endblock content %}
+
+{% block external-link %}{% endblock external-link %}

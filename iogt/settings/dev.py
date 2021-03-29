@@ -10,6 +10,8 @@ BROKER_URL = 'amqp://rabbit:secret@rabbitmq.com:5672/molo-iogt'
 
 ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', '127.0.0.1').split(",")
 
+EXTERNAL_LINK_CHECK = ["127.0.0.1"]
+
 try:
     from .local import *  # noqa
 except ImportError:

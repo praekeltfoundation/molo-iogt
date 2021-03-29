@@ -6,3 +6,9 @@ def compress_settings(request):
         'STATIC_URL': settings.STATIC_URL,
         'ENV': settings.ENV
     }
+
+
+def external_link(request):
+    return {
+        'external_link_check': settings.EXTERNAL_LINK_CHECK,
+    }
